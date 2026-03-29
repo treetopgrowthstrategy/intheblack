@@ -1,0 +1,54 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://intheblack.coffee" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "In The Black Coffee Co.",
+      "description": "Commissioned wholesale sales for specialty coffee roasters",
+      "url": "https://intheblack.coffee"
+    }
+    </script>
+    <style>
+      @keyframes fade-up {
+        from { opacity: 0; transform: translateY(16px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .fade-up { animation: fade-up 0.8s ease-out forwards; }
+      .fade-up-2 { animation: fade-up 0.8s ease-out 0.2s forwards; opacity: 0; }
+      .fade-up-3 { animation: fade-up 0.8s ease-out 0.4s forwards; opacity: 0; }
+      .gold-line {
+        background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+      }
+      .gold-text {
+        background: linear-gradient(135deg, #C9A84C, #E8C96D, #C9A84C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body class="bg-brand-black text-white font-body antialiased">
+    <slot />
+  </body>
+</html>
