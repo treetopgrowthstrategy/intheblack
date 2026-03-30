@@ -24,36 +24,50 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- HERO -->
   <section class="min-h-screen flex flex-col justify-center pt-16 px-6 relative overflow-hidden">
-    <!-- Subtle texture -->
     <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle, #C9A84C 1px, transparent 1px); background-size: 40px 40px;"></div>
 
-    <div class="max-w-6xl mx-auto w-full py-32 relative">
-      <div class="max-w-4xl">
-        <div class="gold-line h-px w-24 mb-12"></div>
-
-        <h1 class="font-display font-light text-6xl md:text-8xl leading-[1.0] tracking-tight mb-8 fade-up">
-          We put your<br />
-          roastery<br />
-          <span class="gold-text font-semibold">in the black.</span>
-        </h1>
-
-        <p class="text-gray-400 text-xl font-body font-light max-w-xl mb-12 leading-relaxed fade-up-2">
-          Commissioned wholesale sales for specialty coffee roasters. We find the accounts, send the samples, close the deals. You pay nothing until we do.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 fade-up-3">
-          <a
-            href="#contact"
-            class="bg-brand-gold text-brand-black font-body font-bold text-base px-8 py-4 hover:bg-brand-gold-light transition-all text-center"
-          >
-            Let's Talk
-          </a>
-          <a
-            href="#how-it-works"
-            class="border border-brand-border text-white font-body text-base px-8 py-4 hover:border-brand-gold/50 transition-all text-center"
-          >
-            See How It Works
-          </a>
+    <div class="max-w-6xl mx-auto w-full py-24 relative">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <!-- Left: Copy -->
+        <div>
+          <div class="gold-line h-px w-24 mb-12"></div>
+          <h1 class="font-display font-light text-6xl md:text-7xl leading-[1.0] tracking-tight mb-8 fade-up">
+            We put your<br />
+            roastery<br />
+            <span class="gold-text font-semibold">in the black.</span>
+          </h1>
+          <p class="text-gray-400 text-xl font-body font-light max-w-xl mb-12 leading-relaxed fade-up-2">
+            Commissioned wholesale sales for specialty coffee roasters. We find the accounts, send the samples, close the deals. You pay nothing until we do.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 fade-up-3">
+            <a
+              href="#contact"
+              class="bg-brand-gold text-brand-black font-body font-bold text-base px-8 py-4 hover:bg-brand-gold-light transition-all text-center"
+            >
+              Let's Talk
+            </a>
+            <a
+              href="#how-it-works"
+              class="border border-brand-border text-white font-body text-base px-8 py-4 hover:border-brand-gold/50 transition-all text-center"
+            >
+              See How It Works
+            </a>
+          </div>
+        </div>
+        <!-- Right: Image -->
+        <div class="relative fade-up-2">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent z-10 rounded-2xl"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-brand-black via-transparent to-transparent z-10 rounded-2xl"></div>
+          <img
+            src="/hero-barista.jpg"
+            alt="Specialty coffee barista"
+            class="w-full h-[600px] object-cover rounded-2xl opacity-90"
+          />
+          <!-- Gold accent overlay -->
+          <div class="absolute bottom-6 left-6 z-20 border-l-2 border-brand-gold pl-4">
+            <p class="text-white font-display text-lg font-light">Your coffee.</p>
+            <p class="gold-text font-display text-lg font-semibold">New accounts.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -147,18 +161,35 @@ import Layout from '../layouts/Layout.astro';
   <!-- PRICING -->
   <section class="px-6 py-24 border-t border-brand-border bg-brand-card">
     <div class="max-w-6xl mx-auto">
-      <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-12">Pricing</p>
-      <div class="grid md:grid-cols-2 gap-12 items-start max-w-3xl">
+      <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-4">Pricing</p>
+      <h2 class="font-display font-light text-4xl mb-4 text-white">Simple. Transparent. No surprises.</h2>
+      <p class="text-gray-500 font-body mb-12 max-w-xl">You cover samples. We close accounts. Our commission scales with the contract — the bigger the deal, the better for everyone.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl">
         <div class="border border-brand-gold/30 p-8">
-          <p class="text-gray-500 font-mono text-xs uppercase tracking-widest mb-2">You pay upfront</p>
-          <p class="font-display font-semibold text-5xl gold-text mb-4">Samples</p>
-          <p class="text-gray-400 text-sm leading-relaxed">Cost of coffee samples and shipping only. We handle packaging and label printing. No setup fees, no monthly costs.</p>
+          <p class="text-gray-500 font-mono text-xs uppercase tracking-widest mb-4">Year 1</p>
+          <p class="font-display font-semibold text-6xl gold-text mb-2">10%</p>
+          <p class="text-gray-400 text-sm leading-relaxed">Of the first year's wholesale contract value. Payable when the account closes.</p>
         </div>
         <div class="border border-brand-border p-8">
-          <p class="text-gray-500 font-mono text-xs uppercase tracking-widest mb-2">You pay on close</p>
-          <p class="font-display font-semibold text-5xl text-white mb-4">Commission</p>
-          <p class="text-gray-400 text-sm leading-relaxed">A percentage of the first year's wholesale contract value. Discussed and agreed before we start. No surprises.</p>
+          <p class="text-gray-500 font-mono text-xs uppercase tracking-widest mb-4">Renewals</p>
+          <p class="font-display font-semibold text-6xl text-white mb-2">5%</p>
+          <p class="text-gray-400 text-sm leading-relaxed">Annual renewal commission. We stay invested in keeping your accounts — not just closing them.</p>
         </div>
+        <div class="border border-brand-border p-8 relative">
+          <div class="absolute top-4 right-4 bg-brand-gold/10 border border-brand-gold/30 px-2 py-1">
+            <p class="text-brand-gold font-mono text-xs">Best Value</p>
+          </div>
+          <p class="text-gray-500 font-mono text-xs uppercase tracking-widest mb-4">Multi-Year</p>
+          <p class="font-display font-semibold text-6xl text-white mb-2">8%</p>
+          <p class="text-gray-400 text-sm leading-relaxed">Of total contract value for 2-3 year commitments. Bigger deal, better rate — locked in revenue for everyone.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 border border-brand-border p-6 max-w-4xl">
+        <p class="text-gray-500 text-sm font-body">
+          <span class="text-brand-gold font-semibold">Sample costs</span> — covered by you. We print labels, package, and ship on your behalf. No setup fees, no retainer, no monthly costs. Ever.
+        </p>
       </div>
     </div>
   </section>
@@ -175,7 +206,7 @@ import Layout from '../layouts/Layout.astro';
         Book a 20-minute call. We'll learn about your roastery, your capacity, and your target markets. If we're a fit, we get to work.
       </p>
       <a
-        href="https://cal.com"
+        href="https://forms.gle/BBqm5mcAW36NReRd7" target="_blank"
         class="inline-block bg-brand-gold text-brand-black font-body font-bold text-lg px-12 py-5 hover:bg-brand-gold-light transition-all"
       >
         Book a Call
