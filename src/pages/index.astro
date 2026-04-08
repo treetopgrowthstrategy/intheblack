@@ -120,18 +120,37 @@ import Layout from '../layouts/Layout.astro';
   <!-- HOW IT WORKS -->
   <section id="how-it-works" class="px-6 py-24 border-t border-brand-border bg-brand-card">
     <div class="max-w-6xl mx-auto">
-      <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-12">How It Works</p>
+      <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-4">How It Works</p>
+      <h2 class="font-display font-light text-4xl mb-4 text-white">
+        A real sales operation.<br /><span class="gold-text">Not a marketing agency.</span>
+      </h2>
+      <p class="text-gray-500 font-body mb-12 max-w-2xl">We prospect, pitch, sample, follow up, and close — the full sales cycle, done for you. Here's what that looks like month to month.</p>
       <div class="grid md:grid-cols-4 gap-8">
         {[
-          { step: "01", title: "We Find the Accounts", body: "We research and identify cafés, restaurants, and wholesale buyers in your target markets. The right fit for your coffee." },
-          { step: "02", title: "We Run Outreach", body: "Cold outreach via email and phone. We follow up until we get a yes or a no. No leads go cold." },
-          { step: "03", title: "We Send Samples", body: "We print your labels, package your samples, and ship them. You just send us the beans." },
-          { step: "04", title: "We Close", body: "Warm buyers converted to wholesale accounts. You fulfill the orders. We collect our commission." }
+          { step: "01", title: "We Find the Accounts", body: "We research and prospect 40–60 qualified accounts per month in your target markets. Cafés, restaurants, offices, grocers — the right fit for your coffee." },
+          { step: "02", title: "We Run Outreach", body: "Personalized outreach via email, phone, and in-person visits. We follow up 5–7 times per lead. No prospect goes cold on our watch." },
+          { step: "03", title: "We Send Samples", body: "We print your labels, package your samples, and ship them. Average turnaround: 48 hours from request to doorstep. You just send us the beans." },
+          { step: "04", title: "We Close", body: "Average sales cycle: 45 days from sample to signed account. You fulfill the orders. We collect our commission. That's it." }
         ].map(item => (
           <div class="border-t border-brand-gold/30 pt-8">
             <p class="font-mono text-brand-gold/40 text-3xl font-bold mb-6">{item.step}</p>
             <h3 class="font-display font-semibold text-xl mb-3 text-white">{item.title}</h3>
             <p class="text-gray-500 font-body text-sm leading-relaxed">{item.body}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Numbers -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-brand-border">
+        {[
+          { number: "40–60", label: "Accounts prospected per month" },
+          { number: "45", label: "Average days to close" },
+          { number: "5–7", label: "Follow-ups per prospect" },
+          { number: "48hr", label: "Sample turnaround time" },
+        ].map(item => (
+          <div class="text-center">
+            <p class="font-display text-3xl md:text-4xl font-semibold gold-text mb-2">{item.number}</p>
+            <p class="text-gray-500 font-mono text-xs uppercase tracking-widest">{item.label}</p>
           </div>
         ))}
       </div>
@@ -201,6 +220,97 @@ import Layout from '../layouts/Layout.astro';
         <p class="text-gray-500 text-sm font-body">
           <span class="text-brand-gold font-semibold">Sample costs</span> — covered by you. We print labels, package, and ship on your behalf. No setup fees, no retainer, no monthly costs. Ever.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="px-6 py-24 border-t border-brand-border">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <img
+            src="/bill.jpeg"
+            alt="Bill Colbert, founder of In The Black Coffee Co."
+            class="w-full max-w-md rounded-2xl object-cover"
+          />
+        </div>
+        <div>
+          <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-6">Meet the Founder</p>
+          <h2 class="font-display font-light text-4xl md:text-5xl mb-8 leading-tight">
+            Bill <span class="gold-text font-semibold">Colbert</span>
+          </h2>
+          <div class="space-y-4 text-gray-400 font-body leading-relaxed">
+            <p>
+              I've spent my career building revenue systems for businesses that make great products but struggle to scale sales. Through my consultancy, <span class="text-white">Treetop Growth Strategy</span>, I've helped companies across industries build the outbound sales infrastructure that actually moves the needle.
+            </p>
+            <p>
+              I started In The Black because I kept meeting specialty roasters with incredible coffee and zero wholesale pipeline. They didn't need a marketing agency or a better Instagram strategy — they needed someone to <span class="text-white">pick up the phone, send the samples, and close the deals.</span>
+            </p>
+            <p>
+              That's what we do. Commission only, so our interests are perfectly aligned with yours. We don't eat unless you do.
+            </p>
+          </div>
+          <div class="mt-8 flex gap-4">
+            <a
+              href="/forecast"
+              class="bg-brand-gold text-brand-black font-body font-bold text-sm px-6 py-3 hover:bg-brand-gold-light transition-all"
+            >
+              Get Your Growth Forecast
+            </a>
+            <a
+              href="https://calendar.app.google/sErhyQBke9cvrtv2A"
+              target="_blank"
+              class="border border-brand-border text-white font-body text-sm px-6 py-3 hover:border-brand-gold/50 transition-all"
+            >
+              Book a Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-6 py-24 border-t border-brand-border bg-brand-card">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-4">Common Questions</p>
+      <h2 class="font-display font-light text-4xl mb-12 text-white">
+        Before you ask.
+      </h2>
+
+      <div class="space-y-6">
+        {[
+          {
+            q: "What does 'commission only' actually mean?",
+            a: "It means we don't charge you a retainer, setup fee, or monthly fee. We earn a commission on the wholesale contracts we close for you — that's it. If we don't close, you don't pay. Our incentives are 100% aligned with yours."
+          },
+          {
+            q: "What markets do you cover?",
+            a: "We work nationally across the United States. We'll identify the best target markets for your coffee based on your capacity, price point, and growth goals. Most of our roasters start with 2-3 metro areas and expand from there."
+          },
+          {
+            q: "How long before I see results?",
+            a: "Most roasters see their first new account within 60-90 days. The sales cycle from first contact to signed account averages 45 days, plus time for initial prospecting and sample sends. We'll have pipeline activity within the first two weeks."
+          },
+          {
+            q: "What kind of roasters do you work with?",
+            a: "Specialty roasters with a quality product and real capacity to fulfill new wholesale orders. If you're roasting at least 500 lbs/month and have room to grow, we should talk. We're selective because our reputation depends on the coffee we represent."
+          },
+          {
+            q: "What do I need to provide?",
+            a: "Coffee samples and shipping — that's your only cost. We handle everything else: prospecting, outreach, follow-up, label printing, sample packaging, and closing. You just keep roasting."
+          },
+          {
+            q: "What if I'm not happy with the results?",
+            a: "There's no contract lock-in. If it's not working, you can walk away. But because we only get paid when we close, we're highly motivated to make it work. We're not here to collect retainers — we're here to sell your coffee."
+          },
+        ].map(item => (
+          <div class="border border-brand-border p-8">
+            <h3 class="font-display font-semibold text-lg text-white mb-3">{item.q}</h3>
+            <p class="text-gray-400 font-body text-sm leading-relaxed">{item.a}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
