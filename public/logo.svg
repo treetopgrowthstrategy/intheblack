@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Coffee Cup -->
+  <g transform="translate(130, 0)" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Lid -->
+    <rect x="20" y="40" width="100" height="16" rx="3"/>
+    <!-- Lid knob -->
+    <rect x="40" y="30" width="60" height="14" rx="3"/>
+    <!-- Cup body (trapezoid) -->
+    <path d="M12 56 L28 190 L112 190 L128 56"/>
+    <!-- Wave lines -->
+    <path d="M18 80 Q45 95 70 80 Q95 65 122 80"/>
+    <path d="M20 110 Q47 125 72 110 Q97 95 124 110"/>
+    <!-- Coffee bean -->
+    <ellipse cx="70" cy="148" rx="22" ry="28"/>
+    <path d="M70 122 Q62 148 70 175"/>
+  </g>
+  <!-- Horizontal rule -->
+  <line x1="60" y1="240" x2="340" y2="240" stroke="currentColor" stroke-width="4"/>
+  <!-- Text: IN THE BLACK -->
+  <text x="200" y="280" text-anchor="middle" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="42" letter-spacing="4" fill="currentColor">IN THE BLACK</text>
+</svg>
