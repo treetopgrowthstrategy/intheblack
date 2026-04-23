@@ -4,6 +4,7 @@ export interface Props {
   description: string;
 }
 const { title, description } = Astro.props;
+const canonicalPath = Astro.url.pathname;
 ---
 <!doctype html>
 <html lang="en">
@@ -17,16 +18,39 @@ const { title, description } = Astro.props;
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://intheblack.coffee" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={`https://intheblack.coffee${canonicalPath}`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "In The Black Coffee Co.",
-      "description": "Commissioned wholesale sales for specialty coffee roasters",
-      "url": "https://intheblack.coffee"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://intheblack.coffee/#organization",
+          "name": "In The Black Coffee Co.",
+          "url": "https://intheblack.coffee",
+          "description": "Commission-only wholesale coffee sales for specialty coffee roasters",
+          "areaServed": "United States"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://intheblack.coffee/#business",
+          "name": "In The Black Coffee Co.",
+          "description": "Commission-only wholesale coffee sales representative for specialty roasters",
+          "url": "https://intheblack.coffee",
+          "priceRange": "Commission-only"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://intheblack.coffee/#service",
+          "name": "Commission-Only Coffee Sales",
+          "provider": { "@id": "https://intheblack.coffee/#organization" },
+          "serviceType": "Wholesale Coffee Sales Representation",
+          "description": "We sell your coffee wholesale to restaurants, offices, and specialty retailers on a pure commission basis — no retainer, no upfront cost."
+        }
+      ]
     }
     </script>
     <style>

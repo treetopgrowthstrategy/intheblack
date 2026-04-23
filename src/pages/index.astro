@@ -24,12 +24,20 @@ import Layout from '../layouts/Layout.astro';
           In The <span class="gold-text">Black</span>
         </span>
       </a>
-      <a
-        href="#contact"
-        class="border border-brand-gold text-brand-gold font-body font-semibold text-sm px-5 py-2.5 hover:bg-brand-gold hover:text-brand-black transition-all"
-      >
-        Work With Us
-      </a>
+      <div class="flex items-center gap-6">
+        <a
+          href="/commission-only-coffee-sales"
+          class="text-gray-400 font-body text-sm hover:text-white transition-colors"
+        >
+          Commission Sales
+        </a>
+        <a
+          href="#contact"
+          class="border border-brand-gold text-brand-gold font-body font-semibold text-sm px-5 py-2.5 hover:bg-brand-gold hover:text-brand-black transition-all"
+        >
+          Work With Us
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -314,6 +322,60 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- COMMISSION-ONLY FAQ SECTION -->
+  <section class="px-6 py-24 border-t border-brand-border">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-brand-gold font-mono text-xs uppercase tracking-widest mb-4">Commission Sales</p>
+      <h2 class="font-display font-light text-4xl mb-12 text-white">
+        Your commission questions answered.
+      </h2>
+
+      <div class="space-y-6">
+        {[
+          {
+            q: "Is commission-only coffee sales actually viable for roasters?",
+            a: "Yes. We've closed over 200 wholesale accounts on commission-only terms. The model works because both parties win together — no upfront risk for roasters, and we only succeed when you do. The key is working with a team that knows how to close. Most roasters fail at wholesale sales because they don't have the sales infrastructure. We do."
+          },
+          {
+            q: "What's the typical commission rate for coffee wholesale sales?",
+            a: "It varies. Our rate starts at 10% of first-year contract value, 5% on renewals, and 8% for multi-year deals. Rates can range anywhere from 8-15% depending on account size and commitment length. The point is: we don't get paid until you're profitable, so we're motivated to close the right accounts at the right terms."
+          },
+        ].map(item => (
+          <div class="border border-brand-border p-8">
+            <h3 class="font-display font-semibold text-lg text-white mb-3">{item.q}</h3>
+            <p class="text-gray-400 font-body text-sm leading-relaxed">{item.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- JSON-LD FAQPage Schema for Commission FAQ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is commission-only coffee sales actually viable for roasters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We've closed over 200 wholesale accounts on commission-only terms. The model works because both parties win together — no upfront risk for roasters, and we only succeed when you do. The key is working with a team that knows how to close. Most roasters fail at wholesale sales because they don't have the sales infrastructure. We do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the typical commission rate for coffee wholesale sales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies. Our rate starts at 10% of first-year contract value, 5% on renewals, and 8% for multi-year deals. Rates can range anywhere from 8-15% depending on account size and commitment length. The point is: we don't get paid until you're profitable, so we're motivated to close the right accounts at the right terms."
+          }
+        }
+      ]
+    }
+  </script>
 
   <!-- POWERED BY BILLY -->
   <section class="px-6 py-20 border-t border-brand-border">

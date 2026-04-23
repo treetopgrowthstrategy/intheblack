@@ -1,0 +1,313 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const canonicalPath = "/commission-only-coffee-sales/";
+
+const faqs = [
+  {
+    question: "What makes commission-only coffee sales different from traditional wholesale?",
+    answer: "Commission-only means you keep more of what you sell. Instead of markup-based pricing, you earn a direct commission on every account you bring to us. We handle roasting, quality control, and fulfillment—you focus on building relationships and growing your book."
+  },
+  {
+    question: "What commission rates does In The Black Coffee Co. offer?",
+    answer: "We offer competitive, tiered commission structures based on your volume and account quality. New partners typically start at 12-15% commission, with opportunities to increase based on performance. We're transparent about rates and happy to discuss specifics during your consultation."
+  },
+  {
+    question: "What makes an ideal roaster or coffee buyer for your program?",
+    answer: "Our ideal partners are specialty coffee enthusiasts with existing networks in hospitality, offices, or retail. You need genuine passion for coffee quality and the ability to build lasting relationships. Geography doesn't matter—we ship nationwide and work with remote partners."
+  },
+  {
+    question: "What types of accounts do you typically work with?",
+    answer: "We work with independent coffee shops, offices, corporate accounts, boutique hotels, and specialty retail. We focus on quality-conscious buyers who value single-origin, ethically sourced coffee. Our sweet spot is accounts ordering 5-25 lbs monthly, though we're flexible."
+  }
+];
+---
+
+<Layout title="Commission-Only Coffee Sales | In The Black Coffee Co." description="Build your wholesale coffee book on commission. Earn 12-15%+ per account with In The Black Coffee Co. No inventory risk. Full roasting & fulfillment support." canonicalPath={canonicalPath}>
+  <main class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <!-- Hero Section -->
+    <section class="relative px-4 sm:px-6 lg:px-8 py-20 sm:py-32 overflow-hidden">
+      <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-amber-600 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-700 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div class="relative max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl sm:text-6xl font-display font-bold text-white mb-6 leading-tight">
+          Commission-Only Coffee Sales That Grow Your Wholesale Book
+        </h1>
+        
+        <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          Build a lucrative coffee wholesale business without inventory risk. Earn 12-15%+ commission on every account you bring to In The Black. We handle roasting and fulfillment—you handle relationships.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="mailto:bill@intheblack.coffee?subject=Commission-Only%20Coffee%20Sales%20Opportunity"
+            class="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded transition duration-300 transform hover:scale-105"
+          >
+            Start Your Commission Book Today
+          </a>
+          <a 
+            href="#how-it-works"
+            class="inline-block px-8 py-4 border-2 border-amber-600 text-amber-400 hover:bg-amber-600 hover:text-white font-semibold rounded transition duration-300"
+          >
+            Learn How It Works
+          </a>
+        </div>
+        
+        <div class="mt-12 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-amber-400">12-15%+</div>
+            <div class="text-sm sm:text-base text-slate-400">Commission Rate</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-amber-400">$0</div>
+            <div class="text-sm sm:text-base text-slate-400">Inventory Cost</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-amber-400">100%</div>
+            <div class="text-sm sm:text-base text-slate-400">Order Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white text-center mb-16">How It Works</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="relative">
+            <div class="absolute -top-4 left-0 w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+            <div class="pt-8">
+              <h3 class="text-xl font-semibold text-white mb-4">You Bring the Accounts</h3>
+              <p class="text-slate-300">Use your network and sales skills to introduce specialty coffee shops, offices, and boutique accounts to In The Black. No inventory needed—just your relationships and passion for coffee.</p>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="relative">
+            <div class="absolute -top-4 left-0 w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+            <div class="pt-8">
+              <h3 class="text-xl font-semibold text-white mb-4">We Handle Everything Else</h3>
+              <p class="text-slate-300">We manage roasting, quality control, packaging, and fulfillment. Your accounts get consistent, exceptional coffee. You get a commission on every order—month after month.</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="relative">
+            <div class="absolute -top-4 left-0 w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+            <div class="pt-8">
+              <h3 class="text-xl font-semibold text-white mb-4">Build Recurring Revenue</h3>
+              <p class="text-slate-300">Watch your commission book grow each month. Accounts reorder regularly. You earn 12-15%+ on every single transaction. No ceiling on earning potential.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Work With -->
+    <section id="who-we-work-with" class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-slate-800/50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white text-center mb-16">Who We Work With</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-amber-600 flex-shrink-0 flex items-center justify-center mt-1">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Specialty Coffee Shops</h3>
+              <p class="text-slate-300">Independent third-wave coffee roasters and shops looking for quality wholesale partners</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-amber-600 flex-shrink-0 flex items-center justify-center mt-1">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Corporate Offices</h3>
+              <p class="text-slate-300">Companies building premium break rooms and looking for exceptional office coffee programs</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-amber-600 flex-shrink-0 flex items-center justify-center mt-1">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Boutique Hotels & Restaurants</h3>
+              <p class="text-slate-300">Hospitality venues committed to quality coffee as part of their guest experience</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-amber-600 flex-shrink-0 flex items-center justify-center mt-1">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Specialty Retailers</h3>
+              <p class="text-slate-300">Boutique retail shops adding coffee as a complementary product line</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You Get -->
+    <section id="what-you-get" class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white text-center mb-16">What You Get</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-amber-600 transition">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">Commission on Every Order</h3>
+            <p class="text-slate-300">Earn 12-15%+ commission on every order placed by your accounts. Recurring revenue builds month after month as your book grows.</p>
+          </div>
+          
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-amber-600 transition">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">Zero Inventory Risk</h3>
+            <p class="text-slate-300">No capital tied up in coffee. No warehouse. No waste. You focus on sales while we handle all logistics and fulfillment.</p>
+          </div>
+          
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-amber-600 transition">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">Marketing & Sales Support</h3>
+            <p class="text-slate-300">We provide product samples, tasting notes, origin stories, and promotional materials to help you pitch accounts effectively.</p>
+          </div>
+          
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-amber-600 transition">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">Dedicated Account Support</h3>
+            <p class="text-slate-300">Your accounts get priority support. We manage customer service, quality issues, and reorders so you can focus on growing your book.</p>
+          </div>
+          
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-amber-600 transition">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">Flexible Ordering & Logistics</h3>
+            <p class="text-slate-300">No minimum orders. No long-term contracts. Flexible shipping and custom packaging options to meet your accounts' needs.</p>
+          </div>
+          
+          <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-amber-600 transition">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">Partner Relationship</h3>
+            <p class="text-slate-300">We treat you as a true partner. Transparent communication, regular check-ins, and opportunities to grow your commission rates based on performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-slate-800/50">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white text-center mb-16">Frequently Asked Questions</h2>
+        
+        <div class="space-y-6">
+          {faqs.map((faq, index) => (
+            <details key={index} class="group bg-slate-700/50 border border-slate-600 rounded-lg hover:border-amber-600 transition cursor-pointer">
+              <summary class="flex items-center justify-between p-6 font-semibold text-white hover:text-amber-400 transition">
+                <span class="text-lg">{faq.question}</span>
+                <svg class="w-5 h-5 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-slate-300 border-t border-slate-600">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-6">Ready to Build Your Coffee Wholesale Book?</h2>
+        
+        <p class="text-lg text-slate-300 mb-8">
+          Let's talk about how you can start earning commission-based revenue with In The Black Coffee Co. No inventory. No risk. Just pure commission growth.
+        </p>
+        
+        <a 
+          href="mailto:bill@intheblack.coffee?subject=Commission-Only%20Coffee%20Sales%20Opportunity&body=Hi%20Bill,%0A%0AI'm%20interested%20in%20the%20commission-only%20coffee%20sales%20opportunity%20with%20In%20The%20Black%20Coffee%20Co.%0A%0APlease%20tell%20me%20more%20about%20getting%20started.%0A%0AThanks"
+          class="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded transition duration-300 transform hover:scale-105"
+        >
+          Email Bill to Get Started
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes commission-only coffee sales different from traditional wholesale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Commission-only means you keep more of what you sell. Instead of markup-based pricing, you earn a direct commission on every account you bring to us. We handle roasting, quality control, and fulfillment—you focus on building relationships and growing your book."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What commission rates does In The Black Coffee Co. offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer competitive, tiered commission structures based on your volume and account quality. New partners typically start at 12-15% commission, with opportunities to increase based on performance. We're transparent about rates and happy to discuss specifics during your consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes an ideal roaster or coffee buyer for your program?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our ideal partners are specialty coffee enthusiasts with existing networks in hospitality, offices, or retail. You need genuine passion for coffee quality and the ability to build lasting relationships. Geography doesn't matter—we ship nationwide and work with remote partners."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of accounts do you typically work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We work with independent coffee shops, offices, corporate accounts, boutique hotels, and specialty retail. We focus on quality-conscious buyers who value single-origin, ethically sourced coffee. Our sweet spot is accounts ordering 5-25 lbs monthly, though we're flexible."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://intheblack.coffee/commission-only-coffee-sales/#service",
+        "name": "Commission-Only Coffee Sales",
+        "description": "Build a lucrative wholesale coffee business earning 12-15%+ commission on every account you bring. Zero inventory cost. Full support from roasting to fulfillment.",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://intheblack.coffee/#organization",
+          "name": "In The Black Coffee Co.",
+          "url": "https://intheblack.coffee",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-phone",
+            "contactType": "Sales"
+          }
+        },
+        "areaServed": "US",
+        "serviceType": "B2B Sales Program"
+      }
+    ]
+  }
+  </script>
+</Layout>
