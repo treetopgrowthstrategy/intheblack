@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Source Specialty Coffee: Step-by-Step for Roasters</title>
+<meta name="description" content="How to source specialty coffee for your roastery. The step-by-step process from identifying needs through locking supply — cupping, importers, brokers, and direct trade.">
+<link rel="canonical" href="https://intheblack.coffee/how-to-source-specialty-coffee">
+<meta property="og:title" content="How to Source Specialty Coffee: Step-by-Step for Roasters">
+<meta property="og:description" content="How to source specialty coffee for your roastery. The step-by-step process from identifying needs through locking supply — cupping, importers, brokers, and direct trade.">
+<meta property="og:url" content="https://intheblack.coffee/how-to-source-specialty-coffee">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/how-to-source-specialty-coffee",
+          "url": "https://intheblack.coffee/how-to-source-specialty-coffee",
+          "name": "How to Source Specialty Coffee: Step-by-Step for Roasters",
+          "description": "How to source specialty coffee for your roastery. The step-by-step process from identifying needs through locking supply — cupping, importers, brokers, and direct trade.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"What is the coffee sourcing process?","acceptedAnswer":{"@type":"Answer","text":"Seven steps: (1) define your needs (origin, profile, volume), (2) identify supply sources (importers, brokers, platforms), (3) request and receive cupping samples, (4) roast and cup to SCA protocol, (5) evaluate against your sourcing brief, (6) lock supply with a purchase order, (7) receive, verify, and store the green coffee."}},{"@type":"Question","name":"How long does it take to source specialty coffee?","acceptedAnswer":{"@type":"Answer","text":"From first outreach to green in your warehouse: typically 4–12 weeks. Sample procurement takes 1–2 weeks. Cupping, evaluation, and order placement takes 1–2 weeks. Ocean freight from origin takes 4–8 weeks. Air freight is possible for smaller orders in 1–2 weeks at premium cost. US warehouse orders from existing importer stock arrive in 1–5 days."}},{"@type":"Question","name":"What is a cupping sample?","acceptedAnswer":{"@type":"Answer","text":"A 1kg (approximately) sample of green coffee sent by an importer or broker for a roaster to evaluate before purchasing. Most specialty importers offer cupping samples at no charge for commercial buyers who have an established or potential purchasing relationship."}},{"@type":"Question","name":"How do I store green coffee?","acceptedAnswer":{"@type":"Answer","text":"Store green coffee in a cool (below 65°F), dry (50–60% humidity) environment. Keep bags off the floor on pallets. Maintain GrainPro bag integrity — reseal any opened bags. Avoid storage near strong odors (spices, chemicals) as green coffee absorbs aromatics. Properly stored specialty green holds quality for 12–18 months."}},{"@type":"Question","name":"What do I look for when cupping green coffee?","acceptedAnswer":{"@type":"Answer","text":"Primary evaluation criteria: (1) fragrance/aroma — quality and intensity before water addition, (2) flavor — the complete taste impression after addition, (3) aftertaste — duration and quality, (4) acidity — intensity and quality (bright, citric, malic), (5) body — heaviness and texture, (6) balance — how all elements work together, (7) uniformity, clean cup, and sweetness. Score on SCA's 100-point protocol."}},{"@type":"Question","name":"What makes a good green coffee lot for a specialty roastery?","acceptedAnswer":{"@type":"Answer","text":"In priority order: (1) a cup that meets your score floor and profile target (you'll serve this to your customers), (2) physical quality — low defects, good moisture, consistent screen size, (3) available volume that matches your needs without forcing over-buying, (4) pricing that allows your retail margin target, (5) importer reliability for reorder."}},{"@type":"Question","name":"How do I find specialty coffee from Guatemala?","acceptedAnswer":{"@type":"Answer","text":"Contact specialty importers who carry Guatemalan lots (Cafe Imports, Royal Coffee, Atlas, Intelligentsia). Attend SCA Expo or World of Coffee to cup at importer tables. Or contact In The Black Coffee Co. — we represent El Quetzal Coffee Co. Guatemala and can provide direct access to SHG, Yellow Catuai, Geisha, Java, and Anaerobic Java lots."}},{"@type":"Question","name":"Is direct trade better than buying through an importer?","acceptedAnswer":{"@type":"Answer","text":"Direct trade has a higher quality ceiling but requires significant relationship investment (farm visits, advance payment, custom contracts). Most roasters allocate 70–80% of green spend to importer relationships (reliability, credit terms, volume) and 10–20% to direct relationships (signature lots, high-ceiling quality). Neither is universally better — the right blend depends on your program size and resources."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee/"},{"@type":"ListItem","position":2,"name":"How to Source Specialty Coffee","item":"https://intheblack.coffee/how-to-source-specialty-coffee"}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Step-by-Step Guide · Sourcing Process</div>
+    <h1>How to source specialty coffee: <em>the step-by-step process.</em></h1>
+    <p class="lede">Sourcing specialty coffee well is a process, not an event. Here's the end-to-end workflow — from defining what you need through locking supply — that specialty roasters use to build consistent, high-quality green coffee programs.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee/">Home</a><span class="breadcrumb-sep">›</span><span>How to Source Specialty Coffee</span></nav>
+
+  
+<div class="answer-box">
+<strong>In The Black Coffee Co.</strong> supports specialty roasters at every step of this process for Central American origins. If you're evaluating Guatemala or Honduras supply, we offer sample sets, cupping support, and direct access to El Quetzal Coffee Co.'s premium lots. Commission-only — no cost to you until you buy. <a href="https://intheblack.coffee/contact">Start the conversation.</a>
+</div>
+
+<div class="section-label">Step 1</div>
+<h2>Define your needs</h2>
+
+<p>Before reaching out to any importer or broker, answer four questions in writing:</p>
+<ul>
+<li>What origin or origins are you trying to source?</li>
+<li>What profile are you targeting (bright/clean, full/chocolatey, process-forward)?</li>
+<li>What score range do you need?</li>
+<li>How much volume do you need, and over what period?</li>
+</ul>
+<p>Written answers become your sourcing brief. Share it with every importer and broker you contact.</p>
+
+<div class="section-label">Step 2</div>
+<h2>Identify supply sources</h2>
+
+<p>For each origin on your target list, identify 2–3 potential supply sources:</p>
+<ul>
+<li><strong>Direct importers</strong> — call or email 3–4 importers who carry your target origin.</li>
+<li><strong>Brokers</strong> — for origins where your importer relationships are thin, a broker like In The Black Coffee Co. can open doors faster.</li>
+<li><strong>Online platforms</strong> — Algrano, Coffeehunt, and Sucafina offer direct sourcing from exporters.</li>
+</ul>
+
+<div class="section-label">Step 3</div>
+<h2>Request and receive samples</h2>
+
+<p>Contact each source with your sourcing brief and request cupping samples. Specify the lot details you're interested in (origin, processing, score range). Most importers will ship cupping samples (1kg) at no charge for commercial buyers.</p>
+
+<p>Track: which source offered which lot, at what price, what volume is available, and the importer's own cupping score for comparison.</p>
+
+<div class="section-label">Step 4</div>
+<h2>Roast and cup</h2>
+
+<p>Roast samples light (full city, Agtron 60–65) within 24 hours before cupping. Rest 24 hours after roasting. Cup to SCA protocol. Score independently. Document: origin, processing, offered score, your score, tasting notes, physical green observations.</p>
+
+<p>Cup blind where possible — remove lot labels until after scoring to prevent relationship bias.</p>
+
+<div class="section-label">Step 5</div>
+<h2>Evaluate and select</h2>
+
+<p>Compare your cupped samples against your sourcing brief. Prioritize: (1) cups that meet your score floor and profile target, (2) available volume that matches your needs, (3) pricing that fits your cost structure, (4) importer relationship quality for reorder reliability.</p>
+
+<div class="section-label">Step 6</div>
+<h2>Lock supply</h2>
+
+<p>Place your order. Be specific: lot name, volume (number of bags), expected delivery, payment terms. Confirm warehouse location and lead time. For anchor origins where you'll reorder, confirm whether this lot has additional volume and at what price.</p>
+
+<p>Green coffee moves. Once you've identified the lot you want, lock it. Follow-up requests for the same lot two weeks later often find it's gone to another buyer.</p>
+
+<div class="section-label">Step 7</div>
+<h2>Receive, verify, store</h2>
+
+<p>Inspect upon receipt: verify bag count, inspect for damage, check bag seals (GrainPro bags should be intact), confirm moisture level against documentation. Store in a cool, dry environment (65°F or lower, 50–60% humidity). Palletized, off the floor, away from strong odors.</p>
+
+<p>Related: <a href="https://intheblack.coffee/coffee-sourcing-guide">Coffee sourcing strategy</a> · <a href="https://intheblack.coffee/buy-green-coffee">How to buy green coffee</a> · <a href="https://intheblack.coffee/wholesale-coffee-guide">Full wholesale guide</a></p>
+
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">What is the coffee sourcing process?</div>
+          <div class="faq-a">Seven steps: (1) define your needs (origin, profile, volume), (2) identify supply sources (importers, brokers, platforms), (3) request and receive cupping samples, (4) roast and cup to SCA protocol, (5) evaluate against your sourcing brief, (6) lock supply with a purchase order, (7) receive, verify, and store the green coffee.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How long does it take to source specialty coffee?</div>
+          <div class="faq-a">From first outreach to green in your warehouse: typically 4–12 weeks. Sample procurement takes 1–2 weeks. Cupping, evaluation, and order placement takes 1–2 weeks. Ocean freight from origin takes 4–8 weeks. Air freight is possible for smaller orders in 1–2 weeks at premium cost. US warehouse orders from existing importer stock arrive in 1–5 days.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is a cupping sample?</div>
+          <div class="faq-a">A 1kg (approximately) sample of green coffee sent by an importer or broker for a roaster to evaluate before purchasing. Most specialty importers offer cupping samples at no charge for commercial buyers who have an established or potential purchasing relationship.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I store green coffee?</div>
+          <div class="faq-a">Store green coffee in a cool (below 65°F), dry (50–60% humidity) environment. Keep bags off the floor on pallets. Maintain GrainPro bag integrity — reseal any opened bags. Avoid storage near strong odors (spices, chemicals) as green coffee absorbs aromatics. Properly stored specialty green holds quality for 12–18 months.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What do I look for when cupping green coffee?</div>
+          <div class="faq-a">Primary evaluation criteria: (1) fragrance/aroma — quality and intensity before water addition, (2) flavor — the complete taste impression after addition, (3) aftertaste — duration and quality, (4) acidity — intensity and quality (bright, citric, malic), (5) body — heaviness and texture, (6) balance — how all elements work together, (7) uniformity, clean cup, and sweetness. Score on SCA's 100-point protocol.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What makes a good green coffee lot for a specialty roastery?</div>
+          <div class="faq-a">In priority order: (1) a cup that meets your score floor and profile target (you'll serve this to your customers), (2) physical quality — low defects, good moisture, consistent screen size, (3) available volume that matches your needs without forcing over-buying, (4) pricing that allows your retail margin target, (5) importer reliability for reorder.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I find specialty coffee from Guatemala?</div>
+          <div class="faq-a">Contact specialty importers who carry Guatemalan lots (Cafe Imports, Royal Coffee, Atlas, Intelligentsia). Attend SCA Expo or World of Coffee to cup at importer tables. Or contact In The Black Coffee Co. — we represent El Quetzal Coffee Co. Guatemala and can provide direct access to SHG, Yellow Catuai, Geisha, Java, and Anaerobic Java lots.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is direct trade better than buying through an importer?</div>
+          <div class="faq-a">Direct trade has a higher quality ceiling but requires significant relationship investment (farm visits, advance payment, custom contracts). Most roasters allocate 70–80% of green spend to importer relationships (reliability, credit terms, volume) and 10–20% to direct relationships (signature lots, high-ceiling quality). Neither is universally better — the right blend depends on your program size and resources.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

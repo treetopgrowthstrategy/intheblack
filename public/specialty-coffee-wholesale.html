@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Specialty Coffee Wholesale: How the Trade Works in 2026</title>
+<meta name="description" content="How specialty coffee wholesale works for roasters. Importers, pricing, quality grades, traceability, trade terms, and building a specialty supply chain.">
+<link rel="canonical" href="https://intheblack.coffee/specialty-coffee-wholesale">
+<meta property="og:title" content="Specialty Coffee Wholesale: How the Trade Works in 2026">
+<meta property="og:description" content="How specialty coffee wholesale works for roasters. Importers, pricing, quality grades, traceability, trade terms, and building a specialty supply chain.">
+<meta property="og:url" content="https://intheblack.coffee/specialty-coffee-wholesale">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/specialty-coffee-wholesale",
+          "url": "https://intheblack.coffee/specialty-coffee-wholesale",
+          "name": "Specialty Coffee Wholesale: How the Trade Works in 2026",
+          "description": "How specialty coffee wholesale works for roasters. Importers, pricing, quality grades, traceability, trade terms, and building a specialty supply chain.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"What is specialty coffee wholesale?","acceptedAnswer":{"@type":"Answer","text":"Specialty wholesale coffee is green or roasted coffee meeting SCA specialty grade (80+ score, zero category-1 defects) traded with farm-level traceability. It commands a price differential above commodity grade that reflects quality, origin transparency, and often direct or fair trade practices. It's traded through specialty importers, brokers, and direct relationships rather than commodity exchanges."}},{"@type":"Question","name":"How is specialty coffee wholesale different from commodity coffee?","acceptedAnswer":{"@type":"Answer","text":"Commodity coffee trades on price and grade with minimal traceability. Specialty trades on quality score, farm provenance, variety, processing method, and story. Specialty pricing includes a differential above the C market to compensate for quality and traceability. Specialty wholesale relationships are longer-term and partnership-oriented; commodity relationships are typically transactional."}},{"@type":"Question","name":"How do specialty coffee importers work?","acceptedAnswer":{"@type":"Answer","text":"Importers source green coffee from producing countries, handle logistics and customs clearance, warehouse in consuming markets, and sell to roasters. They provide quality documentation (cupping scores, farm info, processing notes), offer credit terms, and maintain supply chain relationships that individual roasters can't replicate. Most specialty roasters work with 2–4 importers for different origins."}},{"@type":"Question","name":"What is a coffee broker?","acceptedAnswer":{"@type":"Answer","text":"A coffee broker or agency intermediates between importers/exporters and roasters, typically on a commission basis. Unlike importers, brokers don't take physical possession of the coffee. They match buyers with available lots based on quality requirements and origin preferences. In The Black Coffee Co. operates as a commission-only specialty coffee agency representing specific origins to specialty roasters."}},{"@type":"Question","name":"What are typical wholesale coffee minimum order quantities?","acceptedAnswer":{"@type":"Answer","text":"Importers typically have 1–5 bag minimums for established relationships (60kg bags = 132 lbs). New accounts may have higher minimums. Some importers offer spot samples in 1kg quantities before larger orders. In The Black Coffee Co. works with roasters without fixed minimums to start — ideal for small and mid-size roasters building their El Quetzal program."}},{"@type":"Question","name":"How do I find specialty coffee wholesale suppliers?","acceptedAnswer":{"@type":"Answer","text":"Primary channels: (1) SCA Expo and World of Coffee importer cupping tables; (2) broker and agency introductions; (3) online platforms (Algrano, Sucafina) for direct sourcing; (4) referrals from other specialty roasters (the specialty community is collaborative). In The Black Coffee Co. offers introductions to Guatemalan specialty supply for roasters looking to build or diversify their Central American sourcing."}},{"@type":"Question","name":"What is the difference between green coffee and roasted coffee wholesale?","acceptedAnswer":{"@type":"Answer","text":"Green coffee wholesale is the pre-roast supply chain — importers and brokers selling raw green beans to roasters in bags. Roasted coffee wholesale is roasters selling finished roasted coffee to cafes and retail accounts. Most specialty roasters buy green and sell roasted. Some wholesale green coffee traders also deal roasted, but they're separate market segments."}},{"@type":"Question","name":"How does payment work for wholesale green coffee?","acceptedAnswer":{"@type":"Answer","text":"New buyers typically start with prepayment or short terms (7–14 days). Established accounts receive 30–60 day payment terms from importers. Some importers offer financing or consignment arrangements for high-volume buyers. All green coffee contracts specify payment terms, delivery terms (usually FOB or DDP US warehouse), and quality acceptance terms."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee/"},{"@type":"ListItem","position":2,"name":"Specialty Coffee Wholesale","item":"https://intheblack.coffee/specialty-coffee-wholesale"}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Industry Guide · Specialty Wholesale</div>
+    <h1>Specialty coffee wholesale: <em>how the trade actually works.</em></h1>
+    <p class="lede">Specialty coffee wholesale is not commodity coffee wholesale. The supply chain, pricing mechanics, quality standards, and relationships are different — and understanding those differences is what separates a roaster with a sustainable supply chain from one constantly scrambling.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee/">Home</a><span class="breadcrumb-sep">›</span><span>Specialty Coffee Wholesale</span></nav>
+
+  
+<div class="answer-box">
+<strong>In The Black Coffee Co.</strong> is a commission-only specialty wholesale agency. We connect specialty roasters with verified-origin green coffee from Central America and beyond — including El Quetzal Guatemala. No minimums to start. We work on commission from the sale, so we're motivated when you are. <a href="https://intheblack.coffee/contact">Let's talk about your supply chain.</a>
+</div>
+
+<div class="section-label">Commodity vs Specialty</div>
+<h2>What makes it specialty wholesale</h2>
+
+<p>Commodity coffee wholesale is traded by price: standard grades, futures contracts, blending for consistency. Specialty wholesale trades on quality, traceability, and story:</p>
+
+<table class="compare-table">
+<thead>
+<tr><th>Dimension</th><th>Commodity Wholesale</th><th>Specialty Wholesale</th></tr>
+</thead>
+<tbody>
+<tr><td>Quality standard</td><td>Commercial grade, defect-based</td><td>SCA 80+ score, zero cat-1 defects</td></tr>
+<tr><td>Pricing</td><td>C market (exchange-traded)</td><td>C market + quality differential</td></tr>
+<tr><td>Traceability</td><td>Country/blend grade</td><td>Farm/cooperative/lot level</td></tr>
+<tr><td>Relationships</td><td>Transactional</td><td>Long-term, partnership-oriented</td></tr>
+<tr><td>Variety</td><td>Standard commercial varieties</td><td>Heirloom, specialty varieties (Geisha, Catuai, Kenya SL28)</td></tr>
+<tr><td>Processing</td><td>Wet (washed) dominant</td><td>Washed, natural, honey, anaerobic, carbonic maceration</td></tr>
+</tbody>
+</table>
+
+<div class="section-label">The Supply Chain</div>
+<h2>How specialty coffee gets to your roastery</h2>
+
+<p>A specialty green lot's journey:</p>
+
+<ol>
+<li><strong>Farm:</strong> Cherries are harvested selectively (usually hand-picked for specialty). Processing occurs at the farm or at a centralized wet mill. The farm's altitude, variety selection, and processing method determine quality ceiling.</li>
+<li><strong>Exporter:</strong> An in-country exporter (sometimes the farm itself, often a specialized exporter like El Quetzal Coffee Co.) prepares the lot for export — milling, sorting, quality control, documentation, bagging (60kg or 69kg jute/GrainPro bags).</li>
+<li><strong>Importer:</strong> The importer handles logistics (ocean freight, customs clearance, fumigation if required, US warehouse receipt), provides credit terms, and offers the lot to roaster buyers through their sales team or broker network.</li>
+<li><strong>Broker/Agency:</strong> Optional intermediary who markets specific lots to roasters on behalf of importers or exporters. Commission-based; doesn't take physical possession of the coffee.</li>
+<li><strong>Roaster:</strong> Receives the green coffee, roasts to profile, and sells to wholesale cafe accounts or direct-to-consumer channels.</li>
+</ol>
+
+<div class="section-label">Quality and Grading</div>
+<h2>How specialty coffee is graded</h2>
+
+<p>The SCA (Specialty Coffee Association) cupping protocol grades coffee on a 100-point scale across 10 attributes, each scored 6–10. Total possible points: 100. Specialty coffee requires 80+.</p>
+
+<ul>
+<li><strong>80–84:</strong> Specialty. Good quality, regional character, suitable for house blends and volume single origins.</li>
+<li><strong>85–89:</strong> Excellent. Distinctive cup, clear origin character. Strong candidates for featured single origins.</li>
+<li><strong>90+:</strong> Exceptional. Extraordinary complexity and clarity. Competition-grade. Very limited supply and premium pricing.</li>
+</ul>
+
+<p>Physical green grading: Screen size (larger generally indicates altitude and density), moisture content (10–12% optimal), defect count (specialty requires zero Category 1 defects, max 5 Category 2 per 300g sample), and water activity.</p>
+
+<div class="section-label">Relationships</div>
+<h2>Building importer and farm relationships</h2>
+
+<p>In specialty wholesale, relationship quality determines supply quality. The roasters who get first access to the best lots, locked pricing on their favorites, and advance notification of exceptional micro-lots are the ones who have invested in genuine partnerships with their importers.</p>
+
+<p>Relationship-building practices that work:</p>
+<ul>
+<li>Annual visits to importer offices and cupping events</li>
+<li>Consistently paying invoices on time (a basic commercial signal of reliability)</li>
+<li>Providing specific, useful feedback after cupping samples</li>
+<li>Committing volume when you find a lot you love, not hedging on order size</li>
+<li>Origin trips when budget and timeline allow — direct farm visits build relationships that persist</li>
+</ul>
+
+<p>If you're building your importer network and want access to verified Guatemalan origins without starting the relationship from scratch, <a href="https://intheblack.coffee/contact">In The Black Coffee Co.</a> can be the bridge.</p>
+
+<p>Related: <a href="https://intheblack.coffee/wholesale-coffee-guide">Full wholesale guide</a> · <a href="https://intheblack.coffee/buy-green-coffee">How to buy green coffee</a></p>
+
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">What is specialty coffee wholesale?</div>
+          <div class="faq-a">Specialty wholesale coffee is green or roasted coffee meeting SCA specialty grade (80+ score, zero category-1 defects) traded with farm-level traceability. It commands a price differential above commodity grade that reflects quality, origin transparency, and often direct or fair trade practices. It's traded through specialty importers, brokers, and direct relationships rather than commodity exchanges.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How is specialty coffee wholesale different from commodity coffee?</div>
+          <div class="faq-a">Commodity coffee trades on price and grade with minimal traceability. Specialty trades on quality score, farm provenance, variety, processing method, and story. Specialty pricing includes a differential above the C market to compensate for quality and traceability. Specialty wholesale relationships are longer-term and partnership-oriented; commodity relationships are typically transactional.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do specialty coffee importers work?</div>
+          <div class="faq-a">Importers source green coffee from producing countries, handle logistics and customs clearance, warehouse in consuming markets, and sell to roasters. They provide quality documentation (cupping scores, farm info, processing notes), offer credit terms, and maintain supply chain relationships that individual roasters can't replicate. Most specialty roasters work with 2–4 importers for different origins.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is a coffee broker?</div>
+          <div class="faq-a">A coffee broker or agency intermediates between importers/exporters and roasters, typically on a commission basis. Unlike importers, brokers don't take physical possession of the coffee. They match buyers with available lots based on quality requirements and origin preferences. In The Black Coffee Co. operates as a commission-only specialty coffee agency representing specific origins to specialty roasters.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What are typical wholesale coffee minimum order quantities?</div>
+          <div class="faq-a">Importers typically have 1–5 bag minimums for established relationships (60kg bags = 132 lbs). New accounts may have higher minimums. Some importers offer spot samples in 1kg quantities before larger orders. In The Black Coffee Co. works with roasters without fixed minimums to start — ideal for small and mid-size roasters building their El Quetzal program.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I find specialty coffee wholesale suppliers?</div>
+          <div class="faq-a">Primary channels: (1) SCA Expo and World of Coffee importer cupping tables; (2) broker and agency introductions; (3) online platforms (Algrano, Sucafina) for direct sourcing; (4) referrals from other specialty roasters (the specialty community is collaborative). In The Black Coffee Co. offers introductions to Guatemalan specialty supply for roasters looking to build or diversify their Central American sourcing.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is the difference between green coffee and roasted coffee wholesale?</div>
+          <div class="faq-a">Green coffee wholesale is the pre-roast supply chain — importers and brokers selling raw green beans to roasters in bags. Roasted coffee wholesale is roasters selling finished roasted coffee to cafes and retail accounts. Most specialty roasters buy green and sell roasted. Some wholesale green coffee traders also deal roasted, but they're separate market segments.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How does payment work for wholesale green coffee?</div>
+          <div class="faq-a">New buyers typically start with prepayment or short terms (7–14 days). Established accounts receive 30–60 day payment terms from importers. Some importers offer financing or consignment arrangements for high-volume buyers. All green coffee contracts specify payment terms, delivery terms (usually FOB or DDP US warehouse), and quality acceptance terms.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

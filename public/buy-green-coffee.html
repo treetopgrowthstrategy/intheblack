@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Buy Green Coffee: A Roaster's Practical Guide</title>
+<meta name="description" content="How to buy green coffee for your roastery. Finding importers, evaluating lots, cupping protocol, pricing negotiation, and building supplier relationships that last.">
+<link rel="canonical" href="https://intheblack.coffee/buy-green-coffee">
+<meta property="og:title" content="How to Buy Green Coffee: A Roaster's Practical Guide">
+<meta property="og:description" content="How to buy green coffee for your roastery. Finding importers, evaluating lots, cupping protocol, pricing negotiation, and building supplier relationships that last.">
+<meta property="og:url" content="https://intheblack.coffee/buy-green-coffee">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/buy-green-coffee",
+          "url": "https://intheblack.coffee/buy-green-coffee",
+          "name": "How to Buy Green Coffee: A Roaster's Practical Guide",
+          "description": "How to buy green coffee for your roastery. Finding importers, evaluating lots, cupping protocol, pricing negotiation, and building supplier relationships that last.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"Where can I buy green coffee for my roastery?","acceptedAnswer":{"@type":"Answer","text":"Primary channels: (1) specialty importers (Cafe Imports, Royal Coffee, Trabocca, Atlas) — your primary supply chain partners for anchor origins; (2) brokers and agencies like In The Black Coffee Co. for specific origins; (3) trade shows where importers present cupping tables; (4) direct farm and cooperative relationships for signature lots. Most roasters build 2–4 importer relationships and supplement through brokers and direct for specialized lots."}},{"@type":"Question","name":"How do I evaluate green coffee quality?","acceptedAnswer":{"@type":"Answer","text":"Request a sample, roast light (Agtron 60–65, cupping roast), cup to SCA protocol (8.25g/150ml, 93°C, evaluate fragrance through sweetness), score on 100-point scale. Also evaluate physical green: screen size, defect count (specialty requires zero cat-1 defects), moisture content (10–12%), and bean uniformity. Compare your score to the importer's offered score."}},{"@type":"Question","name":"What does green coffee cost?","acceptedAnswer":{"@type":"Answer","text":"In 2024–2026, specialty green coffee ranges from approximately $3.50–$8.00+/lb landed (US warehouse) depending on origin, score, and processing. Higher C prices in this period have elevated the baseline. Guatemalan SHG: roughly $3.50–$5.00/lb. Ethiopian naturals: $5.00–$8.00/lb. Geisha: $8.00–$20.00+/lb depending on score and farm."}},{"@type":"Question","name":"What is SHG coffee?","acceptedAnswer":{"@type":"Answer","text":"SHG stands for Strictly Hard Bean (or Strictly High Grown) — a grade classification in Central American coffees (particularly Guatemala and Honduras) indicating coffee grown above 4,500 feet. At high altitude, beans develop more slowly, producing denser beans with higher acidity, complexity, and cupping potential. SHG is the premium grade; HB (Hard Bean) at 3,500–4,500 feet is the next tier."}},{"@type":"Question","name":"What is anaerobic coffee?","acceptedAnswer":{"@type":"Answer","text":"Anaerobic processing is a specialty fermentation method where coffee cherries are sealed in oxygen-free tanks for a controlled fermentation period (typically 24–96 hours). The anaerobic environment produces distinct flavor compounds — often described as wine-like, fermented fruit, or funky complexity. Popular with adventurous specialty consumers; demanding and divisive in mass market. In The Black's Anaerobic Java from El Quetzal is a notable example."}},{"@type":"Question","name":"What is a Geisha coffee variety?","acceptedAnswer":{"@type":"Answer","text":"Geisha (also Gesha) is an Ethiopian-origin arabica variety that produces exceptionally distinctive cup profiles — floral, bergamot, jasmine, and tea-like characteristics at high scores. First popularized by Hacienda La Esmeralda in Panama in 2004, Geisha is now grown in several Central and South American origins including Guatemala. Limited supply and exceptional cup quality command premium pricing."}},{"@type":"Question","name":"How do I buy coffee directly from Guatemala?","acceptedAnswer":{"@type":"Answer","text":"Direct from Guatemalan farms involves establishing a relationship with a producer or exporter, negotiating terms, and handling logistics (export documentation, freight, import duties). For most specialty roasters, working through a broker or importer with established Guatemalan supply — like In The Black Coffee Co. representing El Quetzal — is more practical than building a direct relationship from scratch."}},{"@type":"Question","name":"What green coffee does In The Black Coffee Co. sell?","acceptedAnswer":{"@type":"Answer","text":"In The Black Coffee Co. represents El Quetzal Coffee Co. from Guatemala — a specialty exporter with full traceability. Available lots include SHG, Yellow Catuai, Geisha, Java, and Anaerobic Java. Commission-only model; no minimum order to start. <a href='https://intheblack.coffee/contact'>Contact us to request samples</a>."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee/"},{"@type":"ListItem","position":2,"name":"How to Buy Green Coffee","item":"https://intheblack.coffee/buy-green-coffee"}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Practical Guide · Buying Green Coffee</div>
+    <h1>How to buy green coffee: <em>find it, cup it, build the relationship.</em></h1>
+    <p class="lede">Buying green coffee well is a skill that separates good roasters from great ones. It's not just about what you buy — it's about how you evaluate, who you build relationships with, and how you secure supply for the coffees your customers love year after year.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee/">Home</a><span class="breadcrumb-sep">›</span><span>How to Buy Green Coffee</span></nav>
+
+  
+<div class="answer-box">
+<strong>Looking for green coffee?</strong> In The Black Coffee Co. represents specialty green lots from verified Central American and other origins, including El Quetzal Guatemala (Yellow Catuai, Geisha, SHG, Java, Anaerobic Java). Commission-only model — we earn when you buy. <a href="https://intheblack.coffee/contact">Request samples</a> and let's find your next anchor origin.
+</div>
+
+<div class="section-label">Finding Green Coffee</div>
+<h2>Where to source green coffee</h2>
+
+<p>Specialty roasters buy green coffee through several channels, each with different tradeoffs:</p>
+
+<h3>Specialty importers (most roasters' primary channel)</h3>
+<p>Importers source, quality-control, warehouse, and offer credit terms on green coffee. Building relationships with 2–4 importers who carry your target origins gives you reliable access, priority on top lots, and a commercial partner who knows your quality requirements. Major US specialty importers: Cafe Imports, Falcon Coffees, Trabocca, Algrano, Royal Coffee, Atlas Coffee Importers, Mercanta.</p>
+
+<h3>Specialty brokers and agencies</h3>
+<p>Commission-based representatives like In The Black Coffee Co. who match roasters with specific origins or importer portfolios. Particularly useful for roasters trying new origins, accessing Central and South American lots, or working with origins where their importer relationships are thin.</p>
+
+<h3>Trade shows and cupping events</h3>
+<p>SCA Expo, World of Coffee, and regional cupping events let you cup from multiple importers in one place. Efficient for discovering new origins and building importer relationships. The importer cupping table is where most meaningful commercial relationships start.</p>
+
+<h3>Direct from farms and cooperatives</h3>
+<p>Appropriate for roasters who are ready to invest in a direct relationship (farm visits, custom contracts, advance payments). High commitment, high ceiling quality. Best for signature lots rather than volume anchors.</p>
+
+<div class="section-label">Evaluating Lots</div>
+<h2>How to cup and buy green coffee</h2>
+
+<p>Every green purchase should begin with a sample cup. The evaluation process:</p>
+
+<ol>
+<li><strong>Request the sample.</strong> Most importers will send cupping samples at no charge for commercial buyers. Be specific about what you're looking for (processing method, score range, intended application).</li>
+<li><strong>Roast light for cupping.</strong> A full city to light city roast (Agtron 60–65) preserves origin character. Roast the sample within 24 hours before cupping to let CO2 off-gas.</li>
+<li><strong>Cup to SCA protocol.</strong> Grind at a medium-coarse setting, dose at ~8.25g per 150ml water (1:18 ratio), use 93°C water, crust at 4 minutes, evaluate fragrance, aroma, flavor, aftertaste, acidity, body, balance, uniformity, clean cup, and sweetness.</li>
+<li><strong>Score against your standards.</strong> Document your score and notes. Compare against the importer's offered score — score inflation of 1–3 points is common.</li>
+<li><strong>Evaluate physical green.</strong> Inspect the screen size, defect count, moisture content (request moisture data from the importer), and bean uniformity alongside the cup evaluation.</li>
+</ol>
+
+<div class="section-label">What to Ask Importers</div>
+<h2>Due diligence before you buy</h2>
+
+<p>Before committing to a green purchase, ask:</p>
+
+<ul>
+<li><strong>Where is the coffee warehoused?</strong> Know the warehouse location and expected lead time for your order to arrive.</li>
+<li><strong>What is the current moisture content?</strong> Should be 10–12%. Higher moisture risks mold and quality degradation in transit and storage.</li>
+<li><strong>What is the harvest year and crop date?</strong> Fresh crop (current or previous year) is best for most specialty applications. Old crop (2+ years) typically shows age-related flavor degradation.</li>
+<li><strong>What is the SCA defect count?</strong> Request the physical green analysis. Specialty grade requires zero category 1 defects.</li>
+<li><strong>What are the payment terms?</strong> Most importers offer 30–60 day terms for established accounts. New buyers typically start with prepayment or shorter terms.</li>
+<li><strong>Is there more available at the same price?</strong> Price-locked availability matters when you want to lock in supply for a season.</li>
+</ul>
+
+<div class="section-label">Guatemala Green Coffee</div>
+<h2>El Quetzal Guatemala — available through In The Black</h2>
+
+<p>In The Black Coffee Co. represents El Quetzal Coffee Co., a Guatemalan specialty exporter producing certified-origin lots with full farm traceability. Available varieties and processing:</p>
+
+<ul>
+<li><strong>SHG (Strictly Hard Bean):</strong> Clean, bright, versatile. Chocolate and stone fruit profile. Excellent anchor espresso or house blend component.</li>
+<li><strong>Yellow Catuai:</strong> Complex, caramel sweetness, smooth body. Excellent single origin or espresso.</li>
+<li><strong>Geisha:</strong> Floral, bergamot, tea-like. Exceptional cup scores. Limited supply. For featured single origin programs.</li>
+<li><strong>Java:</strong> Earthy, full body, low acidity. Distinctive. Growing market interest. Available in standard and anaerobic processed lots.</li>
+<li><strong>Anaerobic Java:</strong> Fermented, wine-like, bold complexity. Demanding drinker coffee — excellent for adventurous programs.</li>
+</ul>
+
+<p>Sample sets available. <a href="https://intheblack.coffee/contact">Contact In The Black Coffee Co.</a> to request samples.</p>
+
+<p>Related: <a href="https://intheblack.coffee/wholesale-coffee-guide">Full wholesale coffee guide</a> · <a href="https://intheblack.coffee/specialty-coffee-wholesale">Specialty coffee wholesale explained</a></p>
+
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">Where can I buy green coffee for my roastery?</div>
+          <div class="faq-a">Primary channels: (1) specialty importers (Cafe Imports, Royal Coffee, Trabocca, Atlas) — your primary supply chain partners for anchor origins; (2) brokers and agencies like In The Black Coffee Co. for specific origins; (3) trade shows where importers present cupping tables; (4) direct farm and cooperative relationships for signature lots. Most roasters build 2–4 importer relationships and supplement through brokers and direct for specialized lots.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I evaluate green coffee quality?</div>
+          <div class="faq-a">Request a sample, roast light (Agtron 60–65, cupping roast), cup to SCA protocol (8.25g/150ml, 93°C, evaluate fragrance through sweetness), score on 100-point scale. Also evaluate physical green: screen size, defect count (specialty requires zero cat-1 defects), moisture content (10–12%), and bean uniformity. Compare your score to the importer's offered score.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What does green coffee cost?</div>
+          <div class="faq-a">In 2024–2026, specialty green coffee ranges from approximately $3.50–$8.00+/lb landed (US warehouse) depending on origin, score, and processing. Higher C prices in this period have elevated the baseline. Guatemalan SHG: roughly $3.50–$5.00/lb. Ethiopian naturals: $5.00–$8.00/lb. Geisha: $8.00–$20.00+/lb depending on score and farm.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is SHG coffee?</div>
+          <div class="faq-a">SHG stands for Strictly Hard Bean (or Strictly High Grown) — a grade classification in Central American coffees (particularly Guatemala and Honduras) indicating coffee grown above 4,500 feet. At high altitude, beans develop more slowly, producing denser beans with higher acidity, complexity, and cupping potential. SHG is the premium grade; HB (Hard Bean) at 3,500–4,500 feet is the next tier.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is anaerobic coffee?</div>
+          <div class="faq-a">Anaerobic processing is a specialty fermentation method where coffee cherries are sealed in oxygen-free tanks for a controlled fermentation period (typically 24–96 hours). The anaerobic environment produces distinct flavor compounds — often described as wine-like, fermented fruit, or funky complexity. Popular with adventurous specialty consumers; demanding and divisive in mass market. In The Black's Anaerobic Java from El Quetzal is a notable example.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is a Geisha coffee variety?</div>
+          <div class="faq-a">Geisha (also Gesha) is an Ethiopian-origin arabica variety that produces exceptionally distinctive cup profiles — floral, bergamot, jasmine, and tea-like characteristics at high scores. First popularized by Hacienda La Esmeralda in Panama in 2004, Geisha is now grown in several Central and South American origins including Guatemala. Limited supply and exceptional cup quality command premium pricing.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I buy coffee directly from Guatemala?</div>
+          <div class="faq-a">Direct from Guatemalan farms involves establishing a relationship with a producer or exporter, negotiating terms, and handling logistics (export documentation, freight, import duties). For most specialty roasters, working through a broker or importer with established Guatemalan supply — like In The Black Coffee Co. representing El Quetzal — is more practical than building a direct relationship from scratch.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What green coffee does In The Black Coffee Co. sell?</div>
+          <div class="faq-a">In The Black Coffee Co. represents El Quetzal Coffee Co. from Guatemala — a specialty exporter with full traceability. Available lots include SHG, Yellow Catuai, Geisha, Java, and Anaerobic Java. Commission-only model; no minimum order to start. <a href='https://intheblack.coffee/contact'>Contact us to request samples</a>.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

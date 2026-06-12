@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Sourcing Guide: How Top Roasters Build Their Supply Chain</title>
+<meta name="description" content="Coffee sourcing guide for specialty roasters. Origin selection, importer relationships, cupping protocols, direct trade, and building a supply chain that wins long-term.">
+<link rel="canonical" href="https://intheblack.coffee/coffee-sourcing-guide">
+<meta property="og:title" content="Coffee Sourcing Guide: How Top Roasters Build Their Supply Chain">
+<meta property="og:description" content="Coffee sourcing guide for specialty roasters. Origin selection, importer relationships, cupping protocols, direct trade, and building a supply chain that wins long-term.">
+<meta property="og:url" content="https://intheblack.coffee/coffee-sourcing-guide">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/coffee-sourcing-guide",
+          "url": "https://intheblack.coffee/coffee-sourcing-guide",
+          "name": "Coffee Sourcing Guide: How Top Roasters Build Their Supply Chain",
+          "description": "Coffee sourcing guide for specialty roasters. Origin selection, importer relationships, cupping protocols, direct trade, and building a supply chain that wins long-term.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"How do I source specialty coffee for my roastery?","acceptedAnswer":{"@type":"Answer","text":"Build 2–4 importer relationships covering your primary origins. Develop a sourcing brief that describes your profile preferences and volume needs. Request and cup samples from multiple importers before every purchasing decision. Attend trade show cupping events. For specific origins (Guatemala, Honduras, Ethiopia), work with brokers who have established relationships with quality-focused exporters."}},{"@type":"Question","name":"What makes a good coffee sourcing strategy?","acceptedAnswer":{"@type":"Answer","text":"Three pillars: (1) clarity on your product brief — what profile, what application, what volume; (2) relationship depth with importers — the best lots flow to trusted buyers; (3) cupping discipline — buy on quality evaluation, not story or relationship alone. The roasters with the most consistent quality programs source systematically, not reactively."}},{"@type":"Question","name":"How do I find quality green coffee importers?","acceptedAnswer":{"@type":"Answer","text":"SCA Expo and World of Coffee are the most efficient cupping table access. Most specialty importers maintain a cupping table at these events where you can taste their current offerings. Online platforms (Algrano, Coffeehunt) provide direct-from-origin access. Broker introductions (like In The Black Coffee Co.) provide warm access to specific origin supply with established relationships already in place."}},{"@type":"Question","name":"What is a coffee sourcing trip?","acceptedAnswer":{"@type":"Answer","text":"An origin visit where a roaster travels to producing countries to meet farmers, cup green lots, and build direct relationships. Effective for roasters who want to develop direct trade relationships, verify the stories behind their coffees, and access micro-lots that aren't available through importer channels. Significant investment; appropriate for 10–15% of green spend."}},{"@type":"Question","name":"How do I cup coffee to evaluate green purchases?","acceptedAnswer":{"@type":"Answer","text":"Request a cupping sample (1kg), roast light (full city, Agtron 60–65), rest for 24 hours. Cup to SCA protocol: 8.25g ground coffee per 150ml 93°C water, evaluate fragrance, aroma, flavor, aftertaste, acidity, body, balance, uniformity, clean cup, and sweetness. Score on 100-point scale. Compare to importer's offered score. Inspect physical green alongside the cup evaluation."}},{"@type":"Question","name":"What is a coffee sourcing brief?","acceptedAnswer":{"@type":"Answer","text":"A written document summarizing your green coffee purchasing criteria: origin preferences, profile targets (bright/clean, full/chocolatey, process-forward), score range, volume requirements, seasonal availability needs, and budget. Sharing a sourcing brief with importers and brokers dramatically improves the quality of sample recommendations you receive."}},{"@type":"Question","name":"How much coffee should I buy at once?","acceptedAnswer":{"@type":"Answer","text":"Most specialty roasters buy in 1–5 bag increments (60–300 lbs) per lot. Anchor origins that you run year-round justify larger orders (5–10+ bags) to lock pricing and supply. Featured single origins that rotate monthly warrant smaller orders (1–2 bags). Green coffee stored properly (cool, dry, sealed) holds quality for 12–18 months."}},{"@type":"Question","name":"What is El Quetzal Coffee?","acceptedAnswer":{"@type":"Answer","text":"El Quetzal Coffee Co. is a Guatemalan specialty coffee exporter offering fully traceable lots from verified origins. In The Black Coffee Co. represents El Quetzal to specialty roasters in the US market. Current offerings include SHG, Yellow Catuai, Geisha, Java, and Anaerobic Java. <a href='https://intheblack.coffee/contact'>Contact In The Black</a> to request samples."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee/"},{"@type":"ListItem","position":2,"name":"Coffee Sourcing Guide","item":"https://intheblack.coffee/coffee-sourcing-guide"}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Strategy Guide · Coffee Sourcing</div>
+    <h1>Coffee sourcing guide: <em>how the best roasters build their supply chain.</em></h1>
+    <p class="lede">Your sourcing strategy is your product strategy. Every cup you serve is downstream of decisions made at the origin, at the cupping table, and in your importer relationships. Here's how specialty roasters build supply chains that deliver consistency, quality, and competitive advantage.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee/">Home</a><span class="breadcrumb-sep">›</span><span>Coffee Sourcing Guide</span></nav>
+
+  
+<div class="answer-box">
+<strong>In The Black Coffee Co.</strong> sources and represents specialty green coffee from Central America, including El Quetzal Guatemala lots (SHG, Yellow Catuai, Geisha, Java, Anaerobic Java). Commission-only wholesale — we earn when you do. <a href="https://intheblack.coffee/contact">Contact us to discuss your sourcing needs.</a>
+</div>
+
+<div class="section-label">Strategy First</div>
+<h2>Before you source: define your product strategy</h2>
+
+<p>Sourcing decisions are product decisions. Before evaluating a lot, answer:</p>
+
+<ul>
+<li><strong>Who are you buying for?</strong> Specialty enthusiasts who seek novelty? Espresso drinkers who want consistency? Cafe wholesale accounts that need 12 months of supply reliability?</li>
+<li><strong>What profile serves them best?</strong> Bright, clean, fruit-forward? Full body, low acidity, chocolatey? Adventurous, funky, process-forward?</li>
+<li><strong>What does your roasting program look like?</strong> Do you run 4 SKUs or 12? How often do you rotate single origins?</li>
+<li><strong>What's your green inventory capacity?</strong> Most small roasters can hold 3–6 months of green on hand. That determines order volume and frequency.</li>
+</ul>
+
+<p>The answers create a sourcing brief — a document you share with importers and brokers that tells them exactly what you're looking for. Brokers with a clear brief source far better than brokers guessing what might interest you.</p>
+
+<div class="section-label">Origin Selection</div>
+<h2>Choosing origins for your program</h2>
+
+<p>Most specialty roasters run 3–6 origins at any time. A balanced program includes:</p>
+
+<ul>
+<li><strong>A workhorse Central American or South American washed lot.</strong> Reliable, versatile, 3–4 bag minimum available year-round. Guatemala, Honduras, or Colombia. Bright and clean with enough complexity for a featured single origin and enough consistency for espresso blending.</li>
+<li><strong>An Ethiopian for natural complexity.</strong> Yirgacheffe or Guji for the natural lots. High demand from specialty consumers; any specialty program without Ethiopian is leaving revenue on the table.</li>
+<li><strong>A process-forward lot for differentiation.</strong> A natural, honey, or anaerobic lot from any origin that demonstrates your sourcing curiosity. Conversation starters. High-margin retail coffees.</li>
+</ul>
+
+<div class="section-label">The Cupping Workflow</div>
+<h2>How to make buying decisions</h2>
+
+<p>A rigorous cupping workflow creates buying discipline and protects your quality floor:</p>
+
+<ol>
+<li><strong>Request samples broadly.</strong> Get samples from 3–5 importers for any origin you're seriously considering. The competitive cupping table is the market.</li>
+<li><strong>Blind where possible.</strong> Remove importer identity from the cupping table before scoring. Your job is to evaluate the coffee, not the relationship.</li>
+<li><strong>Score to your standard, not theirs.</strong> Importers provide cupping scores. Treat these as reference, not gospel. Score independently and compare.</li>
+<li><strong>Buy the coffee you'd serve to your best customer.</strong> Not the coffee that's available. Not the coffee with the best story. The coffee you're proud of.</li>
+<li><strong>Commit volume when you find it.</strong> Good lots move. If you've found a coffee that works, lock supply. Don't hedge.</li>
+</ol>
+
+<div class="section-label">Building Importer Relationships</div>
+<h2>The relationship is the supply chain</h2>
+
+<p>In specialty coffee, the best lots go to the buyers that importers trust and value. That trust is built through: consistent payment, clear communication of your needs, specific and useful cupping feedback (not "I liked it"), buying when you say you're going to buy, and genuine interest in the stories behind the coffee.</p>
+
+<p>An importer who knows you buy 10 bags of Guatemala annually, prefers bright and clean washed profiles, and always pays on time will call you before they call anyone else when an exceptional lot lands. That relationship is the real supply chain advantage.</p>
+
+<p>If you're building your Central American supply chain and want a warm introduction to Guatemala origin through a trusted wholesale partner, <a href="https://intheblack.coffee/contact">In The Black Coffee Co.</a> can be that bridge.</p>
+
+<p>Related: <a href="https://intheblack.coffee/wholesale-coffee-guide">Wholesale coffee guide</a> · <a href="https://intheblack.coffee/how-to-source-specialty-coffee">How to source specialty coffee (step by step)</a></p>
+
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">How do I source specialty coffee for my roastery?</div>
+          <div class="faq-a">Build 2–4 importer relationships covering your primary origins. Develop a sourcing brief that describes your profile preferences and volume needs. Request and cup samples from multiple importers before every purchasing decision. Attend trade show cupping events. For specific origins (Guatemala, Honduras, Ethiopia), work with brokers who have established relationships with quality-focused exporters.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What makes a good coffee sourcing strategy?</div>
+          <div class="faq-a">Three pillars: (1) clarity on your product brief — what profile, what application, what volume; (2) relationship depth with importers — the best lots flow to trusted buyers; (3) cupping discipline — buy on quality evaluation, not story or relationship alone. The roasters with the most consistent quality programs source systematically, not reactively.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I find quality green coffee importers?</div>
+          <div class="faq-a">SCA Expo and World of Coffee are the most efficient cupping table access. Most specialty importers maintain a cupping table at these events where you can taste their current offerings. Online platforms (Algrano, Coffeehunt) provide direct-from-origin access. Broker introductions (like In The Black Coffee Co.) provide warm access to specific origin supply with established relationships already in place.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is a coffee sourcing trip?</div>
+          <div class="faq-a">An origin visit where a roaster travels to producing countries to meet farmers, cup green lots, and build direct relationships. Effective for roasters who want to develop direct trade relationships, verify the stories behind their coffees, and access micro-lots that aren't available through importer channels. Significant investment; appropriate for 10–15% of green spend.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I cup coffee to evaluate green purchases?</div>
+          <div class="faq-a">Request a cupping sample (1kg), roast light (full city, Agtron 60–65), rest for 24 hours. Cup to SCA protocol: 8.25g ground coffee per 150ml 93°C water, evaluate fragrance, aroma, flavor, aftertaste, acidity, body, balance, uniformity, clean cup, and sweetness. Score on 100-point scale. Compare to importer's offered score. Inspect physical green alongside the cup evaluation.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is a coffee sourcing brief?</div>
+          <div class="faq-a">A written document summarizing your green coffee purchasing criteria: origin preferences, profile targets (bright/clean, full/chocolatey, process-forward), score range, volume requirements, seasonal availability needs, and budget. Sharing a sourcing brief with importers and brokers dramatically improves the quality of sample recommendations you receive.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How much coffee should I buy at once?</div>
+          <div class="faq-a">Most specialty roasters buy in 1–5 bag increments (60–300 lbs) per lot. Anchor origins that you run year-round justify larger orders (5–10+ bags) to lock pricing and supply. Featured single origins that rotate monthly warrant smaller orders (1–2 bags). Green coffee stored properly (cool, dry, sealed) holds quality for 12–18 months.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is El Quetzal Coffee?</div>
+          <div class="faq-a">El Quetzal Coffee Co. is a Guatemalan specialty coffee exporter offering fully traceable lots from verified origins. In The Black Coffee Co. represents El Quetzal to specialty roasters in the US market. Current offerings include SHG, Yellow Catuai, Geisha, Java, and Anaerobic Java. <a href='https://intheblack.coffee/contact'>Contact In The Black</a> to request samples.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
