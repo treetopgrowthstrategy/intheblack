@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Harvest Calendar: When to Buy Green Coffee by Origin</title>
+<meta name="description" content="Complete coffee harvest calendar for specialty roasters. Harvest timing, US importer arrival windows, and how to build a buying calendar around fresh-crop availability.">
+<link rel="canonical" href="https://intheblack.coffee/coffee-harvest-calendar">
+<meta property="og:title" content="Coffee Harvest Calendar: When to Buy Green Coffee by Origin">
+<meta property="og:description" content="Complete coffee harvest calendar for specialty roasters. Harvest timing, US importer arrival windows, and how to build a buying calendar around fresh-crop availability.">
+<meta property="og:url" content="https://intheblack.coffee/coffee-harvest-calendar">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/coffee-harvest-calendar",
+          "url": "https://intheblack.coffee/coffee-harvest-calendar",
+          "name": "Coffee Harvest Calendar: When to Buy Green Coffee by Origin",
+          "description": "Complete coffee harvest calendar for specialty roasters. Harvest timing, US importer arrival windows, and how to build a buying calendar around fresh-crop availability.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"When is coffee harvested?","acceptedAnswer":{"@type":"Answer","text":"Coffee harvest timing depends on origin and hemisphere. In the Northern Hemisphere (Central America, Mexico, Ethiopia, Kenya), main harvest runs October through March. In the Southern Hemisphere (Brazil, Peru), harvest runs April through August. Colombia produces year-round due to its unique microclimates and mitaca (secondary) crop cycle."}},{"@type":"Question","name":"When does new crop Guatemala coffee arrive?","acceptedAnswer":{"@type":"Answer","text":"Guatemala's main harvest runs October through February, with Huehuetenango extending to March. New crop lots typically arrive at US importers May through August, with the freshest lots available June-July."}},{"@type":"Question","name":"What is new crop coffee?","acceptedAnswer":{"@type":"Answer","text":"New crop coffee refers to lots from the most recent harvest season. Green coffee degrades in quality over time, so new crop lots at peak freshness (within 6-12 months of harvest) are preferred by specialty roasters. Contrast with past crop (12-24 months post-harvest) or old crop (24+ months)."}},{"@type":"Question","name":"Which coffee origins are available year-round?","acceptedAnswer":{"@type":"Answer","text":"Colombia is the most notable year-round origin due to its main and mitaca (secondary) crop cycles and diverse microclimates. Some East African origins (particularly certain Ethiopian regions) also have extended availability. Most other origins have defined harvest windows with 6-12 month availability at importers."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee"},{"@type":"ListItem","position":2,"name":"Coffee Guides","item":"https://intheblack.coffee/wholesale-coffee-guide"},{"@type":"ListItem","position":3,"name":"Coffee Harvest Calendar","item":""}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Market Reference</div>
+    <h1><em>Coffee Harvest Calendar</em> by Origin</h1>
+    <p class="lede">Knowing when each origin harvests and when it arrives at US importers is how you buy fresh crop and build a quality-first sourcing calendar.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee">Home</a><span class="breadcrumb-sep">›</span><a href="https://intheblack.coffee/wholesale-coffee-guide">Coffee Guides</a><span class="breadcrumb-sep">›</span><span>Coffee Harvest Calendar</span></nav>
+
+  <style>
+.origin-card { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin: 24px 0; }
+.origin-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 10px; color: var(--brown); }
+.origin-card p { font-size: .95rem; color: var(--brown); line-height: 1.7; }
+.origin-card .badge { display: inline-block; background: var(--green); color: #fff; padding: 3px 10px; border-radius: 4px; font-size: .75rem; font-weight: 600; letter-spacing: .05em; margin-bottom: 10px; text-transform: uppercase; }
+.spec-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: .95rem; }
+.spec-table th { background: var(--espresso); color: var(--cream); padding: 10px 14px; text-align: left; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; }
+.spec-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--brown); }
+.spec-table tr:last-child td { border-bottom: none; }
+.spec-table tr:hover td { background: var(--cream-dark); }
+.pull-quote { border-left: 3px solid var(--gold); padding: 16px 24px; margin: 32px 0; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; color: var(--brown); }
+.roaster-callout { background: var(--green); color: var(--cream); border-radius: var(--radius); padding: 32px; margin: 32px 0; text-align: center; }
+.roaster-callout h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 10px; }
+.roaster-callout p { font-size: .95rem; opacity: .9; margin-bottom: 18px; }
+.roaster-callout a { background: var(--cream); color: var(--green); padding: 10px 24px; border-radius: 4px; font-weight: 600; text-decoration: none; font-size: .9rem; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0; }
+.two-col > div { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.two-col > div h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; margin-bottom: 10px; color: var(--brown); }
+.two-col > div ul { list-style: none; padding: 0; }
+.two-col > div ul li { padding: 5px 0; font-size: .9rem; color: var(--brown); border-bottom: 1px solid var(--border); }
+.two-col > div ul li:last-child { border-bottom: none; }
+@media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+.harvest-row { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.harvest-row:last-child { border-bottom: none; }
+.harvest-month { min-width: 100px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--green); font-weight: 600; }
+.harvest-origin { flex: 1; font-size: .95rem; color: var(--brown); }
+.harvest-type { font-size: .8rem; background: var(--cream-dark); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; color: var(--brown-light); white-space: nowrap; }
+</style>
+<p>Coffee harvest timing determines when fresh crop lots arrive at your importer and ultimately when you have access to peak-freshness green coffee. Building your buying calendar around harvest cycles is one of the highest-leverage things a specialty roaster can do — it's the difference between buying new crop at peak and buying past crop at discount pricing because it sat in a warehouse for 18 months.</p>
+<p>This reference calendar covers the major specialty origins with peak harvest windows, typical importer arrival timing, and what to watch for in each region.</p>
+
+<h2>How to Use This Calendar</h2>
+<p>Three dates matter for each origin: harvest (when cherries are picked), milling and processing (when green coffee is produced), and importer arrival (when it lands at US importers and becomes available to roasters). The gap between harvest and your purchase is typically 3-6 months. The freshness window for green coffee begins at arrival and closes around 12-18 months later, depending on storage conditions.</p>
+
+<h2>Harvest Calendar by Region</h2>
+
+<div class="harvest-row"><div class="harvest-month">Oct-Feb</div><div class="harvest-origin"><strong>Guatemala</strong> — Main harvest for most regions. Huehuetenango extends to March. New crop arrives at US importers May-August.</div><div class="harvest-type">Washed, Natural, Honey</div></div>
+<div class="harvest-row"><div class="harvest-month">Oct-Feb</div><div class="harvest-origin"><strong>Mexico</strong> — Oaxaca, Chiapas, and Veracruz harvest simultaneously with Guatemala. Organic certified lots common. Arrives May-July.</div><div class="harvest-type">Washed, Natural</div></div>
+<div class="harvest-row"><div class="harvest-month">Oct-Mar</div><div class="harvest-origin"><strong>Honduras</strong> — HB and SHG lots from Copan, Marcala, and Comayagua regions. Strong value for specialty washed. Arrives June-September.</div><div class="harvest-type">Washed</div></div>
+<div class="harvest-row"><div class="harvest-month">Nov-Feb</div><div class="harvest-origin"><strong>El Salvador</strong> — Pacamara and Bourbon varietals from Santa Ana volcano highlands. Processing innovation driven by third-wave producers. Arrives May-July.</div><div class="harvest-type">Washed, Natural, Honey</div></div>
+<div class="harvest-row"><div class="harvest-month">Nov-Mar</div><div class="harvest-origin"><strong>Costa Rica</strong> — Tarrazú, West Valley, and Central Valley harvests. Strong transparency and micro-mill infrastructure. Arrives June-August.</div><div class="harvest-type">Washed, Honey</div></div>
+<div class="harvest-row"><div class="harvest-month">Nov-Mar</div><div class="harvest-origin"><strong>Colombia</strong> — Main harvest (mitaca crop follows Apr-Jun in some regions). Continuous harvest in certain microclimates. Arrives 3-4 months post-harvest year-round.</div><div class="harvest-type">Washed, Natural, Honey</div></div>
+<div class="harvest-row"><div class="harvest-month">Dec-Mar</div><div class="harvest-origin"><strong>Brazil</strong> — Minas Gerais, São Paulo, and Espírito Santo. World's largest producer. Naturals dominate. New crop arrives June-September.</div><div class="harvest-type">Natural, Pulped Natural</div></div>
+<div class="harvest-row"><div class="harvest-month">Oct-Jan</div><div class="harvest-origin"><strong>Ethiopia (Yirgacheffe, Sidama)</strong> — Washed and natural lots from the cradle of Arabica. Premium washed lots at highest premiums. Arrives March-June.</div><div class="harvest-type">Washed, Natural</div></div>
+<div class="harvest-row"><div class="harvest-month">Nov-Feb</div><div class="harvest-origin"><strong>Ethiopia (Harrar, Guji)</strong> — Natural-dominant processing from eastern regions. Wild and heirloom variety lots increasingly available. Arrives April-July.</div><div class="harvest-type">Natural</div></div>
+<div class="harvest-row"><div class="harvest-month">Oct-Dec</div><div class="harvest-origin"><strong>Kenya</strong> — AA, AB, and PB grades from Nyeri, Kirinyaga, and Murang'a. Double-washed process, factory-level tracking. Arrives Feb-May.</div><div class="harvest-type">Washed (double-washed)</div></div>
+<div class="harvest-row"><div class="harvest-month">Jun-Sep</div><div class="harvest-origin"><strong>Indonesia (Sumatra, Sulawesi)</strong> — Wet-hulled process (Giling Basah) produces the distinctive low-acidity, full-body Indonesia profile. Arrives Sep-Dec.</div><div class="harvest-type">Wet-hulled, Natural</div></div>
+<div class="harvest-row"><div class="harvest-month">Mar-Jun</div><div class="harvest-origin"><strong>Hawaii (Kona)</strong> — Premium domestic production from Big Island. Limited volume. Arrives within weeks of processing throughout the season.</div><div class="harvest-type">Washed</div></div>
+<div class="harvest-row"><div class="harvest-month">Apr-Aug</div><div class="harvest-origin"><strong>Yemen</strong> — One of the most complex origins. Extremely limited availability, high prices. Natural dry-processed on rooftops and drying beds. Arrives 3-5 months post-harvest.</div><div class="harvest-type">Natural (traditional)</div></div>
+
+<h2>Building Your Buying Calendar</h2>
+<p>For roasters who want to run a fully fresh-crop program: build a 12-month buying plan that maps each origin to its availability window and estimates your volume needs. You'll need to commit to certain lots 2-4 months before you need them as you get to know importer arrival timing. Ask your importer for arrival updates in their preferred channels (most US importers now use email newsletters or Cropster Trace for arrival alerts).</p>
+<p>For roasters with tighter inventory budgets: prioritize your two or three signature origins and buy them on the freshest possible timing, rather than trying to stock 8 origins simultaneously. Fresh-crop single origin quality at your price point will win customer loyalty over volume variety.</p>
+
+<div class="roaster-callout">
+  <h3>Guatemala New Crop: Available Now</h3>
+  <p>In The Black Coffee Co. manages Guatemala sourcing for roasters, with El Quetzal Coffee Co. lots available during the May-September US arrival window. Sample requests welcome ahead of new crop season.</p>
+  <a href="https://intheblack.coffee/specialty-coffee-wholesale">Get Notified for New Crop</a>
+</div>
+
+<p>See also: <a href="/green-coffee-pricing-guide">Green coffee pricing guide 2026</a> | <a href="/wholesale-coffee-guide">Wholesale coffee guide</a> | <a href="/guatemala-specialty-coffee">Guatemala specialty coffee guide</a></p>
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">When is coffee harvested?</div>
+          <div class="faq-a">Coffee harvest timing depends on origin and hemisphere. In the Northern Hemisphere (Central America, Mexico, Ethiopia, Kenya), main harvest runs October through March. In the Southern Hemisphere (Brazil, Peru), harvest runs April through August. Colombia produces year-round due to its unique microclimates and mitaca (secondary) crop cycle.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">When does new crop Guatemala coffee arrive?</div>
+          <div class="faq-a">Guatemala's main harvest runs October through February, with Huehuetenango extending to March. New crop lots typically arrive at US importers May through August, with the freshest lots available June-July.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is new crop coffee?</div>
+          <div class="faq-a">New crop coffee refers to lots from the most recent harvest season. Green coffee degrades in quality over time, so new crop lots at peak freshness (within 6-12 months of harvest) are preferred by specialty roasters. Contrast with past crop (12-24 months post-harvest) or old crop (24+ months).</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Which coffee origins are available year-round?</div>
+          <div class="faq-a">Colombia is the most notable year-round origin due to its main and mitaca (secondary) crop cycles and diverse microclimates. Some East African origins (particularly certain Ethiopian regions) also have extended availability. Most other origins have defined harvest windows with 6-12 month availability at importers.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

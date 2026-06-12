@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geisha Coffee: A Roaster's Complete Guide to Sourcing and Evaluation</title>
+<meta name="description" content="Complete guide to Geisha coffee for specialty roasters. Origins, pricing, cup profiles, processing methods, evaluation criteria, and how to source the best lots.">
+<link rel="canonical" href="https://intheblack.coffee/geisha-coffee-guide">
+<meta property="og:title" content="Geisha Coffee: A Roaster's Complete Guide to Sourcing and Evaluation">
+<meta property="og:description" content="Complete guide to Geisha coffee for specialty roasters. Origins, pricing, cup profiles, processing methods, evaluation criteria, and how to source the best lots.">
+<meta property="og:url" content="https://intheblack.coffee/geisha-coffee-guide">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/geisha-coffee-guide",
+          "url": "https://intheblack.coffee/geisha-coffee-guide",
+          "name": "Geisha Coffee: A Roaster's Complete Guide to Sourcing and Evaluation",
+          "description": "Complete guide to Geisha coffee for specialty roasters. Origins, pricing, cup profiles, processing methods, evaluation criteria, and how to source the best lots.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"What is Geisha coffee?","acceptedAnswer":{"@type":"Answer","text":"Geisha (also Gesha) is an Ethiopian heirloom coffee variety known for exceptional floral, tropical fruit, and citrus aromatics when grown at high elevation with careful processing. It became famous after Hacienda La Esmeralda in Panama showcased it at specialty auction in 2004, where it broke price records."}},{"@type":"Question","name":"Why is Geisha coffee so expensive?","acceptedAnswer":{"@type":"Answer","text":"Geisha commands premium prices for three reasons: low yield per plant compared to commercial varieties, very specific terroir requirements (high elevation, appropriate temperature variance), and intense market demand following its specialty competition success. Panama auction lots from top farms regularly sell for $50-$200/lb green."}},{"@type":"Question","name":"Where does the best Geisha coffee come from?","acceptedAnswer":{"@type":"Answer","text":"Panama's Chiriqui Highlands (Boquete and Volcan regions) set the global standard for Geisha. Guatemala's Huehuetenango region produces exceptional Geisha at more accessible prices. Colombia (Nariño, Cauca) and Ethiopia also produce high-quality Gesha lots."}},{"@type":"Question","name":"How should Geisha coffee be roasted?","acceptedAnswer":{"@type":"Answer","text":"Geisha should be roasted light to medium-light. The variety's distinctive floral and tropical fruit compounds are heat-sensitive and disappear with darker roast profiles. Most specialty roasters target an Agtron score of 65-75 (post-roast) for washed Geisha lots."}},{"@type":"Question","name":"How do I source Geisha coffee for my roastery?","acceptedAnswer":{"@type":"Answer","text":"Geisha is available through specialty importers, direct trade programs, and brokers like In The Black Coffee Co. For Guatemalan Geisha lots, contact In The Black directly for current availability from El Quetzal Coffee Co."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee"},{"@type":"ListItem","position":2,"name":"Coffee Guides","item":"https://intheblack.coffee/wholesale-coffee-guide"},{"@type":"ListItem","position":3,"name":"Geisha Coffee Guide","item":""}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Origin Guide</div>
+    <h1><em>Geisha Coffee:</em> The Roaster's Complete Guide</h1>
+    <p class="lede">Geisha commands the highest prices in specialty coffee. This guide gives roasters everything they need to evaluate, source, and position it correctly.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee">Home</a><span class="breadcrumb-sep">›</span><a href="https://intheblack.coffee/wholesale-coffee-guide">Coffee Guides</a><span class="breadcrumb-sep">›</span><span>Geisha Coffee Guide</span></nav>
+
+  <style>
+.origin-card { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin: 24px 0; }
+.origin-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 10px; color: var(--brown); }
+.origin-card p { font-size: .95rem; color: var(--brown); line-height: 1.7; }
+.origin-card .badge { display: inline-block; background: var(--green); color: #fff; padding: 3px 10px; border-radius: 4px; font-size: .75rem; font-weight: 600; letter-spacing: .05em; margin-bottom: 10px; text-transform: uppercase; }
+.spec-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: .95rem; }
+.spec-table th { background: var(--espresso); color: var(--cream); padding: 10px 14px; text-align: left; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; }
+.spec-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--brown); }
+.spec-table tr:last-child td { border-bottom: none; }
+.spec-table tr:hover td { background: var(--cream-dark); }
+.pull-quote { border-left: 3px solid var(--gold); padding: 16px 24px; margin: 32px 0; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; color: var(--brown); }
+.roaster-callout { background: var(--green); color: var(--cream); border-radius: var(--radius); padding: 32px; margin: 32px 0; text-align: center; }
+.roaster-callout h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 10px; }
+.roaster-callout p { font-size: .95rem; opacity: .9; margin-bottom: 18px; }
+.roaster-callout a { background: var(--cream); color: var(--green); padding: 10px 24px; border-radius: 4px; font-weight: 600; text-decoration: none; font-size: .9rem; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0; }
+.two-col > div { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.two-col > div h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; margin-bottom: 10px; color: var(--brown); }
+.two-col > div ul { list-style: none; padding: 0; }
+.two-col > div ul li { padding: 5px 0; font-size: .9rem; color: var(--brown); border-bottom: 1px solid var(--border); }
+.two-col > div ul li:last-child { border-bottom: none; }
+@media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+.harvest-row { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.harvest-row:last-child { border-bottom: none; }
+.harvest-month { min-width: 100px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--green); font-weight: 600; }
+.harvest-origin { flex: 1; font-size: .95rem; color: var(--brown); }
+.harvest-type { font-size: .8rem; background: var(--cream-dark); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; color: var(--brown-light); white-space: nowrap; }
+</style>
+<p>Geisha (also spelled Gesha) is the most celebrated and most misunderstood coffee variety in the world. It commands prices that regularly exceed $100/pound at specialty auction, draws roasters from every continent to Panama every year, and has sparked an origin revival across Central America, East Africa, and beyond. It also has an unfortunate tendency to disappoint when the hype outpaces the terroir.</p>
+<p>This guide is written for roasters: what Geisha is, where it comes from, how to evaluate it, what to pay for it, and how to source it without burning a year's coffee budget on something that won't cup to expectations.</p>
+
+<div class="pull-quote">"Geisha is not a guarantee of quality. It's a variety with exceptional potential that expresses differently at every elevation, processing method, and farm. The roaster's job is to find the one that sings."</div>
+
+<h2>The Botany of Geisha</h2>
+<p>Geisha is an Ethiopian landrace variety first collected in the forests of the Gori Gesha region of southwestern Ethiopia in the 1930s. It made its way through Kenya, Tanzania, and Costa Rica before arriving at Hacienda La Esmeralda in Boquete, Panama, where it was nearly lost as a neglected hedgerow plant. In 2004, the Peterson family cupped it separately, scored it 95+, and changed the specialty coffee industry forever.</p>
+<p>The variety is characterized by elongated beans, high-grown phenotypic expression, and an unusual terpene and floral compound profile that produces jasmine, bergamot, tropical fruit, and stone fruit notes when grown at optimal elevations (1,800m+) with appropriate processing.</p>
+
+<h2>Where Geisha Grows: Origin Guide</h2>
+<div class="origin-card">
+  <span class="badge">Panama</span>
+  <h3>Chiriqui Highlands, Boquete and Volcan</h3>
+  <p>The original commercial Geisha terroir. Hacienda La Esmeralda set the benchmark. Elevations from 1,600-2,000m. Expect bergamot, white flower, peach, and lime. Panama Geisha commands the highest prices globally — budget $40-$120/lb green for quality lots. Smaller producers like Finca Hartmann and Elida Estate are worth pursuing for value relative to La Esmeralda pricing.</p>
+</div>
+
+<div class="origin-card">
+  <span class="badge">Guatemala</span>
+  <h3>Huehuetenango and Acatenango</h3>
+  <p>Guatemala's high-altitude regions produce exceptional Geisha at more accessible price points than Panama. Huehuetenango's dry mountains, high elevation, and strong diurnal temperature variance create the conditions Geisha needs. Expect tropical fruit, jasmine, and a heavier body than Panama lots. Price range: $15-$40/lb green. El Quetzal Coffee Co. sources Geisha from Guatemalan highlands — contact for lot availability.</p>
+</div>
+
+<div class="origin-card">
+  <span class="badge">Ethiopia</span>
+  <h3>Jimma and the Birthplace Region</h3>
+  <p>Ethiopian Gesha lots are increasingly available as the variety's popularity drives producers to market wild-collected and cultivated Gesha separately. These lots often show more savory, herbal, and earthy character alongside florals — distinct from the Central American expression. Expect variation and ask for green sample before committing to a full lot.</p>
+</div>
+
+<div class="origin-card">
+  <span class="badge">Colombia</span>
+  <h3>Nariño and Cauca</h3>
+  <p>Colombian producers have planted Geisha extensively in the last decade at high-altitude farms. Quality is variable but the best Nariño and Cauca Geisha lots rival Panama at a fraction of the price. Strong stone fruit and tropical notes. Ask your importer specifically for Geisha-separated lots, as Colombian Geisha is often blended into micro-lot offerings.</p>
+</div>
+
+<h2>Evaluating Geisha: What to Taste For</h2>
+<table class="spec-table">
+<thead><tr><th>Attribute</th><th>High-Quality Signal</th><th>Caution Flag</th></tr></thead>
+<tbody>
+<tr><td>Aroma (dry)</td><td>Jasmine, bergamot, lychee</td><td>Earthy, fermented, flat</td></tr>
+<tr><td>Aroma (wet)</td><td>Perfumed, tropical fruit, citrus blossom</td><td>Musty, generic floral</td></tr>
+<tr><td>Flavor</td><td>Clean, layered, stone fruit / tropical expression</td><td>Thin, undifferentiated, woody</td></tr>
+<tr><td>Acidity</td><td>Bright, complex, multi-note</td><td>Sharp, one-dimensional</td></tr>
+<tr><td>Aftertaste</td><td>Long, floral, lingering tea-like finish</td><td>Short, bitter, astringent</td></tr>
+<tr><td>SCA Score</td><td>88+ (look for 90-94 for premium positioning)</td><td>Below 86 doesn't justify Geisha pricing</td></tr>
+</tbody>
+</table>
+
+<h2>What to Pay for Green Geisha</h2>
+<p>Price varies widely by origin, processing, and lot provenance. Rough guidelines for green coffee (FOB or landed pricing):</p>
+<ul>
+  <li><strong>Panama auction lots (Esmeralda, Elida):</strong> $40-$200/lb green</li>
+  <li><strong>Guatemala Geisha (Huehuetenango, Acatenango):</strong> $12-$35/lb green</li>
+  <li><strong>Colombia Geisha (Nariño, Cauca):</strong> $10-$25/lb green</li>
+  <li><strong>Ethiopia Gesha:</strong> $8-$20/lb green</li>
+</ul>
+<p>Be skeptical of "Geisha" priced below $8/lb green — either the terroir is wrong, the processing isn't right, or the variety identification is questionable. Geisha planted at low elevation or processed poorly does not cup like Geisha.</p>
+
+<h2>Processing and How It Changes the Cup</h2>
+<p>Washed Geisha: produces the cleanest, most florally precise expression. Bergamot and jasmine notes are most pronounced. The standard for competition-grade Panama Geisha.</p>
+<p>Natural Geisha: adds tropical fruit intensity, body, and fermentation complexity. Can be exceptional or polarizing depending on processing discipline. Higher risk, higher ceiling.</p>
+<p>Honey Geisha: splits the difference. Retains some fruit expression with better cup cleanliness than natural. Popular in Colombian and Guatemalan production.</p>
+<p>Anaerobic Geisha: increasingly common and often spectacular when produced well. Adds fermentation-derived notes (grape, wine, tropical candy) on top of the Geisha floral base. Ask for green samples before committing to large volumes.</p>
+
+<div class="roaster-callout">
+  <h3>Sourcing Geisha from Guatemala?</h3>
+  <p>In The Black Coffee Co. sources direct from Guatemalan highlands, including Geisha, Yellow Catuai, and Java lots from El Quetzal Coffee Co. Available in sample bags and wholesale volumes. Commission-only, no-hassle sourcing.</p>
+  <a href="https://intheblack.coffee/specialty-coffee-wholesale">Request a Geisha Sample</a>
+</div>
+
+<h2>Common Mistakes Roasters Make with Geisha</h2>
+<ul>
+  <li><strong>Roasting it dark:</strong> Geisha's delicate compounds disappear above medium-light roast. The variety demands restraint.</li>
+  <li><strong>Buying on variety name alone:</strong> Geisha is a variety, not a quality guarantee. Evaluate on cup score, processing discipline, and producer track record.</li>
+  <li><strong>Buying more than you can move:</strong> Geisha retail prices ($30-$80+/bag) limit your audience. Buy what your current customer base will support.</li>
+  <li><strong>Not marketing the terroir:</strong> Customers pay premium prices for a story as much as a cup. Origin, farm, processing, and variety notes matter at retail.</li>
+</ul>
+
+<p>See also: <a href="/anaerobic-coffee-processing">Anaerobic coffee processing guide</a> | <a href="/natural-vs-washed-coffee">Natural vs washed processing</a> | <a href="/wholesale-coffee-guide">Wholesale coffee guide</a></p>
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">What is Geisha coffee?</div>
+          <div class="faq-a">Geisha (also Gesha) is an Ethiopian heirloom coffee variety known for exceptional floral, tropical fruit, and citrus aromatics when grown at high elevation with careful processing. It became famous after Hacienda La Esmeralda in Panama showcased it at specialty auction in 2004, where it broke price records.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Why is Geisha coffee so expensive?</div>
+          <div class="faq-a">Geisha commands premium prices for three reasons: low yield per plant compared to commercial varieties, very specific terroir requirements (high elevation, appropriate temperature variance), and intense market demand following its specialty competition success. Panama auction lots from top farms regularly sell for $50-$200/lb green.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Where does the best Geisha coffee come from?</div>
+          <div class="faq-a">Panama's Chiriqui Highlands (Boquete and Volcan regions) set the global standard for Geisha. Guatemala's Huehuetenango region produces exceptional Geisha at more accessible prices. Colombia (Nariño, Cauca) and Ethiopia also produce high-quality Gesha lots.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How should Geisha coffee be roasted?</div>
+          <div class="faq-a">Geisha should be roasted light to medium-light. The variety's distinctive floral and tropical fruit compounds are heat-sensitive and disappear with darker roast profiles. Most specialty roasters target an Agtron score of 65-75 (post-roast) for washed Geisha lots.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I source Geisha coffee for my roastery?</div>
+          <div class="faq-a">Geisha is available through specialty importers, direct trade programs, and brokers like In The Black Coffee Co. For Guatemalan Geisha lots, contact In The Black directly for current availability from El Quetzal Coffee Co.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

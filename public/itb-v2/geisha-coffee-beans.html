@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geisha Coffee Beans: Roaster's Sourcing Guide to Green Lots</title>
+<meta name="description" content="How to buy Geisha coffee beans for your roastery. Green grading, pricing benchmarks by origin, what to ask suppliers, and how much to buy.">
+<link rel="canonical" href="https://intheblack.coffee/geisha-coffee-beans">
+<meta property="og:title" content="Geisha Coffee Beans: Roaster's Sourcing Guide to Green Lots">
+<meta property="og:description" content="How to buy Geisha coffee beans for your roastery. Green grading, pricing benchmarks by origin, what to ask suppliers, and how much to buy.">
+<meta property="og:url" content="https://intheblack.coffee/geisha-coffee-beans">
+<meta property="og:type" content="article">
+<meta name="robots" content="index, follow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #faf4e8;
+  --cream-dark: #f0e8d4;
+  --espresso: #1a1209;
+  --brown: #4a3728;
+  --brown-light: #7c5c3b;
+  --green: #2d5a3d;
+  --green-light: #3d7a52;
+  --gold: #b87333;
+  --border: #ddd0b8;
+  --border-dark: #c4a882;
+  --radius: 6px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--cream);
+  color: var(--espresso);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ── NAV ── */
+.site-nav {
+  background: var(--espresso);
+  padding: 0 32px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 28px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 300;
+  color: rgba(250,244,232,.7); text-decoration: none;
+  letter-spacing: .06em; text-transform: uppercase;
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--green) !important; color: var(--cream) !important;
+  padding: 8px 18px !important; border-radius: 4px;
+  font-size: .78rem !important; font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  transition: background .15s !important;
+}
+.nav-cta:hover { background: var(--green-light) !important; }
+
+/* ── HERO ── */
+.page-hero {
+  background: var(--espresso);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 80% at 100% 50%, rgba(184,115,51,.12), transparent),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(45,90,61,.2), transparent);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Source Serif 4', serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.page-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.page-hero p.lede {
+  font-size: 1.05rem;
+  color: rgba(250,244,232,.72);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green); color: var(--cream);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background .15s, transform .1s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent; color: rgba(250,244,232,.8);
+  padding: 13px 26px; border-radius: 4px;
+  font-size: .85rem; font-weight: 400;
+  text-decoration: none; border: 1px solid rgba(250,244,232,.25);
+  transition: border-color .15s, color .15s;
+  display: inline-block; letter-spacing: .02em;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--cream); }
+
+/* ── MAIN ── */
+.main-wrap {
+  max-width: 800px; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  display: flex; gap: 8px; align-items: center;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 44px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--brown-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* ── ANSWER BOX ── */
+.answer-box {
+  background: rgba(45,90,61,.07);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  font-size: .95rem; line-height: 1.7;
+  margin: 32px 0;
+  color: var(--brown);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.answer-box strong { color: var(--green); }
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: .69rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-top: 56px; margin-bottom: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+/* ── HEADINGS ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--espresso);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500;
+  color: var(--espresso); margin: 32px 0 10px;
+  font-style: italic;
+}
+
+/* ── BODY COPY ── */
+p { margin-bottom: 18px; color: var(--brown); font-weight: 300; }
+ul, ol { margin: 14px 0 18px 22px; }
+li { margin-bottom: 9px; color: var(--brown); font-weight: 300; }
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--green-light); }
+strong { color: var(--espresso); font-weight: 600; }
+
+/* ── COMPARE TABLE ── */
+.compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .88rem; }
+.compare-table th {
+  background: var(--cream-dark);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .73rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--brown);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border-dark);
+}
+.compare-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--brown); font-weight: 300;
+  vertical-align: top;
+}
+.compare-table tr:hover td { background: var(--cream-dark); }
+.compare-table td:first-child { font-weight: 500; color: var(--espresso); }
+.price { color: var(--green); font-weight: 600; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-style: italic;
+  font-weight: 400; line-height: 1.45;
+  color: var(--espresso);
+}
+.pull-quote cite {
+  font-size: .8rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brown-light);
+  font-style: normal; font-family: 'Source Serif 4', serif;
+}
+
+/* ── CTA CARD ── */
+.cta-card {
+  background: var(--espresso);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  margin: 56px 0;
+  color: var(--cream);
+  position: relative; overflow: hidden;
+}
+.cta-card::after {
+  content: '';
+  position: absolute; bottom: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,115,51,.3), transparent);
+}
+.cta-card h2 { font-family: 'Cormorant Garamond', serif; color: var(--cream); margin-bottom: 12px; }
+.cta-card p { color: rgba(250,244,232,.65); margin-bottom: 24px; }
+.cta-card .btn-primary { background: var(--green); color: var(--cream); }
+.cta-card .btn-primary:hover { background: var(--green-light); }
+
+/* ── FAQ ── */
+.faq-section { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.faq-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 28px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq-q {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600; font-size: .97rem;
+  color: var(--espresso); margin-bottom: 10px;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; margin-top: -2px;
+  transition: transform .2s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { font-size: .92rem; color: var(--brown); line-height: 1.7; display: none; font-weight: 300; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--espresso); color: rgba(250,244,232,.5);
+  padding: 44px 32px;
+  text-align: center; font-size: .82rem; font-weight: 300;
+}
+.site-footer a { color: rgba(250,244,232,.6); text-decoration: none; }
+.site-footer a:hover { color: var(--cream); }
+.footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 500;
+  color: rgba(250,244,232,.4);
+  margin-bottom: 16px;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["WebPage", "Article"],
+          "@id": "https://intheblack.coffee/geisha-coffee-beans",
+          "url": "https://intheblack.coffee/geisha-coffee-beans",
+          "name": "Geisha Coffee Beans: Roaster's Sourcing Guide to Green Lots",
+          "description": "How to buy Geisha coffee beans for your roastery. Green grading, pricing benchmarks by origin, what to ask suppliers, and how much to buy.",
+          "author": {
+            "@type": "Person",
+            "name": "Bill Colbert",
+            "url": "https://intheblack.coffee/about",
+            "sameAs": ["https://www.linkedin.com/in/williamcolbert"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "In The Black Coffee Co.",
+            "url": "https://intheblack.coffee",
+            "logo": {"@type": "ImageObject", "url": "https://intheblack.coffee/logo.png"}
+          },
+          "isPartOf": {"@id": "https://intheblack.coffee"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{"@type":"Question","name":"How do I buy Geisha coffee beans for my roastery?","acceptedAnswer":{"@type":"Answer","text":"Contact specialty importers (Cafe Imports, Trabocca, Atlas) or brokers like In The Black Coffee Co. for Guatemalan highland Geisha. Always request a cupping score from a Q Grader and green sample before committing to a full lot purchase."}},{"@type":"Question","name":"What is a fair price for Geisha coffee beans?","acceptedAnswer":{"@type":"Answer","text":"Fair price depends on origin and quality. Guatemala Geisha runs $10-$30/lb green. Panama Geisha from top farms runs $30-$120/lb. Any Geisha priced below $8/lb should be evaluated critically — correct terroir and processing is expensive at origin."}},{"@type":"Question","name":"How long do Geisha green coffee beans last?","acceptedAnswer":{"@type":"Answer","text":"Properly stored in GrainPro bags in a climate-controlled (65-70°F), dark environment, Geisha green beans maintain quality for 12-18 months post-harvest. Geisha's delicate aromatic compounds degrade faster than standard Arabica varieties."}},{"@type":"Question","name":"What screen size are Geisha coffee beans?","acceptedAnswer":{"@type":"Answer","text":"High-quality Geisha typically screens at size 17-18+ due to the variety's characteristically large, elongated bean structure. Smaller screen sizes in a Geisha lot may indicate lower altitude growing conditions or variety admixture."}}]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://intheblack.coffee"},{"@type":"ListItem","position":2,"name":"Coffee Guides","item":"https://intheblack.coffee/wholesale-coffee-guide"},{"@type":"ListItem","position":3,"name":"Geisha Coffee Beans","item":""}]
+        }
+      ]
+    }</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="https://intheblack.coffee">In The Black <em>Coffee Co.</em></a>
+  <ul class="nav-links">
+    <li><a href="https://intheblack.coffee/about">About</a></li>
+    <li><a href="https://intheblack.coffee/coffees">Coffees</a></li>
+    <li><a href="https://intheblack.coffee/wholesale">Wholesale</a></li>
+    <li><a href="https://intheblack.coffee/blog">Resources</a></li>
+    <li><a href="https://intheblack.coffee/contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Sourcing Guide</div>
+    <h1>Buying <em>Geisha Coffee Beans:</em> What Roasters Need to Know</h1>
+    <p class="lede">A Geisha lot purchase can run thousands of dollars. This guide covers green grading, pricing benchmarks, quality red flags, and where to find reliable supply.</p>
+    <div class="hero-actions">
+      <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+      <a href="https://intheblack.coffee/wholesale" class="btn-ghost">Wholesale Program</a>
+    </div>
+  </div>
+</section>
+
+<main class="main-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://intheblack.coffee">Home</a><span class="breadcrumb-sep">›</span><a href="https://intheblack.coffee/wholesale-coffee-guide">Coffee Guides</a><span class="breadcrumb-sep">›</span><span>Geisha Coffee Beans</span></nav>
+
+  <style>
+.origin-card { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin: 24px 0; }
+.origin-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 10px; color: var(--brown); }
+.origin-card p { font-size: .95rem; color: var(--brown); line-height: 1.7; }
+.origin-card .badge { display: inline-block; background: var(--green); color: #fff; padding: 3px 10px; border-radius: 4px; font-size: .75rem; font-weight: 600; letter-spacing: .05em; margin-bottom: 10px; text-transform: uppercase; }
+.spec-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: .95rem; }
+.spec-table th { background: var(--espresso); color: var(--cream); padding: 10px 14px; text-align: left; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; }
+.spec-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--brown); }
+.spec-table tr:last-child td { border-bottom: none; }
+.spec-table tr:hover td { background: var(--cream-dark); }
+.pull-quote { border-left: 3px solid var(--gold); padding: 16px 24px; margin: 32px 0; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; color: var(--brown); }
+.roaster-callout { background: var(--green); color: var(--cream); border-radius: var(--radius); padding: 32px; margin: 32px 0; text-align: center; }
+.roaster-callout h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 10px; }
+.roaster-callout p { font-size: .95rem; opacity: .9; margin-bottom: 18px; }
+.roaster-callout a { background: var(--cream); color: var(--green); padding: 10px 24px; border-radius: 4px; font-weight: 600; text-decoration: none; font-size: .9rem; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0; }
+.two-col > div { background: var(--cream-dark); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.two-col > div h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; margin-bottom: 10px; color: var(--brown); }
+.two-col > div ul { list-style: none; padding: 0; }
+.two-col > div ul li { padding: 5px 0; font-size: .9rem; color: var(--brown); border-bottom: 1px solid var(--border); }
+.two-col > div ul li:last-child { border-bottom: none; }
+@media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+.harvest-row { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.harvest-row:last-child { border-bottom: none; }
+.harvest-month { min-width: 100px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--green); font-weight: 600; }
+.harvest-origin { flex: 1; font-size: .95rem; color: var(--brown); }
+.harvest-type { font-size: .8rem; background: var(--cream-dark); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; color: var(--brown-light); white-space: nowrap; }
+</style>
+<p>Sourcing Geisha coffee beans for your roastery is a decision with real financial stakes. A full lot of Panama Geisha from a top farm can run $5,000-$15,000 for a modest purchase. Even a 30-bag Guatemala Geisha buy represents a meaningful investment. This page covers what roasters need to know before placing an order: variety identification, green quality indicators, price benchmarks, and where to find reliable supply.</p>
+
+<h2>Identifying Genuine Geisha Beans (Green)</h2>
+<p>Geisha beans are visually distinctive in green form. Key identifiers:</p>
+<table class="spec-table">
+<thead><tr><th>Characteristic</th><th>Geisha</th><th>Standard Arabica</th></tr></thead>
+<tbody>
+<tr><td>Bean shape</td><td>Elongated, pointed tips</td><td>Oval, rounded</td></tr>
+<tr><td>Size</td><td>Large, often screen 17-18+</td><td>Variable</td></tr>
+<tr><td>Center cut</td><td>Pronounced, often wavy</td><td>Straight to slightly curved</td></tr>
+<tr><td>Color (green)</td><td>Blue-green, vivid</td><td>Pale green to yellow-green</td></tr>
+<tr><td>Density</td><td>High (hard bean, high altitude)</td><td>Variable</td></tr>
+</tbody>
+</table>
+<p>Note: visual identification alone is insufficient. Genotyping is the only definitive method. Request cup scores and farm documentation from any supplier selling Geisha at premium prices.</p>
+
+<h2>Green Grading and What to Ask For</h2>
+<p>When evaluating a Geisha green lot, ask your importer or broker for:</p>
+<ul>
+  <li><strong>SCA cupping score</strong> from a licensed Q Grader (85+ minimum for specialty; 88+ for Geisha premium positioning)</li>
+  <li><strong>Screen size report</strong> (size 17+ preferred for washed Geisha)</li>
+  <li><strong>Defect count</strong> (Category 1 and 2 defect totals per 350g sample)</li>
+  <li><strong>Moisture content</strong> (10.5-12.5% optimal; outside this range indicates storage or processing issues)</li>
+  <li><strong>Water activity</strong> (0.55-0.65 Aw; above 0.65 indicates mold risk)</li>
+  <li><strong>Processing documentation</strong> (washed, natural, honey, anaerobic — and how the anaerobic was done)</li>
+  <li><strong>Farm elevation</strong> (below 1,500m is a red flag for Geisha variety expression)</li>
+</ul>
+
+<h2>Price Tiers by Quality and Origin</h2>
+<div class="two-col">
+  <div>
+    <h4>Premium Tier ($30-$120/lb green)</h4>
+    <ul>
+      <li>Panama La Esmeralda auction lots</li>
+      <li>Panama Elida Estate, Hartmann</li>
+      <li>Competition-grade lots, 92+ SCA</li>
+      <li>Micro-lot volumes (&lt; 5 bags)</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Specialty Tier ($10-$30/lb green)</h4>
+    <ul>
+      <li>Guatemala Huehuetenango Geisha</li>
+      <li>Colombia Nariño / Cauca Geisha</li>
+      <li>88-92 SCA cupped lots</li>
+      <li>20-100 bag volumes available</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Where to Buy Geisha Coffee Beans Green</h2>
+<p>Importers with consistent Geisha supply include Trabocca (Netherlands/US), Cafe Imports (Minneapolis), Osito Coffee (San Francisco), and Atlas Coffee Importers. For smaller volumes and direct-from-origin Guatemala Geisha, In The Black Coffee Co. sources from El Quetzal Coffee Co.'s Guatemalan highland farms.</p>
+<p>For Panama lots, the Best of Panama auction (held annually, results available from SCA/BOP websites) is the price benchmark. Lots not clearing the auction are often available directly from farms at below-auction prices — worth tracking down through importers with Panama farm relationships.</p>
+
+<h2>How Much Geisha to Buy</h2>
+<p>Buy what you can sell at a premium price point within 6 months of roasting. Geisha's delicate compounds degrade faster than most Arabica varieties once roasted. As green, properly stored (climate-controlled, dark, sealed in GrainPro), Geisha holds quality for 12-18 months post-harvest.</p>
+<p>For a new Geisha program: start with a single 30-bag (roughly 1,800kg) lot. Test at retail and wholesale before committing to larger volumes. Oversupply is a bigger problem in Geisha than with standard origins because retail price resistance above $45-$60/bag limits your sell-through rate.</p>
+
+<div class="roaster-callout">
+  <h3>Guatemala Geisha Available</h3>
+  <p>In The Black Coffee Co. brokers Guatemalan Geisha from El Quetzal Coffee Co.'s highland farms. Sample bags available. Wholesale pricing on request. Commission-only sourcing with no markup over importer pricing.</p>
+  <a href="https://intheblack.coffee/specialty-coffee-wholesale">Request Pricing</a>
+</div>
+
+<p>See also: <a href="/geisha-coffee-guide">Full Geisha coffee origin guide</a> | <a href="/green-coffee-pricing-guide">Green coffee pricing guide</a> | <a href="/wholesale-coffee-guide">Wholesale coffee guide for roasters</a></p>
+
+  <div class="cta-card">
+    <h2>Looking for specialty coffee wholesale?</h2>
+    <p>In The Black Coffee Co. represents exceptional green and roasted coffee from verified origins. Commission-only model. No minimums to start. We earn when you earn.</p>
+    <a href="https://intheblack.coffee/contact" class="btn-primary">Request Samples</a>
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+          <div class="faq-q">How do I buy Geisha coffee beans for my roastery?</div>
+          <div class="faq-a">Contact specialty importers (Cafe Imports, Trabocca, Atlas) or brokers like In The Black Coffee Co. for Guatemalan highland Geisha. Always request a cupping score from a Q Grader and green sample before committing to a full lot purchase.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is a fair price for Geisha coffee beans?</div>
+          <div class="faq-a">Fair price depends on origin and quality. Guatemala Geisha runs $10-$30/lb green. Panama Geisha from top farms runs $30-$120/lb. Any Geisha priced below $8/lb should be evaluated critically — correct terroir and processing is expensive at origin.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How long do Geisha green coffee beans last?</div>
+          <div class="faq-a">Properly stored in GrainPro bags in a climate-controlled (65-70°F), dark environment, Geisha green beans maintain quality for 12-18 months post-harvest. Geisha's delicate aromatic compounds degrade faster than standard Arabica varieties.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What screen size are Geisha coffee beans?</div>
+          <div class="faq-a">High-quality Geisha typically screens at size 17-18+ due to the variety's characteristically large, elongated bean structure. Smaller screen sizes in a Geisha lot may indicate lower altitude growing conditions or variety admixture.</div>
+        </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">In The Black Coffee Co.</div>
+  <div class="footer-links">
+    <a href="https://intheblack.coffee/wholesale">Wholesale</a>
+    <a href="https://intheblack.coffee/coffees">Coffees</a>
+    <a href="https://intheblack.coffee/about">About</a>
+    <a href="https://intheblack.coffee/contact">Contact</a>
+    <a href="https://treetopgrowthstrategy.com">Treetop Growth Strategy</a>
+  </div>
+  <p style="margin-top:12px">© 2026 In The Black Coffee Co. · Commission-only wholesale specialty coffee.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
