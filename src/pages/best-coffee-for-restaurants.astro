@@ -1,0 +1,108 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How much coffee does a restaurant typically go through per week?",
+    a: "Volume varies enormously by format and meal period. A high-volume brunch spot might use 20–40 lbs per week. A dinner-only fine dining restaurant might use 5–10 lbs per week. A hotel restaurant running all-day dining can use 50+ lbs per week. Calculate your own usage by tracking your last 4–6 weeks of orders before shopping for a new wholesale roaster."
+  },
+  {
+    q: "Should a restaurant serve espresso-based drinks or batch brew?",
+    a: "Most restaurant formats are better served by a high-quality batch brew program than an espresso program. Batch brew requires less equipment, less barista skill, and less ongoing calibration — and for most restaurant guests, a clean, well-brewed cup of high-quality drip coffee is more welcome after a meal than a milk-heavy espresso drink. Restaurants that invest in batch brew quality consistently get better guest responses than those with underprepared espresso programs."
+  },
+  {
+    q: "What makes a coffee roaster a good fit for a restaurant vs. a café?",
+    a: "Restaurant-focused roasters understand that coffee is the last impression of a meal. They typically offer: espresso blends and batch brew offerings optimized for different preparation methods, packaging formats suited to restaurant kitchen environments (larger bags, airtight containers), training adapted for non-specialist staff, and reliable delivery schedules that don't create inventory gaps mid-service. Not all café-focused roasters have adapted their programs for restaurant operations."
+  },
+  {
+    q: "How should a restaurant price its coffee program?",
+    a: "Coffee pricing in restaurants typically runs 3–5x the cost of goods. A 12oz cup brewed from a pound of $14 wholesale coffee costs roughly $0.40–$0.50 per cup to produce. At a standard restaurant coffee price of $4–5, the beverage margin on coffee is among the highest on the menu — which makes coffee program quality a high-leverage investment."
+  }
+];
+
+const relatedPages = [
+  { href: '/wholesale-coffee-buying-guide', label: 'Guide', title: 'Wholesale Coffee Buying Guide' },
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Guide', title: 'How to Source Specialty Coffee Wholesale' },
+  { href: '/specialty-coffee-for-hotels', label: 'Guide', title: 'Specialty Coffee for Hotels' },
+  { href: '/how-to-choose-a-coffee-roaster', label: 'Guide', title: 'How to Choose a Coffee Roaster' },
+];
+---
+
+<ContentLayout
+  title="Best Coffee for Restaurants: A Wholesale Buyer's Guide"
+  description="How to evaluate and source wholesale specialty coffee for a restaurant program — what matters in a restaurant context, how to choose a roaster who understands it, and how to build a coffee program that earns its place on the menu."
+  slug="best-coffee-for-restaurants"
+  section="for-buyers"
+  sectionLabel="For Buyers"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Looking for wholesale coffee for <em>your restaurant?</em>"
+  ctaBody="In The Black Coffee Co. connects restaurant buyers with specialty roasters who understand the format — reliable supply, staff-friendly programs, and coffee that earns its place on the menu."
+>
+
+<p class="body">Coffee is the last thing most guests consume at your restaurant, which makes it the last impression you leave. A poorly brewed cup after an excellent meal is a real problem — not catastrophic, but the kind of thing people mention to each other on the way to the car. A genuinely excellent cup at the end of service is something guests notice and remember.</p>
+
+<p class="body">The good news: restaurant coffee programs have never had better options. The bad news: most restaurants are still running commodity programs in a specialty market. This guide is for operators who want to close that gap.</p>
+
+<h2 class="section-head">What's Different About <em>Restaurant Coffee</em></h2>
+
+<p class="body">Café coffee and restaurant coffee are different programs serving different needs. Understanding the distinction helps you evaluate roasters and build programs that actually work for your format.</p>
+
+<h3 class="sub-head">The guest is different</h3>
+<p class="body">A café guest chose to come for coffee. A restaurant guest is finishing a meal — they're satisfied, often slightly full, and looking for something clean and pleasant that extends the experience without demanding attention. The coffee program that serves a specialty café's guest doesn't automatically serve a restaurant's. Lighter roast single-origins that require explanation work less well in a dinner service where the server has five tables; well-dialed medium roasts that deliver immediate, accessible quality work better.</p>
+
+<h3 class="sub-head">The team is different</h3>
+<p class="body">Restaurant staff are typically not baristas. They can pull shots, but calibration and dialing are usually beyond the bandwidth of a dinner service kitchen. This means your equipment and your roaster need to account for less technical expertise — a well-calibrated superautomatic or a quality batch brewer is often the right call over a professional espresso machine that requires daily attention your team can't give it.</p>
+
+<h3 class="sub-head">Reliability matters more</h3>
+<p class="body">A café with an off espresso can dial and adjust. A restaurant in the middle of a Saturday dinner service can't. Coffee for restaurants needs to be consistent enough that it performs well across varying preparation skill levels and service conditions. The roaster's job is to deliver coffee that's forgiving as well as good.</p>
+
+<h2 class="section-head">Building Your <em>Program</em></h2>
+
+<h3 class="sub-head">Start with the format</h3>
+<p class="body">Most restaurants are best served by a well-executed batch brew program. The right batch brewer — a commercial Fetco, a Bunn, or a Wilbur Curtis — paired with quality specialty coffee and properly calibrated to the correct ratio and water temperature produces a cup that stands up to guest expectation without demanding barista skill to execute consistently.</p>
+
+<p class="body">If your concept demands espresso — a bar program that features espresso drinks, a brunch service with signature latte offerings, a coffee-forward identity — invest in training alongside the equipment. The worst restaurant coffee programs are the ones where the espresso machine was purchased without the training to use it.</p>
+
+<h3 class="sub-head">Choose your roaster for the program</h3>
+<p class="body">Not every specialty roaster has adapted their program for restaurant wholesale. Ask specifically:</p>
+
+<ul class="body-list">
+  <li>Do you offer batch brew recommendations alongside espresso?</li>
+  <li>What's your training program for non-specialist kitchen staff?</li>
+  <li>What packaging formats do you offer for restaurant back-of-house?</li>
+  <li>How do you handle service calls during operating hours?</li>
+  <li>What's the response time if something goes wrong mid-service?</li>
+</ul>
+
+<p class="body">A roaster who answers these questions specifically and confidently understands the restaurant context. One who defaults to café-oriented answers doesn't.</p>
+
+<div class="callout">
+  <p>The best restaurant coffee programs treat coffee the way they treat dessert — as a final course that earns its position on the menu through quality, not obligation. The roaster you choose should understand that positioning and be able to help you achieve it.</p>
+</div>
+
+<h2 class="section-head">The Menu <em>Integration</em></h2>
+
+<p class="body">How you present coffee on the menu affects how guests perceive it. A coffee menu that lists origin, processing method, and a brief tasting note signals that coffee is taken seriously at this restaurant. Guests who read it will look forward to it; guests who don't read menus carefully will still benefit from the quality in the cup.</p>
+
+<p class="body">Work with your roaster to get accurate, accessible tasting notes for the offerings you're featuring. Avoid overly technical language ("bright acidity with complex aromatic compounds") in favor of language that's evocative and accessible ("clean and bright, with notes of dark chocolate and dried cherry"). The menu is a tool for guests, not a coffee education document.</p>
+
+<h2 class="section-head">What Good <em>Looks Like</em></h2>
+
+<p class="body">A restaurant coffee program at its best:</p>
+
+<ul class="body-list">
+  <li>Sources from a specialty roaster with documented relationships and a program calibrated for restaurant service</li>
+  <li>Runs a batch brew program executed at the right ratio, temperature, and freshness standard</li>
+  <li>Features the coffee origin and key notes on the menu in accessible language</li>
+  <li>Trains front-of-house staff to speak about the coffee briefly and accurately when guests ask</li>
+  <li>Reviews the program annually — new seasonal lots, new roasters if the relationship isn't working, updated presentation as the brand evolves</li>
+</ul>
+
+<p class="body">That program doesn't require a coffee director or a full barista team. It requires a good roaster, the right equipment, and the operational discipline to execute consistently. Most restaurants that have those three things are running one of the better coffee programs in their market without realizing it.</p>
+
+</ContentLayout>

@@ -1,0 +1,110 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How much does it cost to upgrade a hotel's wholesale coffee program?",
+    a: "The incremental cost of moving from commercial to specialty wholesale coffee for a hotel is typically $4–8 per pound — roughly $400–800 per month for a property using 100 lbs per week. Against the guest experience improvement, ADR positioning benefits, and review differentiation that quality coffee delivers, most hotel F&B directors find the premium straightforward to justify."
+  },
+  {
+    q: "Should a hotel use the same coffee throughout the property?",
+    a: "Not necessarily. A flagship restaurant might feature a local single-origin that tells a regional story. The all-day café might run a consistent espresso blend optimized for milk drinks. In-room offerings might use a curated ground or capsule program from the same roaster. Using the same roaster across touchpoints creates brand coherence; using different offerings within that relationship gives each experience its own character."
+  },
+  {
+    q: "Do hotel guests actually notice coffee quality?",
+    a: "Yes — consistently. Coffee is among the most frequently mentioned F&B items in hotel guest reviews, in both positive and negative contexts. A property with a genuinely excellent coffee program will see it reflected in reviews. A property with bad coffee will also see it reflected in reviews, often disproportionately, because a bad first cup in the morning sets the tone for the entire day."
+  },
+  {
+    q: "What's the best way to evaluate a specialty coffee roaster for a hotel property?",
+    a: "Request a property visit and a cupping session rather than just samples. The best roasters will come to your property, understand your F&B vision, evaluate your equipment setup, and present a program recommendation tailored to your specific context. A roaster who sends a bag and a price list without wanting to understand the property is not approaching the relationship the right way."
+  }
+];
+
+const relatedPages = [
+  { href: '/wholesale-coffee-buying-guide', label: 'Guide', title: 'Wholesale Coffee Buying Guide' },
+  { href: '/best-coffee-for-restaurants', label: 'Guide', title: 'Best Coffee for Restaurants' },
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Guide', title: 'How to Source Specialty Coffee Wholesale' },
+  { href: '/specialty-coffee-office-accounts', label: 'Guide', title: 'Specialty Coffee for Office Accounts' },
+];
+---
+
+<ContentLayout
+  title="Specialty Coffee for Hotels: A Hospitality Buyer's Guide"
+  description="How to build a specialty coffee program across a hotel property — from the lobby café to in-room amenities to the restaurant. What guests expect, what roasters to look for, and how to make coffee a genuine differentiator."
+  slug="specialty-coffee-for-hotels"
+  section="for-buyers"
+  sectionLabel="For Buyers"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Sourcing wholesale coffee for <em>your property?</em>"
+  ctaBody="In The Black Coffee Co. connects hotel F&B teams with specialty roasters who understand the hospitality context — multi-touchpoint programs, staff training, and reliable supply across a complex property."
+>
+
+<p class="body">Coffee is the first and last impression of a hotel stay for most guests. Morning coffee before checkout. The lobby café on the way to a meeting. In-room coffee at 6am before an early flight. These moments don't require elaborate coffee programs — but they do require coffee that's genuinely good rather than merely functional.</p>
+
+<p class="body">The gap between functional hotel coffee and good hotel coffee has narrowed dramatically as specialty roasters have built out hospitality-specific wholesale programs. This guide covers how to close that gap at your property.</p>
+
+<h2 class="section-head">Why Coffee Matters More Than <em>Hotels Think</em></h2>
+
+<p class="body">Hotel F&B teams often underestimate coffee's role in guest experience, because coffee rarely shows up as a line item on satisfaction surveys. What does show up: overall breakfast experience, lobby ambiance, and morning experience scores — all of which are meaningfully influenced by coffee quality.</p>
+
+<p class="body">More directly: coffee is one of the most mentioned F&B items in hotel guest reviews on TripAdvisor and Google. Properties with excellent coffee programs see it reflected in reviews ("the coffee here is genuinely excellent, highly recommend the café"). Properties with bad coffee see it too ("everything was fine but the coffee was terrible"). For a segment where 4.5-star reviews drive booking decisions, the coffee program is not a peripheral detail.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">#1</div>
+    <div class="stat-label">Most-mentioned F&B item in hotel reviews</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">6am</div>
+    <div class="stat-label">When guests form their first impression of your program</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">3–5x</div>
+    <div class="stat-label">Typical beverage margin on café coffee</div>
+  </div>
+</div>
+
+<h2 class="section-head">The Multi-Touchpoint <em>Coffee Program</em></h2>
+
+<p class="body">A hotel coffee program has to work across multiple contexts simultaneously. Each touchpoint has different requirements, and a good roaster partnership accounts for all of them.</p>
+
+<h3 class="sub-head">The lobby café</h3>
+<p class="body">The lobby café is your highest-visibility coffee touchpoint and your biggest opportunity for both revenue and impression. Guests who want specialty coffee — travelers from coffee-literate markets, business travelers who drink well at home — will evaluate this space carefully. A well-stocked café with quality espresso, a rotating single-origin on the pour-over bar, and staff who know what they're serving makes a statement about the property. A kiosk with a capsule machine does not.</p>
+
+<h3 class="sub-head">All-day dining</h3>
+<p class="body">All-day dining coffee needs to be consistent, reliable, and executable by a team that isn't primarily focused on coffee. A well-calibrated batch brew program paired with a quality specialty blend is almost always the right call here. The goal is excellence in the cup without requiring barista-level attention during breakfast service.</p>
+
+<h3 class="sub-head">The signature restaurant</h3>
+<p class="body">A hotel restaurant with culinary ambitions deserves a coffee program that matches. This might mean a single-origin offering sourced to complement the regional cuisine, an after-dinner espresso program using a roaster with a connection to the restaurant's culinary identity, or a rotating lot program that changes seasonally alongside the menu.</p>
+
+<h3 class="sub-head">In-room coffee</h3>
+<p class="body">In-room coffee is where the widest gap between hotel aspiration and guest experience exists. The superautomatic machine in the room runs a pod or capsule that most guests know isn't the same as what's in the café. The most forward-thinking hotels are addressing this with curated ground coffee from the property's primary roaster — the same product, in a different format, connecting the in-room experience to the broader program.</p>
+
+<h2 class="section-head">Choosing a Roaster for <em>Hospitality</em></h2>
+
+<p class="body">Not every specialty roaster has built a hospitality-ready wholesale program. A roaster who works primarily with independent cafés may not have the packaging formats, delivery logistics, or multi-format program design that a hotel property requires. Evaluate specifically:</p>
+
+<ul class="body-list">
+  <li><strong>Multi-format offering:</strong> Can they supply whole bean for the café, pre-ground for the restaurant, and a curated in-room format from the same sourcing program?</li>
+  <li><strong>Volume capacity:</strong> A hotel using 100+ lbs per week needs a roaster with the production capacity to fulfill consistently. Smaller craft roasters can be excellent partners for boutique properties; high-volume properties need a roaster with scale.</li>
+  <li><strong>Hospitality experience:</strong> Ask for references from other hotel accounts. A roaster who understands the hospitality context — service recovery, multi-department coordination, seasonal volume fluctuations — is a more valuable partner than one who's adapting a café program on the fly.</li>
+  <li><strong>Staff training:</strong> Hotel coffee staff turn over. A roaster who offers ongoing training rather than one-time onboarding is an asset in a high-turnover environment.</li>
+  <li><strong>Local story:</strong> A locally roasted coffee program is a differentiator for guests who care about local sourcing and regional identity. If your property leans into local character, a roaster from the same market amplifies that story.</li>
+</ul>
+
+<h2 class="section-head">Making the <em>Business Case</em></h2>
+
+<p class="body">The incremental cost of a specialty coffee program over a commercial one is real and needs to be justified to ownership and F&B leadership. The case is built on three factors.</p>
+
+<p class="body"><strong>Revenue:</strong> A quality café program generates meaningfully more revenue per square foot than a commodity kiosk. Guests who trust the café will spend more there and more frequently. Higher average ticket on coffee and pastry, higher repeat usage by in-house guests, and external traffic from neighborhood guests are all revenue benefits of a quality program.</p>
+
+<p class="body"><strong>ADR positioning:</strong> Properties that command premium rates need premium experiences across all touchpoints. Coffee is a visible, daily touchpoint that either supports or undermines the overall premium positioning. A $400/night property serving commodity coffee creates cognitive dissonance. A $400/night property serving excellent specialty coffee reinforces why the rate is justified.</p>
+
+<p class="body"><strong>Review differentiation:</strong> In a market where online reviews drive booking decisions, a consistently mentioned positive in the coffee category is a durable competitive advantage. Build the program, execute it consistently, and let guests tell the story for you.</p>
+
+</ContentLayout>

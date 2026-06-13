@@ -1,0 +1,111 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does it cost to outsource coffee sales?",
+    a: "Commission-only coffee sales outsourcing costs nothing upfront. You pay a percentage of revenue when accounts close and reorder — typically 8–12% of year-one contract value, stepping down on renewals. There are no monthly retainers, no setup fees, and no salary obligations. The total cost is always proportional to the revenue generated."
+  },
+  {
+    q: "How do I find a commission-only coffee sales agency?",
+    a: "Commission-only specialty coffee sales agencies are rare relative to the number of roasters who could benefit from them. The best way to find one is through your network — roaster associations, SCA events, and regional barista competitions all surface people embedded in the industry's sales side. Look for agencies with documented track records of account placement in your target markets, and ask for references from roasters they've represented."
+  },
+  {
+    q: "What should I provide to a sales partner to set them up for success?",
+    a: "A good sales partner needs: sample inventory they can dispatch within 48 hours of a request, clear wholesale pricing and minimum order quantities, a one-page overview of your roastery's sourcing philosophy and key offerings, a fast point of contact for questions that come up during prospect conversations, and a simple wholesale agreement they can use to close accounts. The faster you can support your partner's pipeline, the faster accounts close."
+  },
+  {
+    q: "Can I run in-house sales and an outsourced partner simultaneously?",
+    a: "Yes, and it often makes sense — particularly for geographic expansion. A roaster might run their own sales in their home market while using a commission-only partner to build accounts in a new city. Clear territory agreements prevent conflict, and the parallel approach lets you test whether the new market responds to your product before committing to infrastructure there."
+  }
+];
+
+const relatedPages = [
+  { href: '/commission-only-coffee-sales-rep', label: 'Guide', title: 'Commission-Only Coffee Sales Reps Explained' },
+  { href: '/coffee-wholesale-sales-rep', label: 'Guide', title: 'Coffee Wholesale Sales Rep: What to Know' },
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+  { href: '/coffee-roaster-wholesale-guide', label: 'Guide', title: 'The Complete Wholesale Coffee Program Guide' },
+];
+---
+
+<ContentLayout
+  title="Outsourcing Coffee Sales: When It Makes Sense and How to Do It"
+  description="A guide for specialty coffee roasters evaluating whether to outsource their wholesale sales function — the model, the economics, what to look for in a partner, and how to set one up for success."
+  slug="specialty-coffee-sales-outsourcing"
+  section="for-roasters"
+  sectionLabel="For Roasters"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+>
+
+<p class="body">Most specialty coffee roasters don't have a sales problem. They have a time problem. The coffee is good, the sourcing is right, the capacity is there — but the person who knows the product best is also running production, managing green inventory, and doing payroll. Sales happen when there's time left over, which means they don't happen consistently enough to build a real wholesale program.</p>
+
+<p class="body">Outsourcing the sales function is one solution. This guide explains the model, when it makes sense, and what to look for in a partner.</p>
+
+<h2 class="section-head">What Outsourcing Coffee Sales <em>Actually Means</em></h2>
+
+<p class="body">Outsourcing coffee sales means engaging a third party — an individual sales rep or an agency — to prospect, pitch, and close wholesale accounts on your behalf. The outsourced partner represents your roastery in the market, manages the sample process, and brings signed accounts back to you.</p>
+
+<p class="body">The most common model in specialty coffee is commission-only: the partner earns no base salary or retainer, and is compensated only when accounts close and generate revenue. This aligns incentives directly — the partner is motivated to close and to close accounts that actually reorder.</p>
+
+<div class="callout">
+  <p>Commission-only sales outsourcing is one of the few growth levers in specialty coffee that costs nothing until it works. For roasters with limited cash flow and strong product, the model is structurally attractive in a way that few alternatives are.</p>
+</div>
+
+<h2 class="section-head">When Outsourcing <em>Makes Sense</em></h2>
+
+<p class="body">Not every roastery is ready for an outsourced sales partner. The model works best when specific conditions are met.</p>
+
+<h3 class="sub-head">You have production capacity that isn't filled</h3>
+<p class="body">If you're already running at capacity, more accounts create a service problem. Outsourced sales partners work best when there's genuine room to grow — when adding 10 or 20 accounts wouldn't require capital investment or staff additions to fulfill.</p>
+
+<h3 class="sub-head">You have sample inventory you can deploy quickly</h3>
+<p class="body">The sample process is where wholesale accounts are won or lost. If your partner requests samples for a prospect and you need two weeks to fulfill the request, you'll lose accounts you've already won. Before engaging a sales partner, make sure you can dispatch samples within 48 hours of a request.</p>
+
+<h3 class="sub-head">Your pricing and terms are defined</h3>
+<p class="body">A sales partner can't close accounts without clear wholesale pricing, minimum order quantities, and payment terms. If these aren't defined before the partnership starts, the partner spends time on back-and-forth that should be spent on selling. Get the basics on paper first.</p>
+
+<h3 class="sub-head">You're entering a market where you have no relationships</h3>
+<p class="body">Geographic expansion is one of the highest-value use cases for outsourced sales. A commission-only partner who is already embedded in your target market brings existing relationships and local credibility that would take you years to build independently. You pay only when accounts close — which means the cost of testing a new market is samples and the partner's time, not a salary.</p>
+
+<h2 class="section-head">What to Look for <em>in a Partner</em></h2>
+
+<p class="body">Commission-only coffee sales partners are not uniformly good. The wrong partner can damage relationships with accounts you'd have won eventually, or waste months on activity that doesn't convert. Evaluate carefully.</p>
+
+<h3 class="sub-head">Industry fluency</h3>
+<p class="body">A partner who can't speak credibly about sourcing, processing, and extraction is a liability in front of specialty buyers who know more than they do. Look for partners with genuine coffee backgrounds — former café operators, barista competitors, or people who've worked in specialty coffee in another capacity.</p>
+
+<h3 class="sub-head">Market relationships</h3>
+<p class="body">The best sales partners have existing relationships with the buyers you're trying to reach. Ask specifically: who do you know in this market, and can you make introductions? A partner with no existing relationships starts from zero, which is no different from hiring someone off the street.</p>
+
+<h3 class="sub-head">Track record</h3>
+<p class="body">Ask for references from roasters they've represented. What accounts did they close? How long did those accounts retain? What does the ongoing relationship with closed accounts look like? References who can speak to these specifics are meaningful; general testimonials are not.</p>
+
+<h3 class="sub-head">Alignment on account profile</h3>
+<p class="body">Make sure your partner understands and agrees with your ideal account profile before they start prospecting. A partner who pitches your coffee to accounts that are wrong for your positioning — on price, on volume, on values — creates problems that take months to unwind.</p>
+
+<h2 class="section-head">Setting a Partner <em>Up to Win</em></h2>
+
+<p class="body">The roasters who get the most from outsourced sales partners are the ones who treat the relationship like an investment rather than a handoff. A partner with good materials, fast sample support, and a responsive point of contact closes 2–3x the accounts of a partner who's left to figure everything out alone.</p>
+
+<ul class="body-list">
+  <li><strong>Sample kit:</strong> 3–4 coffees, clearly labeled, with a one-page sourcing overview. Replenish within 48 hours of a request.</li>
+  <li><strong>Wholesale overview:</strong> One clean document covering your story, your sourcing philosophy, your key offerings, pricing tiers, and minimum orders.</li>
+  <li><strong>Fast response:</strong> When a prospect asks a question your partner can't answer, you should respond within the hour. Slow responses kill momentum.</li>
+  <li><strong>Weekly sync:</strong> A 20-minute weekly call keeps the partner on target, surfaces objections you can help address, and keeps the relationship productive.</li>
+  <li><strong>Clear territory:</strong> If you're running in-house sales alongside an outsourced partner, define geographic or account-type territories clearly upfront.</li>
+</ul>
+
+<h2 class="section-head">The Economics <em>in Plain Numbers</em></h2>
+
+<p class="body">A commission-only partnership at 10% of year-one contract value pays for itself the moment the first account closes. A café account ordering 20 lbs per week at $14/lb generates $280 per week, or roughly $14,500 per year. A 10% commission on that account is $1,450. The account needs to place approximately five orders before the commission cost is recovered through margin — after that, it's pure contribution.</p>
+
+<p class="body">A book of 20 such accounts generates $290,000 in annual wholesale revenue. At 10% commission, total sales cost is $29,000 — less than half the fully loaded cost of an entry-level in-house rep, with no fixed cost if the accounts don't close.</p>
+
+<p class="body">The model works. The key is finding the right partner and supporting them properly.</p>
+
+</ContentLayout>

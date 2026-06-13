@@ -1,0 +1,124 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How much does a specialty office coffee program cost per month?",
+    a: "A specialty office coffee program for a 50-person office using roughly 5–8 lbs of coffee per week runs $70–$120 per week in coffee cost, or $280–$480 per month. That's $5–10 per employee per month — a benefit cost that's among the lowest on the books and one of the most consistently appreciated by staff. Scale up or down proportionally based on headcount and consumption habits."
+  },
+  {
+    q: "What equipment does an office need for specialty coffee?",
+    a: "A quality commercial batch brewer — Fetco, Bunn, or Wilbur Curtis — is the standard for most office environments. It's reliable, produces consistent quality at volume, and doesn't require a dedicated operator. For offices that want something more premium, a built-in grinder and a semi-automatic espresso machine can work if someone is willing to be accountable for maintenance and calibration. Avoid single-serve pod machines if quality is the goal — the economics are poor and the cup quality caps out well below what a basic batch brewer can produce."
+  },
+  {
+    q: "Should an office buy coffee from a local or national roaster?",
+    a: "For most offices, a local roaster is the better choice — faster delivery means fresher coffee, in-person support is more available, and the local sourcing story resonates with employees who care about it. National roasters with strong B2B programs can serve offices well when local options are limited or when the office has multiple locations that benefit from a single supplier relationship."
+  },
+  {
+    q: "How often should office coffee be replenished?",
+    a: "Weekly is standard for most specialty wholesale office programs. Coffee is at its best 7–21 days after roast, so a weekly replenishment cycle ensures employees are always drinking fresh coffee rather than something that's been sitting in the cabinet for a month. Many specialty roasters who serve office accounts offer standing weekly orders that ship on a fixed schedule — set it once and don't think about it."
+  }
+];
+
+const relatedPages = [
+  { href: '/wholesale-coffee-buying-guide', label: 'Guide', title: 'Wholesale Coffee Buying Guide' },
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Guide', title: 'How to Source Specialty Coffee Wholesale' },
+  { href: '/how-to-choose-a-coffee-roaster', label: 'Guide', title: 'How to Choose a Coffee Roaster' },
+  { href: '/specialty-coffee-for-hotels', label: 'Guide', title: 'Specialty Coffee for Hotels' },
+];
+---
+
+<ContentLayout
+  title="Specialty Coffee for Office Accounts: A Buyer's Guide"
+  description="How to source and run a specialty coffee program for an office — what it costs, what equipment you need, how to choose a roaster, and why the investment returns more than most office perks."
+  slug="specialty-coffee-office-accounts"
+  section="for-buyers"
+  sectionLabel="For Buyers"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Looking for specialty coffee for <em>your office?</em>"
+  ctaBody="In The Black Coffee Co. connects office accounts with specialty roasters who offer reliable weekly supply, fresh-roasted coffee, and programs built for the workplace."
+>
+
+<p class="body">Office coffee is one of the lowest-cost, highest-return perks an employer can provide — and most offices are doing it wrong. A Keurig loaded with whatever was on sale is not a coffee program. It's a caffeine delivery system that signals exactly how much thought went into it.</p>
+
+<p class="body">A genuine specialty coffee program for an office costs less than most employers assume, runs almost automatically once it's set up, and is consistently cited as one of the most appreciated workplace benefits. This guide covers how to build one.</p>
+
+<h2 class="section-head">Why Office Coffee <em>Matters More Than You Think</em></h2>
+
+<p class="body">Coffee at work is consumed daily by most of the people who drink it. That makes it one of the highest-frequency touchpoints between an employer and an employee — not a special occasion perk, but a daily signal about whether the company cares about the basics.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">62%</div>
+    <div class="stat-label">US adults who drink coffee daily</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">2.7</div>
+    <div class="stat-label">Avg cups consumed per day, coffee drinker</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">$5–10</div>
+    <div class="stat-label">Monthly cost per employee, specialty program</div>
+  </div>
+</div>
+
+<p class="body">The data on employee satisfaction and coffee is consistent: offices with quality coffee programs report higher employee satisfaction with the physical workplace, and the coffee is cited specifically as a positive. Offices with bad coffee generate complaints that are disproportionate to the cost of fixing the problem.</p>
+
+<p class="body">For employers in competitive talent markets where in-person attendance matters, quality coffee is a genuinely useful recruiting and retention tool — not because it's decisive, but because it's part of the aggregate signal about whether a workplace is worth being in.</p>
+
+<h2 class="section-head">Building the <em>Right Setup</em></h2>
+
+<h3 class="sub-head">Equipment first</h3>
+<p class="body">The right equipment for most offices is a commercial batch brewer. A Fetco CBS-2031e or a Bunn Axiom handles high volume, produces consistent quality, and requires minimal maintenance beyond weekly cleaning. For a 20-person office, a single brewer with a thermal server works well. For 50+ people, two brewers or a high-capacity dual-station setup is more appropriate.</p>
+
+<p class="body">A good grinder is as important as the brewer. Pre-ground coffee goes stale quickly — if your office is consuming a pound or more per day, whole bean with a commercial grinder produces noticeably better coffee. A Mahlkonig EK43 or a similar commercial grinder paired with whole bean from a specialty roaster is a meaningful upgrade from pre-ground.</p>
+
+<h3 class="sub-head">Water matters</h3>
+<p class="body">Coffee is 98% water. If your office water tastes off, your coffee will too. A filtered water line connection for your brewer — or a standalone filtration system if inline isn't possible — is worth the installation cost. Most specialty roasters who serve office accounts can recommend filtration setups appropriate for your water source.</p>
+
+<h3 class="sub-head">Establish a freshness standard</h3>
+<p class="body">Specialty coffee is at its best 7–21 days after roast. Coffee that's been sitting in the cabinet for six weeks is not specialty coffee anymore — it's stale, and your team will taste the difference. Establish a weekly replenishment cadence that keeps the office supplied with coffee that was roasted within the past two weeks. Most specialty roasters who serve office accounts will build this into a standing order automatically.</p>
+
+<h2 class="section-head">Choosing Your <em>Roaster</em></h2>
+
+<p class="body">An office coffee account is different from a café account, and the best roasters for office programs understand those differences:</p>
+
+<ul class="body-list">
+  <li><strong>Reliable weekly supply:</strong> Offices need consistent delivery on a predictable schedule. A roaster who's great at serving cafés but treats office accounts as secondary may not prioritize your replenishment the same way.</li>
+  <li><strong>Packaging for the office environment:</strong> 5 lb bags are more practical than 12 oz retail bags for most offices. Make sure the roaster offers bulk packaging that fits your storage and usage cycle.</li>
+  <li><strong>Variety without complexity:</strong> Most office coffee drinkers don't want to navigate a rotating menu of single-origins. One or two consistent offerings — a reliable espresso blend, an approachable single-origin for the pour-over crowd — is the right level of complexity for most workplace programs.</li>
+  <li><strong>Simple billing and logistics:</strong> Office managers don't want to think about coffee procurement. A standing order with a predictable weekly invoice and automatic delivery is significantly more attractive than a manual ordering process.</li>
+</ul>
+
+<div class="callout">
+  <p>The best office coffee roasters treat the account like a service contract, not a product sale. They set it up, they make sure it runs, and they check in periodically to make sure nothing has changed. That's what makes the program invisible in the best possible way.</p>
+</div>
+
+<h2 class="section-head">What to Put <em>in the Kitchen</em></h2>
+
+<p class="body">Keep it simple. The best office coffee programs have:</p>
+
+<ul class="body-list">
+  <li>One reliable espresso-forward blend for people who like coffee that tastes like coffee</li>
+  <li>One single-origin offering, rotated seasonally, for people who pay attention to what they're drinking</li>
+  <li>A decaf option — underserved in most office programs, always appreciated</li>
+  <li>A clear brewing standard posted near the equipment: grind setting, dose, brew time, serving temperature</li>
+  <li>Bean storage in airtight containers away from heat and light</li>
+</ul>
+
+<p class="body">Don't try to run a café in the office kitchen. The goal is excellent coffee, available reliably, that people drink and appreciate without thinking about it. Complexity works against that goal.</p>
+
+<h2 class="section-head">The Cost <em>Conversation</em></h2>
+
+<p class="body">The math on specialty office coffee is almost always favorable once it's laid out clearly. A 50-person office using 7 lbs per week at $14/lb spends $98/week, or $5,100/year. Per employee, that's $102/year — less than $10/month. Against the retention value, daily morale impact, and the cost of running a kitchen full of people who genuinely enjoy coming in, the investment is straightforward.</p>
+
+<p class="body">Compare it to what the same 50 employees spend at a café down the street. At $5 per cup, two cups per day, five days per week — that's $2,500 per week in external spend for the office. A quality in-office program captures some of that spend, reduces time-out-of-office for coffee runs, and produces a better experience than most nearby options.</p>
+
+<p class="body">The business case makes itself. The execution just requires a good roaster and a weekly delivery schedule.</p>
+
+</ContentLayout>

@@ -1,0 +1,137 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What's the minimum volume a roastery needs before starting a wholesale program?",
+    a: "There's no hard minimum, but a practical threshold is the ability to roast 50–100 lbs per week consistently beyond your own retail and direct-to-consumer needs. Below that, wholesale demand can outpace production capacity and create service failures that damage the accounts you're trying to build. Most roasters launch wholesale programs when they have 2–3x production capacity beyond current demand."
+  },
+  {
+    q: "How should wholesale coffee pricing be structured?",
+    a: "Wholesale pricing in specialty coffee typically runs 20–35% below retail bag pricing, with volume discounts at defined thresholds. Set your floor price by working backward from your fully loaded cost of goods — green coffee, roasting overhead, packaging, and delivery — plus a minimum margin that makes the program financially viable. Never set wholesale pricing based on what competitors charge; set it based on your own cost structure."
+  },
+  {
+    q: "What's included in a good wholesale coffee program?",
+    a: "A complete wholesale program includes: competitive pricing with defined minimums and volume tiers, a sample program for prospective accounts, barista training and extraction support, equipment consultation or partnerships, seasonal menu guidance, and a dedicated point of contact for service issues. The programs that retain accounts longest treat training and support as core to the offer, not add-ons."
+  },
+  {
+    q: "How do I compete with larger roasters for wholesale accounts?",
+    a: "Smaller roasters almost always win on relationship depth and service responsiveness — the things that larger operations sacrifice as they scale. A café owner who can call their roaster directly and get an answer wins over the café owner who submits a support ticket. Lean into that advantage. Don't try to match larger roasters on price or marketing budget; compete on the things that scale can't buy."
+  }
+];
+
+const relatedPages = [
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+  { href: '/how-to-grow-wholesale-coffee-business', label: 'Guide', title: 'How to Grow a Wholesale Coffee Business' },
+  { href: '/coffee-wholesale-sales-rep', label: 'Guide', title: 'Coffee Wholesale Sales Rep: What to Know' },
+  { href: '/wholesale-coffee-buying-guide', label: 'Guide', title: 'Wholesale Coffee Buying Guide' },
+];
+---
+
+<ContentLayout
+  title="The Complete Wholesale Coffee Program Guide for Roasters"
+  description="Everything a specialty coffee roaster needs to build, price, and run a wholesale program — from initial setup through account management and geographic expansion. The end-to-end playbook."
+  slug="coffee-roaster-wholesale-guide"
+  section="for-roasters"
+  sectionLabel="For Roasters"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+>
+
+<p class="body">A wholesale coffee program is more than a price list and a delivery schedule. It's a system — for acquiring accounts, serving them well, growing their volume, and replacing the ones you lose. The roasters with the strongest wholesale books built that system deliberately. The ones who struggle built it reactively, filling gaps as they appeared.</p>
+
+<p class="body">This guide covers the complete wholesale program: how to set it up, how to price it, how to sell it, and how to run it once accounts are on board.</p>
+
+<h2 class="section-head">Program <em>Foundations</em></h2>
+
+<h3 class="sub-head">Define your account types</h3>
+<p class="body">Not all wholesale accounts are equivalent, and a program that treats a 50-lb-per-week café the same as a 5-lb-per-week office account will serve both poorly. Define your account tiers before you launch:</p>
+
+<ul class="body-list">
+  <li><strong>Anchor accounts:</strong> High-volume cafés, restaurant groups, or hotel properties ordering 30+ lbs per week. These accounts justify more service investment — regular training visits, seasonal menu consulting, dedicated account management.</li>
+  <li><strong>Standard accounts:</strong> Independent cafés and restaurants ordering 10–30 lbs per week. The core of most wholesale books.</li>
+  <li><strong>Office and corporate:</strong> Lower expertise requirement but often higher volume per order and more consistent demand cycles.</li>
+  <li><strong>Retail and grocery:</strong> Different economics and different service requirements — packaging, shelf presence, and brand representation matter more than barista training.</li>
+</ul>
+
+<h3 class="sub-head">Set your minimums</h3>
+<p class="body">Minimum order quantities exist to protect the economics of serving an account. An account ordering 3 lbs per month costs nearly as much to service as one ordering 30 lbs — delivery, invoicing, account management time. Set minimums that make each account financially viable, and hold them.</p>
+
+<p class="body">Common minimum structures: $75–$150 per order, or a weekly volume commitment of 10–15 lbs. Some roasters use a monthly minimum rather than a per-order minimum, which gives accounts flexibility in how they place orders while still guaranteeing a volume floor.</p>
+
+<h2 class="section-head">Pricing <em>the Program</em></h2>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">20–35%</div>
+    <div class="stat-label">Typical discount off retail</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">3–5</div>
+    <div class="stat-label">Volume tiers most programs use</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">Net 15</div>
+    <div class="stat-label">Standard payment terms</div>
+  </div>
+</div>
+
+<p class="body">Wholesale pricing starts with your cost of goods. For every offering, calculate: green coffee cost per pound (roasted), roasting overhead allocation per pound, packaging, and delivery/fulfillment. That's your floor. Your wholesale price needs to sit meaningfully above it — typically a 40–55% margin on cost of goods to leave room for sales costs, account management, and profit.</p>
+
+<p class="body">Price tiers based on volume give accounts a reason to grow their orders and give you a margin benefit when they do. A simple structure:</p>
+
+<ul class="body-list">
+  <li>Standard (10–24 lbs/week): base wholesale price</li>
+  <li>Growth (25–49 lbs/week): 5% discount</li>
+  <li>Anchor (50+ lbs/week): 10% discount, plus enhanced service package</li>
+</ul>
+
+<p class="body">Payment terms: Net 15 is standard for established accounts. New accounts typically pay on delivery or Net 7 for the first 60–90 days. Auto-pay setups reduce collection friction and improve cash flow predictability.</p>
+
+<h2 class="section-head">The Sample <em>Program</em></h2>
+
+<p class="body">Your sample program is your sales engine. Every wholesale account starts with a sample evaluation — and the quality of that experience determines whether the account converts.</p>
+
+<h3 class="sub-head">What to send</h3>
+<p class="body">Two to three coffees is the right number. More creates decision paralysis; fewer limits the buyer's ability to evaluate range. Always include your flagship espresso offering — it's what most café accounts will actually feature. Add one single-origin and one seasonal or limited offering if relevant.</p>
+
+<h3 class="sub-head">What to include with samples</h3>
+<p class="body">Each sample should arrive with a brief card covering: origin, altitude, processing method, roast date, and suggested extraction parameters. A QR code linking to the full offering page on your website makes it easy for buyers to share with their team. This documentation signals that you're serious — and it helps buyers evaluate the coffee correctly rather than on instinct.</p>
+
+<h3 class="sub-head">Follow-up cadence</h3>
+<p class="body">Contact the buyer 5 days after samples arrive. Ask specifically: did you pull the espresso? What did the team think about the single-origin on pour-over? Specific questions get specific answers, which surfaces objections you can address. A generic "what did you think?" gets a generic non-answer.</p>
+
+<h2 class="section-head">Training and <em>Account Support</em></h2>
+
+<p class="body">The accounts that stay longest are the ones whose staff know how to make the coffee. A café where the espresso is being pulled correctly, at the right dose and extraction time, will produce better cups, more consistent customer experiences, and a team that takes pride in the product. All of that retention is downstream of the initial training visit.</p>
+
+<h3 class="sub-head">New account onboarding</h3>
+<p class="body">Show up for the first delivery. Bring your portafilter and your refractometer. Dial the espresso. Train whoever is on bar. Set the grind settings and write them down for the team. Leave with a contact number and an invitation to call if anything changes. This two-hour investment pays for itself in retention many times over.</p>
+
+<h3 class="sub-head">Ongoing support structure</h3>
+<p class="body">Build a support structure that scales. For anchor accounts: quarterly in-person visits, plus on-call support. For standard accounts: semi-annual visits, with email and text support. For smaller accounts: annual check-in, with a resource library that helps them troubleshoot independently.</p>
+
+<h2 class="section-head">Running the Program <em>Day to Day</em></h2>
+
+<p class="body">A wholesale program requires operational infrastructure that most roasters underestimate when they launch. The basics:</p>
+
+<h3 class="sub-head">Order management</h3>
+<p class="body">Standing orders save time and reduce friction. Set each account on a default weekly or bi-weekly order schedule, with the ability to modify. An account that has to proactively place an order every time is an account that occasionally forgets to — which creates gaps in supply and gaps in your revenue.</p>
+
+<h3 class="sub-head">Delivery logistics</h3>
+<p class="body">Define your delivery days and hold to them. Accounts plan their inventory around your delivery schedule — a roaster who delivers on Tuesdays and Wednesdays gives buyers a reliable planning cadence. Ad hoc delivery is expensive and hard to manage as volume grows. Build the schedule early and protect it.</p>
+
+<h3 class="sub-head">Account tracking</h3>
+<p class="body">Know, for each account: last order date, average weekly volume, trend over 90 days, and last in-person contact. An account whose volume has declined 30% over 90 days without explanation is an account at risk. Catch it with a proactive call before it churns.</p>
+
+<h2 class="section-head">When to <em>Fire an Account</em></h2>
+
+<p class="body">Not every account is worth keeping. An account that consistently pays late, generates service complaints from staff who've been trained repeatedly, or orders below minimum in a way that makes each delivery unprofitable is consuming resources that should go to better accounts.</p>
+
+<p class="body">The decision to end a wholesale relationship should be made deliberately, communicated professionally, and followed by a referral to another roaster who might be a better fit. The specialty coffee industry is small and relationship-dense. How you exit a bad account matters nearly as much as how you close a good one.</p>
+
+</ContentLayout>

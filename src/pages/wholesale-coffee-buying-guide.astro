@@ -1,0 +1,125 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What's the minimum order for specialty wholesale coffee?",
+    a: "Minimums vary by roaster, but most specialty wholesale programs set a floor of $75–$150 per order, or a weekly volume commitment of 10–20 lbs. High-volume roasters may set higher minimums; smaller craft roasters often have more flexibility. If your volume is below most minimums, look for roasters who offer tiered entry — some start smaller accounts at lower thresholds and scale requirements as the relationship grows."
+  },
+  {
+    q: "How do I evaluate a specialty coffee roaster before committing to a wholesale partnership?",
+    a: "Request samples before signing anything, and taste them the way your customers will drink them — not just off a cupping spoon. Evaluate: cup quality consistency across two or three separate lots, responsiveness when you contact them, clarity of their pricing and terms, and whether they can articulate their sourcing philosophy in specific terms. A roaster who can tell you the farm, the altitude, and the processing method for each offering is one who knows their supply chain."
+  },
+  {
+    q: "What's the difference between specialty coffee and commercial coffee for wholesale?",
+    a: "Specialty coffee is scored 80 points or above on the Specialty Coffee Association's 100-point scale, produced from arabica varieties, and traceable to specific growing regions or farms. Commercial coffee is typically commodity-grade robusta or low-scoring arabica, purchased on commodity markets without farm traceability. For wholesale buyers, the practical differences are cup quality, price, and story — specialty coffee costs more per pound but delivers meaningfully better cup quality and gives your team something to talk about."
+  },
+  {
+    q: "How long does it take to switch wholesale coffee roasters?",
+    a: "A roaster switch takes 2–4 weeks from first sample to first delivery if both parties move efficiently. The timeline: request samples (1 week), evaluate and decide (1–2 weeks), negotiate terms and sign agreement (3–5 days), receive first order (days to 1 week depending on roast and delivery schedule). If you're switching mid-season, request a two-week parallel supply period so your team can transition gradually."
+  },
+  {
+    q: "Should a restaurant or hotel buy wholesale coffee from a local or national roaster?",
+    a: "Both have merit. A local roaster offers faster delivery, in-person training visits, and a local story that resonates with guests in that community. A national roaster offers broader recognition, more standardized quality control, and often more sophisticated wholesale infrastructure. The right answer depends on what your guests value and what service level you need — local is often better for independent restaurants, national for multi-property hotel groups."
+  }
+];
+
+const relatedPages = [
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Guide', title: 'How to Source Specialty Coffee Wholesale' },
+  { href: '/how-to-choose-a-coffee-roaster', label: 'Guide', title: 'How to Choose a Coffee Roaster for Your Business' },
+  { href: '/best-coffee-for-restaurants', label: 'Guide', title: 'Best Coffee for Restaurants: A Buyer\'s Guide' },
+  { href: '/specialty-coffee-for-hotels', label: 'Guide', title: 'Specialty Coffee for Hotels and Hospitality' },
+];
+---
+
+<ContentLayout
+  title="Wholesale Coffee Buying Guide: How to Source Specialty Coffee for Your Business"
+  description="A complete guide for café operators, restaurant buyers, and hospitality professionals evaluating specialty coffee wholesale programs — what to look for, how to evaluate roasters, and how to build a coffee program that lasts."
+  slug="wholesale-coffee-buying-guide"
+  section="for-buyers"
+  sectionLabel="For Buyers"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Looking for the right <em>wholesale roaster?</em>"
+  ctaBody="In The Black Coffee Co. sources and places specialty coffee into cafés, restaurants, and offices across the country. We match buyers with roasters who fit — on quality, pricing, and values."
+>
+
+<p class="body">Buying wholesale coffee for a café, restaurant, or hotel is not the same as buying coffee for yourself. The stakes are higher: you're building a program that your team needs to execute consistently, your guests need to enjoy reliably, and your margins need to support. A bad roaster relationship doesn't just produce mediocre cups — it creates operational headaches, staff frustration, and guests who notice.</p>
+
+<p class="body">This guide walks through the complete wholesale coffee buying process: how to define what you need, how to evaluate roasters, how to run a sample process that gives you real information, and how to structure a partnership that serves your operation for the long term.</p>
+
+<h2 class="section-head">Define What You <em>Actually Need</em></h2>
+
+<p class="body">Before evaluating any roaster, get specific about what your operation requires. Buyers who skip this step end up evaluating roasters against the wrong criteria and signing partnerships that don't fit.</p>
+
+<h3 class="sub-head">Volume</h3>
+<p class="body">How many pounds of coffee does your operation go through per week? Be honest about current usage and realistic about growth. Roasters set minimum order quantities — knowing your volume tells you which roasters you can actually work with and which will require you to grow into the relationship.</p>
+
+<h3 class="sub-head">Program type</h3>
+<p class="body">Are you building a specialty bar program where guests order pour-overs and ask about origin? Or a high-volume café where the priority is espresso consistency at speed? Or a restaurant where coffee is the last course and needs to match the culinary ethos? The program type determines whether you need a roaster who can supply exotic single-origins, or one who can deliver a reliably dialed espresso blend week after week.</p>
+
+<h3 class="sub-head">Service requirements</h3>
+<p class="body">How much training and support does your team need? A team of experienced baristas who've worked in specialty cafés needs less hand-holding than a restaurant team whose coffee program is new. Be honest about your starting point — roasters who understand your team's level will calibrate their onboarding accordingly.</p>
+
+<h3 class="sub-head">Values alignment</h3>
+<p class="body">Does your operation care where the coffee comes from? Do your guests ask? Are sustainability, direct trade, and producer relationships part of your brand story? If so, you need a roaster who can document those things specifically — not one who uses the language without the supply chain to back it up.</p>
+
+<h2 class="section-head">How to <em>Evaluate Roasters</em></h2>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">3–5</div>
+    <div class="stat-label">Roasters worth sampling</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">2–3</div>
+    <div class="stat-label">Coffees to request per roaster</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">5 days</div>
+    <div class="stat-label">Time to evaluate before follow-up</div>
+  </div>
+</div>
+
+<p class="body">Start with three to five roasters. More than that creates noise; fewer limits your ability to benchmark. For each roaster, evaluate four things: the coffee, the service, the terms, and the relationship.</p>
+
+<h3 class="sub-head">The coffee</h3>
+<p class="body">Request samples that reflect what you'd actually serve — your espresso setup, your brew bar, your batch brewer. Ask for the roaster's flagship espresso blend and one or two single-origins. Taste them blind if you can: have a staff member brew them without revealing the source and evaluate the cup on its merits.</p>
+
+<p class="body">What you're evaluating: Is the cup quality consistent across multiple preparations? Do the tasting notes on the bag match what you're tasting? Would your guests enjoy this? Would your team be proud to serve it?</p>
+
+<h3 class="sub-head">The service</h3>
+<p class="body">How a roaster handles the sample request tells you a lot about how they handle a service call at 7am on a Tuesday. Did they respond within 24 hours? Did they include origin documentation? Did they follow up at the right time to ask what you thought? The sample process is the audition — take notes.</p>
+
+<h3 class="sub-head">The terms</h3>
+<p class="body">Get the wholesale pricing sheet, minimum order quantities, payment terms, and delivery schedule in writing before you evaluate. You're looking for: pricing that fits your margin structure, minimums you can meet consistently, payment terms that match your cash flow cycle, and a delivery schedule that fits your inventory planning.</p>
+
+<h3 class="sub-head">The relationship</h3>
+<p class="body">You're going to work with this roaster for years if the partnership goes well. Are they the kind of people you want to work with? Do they communicate clearly? Do they have opinions about coffee that they can articulate? Are they interested in your operation, or are you just another account to them?</p>
+
+<h2 class="section-head">Questions to Ask <em>Every Roaster</em></h2>
+
+<ul class="body-list">
+  <li>Where does this coffee come from specifically — country, region, farm or cooperative?</li>
+  <li>What's your relationship with the producer — direct trade, importer relationship, spot purchase?</li>
+  <li>How consistent is this offering — is it a year-round product or a seasonal lot?</li>
+  <li>What happens when this lot sells out — do you have a comparable replacement?</li>
+  <li>What does your training and support look like for new accounts?</li>
+  <li>Who is my point of contact for service issues, and what's the expected response time?</li>
+  <li>What's your delivery schedule and minimum order?</li>
+  <li>Do you offer equipment consultation or partnerships?</li>
+</ul>
+
+<h2 class="section-head">Building the <em>Long-Term Partnership</em></h2>
+
+<p class="body">A wholesale coffee partnership works best when both parties treat it as a relationship rather than a vendor agreement. The roasters who retain accounts longest are the ones who show up — who come in for training when staff changes, who proactively flag when a lot is transitioning, who answer the phone when the espresso is off.</p>
+
+<p class="body">On your side: give the roaster feedback. Tell them when the coffee is excellent. Tell them when something is off. Let them dial the espresso on the first delivery and at least twice more in the first year. Introduce them to your staff by name. The more context the roaster has about your operation, the better they can serve it.</p>
+
+<p class="body">The best wholesale coffee relationships are genuinely collaborative. You're not just buying a product — you're building a coffee program together. Choose a roaster who understands that and wants the same thing.</p>
+
+</ContentLayout>

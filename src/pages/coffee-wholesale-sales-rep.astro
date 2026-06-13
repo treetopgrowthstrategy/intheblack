@@ -1,0 +1,146 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does a coffee wholesale sales rep actually do day to day?",
+    a: "A coffee wholesale sales rep spends the majority of their time on three activities: prospecting new accounts (identifying and reaching out to cafés, restaurants, offices, and other buyers), managing the sample and follow-up process for active prospects, and maintaining existing accounts through check-ins, training visits, and problem-solving when something goes wrong. The split between new business and account management depends on the stage of the roastery's wholesale program."
+  },
+  {
+    q: "What commission does a coffee sales rep typically earn?",
+    a: "Commission structures in specialty coffee wholesale vary widely. The most common structure for in-house reps is a base salary plus 3–8% commission on new account revenue in year one, stepping down to 1–3% on renewals. Commission-only external reps typically earn 8–12% of year-one contract value with 4–6% on renewals. Some arrangements use a flat fee per account signed rather than a percentage of revenue."
+  },
+  {
+    q: "Is it better to hire a sales rep or use a commission-only coffee sales agency?",
+    a: "It depends on your stage. A commission-only agency makes sense when you don't have the volume to justify a salary, when you're entering a new geographic market, or when you want to test the sales motion before committing to a hire. A full-time in-house rep makes sense when you have enough recurring wholesale revenue to pay a competitive salary and when account management — not just new business — is becoming a significant time demand."
+  },
+  {
+    q: "How do I find a coffee sales rep for my roastery?",
+    a: "The specialty coffee industry is relationship-driven, so the best reps are usually found through your network rather than job boards. Former baristas and café managers who understand the buyer's perspective make strong sales reps. SCA events and regional competitions are good places to identify people who are deeply embedded in the industry. If you're posting a job, be specific about the commission structure upfront — good candidates will walk if the comp plan isn't clear."
+  }
+];
+
+const relatedPages = [
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+  { href: '/specialty-coffee-sales-outsourcing', label: 'Guide', title: 'Outsourcing Coffee Sales: When and How' },
+  { href: '/commission-only-coffee-sales-rep', label: 'Guide', title: 'Commission-Only Coffee Sales Reps Explained' },
+  { href: '/coffee-roaster-wholesale-guide', label: 'Guide', title: 'The Complete Wholesale Coffee Program Guide' },
+];
+---
+
+<ContentLayout
+  title="Coffee Wholesale Sales Rep: What to Know Before You Hire"
+  description="What a coffee wholesale sales rep does, how commission structures work, and how to decide between an in-house hire and a commission-only sales partner. A guide for specialty coffee roasters building their first sales function."
+  slug="coffee-wholesale-sales-rep"
+  section="for-roasters"
+  sectionLabel="For Roasters"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+>
+
+<p class="body">Most specialty coffee roasters reach a point where the founder can't personally manage new business development alongside production, sourcing, and operations. The first instinct is usually to hire a sales rep. That instinct is sometimes right — and sometimes the wrong move by 18 months.</p>
+
+<p class="body">Understanding what a coffee wholesale sales rep actually does, what they cost, and what alternatives exist will help you make the right call at the right time.</p>
+
+<h2 class="section-head">What the Job <em>Actually Is</em></h2>
+
+<p class="body">A coffee wholesale sales rep is responsible for building and maintaining the roastery's book of wholesale business. In practice, that means:</p>
+
+<ul class="body-list">
+  <li><strong>Prospecting:</strong> Identifying cafés, restaurants, hotel groups, corporate accounts, and other buyers who are a good fit for the roastery's product and positioning.</li>
+  <li><strong>Outreach and sample management:</strong> Making initial contact, getting samples in front of decision-makers, and following up through the evaluation process.</li>
+  <li><strong>Closing:</strong> Converting sample evaluations into signed wholesale agreements with clear pricing, volume commitments, and delivery schedules.</li>
+  <li><strong>Account management:</strong> Keeping existing accounts happy through regular check-ins, barista training visits, menu consultation, and problem resolution when orders go wrong.</li>
+</ul>
+
+<p class="body">The ratio of new business to account management shifts as the rep's book grows. A new rep at a roastery with a small wholesale program spends 80% of their time on prospecting and outreach. A rep with a mature book of 50+ accounts spends a similar percentage on retention and expansion.</p>
+
+<div class="callout">
+  <p>The roasters who get the most from sales reps are the ones who've already figured out the sales motion — they know which accounts convert, what the sample process looks like, and how to close. A rep can scale a working playbook. They can't invent one from scratch.</p>
+</div>
+
+<h2 class="section-head">What It <em>Costs</em></h2>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">$55K</div>
+    <div class="stat-label">Avg base salary, entry level</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">$85K+</div>
+    <div class="stat-label">Fully loaded with benefits</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">3–8%</div>
+    <div class="stat-label">Typical commission on new accounts</div>
+  </div>
+</div>
+
+<p class="body">A competitive in-house coffee sales rep role runs $45,000–$65,000 in base salary for an entry-level position, $65,000–$90,000 for an experienced rep. Add benefits, payroll taxes, equipment, and travel reimbursement and you're looking at $80,000–$110,000 fully loaded per year.</p>
+
+<p class="body">That number only makes sense if the rep is generating enough incremental wholesale revenue to cover it. A rep adding $15,000–$20,000 per month in new wholesale volume is a productive hire at those costs. A rep adding $5,000 per month isn't.</p>
+
+<h3 class="sub-head">Commission structures</h3>
+<p class="body">Most in-house coffee sales roles combine base salary with a commission structure that incentivizes both new account acquisition and retention:</p>
+
+<ul class="body-list">
+  <li><strong>New account commission:</strong> 3–8% of year-one contract value, paid monthly as revenue is recognized</li>
+  <li><strong>Renewal commission:</strong> 1–3% on account renewals, which incentivizes the rep to maintain account quality</li>
+  <li><strong>Expansion commission:</strong> Some structures pay additional commission on volume growth within existing accounts</li>
+</ul>
+
+<p class="body">Commission-only external reps — who earn no base salary — typically command higher commission rates: 8–12% on new account revenue and 4–6% on renewals. The higher rate compensates for the lack of guaranteed income and aligns incentives more directly with results.</p>
+
+<h2 class="section-head">In-House Rep vs. <em>Commission-Only Partner</em></h2>
+
+<p class="body">The decision between hiring and outsourcing comes down to three variables: your current wholesale revenue, your capacity to manage a hire, and your geographic expansion goals.</p>
+
+<h3 class="sub-head">When to hire in-house</h3>
+<ul class="body-list">
+  <li>You have $15,000–$20,000+ per month in existing wholesale revenue that needs account management</li>
+  <li>Your market is concentrated enough that a dedicated rep can build a dense, relationship-driven book</li>
+  <li>You have the management bandwidth to onboard, train, and support a new hire</li>
+  <li>Your sales motion is defined — you know what works and need someone to execute it at scale</li>
+</ul>
+
+<h3 class="sub-head">When to use a commission-only partner</h3>
+<ul class="body-list">
+  <li>You're in the first 1–3 years of building a wholesale program</li>
+  <li>You're entering a new geographic market where you have no existing relationships</li>
+  <li>You want to test whether a wholesale program is viable before committing to a salary</li>
+  <li>Your production capacity is limited and you need a controlled pace of account acquisition</li>
+</ul>
+
+<h2 class="section-head">What Makes a Good <em>Coffee Sales Rep</em></h2>
+
+<p class="body">The best coffee sales reps share a profile that's different from most B2B sales backgrounds. The specialty coffee industry is relationship-dense and reputation-sensitive — tactics that work in transactional sales often backfire here.</p>
+
+<p class="body">Look for:</p>
+
+<ul class="body-list">
+  <li><strong>Industry fluency:</strong> Former baristas and café managers make strong reps because they understand the buyer's operational reality — they know what "my espresso is channeling" means and can speak credibly about it</li>
+  <li><strong>Relationship orientation:</strong> Coffee wholesale accounts are won over months, not days. Reps who need quick wins get frustrated and churn</li>
+  <li><strong>Product knowledge:</strong> A rep who can't tell the difference between a washed and natural process coffee, or explain why extraction temperature matters, will lose credibility with the specialty buyers you're trying to reach</li>
+  <li><strong>Organized follow-through:</strong> The sample pipeline requires consistent, timely follow-up. Disorganized reps lose accounts they've already won</li>
+</ul>
+
+<h2 class="section-head">Before You Post <em>the Job</em></h2>
+
+<p class="body">Before hiring, answer these questions honestly:</p>
+
+<ul class="body-list">
+  <li>Do you have a defined target account profile, or are you asking the rep to figure that out?</li>
+  <li>Do you have a sample process and wholesale agreement ready, or will the rep be building from scratch?</li>
+  <li>Can you support the rep with consistent sample inventory, marketing materials, and a point of contact who responds quickly?</li>
+  <li>Do you have enough production capacity to onboard the accounts the rep will close?</li>
+</ul>
+
+<p class="body">A rep who joins a roastery that doesn't have answers to these questions will spend their first six months doing foundational work that doesn't generate revenue. That's expensive for you and demoralizing for them.</p>
+
+<p class="body">If the infrastructure isn't there yet, a commission-only partnership — where the partner brings the sales process along with the sales effort — is often the better first step.</p>
+
+</ContentLayout>

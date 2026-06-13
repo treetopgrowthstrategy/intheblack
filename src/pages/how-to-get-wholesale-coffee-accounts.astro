@@ -1,0 +1,137 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How long does it take to land a first wholesale coffee account?",
+    a: "For roasters with an active outreach program, the typical timeline is 4–12 weeks from first contact to signed wholesale agreement. Cold outreach to cafés usually requires 3–5 touches before a conversation happens. Warm outreach — via referral, event connection, or a shared feature — can compress that to days. The biggest variable is your sample conversion rate: roasters who get samples into buyers' hands quickly close faster."
+  },
+  {
+    q: "How many wholesale accounts does a specialty roaster need to be viable?",
+    a: "It depends entirely on account size. A handful of high-volume restaurant groups ordering 50+ lbs per week can sustain a small roastery. A book of 30–40 independent café accounts at 10–20 lbs per week each can sustain a larger one. The math that matters is monthly recurring volume — most roasters need $8,000–$15,000 in monthly wholesale revenue before the wholesale program pays for its own overhead."
+  },
+  {
+    q: "What's the difference between wholesale coffee accounts and retail?",
+    a: "Wholesale accounts buy in volume on a recurring cycle — weekly or bi-weekly orders for cafés, monthly for restaurants and offices. Retail is one-time or subscription direct-to-consumer. Wholesale typically generates lower margin per pound but higher total revenue with more predictable demand. Most roasters building a sustainable business prioritize wholesale as the revenue foundation and treat retail as a margin supplement."
+  },
+  {
+    q: "Should a coffee roaster hire a sales rep or outsource to a sales agency?",
+    a: "A full-time sales rep makes sense when you have enough wholesale volume to justify the salary plus benefits plus commission — typically $60,000–$85,000 fully loaded. Before that threshold, a commission-only sales agency costs nothing upfront and pays for itself only when accounts close. Most growing roasters use commission-only sales partners in their first 2–3 years of wholesale expansion, then evaluate bringing sales in-house once the revenue base supports it."
+  },
+  {
+    q: "What do café owners look for when choosing a wholesale coffee roaster?",
+    a: "Quality and consistency top the list — buyers need to trust that every bag performs the way the last one did. After that: responsiveness (does the roaster answer the phone when something goes wrong), training support (will someone come in and dial the espresso), and relationship (does the roaster care about the account's success). Price matters, but specialty café buyers generally understand that the premium product costs more. Reliability is the differentiator, not price."
+  }
+];
+
+const relatedPages = [
+  { href: '/how-to-grow-wholesale-coffee-business', label: 'Guide', title: 'How to Grow a Wholesale Coffee Business' },
+  { href: '/coffee-roaster-wholesale-guide', label: 'Guide', title: 'The Complete Wholesale Coffee Program Guide' },
+  { href: '/specialty-coffee-sales-outsourcing', label: 'Guide', title: 'Outsourcing Coffee Sales: When and How' },
+  { href: '/commission-only-coffee-sales-rep', label: 'Guide', title: 'Commission-Only Coffee Sales Reps Explained' },
+];
+---
+
+<ContentLayout
+  title="How to Get Wholesale Coffee Accounts"
+  description="A practical guide for specialty coffee roasters on building a wholesale account pipeline — from first outreach to signed agreements. What works, what doesn't, and how to build a book of business that compounds."
+  slug="how-to-get-wholesale-coffee-accounts"
+  section="for-roasters"
+  sectionLabel="For Roasters"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+>
+
+<p class="body">Getting wholesale coffee accounts is a sales problem. That sounds obvious, but most roasters approach it as a product problem — they focus on the coffee, the story, the bag design — and then wonder why good coffee isn't converting into signed accounts. The quality matters. The rest matters more than most roasters admit.</p>
+
+<p class="body">This guide covers the mechanics: how to identify the right accounts, how to get in the door, how to run a sample process that actually converts, and how to build a pipeline that doesn't depend on luck.</p>
+
+<h2 class="section-head">Know Who You're <em>Actually Selling To</em></h2>
+
+<p class="body">Before any outreach, be specific about your target buyer. Not "cafés" — which specific café profile fits your roastery's positioning, volume capacity, and service bandwidth?</p>
+
+<p class="body">A roaster doing 200 lbs per week in production has different ideal accounts than one doing 2,000. A roaster with two staff members can't support 40 accounts that each need quarterly barista trainings. Define the account before you go looking for it:</p>
+
+<ul class="body-list">
+  <li><strong>Volume tier:</strong> What's the minimum weekly order that makes an account worth your time? Most specialty roasters find that accounts below 10 lbs per week don't pay for their own service cost.</li>
+  <li><strong>Account type:</strong> Independent cafés, restaurant groups, hotels, corporate offices, and grocery retail each have different buying cycles, decision-makers, and service requirements.</li>
+  <li><strong>Geography:</strong> How far can you realistically deliver? Wholesale accounts you can visit in person retain at 2–3x the rate of accounts you only serve remotely.</li>
+  <li><strong>Values alignment:</strong> Accounts that care about sourcing, transparency, and craft will be more loyal and more willing to pay specialty pricing.</li>
+</ul>
+
+<h2 class="section-head">Build Your <em>Prospect List</em></h2>
+
+<p class="body">Your prospect list is the foundation. A roaster with 200 well-qualified prospects will outperform one with 2,000 random café names every time.</p>
+
+<h3 class="sub-head">Where to find accounts</h3>
+<p class="body">Google Maps is underrated for initial prospecting — search "coffee shop [city]" and filter by rating. Yelp review mining surfaces accounts with quality-conscious customer bases. Instagram is genuinely useful: cafés that post about their coffee, mention roasters, or tag pour-over and espresso content are demonstrating that coffee is a priority for their brand. Those accounts are worth more than ones where the coffee is incidental.</p>
+
+<p class="body">Industry events are the highest-leverage prospecting environment. SCA events, regional barista competitions, and coffee trade shows concentrate buyers and roasters in one space. A single good conversation at an event can compress a 6-week cold outreach cycle into a 6-day warm one.</p>
+
+<h3 class="sub-head">Qualify before you reach out</h3>
+<p class="body">For each prospect, answer three questions before you invest time in outreach: Does this account serve specialty-grade coffee already? Does their volume appear to match what you can service? Is there a clear decision-maker you can reach? If you can't answer yes to at least two of three, move on.</p>
+
+<h2 class="section-head">The Outreach Sequence <em>That Works</em></h2>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">3–5</div>
+    <div class="stat-label">Touches before reply</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">48h</div>
+    <div class="stat-label">Ideal sample turnaround</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">10–20%</div>
+    <div class="stat-label">Typical sample close rate</div>
+  </div>
+</div>
+
+<p class="body">Cold outreach to wholesale buyers follows a predictable pattern: most don't respond to the first message, many respond to the third, and almost none respond to a sequence that feels like it came from a template. Personalization is the difference between a response rate of 2% and 15%.</p>
+
+<h3 class="sub-head">Touch 1: The specific intro</h3>
+<p class="body">One sentence on who you are. One sentence on why you're reaching out specifically to them — not "we think you'd love our coffee" but something specific about their operation that made you pick up the phone. Offer to send samples. Keep it under 100 words.</p>
+
+<h3 class="sub-head">Touch 2: The follow-up (5–7 days later)</h3>
+<p class="body">Reference the first message. Add something new — a relevant origin you're currently featuring, a café in their market that serves your coffee, a competition result. Ask again about samples. Still short.</p>
+
+<h3 class="sub-head">Touch 3: The break-up (10–14 days later)</h3>
+<p class="body">"Last message from me on this — if the timing is ever right, happy to send samples." This message gets replies because buyers who were meaning to respond finally do. It also cleanly ends sequences that were never going anywhere.</p>
+
+<div class="callout">
+  <p>The worst wholesale outreach tries to close an account in the first message. The best outreach has one goal: get samples in the building. Everything else follows from that.</p>
+</div>
+
+<h2 class="section-head">The Sample Process <em>Is the Sale</em></h2>
+
+<p class="body">Getting a yes to samples is not getting an account. The sample process is where accounts are actually won or lost, and most roasters treat it like a formality rather than a sales step.</p>
+
+<h3 class="sub-head">Send the right samples</h3>
+<p class="body">Send what you want them to serve, not your full catalog. Two or three coffees — your flagship espresso blend, one single-origin, and one seasonal offering if relevant. More than that creates decision paralysis and diffuses the message about what your roastery is actually about.</p>
+
+<h3 class="sub-head">Include context</h3>
+<p class="body">Send a one-page PDF with each sample: origin, processing method, suggested extraction parameters, and tasting notes. This does two things — it helps the buyer evaluate the coffee correctly, and it signals that you take the education side seriously. Buyers who receive bare bags with no context make purchasing decisions based on the label, not the cup.</p>
+
+<h3 class="sub-head">Follow up in 5 days</h3>
+<p class="body">Not two weeks. Five days. Ask specifically: did you get a chance to pull the espresso? What did the team think? This cadence shows you're invested without being aggressive, and it creates the opening to troubleshoot if the extraction didn't go well.</p>
+
+<h2 class="section-head">Closing and <em>Onboarding</em></h2>
+
+<p class="body">When a buyer says yes, move fast. Have a simple wholesale agreement ready — one page is fine — that covers pricing, minimums, payment terms, and delivery schedule. The faster you go from verbal yes to first order, the less time there is for the account to talk themselves out of it or evaluate a competing roaster.</p>
+
+<p class="body">Onboarding is where long-term accounts are made. Show up for the first delivery. Dial the espresso yourself if you can. Train whoever is pulling shots. Accounts that feel ownership from a roaster in the first two weeks retain at dramatically higher rates than accounts that receive a bag and an invoice.</p>
+
+<h2 class="section-head">Building a Pipeline <em>That Compounds</em></h2>
+
+<p class="body">The math of wholesale account acquisition is simple but non-intuitive: you need to be running outreach continuously, not in bursts. A roaster who sends 20 personalized outreach messages per week, runs a disciplined sample process, and closes at 15% will build a meaningful book of business in 12 months. A roaster who sends 200 messages in one week and then stops will sign a few accounts and then plateau.</p>
+
+<p class="body">The roasters who build the most durable wholesale books treat sales as a weekly discipline rather than a project. It doesn't require a dedicated sales hire — it requires 3–4 hours per week of consistent prospecting, outreach, and follow-up.</p>
+
+<p class="body">If that time doesn't exist in your operation, that's what commission-only sales partners are built for.</p>
+
+</ContentLayout>

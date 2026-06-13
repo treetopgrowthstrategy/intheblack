@@ -1,0 +1,101 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does 'specialty grade' mean for wholesale coffee?",
+    a: "Specialty grade coffee scores 80 points or above on the Specialty Coffee Association's 100-point scale, evaluated by certified Q Graders. It's produced from arabica varieties, is free of category-one defects, and maintains traceability to its origin. For wholesale buyers, specialty grade means you're starting with a product that can produce excellent cups — but roasting decisions and extraction still determine what ends up in the cup."
+  },
+  {
+    q: "How is specialty wholesale coffee priced differently from commercial?",
+    a: "Specialty wholesale coffee is priced substantially above commodity coffee — typically $10–$18 per pound wholesale versus $3–$6 for commercial grade. The premium reflects higher green coffee costs (direct trade or relationship purchasing above commodity market rates), smaller production batches, more intensive sourcing and quality control, and the knowledge and support that comes with a specialty roaster relationship."
+  },
+  {
+    q: "Can a small café afford specialty wholesale coffee?",
+    a: "Yes, and the economics often work better than expected. The markup on specialty coffee in a café context is substantial — a pound of specialty wholesale coffee at $14 yields 30–35 espresso shots at $4–5 each. The beverage revenue from one pound is $120–$175. The specialty premium over commercial coffee is typically $4–6 per pound — a cost difference that's recovered in the first few shots and more than covered by the guest experience that commands premium pricing."
+  },
+  {
+    q: "What's the difference between direct trade and fair trade coffee?",
+    a: "Fair trade is a certification system with defined minimum pricing and labor standards, administered by third-party organizations. Direct trade is a sourcing practice where roasters purchase directly from producers at prices negotiated one-on-one — typically above fair trade minimums. Both approaches intend to improve producer outcomes, but direct trade allows for more customized relationships and often produces higher quality coffee because the roaster can specify quality requirements directly."
+  }
+];
+
+const relatedPages = [
+  { href: '/wholesale-coffee-buying-guide', label: 'Guide', title: 'Wholesale Coffee Buying Guide' },
+  { href: '/how-to-choose-a-coffee-roaster', label: 'Guide', title: 'How to Choose a Coffee Roaster' },
+  { href: '/best-coffee-for-restaurants', label: 'Guide', title: 'Best Coffee for Restaurants' },
+  { href: '/specialty-coffee-for-hotels', label: 'Guide', title: 'Specialty Coffee for Hotels' },
+];
+---
+
+<ContentLayout
+  title="How to Source Specialty Coffee Wholesale"
+  description="A sourcing guide for café operators, restaurants, and buyers who want to understand how specialty wholesale coffee works — from origin to delivery, and how to evaluate what you're actually buying."
+  slug="how-to-source-specialty-coffee-wholesale"
+  section="for-buyers"
+  sectionLabel="For Buyers"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Need help finding the right <em>roaster?</em>"
+  ctaBody="In The Black Coffee Co. connects cafés, restaurants, and offices with specialty roasters that fit their program. We handle the sourcing conversation so you can focus on the cup."
+>
+
+<p class="body">Sourcing specialty coffee wholesale is meaningfully different from buying commercial coffee. The supply chain is shorter, the producer relationships are closer, the quality standards are higher, and the conversation with your roaster is a real one rather than a commodity transaction. Understanding how it works helps you make better sourcing decisions and build a coffee program that holds up.</p>
+
+<h2 class="section-head">How Specialty Coffee <em>Gets to You</em></h2>
+
+<p class="body">The specialty coffee supply chain typically runs: producer to importer or direct trade buyer to roaster to wholesale account. Each step adds cost and (ideally) adds value.</p>
+
+<h3 class="sub-head">Direct trade</h3>
+<p class="body">Some specialty roasters bypass the importer entirely and purchase directly from farms or cooperatives. Direct trade means the roaster has a personal relationship with the producer, has visited the farm, and negotiated pricing directly. For wholesale buyers, this translates to supply chain transparency you can actually put on your menu — the farm name, the altitude, the processing method, the harvest year.</p>
+
+<h3 class="sub-head">Importer relationships</h3>
+<p class="body">Many specialty roasters source through specialty importers — companies that specialize in sourcing high-quality green coffee from producer countries and maintaining producer relationships on behalf of multiple roasters. Importers like Cafe Imports, Olam Specialty Coffee, and Royal Coffee maintain producer relationships and quality standards that most individual roasters couldn't sustain independently. Buying from a roaster who works with reputable specialty importers is meaningfully different from buying from one who purchases on spot markets.</p>
+
+<h3 class="sub-head">Spot purchasing</h3>
+<p class="body">Some roasters — particularly smaller ones building their programs — purchase from spot markets: pre-existing inventories of green coffee held by importers and brokers. Spot purchasing can produce excellent coffee when the sourcing is done carefully, but it doesn't offer the supply continuity or producer relationship documentation that direct trade and importer relationships do. If supply consistency matters to your program, ask your roaster about how they handle spot purchases when their primary lots sell out.</p>
+
+<h2 class="section-head">Reading a <em>Coffee Label</em></h2>
+
+<p class="body">A good specialty wholesale coffee offering should tell you:</p>
+
+<ul class="body-list">
+  <li><strong>Country of origin:</strong> Ethiopia, Colombia, Guatemala, Kenya, etc.</li>
+  <li><strong>Region or cooperative:</strong> Yirgacheffe, Huila, Antigua — specificity here is a quality signal</li>
+  <li><strong>Farm or producer name:</strong> When available, the clearest sign of direct relationship sourcing</li>
+  <li><strong>Processing method:</strong> Washed (clean, bright, fruit-forward acidity), natural (fuller body, berry and fruit notes), honey (middle ground between the two)</li>
+  <li><strong>Altitude:</strong> Higher altitude generally produces denser, more complex beans</li>
+  <li><strong>Harvest or crop year:</strong> Freshness matters in specialty coffee; recent harvest dates signal active sourcing relationships</li>
+  <li><strong>Roast date:</strong> Not the same as harvest date — specialty coffee is typically at peak 7–14 days after roast</li>
+</ul>
+
+<p class="body">A wholesale offering that can't tell you the country, processing method, and roast date is a commodity product in specialty packaging. Real specialty sourcing produces real specificity.</p>
+
+<h2 class="section-head">What You're <em>Paying For</em></h2>
+
+<p class="body">Specialty wholesale coffee costs more than commercial coffee, and understanding what the premium buys helps you evaluate whether it's worth it for your program.</p>
+
+<h3 class="sub-head">Better green coffee</h3>
+<p class="body">Specialty green coffee — 80+ points, grown at altitude, processed carefully — costs more at origin because it's harder to grow and requires more labor-intensive processing. The best lots from the best farms command further premiums. That cost works through the supply chain and shows up in your wholesale price.</p>
+
+<h3 class="sub-head">Knowledge and support</h3>
+<p class="body">A specialty roaster relationship isn't just a product supply arrangement. It includes the roaster's expertise in dialing extraction, training your staff, and helping you build a menu that showcases the coffee. A commercial coffee vendor doesn't do that. The knowledge and support have real operational value — particularly if you're building or upgrading a coffee program.</p>
+
+<h3 class="sub-head">Story and differentiation</h3>
+<p class="body">For cafés and restaurants, the story behind the coffee is part of the product. "We source directly from a family farm in the Yirgacheffe region of Ethiopia" is something guests respond to. "We serve a commercial blend from a regional distributor" is not. The story is part of what the specialty premium buys, and it has tangible value in guest experience and brand differentiation.</p>
+
+<h2 class="section-head">Common Sourcing <em>Mistakes</em></h2>
+
+<ul class="body-list">
+  <li><strong>Buying on price:</strong> The cheapest specialty coffee is usually specialty in name only. Price compression in specialty wholesale almost always comes from sourcing shortcuts.</li>
+  <li><strong>Not requesting samples before committing:</strong> The cup is the only thing that matters. Request samples before signing any wholesale agreement.</li>
+  <li><strong>Ignoring roast date:</strong> Specialty coffee degrades. A roaster who can't tell you when the coffee was roasted is a roaster who doesn't prioritize freshness.</li>
+  <li><strong>Signing without understanding minimums:</strong> Volume minimums that your operation can't meet reliably create friction in the relationship from day one.</li>
+  <li><strong>Not asking about lot transitions:</strong> Seasonal specialty lots sell out. Ask your roaster what happens when the lot you selected is gone — and whether the replacement will be comparable.</li>
+</ul>
+
+</ContentLayout>

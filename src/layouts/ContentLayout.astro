@@ -1,0 +1,236 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  section: string;
+  sectionLabel: string;
+  publishDate: string;
+  updatedDate?: string;
+  faqItems?: { q: string; a: string }[];
+  relatedPages?: { href: string; label: string; title: string }[];
+  ctaHeadline?: string;
+  ctaBody?: string;
+  ctaTarget?: 'roaster' | 'buyer';
+}
+
+const {
+  title, description, slug, section, sectionLabel,
+  publishDate, updatedDate, faqItems = [], relatedPages = [],
+  ctaHeadline, ctaBody, ctaTarget = 'roaster'
+} = Astro.props;
+
+const canonicalURL = `https://intheblack.coffee/${slug}`;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "url": canonicalURL,
+  "datePublished": publishDate,
+  "dateModified": updatedDate || publishDate,
+  "author": { "@type": "Organization", "name": "In The Black Coffee Co.", "url": "https://intheblack.coffee" },
+  "publisher": { "@type": "Organization", "name": "In The Black Coffee Co.", "logo": { "@type": "ImageObject", "url": "https://intheblack.coffee/logo.png" } }
+};
+
+const faqSchema = faqItems.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+  }))
+} : null;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://intheblack.coffee" },
+    { "@type": "ListItem", "position": 2, "name": sectionLabel, "item": `https://intheblack.coffee/${section}` },
+    { "@type": "ListItem", "position": 3, "name": title, "item": canonicalURL }
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | In The Black Coffee Co.</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:site_name" content="In The Black Coffee Co." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --espresso: #0f0b08;
+      --espresso-mid: #1a1410;
+      --espresso-light: #261e17;
+      --gold: #C9A84C;
+      --gold-pale: #e8d5a3;
+      --cream: #f5f0e8;
+      --cream-dark: #d9cfc0;
+      --text-body: #c4b9ab;
+      --text-dim: #7a6e64;
+      --border: rgba(201, 168, 76, 0.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--espresso);
+      color: var(--text-body);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .nav {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky; top: 0;
+      background: var(--espresso);
+      z-index: 100;
+    }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: var(--cream); }
+    .nav-logo span { color: var(--gold); }
+    .nav-cta { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); text-decoration: none; border: 1px solid var(--gold); padding: 0.45rem 1rem; transition: background 0.2s, color 0.2s; }
+    .nav-cta:hover { background: var(--gold); color: var(--espresso); }
+    .breadcrumb { padding: 1rem 2rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); border-bottom: 1px solid var(--border); }
+    .breadcrumb a { color: var(--text-dim); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { margin: 0 0.5rem; }
+    .hero { max-width: 780px; margin: 0 auto; padding: 5rem 2rem 3rem; }
+    .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; }
+    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 300; line-height: 1.15; color: var(--cream); margin-bottom: 1.25rem; }
+    .hero h1 em { color: var(--gold); font-style: italic; }
+    .hero-intro { font-size: 1.1rem; color: var(--text-body); line-height: 1.8; max-width: 640px; margin-bottom: 1.5rem; }
+    .hero-meta { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); }
+    .gold-rule { width: 48px; height: 1px; background: var(--gold); margin: 2.5rem 0; opacity: 0.5; }
+    .content-wrap { max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem; }
+    h2.section-head { font-family: 'Cormorant Garamond', serif; font-size: 1.85rem; font-weight: 300; color: var(--cream); margin: 3rem 0 1.25rem; line-height: 1.25; }
+    h2.section-head em { color: var(--gold); font-style: italic; }
+    h3.sub-head { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--cream); margin: 2rem 0 0.75rem; }
+    p.body { color: var(--text-body); line-height: 1.85; margin-bottom: 1.25rem; }
+    ul.body-list { color: var(--text-body); line-height: 1.85; margin: 0 0 1.25rem 1.5rem; }
+    ul.body-list li { margin-bottom: 0.5rem; }
+    .callout { border-left: 2px solid var(--gold); padding: 1.25rem 1.5rem; background: var(--espresso-mid); margin: 2rem 0; }
+    .callout p { margin: 0; color: var(--cream); font-size: 1rem; line-height: 1.75; }
+    .stat-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin: 2rem 0; }
+    .stat-box { border: 1px solid var(--border); padding: 1.5rem; background: var(--espresso-mid); }
+    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 0.4rem; }
+    .stat-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); }
+    .faq-section { margin-top: 4rem; }
+    .faq-item { border-top: 1px solid var(--border); padding: 1.5rem 0; }
+    .faq-item:last-child { border-bottom: 1px solid var(--border); }
+    .faq-q { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; color: var(--cream); margin-bottom: 0.75rem; }
+    .faq-a { color: var(--text-body); line-height: 1.8; font-size: 0.95rem; }
+    .cta-strip { border: 1px solid var(--border); background: var(--espresso-light); padding: 3rem 2.5rem; text-align: center; margin-top: 4rem; position: relative; overflow: hidden; }
+    .cta-strip::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(201,168,76,0.04) 0%, transparent 70%); pointer-events: none; }
+    .cta-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .cta-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 300; color: var(--cream); margin-bottom: 0.75rem; }
+    .cta-strip h2 em { color: var(--gold); font-style: italic; }
+    .cta-strip p { color: var(--text-body); font-size: 0.95rem; max-width: 480px; margin: 0 auto 1.75rem; line-height: 1.7; }
+    .cta-btn { display: inline-block; background: var(--gold); color: var(--espresso); font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; padding: 0.9rem 2.25rem; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .cta-btn:hover { background: var(--gold-pale); transform: translateY(-1px); }
+    .related-section { margin-top: 4rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .related-card { border: 1px solid var(--border); padding: 1.25rem; text-decoration: none; transition: border-color 0.2s; display: block; }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .related-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--cream); line-height: 1.3; }
+    footer { border-top: 1px solid var(--border); padding: 2rem; text-align: center; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); margin-bottom: 0.75rem; }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+    .footer-links a { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--text-dim); }
+    @media (max-width: 600px) {
+      .nav { padding: 1rem; }
+      .hero { padding: 3rem 1.25rem 2rem; }
+      .content-wrap { padding: 0 1.25rem 4rem; }
+      .cta-strip { padding: 2.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-logo">In The <span>Black</span> Coffee Co.</a>
+    <a href="/contact" class="nav-cta">Work With Us</a>
+  </nav>
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>/</span>
+    <a href={`/${section}`}>{sectionLabel}</a><span>/</span>
+    {title}
+  </div>
+  <header class="hero">
+    <span class="hero-eyebrow">{sectionLabel}</span>
+    <h1 set:html={title} />
+    <p class="hero-intro">{description}</p>
+    <div class="hero-meta">Updated {new Date(updatedDate || publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</div>
+    <div class="gold-rule"></div>
+  </header>
+  <main class="content-wrap">
+    <slot />
+    {faqItems.length > 0 && (
+      <section class="faq-section">
+        <h2 class="section-head">Frequently Asked <em>Questions</em></h2>
+        {faqItems.map(item => (
+          <div class="faq-item">
+            <div class="faq-q">{item.q}</div>
+            <div class="faq-a">{item.a}</div>
+          </div>
+        ))}
+      </section>
+    )}
+    <div class="cta-strip">
+      <div class="cta-eyebrow">{ctaTarget === 'roaster' ? 'For Roasters' : 'For Buyers'}</div>
+      <h2 set:html={ctaHeadline || (ctaTarget === 'roaster' ? 'Ready to fill your <em>wholesale pipeline?</em>' : 'Looking for the right <em>specialty roaster?</em>')} />
+      <p>{ctaBody || (ctaTarget === 'roaster' ? 'In The Black Coffee Co. sells your coffee wholesale on commission. No upfront cost. No monthly fees. You pay when we close.' : 'In The Black Coffee Co. sources and places specialty coffee into cafés, restaurants, and offices. Commission-only. No fees to buyers.')}</p>
+      <a href="/contact" class="cta-btn">Get In Touch</a>
+    </div>
+    {relatedPages.length > 0 && (
+      <section class="related-section">
+        <h2 class="section-head">Keep <em>Reading</em></h2>
+        <div class="related-grid">
+          {relatedPages.map(p => (
+            <a href={p.href} class="related-card">
+              <div class="related-card-label">{p.label}</div>
+              <div class="related-card-title">{p.title}</div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+  <footer>
+    <div class="footer-logo">In The <span>Black</span> Coffee Co.</div>
+    <nav class="footer-links">
+      <a href="/">Home</a>
+      <a href="/top-roasters">Top Roasters</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <p class="footer-copy">© {new Date().getFullYear()} In The Black Coffee Co. · intheblack.coffee</p>
+  </footer>
+</body>
+</html>

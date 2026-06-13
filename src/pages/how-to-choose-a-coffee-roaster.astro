@@ -1,0 +1,123 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How many roasters should I evaluate before choosing one?",
+    a: "Three to five is the right number. Fewer than three doesn't give you enough comparison to benchmark quality and service. More than five creates noise and makes the decision harder without improving its quality. Run a structured evaluation — same coffees, same questions, same follow-up cadence — across all candidates before deciding."
+  },
+  {
+    q: "Can I switch roasters after signing a wholesale agreement?",
+    a: "Most wholesale agreements are month-to-month or annual with 30-day cancellation clauses. Read the terms before you sign, and ask specifically about termination. If a roaster is pushing for a long-term exclusivity commitment without a proven track record with your account, that's a red flag."
+  },
+  {
+    q: "What red flags should I watch for when evaluating a coffee roaster?",
+    a: "Watch for: vague sourcing information (can't tell you where the coffee is from beyond the country), slow sample response (more than 5 days to fulfill a sample request), inability to provide references from similar accounts, pricing that seems too low to be specialty grade, and pressure to commit before you've had adequate time to evaluate. A roaster who's confident in their product and service will welcome your evaluation process."
+  },
+  {
+    q: "Does it matter if my roaster is local?",
+    a: "Local has real advantages: faster delivery, fresher coffee, in-person training visits, and a local story that resonates with community-conscious guests. But local isn't automatically better than excellent. A national roaster with a strong wholesale program and reliable fulfillment may serve your operation better than a local roaster who can't meet your quality or service standards. Evaluate on merit first; proximity second."
+  }
+];
+
+const relatedPages = [
+  { href: '/wholesale-coffee-buying-guide', label: 'Guide', title: 'Wholesale Coffee Buying Guide' },
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Guide', title: 'How to Source Specialty Coffee Wholesale' },
+  { href: '/best-coffee-for-restaurants', label: 'Guide', title: 'Best Coffee for Restaurants' },
+  { href: '/top-roasters', label: 'Directory', title: 'Top Roasters by City' },
+];
+---
+
+<ContentLayout
+  title="How to Choose a Coffee Roaster for Your Business"
+  description="A structured evaluation guide for café operators, restaurants, and hospitality buyers choosing a wholesale coffee roaster — what questions to ask, what red flags to watch for, and how to make a decision that holds up."
+  slug="how-to-choose-a-coffee-roaster"
+  section="for-buyers"
+  sectionLabel="For Buyers"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-01"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Want help finding the right <em>roaster?</em>"
+  ctaBody="In The Black Coffee Co. matches cafés, restaurants, and offices with specialty roasters that fit — quality, pricing, geography, and values. We handle the sourcing conversation."
+>
+
+<p class="body">Choosing a wholesale coffee roaster is one of the more consequential purchasing decisions a café, restaurant, or hospitality operator makes. The right roaster is a genuine partner — someone who shows up when the espresso is off, who trains your staff when they turn over, who tells you when a lot is transitioning so you're not caught off guard. The wrong roaster is an expensive lesson in why that partnership matters.</p>
+
+<p class="body">This guide gives you a structured process for making the right choice.</p>
+
+<h2 class="section-head">Before You Start <em>Evaluating</em></h2>
+
+<p class="body">Before you reach out to a single roaster, spend an hour getting clear on what you actually need. The evaluation process is much more efficient when you know what you're measuring against.</p>
+
+<ul class="body-list">
+  <li><strong>Volume:</strong> How many pounds per week does your operation use? Be honest about current usage, not aspirational projections. Roasters set minimum orders — knowing your real volume tells you who you can work with.</li>
+  <li><strong>Program type:</strong> Are you building a specialty bar program, a high-volume café, a restaurant coffee program, or an office amenity? The answer changes what you need from a roaster.</li>
+  <li><strong>Geography:</strong> Do you need same-week delivery? Can you work with a roaster who ships nationally, or do you prefer someone who can visit in person?</li>
+  <li><strong>Budget:</strong> What's your target cost per pound? Be realistic — specialty coffee under $10/lb wholesale isn't specialty in any meaningful sense.</li>
+  <li><strong>Values:</strong> Does direct trade, sustainability certification, or local sourcing matter to your brand story? Define this before evaluating, not after.</li>
+</ul>
+
+<h2 class="section-head">The Evaluation <em>Framework</em></h2>
+
+<p class="body">Evaluate every roaster candidate against the same four dimensions. This structure makes comparison easier and surfaces differences that intuition alone misses.</p>
+
+<h3 class="sub-head">1. Cup quality</h3>
+<p class="body">Request the same coffees from every roaster you're evaluating — your standard espresso, one single-origin, one batch brew recommendation. Taste them the way your team and guests will drink them: pulled on your machine, brewed on your equipment, at your standard ratios. Don't taste them on a cupping spoon and make a production decision.</p>
+
+<p class="body">What you're looking for: Does the cup match the description? Is it genuinely excellent or just fine? Would your guests notice this coffee positively? Would your team feel good serving it?</p>
+
+<h3 class="sub-head">2. Service and responsiveness</h3>
+<p class="body">How a roaster handles the sample request is a proxy for how they'll handle a service call. Measure:</p>
+<ul class="body-list">
+  <li>Time from request to sample dispatch</li>
+  <li>Quality of the information included with samples</li>
+  <li>Follow-up timing and specificity</li>
+  <li>Responsiveness to questions during evaluation</li>
+</ul>
+<p class="body">A roaster who takes two weeks to fulfill a sample request and follows up with a generic "what did you think?" email is telling you something about how they'll operate as your partner.</p>
+
+<h3 class="sub-head">3. Terms and logistics</h3>
+<p class="body">Get this in writing before you make a decision:</p>
+<ul class="body-list">
+  <li>Pricing for the specific offerings you evaluated</li>
+  <li>Volume minimums and tier structure</li>
+  <li>Delivery schedule and lead time</li>
+  <li>Payment terms</li>
+  <li>Agreement length and cancellation terms</li>
+</ul>
+<p class="body">A roaster who's vague about terms is a roaster who'll be vague about billing disputes.</p>
+
+<h3 class="sub-head">4. The relationship</h3>
+<p class="body">This is the hardest to quantify and often the most predictive of long-term satisfaction. Ask yourself: Is this someone I want to call when something goes wrong at 7am? Do they seem genuinely interested in my operation, or am I clearly just a revenue line? Do they have opinions and expertise they can share, or do they just take orders?</p>
+
+<p class="body">The best wholesale coffee partnerships feel like having a knowledgeable consultant on retainer who also happens to deliver excellent coffee. That quality of relationship is worth seeking out deliberately.</p>
+
+<h2 class="section-head">Questions That Separate <em>Good Roasters from Great Ones</em></h2>
+
+<p class="body">Ask every candidate:</p>
+
+<ul class="body-list">
+  <li>"Walk me through where this specific coffee came from — farm, region, producer relationship."</li>
+  <li>"What happens when this lot sells out? What's the replacement, and how will I know about it?"</li>
+  <li>"Who is my point of contact for service issues, and what's your expected response time?"</li>
+  <li>"Can you provide a reference from an account similar to ours — same format, similar volume?"</li>
+  <li>"What does your training program look like for new accounts and for when staff turns over?"</li>
+  <li>"What's your delivery schedule, and what happens if I need something between scheduled deliveries?"</li>
+</ul>
+
+<p class="body">Good roasters answer these questions specifically and confidently. Great roasters answer them and then ask you questions back — about your team, your equipment, your guests, your brand vision. The curiosity is the differentiator.</p>
+
+<h2 class="section-head">Making the <em>Decision</em></h2>
+
+<p class="body">After evaluating three to five roasters against these four dimensions, the decision is usually clear — not because one roaster dominates on every dimension, but because the right fit becomes obvious when you've structured the comparison.</p>
+
+<p class="body">If two roasters are genuinely close, choose the one with better service. Cup quality at the specialty level is rarely the differentiator between finalists — all serious specialty roasters produce excellent coffee. The service, responsiveness, and relationship quality are where meaningful differences persist over a multi-year partnership.</p>
+
+<div class="callout">
+  <p>The decision you're making isn't which coffee is best. It's which roaster will make your program best — over time, through staff changes, through seasonal lot transitions, through the inevitable 7am service crisis. Choose accordingly.</p>
+</div>
+
+</ContentLayout>
