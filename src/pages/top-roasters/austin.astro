@@ -1,0 +1,185 @@
+---
+import TopRoastersLayout from '../../layouts/TopRoastersLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Where is Austin's specialty coffee scene centered?",
+    a: "East Austin has the highest concentration of independent roasters in the city. The industrial corridors of East Austin became the unofficial roasting district because of affordable warehouse space and proximity to the neighborhoods that drove the specialty coffee boom. Cuvée Coffee, Civil Goat, and Texas Coffee Traders all operate from the East Austin area, and the concentration has created a genuine roasting community."
+  },
+  {
+    q: "Which Austin roasters have the strongest wholesale programs?",
+    a: "Cuvée Coffee and Flat Track Coffee both have well-developed wholesale programs. Merit Coffee, operating out of San Antonio with Austin and Dallas cafés, has a particularly sophisticated wholesale infrastructure with equipment support and barista training built into every partnership. Greater Goods committed fully to wholesale distribution in 2024, making them a rising option for buyers wanting a mission-aligned roaster."
+  },
+  {
+    q: "What is Summer Moon Coffee and is it specialty grade?",
+    a: "Summer Moon is an Austin chain known for wood-fired roasting in brick ovens using Texas oak. It produces a distinctly sweet, low-acid cup that has a massive following. However, it occupies a different category than the roasters on this list — it's not competing for the same specialty sourcing and extraction standards that define the third-wave Austin scene. Both have their place; they serve different palates."
+  },
+  {
+    q: "How does Austin's coffee market compare to other Texas cities?",
+    a: "Austin has the most developed specialty roasting scene in Texas by volume and per-capita density. Dallas and San Antonio are growing, with Merit Coffee bridging the gap across all three markets. Houston has a developing specialty scene anchored by a few strong independent roasters. Austin remains the state's benchmark for sourcing standards and barista culture."
+  }
+];
+---
+
+<TopRoastersLayout
+  title="The 7 Best Specialty Coffee Roasters in Austin"
+  description="Austin has 15+ established specialty roasters and East Austin's industrial corridors have become one of the country's legitimate roasting districts. A wholesale buyer's guide to the best of them."
+  city="Austin"
+  slug="austin"
+  roasterCount={7}
+  publishDate="2024-06-01"
+  updatedDate="2025-03-15"
+  {faqItems}
+>
+
+  <p class="body-text">
+    Austin's specialty coffee story starts in East Austin, in warehouse space that got cheap fast and attracted roasters who wanted room to grow. What followed was a self-reinforcing cycle: good roasters attracted serious baristas, serious baristas trained the next generation, and the café culture that emerged gave wholesale buyers genuine options where a decade earlier there were almost none.
+  </p>
+  <p class="body-text">
+    Today Austin supports over 15 established specialty roasters. East Austin remains the epicenter, but the market has matured enough that wholesale infrastructure — equipment programs, training, consistent fulfillment — is standard rather than exceptional. What varies is sourcing philosophy and the character of the cup. Here's who's worth knowing.
+  </p>
+
+  <div class="roaster-card">
+    <span class="roaster-number">01 / 07</span>
+    <h2 class="roaster-name">Cuvée Coffee</h2>
+    <div class="roaster-tagline">East Austin · Founded 1998</div>
+    <div class="roaster-body">
+      <p>Cuvée has been operating since 1998, which makes them the closest thing Austin has to an institution in the specialty coffee space. Founded in East Austin's industrial district, the roastery has spent over 25 years building relationships with producers in Colombia, Ethiopia, Guatemala, and Brazil. That relationship depth shows in what wholesale partners actually receive: not a commodity slot-fill, but a sourcing program that produces distinctive cups year over year.</p>
+      <p>Their wholesale operation is one of the most developed in Texas. Equipment support, barista certification, and quarterly cupping programs are standard inclusions. For café operators or restaurant groups who want a roaster that will show up and stay engaged, Cuvée has the infrastructure for it.</p>
+      <p>Their lab in East Austin is also one of the best places in Texas to understand what specialty sourcing actually means — they run educational cuppings for wholesale partners that are substantive rather than promotional.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Austin Institution</span>
+      <span class="roaster-tag">Direct Relationships</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Barista Certification</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">02 / 07</span>
+    <h2 class="roaster-name">Merit Coffee</h2>
+    <div class="roaster-tagline">San Antonio (roastery), Austin &amp; Dallas (cafés) · Founded 2014</div>
+    <div class="roaster-body">
+      <p>Merit operates from a San Antonio roastery that supplies cafés across Texas and a wholesale program that reaches beyond state lines. Founded nearly a decade ago with a singular focus on sourcing and roast quality, Merit has built the kind of infrastructure that larger operations often sacrifice depth for: their sourcing relationships are direct and specific, and their roast profiles are calibrated to express each origin rather than homogenize it.</p>
+      <p>For wholesale buyers, Merit is one of the more sophisticated options in Texas. Their partner program includes pricing consultation, equipment support, and barista training that's delivered in-market rather than over email. They approach new accounts as long-term partnerships, not transactions, which means the onboarding process is more thorough — and the ongoing relationship more valuable.</p>
+      <p>Particularly strong for restaurant groups and hospitality accounts in Austin and Dallas looking for a Texas-roasted product with genuine craft behind it.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Texas Roastery</span>
+      <span class="roaster-tag">Wholesale National</span>
+      <span class="roaster-tag">Equipment Support</span>
+      <span class="roaster-tag">Hospitality Accounts</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">03 / 07</span>
+    <h2 class="roaster-name">Flat Track Coffee</h2>
+    <div class="roaster-tagline">East Austin · Founded 2013</div>
+    <div class="roaster-body">
+      <p>Flat Track opened in 2013 in a space that doubled as a motorcycle community gathering point, which gave the brand a character most coffee roasters don't come with. The East Austin location became a hub for the cycling and moto crowd — not because of themed marketing, but because the founders were genuinely embedded in those communities and built a café around them.</p>
+      <p>The sourcing philosophy balances house blends suited to the daily-driver café customer with single-origin offerings that rotate with seasonality. That range makes Flat Track a good fit for wholesale accounts that serve mixed audiences: the espresso-forward blends handle volume, and the single-origins give the menu something worth talking about.</p>
+      <p>Wholesale and subscription sales run in parallel. Café accounts, restaurant partners, and office programs are all part of the wholesale portfolio. Local Austin delivery has historically been free.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Community Roaster</span>
+      <span class="roaster-tag">House Blends</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">East Austin</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">04 / 07</span>
+    <h2 class="roaster-name">Greater Goods Coffee</h2>
+    <div class="roaster-tagline">Austin · Founded 2015</div>
+    <div class="roaster-body">
+      <p>Greater Goods made a deliberate pivot in 2024: doubling down on wholesale distribution as their growth vector rather than retail expansion. That strategic choice signals a roastery that's confident enough in their product to compete on the wholesale merit rather than relying on foot traffic. Their distribution reach already extends through Whole Foods and larger Austin-area retailers — a different customer profile than most craft roasters pursue, but one that speaks to consistency and volume capacity.</p>
+      <p>Their sourcing emphasizes responsible relationships with producers, and a portion of proceeds from each bag funds community causes. For wholesale buyers who want their coffee program to carry a values narrative — and who need a roaster with proven distribution infrastructure — Greater Goods is a strong option.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Wholesale-First 2024</span>
+      <span class="roaster-tag">Mission-Aligned</span>
+      <span class="roaster-tag">Retail Distribution</span>
+      <span class="roaster-tag">Specialty Grade</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">05 / 07</span>
+    <h2 class="roaster-name">Texas Coffee Traders</h2>
+    <div class="roaster-tagline">East Austin · Founded 1994</div>
+    <div class="roaster-body">
+      <p>Texas Coffee Traders has been operating in East Austin since 1994 — before the neighborhood became a destination, before "specialty" was a marketing term, before the third wave was a concept. That longevity gives them something no newer roaster can replicate: institutional knowledge of what the Austin wholesale market actually needs, earned through decades of serving it.</p>
+      <p>Their sourcing covers a broad range of origins, with a practical approach that balances quality with the kind of consistency that long-term wholesale relationships require. Not the most experimental roaster in the city, but among the most reliable — and reliability is what most wholesale buyers actually need once the novelty of a new partnership settles.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">30+ Years</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">East Austin</span>
+      <span class="roaster-tag">Consistency</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">06 / 07</span>
+    <h2 class="roaster-name">Medici Coffee</h2>
+    <div class="roaster-tagline">Austin (multiple locations) · Founded 2006</div>
+    <div class="roaster-body">
+      <p>Medici was founded in 2006 on the idea that coffee fuels creativity — and named after the Italian dynasty that bankrolled Renaissance art. That cultural positioning isn't just branding: the cafés have always attracted a creative professional crowd, which gives Medici's wholesale accounts a specific identity alignment that works well for studios, co-working spaces, and design-forward hospitality venues.</p>
+      <p>The roasting program emphasizes single-origin clarity and seasonal rotation. Their cafés function as testing grounds for sourcing decisions — if a lot doesn't work in the bar program, it doesn't make it into wholesale. That filter produces consistent quality for wholesale partners who are getting vetted product rather than raw selection.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Creative Culture</span>
+      <span class="roaster-tag">Single Origin</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Seasonal Rotation</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">07 / 07</span>
+    <h2 class="roaster-name">Palomino Coffee</h2>
+    <div class="roaster-tagline">East Austin · Founded 2016</div>
+    <div class="roaster-body">
+      <p>Palomino operates a focused East Austin café with an on-site roastery that keeps production small and quality tight. The model is intentionally constrained: by controlling everything from green sourcing to the final cup in their own space, they maintain the kind of consistency that larger operations struggle to preserve through distribution layers.</p>
+      <p>The retail format — café plus small roastery shop with rotating single-origin offerings — is complemented by a curated wholesale program for accounts that share the sourcing philosophy. Palomino also integrates local vendors into the café experience, which signals a community orientation that tends to translate into genuine engagement with wholesale partners.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">On-Site Roastery</span>
+      <span class="roaster-tag">Curated Wholesale</span>
+      <span class="roaster-tag">East Austin</span>
+      <span class="roaster-tag">Small Production</span>
+    </div>
+  </div>
+
+  <h2 class="section-header">Austin's Roasting District: <em>Why East Austin</em></h2>
+  <p class="body-text">
+    The concentration of roasters in East Austin wasn't accidental. Industrial zoning, lower rents, and proximity to the neighborhoods that drove Austin's population growth in the 2010s made it the natural landing zone for roasters who needed warehouse space and community proximity simultaneously. The result is a genuine roasting district — not a marketing district, but an actual place where roasters operate, collaborate, and compete within blocks of each other.
+  </p>
+  <p class="body-text">
+    For wholesale buyers, that concentration matters: it produced a competitive environment that pushed sourcing and roasting standards upward, and it means you can evaluate several serious roasters in a single afternoon if you're visiting to find the right fit.
+  </p>
+
+  <fragment slot="related">
+    <a href="/top-roasters/chicago" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Chicago</div>
+    </a>
+    <a href="/top-roasters/nashville" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Nashville</div>
+    </a>
+    <a href="/top-roasters/denver" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Denver</div>
+    </a>
+    <a href="/top-roasters/portland" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Portland</div>
+    </a>
+  </fragment>
+
+</TopRoastersLayout>

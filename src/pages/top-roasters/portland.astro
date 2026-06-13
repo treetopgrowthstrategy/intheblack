@@ -1,0 +1,202 @@
+---
+import TopRoastersLayout from '../../layouts/TopRoastersLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Why is Portland considered one of the best coffee cities in the US?",
+    a: "Portland has over 80 coffee roasters — a density that exists almost nowhere else in America. The city's combination of a highly educated consumer base, a culture that rewards craft and local ownership, and proximity to West Coast port infrastructure (making green coffee logistics efficient) created conditions where specialty roasters could survive and thrive. Portland's palate is sophisticated enough that mediocre coffee doesn't get repeat business, which keeps quality standards high."
+  },
+  {
+    q: "Which Portland roasters are best for wholesale partnerships?",
+    a: "Stumptown Coffee Roasters pioneered the wholesale model and still runs one of the most sophisticated wholesale programs in the country. Water Avenue Coffee and Heart Coffee Roasters both have strong wholesale infrastructure for smaller accounts. Coava Coffee Roasters and Guilder operate premium wholesale programs focused on alignment over volume. For mission-driven buyers, Nossa Familia Coffee offers B Corp certified sourcing with a dedicated wholesale team."
+  },
+  {
+    q: "What makes Portland coffee roasters different from other cities?",
+    a: "Portland roasters are generally further along in sourcing documentation than roasters in other markets. Transparency reports, producer relationship disclosures, and farm-level traceability are more common here than almost anywhere else. The market has pushed roasters to be specific about where coffee comes from because Portland consumers actually read the origin information. For wholesale buyers, that translates to better available story-telling material."
+  },
+  {
+    q: "Is Stumptown Coffee still good since the acquisition?",
+    a: "Stumptown was acquired by Peet's Coffee in 2015, which created understandable skepticism. The wholesale program and sourcing practices have largely held up — the Hair Bender blend and relationship coffees that defined Stumptown's early years are still the core of the wholesale book. The brand has lost some of its indie cachet, but the cup quality and wholesale infrastructure remain among the best in the country."
+  }
+];
+---
+
+<TopRoastersLayout
+  title="The 8 Best Specialty Coffee Roasters in Portland"
+  description="Portland has 80+ coffee roasters and the country's most literate coffee consumer base. A wholesale buyer's guide to the roasters who earned their reputations in the world's most competitive specialty market."
+  city="Portland"
+  slug="portland"
+  roasterCount={8}
+  publishDate="2024-06-01"
+  updatedDate="2025-03-15"
+  {faqItems}
+>
+
+  <p class="body-text">
+    Portland is where modern specialty coffee came of age in America, and the city's 80-plus roasters are both the result and the evidence of that. The competition here is real: Portland coffee consumers can name roasters, discuss processing methods, and tell the difference between a washed Ethiopian and a natural-process one. That consumer sophistication raises the floor for everyone operating in the market.
+  </p>
+  <p class="body-text">
+    For wholesale buyers, Portland is a gold standard. The roasters who've survived here have done it through genuine quality — not marketing, not nostalgia, not location. What follows is a guide to the eight worth knowing.
+  </p>
+
+  <div class="roaster-card">
+    <span class="roaster-number">01 / 08</span>
+    <h2 class="roaster-name">Stumptown Coffee Roasters</h2>
+    <div class="roaster-tagline">SE Division &amp; multiple locations · Founded 1999</div>
+    <div class="roaster-body">
+      <p>Stumptown founded the Direct Trade movement alongside Intelligentsia and Counter Culture — the three roasters who, in the late 1990s and early 2000s, collectively invented what modern specialty coffee wholesale looks like. Founder Duane Sorenson's approach to producer relationships wasn't marketing positioning; it was a sourcing methodology that paid premiums above fair trade certification because the quality justified it.</p>
+      <p>The Peet's acquisition in 2015 raised questions that the sourcing team has largely answered: the Hair Bender blend, the relationship coffees, and the wholesale infrastructure built over 25 years are still intact. For café and restaurant operators who want a roaster with national recognition and a wholesale team built for scale, Stumptown remains the most accessible entry point into Portland-quality specialty coffee.</p>
+      <p>Their wholesale program serves accounts in every state. Equipment programs, barista training, and dedicated account managers are standard inclusions. The wholesale coffee guide they publish is among the most useful operator resources in the industry.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Direct Trade Pioneer</span>
+      <span class="roaster-tag">Wholesale National</span>
+      <span class="roaster-tag">Barista Training</span>
+      <span class="roaster-tag">Equipment Programs</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">02 / 08</span>
+    <h2 class="roaster-name">Coava Coffee Roasters</h2>
+    <div class="roaster-tagline">SE Grand &amp; multiple Portland locations · Founded 2008</div>
+    <div class="roaster-body">
+      <p>Coava was founded in 2008 by Matt Higgins in a warehouse space on SE Grand that became one of Portland's most photographed coffee environments — a roastery inside a working lumber mill, all exposed timber and industrial light. But the aesthetic never did the work that the sourcing did. Coava built direct relationships with producers in Colombia, Rwanda, Ethiopia, and Guatemala, and those relationships produced lots that won competition placements and sustained long-term wholesale accounts that didn't need the room to justify the coffee.</p>
+      <p>Their premium wholesale program is selective. Coava wants partners who will invest in serving the coffee correctly — who will use good equipment, train their staff, and actually put the origin information on the menu. That selectivity makes the relationship more demanding, but the wholesale accounts that earn a spot in Coava's program stay in it for years.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Producer Relationships</span>
+      <span class="roaster-tag">Competition Coffees</span>
+      <span class="roaster-tag">Selective Wholesale</span>
+      <span class="roaster-tag">Direct Trade</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">03 / 08</span>
+    <h2 class="roaster-name">Heart Coffee Roasters</h2>
+    <div class="roaster-tagline">SW 10th &amp; multiple Portland locations · Founded 2009</div>
+    <div class="roaster-body">
+      <p>Heart Coffee was founded in 2009 by Wille Yli-Luoma, a Finnish roaster who brought a Nordic sensibility to Portland's already-exacting specialty market. The result is a roastery with one of the more distinctive sourcing philosophies in the city: a preference for high-clarity lots from East Africa and Central America, roasted light enough to express origin character while maintaining the sweetness that Nordic coffee culture prizes.</p>
+      <p>Their wholesale program is built around that clarity of vision. Heart isn't trying to serve every account — they're looking for cafés and restaurants where the coffee program is taken seriously and where the sourcing story has space to be told. For wholesale buyers in that category, Heart is one of the most compelling options in the Pacific Northwest.</p>
+      <p>The SW Portland location became a design landmark as much as a café — a deliberate statement that specialty coffee and thoughtful physical design belong together.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Nordic Influence</span>
+      <span class="roaster-tag">East African Origins</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Design-Forward</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">04 / 08</span>
+    <h2 class="roaster-name">Water Avenue Coffee</h2>
+    <div class="roaster-tagline">SE Water Avenue · Founded 2009</div>
+    <div class="roaster-body">
+      <p>Water Avenue Coffee was founded in 2009 by Brandon Smyth and operates from a roastery and café on SE Water Avenue that has become a steady anchor of Portland's inner southeast coffee scene. The sourcing approach emphasizes direct producer relationships, with a particular focus on establishing multi-year commitments that allow farmers to plan around consistent purchasing demand.</p>
+      <p>Their wholesale program is well-structured for accounts in the Pacific Northwest and beyond. The emphasis on producer stability in their sourcing model translates to supply consistency for wholesale partners — a practical benefit that gets underweighted in conversations about sourcing ethics. Water Avenue partners can order with confidence that their core offerings will be available.</p>
+      <p>For restaurant accounts and independent cafés who want a roaster that combines genuine craft with operational reliability, Water Avenue consistently delivers on both.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Multi-Year Producer Commitments</span>
+      <span class="roaster-tag">Supply Consistency</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Inner SE Portland</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">05 / 08</span>
+    <h2 class="roaster-name">Nossa Família Coffee</h2>
+    <div class="roaster-tagline">NW Portland · Founded 2004</div>
+    <div class="roaster-body">
+      <p>Nossa Família was founded by Augusto Carneiro, a Brazilian immigrant whose family has been growing coffee in the Santa Catarina region of Brazil for four generations. That origin story isn't marketing — it literally informs how the roastery sources, what quality standards it applies, and what the coffee tastes like. The Brazilian family farm provides one of the signature offerings; relationships in Central America and Ethiopia fill out a sourcing program rooted in personal accountability rather than commodity purchasing.</p>
+      <p>Nossa Família is B Corp certified, which documents their commitment to social and environmental standards across the business. For wholesale buyers who need their vendor relationships to align with a values-driven organizational identity, the certification matters. For buyers who don't, the coffee stands on its own.</p>
+      <p>Their wholesale program includes origin education, barista training, and account management from a team that understands the farming side of the supply chain as well as anyone in the industry.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">B Corp Certified</span>
+      <span class="roaster-tag">Family Farm Origin</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">4th Generation Coffee</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">06 / 08</span>
+    <h2 class="roaster-name">Guilder</h2>
+    <div class="roaster-tagline">SW Broadway · Founded 2015</div>
+    <div class="roaster-body">
+      <p>Guilder arrived in 2015 with a clear identity: European café culture executed with Pacific Northwest sourcing standards. The SW Broadway location blends the social character of a Viennese coffeehouse with the extraction precision of Portland's best specialty bars. That combination attracts a professional and hospitality-adjacent clientele that translates well into wholesale account alignment.</p>
+      <p>The sourcing program focuses on high-quality lots from established growing regions, roasted to express sweetness and clarity rather than pushing the extremes of processing experimentation. For wholesale accounts that serve guests who want excellent coffee without the tutorial, Guilder's menu occupies a compelling middle ground between approachable and distinctive.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">European Café Style</span>
+      <span class="roaster-tag">Specialty Sourcing</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">SW Portland</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">07 / 08</span>
+    <h2 class="roaster-name">Proud Mary Coffee</h2>
+    <div class="roaster-tagline">NE Alberta St · Founded 2009 (Melbourne) / Portland 2017</div>
+    <div class="roaster-body">
+      <p>Proud Mary was founded in Melbourne in 2009 by Nolan and Shari Hirte and opened their Portland café in 2017 — a bet on the city's coffee culture that paid off immediately. The Australian influence brought a food-forward café approach to the NE Alberta corridor: Proud Mary's menu integrates coffee and kitchen in a way that most specialty cafés don't attempt, and the result is a day-use experience that rivals any specialty bar in the country.</p>
+      <p>The sourcing program embraces experimentation: anaerobic fermentation, extended naturals, and winemaking-adjacent processing methods appear regularly on the menu. For wholesale buyers looking to feature something genuinely distinctive — lots that guests will ask about by name — Proud Mary's seasonal offerings deliver that. Not an everyman roaster; a destination one.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Melbourne Roots</span>
+      <span class="roaster-tag">Process Experimentation</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Food Integration</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">08 / 08</span>
+    <h2 class="roaster-name">Extracto Coffee Roasters</h2>
+    <div class="roaster-tagline">NE Killingsworth · Founded 2007</div>
+    <div class="roaster-body">
+      <p>Extracto has been on NE Killingsworth since 2007, long enough to have watched Portland's specialty market mature from the outside of the hype cycles. The neighborhood roaster approach — embedded in the community, known by the regulars, consistent across years — is what Extracto does deliberately. They've resisted the temptation to expand aggressively or position for acquisition, which is why the coffee still tastes like it was made by people who care rather than a brand that needs to.</p>
+      <p>Their wholesale program is modest in scale and genuine in practice. They take accounts where they can provide real service — not every account in every market, but the ones where the relationship has room to be meaningful. For independent café operators in the Pacific Northwest who want a roaster with neighborhood credibility and a 15-year track record of consistency, Extracto is worth the conversation.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Neighborhood Roaster</span>
+      <span class="roaster-tag">15+ Years</span>
+      <span class="roaster-tag">Selective Wholesale</span>
+      <span class="roaster-tag">NE Portland</span>
+    </div>
+  </div>
+
+  <h2 class="section-header">What 80 Roasters <em>Actually Means</em></h2>
+  <p class="body-text">
+    The statistic — 80 coffee roasters in Portland — sounds like a bragging point, but it's actually a pressure test. In a market that dense, there's nowhere for quality to hide. Roasters who don't earn return business from sophisticated consumers disappear. The ones who survive earn their reputations one cup at a time, in a city that's had thirty years to develop an educated palate.
+  </p>
+  <p class="body-text">
+    For wholesale buyers outside Portland evaluating these roasters, the density is actually a quality signal. The roasters on this list didn't just survive a competitive market — they defined it. Bringing any of them into your wholesale program means bringing the standards of the world's most demanding specialty coffee city with them.
+  </p>
+
+  <fragment slot="related">
+    <a href="/top-roasters/chicago" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Chicago</div>
+    </a>
+    <a href="/top-roasters/nashville" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Nashville</div>
+    </a>
+    <a href="/top-roasters/austin" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Austin</div>
+    </a>
+    <a href="/top-roasters/denver" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Denver</div>
+    </a>
+  </fragment>
+
+</TopRoastersLayout>

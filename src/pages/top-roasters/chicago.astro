@@ -1,0 +1,221 @@
+---
+import TopRoastersLayout from '../../layouts/TopRoastersLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What makes Chicago one of the best cities for specialty coffee?",
+    a: "Chicago's centralized geography made it a natural wholesale coffee hub decades before the third-wave movement took hold. Roasters here serve the entire Midwest efficiently — same-day logistics to Wisconsin, Indiana, Michigan, and beyond. That distribution advantage, combined with a seriously demanding local café culture, means Chicago roasters have had to get very good, very fast."
+  },
+  {
+    q: "Do Chicago roasters offer wholesale programs?",
+    a: "Most of the roasters on this list run active wholesale programs. Intelligentsia built its reputation almost entirely on its Direct Trade wholesale model. Dark Matter, Metropolis, and Bridgeport Coffee all serve café, restaurant, and office accounts throughout the Midwest. Many offer equipment support, barista training, and quarterly menu consulting as part of their wholesale partnerships."
+  },
+  {
+    q: "What is Direct Trade coffee and which Chicago roasters practice it?",
+    a: "Direct Trade is a sourcing approach where roasters buy directly from individual farms or cooperatives — cutting out importers and commodity markets. Intelligentsia pioneered the practice and still publishes rigorous sourcing transparency reports. Metric Coffee, Dark Matter, and Hexe Coffee also maintain direct or closely-vetted relationships with origin producers."
+  },
+  {
+    q: "How do I get wholesale coffee from a Chicago roaster?",
+    a: "Most Chicago roasters want a conversation before they'll quote wholesale pricing. They'll want to understand your volume, your equipment, and what café or restaurant concept you're running. Intelligentsia and Metropolis both have dedicated wholesale pages with inquiry forms. Smaller roasters like Hexe often prefer email introductions."
+  },
+  {
+    q: "Are there any specialty coffee roasters in Chicago's suburbs?",
+    a: "Yes. Conscious Cup operates out of Crystal Lake and has been running for over 20 years with a full wholesale program and barista training. Passion House Coffee Roasters started in Roselle before expanding to Chicago proper. Two Brothers Coffee Roasters in Warrenville is another strong suburban option with serious wholesale capacity."
+  }
+];
+---
+
+<TopRoastersLayout
+  title="The 8 Best Specialty Coffee Roasters in Chicago"
+  description="A sourcer's guide to Chicago's finest specialty coffee roasters — from Intelligentsia's Direct Trade legacy to Dark Matter's chaotic-good approach to origin coffee. Every roaster worth knowing if you're buying wholesale in the Midwest."
+  city="Chicago"
+  slug="chicago"
+  roasterCount={8}
+  publishDate="2024-06-01"
+  updatedDate="2025-03-15"
+  {faqItems}
+>
+
+  <p class="body-text">
+    Chicago has a coffee problem — in the best way. The city supported specialty roasters before most American cities knew what that meant, and the result is a bench depth that rivals Portland or Brooklyn. What's different here is the wholesale infrastructure: Chicago roasters serve the entire Midwest, which means they've had to develop serious logistics, quality control, and consistency standards that smaller-market roasters simply don't face.
+  </p>
+  <p class="body-text">
+    This list focuses on roasters with genuine craft — sourcing philosophy you can trace, roasting decisions you can taste, and wholesale programs built for real partnerships. We've left out the corporate aggregators and the surface-level "specialty" players. What follows is the real thing.
+  </p>
+
+  <!-- ROASTER 1 -->
+  <div class="roaster-card">
+    <span class="roaster-number">01 / 08</span>
+    <h2 class="roaster-name">Intelligentsia Coffee</h2>
+    <div class="roaster-tagline">Fulton Market &amp; multiple locations · Founded 1995</div>
+    <div class="roaster-body">
+      <p>Intelligentsia didn't just grow up in Chicago — it built the framework that the modern specialty industry runs on. When founders Doug Zell and Emily Mange started Direct Trade in the late 1990s, they were effectively inventing a supply chain standard from scratch. Today, their Direct Trade Charter governs relationships with producers across Ethiopia, Colombia, Guatemala, and Kenya, with annual transparency reports that remain among the most rigorous in the industry.</p>
+      <p>Their Fulton Market flagship is worth visiting just to watch the bar program in action — it functions more like a tasting room than a café. Wholesale partners get quarterly origin selections, barista certification support, and access to an equipment program that most independent roasters can't match.</p>
+      <p>What you're really buying when you work with Intelligentsia is credibility. If you're a café operator in the Midwest and you serve Intelligentsia, your guests already know what that means.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Direct Trade</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Barista Training</span>
+      <span class="roaster-tag">Origin Transparency</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 2 -->
+  <div class="roaster-card">
+    <span class="roaster-number">02 / 08</span>
+    <h2 class="roaster-name">Dark Matter Coffee</h2>
+    <div class="roaster-tagline">West Town (The Mothership) &amp; multiple locations · Founded 2008</div>
+    <div class="roaster-body">
+      <p>Dark Matter is the antithesis of Intelligentsia's clean-line aesthetic — and that's entirely the point. Founded by Jesse Diaz, the brand leans into Chicago's underground music and art culture with roast names borrowed from psychedelia and packaging that looks like concert posters. Behind the aesthetic is a sourcing program that's dead serious about quality: they source from small farms across Ethiopia, Colombia, Brazil, and Central America, with a preference for high-altitude and naturally processed lots.</p>
+      <p>Their 18,000-square-foot roastery along the Chicago River gave them the capacity to serve accounts across North America while still running the kind of batch-by-batch dialing that makes wholesale partners trust them. For cafés that want personality without sacrificing cup quality, Dark Matter consistently delivers both.</p>
+      <p>Available in specialty grocery stores, restaurant groups, hotels, and independent cafés throughout the Midwest.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Single Origin</span>
+      <span class="roaster-tag">Natural Process</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Cultural Brand</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 3 -->
+  <div class="roaster-card">
+    <span class="roaster-number">03 / 08</span>
+    <h2 class="roaster-name">Metropolis Coffee Company</h2>
+    <div class="roaster-tagline">Edgewater · Founded 2003</div>
+    <div class="roaster-body">
+      <p>Metropolis operates from a neighborhood that still feels local, which is probably why their coffee tastes that way. Founded in 2003 by Tony Dreyfuss and Jeff Handelman, the roastery in Edgewater has been operating with the same commitment to small-batch, direct-relationship sourcing for over two decades. In 2007, Roast Magazine named them Roaster of the Year — an honor that held up, because the coffee still tastes like it did when they won it.</p>
+      <p>Their wholesale program leans into the boutique end of the market: independent cafés, farm-to-table restaurants, and office accounts where someone actually cares about what's in the pot. They don't chase volume; they chase fit. That selectivity makes them harder to work with, but it also means their wholesale accounts tend to run long.</p>
+      <p>Their sustainability track record is meaningful — compostable packaging, environmental certifications, and a documented approach to supply chain ethics that goes beyond marketing language.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Small Batch</span>
+      <span class="roaster-tag">Sustainable</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Roaster of the Year 2007</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 4 -->
+  <div class="roaster-card">
+    <span class="roaster-number">04 / 08</span>
+    <h2 class="roaster-name">Bridgeport Coffee</h2>
+    <div class="roaster-tagline">Bridgeport &amp; multiple Chicago locations · Founded 2004</div>
+    <div class="roaster-body">
+      <p>Bridgeport Coffee operates from one of Chicago's oldest working-class neighborhoods, and that unpretentious identity bleeds into everything they do. The roastery handles origin sourcing with the kind of care that earns high cup scores, but the cafés feel like places where you can actually sit down and think. That balance — rigorous coffee, approachable spaces — has made them a mainstay for neighborhood accounts across Chicago.</p>
+      <p>Their wholesale program is quietly one of the most accessible in the city for independent operators. They work with café owners who are opening their first location and with established multi-unit restaurant groups. On-site training, equipment consultation, and seasonal menu support are all part of the partnership.</p>
+      <p>Their community roots are genuine: local sourcing where possible, neighborhood employment, and a long track record of involvement in the Bridgeport and broader South Side communities.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Community Roaster</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Barista Training</span>
+      <span class="roaster-tag">On-Site Roasting</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 5 -->
+  <div class="roaster-card">
+    <span class="roaster-number">05 / 08</span>
+    <h2 class="roaster-name">Metric Coffee</h2>
+    <div class="roaster-tagline">West Town · Founded 2014</div>
+    <div class="roaster-body">
+      <p>Metric was launched in 2014 by Xavier Alexander and Darko Arandjelovic with a specific philosophy: that sourcing and roasting were two halves of the same discipline, and that getting them right required owning both. The result is a roastery that leans hard on terroir — lot-specific selections from single farms, often with experimental processing methods that reflect the current state of origin innovation.</p>
+      <p>Their café-roastery in West Town operates as both production facility and proof-of-concept: visitors see the roaster, taste the output, and understand the connection between what's on the cupping table and what ends up in the bag. For wholesale buyers interested in telling an origin story to their guests, Metric's sourcing documentation makes that easy.</p>
+      <p>They've built a modest but devoted wholesale footprint across Chicago's better independent café scene. Not trying to be everywhere — trying to be right.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Terroir Focus</span>
+      <span class="roaster-tag">Single Farm Lots</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Experimental Processing</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 6 -->
+  <div class="roaster-card">
+    <span class="roaster-number">06 / 08</span>
+    <h2 class="roaster-name">Hexe Coffee</h2>
+    <div class="roaster-tagline">Chicago · Founded 2018</div>
+    <div class="roaster-body">
+      <p>Hexe keeps a deliberately tight menu — around eight core offerings at any given time — because the founders believe that doing a few things right beats doing many things adequately. That constraint forces the kind of selection discipline that produces standout cups. Every origin on the menu was chosen for a reason, and the roast profiles are calibrated to express rather than correct.</p>
+      <p>As a younger roastery, Hexe approaches wholesale as a partnership more than a transaction. They're building accounts with operators who want a genuine relationship with their roaster — someone who answers the phone when something goes wrong, who comes in for barista trainings, who has opinions about water chemistry and extraction temps. If you're that kind of operator, Hexe is worth a conversation.</p>
+      <p>Chicago's only all-organic micro-roastery, with USDA-certified organic offerings across the full menu.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Organic Certified</span>
+      <span class="roaster-tag">Micro-Roastery</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Curated Menu</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 7 -->
+  <div class="roaster-card">
+    <span class="roaster-number">07 / 08</span>
+    <h2 class="roaster-name">Passion House Coffee Roasters</h2>
+    <div class="roaster-tagline">Chicago (with roots in Roselle) · Founded 2012</div>
+    <div class="roaster-body">
+      <p>Passion House founder Joshua Longbottom has been roasting since 2012, and the name was never ironic — the ethos here is about craft as personal expression rather than corporate positioning. Their sourcing prioritizes high-altitude growing regions, and they have a particular affinity for African lots — Ethiopia, Kenya, Burundi — where complex fruit-forward profiles align with their house style.</p>
+      <p>The Chicago expansion brought Passion House closer to the city's wholesale market, where they've built accounts with independent cafés and restaurant groups that value a roaster with a genuine voice. Their subscription program has developed a loyal direct-to-consumer following that runs in parallel to the wholesale business.</p>
+      <p>For wholesale buyers, Passion House is the kind of roaster you call when you want your coffee program to feel personal rather than sourced from a catalog.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">African Origins</span>
+      <span class="roaster-tag">High Altitude</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Subscription</span>
+    </div>
+  </div>
+
+  <!-- ROASTER 8 -->
+  <div class="roaster-card">
+    <span class="roaster-number">08 / 08</span>
+    <h2 class="roaster-name">Conscious Cup</h2>
+    <div class="roaster-tagline">Crystal Lake (Chicago suburbs) · Founded 2002</div>
+    <div class="roaster-body">
+      <p>Conscious Cup has been at it since 2002, which in specialty coffee years makes them elders. Their Crystal Lake roastery has spent over two decades sourcing from premier growing regions, prioritizing direct trade relationships, and running hands-on barista training programs for their wholesale partners. That depth of experience shows in how they approach new wholesale relationships: deliberately, with genuine investment in helping their accounts succeed.</p>
+      <p>Their wholesale program is built around a full suite of operator support: premium coffee supply, barista training, personalized operational consulting, and mobile coffee catering for events. For businesses in the Chicago suburbs and outer metro area, Conscious Cup offers the craft-roaster quality of city operations with geographic proximity that reduces logistics friction.</p>
+      <p>A strong choice for suburban café operators, hospitality venues, and corporate accounts west and northwest of the city.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">20+ Years</span>
+      <span class="roaster-tag">Direct Trade</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Barista Training</span>
+    </div>
+  </div>
+
+  <h2 class="section-header">What Sets <em>Chicago</em> Roasters Apart</h2>
+  <p class="body-text">
+    Two things define Chicago's coffee culture that you don't find in most markets. First, proximity to production: Chicago's freight infrastructure — rail, highway, air cargo — means green coffee moves here efficiently from port, and roasted coffee moves outward to the Midwest just as fast. Roasters built logistics operations around that advantage, which means their wholesale fulfillment tends to be tighter than in more isolated markets.
+  </p>
+  <p class="body-text">
+    Second, the city has always rewarded craft that doesn't perform. Chicago diners and drinkers have a skepticism of hype that keeps roasters honest. The roasters on this list earned their reputations through the cup, not the brand story — and they've maintained those reputations through years of consistent execution.
+  </p>
+  <p class="body-text">
+    For wholesale buyers evaluating Chicago roasters, the key question isn't quality — nearly everyone on this list clears that bar. The question is fit: do their sourcing philosophy and supply consistency match what your operation requires? The answer to that is best found in a sample conversation and a cupping session.
+  </p>
+
+  <fragment slot="related">
+    <a href="/top-roasters/nashville" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Nashville</div>
+    </a>
+    <a href="/top-roasters/austin" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Austin</div>
+    </a>
+    <a href="/top-roasters/denver" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Denver</div>
+    </a>
+    <a href="/top-roasters/portland" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Portland</div>
+    </a>
+  </fragment>
+
+</TopRoastersLayout>
