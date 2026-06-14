@@ -1,0 +1,109 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is a typical wholesale coffee price per pound?",
+    a: "Specialty wholesale coffee typically runs $10-18 per pound depending on the offering and roastery positioning. Entry-level specialty blends start around $10-12. Premium single-origins range from $13-18. Microlots and competition-grade coffees can run $20-30+. Commercial coffee wholesale runs $3-6 per pound — a different market entirely."
+  },
+  {
+    q: "Should coffee wholesale pricing be different for cafés vs. restaurants?",
+    a: "Not necessarily by account type, but by volume. A restaurant ordering 5 lbs per week should pay the same base rate as a café ordering 5 lbs per week. The volume tier is the lever, not the account category. Where pricing may legitimately differ: service intensity. A café that requires weekly training visits and equipment support is more expensive to serve than an office account that places standing orders and handles everything internally."
+  },
+  {
+    q: "How do I know if my wholesale coffee prices are too low?",
+    a: "If every prospect says yes immediately without negotiating, your prices are too low. Some price resistance is healthy — it signals you're positioned where quality-conscious buyers expect specialty coffee to be. More practically: calculate your fully loaded cost of goods per pound (green coffee, roasting overhead, packaging, delivery), and make sure your wholesale price maintains at least a 40-45% gross margin. Below that, the wholesale program isn't financially sustainable."
+  },
+  {
+    q: "Should I offer volume discounts for wholesale coffee?",
+    a: "Yes, but structure them around thresholds that reflect your actual economics. Volume discounts make sense when larger orders reduce your per-pound cost through better green sourcing, longer roasting runs, and lower per-delivery fulfillment cost. A 5-10% discount for accounts ordering 25+ lbs per week is a reasonable structure. Avoid discounting below accounts that generate margin — the point of the discount is to incentivize growth, not to win accounts at a loss."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/coffee-sales-follow-up', label: 'Sales Tips', title: 'Coffee Sales Follow-Up Guide' },
+  { href: '/coffee-roaster-wholesale-guide', label: 'Guide', title: 'Complete Wholesale Coffee Program Guide' },
+  { href: '/specialty-coffee-sales-outsourcing', label: 'Guide', title: 'Outsourcing Coffee Sales' },
+  { href: '/how-to-grow-wholesale-coffee-business', label: 'Guide', title: 'How to Grow a Wholesale Coffee Business' },
+];
+---
+
+<ContentLayout
+  title="How to Price Wholesale Coffee: A Roaster's Guide"
+  description="How to set wholesale coffee prices that are competitive, sustainable, and appropriate for different account types — the math behind specialty coffee pricing, common mistakes, and how to structure volume discounts."
+  slug="sales-tips/wholesale-coffee-pricing-guide"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Ready to fill your <em>wholesale pipeline?</em>"
+  ctaBody="In The Black Coffee Co. sells your coffee wholesale on commission. No upfront cost. No monthly fees. You pay when we close accounts."
+>
+
+<p class="body">Wholesale coffee pricing is where a lot of roasters get stuck — usually in one of two ways. Either they price too low, winning accounts that don't generate enough margin to sustain the service they require, or they price from fear of competition without grounding the number in their actual cost structure. Both approaches create problems that compound over time.</p>
+
+<p class="body">Good wholesale pricing starts with the math, then layers in market positioning and account-type considerations. This guide walks through both.</p>
+
+<h2 class="section-head">Start With <em>Cost of Goods</em></h2>
+
+<p class="body">Before setting any wholesale price, calculate your fully loaded cost per pound for each offering:</p>
+
+<ul class="body-list">
+  <li><strong>Green coffee cost:</strong> What you paid per pound of green, divided by the roast yield (typically 80-85% of green weight for light-medium roasts)</li>
+  <li><strong>Roasting overhead:</strong> Energy, equipment depreciation, operator time — allocated per pound produced</li>
+  <li><strong>Packaging:</strong> Bag cost per unit divided by fill weight</li>
+  <li><strong>Fulfillment:</strong> Delivery or shipping cost per pound, averaged across your delivery runs</li>
+</ul>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">40-45%</div>
+    <div class="stat-label">Minimum target gross margin</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">20-35%</div>
+    <div class="stat-label">Typical discount off retail</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">$10-18</div>
+    <div class="stat-label">Specialty wholesale range per lb</div>
+  </div>
+</div>
+
+<p class="body">Add those up. That's your floor. Your wholesale price needs to sit meaningfully above it — at minimum a 40-45% gross margin on cost of goods. Below that, you're not building a sustainable business; you're subsidizing your wholesale accounts with production costs that the margins don't cover.</p>
+
+<h2 class="section-head">Setting the <em>Wholesale Price</em></h2>
+
+<p class="body">Most specialty roasters use retail pricing as the anchor and discount from there: wholesale pricing typically runs 20-35% below retail bag price. That discount reflects the volume commitment, the reduced marketing cost per account, and the relationship value of a recurring wholesale buyer versus a one-time retail customer.</p>
+
+<p class="body">The floor check: make sure the discounted wholesale price still clears your minimum margin. If your retail price is $22 for a 12oz bag and your wholesale is 25% off that (roughly $13/lb), and your cost of goods is $8/lb, your gross margin is 38% — acceptable but lean. If your cost structure has gotten tighter, either your retail price needs to come up or your green sourcing cost needs to come down before the wholesale math works.</p>
+
+<h2 class="section-head">Volume Tiers: <em>The Right Structure</em></h2>
+
+<p class="body">Volume discounts incentivize accounts to grow their orders — which is good for both parties when the economics work. The key is making sure the discount reflects actual cost savings at higher volumes, not just a concession to close an account.</p>
+
+<p class="body">A simple three-tier structure works for most roasters:</p>
+
+<ul class="body-list">
+  <li><strong>Standard (10-24 lbs/week):</strong> Base wholesale price</li>
+  <li><strong>Growth (25-49 lbs/week):</strong> 5% discount — reflects longer roasting runs and reduced per-delivery cost</li>
+  <li><strong>Anchor (50+ lbs/week):</strong> 8-10% discount — plus enhanced service package (more frequent training visits, dedicated account manager)</li>
+</ul>
+
+<p class="body">Never discount below minimum for accounts that aren't providing volume that justifies it. A 10% discount for an account ordering 5 lbs per week is a gift, not a strategy.</p>
+
+<h2 class="section-head">When Buyers <em>Push Back on Price</em></h2>
+
+<p class="body">Some price resistance is healthy and expected. Specialty coffee costs more than commodity coffee, and buyers who've been purchasing commodity coffee will feel the difference. The response isn't to discount — it's to justify.</p>
+
+<p class="body">What you're selling when you sell specialty coffee at specialty pricing: traceable origin, roasted to order, with training and service support that commodity suppliers don't provide. The cost difference is $4-6 per pound. A café running 20 lbs per week pays $80-120 more per week for specialty versus commodity — against beverage revenue of $3,000-4,000 per week. The math on quality is easy if you do it out loud with the buyer.</p>
+
+<p class="body">If a buyer genuinely can't support specialty pricing at their current volume, that's information: either the account isn't ready for specialty, or there's a volume gap to close before the partnership makes sense.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:2rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">Track your pipeline with Billy →</a>
+
+</ContentLayout>

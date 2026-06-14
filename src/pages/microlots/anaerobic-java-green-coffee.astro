@@ -1,0 +1,119 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import DropWidget from '../../components/DropWidget.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is anaerobic coffee processing?",
+    a: "Anaerobic processing is a fermentation method where coffee cherries or depulped beans are sealed in oxygen-deprived tanks or containers before drying. Without oxygen, different microbial activity occurs during fermentation compared to traditional washed or natural processing — producing more pronounced fruit, wine-like, and complex flavors. The anaerobic environment allows roasters to achieve flavor profiles that aren't possible through conventional processing."
+  },
+  {
+    q: "What does anaerobic Java coffee taste like?",
+    a: "El Quetzal's Anaerobic Java green coffee cups with dried fruit forward flavors — think dark cherry, raisin, and prune — alongside chocolate undertones and a subtle nuttiness. Lighter roasts retain the depth of the fruit; medium roasts develop the chocolate notes for a notable body. The anaerobic process adds a distinctive complexity to the already-reliable Java varietal cup profile."
+  },
+  {
+    q: "What is Java coffee varietal?",
+    a: "The Java varietal (properly called Javanica) is an Arabica coffee variety that originated in Indonesia and is known for its tall, narrow plant structure with large cherries and elongated beans. It's distinct from the geographic designation 'Java coffee' (coffee grown on the island of Java). As a varietal, Java produces a cup characterized by mild sweetness, balanced acidity, and pleasant floral notes. It's particularly well-suited to medium roast profiles."
+  },
+  {
+    q: "How is anaerobic coffee different from natural process coffee?",
+    a: "Both anaerobic and natural process coffees involve fermenting the coffee cherry before removing the fruit. The key difference is environment: natural process coffee ferments aerobically — in open air — while anaerobic coffee ferments in sealed, oxygen-deprived tanks. The anaerobic environment produces a more intense, consistent fermentation that typically results in more pronounced fruit flavors and greater cup complexity than standard natural processing."
+  },
+  {
+    q: "Where can I buy anaerobic Java green coffee beans?",
+    a: "El Quetzal Coffee Co. offers farm-direct Anaerobic Java green coffee at elquetzal.coffee. The lot is sourced exclusively from El Quetzal Estate in Matagalpa, Nicaragua — the same farm that produces their flagship washed Java. The anaerobic lot cupped at 87 points in the 2023/24 harvest and is available in sample sizes through full sack quantities."
+  }
+];
+
+const relatedPages = [
+  { href: '/microlots/laurina-coffee-green-beans', label: 'Microlot Guide', title: 'Laurina Coffee Green Beans' },
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot Guide', title: 'Nicaragua Geisha Green Coffee' },
+  { href: '/drop-list', label: 'First Access', title: 'Join The Drop List' },
+  { href: '/coffee-roaster-wholesale-guide', label: 'Guide', title: 'The Complete Wholesale Coffee Program Guide' },
+];
+---
+
+<ContentLayout
+  title="Anaerobic Java Green Coffee: Processing, Flavor, and Sourcing"
+  description="A roaster's guide to anaerobic Java green coffee — what anaerobic processing does to the cup, how Java varietal performs under fermentation, and where to source farm-direct anaerobic Java from Nicaragua."
+  slug="microlots/anaerobic-java-green-coffee"
+  section="microlots"
+  sectionLabel="Microlot Guides"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Interested in <em>Anaerobic Java allocation?</em>"
+  ctaBody="El Quetzal's Anaerobic Java cupped at 87 points in 2023/24 — farm-direct from Matagalpa, Nicaragua. Contact El Quetzal to check inventory and request samples."
+>
+
+<p class="body">Java has a quiet reputation. The varietal — properly called Javanica — doesn't generate the competition placements or auction headlines of Geisha or the intrigue of Laurina. What it has is consistency: farms that have grown it for decades know what to expect from it, roasters who've dialed it in know how to treat it, and consumers who've developed a preference for it come back reliably.</p>
+
+<p class="body">El Quetzal has grown washed Java in Matagalpa for over 20 years, and it remains the cornerstone of their green coffee program. The Anaerobic Java is what happens when a farm that knows its Java intimately decides to see what a different processing method does to it. The answer — dried fruit forward, dark cherry, chocolate, a cup that opens up with complexity that the washed version doesn't offer — has made it one of the most requested lots in their lineup.</p>
+
+<h2 class="section-head">Understanding <em>Anaerobic Processing</em></h2>
+
+<p class="body">Coffee processing — how the cherry's fruit is removed from the bean before drying — has more influence on cup character than almost any other post-harvest variable. Washed processing removes the fruit before fermentation, producing clean, origin-forward cups. Natural processing dries the whole cherry, producing fruit-forward cups with heavier body. Anaerobic processing introduces a controlled variable to both approaches: oxygen deprivation during fermentation.</p>
+
+<p class="body">In an anaerobic fermentation, coffee cherries or depulped beans are sealed in tanks that have been purged of oxygen. The resulting environment favors different microbial activity than open-air fermentation — specifically, it allows lactic acid bacteria to dominate rather than acetic acid bacteria and yeasts. The outcome is a fermentation that produces more pronounced, consistent, and often more complex flavor compounds than traditional methods.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">87pt</div>
+    <div class="stat-label">Cupping score, 2023/24</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">+1pt</div>
+    <div class="stat-label">Above washed Java, same harvest</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">20+</div>
+    <div class="stat-label">Years Java grown at EQ</div>
+  </div>
+</div>
+
+<p class="body">The anaerobic trend in specialty coffee began in earnest around 2017-2018, when competition baristas started winning with anaerobic-processed lots that produced cups unlike anything in the conventional processing canon. Today, anaerobic processing has moved from novelty to accepted technique — though the quality of execution varies significantly across producers.</p>
+
+<h2 class="section-head">What Anaerobic Processing <em>Does to Java</em></h2>
+
+<p class="body">Java varietal's baseline profile — mild sweetness, balanced acidity, pleasant florals, comfortable body — gives anaerobic processing something stable to work with. Unlike a naturally processed Ethiopian, where the fruit-forward character is already intense and anaerobic processing can push flavors into unfamiliar territory, Java under anaerobic fermentation amplifies and deepens rather than transforms.</p>
+
+<p class="body">The result at El Quetzal: the familiar Java body is present, but overlaid with dried fruit character — dark cherry, raisin, a hint of prune — that the washed Java doesn't produce. The chocolate notes that appear at medium roast are deeper and more pronounced. The complexity opens over time in the cup, which the farm notes in their recommendation to let the coffee rest a few weeks after roasting before evaluating.</p>
+
+<div class="callout">
+  <p>The anaerobic Java exceeded expectation. The moment I opened the bag I was greeted by a rich aroma that I've rarely encountered with other coffees. The first sip revealed delightful chocolate undertones together with a subtle nuttiness that made drinking this coffee a unique experience. — Customer review, elquetzal.coffee</p>
+</div>
+
+<h2 class="section-head">Roasting <em>Anaerobic Java</em></h2>
+
+<p class="body">Anaerobic-processed coffees respond differently to heat than washed lots. The fermentation byproducts are volatile — they express dramatically at light roasts and become more muted as roast level increases. For the El Quetzal Anaerobic Java, two distinct target profiles emerge:</p>
+
+<h3 class="sub-head">Light to medium-light (City)</h3>
+<p class="body">Lighter roasts emphasize the dried fruit and dark cherry character. The fermentation notes are most vivid in this range, and the cup has a brightness and complexity that distinguishes the anaerobic processing clearly from the washed counterpart. Best suited for pour-over and filter applications where the cup profile has room to express.</p>
+
+<h3 class="sub-head">Medium (City+)</h3>
+<p class="body">Medium roasts develop the chocolate notes into a more dominant mid-palate presence, producing a coffee with notable body and a rich, sweet finish. The fruit recedes somewhat but integrates rather than disappearing — the cup at medium roast is more cohesive and approachable for customers who find light roast anaerobic coffees too unconventional.</p>
+
+<p class="body">Avoid pushing past medium. The distinctive characters that justify the anaerobic processing — fruit complexity, fermentation nuance — diminish rapidly as roast darkens, leaving you with an expensive dark roast that doesn't deliver on its promise.</p>
+
+<h2 class="section-head">Java Varietal: <em>The Underrated Foundation</em></h2>
+
+<p class="body">Before the anaerobic processing conversation, there's a varietal story worth telling. Java (Javanica) is not the same as "Java coffee" — a geographic designation for coffee grown on the Indonesian island of Java. The Javanica varietal is an Arabica strain characterized by tall, narrow plant structure, large cherries, and elongated beans that experienced green buyers recognize immediately.</p>
+
+<p class="body">At El Quetzal, Java has been the workhorse of the program for over two decades. The washed Java — floral, jasmine-forward, juicy and clean — set the standard for what Nicaraguan specialty coffee could be and built the farm's reputation with long-term green buyers. The Anaerobic Java is an experiment that validated itself: the 2023/24 anaerobic lot scored one point above the washed Java from the same harvest, confirming that the processing adds genuine value rather than novelty.</p>
+
+<h2 class="section-head">Sourcing <em>Farm-Direct</em></h2>
+
+<p class="body">El Quetzal's Anaerobic Java is available at <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" style="color: var(--gold); text-decoration: none;">elquetzal.coffee</a> in sample sizes through full sack quantities. The farm ships from Dupuy's Houston warehouse for US buyers. Given the experimental nature of the lot and limited production, availability varies by harvest cycle — the farm plans to increase anaerobic production to match demand, but current lots sell out seasonally.</p>
+
+<DropWidget lotName="Anaerobic Java" />
+
+<h2 class="section-head">Building an Anaerobic <em>Program</em></h2>
+
+<p class="body">For roasters considering anaerobic-processed coffees as a regular program offering rather than a one-off curiosity, Java is one of the more accessible entry points. The varietal's stability means the anaerobic processing produces consistent results across lots from the same farm — less variability than anaerobic naturals from high-aromatics varietals, which can shift dramatically between harvests.</p>
+
+<p class="body">Pairing the Anaerobic Java with the Washed Java from the same farm also makes for a compelling side-by-side education experience — for retail customers, for café staff training, and for the menu itself. Two coffees, same varietal, same farm, different processing: the comparison is genuinely instructive and gives guests a reason to try both.</p>
+
+</ContentLayout>

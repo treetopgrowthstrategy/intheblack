@@ -1,0 +1,88 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What should a coffee wholesale CRM track?",
+    a: "At minimum: account name, primary contact, last contact date, next follow-up date, current status in the pipeline, weekly order volume, and notes from the last conversation. Beyond that: incumbent roaster, decision maker role, sample feedback, price sensitivity signals, and seasonal volume patterns. Most roasters start with too little data and gradually add fields as they learn what decisions the data actually informs."
+  },
+  {
+    q: "Is a spreadsheet good enough for tracking coffee wholesale accounts?",
+    a: "A spreadsheet works for the first 10-15 accounts. Beyond that, the manual maintenance burden creates errors and gaps — follow-up reminders get missed, notes become incomplete, and the effort of keeping it current starts to compete with the effort of actually selling. The right moment to move off a spreadsheet is when you notice accounts slipping through the cracks, not after they've been lost."
+  },
+  {
+    q: "What's the best CRM for small specialty coffee roasters?",
+    a: "Airtable functions as a highly customizable CRM for roasters who want flexibility without enterprise software cost. It allows you to build exactly the fields your wholesale program needs, create views by pipeline stage, and set up automations for follow-up reminders. Paired with an AI layer like Billy, it becomes a proactive sales assistant rather than just a database."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/coffee-sales-follow-up', label: 'Sales Tips', title: 'Coffee Sales Follow-Up Guide' },
+  { href: '/sales-tips/coffee-sales-scripts', label: 'Sales Tips', title: 'Coffee Sales Scripts That Work' },
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+  { href: '/how-to-grow-wholesale-coffee-business', label: 'Guide', title: 'How to Grow a Wholesale Coffee Business' },
+];
+---
+
+<ContentLayout
+  title="How to Track Coffee Wholesale Accounts Without a Full CRM"
+  description="A practical guide for specialty coffee roasters on building a lightweight account tracking system — what data to capture, how to organize it, and when to graduate from a spreadsheet to something smarter."
+  slug="sales-tips/track-coffee-wholesale-accounts"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want your pipeline <em>tracked automatically?</em>"
+  ctaBody="Billy is an AI sales agent built for specialty coffee wholesale. It lives in Airtable, tracks your accounts, flags follow-ups, and drafts outreach in your voice. No enterprise CRM required."
+>
+
+<p class="body">Most specialty coffee roasters lose accounts to a simple problem: they don't know which accounts need attention until it's too late. The café that stopped reordering three months ago. The prospect who asked for samples and never heard back. The anchor account whose volume dropped 40% and nobody noticed until the quarterly review.</p>
+
+<p class="body">The solution isn't a $500/month CRM with features you'll never use. It's a disciplined, lightweight tracking system that surfaces the right information at the right time. This guide covers what to track, how to organize it, and how to make it work without turning account management into a second job.</p>
+
+<h2 class="section-head">The Minimum <em>Viable Pipeline</em></h2>
+
+<p class="body">Every account in your wholesale pipeline needs five pieces of information to be actionable:</p>
+
+<ul class="body-list">
+  <li><strong>Status:</strong> Prospect / Sample Sent / Active Conversation / Closed Won / Closed Lost / Dormant</li>
+  <li><strong>Last contact date:</strong> When did you last reach out or hear from them?</li>
+  <li><strong>Next action:</strong> What specifically happens next, and by when?</li>
+  <li><strong>Weekly volume (for active accounts):</strong> What are they ordering on average?</li>
+  <li><strong>Notes from last conversation:</strong> One or two sentences on where things stand</li>
+</ul>
+
+<p class="body">That's it for the minimum. Everything else — incumbent roaster, decision maker title, price sensitivity, sample feedback — is valuable but optional until you have the basics running consistently.</p>
+
+<h2 class="section-head">Spreadsheet vs. <em>Airtable vs. CRM</em></h2>
+
+<p class="body">For roasters with fewer than 15 active accounts and prospects combined, a well-structured spreadsheet is genuinely adequate. Five columns, one row per account, a filter to show accounts where "Next Action Date" is today or past. Review it every Monday morning. That system, executed consistently, outperforms an abandoned CRM every time.</p>
+
+<p class="body">The transition point is when accounts start slipping through. When you notice you haven't followed up with someone you meant to, or when a prospect falls out of your memory between conversations, a spreadsheet is telling you it's time to upgrade. Airtable is the right next step for most specialty coffee roasters: flexible enough to build exactly what you need, accessible enough that you'll actually use it, and inexpensive enough that it doesn't require a business case.</p>
+
+<p class="body">Full CRM software — Salesforce, HubSpot, Pipedrive — is overkill for most roasters until the wholesale program has multiple salespeople or is operating across multiple geographic markets. The overhead of maintaining these platforms tends to consume the time that should go into selling.</p>
+
+<h2 class="section-head">The Weekly <em>Pipeline Review</em></h2>
+
+<p class="body">Build one habit: a 20-minute pipeline review every Monday morning. Open your tracking system and answer four questions:</p>
+
+<ul class="body-list">
+  <li>Which active accounts haven't ordered in more than 14 days? (Call them.)</li>
+  <li>Which prospects have been in "Sample Sent" status for more than 7 days without a follow-up? (Email them today.)</li>
+  <li>Which prospects have I been in conversation with for more than 30 days without a decision? (Either advance or close them.)</li>
+  <li>Who do I need to reach out to this week that I haven't contacted recently? (Schedule the outreach now.)</li>
+</ul>
+
+<p class="body">That 20 minutes, done consistently, generates more closed accounts than most elaborate sales processes. The discipline is the strategy.</p>
+
+<h2 class="section-head">When to Add <em>AI to the Stack</em></h2>
+
+<p class="body">The next evolution after a disciplined Airtable setup is an AI layer that does the Monday review for you — scanning your pipeline, flagging accounts due for attention, drafting the follow-up messages, and logging the outcomes. Billy does exactly this for specialty coffee wholesale teams: it's built on Airtable, understands the coffee industry context, and surfaces the right accounts at the right time without requiring you to manage the system manually.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:0.5rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">See how Billy works →</a>
+
+</ContentLayout>

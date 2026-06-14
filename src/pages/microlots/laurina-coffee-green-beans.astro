@@ -1,0 +1,130 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import DropWidget from '../../components/DropWidget.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is Laurina coffee?",
+    a: "Laurina — also known as Bourbon Pointu — is a natural genetic mutation of the Bourbon variety of Arabica coffee. Unlike chemically decaffeinated coffee, Laurina is born low-caffeine: the plant itself produces 40-60% less caffeine than standard Arabica with zero processing intervention. It's one of the rarest naturally occurring coffee varieties in the world, grown in only a handful of locations."
+  },
+  {
+    q: "How much caffeine does Laurina coffee have?",
+    a: "Laurina coffee contains approximately 0.4-0.6% caffeine by dry weight, compared to 1.2-1.5% for standard Arabica. That's roughly one-third the caffeine of a normal cup of coffee. Unlike decaf, the flavor profile is not diminished by processing — the lower caffeine is simply how the plant grows."
+  },
+  {
+    q: "Where can roasters buy Laurina green coffee beans?",
+    a: "Laurina green coffee is available directly from El Quetzal Coffee Co. at elquetzal.coffee. El Quetzal grows Laurina at Finca El Quetzal in Matagalpa, Nicaragua at 1200+ MASL. Production is extremely limited — under 1,000 lbs total in 2025. Samples start at 150g; full lots available in 5 lb, 10 lb, and 30 lb bags, with forward contract options for 69kg sacks."
+  },
+  {
+    q: "How should roasters roast Laurina coffee?",
+    a: "Laurina benefits from a lighter roast that preserves the natural stone fruit and tea-like qualities. A City to City+ roast (between first crack and the onset of second crack) tends to highlight the apricot and raspberry notes. Lighter profiles also better express the white tea character that makes Laurina distinctive. Darker roasts can mute the delicate florals and produce a more generic cup."
+  },
+  {
+    q: "Why is Laurina coffee so rare?",
+    a: "Laurina trees are significantly lower-yielding than standard Arabica varieties, produce fewer cherries per plant, are more susceptible to pests and disease (caffeine naturally protects coffee plants from insects), and require more intensive cultivation. Most farmers avoid growing them. Only a handful of farms worldwide produce Laurina at meaningful commercial scale, making every harvest a genuinely limited event."
+  },
+  {
+    q: "Is Laurina a good alternative to decaf for specialty roasters?",
+    a: "Many specialty roasters are exploring Laurina as a premium alternative to decaf. The core advantage is flavor: decaffeination processes — even the highest quality Swiss Water and CO2 methods — alter the coffee's flavor compounds. Laurina retains its full natural flavor profile because no processing is involved. The tradeoff is price and supply: Laurina costs more per pound than decaf and is far less reliably available."
+  }
+];
+
+const relatedPages = [
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot Guide', title: 'Nicaragua Geisha Green Coffee' },
+  { href: '/microlots/anaerobic-java-green-coffee', label: 'Microlot Guide', title: 'Anaerobic Java Green Coffee' },
+  { href: '/drop-list', label: 'First Access', title: 'Join The Drop List' },
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Guide', title: 'How to Source Specialty Coffee Wholesale' },
+];
+---
+
+<ContentLayout
+  title="Laurina Coffee Green Beans: The Roaster's Guide to Bourbon Pointu"
+  description="Everything specialty coffee roasters need to know about Laurina (Bourbon Pointu) green coffee — what it is, how it tastes, how to roast it, and where to source it. Including one of the only farm-direct sources in the US."
+  slug="microlots/laurina-coffee-green-beans"
+  section="microlots"
+  sectionLabel="Microlot Guides"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Interested in <em>Laurina allocation?</em>"
+  ctaBody="El Quetzal produces one of the only farm-direct Laurina lots available to US roasters. 2025 production was under 1,000 lbs total. Contact El Quetzal directly to check availability."
+>
+
+<p class="body">Laurina is the coffee that shouldn't work. Naturally low in caffeine — the compound that helps protect coffee plants from insects — it's fragile, low-yielding, and expensive to grow at any scale. Most farmers who've tried it have abandoned it. The few who've stayed with it have produced some of the most singular cups in specialty coffee.</p>
+
+<p class="body">For roasters building a lineup of rare single origins, Laurina occupies a category of its own. This guide covers everything you need to know: what Laurina is, how it performs in the roaster and in the cup, how to source it, and why the supply will always be limited.</p>
+
+<h2 class="section-head">What Is <em>Laurina Coffee?</em></h2>
+
+<p class="body">Laurina — also written as Laurina and sold under the traditional name Bourbon Pointu — is a natural genetic mutation of the Bourbon variety of Arabica coffee. It was first cultivated on the island of Réunion (then called Bourbon) in the 18th century, where it was prized for its sweetness and unusual pointed bean shape. By the 20th century, production had nearly vanished — outcompeted by higher-yielding varieties and its own susceptibility to pests.</p>
+
+<p class="body">What makes Laurina botanically unusual is the source of its rarity: the plant produces significantly less caffeine than standard Arabica. This isn't a processing effect — it's genetics. The Laurina plant carries a mutation that limits caffeine biosynthesis. The result is a bean that contains approximately 0.4-0.6% caffeine by dry weight, compared to 1.2-1.5% for standard Arabica and 2.2-2.7% for Robusta.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">0.5%</div>
+    <div class="stat-label">Avg caffeine, Laurina</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1.4%</div>
+    <div class="stat-label">Avg caffeine, Arabica</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">85</div>
+    <div class="stat-label">SCA score, El Quetzal 2025</div>
+  </div>
+</div>
+
+<p class="body">That caffeine deficit is both Laurina's most marketable feature and its agricultural curse. Caffeine acts as a natural insecticide — plants produce it partly as a defense mechanism against pests. Laurina, with far less of it, requires more intensive pest management and more careful cultivation than standard varieties. Lower caffeine also contributes to a different flavor chemistry: less bitterness, more natural sweetness, and a delicacy that experienced cuppers compare to a refined Geisha.</p>
+
+<h2 class="section-head">Flavor Profile: <em>What Roasters Are Buying</em></h2>
+
+<p class="body">The El Quetzal Laurina cups with notes of apricot and raspberry up front, lemon zest in the mid-palate, milk chocolate sweetness, and a white tea quality at finish that's genuinely unusual in coffee. The body is silky, the acidity is clean and gentle, and there's an absence of bitterness that surprises roasters tasting it for the first time.</p>
+
+<div class="callout">
+  <p>Many specialty roasters compare Laurina to a refined Geisha — but with softer edges, more nuance, and a tea-like quality that sets it apart. For roasters building a lineup of rare single origins, Laurina occupies a category of its own.</p>
+</div>
+
+<p class="body">The low bitterness is structural, not just a function of roast level. Because caffeine contributes significantly to perceived bitterness in coffee, Laurina cups sweeter and cleaner than most coffees at comparable roast levels. This means roasters can go slightly darker than they might with a Geisha without losing the delicacy — though lighter profiles still express the most distinctive qualities.</p>
+
+<h2 class="section-head">How to <em>Roast Laurina</em></h2>
+
+<p class="body">Laurina's small bean size and relatively dense structure (it's SHG — Strictly Hard Bean) requires attention to heat application in the roaster. The beans are physically distinctive: pointed ends, smaller screen size than most Arabica varieties, with a slightly different color development curve.</p>
+
+<h3 class="sub-head">Roast development</h3>
+<p class="body">Target City to City+ for most applications. The goal is to develop the sugars enough to produce body and sweetness without flattening the stone fruit and tea notes that make Laurina worth the premium. Charge temperature and first crack timing will depend on your specific roaster, but the general principle: more development time relative to total roast time than you'd give a washed Ethiopian, less than you'd give a Brazilian natural.</p>
+
+<h3 class="sub-head">Grind adjustment</h3>
+<p class="body">Laurina's smaller bean size means grinders may need slight adjustment — particularly for espresso, where uniformity matters more. Dial your grinder with a fresh sample rather than assuming your usual espresso settings will transfer.</p>
+
+<h3 class="sub-head">Extraction parameters</h3>
+<p class="body">Pour-over: 1:15 ratio, 195-200°F, extended bloom (45-60 seconds) to highlight natural sweetness. Espresso: 18g in, 36g out, 28-32 seconds. Cold brew: exceptional — the low caffeine and natural sweetness produce a smooth concentrate that works well undiluted.</p>
+
+<h2 class="section-head">Where Laurina <em>Grows</em></h2>
+
+<p class="body">Laurina is grown in only a handful of places worldwide. Réunion Island, where the variety originated, still produces some. Brazil's Daterra estate has produced Laurina for research purposes. Costa Rica, Guatemala, and Indonesia have small experimental plots. And Nicaragua — specifically Finca El Quetzal in the Matagalpa highlands — has emerged as one of the most compelling sources available to US roasters.</p>
+
+<p class="body">The El Quetzal Laurina grows at 1,200+ MASL on volcanic soil, shade-grown under eucalyptus canopies planted in the 1960s. The farm has produced specialty coffee continuously since 1947 — four generations of the Bendaña McEwan family cultivating the same hillsides. The Laurina parcel is one of the smallest on the farm, producing under 1,000 lbs total in 2025.</p>
+
+<h2 class="section-head">Sourcing: <em>Where to Buy Laurina Green Coffee</em></h2>
+
+<p class="body">Laurina green coffee is genuinely hard to source at specialty grade. Spot market availability is sporadic, lot quality varies significantly across producers, and most of the volume that exists never makes it to US roasters through accessible channels.</p>
+
+<p class="body">El Quetzal Coffee Co. offers farm-direct Laurina green coffee at <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" style="color: var(--gold); text-decoration: none;">elquetzal.coffee</a>. Samples start at 150g ($8). Full lots available in 5 lb, 10 lb, and 30 lb formats. Forward contracts for 69kg sacks are available for the 2027 harvest. Given the production scale, allocation sells out — often within days of new lot announcements.</p>
+
+<DropWidget lotName="Laurina" />
+
+<h2 class="section-head">Laurina vs. <em>Specialty Decaf: The Comparison Roasters Make</em></h2>
+
+<p class="body">The most common question from roasters discovering Laurina: is it a decaf replacement? The honest answer is yes and no.</p>
+
+<p class="body">Laurina has roughly one-third the caffeine of standard Arabica — meaningful reduction, but not zero. Guests who need true caffeine elimination for medical reasons still need decaf. But for the much larger segment of specialty coffee consumers who are caffeine-sensitive, afternoon drinkers, or simply interested in lower-stimulant options without sacrificing cup quality, Laurina is a genuinely superior product.</p>
+
+<p class="body">The flavor advantage over even the best-quality decaf is significant. Swiss Water and CO2 decaffeination processes, which are the highest-quality methods available, still strip flavor compounds alongside caffeine. Laurina doesn't lose anything in processing because there's nothing to process. The cup you get is the full expression of the plant — sweet, complex, and delicate in ways that decaf rarely achieves.</p>
+
+<p class="body">For specialty roasters looking to differentiate their decaf or low-caffeine offering, Laurina is the most compelling option in the market. The constraint is supply — and that supply isn't going to grow significantly anytime soon.</p>
+
+</ContentLayout>

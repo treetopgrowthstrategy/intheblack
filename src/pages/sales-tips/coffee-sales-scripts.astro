@@ -1,0 +1,99 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What should a cold outreach email to a café say?",
+    a: "Keep it under 100 words. One sentence introducing yourself and your roastery. One sentence on why you're reaching out to this specific café — not generic flattery, something specific you noticed. An offer to send samples. A single, easy ask. The goal is not to close the account in the first email; the goal is to get samples in the door."
+  },
+  {
+    q: "How do you pitch a coffee roastery to a restaurant buyer?",
+    a: "Restaurant buyers care about three things: will guests enjoy it, will it run consistently, and will the service be there when something goes wrong. Lead with those. Mention specific accounts similar to theirs that you serve. Offer a staff cupping session rather than just samples — restaurant teams make decisions as a group. Come with suggested batch brew parameters already calculated for their equipment."
+  },
+  {
+    q: "What do you say when a café already has a roaster they like?",
+    a: "Don't compete on dissatisfaction you haven't earned. Instead: acknowledge it ('Good — I'd expect you to have a roaster you trust at your stage'), differentiate without disparaging ('What I'd offer alongside or as an alternative is...'), and make the ask low-commitment ('Would you be open to a guest sample pack? No obligation to switch anything — just want you to know what we're doing.'). Make switching feel optional, not necessary."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/coffee-sales-follow-up', label: 'Sales Tips', title: 'Coffee Sales Follow-Up Guide' },
+  { href: '/sales-tips/track-coffee-wholesale-accounts', label: 'Sales Tips', title: 'How to Track Wholesale Accounts' },
+  { href: '/sales-tips/wholesale-coffee-pricing-guide', label: 'Sales Tips', title: 'How to Price Wholesale Coffee' },
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+];
+---
+
+<ContentLayout
+  title="Coffee Sales Scripts That Actually Work"
+  description="Real-world scripts for specialty coffee wholesale outreach — cold emails, sample follow-up, objection handling, and closing conversations. Written for roasters, not enterprise sales teams."
+  slug="sales-tips/coffee-sales-scripts"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want outreach drafted <em>automatically?</em>"
+  ctaBody="Billy is an AI sales agent for specialty coffee wholesale. It drafts outreach in your voice, tracks your pipeline in Airtable, and flags accounts due for follow-up. Built for roasters, not enterprise sales teams."
+>
+
+<p class="body">Scripts get a bad reputation in specialty coffee because most scripts feel like scripts. The café owner on the receiving end has heard the same template 40 times and can recognize it in the first sentence. The antidote isn't avoiding structure — it's building structure that sounds like you, addresses the specific buyer in front of you, and earns a response rather than demanding one.</p>
+
+<p class="body">What follows are frameworks, not verbatim templates. Use them as starting points and rewrite them in your voice before sending.</p>
+
+<h2 class="section-head">Cold Outreach: <em>The First Message</em></h2>
+
+<p class="body">The goal of a cold outreach email is one thing: get a yes to samples. Not to close an account, not to schedule a call, not to explain your full sourcing philosophy. Get permission to send coffee.</p>
+
+<div class="callout">
+  <p>Subject: [Roastery name] — quick intro + sample offer<br /><br />Hey [first name],<br /><br />[One specific thing you noticed about their café — their Instagram post about a new pour-over bar, a review that mentioned their espresso program, something genuine]. Thought it was worth reaching out.<br /><br />We're [roastery name] out of [city]. We roast [brief origing focus] with a focus on [one differentiator]. Currently working with a handful of cafés in [their market].<br /><br />Happy to send a sample set if there's any interest. No pitch attached — just coffee.<br /><br />[Name]</p>
+</div>
+
+<p class="body">Under 100 words. One specific observation. One offer. One ask. The specificity in the first sentence is what separates a response from a delete.</p>
+
+<h2 class="section-head">The Sample <em>Follow-Up</em></h2>
+
+<p class="body">Five to seven days after samples land:</p>
+
+<div class="callout">
+  <p>Subject: re: [roastery name] samples<br /><br />Hey [name],<br /><br />Wanted to check in on the samples — specifically curious what the team thought of the [specific coffee name]. We recommend [specific preparation suggestion].<br /><br />Happy to answer any questions or send a fresh batch if anything needs a second look.<br /><br />[Name]</p>
+</div>
+
+<p class="body">The key is the specific coffee and the specific preparation question. "What did you think of the samples?" gets vague responses. "What did your team think of the Ethiopia on the V60 with a 1:15 ratio?" gets real feedback.</p>
+
+<h2 class="section-head">Handling: <em>"We Already Have a Roaster"</em></h2>
+
+<p class="body">This is the most common objection in specialty coffee wholesale, and it's not actually an objection — it's a statement of current reality. The right response acknowledges it without competing against it:</p>
+
+<div class="callout">
+  <p>Good — I'd expect you to have a roaster you trust. I'm not reaching out to convince you to switch anything.<br /><br />What I'd offer is a sample set from our current lineup so you know who we are. If a fit ever makes sense — a new menu offering, a guest lot, a backup supplier — you'd have context on what we're doing.<br /><br />Worth sending something over?</p>
+</div>
+
+<p class="body">This response does four things: it validates their current choice, it removes switching pressure, it reframes the ask as information rather than commitment, and it still ends with an ask. Most buyers who say "we have a roaster" will say yes to samples framed this way.</p>
+
+<h2 class="section-head">The Closing <em>Conversation</em></h2>
+
+<p class="body">After a buyer has tried samples and expressed interest but hasn't committed, the closing conversation needs to move from evaluation to decision. The frame that works:</p>
+
+<div class="callout">
+  <p>Based on the feedback from your team, it sounds like the [specific coffee] is a strong fit for your [espresso program / pour-over bar / batch brew]. What would it take to get a standing order started?<br /><br />Happy to start with a two-week trial — [X] lbs at [price] per pound, and we'll come in for a training session when the first delivery arrives.</p>
+</div>
+
+<p class="body">The question "what would it take" is one of the most useful closing questions in any sales context. It invites the buyer to tell you exactly what's standing between them and a yes — which is almost always more useful information than your best guess at their objection.</p>
+
+<h2 class="section-head">Restaurant Pitch: <em>Different Frame</em></h2>
+
+<p class="body">Restaurant buyers are not café buyers. Their coffee concern is the last course, not the whole program. The pitch shifts accordingly:</p>
+
+<div class="callout">
+  <p>Hey [name],<br /><br />We work with several restaurant groups in [city] on their coffee programs — specifically on making sure the last thing guests taste matches the quality of everything that came before it.<br /><br />We're [roastery name]. We handle the sourcing, the setup, and the staff training so your team can execute consistently without needing barista expertise.<br /><br />Would it be worth a quick conversation and some samples for your kitchen team?</p>
+</div>
+
+<p class="body">Lead with the outcome (the last course matches the meal), address the operational reality (your team doesn't need to be baristas), and make the ask low-commitment. Restaurant buyers are busy — the shorter you can make the pitch, the better.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:2rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">See how Billy drafts outreach automatically →</a>
+
+</ContentLayout>

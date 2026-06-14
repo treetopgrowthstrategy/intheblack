@@ -1,0 +1,81 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Can I automate coffee wholesale outreach with email?",
+    a: "Yes, but with important caveats. Automated sequences work for cold outreach to new prospects where personalization is light. They break down for follow-up after samples, account management, and any touchpoint where the buyer expects you to remember the previous conversation. The most effective approach is automated for the first 1-2 touches in a cold sequence, human-written (or AI-assisted) for everything after a prospect engages."
+  },
+  {
+    q: "What email tools do specialty coffee roasters use for wholesale outreach?",
+    a: "Mailchimp and ConvertKit handle list management and broadcast emails. For sales sequences, Instantly.ai, Smartlead, and Apollo all offer automated cold email with personalization fields. For AI-assisted outreach that integrates with your CRM, Billy — built for specialty coffee wholesale on Airtable — drafts personalized outreach in your voice and manages the follow-up cadence without requiring a separate email automation platform."
+  },
+  {
+    q: "How do I avoid spam filters when emailing coffee wholesale prospects?",
+    a: "Send from your own domain (not Gmail or Yahoo). Warm the domain gradually — start with 20-30 emails per day and scale up over 2-4 weeks. Keep plain text versions of every email. Avoid spam trigger words (free, guaranteed, limited time). Most importantly: send emails that recipients actually want to open. Genuine personalization and relevant content drives engagement that protects deliverability."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/coffee-sales-follow-up', label: 'Sales Tips', title: 'Coffee Sales Follow-Up Guide' },
+  { href: '/sales-tips/coffee-sales-scripts', label: 'Sales Tips', title: 'Coffee Sales Scripts That Work' },
+  { href: '/sales-tips/track-coffee-wholesale-accounts', label: 'Sales Tips', title: 'How to Track Wholesale Accounts' },
+  { href: '/specialty-coffee-sales-outsourcing', label: 'Guide', title: 'Outsourcing Coffee Sales' },
+];
+---
+
+<ContentLayout
+  title="Email Automation for Coffee Wholesale Outreach"
+  description="How specialty coffee roasters can use email automation to scale wholesale outreach — what to automate, what to keep human, which tools work, and how to avoid the mistakes that destroy deliverability and relationships."
+  slug="sales-tips/coffee-wholesale-email-automation"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want outreach that runs <em>without you?</em>"
+  ctaBody="Billy is an AI sales agent for specialty coffee wholesale. It drafts outreach in your voice, manages your follow-up cadence, and tracks everything in Airtable — so your pipeline moves even when you're in the roastery."
+>
+
+<p class="body">The pitch for email automation in specialty coffee wholesale is compelling: instead of manually writing and sending 20 outreach messages per week, you build the sequence once and let it run. In practice, the reality is more nuanced. Automation works in some parts of the coffee wholesale sales process and actively damages relationships in others. Knowing the difference is what separates roasters who scale with automation from ones who burn their prospect lists with it.</p>
+
+<h2 class="section-head">What to <em>Automate</em></h2>
+
+<p class="body">The early stages of cold outreach — where you're reaching buyers who don't know you yet and the personalization is limited — are the right candidates for automation. Touch 1 and Touch 2 of a cold sequence can be systematized effectively when the personalization fields are accurate and the messages are genuinely short.</p>
+
+<p class="body">What also works on automation: the sample dispatch notification (a triggered email when samples ship), the new lot announcement (a broadcast to your existing wholesale accounts and prospect list), and the seasonal offering update. These are information-first messages where automation doesn't feel like automation because the content is genuinely useful.</p>
+
+<h2 class="section-head">What to <em>Keep Human</em></h2>
+
+<p class="body">Any message that references a specific previous conversation needs to be written by a human — or by an AI that has access to your conversation history. Automated templates that try to simulate this ("I know you've been evaluating samples...") fail because the specificity isn't real and experienced buyers can tell.</p>
+
+<p class="body">Post-sample follow-up is the highest-stakes part of the coffee wholesale sales process. A buyer who's been tasting your coffee and forming opinions deserves a message that acknowledges where things actually stand. A generic sequence template doesn't do that. This is where AI-assisted outreach — where the message is drafted based on your actual account history and then reviewed by you — outperforms both pure automation and pure manual writing.</p>
+
+<h2 class="section-head">The Right Tool <em>Stack</em></h2>
+
+<p class="body">For cold outreach sequences (Touches 1-2): Instantly.ai or Smartlead handle the sending infrastructure, domain warming, and deliverability monitoring at scale. Both integrate with Google Workspace and offer per-inbox sending limits that protect your domain reputation.</p>
+
+<p class="body">For list management and broadcast: Mailchimp free tier covers most roasters' needs for announcing new lots, seasonal offerings, and wholesale newsletter content up to 500 contacts.</p>
+
+<p class="body">For AI-assisted follow-up that integrates with your CRM: Billy drafts outreach messages in your voice based on your Airtable account history. Instead of starting from a blank template, you review and approve a draft that already knows what you last said to the prospect, what samples they received, and what stage they're in. It's not automation — it's AI-accelerated human outreach.</p>
+
+<h2 class="section-head">Deliverability: <em>The Non-Negotiable</em></h2>
+
+<p class="body">Cold email at any volume requires a warmed sending domain. Sending 100 cold emails per day from a domain that's never sent more than 10 will trigger spam filters and get your domain blacklisted within weeks.</p>
+
+<p class="body">The warm-up protocol: start at 20-30 emails per day from a new domain, scale by 10-20 emails per day over 3-4 weeks, and don't exceed 80-100 cold emails per day from a single inbox. Use Google Workspace or Microsoft 365 — not free Gmail — as your sending platform. And monitor your spam rate in Google Postmaster Tools: above 0.1% is a warning, above 0.3% triggers active penalties.</p>
+
+<p class="body">The best deliverability protection is content that recipients actually want. Personalized, relevant, short messages that offer genuine value generate engagement (opens, replies, clicks) that tells mailbox providers your emails are wanted. Mass-blast templates that nobody opens train the algorithm in the opposite direction.</p>
+
+<h2 class="section-head">The Automation <em>Mistake to Avoid</em></h2>
+
+<p class="body">The most common automation mistake in specialty coffee wholesale: running the same cold sequence to warm leads as you do to cold prospects. A buyer who met you at an SCA event, took your card, and asked you to follow up is not a cold lead — they're a warm one, and treating them with a cold sequence template signals that you didn't actually remember the conversation.</p>
+
+<p class="body">Segment ruthlessly: cold prospects get the automated sequence. Warm leads — anyone who's interacted with you at an event, responded to a previous outreach, or been referred by an existing account — get human-written or AI-assisted personalized messages from the start. The effort is worth it; warm leads convert at 3-5x the rate of cold ones, and burning them with a template sequence is an expensive mistake.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:2rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">See how Billy handles outreach →</a>
+
+</ContentLayout>

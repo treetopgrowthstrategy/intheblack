@@ -1,0 +1,101 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import DropWidget from '../../components/DropWidget.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How many times should you follow up with a wholesale coffee lead?",
+    a: "The data consistently points to 5-8 touches before a qualified prospect responds or definitively declines. Most roasters give up after 1-2 follow-ups, which means the majority of your pipeline is abandoned too early. A structured sequence of 5 touches over 3-4 weeks, with each message adding something new rather than just checking in, covers the full range of when buyers are ready to engage."
+  },
+  {
+    q: "What's the best time to follow up with café buyers?",
+    a: "Avoid Monday mornings (already overwhelmed) and Friday afternoons (mentally checked out). Tuesday through Thursday, 9-11am and 2-4pm local time, consistently outperforms other windows for response rates. For café operators specifically, avoid the pre-open rush (before 9am) and the peak service windows (7-9am, 11am-1pm). Mid-afternoon when the rush has passed is the highest-response window."
+  },
+  {
+    q: "Should coffee sales follow-up be by email or phone?",
+    a: "Email is the primary channel for specialty coffee wholesale follow-up because it respects the buyer's time and allows them to evaluate your message when they're ready. Phone calls work as a secondary channel after 2-3 unanswered emails — a brief voicemail that references your previous messages can break through when email isn't getting traction. Text is appropriate only if you've had a prior conversation and the buyer has communicated via text before."
+  },
+  {
+    q: "How do you follow up after sending coffee samples without being annoying?",
+    a: "The key is specificity. 'Did you get a chance to try the samples?' is forgettable. 'Did you get to pull the Laurina on the V60 yet? Curious what the team thought of the stone fruit notes at light roast' is memorable and demonstrates genuine engagement with the product. Ask about specific coffees, specific preparations, specific reactions from their team. That specificity signals investment, not desperation."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/coffee-sales-scripts', label: 'Sales Tips', title: 'Coffee Sales Scripts That Work' },
+  { href: '/sales-tips/track-coffee-wholesale-accounts', label: 'Sales Tips', title: 'How to Track Wholesale Accounts Without a CRM' },
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+  { href: '/commission-only-coffee-sales-rep', label: 'Guide', title: 'Commission-Only Coffee Sales Reps Explained' },
+];
+---
+
+<ContentLayout
+  title="How to Follow Up With Wholesale Coffee Leads Without Being Annoying"
+  description="A tactical guide for specialty coffee roasters on following up with wholesale prospects — the right cadence, the right channels, and the messages that get responses without burning relationships."
+  slug="sales-tips/coffee-sales-follow-up"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want your <em>follow-up on autopilot?</em>"
+  ctaBody="Billy is an AI sales agent built for specialty coffee wholesale. It tracks your pipeline, flags accounts due for follow-up, and drafts outreach in your voice. Built on Airtable. No monthly SaaS fees."
+>
+
+<p class="body">Most roasters lose wholesale accounts they've already won — not to competitors, but to silence. The lead expressed interest, samples went out, and then nothing happened on either side. Three weeks later, the buyer signed with someone else who followed up. The coffee was probably just as good. The follow-up wasn't.</p>
+
+<p class="body">Following up on wholesale leads is one of the highest-leverage activities in a roastery's sales process, and one of the most neglected. This guide covers the mechanics: how often, through which channels, with what messages, and how to do it without burning the relationship you're trying to build.</p>
+
+<h2 class="section-head">Why Most Coffee <em>Follow-Up Fails</em></h2>
+
+<p class="body">The most common failure mode is giving up too soon. Research across B2B sales consistently shows that the majority of closed deals require 5 or more touches — but the majority of salespeople stop after 1-2 follow-ups when they don't hear back. In specialty coffee, where buyers are busy running cafés and may genuinely intend to respond but get pulled away, persistence is often the entire difference between a closed account and an abandoned lead.</p>
+
+<p class="body">The second failure mode is following up without adding value. "Just checking in" is a phrase that should be removed from every roastery's vocabulary. It conveys nothing except that you want something from the buyer. Every follow-up message should give the buyer a reason to read it — new information, a specific question, a relevant offering update, or a genuine observation about their operation.</p>
+
+<h2 class="section-head">The Follow-Up <em>Sequence That Works</em></h2>
+
+<h3 class="sub-head">Touch 1: The sample confirmation (day 0)</h3>
+<p class="body">Send a brief email the day samples ship. Include: what's in the package, suggested preparation for each coffee, and a specific note about one offering you think will be relevant to their program. This sets the stage for the follow-up conversation and gives them something concrete to do when the samples arrive.</p>
+
+<h3 class="sub-head">Touch 2: The specific check-in (day 5-7)</h3>
+<p class="body">Five to seven days after samples land. Ask specifically about one of the coffees by name — not "what did you think" but "did you get to pull the Anaerobic Java as espresso? We find it needs a slightly coarser grind than the washed lot." That specificity demonstrates you know the product and positions you as a resource, not a vendor.</p>
+
+<h3 class="sub-head">Touch 3: The new information (day 12-14)</h3>
+<p class="body">Two weeks out. Add something that wasn't in the original outreach: a new lot just arrived that might interest them, a café in their market that recently added your coffee, a blog post about the processing method that explains why the Anaerobic Java tastes different from the washed. Give them a reason to open the email beyond the ask.</p>
+
+<h3 class="sub-head">Touch 4: The reframe (day 20-22)</h3>
+<p class="body">Three weeks out. Shift the angle. Instead of asking about the samples, ask about their program: "What's your current espresso blend situation — are you happy with it or actively looking?" This moves the conversation from product evaluation to business need, which is a more productive frame for closing.</p>
+
+<h3 class="sub-head">Touch 5: The honest close (day 28-30)</h3>
+<p class="body">"Last message on this for now — if the timing isn't right, totally understood. Happy to reconnect when it is." This message works for two reasons: buyers who were meaning to respond but kept getting interrupted often reply to the final message because the time pressure breaks their inertia. And it cleanly closes sequences that were never going anywhere, so you can redeploy the time.</p>
+
+<div class="callout">
+  <p>The single most important follow-up principle: every message should give the buyer something, not just ask for something. Information, perspective, a relevant story, a specific question they can answer quickly. The roasters with the highest response rates are the ones who make follow-up feel like a service rather than a pressure campaign.</p>
+</div>
+
+<h2 class="section-head">Channel Strategy: <em>Email, Phone, and Text</em></h2>
+
+<p class="body">Email is the primary channel. It respects the buyer's time, creates a documented history, and allows them to respond when they're ready rather than in the moment. Write short emails — under 150 words for follow-up messages. Buyers scan, they don't read.</p>
+
+<p class="body">Phone works as a secondary channel after 2-3 unanswered emails. Leave a brief voicemail that references your previous messages: "Hey, this is [name] from [roastery] — I sent over some samples a couple weeks ago and have followed up a few times over email. Wanted to briefly introduce myself by voice. Happy to answer any questions about the lots." That's it. Under 20 seconds. Don't pitch on a voicemail.</p>
+
+<p class="body">Text is only appropriate if the buyer has texted you first or has communicated via text in a previous interaction. Unsolicited texts from vendors feel invasive in a way that email doesn't. Save text for active conversations, not cold follow-up.</p>
+
+<h2 class="section-head">Timing: <em>When to Hit Send</em></h2>
+
+<p class="body">For café buyers specifically, avoid the pre-open rush (before 9am) and peak service windows (7-9am, 11am-1pm). Mid-afternoon — roughly 2-4pm on Tuesday through Thursday — consistently outperforms other windows. Buyers in the post-lunch lull are more likely to read and respond to non-urgent messages than buyers in the middle of service or prep.</p>
+
+<p class="body">Monday mornings are low-priority opens across almost every industry. Friday afternoons, buyers are mentally transitioning out of work mode. Tuesday through Thursday, 9-11am and 2-4pm local time, is the window that produces the most responses in specialty coffee wholesale outreach.</p>
+
+<h2 class="section-head">Tracking Follow-Up <em>Without Letting Things Fall Through</em></h2>
+
+<p class="body">The failure mode isn't knowing the follow-up sequence — it's executing it consistently across 20 or 30 active prospects simultaneously. Manual tracking in a spreadsheet works until it doesn't, which is usually around prospect 15. A CRM with follow-up reminders, or an AI sales agent that flags accounts due for contact, is what separates roasters who close consistently from ones who close in bursts and then lose momentum.</p>
+
+<p class="body">Billy, the AI sales agent built for specialty coffee wholesale, tracks your pipeline in Airtable and surfaces accounts due for follow-up before they go cold. No complex CRM setup, no monthly enterprise subscription — built on the tools most roasters already use.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:0.5rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">Learn about Billy →</a>
+
+</ContentLayout>

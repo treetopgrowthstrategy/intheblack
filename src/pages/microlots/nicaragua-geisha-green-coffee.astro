@@ -1,0 +1,121 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import DropWidget from '../../components/DropWidget.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is Nicaragua Geisha coffee as good as Panama Geisha?",
+    a: "Nicaragua Geisha is a different expression of the same varietal, not a lesser one. Panama Geisha — particularly from Hacienda La Esmeralda in Boquete — set the benchmark for competition-grade Geisha and commands auction prices that reflect that. Nicaragua Geisha from high-altitude farms like El Quetzal in Matagalpa produces a distinctive cup that emphasizes jasmine aromatics, stone fruit clarity, and a tea-like delicacy — at a price point significantly more accessible than Panama's top lots. For roasters building a Geisha offering, Nicaragua is often the right sourcing decision."
+  },
+  {
+    q: "What does Geisha coffee taste like?",
+    a: "Geisha coffee is known for its exceptional aromatic complexity and tea-like clarity. Common tasting notes across high-quality Geisha lots include jasmine, bergamot, peach, apricot, citrus blossom, honeysuckle, and tropical fruit. The cup tends toward lightness and florality rather than the body-forward profiles of Brazilian or Sumatran coffees. El Quetzal's Geisha cups with jasmine, peach, and apple — with a tea-like clarity in the finish that's characteristic of well-grown Geisha at altitude."
+  },
+  {
+    q: "What altitude does Geisha need to grow well?",
+    a: "Geisha performs best at 1,500+ MASL, where cooler temperatures slow cherry development and allow more complex flavor compounds to accumulate. El Quetzal's Geisha grows at 1,200+ MASL in Nicaragua's Matagalpa highlands — technically below the conventional threshold, but the micro-climate at the farm (cool nights, consistent rainfall, volcanic soil) produces cup quality that competes with higher-altitude lots."
+  },
+  {
+    q: "Where can I buy Nicaragua Geisha green coffee beans?",
+    a: "El Quetzal Coffee Co. offers farm-direct Nicaragua Geisha green coffee at elquetzal.coffee. The 2024/25 harvest is available in sample packs and full lots. Production is limited — Geisha is in its second year of harvest at the farm. Contact El Quetzal directly for current inventory and forward contract options."
+  },
+  {
+    q: "How should I roast Nicaragua Geisha green coffee?",
+    a: "Geisha is almost universally roasted light — City or City+ — to preserve the floral aromatics and delicate fruit notes that define the varietal. Darker roasts flatten the distinctive qualities and produce a generic cup that doesn't justify the Geisha premium. Aim for a roast that develops sweetness without pushing into the baking or caramelization range."
+  }
+];
+
+const relatedPages = [
+  { href: '/microlots/laurina-coffee-green-beans', label: 'Microlot Guide', title: 'Laurina Coffee Green Beans' },
+  { href: '/microlots/anaerobic-java-green-coffee', label: 'Microlot Guide', title: 'Anaerobic Java Green Coffee' },
+  { href: '/drop-list', label: 'First Access', title: 'Join The Drop List' },
+  { href: '/top-roasters/portland', label: 'City Guide', title: 'Top Roasters in Portland' },
+];
+---
+
+<ContentLayout
+  title="Nicaragua Geisha Green Coffee: A Roaster's Sourcing Guide"
+  description="What makes Nicaragua Geisha coffee distinct, how it compares to Panama Geisha, how to roast it, and where to source farm-direct lots from Matagalpa. A guide for specialty roasters evaluating Geisha for their lineup."
+  slug="microlots/nicaragua-geisha-green-coffee"
+  section="microlots"
+  sectionLabel="Microlot Guides"
+  publishDate="2025-06-01"
+  updatedDate="2025-06-13"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Looking for <em>Geisha allocation?</em>"
+  ctaBody="El Quetzal's Nicaragua Geisha is in its second year of harvest — 87 points, farm-direct from Matagalpa. Contact El Quetzal directly to check current inventory and sample availability."
+>
+
+<p class="body">Geisha didn't need Nicaragua to make it famous. Panama did that in 2004, when Hacienda La Esmeralda's Geisha won the Best of Panama competition and set off a chain reaction that turned a rare Ethiopian landrace variety into the most sought-after coffee on earth. The subsequent auction records — $803 per pound for Elida Geisha in 2018 — confirmed what competition cuppers had already said: Geisha was genuinely unlike anything else in coffee.</p>
+
+<p class="body">What Nicaragua adds to that story is access. Panama Geisha at the top tier is a collector's market. Nicaragua Geisha from farms with the right altitude, the right soil, and the right cultivation practices produces cup quality that competes with everything short of Panama's auction lots — at prices that allow roasters to actually build a program around it rather than offer it as a one-bag curiosity.</p>
+
+<p class="body">This guide covers the varietal, the cup, the sourcing, and why El Quetzal's Matagalpa Geisha is worth knowing.</p>
+
+<h2 class="section-head">The Geisha Varietal: <em>What You're Actually Buying</em></h2>
+
+<p class="body">Geisha (also spelled Gesha) is an Arabica variety that originated in the Gesha region of southwestern Ethiopia. It was collected by researchers in the 1930s and 1940s, moved through various agricultural research stations in Central America, and arrived in Panama in the 1960s — where it sat largely ignored for decades until the 2004 competition that changed everything.</p>
+
+<p class="body">The varietal's unusual characteristics come from its genetics and growing requirements. Geisha plants have elongated leaves and beans, a weak root system that limits nutrient and water uptake, and extremely low yields relative to other Arabica varieties. They require very high elevations for optimal expression, are sensitive to temperature fluctuations, and produce significantly fewer cherries per tree than Catuai, Caturra, or most commercial varieties.</p>
+
+<p class="body">Those production constraints are the reason Geisha costs what it costs. It's not artificial scarcity. The plant simply doesn't produce much, requires careful cultivation, and demands altitudes that limit where it can grow at all.</p>
+
+<h2 class="section-head">Nicaragua Geisha vs. Panama: <em>An Honest Comparison</em></h2>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">87pt</div>
+    <div class="stat-label">El Quetzal Geisha 2026</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">2nd</div>
+    <div class="stat-label">Year of harvest at EQ</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1200+</div>
+    <div class="stat-label">MASL, Matagalpa highlands</div>
+  </div>
+</div>
+
+<p class="body">Panama Geisha — specifically from the Boquete highlands where Hacienda La Esmeralda established the benchmark — expresses jasmine, tropical fruit, and a bergamot-like complexity at its peak. The best lots have a clarity and aromatic lift that experienced cuppers call transcendent. Those lots also command prices that make them inaccessible to most roasters as a regular menu offering.</p>
+
+<p class="body">Nicaragua Geisha from well-situated farms like El Quetzal produces a different expression of the same varietal. The Matagalpa micro-climate — cool nights, volcanic soil, consistent rainfall, shade-grown under established canopies — produces a cup with strong jasmine aromatics, stone fruit notes of peach and apple, and the tea-like clarity that defines good Geisha. It's not an imitation of Panama; it's Nicaragua's version, shaped by its own terroir.</p>
+
+<div class="callout">
+  <p>The honest comparison for roasters: Nicaragua Geisha won't replace Panama auction lots in terms of prestige or competition placement. What it offers is genuine Geisha character — the florals, the clarity, the delicacy — at a price point that allows building a real program rather than a single show lot.</p>
+</div>
+
+<h2 class="section-head">El Quetzal's <em>Geisha: The Details</em></h2>
+
+<p class="body">El Quetzal began harvesting Geisha at Finca El Quetzal in Matagalpa in 2024. The 2026 harvest cupped at 87 points — strong for a second-year Geisha program. The farm's Geisha grows under the same shade canopies and volcanic soil conditions as the flagship Java lots, benefiting from the farm's established cultivation infrastructure and the fourth-generation expertise of the Bendaña McEwan family.</p>
+
+<p class="body">The washed processing method — which most Geisha producers favor for expressing the varietal's aromatic complexity — is handled at the farm's own mill (Beneficio San Miguel), maintaining full traceability from tree to export without importer intermediaries.</p>
+
+<p class="body">Current cupping profile: jasmine, peach, apple, with a tea-like quality at finish. SCA Specialty Grade, 98.6% exportable, screen 77.9% above #18.</p>
+
+<h2 class="section-head">How to <em>Roast Geisha</em></h2>
+
+<p class="body">Geisha is nearly universally roasted light. The florals and fruit notes that define the varietal are heat-sensitive — they exist in the early stages of roast development and diminish rapidly as the roast progresses. The goal is to develop sweetness and body while preserving aromatic complexity.</p>
+
+<p class="body">Practically: aim for City to City+ on your roaster's development curve. The first crack arrival and post-crack development time will depend on your specific drum or fluid bed setup, but the principle is consistent: develop enough to produce sweetness, stop well before the onset of second crack. A 20-22% development ratio works well as a starting point for most drum roasters.</p>
+
+<p class="body">Grind and brew: pour-over formats (V60, Chemex, Kalita) suit Geisha better than espresso for most applications. The lighter body and aromatic complexity express more clearly through a clean filter brew than under pressure. If running Geisha as espresso, use a lower dose and shorter extraction time than your standard blend — 16-17g in, 32-34g out, 25-28 seconds — to preserve brightness.</p>
+
+<h2 class="section-head">Sourcing <em>Nicaragua Geisha Green Coffee</em></h2>
+
+<p class="body">El Quetzal offers farm-direct Nicaragua Geisha green coffee at <a href="https://elquetzal.coffee/collections/geisha" style="color: var(--gold); text-decoration: none;">elquetzal.coffee</a>. Sample packs allow evaluation before committing to a full lot. The 2024/25 harvest is currently available; 2025/26 lots are in progress.</p>
+
+<p class="body">Production is genuinely limited — Geisha is a young program at the farm, and the early harvests are small by design. Roasters who want allocation for upcoming harvests should reach out directly to El Quetzal to discuss forward contract options.</p>
+
+<DropWidget lotName="Geisha" />
+
+<h2 class="section-head">Positioning Geisha <em>for Your Customers</em></h2>
+
+<p class="body">Geisha is one of the few coffee varietals that has genuine consumer name recognition outside the specialty industry. Guests who've encountered it at a high-end café or read about it in food media will notice it on your menu. That recognition is an asset — it gives you a conversation starter that doesn't require education from scratch.</p>
+
+<p class="body">The framing that works best: "This is the varietal that changed specialty coffee. We source ours from a fourth-generation farm in Nicaragua's Matagalpa highlands — 87 points, farm-direct." That's one sentence that tells the origin story, establishes quality, and signals that you know what you're doing. Let the cup close the sale.</p>
+
+</ContentLayout>
