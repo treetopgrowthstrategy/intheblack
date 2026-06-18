@@ -1,0 +1,107 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "How do you respond when a café says your coffee is too expensive?",
+    a: "Do not flinch and do not immediately discount. Ask a clarifying question first: too expensive compared with what, and what is the café charging per drink? Most price objections are really value questions in disguise. Reframe the conversation around cost per cup, which is usually a few cents of difference, and around what the café gets for it: better coffee, traceable sourcing, reliable delivery, and real support. Price is only a problem in the absence of value, so make the value concrete before you ever touch the number."
+  },
+  {
+    q: "Should you discount to win a wholesale coffee account?",
+    a: "Rarely, and never as your first move. A discount offered the moment a buyer pushes back teaches them that your price was inflated and trains them to push again at every renewal. If you must move on price, trade it for something: a higher volume commitment, a longer contract, or a multi-bag standing order. Discounting for nothing erodes your margin and your credibility at the same time. Hold the price and sell the value first."
+  },
+  {
+    q: "What is cost per cup and why does it matter in coffee sales?",
+    a: "Cost per cup is the price of the coffee divided by the number of drinks a café gets from it, and it is the single most useful frame for handling price objections. A pound of roasted coffee yields roughly thirty drinks. A two-dollar-per-pound price difference is therefore about six or seven cents per cup, on a drink the café sells for four or five dollars. Reframing from price per pound to cost per cup shrinks a scary-sounding number into a rounding error."
+  },
+  {
+    q: "How do you compete with a cheaper coffee supplier?",
+    a: "Do not compete on price, because there is always someone cheaper and that race ends in a margin you cannot survive on. Compete on the things a commodity supplier cannot match: cup quality, traceable single-origin sourcing, consistency, delivery reliability, barista training, and a real human who answers the phone. Make the buyer weigh total value, not just the number on the invoice. If a café only cares about the cheapest possible bean, it was never your account to win."
+  },
+  {
+    q: "How should you present a price increase to a wholesale account?",
+    a: "Be early, be direct, and explain the why. Tell the account before the increase hits, not after they see the invoice. Give a clear reason, such as a rise in green coffee costs at origin, and frame it in cost-per-cup terms so the actual impact is visible. Reaffirm what they get for the price and, if it helps, offer to lock the new rate with a longer commitment. Handled honestly and in advance, most good accounts accept a fair increase without drama."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/wholesale-coffee-pricing-guide', label: 'Sales Tips', title: 'Wholesale Coffee Pricing Guide' },
+  { href: '/sales-tips/coffee-sales-scripts', label: 'Sales Tips', title: 'Coffee Sales Scripts That Work' },
+  { href: '/sales-tips/coffee-sales-follow-up', label: 'Sales Tips', title: 'Following Up Without Being Annoying' },
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+];
+---
+
+<ContentLayout
+  title="How to Handle Wholesale Coffee Pricing Objections"
+  description="A playbook for specialty roasters on price objections: why they happen, the cost-per-cup reframe, when to hold or flex, and how to compete on value."
+  slug="sales-tips/coffee-pricing-objections"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want every account <em>tracked and timed?</em>"
+  ctaBody="Billy is an AI sales agent built for specialty coffee wholesale. It tracks pricing conversations, flags renewals and increases, and keeps your pipeline moving. Built on Airtable. No monthly SaaS fees."
+>
+
+<p class="body">Sooner or later, every roaster hears it: "Your coffee is great, but it is more than we are paying now." How you answer that sentence decides whether you close the account at a price you can live on, win it at a margin that quietly bleeds you, or lose it for no good reason. Price objections are not a sign that your coffee costs too much. They are a sign that the buyer has not yet seen enough value to justify the number, which is something you can fix in the conversation.</p>
+
+<p class="body">This guide is a playbook for handling pricing pushback in specialty coffee wholesale: why objections happen, how to reframe them, when to hold firm, when to trade, and how to compete with cheaper suppliers without joining a race you cannot win.</p>
+
+<h2 class="section-head">The Objection Behind <em>the Objection</em></h2>
+
+<p class="body">When a buyer says your coffee is too expensive, they almost never mean that the absolute number is unaffordable. They mean one of a few other things: they do not yet see why your coffee is worth more than what they pour now, they are testing whether your price is firm, or they are comparing you against a commodity supplier on the single axis of cost. If the number itself is the issue, it is worth revisiting how you built it; our <a href="/sales-tips/wholesale-coffee-pricing-guide" style="color: var(--gold); text-decoration: none;">wholesale coffee pricing guide</a> walks through setting a rate you can defend. None of those are really about money. They are about value, leverage, and framing.</p>
+
+<p class="body">So the first move is never to defend the number or drop it. It is to ask a question. "Too expensive compared with what?" and "What are you charging per drink right now?" turn a wall into a conversation. If you want exact phrasing for that moment, our <a href="/sales-tips/coffee-sales-scripts" style="color: var(--gold); text-decoration: none;">coffee sales scripts</a> include objection-handling openers worth practicing. The answers tell you whether you are up against a true budget ceiling, a cheaper roaster, or simply a buyer who has not been shown the math. You cannot answer an objection you do not understand, and most roasters start arguing before they know what they are arguing about.</p>
+
+<h2 class="section-head">The Cost-Per-Cup <em>Reframe</em></h2>
+
+<p class="body">The most powerful tool you have is arithmetic. Buyers hear price per pound and feel the difference as if it scales straight to their bottom line. It does not. Coffee is sold by the cup, so that is the unit that matters.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">~30</div>
+    <div class="stat-label">Drinks per pound of coffee</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">~6¢</div>
+    <div class="stat-label">Per cup from a $2/lb gap</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">$4+</div>
+    <div class="stat-label">What the café charges per cup</div>
+  </div>
+</div>
+
+<p class="body">Walk the buyer through it out loud. A pound of roasted coffee yields roughly thirty drinks. If your coffee costs two dollars per pound more than their current supplier, that difference is about six or seven cents per cup. The café sells that cup for four or five dollars. Framed that way, the "expensive" coffee adds pennies to the cost of a drink that the customer is happy to pay several dollars for. The number that sounded scary by the pound becomes a rounding error by the cup, and the conversation shifts from cost to what those pennies buy.</p>
+
+<h2 class="section-head">Sell the Value <em>the Number Buys</em></h2>
+
+<p class="body">Once the price feels small, fill the space with value. A commodity supplier sells a bag and disappears. You sell a relationship: cup quality that brings customers back, traceable single-origin sourcing the café can put on its menu and brag about, consistent roasting batch after batch, reliable delivery that never leaves them empty on a Saturday, barista support when they dial in a new espresso, and a real person who answers the phone when something goes wrong. Name those things explicitly. Buyers will not credit you for value they cannot see.</p>
+
+<div class="callout">
+  <p>Price is only ever a problem in the absence of value. The roasters who win on something other than being cheapest are the ones who make the value concrete and specific before the buyer ever fixates on the number. Quality, sourcing story, reliability, and support are not soft extras. They are the reason your price is your price.</p>
+</div>
+
+<h2 class="section-head">When to Hold, <em>When to Trade</em></h2>
+
+<p class="body">Sometimes a buyer still needs movement on price. The rule is simple: never give a discount away for nothing. A discount offered the instant a buyer pushes back tells them your original price was padded and teaches them to push harder next time, including at every renewal. If you are going to move, trade. Offer a better rate in exchange for a higher volume commitment, a longer contract, or a standing multi-bag order. That way the buyer earns the lower price and you protect both your margin and your credibility.</p>
+
+<p class="body">And know when to walk. If a café cares only about the cheapest possible bean and nothing you say about quality or service moves them, it was never your account. Winning it at a price that loses you money is worse than losing it. Discipline about which accounts you decline is part of pricing strategy, not a failure of it.</p>
+
+<h2 class="section-head">Competing With <em>Cheaper Suppliers</em></h2>
+
+<p class="body">There is always a cheaper roaster, and chasing them down to the bottom of the market ends at a price no specialty operation can survive. Do not play that game. Compete instead on the axes a commodity supplier cannot match, and make the buyer weigh total value rather than the single line on the invoice. The cafés worth having as long-term accounts are the ones who understand that the cost of bad coffee, an unreliable delivery, or a supplier who never picks up is far higher than a few cents a cup.</p>
+
+<h2 class="section-head">Track the Conversations, <em>Win the Renewals</em></h2>
+
+<p class="body">Pricing is not a single moment. It is an ongoing thread across every account: who pushed back on what, who is due for a renewal, which accounts you owe a heads up before a green coffee cost increase, and which ones agreed to a volume tier you need to honor. Lose track of those details and you either leave money on the table or blindside a good account with a surprise invoice. Across twenty or thirty accounts, that history is impossible to hold in your head.</p>
+
+<p class="body">Billy, the AI sales agent built for specialty coffee wholesale, keeps the full history of every account in one place, flags renewals and price conversations before they slip, and drafts the outreach in your voice so the awkward messages get sent on time. It runs on Airtable, with no enterprise CRM to configure and no monthly SaaS fees.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:0.5rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">Learn about Billy →</a>
+
+</ContentLayout>

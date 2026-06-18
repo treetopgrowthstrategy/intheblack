@@ -1,0 +1,95 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import DropWidget from '../../components/DropWidget.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is the Java coffee variety?",
+    a: "Java is an Arabica variety with a Typica lineage that traces back to an Ethiopian landrace, often labeled Abyssinia in older records. It traveled to the island of Java in Indonesia, then to Cameroon, where it was selected for tolerance to coffee berry disease, and finally into Central America. The plant is tall, with elongated cherries and beans, and it is valued for a clean, structured cup with gentle florals and an herbal lift. El Quetzal grows it as Javanica in Nicaragua's Matagalpa highlands, and it is the farm's flagship lot."
+  },
+  {
+    q: "What does washed Java green coffee taste like?",
+    a: "Washed Java cups clean and structured rather than loud. Expect a medium body, soft sweetness, and a distinctive herbal or juniper-like note that El Quetzal calls out on the roasted version. There is gentle floral lift and a citric edge at higher altitude, with none of the heavy fruit you get from natural or anaerobic processing. It is a coffee that rewards careful roasting and a clean brew method, which is why it works as both a single origin filter offering and a structured espresso base."
+  },
+  {
+    q: "Is washed Java the same as Anaerobic Java?",
+    a: "It is the same variety grown on the same farm, processed two different ways. The washed Java is fermented and rinsed in the traditional manner, which keeps the cup clean and lets the variety and terroir show through. The Anaerobic Java goes through a sealed, oxygen-free fermentation that builds bigger fruit and panela sweetness on top of the same base. Roasters often carry both to show customers how process changes a single coffee. See the Anaerobic Java guide for that side of the lot."
+  },
+  {
+    q: "Where can I buy Java green coffee beans wholesale?",
+    a: "El Quetzal Coffee Co. sells farm-direct washed Java green coffee at elquetzal.coffee, in sample packs and full lots, with traceability from tree to export through the farm's own Beneficio San Miguel mill. Because it is the farm's flagship lot, washed Java is more consistently available than the smaller microlots, which makes it a good anchor origin for a wholesale program. Contact El Quetzal directly for current harvest inventory and forward contract options."
+  },
+  {
+    q: "How should I roast washed Java green coffee?",
+    a: "Washed Java is versatile across the light to medium range. For a filter offering, a City to City+ roast preserves the herbal lift and citric clarity. For espresso or a flagship house coffee, taking it to a developed medium builds body and sweetness while keeping the structure intact. Avoid pushing into dark roast territory, which flattens the juniper and floral character that makes the lot distinctive. A 19 to 22 percent development ratio is a reasonable starting point for most drum roasters."
+  }
+];
+
+const relatedPages = [
+  { href: '/microlots/anaerobic-java-green-coffee', label: 'Microlot Guide', title: 'Anaerobic Java Green Coffee' },
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot Guide', title: 'Nicaragua Geisha Green Coffee' },
+  { href: '/microlots/villa-sarchi-green-coffee', label: 'Microlot Guide', title: 'Villa Sarchi Green Coffee' },
+  { href: '/drop-list', label: 'First Access', title: 'Join The Drop List' },
+];
+---
+
+<ContentLayout
+  title="Washed Java Green Coffee: A Roaster's Sourcing Guide"
+  description="El Quetzal's washed Javanica is the farm's flagship green coffee. The variety, the cup, how to roast it, and where to source it farm-direct from Matagalpa."
+  slug="microlots/washed-java-green-coffee"
+  section="microlots"
+  sectionLabel="Microlot Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Looking for a <em>flagship origin lot?</em>"
+  ctaBody="El Quetzal's washed Java is the farm's signature green coffee, farm-direct from Matagalpa with full mill-to-export traceability. Contact El Quetzal to check current inventory and sample availability."
+>
+
+<p class="body">Every farm has a flagship, the lot that shows you what the place can do before you go looking at the rare varieties on the edges of the catalog. At Finca El Quetzal in Nicaragua's Matagalpa highlands, that lot is the washed Java. It is the coffee the Bendaña McEwan family has built the most cultivation experience around, the one with the most consistent availability, and the one that gives a roaster the clearest read on the farm's terroir without the variables that natural and anaerobic processing introduce.</p>
+
+<p class="body">For a roaster building a wholesale program, a flagship origin lot is worth more than a one-bag rarity. It is something you can put on the menu year after year, train your team on, and build a customer relationship around. This guide covers the Java variety, the cup it produces when washed, the specifics of El Quetzal's lot, and how to roast and position it.</p>
+
+<h2 class="section-head">The Java Variety: <em>What You're Actually Buying</em></h2>
+
+<p class="body">Java is an Arabica variety with a long passport. Its lineage runs back to a Typica-related landrace from Ethiopia, recorded in older agricultural documents under names like Abyssinia. From Ethiopia it was carried to the island of Java in Indonesia, which is where the common name comes from, and later to Cameroon, where breeders selected it for tolerance to coffee berry disease. From there it moved into Central America, where farms like El Quetzal grow it under the local name Javanica.</p>
+
+<p class="body">The plant itself is tall, with elongated cherries and beans that are easy to recognize on the drying patio. It is more tolerant of disease pressure than many older Typica selections, which matters in a humid origin, and it tends to produce a cup with clarity and structure rather than raw intensity. That combination, hardy in the field and elegant in the cup, is exactly why Java has stayed in rotation across multiple continents for more than a century.</p>
+
+<h2 class="section-head">The Cup: <em>Clean, Structured, Distinctive</em></h2>
+
+<p class="body">Washed processing is the right frame for Java. Fermenting and rinsing the coffee strips away the fruit pulp before drying, which keeps the cup transparent and lets the variety and the altitude speak. The result at El Quetzal is a coffee with a medium body, soft and even sweetness, and the herbal, juniper-like note the farm highlights on its roasted version. There is a gentle floral lift, a citric edge that sharpens with elevation, and a clean finish that does not linger heavy on the palate.</p>
+
+<div class="callout">
+  <p>The practical value of washed Java for a wholesale buyer is range. It is clean enough to stand alone as a single origin filter, structured enough to anchor an espresso, and consistent enough to carry across a full year on the menu. Few origin lots ask so little of the roaster while giving back this much room to work.</p>
+</div>
+
+<h2 class="section-head">El Quetzal's <em>Java: The Details</em></h2>
+
+<p class="body">El Quetzal's washed Java grows at the farm in Matagalpa, under established shade canopies and in the volcanic soil that defines the region. Processing happens at the farm's own mill, Beneficio San Miguel, which keeps the lot fully traceable from tree to export without an importer sitting in the middle. That direct line is part of what makes the coffee worth buying as a flagship: you know precisely where it came from and who grew it, and you can tell that story to your own customers without guessing.</p>
+
+<p class="body">The farm is run by the Bendaña McEwan family, now into its fourth generation of coffee growing, and the Java lot benefits from that accumulated knowledge more than any other coffee on the property. It is the variety they have grown the longest and refined the most. For roasters, the upshot is reliability: the washed Java is the most available and the most consistent lot El Quetzal offers, which makes it the natural anchor for a recurring wholesale order rather than a seasonal experiment.</p>
+
+<h2 class="section-head">How to <em>Roast Washed Java</em></h2>
+
+<p class="body">Washed Java is forgiving across the light to medium range, which is part of its appeal. For a filter offering that showcases the herbal lift and citric clarity, a City to City+ roast keeps the delicate notes intact. For a house espresso or a flagship medium that needs more body and sweetness on the palate, taking development a little further builds richness without erasing the structure underneath.</p>
+
+<p class="body">The boundary to respect is the dark end of the spectrum. Push Java into a dark roast and the juniper, the florals, and the citric edge collapse into a generic roasty flatness that could be any coffee. A development ratio in the range of 19 to 22 percent is a sensible starting point for most drum roasters, adjusted to your specific machine and the brew format you are targeting. If you carry both the washed and the <a href="/microlots/anaerobic-java-green-coffee" style="color: var(--gold); text-decoration: none;">anaerobic version of this Java</a>, roast them to similar development so customers can taste the difference that process makes rather than the difference your roast curve introduced.</p>
+
+<h2 class="section-head">Sourcing <em>Washed Java Green Coffee</em></h2>
+
+<p class="body">El Quetzal sells farm-direct washed Java green coffee at <a href="https://elquetzal.coffee/collections/green-coffee" style="color: var(--gold); text-decoration: none;">elquetzal.coffee</a>. Sample packs let you evaluate the lot on your own roaster before committing, and because Java is the flagship, supply is steadier than the rarer microlots like the <a href="/microlots/nicaragua-geisha-green-coffee" style="color: var(--gold); text-decoration: none;">Nicaragua Geisha</a> or the <a href="/microlots/laurina-coffee-green-beans" style="color: var(--gold); text-decoration: none;">Laurina</a>. That steadiness is what lets you treat it as a program coffee rather than a one-time curiosity.</p>
+
+<p class="body">Roasters who want to lock in allocation for an upcoming harvest, or who want to pair the washed lot with the anaerobic version for a side-by-side menu, should reach out to El Quetzal directly to discuss volumes and forward contracts.</p>
+
+<DropWidget lotName="Java" />
+
+<h2 class="section-head">Positioning Java <em>for Your Customers</em></h2>
+
+<p class="body">A flagship origin lot earns its place on a menu by being easy to talk about. The story here is clean and true: a Typica-descended variety with a journey across three continents, grown by a fourth-generation family on volcanic soil in Matagalpa, milled on the farm, and roasted by you. That is a narrative a barista can deliver in two sentences, and it gives the coffee a sense of place that a commodity blend never has.</p>
+
+<p class="body">Use the washed Java as the dependable backbone of your origin lineup, the coffee that is always there, and let the rarer lots rotate around it. Customers who learn to trust your house Java are the ones who will follow you to the Geisha when it drops. The flagship builds the relationship; the microlots reward it.</p>
+
+</ContentLayout>

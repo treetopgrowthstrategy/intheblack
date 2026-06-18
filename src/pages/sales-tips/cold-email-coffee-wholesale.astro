@@ -1,0 +1,97 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Does cold email still work for coffee wholesale?",
+    a: "Yes, when it is done with research and restraint. Café owners and buyers read email, and most specialty roasters either never send cold outreach or send generic blasts that get ignored. A short, specific, well-timed email that shows you actually looked at the café and offers a clear, low-friction next step still gets responses. The roasters who complain that cold email is dead are usually the ones sending the same template to two hundred addresses at once."
+  },
+  {
+    q: "What is a good subject line for a coffee wholesale email?",
+    a: "Keep it short, specific, and free of sales language. Reference the café by name or mention something concrete: 'Coffee for [Café Name]' or 'Sample for your bar program' works better than 'Partner with our award-winning roastery.' The job of the subject line is to earn the open, not to make the pitch. Lowercase, plain phrasing that looks like a note from a real person tends to outperform polished marketing copy."
+  },
+  {
+    q: "How long should a cold wholesale email be?",
+    a: "Under 120 words. Buyers scan on their phones between tasks, so a long email reads as work and gets postponed into oblivion. Lead with why you are writing to them specifically, say one concrete thing about your coffee, make a single easy ask (usually a free sample), and stop. If they are interested, the details come in the reply. The first email only has to earn the next message, not close the account."
+  },
+  {
+    q: "How many follow-ups should a cold email sequence have?",
+    a: "Plan for four to six touches over three to four weeks, each adding something new rather than just checking in. Most closed wholesale deals take five or more touches, but most roasters quit after one. Space your follow-ups a few business days apart, change the angle each time, and always give the buyer a reason to read beyond the ask. A structured sequence is what separates roasters who close consistently from ones who give up early."
+  },
+  {
+    q: "Is cold emailing cafés legal under CAN-SPAM?",
+    a: "Cold B2B email is legal in the United States under the CAN-SPAM Act as long as you follow the rules: use accurate from and subject lines, identify the message honestly, include a valid physical mailing address, and give recipients a clear way to opt out that you honor promptly. You do not need prior consent to send a first commercial email to a business contact, but you must stop if they ask. Check local rules if you are emailing buyers outside the US."
+  }
+];
+
+const relatedPages = [
+  { href: '/sales-tips/coffee-sales-scripts', label: 'Sales Tips', title: 'Coffee Sales Scripts That Work' },
+  { href: '/sales-tips/coffee-sales-follow-up', label: 'Sales Tips', title: 'Following Up Without Being Annoying' },
+  { href: '/sales-tips/coffee-wholesale-email-automation', label: 'Sales Tips', title: 'Coffee Wholesale Email Automation' },
+  { href: '/how-to-get-wholesale-coffee-accounts', label: 'Guide', title: 'How to Get Wholesale Coffee Accounts' },
+];
+---
+
+<ContentLayout
+  title="How to Cold Email Cafés for Wholesale Coffee Accounts"
+  description="A tactical guide for specialty roasters on cold emailing cafés: research, subject lines, a short email framework, the sample offer, and smart follow-up."
+  slug="sales-tips/cold-email-coffee-wholesale"
+  section="sales-tips"
+  sectionLabel="Sales Tips"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want your <em>cold outreach handled?</em>"
+  ctaBody="Billy is an AI sales agent built for specialty coffee wholesale. It researches cafés, drafts outreach in your voice, and tracks every thread so nothing goes cold. Built on Airtable. No monthly SaaS fees."
+>
+
+<p class="body">Most roasters treat cold email as a numbers game and lose. They buy a list, paste a template that brags about awards and origin trips, and fire it at three hundred cafés at once. The open rates are dismal, the reply rates are worse, and they conclude that cold email does not work for coffee. The problem was never the channel. It was the approach.</p>
+
+<p class="body">Cold email still opens wholesale doors when it is treated as a series of short, researched, human messages rather than a blast. Café owners read email. They are also busy, skeptical of vendors, and pitched constantly, which means the bar to stand out is mostly about respect for their time. This guide breaks down how to send cold emails that café buyers actually answer.</p>
+
+<h2 class="section-head">Research Before You <em>Write a Word</em></h2>
+
+<p class="body">The single biggest difference between cold email that works and cold email that gets deleted is whether the sender did ten minutes of homework. Before you write, look at the café. What are they serving now, and who roasts it? Is it an espresso-forward bar, a pour-over shop, a high-volume commuter spot, a restaurant with a small coffee program? Do they talk about sourcing and quality, or is coffee an afterthought next to the food?</p>
+
+<p class="body">That research does two things. It tells you whether the café is even a fit, which saves you from wasting outreach on accounts that will never buy specialty. And it gives you the one specific detail that makes your email feel written to them rather than to a list. A line like, "I noticed you are pouring a washed Ethiopian on the bar right now and thought our anaerobic Java might give your regulars something different to talk about," does more than any amount of polished copy.</p>
+
+<h2 class="section-head">The Subject Line: <em>Earn the Open</em></h2>
+
+<p class="body">Your subject line has one job: get the email opened. It is not the place for your pitch. The lines that work are short, specific, and free of marketing language, the kind of thing a real person would type. "Coffee for [Café Name]," "Sample for your espresso bar," or "Quick question about your coffee program" all read as genuine. Anything with the words award-winning, partner, or exclusive reads as a vendor and goes to the mental trash before it is opened.</p>
+
+<h2 class="section-head">The Email: <em>A Four-Line Framework</em></h2>
+
+<p class="body">Keep the whole message under 120 words. Buyers scan email on their phones between tasks, and length reads as work. A simple four-part structure covers everything the first email needs to do:</p>
+
+<ul class="body-list">
+  <li><strong>Why them.</strong> One sentence that proves you looked at their café specifically. This is where the research pays off.</li>
+  <li><strong>Why you.</strong> One concrete thing about your coffee, not a paragraph of brand story. A single farm-direct lot, a specific tasting note, a real point of difference.</li>
+  <li><strong>The ask.</strong> One low-friction next step. Almost always, that is a free sample. Make it effortless to say yes.</li>
+  <li><strong>The close.</strong> A short, human sign-off. No pressure, no fake urgency, no five-sentence signature block.</li>
+</ul>
+
+<p class="body">That is it. The first email does not need to win the account. It needs to earn a reply. Every detail about pricing, volume, and logistics belongs in the conversation that follows, not in the message that starts it. If you want ready-made language for that first reply and the calls that come after, our <a href="/sales-tips/coffee-sales-scripts" style="color: var(--gold); text-decoration: none;">coffee sales scripts</a> cover the openers worth stealing.</p>
+
+<div class="callout">
+  <p>The free sample is the highest-converting ask in coffee wholesale cold outreach. It is concrete, it is generous, and it moves the relationship from talk to taste. A buyer who agrees to try your coffee has taken the one step that actually predicts a sale. Lead with the sample, not with a meeting request.</p>
+</div>
+
+<h2 class="section-head">Timing: <em>When to Hit Send</em></h2>
+
+<p class="body">For café buyers, avoid the pre-open rush before nine and the peak service windows of roughly seven to nine in the morning and eleven to one. Mid-afternoon, around two to four, on Tuesday through Thursday, is the window where a café operator has a moment to read a non-urgent message. Monday mornings are buried and Friday afternoons are mentally checked out. Sending at the right time can matter as much as what the email says.</p>
+
+<h2 class="section-head">Follow Up Like You <em>Mean It</em></h2>
+
+<p class="body">One email is not a campaign. Most wholesale accounts that close take five or more touches, yet most roasters send one message and assume silence means no. Plan a sequence of four to six emails over three to four weeks, each spaced a few business days apart and each adding something new: a different coffee, a note that a café in their neighborhood just picked you up, a short observation about their menu. The goal is to stay useful and present without becoming a nuisance, and to give the buyer who meant to reply a low-pressure reason to finally do it. Our guide to <a href="/sales-tips/coffee-sales-follow-up" style="color: var(--gold); text-decoration: none;">following up without being annoying</a> breaks that sequence down touch by touch.</p>
+
+<h2 class="section-head">Track Every Thread <em>or Lose Them</em></h2>
+
+<p class="body">Cold outreach falls apart not at the writing stage but at the tracking stage. Once you have twenty or thirty live threads at different points in the sequence, remembering who got which email and who is due for a follow-up becomes the real job, and a spreadsheet stops keeping up somewhere around prospect fifteen. The accounts you lose are rarely the ones who said no. They are the ones you simply forgot to follow up with.</p>
+
+<p class="body">Billy, the AI sales agent built for specialty coffee wholesale, researches café prospects, drafts outreach in your voice, and tracks every thread so the next follow-up is always queued and nothing goes cold. It runs on Airtable, with no complex CRM to configure and no monthly enterprise subscription.</p>
+
+<a href="https://usebilly.io" style="display:inline-block; margin-top:0.5rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(201,168,76,0.3); text-decoration:none; padding-bottom:2px;">Learn about Billy →</a>
+
+</ContentLayout>

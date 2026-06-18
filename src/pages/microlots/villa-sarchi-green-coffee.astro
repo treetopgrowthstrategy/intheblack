@@ -1,0 +1,95 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import DropWidget from '../../components/DropWidget.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is the Villa Sarchi coffee variety?",
+    a: "Villa Sarchi is a natural dwarf mutation of Bourbon that appeared in the Sarchi region of Costa Rica's Central Valley. Like Caturra and Pacas, it is a compact, low-growing plant that came from a spontaneous genetic change in a Bourbon population rather than from deliberate crossbreeding. The short stature suits high-density planting and exposed, windy, high-altitude sites, and the cup keeps the clean sweetness and bright acidity that make Bourbon-lineage coffees prized in specialty. El Quetzal grows it washed in Matagalpa, Nicaragua."
+  },
+  {
+    q: "What does Villa Sarchi taste like?",
+    a: "Villa Sarchi cups in the classic Bourbon family register: sweet, clean, and bright, with a citric acidity and good clarity. At altitude it develops more structure and a crisp, juicy character that holds up well in a filter brew. It is less about a single dramatic note and more about balance and sweetness, which is exactly why it works both as a single-origin offering and as a component that lifts a blend. El Quetzal uses it to add complexity to blends as well as offering it on its own."
+  },
+  {
+    q: "Is Villa Sarchi the same as Bourbon?",
+    a: "Villa Sarchi is a dwarf mutation of Bourbon, so it shares the Bourbon lineage and much of the cup character, but it is its own distinct variety. The key difference is the plant: Villa Sarchi is much shorter and more compact than tall classic Bourbon, which makes it easier to manage and better suited to dense planting on steep, windy slopes. In the cup you get Bourbon-style sweetness and acidity from a plant that is far more practical to farm at altitude."
+  },
+  {
+    q: "Should I use Villa Sarchi as a single origin or in a blend?",
+    a: "Both work. As a single origin, Villa Sarchi rewards a light to medium roast and a clean brew method that lets its sweetness and citric acidity show. As a blend component, it brings brightness and clarity that can lift a heavier, more chocolate-forward base, which is the role El Quetzal highlights for it. Many roasters do both: offer it solo for the curious customer and fold it into a signature blend for everyday volume."
+  },
+  {
+    q: "Where can I buy Villa Sarchi green coffee?",
+    a: "El Quetzal Coffee Co. sells washed Villa Sarchi green coffee farm-direct at elquetzal.coffee, in sample packs and full lots, milled and exported through the farm's own Beneficio San Miguel. Production of any single variety lot like this is limited compared with the flagship Java, so roasters who want it for a recurring blend should reach out directly to confirm harvest availability and forward contract options."
+  }
+];
+
+const relatedPages = [
+  { href: '/microlots/washed-java-green-coffee', label: 'Microlot Guide', title: 'Washed Java Green Coffee' },
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot Guide', title: 'Nicaragua Geisha Green Coffee' },
+  { href: '/microlots/laurina-coffee-green-beans', label: 'Microlot Guide', title: 'Laurina Coffee Green Beans' },
+  { href: '/drop-list', label: 'First Access', title: 'Join The Drop List' },
+];
+---
+
+<ContentLayout
+  title="Villa Sarchi Green Coffee: A Roaster's Guide"
+  description="The Villa Sarchi variety explained: a dwarf Bourbon mutation with bright, sweet, clean character. How to roast it, blend uses, and where to source it."
+  slug="microlots/villa-sarchi-green-coffee"
+  section="microlots"
+  sectionLabel="Microlot Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Want a bright <em>Bourbon-lineage lot?</em>"
+  ctaBody="El Quetzal's washed Villa Sarchi brings clean sweetness and citric acidity, farm-direct from Matagalpa. Contact El Quetzal to check current inventory and sample availability."
+>
+
+<p class="body">Villa Sarchi is the kind of variety that rewards roasters who read past the headline names. It does not carry the auction-room mystique of the <a href="/microlots/nicaragua-geisha-green-coffee" style="color: var(--gold); text-decoration: none;">Nicaragua Geisha</a> or the low-caffeine novelty of the <a href="/microlots/laurina-coffee-green-beans" style="color: var(--gold); text-decoration: none;">Laurina</a>, but it offers something quietly valuable: clean, bright, Bourbon-lineage sweetness from a plant that is unusually practical to grow at altitude. For a roaster who needs a coffee that performs as both a single origin and a blend lifter, that is a useful tool to have in the catalog.</p>
+
+<p class="body">El Quetzal grows Villa Sarchi washed at its farm in Nicaragua's Matagalpa highlands, where the family uses it to add complexity to blends as well as offering it on its own. This guide covers where the variety came from, what it tastes like, how it behaves on the roaster, and how to source it.</p>
+
+<h2 class="section-head">The Villa Sarchi Variety: <em>A Dwarf Bourbon</em></h2>
+
+<p class="body">Villa Sarchi belongs to a small family of varieties that exist because of a single, lucky genetic accident. Sometime in the mid twentieth century, in the Sarchi region of Costa Rica's Central Valley, a Bourbon plant produced a natural dwarf mutation: a shorter, more compact bush that kept the parent's cup quality. This is the same kind of spontaneous change that gave specialty coffee Caturra (a dwarf Bourbon from Brazil) and Pacas (a dwarf Bourbon from El Salvador). Villa Sarchi is Costa Rica's contribution to that lineage.</p>
+
+<p class="body">The compact stature is not a cosmetic detail. A shorter plant can be planted at higher density, is easier to harvest, and stands up better to wind and exposure on steep, high-altitude slopes where taller Bourbon would struggle. For a farm working high ground, that combination of manageability and altitude tolerance is exactly what you want. The trade is yield: like most high-quality varieties, Villa Sarchi does not produce the volume of a commercial workhorse, which is part of why it stays in the specialty lane.</p>
+
+<h2 class="section-head">The Cup: <em>Bright, Sweet, Clean</em></h2>
+
+<p class="body">Villa Sarchi cups squarely in the Bourbon family register. Expect clean sweetness, a bright citric acidity, and good clarity, with a juicy structure that sharpens as altitude climbs. It is less a coffee of one dramatic signature note and more a coffee of balance, the sort of cup that tastes finished and complete rather than loud. That balance is its selling point. A well-grown Villa Sarchi is reliably pleasant in a way that makes it easy to put in front of a wide range of customers.</p>
+
+<div class="callout">
+  <p>For a wholesale buyer, the value of Villa Sarchi is its dual use. The same lot can headline a single-origin filter for the customer who wants brightness and clarity, and quietly lift a chocolate-forward blend that needs more acidity and life. Few varieties give you both jobs from one bag.</p>
+</div>
+
+<h2 class="section-head">El Quetzal's <em>Villa Sarchi: The Details</em></h2>
+
+<p class="body">El Quetzal grows its Villa Sarchi washed at the farm in Matagalpa, processed and exported through the family's own Beneficio San Miguel mill, which keeps the lot traceable from tree to port. The family, now in its fourth generation of coffee growing as the Bendaña McEwan line, positions Villa Sarchi as a complexity builder: a variety that earns its place in the lineup by adding brightness and clarity to blends, with enough character to stand alone for roasters who want to feature it.</p>
+
+<p class="body">Because Villa Sarchi is a single-variety lot rather than the farm's flagship, the available volume is smaller than the washed Java. That makes it well suited to a signature blend or a rotating single origin rather than a high-volume everyday coffee, and it is a good reason to confirm availability early if you intend to build a recurring recipe around it.</p>
+
+<h2 class="section-head">How to <em>Roast Villa Sarchi</em></h2>
+
+<p class="body">Villa Sarchi takes well to a light or medium roast, and the choice depends on the job you want it to do. For a single-origin filter that shows off the citric acidity and clean sweetness, keep the roast on the lighter side, around City to City+, so the brightness survives. For a blend component meant to lift a darker, heavier base, a slightly more developed medium integrates more smoothly while still contributing acidity and sweetness.</p>
+
+<p class="body">As with most Bourbon-lineage varieties, the thing to avoid is over-developing into a dark roast that buries the acidity and flattens the cup into generic roastiness. The whole point of a Villa Sarchi is the brightness, so protect it. If you are blending, roast the Villa Sarchi component to complement the base rather than match it, and let it do the work of waking up the recipe.</p>
+
+<h2 class="section-head">Sourcing <em>Villa Sarchi Green Coffee</em></h2>
+
+<p class="body">El Quetzal sells farm-direct washed Villa Sarchi green coffee at <a href="https://elquetzal.coffee/collections/green-coffee" style="color: var(--gold); text-decoration: none;">elquetzal.coffee</a>, in sample packs and full lots. As with the rest of the farm's catalog, the coffee is milled and exported in-house, so you are buying a fully traceable lot rather than an anonymous blend of unknown provenance.</p>
+
+<p class="body">Roasters who want Villa Sarchi for a recurring blend or a seasonal single origin should contact El Quetzal directly to confirm harvest volumes and discuss forward contracts, since single-variety lots like this move faster than the flagship coffees. If you want a heads up the next time it is available, the drop list below is the fastest way to hear about it first.</p>
+
+<DropWidget lotName="Villa Sarchi" />
+
+<h2 class="section-head">Positioning Villa Sarchi <em>for Your Customers</em></h2>
+
+<p class="body">Villa Sarchi gives a roaster a small education to hand to a curious customer. The story is genuinely interesting: a Bourbon plant in Costa Rica mutated into a compact dwarf, the same kind of natural change that produced Caturra and Pacas, and that practical little plant now grows at altitude in Matagalpa producing a bright, clean, sweet cup. That is a two-sentence story a barista can tell, and it positions the coffee as a thoughtful choice rather than a generic single origin.</p>
+
+<p class="body">On the menu, Villa Sarchi pairs naturally with the rest of the El Quetzal lineup. Set it next to the <a href="/microlots/washed-java-green-coffee" style="color: var(--gold); text-decoration: none;">washed Java</a> as the brighter, more acidic counterpoint, and use it to round out a house blend that needs lift. Customers who appreciate the clarity of a good Villa Sarchi are exactly the audience that will reach for the farm's rarer lots when they drop.</p>
+
+</ContentLayout>
