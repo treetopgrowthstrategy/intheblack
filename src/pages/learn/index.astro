@@ -1,0 +1,174 @@
+---
+export const prerender = true;
+
+const articles = [
+  {
+    href: '/learn/single-origin-coffee-guide',
+    eyebrow: 'Pillar Guide',
+    title: 'The Single Origin Coffee Guide',
+    desc: 'Country, region, farm, and lot: what the labels mean, how terroir works, and which origins to know.',
+  },
+  {
+    href: '/learn/coffee-processing-methods',
+    eyebrow: 'Pillar Guide',
+    title: 'Coffee Processing Methods Explained',
+    desc: 'Washed, natural, honey, anaerobic, and wet-hulled: how each method changes the flavor in the cup.',
+  },
+  {
+    href: '/learn/kona-coffee-guide',
+    eyebrow: 'Buyers Guide',
+    title: 'The Kona Coffee Buyers Guide',
+    desc: 'Grading, the 10% blend trap, Peaberry, Ka\'u, and how to find 100% genuine Kona.',
+  },
+  {
+    href: '/learn/best-specialty-coffee-roasters',
+    eyebrow: 'Buyers Guide',
+    title: 'Best Specialty Coffee Roasters in the US',
+    desc: 'Full reviews of five top online roasters: sourcing, freshness, catalog, and which fits your taste.',
+  },
+  {
+    href: '/learn/ethiopian-coffee-guide',
+    eyebrow: 'Origin Guide',
+    title: 'Ethiopian Coffee: The Complete Guide',
+    desc: 'Yirgacheffe, Sidama, Guji, Harrar: the birthplace of coffee and why its regions taste so different.',
+  },
+  {
+    href: '/learn/what-is-peaberry-coffee',
+    eyebrow: 'Deep Dive',
+    title: 'What Is Peaberry Coffee?',
+    desc: 'Only 5% of any harvest. One round bean instead of two flat halves. Here\'s what makes it different.',
+  },
+  {
+    href: '/learn/washed-vs-natural-coffee',
+    eyebrow: 'Processing',
+    title: 'Washed vs Natural Coffee: The Differences',
+    desc: 'The two most common processing methods, head to head. Flavor, body, risk, and which to try first.',
+  },
+  {
+    href: '/learn/kona-coffee-grades',
+    eyebrow: 'Buyers Guide',
+    title: 'Kona Coffee Grades Explained',
+    desc: 'Extra Fancy, Fancy, No. 1, Peaberry: what each grade means and which Koa products match each tier.',
+  },
+  {
+    href: '/learn/best-natural-process-coffee',
+    eyebrow: 'Buyers Guide',
+    title: 'Best Natural Process Coffee to Buy Online',
+    desc: 'The fruitiest, fullest coffees you can order right now. Ranked picks from three specialty roasters.',
+  },
+  {
+    href: '/learn/best-single-origin-coffee',
+    eyebrow: 'Buyers Guide',
+    title: 'Best Single Origin Coffee to Buy Online',
+    desc: 'The top single-origin coffees across five origins, from five specialty roasters, for every taste profile.',
+  },
+];
+
+const hubSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Coffee Guides",
+  "description": "In-depth guides to single origin coffee, processing methods, Kona, Ethiopian coffee, and the best specialty roasters to order from online.",
+  "url": "https://intheblack.coffee/learn",
+  "publisher": {
+    "@type": "Organization",
+    "name": "In The Black Coffee Co.",
+    "url": "https://intheblack.coffee"
+  }
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Guides | In The Black Coffee Co.</title>
+  <meta name="description" content="In-depth guides to single origin coffee, processing methods, Kona coffee, and the best specialty roasters to order from online." />
+  <link rel="canonical" href="https://intheblack.coffee/learn" />
+  <script type="application/ld+json" set:html={JSON.stringify(hubSchema)} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --espresso: #0f0b08;
+      --espresso-mid: #1a1410;
+      --espresso-light: #261e17;
+      --gold: #C9A84C;
+      --gold-pale: #e8d5a3;
+      --cream: #f5f0e8;
+      --text-body: #c4b9ab;
+      --text-dim: #7a6e64;
+      --border: rgba(201, 168, 76, 0.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--espresso); color: var(--text-body); font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing: antialiased; }
+    .nav { border-bottom: 1px solid var(--border); padding: 1.25rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: var(--cream); }
+    .nav-logo span { color: var(--gold); }
+    .nav-cta { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); text-decoration: none; border: 1px solid var(--gold); padding: 0.45rem 1rem; }
+    .hero { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 3.5rem; text-align: center; }
+    .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; }
+    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 300; line-height: 1.15; color: var(--cream); margin-bottom: 1.25rem; }
+    .hero h1 em { color: var(--gold); font-style: italic; }
+    .hero p { font-size: 1.05rem; color: var(--text-body); line-height: 1.8; max-width: 540px; margin: 0 auto; }
+    .gold-rule { width: 48px; height: 1px; background: var(--gold); margin: 2.5rem auto; opacity: 0.5; }
+    .grid-wrap { max-width: 1000px; margin: 0 auto; padding: 0 2rem 6rem; }
+    .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.25rem; }
+    .article-card { border: 1px solid var(--border); background: var(--espresso-mid); padding: 1.75rem; text-decoration: none; display: block; position: relative; transition: border-color 0.2s; }
+    .article-card:hover { border-color: var(--gold); }
+    .article-card::after { content: '→'; position: absolute; bottom: 1.5rem; right: 1.5rem; font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--text-dim); transition: color 0.2s, transform 0.2s; }
+    .article-card:hover::after { color: var(--gold); transform: translateX(3px); }
+    .article-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+    .article-title { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 400; color: var(--cream); margin-bottom: 0.6rem; line-height: 1.25; }
+    .article-desc { font-size: 0.88rem; color: var(--text-body); line-height: 1.65; padding-right: 1rem; }
+    .about-strip { border-top: 1px solid var(--border); max-width: 760px; margin: 0 auto; padding: 4rem 2rem; text-align: center; }
+    .about-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 300; color: var(--cream); margin-bottom: 1rem; }
+    .about-strip h2 em { color: var(--gold); font-style: italic; }
+    .about-strip p { color: var(--text-body); font-size: 0.95rem; line-height: 1.8; max-width: 520px; margin: 0 auto 1.5rem; }
+    .about-link { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+    footer { border-top: 1px solid var(--border); padding: 2rem; text-align: center; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); margin-bottom: 0.75rem; }
+    .footer-logo span { color: var(--gold); }
+    .footer-copy { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--text-dim); }
+    @media (max-width: 600px) {
+      .nav { padding: 1rem; }
+      .hero { padding: 3rem 1.25rem 2.5rem; }
+      .grid-wrap { padding: 0 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-logo">In The <span>Black</span> Coffee Co.</a>
+    <a href="/contact" class="nav-cta">Work With Us</a>
+  </nav>
+  <header class="hero">
+    <span class="hero-eyebrow">Coffee Guides</span>
+    <h1>Learn Everything About <em>Specialty Coffee</em></h1>
+    <p>In-depth guides to origins, processing, Kona, and the best roasters to order from. Written for people who take their coffee seriously.</p>
+    <div class="gold-rule"></div>
+  </header>
+  <main class="grid-wrap">
+    <div class="article-grid">
+      {articles.map(a => (
+        <a href={a.href} class="article-card">
+          <div class="article-eyebrow">{a.eyebrow}</div>
+          <div class="article-title">{a.title}</div>
+          <p class="article-desc">{a.desc}</p>
+        </a>
+      ))}
+    </div>
+  </main>
+  <section class="about-strip">
+    <h2>About <em>In The Black</em></h2>
+    <p>In The Black Coffee Co. is a commission-only wholesale coffee sales agency. We represent specialty roasters and place their coffee in cafes, restaurants, and offices. Our coffee guides exist to help buyers make smarter purchasing decisions.</p>
+    <a href="/contact" class="about-link">Work with us →</a>
+  </section>
+  <footer>
+    <div class="footer-logo">In The <span>Black</span> Coffee Co.</div>
+    <p class="footer-copy">© {new Date().getFullYear()} In The Black Coffee Co. · intheblack.coffee</p>
+  </footer>
+</body>
+</html>

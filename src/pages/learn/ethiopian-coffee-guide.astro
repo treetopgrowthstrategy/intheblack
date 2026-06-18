@@ -1,0 +1,109 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Why is Ethiopian coffee considered special?",
+    a: "Ethiopia is the genetic birthplace of arabica coffee. Wild coffee plants have grown in its highland forests for centuries before cultivation began. This means Ethiopian coffee has extraordinary genetic diversity, with hundreds of distinct varieties (many still unnamed and uncatalogued) that produce flavor profiles no other country can replicate. Ethiopian coffees from Yirgacheffe, Sidama, and Guji regularly produce some of the most intensely floral, fruity, and complex cups in the world of specialty coffee."
+  },
+  {
+    q: "What is the difference between Yirgacheffe, Sidama, and Guji coffee?",
+    a: "All three are growing zones within the broader Gedeo and Oromia regions of southern Ethiopia, and all three can produce exceptional washed and natural coffees. Yirgacheffe is the most famous and tends to cup with the highest-elevation character: intense jasmine and bergamot florals, bright lemon and stone fruit acidity. Sidama/Sidamo is broader geographically and cups with slightly more body and darker fruit. Guji is a newer-named region producing coffees that read similarly to Yirgacheffe in floral quality but with more fruit-forward natural-processed character."
+  },
+  {
+    q: "What is Harrar coffee and how is it different from washed Ethiopian?",
+    a: "Harrar (also spelled Harar) is a dry-climate region in eastern Ethiopia that produces naturally-processed coffees with a completely different flavor profile from the washed Yirgacheffes of the south. Harrar naturals are known for their blueberry, dark fruit, and wine-like character: rich, heavy-bodied, and ferment-forward. They are an acquired taste for coffee drinkers accustomed to the clean brightness of washed Yirgacheffe, but one of the most distinctive coffees in the world for buyers who enjoy intense, fruit-driven profiles."
+  },
+  {
+    q: "Should I buy washed or natural Ethiopian coffee?",
+    a: "Both are worth experiencing and they taste dramatically different. Washed Ethiopian (especially from Yirgacheffe) is the cleaner, brighter expression: floral, citrus-forward, and often compared to tea in its delicacy. Natural Ethiopian (from Yirgacheffe, Guji, or Harrar) is heavier, fruit-forward, and more complex in a fermented-fruit way. If you have never had Ethiopian coffee before, start washed. If you already know and love it, try a natural from the same region to compare."
+  },
+  {
+    q: "Is Ethiopian coffee high in caffeine?",
+    a: "Ethiopian coffees are 100% arabica, and arabica contains less caffeine than robusta. Ethiopian arabica varieties have caffeine content similar to other arabica coffees: roughly 1.2% to 1.5% of the dry weight of the bean, yielding approximately 80 to 120mg per 8-ounce cup depending on brew method and grind. Some heirloom Ethiopian varieties may have slightly higher or lower caffeine than commodity arabica, but the difference is not dramatic."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+];
+---
+
+<ContentLayout
+  title="Ethiopian Coffee Guide: Yirgacheffe, Sidama, Guji, and Harrar"
+  description="The complete guide to Ethiopian coffee: the regions, the heirloom varieties, washed vs natural, and how to buy the best Ethiopian coffee online."
+  slug="learn/ethiopian-coffee-guide"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Want <em>great Ethiopian coffee</em> delivered fresh?"
+  ctaBody="Volcanica Coffee carries one of the widest selections of Ethiopian single-origins available online, including Yirgacheffe, Sidama, Guji, and Harrar lots across both washed and natural processing."
+>
+
+<p class="body">Ethiopia is where coffee was born. Not metaphorically or historically in a loose sense, but literally: wild arabica coffee plants (Coffea arabica) are indigenous to the highland forests of southwest Ethiopia, and the genetic diversity of Ethiopian coffee varieties is so vast that many of them still have no formal names. When you drink a Yirgacheffe or a Guji natural, you are tasting a cup whose flavor comes directly from thousands of years of a plant adapting to a specific piece of land, long before anyone thought to cultivate it.</p>
+
+<p class="body"><a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> and <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Coffee Bros.</a> both carry strong Ethiopian selections across washed and natural processing. But before buying, it helps to understand what makes the regions different and what to expect from each processing method, because Ethiopian coffee is a category broad enough that "Ethiopian coffee" tells you almost nothing about what the cup will taste like.</p>
+
+<h2 class="section-head">Why Ethiopian Coffee Is <em>Uniquely Diverse</em></h2>
+
+<p class="body">Most arabica coffee grown commercially today traces back to a handful of genetic varieties: Bourbon, Typica, and their descendants. Ethiopian coffee predates this bottleneck. The wild and semi-wild "heirloom" or "indigenous" varieties grown in Ethiopia are often called JARC varieties (after the Jimma Agricultural Research Center) or simply "Ethiopia heirlooms," and they encompass extraordinary genetic range. A single farm in Yirgacheffe may grow dozens of genetically distinct coffee plants, none of which have formal cultivar names.</p>
+
+<p class="body">This genetic diversity produces cup diversity. Ethiopian coffees can taste like jasmine and lemon (washed Yirgacheffe), like blueberry jam and dark wine (Harrar natural), like strawberry and bergamot (Guji natural), or like black tea with stone fruit (washed Sidama). No other single country produces this range of flavor from within its borders, which is why specialty buyers treat Ethiopian coffee as a category unto itself rather than a single origin.</p>
+
+<h2 class="section-head">The Key Regions: <em>Where Ethiopian Coffee Comes From</em></h2>
+
+<h3 class="sub-head">Yirgacheffe</h3>
+<p class="body">Yirgacheffe is a small sub-region within the larger Gedeo zone of southern Ethiopia, at elevations between 1,700 and 2,200 meters. It is the most internationally celebrated Ethiopian origin and the one most closely associated with the intensely floral, tea-like quality that defines the country's finest washed coffees. Yirgacheffe washed coffees regularly cup with jasmine, bergamot, lemon curd, peach, and stone fruit; Yirgacheffe naturals from the same farms read as strawberry, blueberry, and dark fruit over a floral base.</p>
+
+<h3 class="sub-head">Sidama (Sidamo)</h3>
+<p class="body">Sidama is a broader administrative zone surrounding and overlapping with Yirgacheffe, at slightly lower average elevations. Sidama coffees cup with more body and darker fruit than high-elevation Yirgacheffe, tending toward chocolate, red berry, and stone fruit with less of the intense tea-like delicacy. They are generally more approachable for buyers who find the lightest Yirgacheffes too delicate. The region's Bensa zone in particular has produced remarkable natural and honey-processed lots in recent years.</p>
+
+<h3 class="sub-head">Guji</h3>
+<p class="body">Guji (formally Guji zone in Oromia region, southern Ethiopia) emerged as a specialty destination in its own right in the 2010s as exporters and green buyers began differentiating it from the broader Sidamo designation. Guji coffees at high elevation can rival Yirgacheffe in floral quality while offering a more fruit-forward, stone-fruit-driven character, particularly in natural processing. Hambela and Uraga are two kebeles within Guji that have produced internationally recognized lots.</p>
+
+<h3 class="sub-head">Harrar (Harar)</h3>
+<p class="body">Harrar is in eastern Ethiopia, in a dry, lower-elevation region with a completely different climate from the wet, high-altitude south. All Harrar coffee is naturally processed by default because the dry climate precludes washing. The result is one of the most distinctive coffees in the world: heavy body, intense dark fruit (blueberry, blackberry, wine), sometimes earthy or gamey, always bold. Harrar is an acquired taste but a genuine one, beloved by buyers who want something that reads nothing like a light washed Ethiopian.</p>
+
+<h2 class="section-head">Washed vs Natural: <em>The Processing Decision</em></h2>
+
+<p class="body">Ethiopian coffee is available in both washed and natural processing, and the method produces dramatically different results from the same growing region. Understanding this distinction is covered in full in our <a href="/learn/coffee-processing-methods">coffee processing methods guide</a>, but the key point for Ethiopian coffee specifically is this: washed Yirgacheffe and natural Yirgacheffe taste more different from each other than washed Yirgacheffe and washed Sidama do. Processing method is as important as origin in Ethiopia.</p>
+
+<p class="body">Washed Ethiopian coffees are the cleaner, brighter, more tea-like expression. Natural Ethiopian coffees are heavier, fruitier, and more complex in a fermented or wine-like way. Both are excellent. First-time buyers of Ethiopian coffee should start with washed to taste the origin's clarity, then try a natural from the same region to understand how much the processing changes the cup.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended: Ethiopian Origin</div>
+  <div class="buy-card-title">Volcanica Ethiopian Yirgacheffe</div>
+  <p class="buy-card-notes">Tasting notes: jasmine, bergamot, lemon, stone fruit. One of the world's most celebrated washed single-origins. Medium light roast for full floral and citrus character. Traceable sourcing from Gedeo zone farms.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Ethiopian →</a>
+</div>
+
+<h2 class="section-head">How to Brew <em>Ethiopian Coffee Well</em></h2>
+
+<p class="body">Ethiopian coffees, especially washed light-to-medium roasts from Yirgacheffe and Guji, are best showcased in brewing methods that preserve clarity and allow floral and citrus notes to come through without muddying them. Pour-over (V60, Chemex, Kalita) is the classic choice: clean paper filtration, medium-fine grind, water at around 200 degrees Fahrenheit, a 1:15 to 1:16 coffee-to-water ratio.</p>
+
+<p class="body">Avoid French press for washed light Ethiopian if you want to experience the full floral character; the metal filter lets fines through that add body and bitterness, which mutes the delicate notes that make Yirgacheffe distinctive. For natural Ethiopian coffees, which have more body and intensity built in, French press is a reasonable choice and adds to the cup's richness.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Also Recommended</div>
+  <div class="buy-card-title">Coffee Bros. Ethiopian Single Origin</div>
+  <p class="buy-card-notes">Freshly roasted Ethiopian washed or natural single-origins. Processing method clearly labeled. Ships quickly after roasting for maximum freshness. Good comparison point against Volcanica's selection.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Ethiopian →</a>
+</div>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

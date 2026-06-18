@@ -1,0 +1,161 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is the highest grade of Kona coffee?",
+    a: "Extra Fancy is the highest Hawaii state grade for Kona coffee, defined by a minimum bean screen size of 19 (approximately 7.5mm diameter) and a maximum of 10 allowable defects per 300-gram sample. Koa Coffee's Private Reserve is their Extra Fancy grade designation. Peaberry is graded separately as a distinct bean type rather than a quality tier, but is typically considered the premium product above Extra Fancy in terms of price and prestige due to its rarity (only 3 to 5% of any harvest)."
+  },
+  {
+    q: "What is the difference between Kona Extra Fancy and No. 1?",
+    a: "Extra Fancy requires a minimum bean screen size of 19 and allows only 10 defects per 300-gram sample. No. 1 requires a minimum screen size of 16 and allows up to 20 defects. Extra Fancy beans are larger, more visually uniform, and graded to a stricter defect tolerance. In cup quality, both grades can be excellent depending on the farm's growing and picking practices. Extra Fancy's larger size allows for more even roasting. The cup difference between Extra Fancy and No. 1 from the same quality farm is present but often smaller than the price difference suggests."
+  },
+  {
+    q: "Is Kona Fancy or Extra Fancy better?",
+    a: "Extra Fancy is the higher grade, but 'better' depends on context. Extra Fancy has larger, more uniform beans and stricter defect tolerance, which allows for more even roasting and produces the most consistent cup expression. Fancy (minimum screen size 18, up to 15 defects) is one step below and still produces excellent coffee. For everyday drinking, a strong Fancy lot from a quality farm cups comparably to Extra Fancy. For gifting or tasting Kona at its most refined, Extra Fancy (Koa Private Reserve) is the appropriate choice."
+  },
+  {
+    q: "Which Koa Coffee product is which grade?",
+    a: "Koa Coffee's product lineup maps directly to Hawaii state grades. Estate = No. 1 grade (minimum screen 16). Private Reserve = Extra Fancy grade (minimum screen 19). Peaberry = Peaberry designation (round single-bean, hand-sorted, approximately 5% of harvest). Grande Domaine = Vienna roast product using Estate (No. 1 grade) beans roasted darker. Ka'u = coffee from the separate Ka'u growing district on the southern Big Island."
+  },
+  {
+    q: "Does higher Kona grade mean better taste?",
+    a: "Higher grade means larger, more uniform beans with fewer defects: conditions that support more consistent roasting and fewer off-flavors from defective beans. In practice, Extra Fancy Kona from a quality farm does produce a more consistent cup than Select or Prime from the same farm. But grade does not capture everything: a No. 1 lot from a meticulous farm whose pickers select only ripe cherries can cup better than an Extra Fancy lot from a farm with poor picking standards. Grade is a reliable proxy, but producer reputation matters too."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/kona-coffee-guide', label: 'Buyers Guide', title: 'The Kona Coffee Buyers Guide' },
+  { href: '/learn/what-is-peaberry-coffee', label: 'Deep Dive', title: 'What Is Peaberry Coffee?' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+];
+---
+
+<ContentLayout
+  title="Kona Coffee Grades Explained: Extra Fancy, Fancy, No. 1, and Peaberry"
+  description="The complete guide to Hawaii's Kona coffee grading system: what each grade means, how grades map to Koa Coffee products, and which to buy for your purposes."
+  slug="learn/kona-coffee-grades"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Shop Kona by grade."
+  ctaBody="Koa Coffee offers the full range of Hawaii state grades in one place: Estate (No. 1), Private Reserve (Extra Fancy), and Peaberry. All 100% genuine Kona from Big Island farms."
+>
+
+<p class="body">Not all Kona is the same Kona. Hawaii state law defines a grading system for Kona coffee based on bean size and defect tolerance, and the grade on the bag tells you something concrete about what is inside. <a href="https://koacoffee.com/p/pure-kona-coffee/estate-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Koa Coffee's Estate</a> is No. 1 grade. Their <a href="https://koacoffee.com/p/pure-kona-coffee/private-reserve-medium-roast-whole-bean" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Private Reserve</a> is Extra Fancy. Their Peaberry is a separate designation entirely. Understanding the grading system is the key to buying Kona intelligently instead of just by price.</p>
+
+<h2 class="section-head">The Hawaii State <em>Grading System</em></h2>
+
+<p class="body">The Hawaii Department of Agriculture defines coffee grades by two criteria: bean screen size (a measurement of bean diameter) and defect tolerance (how many defective beans are allowable per 300-gram sample). The grades, from highest to lowest, are:</p>
+
+<table class="grade-table">
+  <thead>
+    <tr>
+      <th>Grade</th>
+      <th>Min Screen Size</th>
+      <th>Max Defects / 300g</th>
+      <th>Koa Product</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extra Fancy</td>
+      <td>19 (7.5mm)</td>
+      <td>10</td>
+      <td>Private Reserve</td>
+    </tr>
+    <tr>
+      <td>Fancy</td>
+      <td>18</td>
+      <td>15</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>No. 1</td>
+      <td>16</td>
+      <td>20</td>
+      <td>Estate</td>
+    </tr>
+    <tr>
+      <td>Select</td>
+      <td>14 (blended)</td>
+      <td>25</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Prime</td>
+      <td>None</td>
+      <td>35</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Peaberry</td>
+      <td>Round bean, hand-sorted</td>
+      <td>Separate classification</td>
+      <td>Peaberry</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="section-head">Extra Fancy: <em>The Highest Flat-Bean Grade</em></h2>
+
+<p class="body">Extra Fancy is the strictest grade for standard (flat-sided) Kona beans. A minimum screen size of 19 means only the largest beans from the harvest qualify. A maximum of 10 defects per 300-gram sample means the grading is done carefully and defective beans are removed aggressively. The result is a visually uniform lot with larger beans that roast more evenly because consistent bean size means consistent heat absorption.</p>
+
+<p class="body">Koa Coffee's Private Reserve is their Extra Fancy designation. It is their benchmark everyday Kona: the grade they built their reputation on. Medium-roasted to express the milk chocolate, caramel, and citrus brightness that characterizes Kona coffee at its best. Price range: $42 to $155 depending on quantity.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Extra Fancy Grade</div>
+  <div class="buy-card-title">Koa Private Reserve Kona</div>
+  <p class="buy-card-notes">Tasting notes: milk chocolate, caramel, bright citrus. Largest bean screen, strictest defect tolerance. The everyday premium Kona for buyers who want the best flat-bean grade.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/private-reserve-medium-roast-whole-bean" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Private Reserve →</a>
+</div>
+
+<h2 class="section-head">No. 1: <em>The Accessible Grade</em></h2>
+
+<p class="body">No. 1 is the broad middle tier of Kona production, with minimum screen size 16 and up to 20 defects per 300-gram sample. It represents the bulk of most farms' saleable output. A well-farmed No. 1 lot from a meticulous producer who picks selectively and processes carefully cups nearly as well as that farm's Extra Fancy in many blind cuppings. The grade difference shows most in visual uniformity and slightly more variability in roast development due to mixed bean sizes.</p>
+
+<p class="body">Koa Coffee's Estate is their No. 1 grade product. It is the most accessible starting point for first-time Kona buyers: same characteristic profile as the Private Reserve (milk chocolate, nut, clean sweet finish), slightly more variability in bean size, noticeably lower price. Price range: $46 to $176 depending on quantity.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">No. 1 Grade</div>
+  <div class="buy-card-title">Koa Estate Kona Medium Roast</div>
+  <p class="buy-card-notes">Tasting notes: milk chocolate, nut, clean sweet finish. No. 1 grade: the best value entry point into Koa's 100% Kona lineup. Characteristic Kona profile at a more accessible price than Private Reserve.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/estate-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Estate →</a>
+</div>
+
+<h2 class="section-head">Peaberry: <em>The Special Classification</em></h2>
+
+<p class="body">Peaberry is not a grade in the same hierarchy as Extra Fancy through Prime. It is a separate classification for a distinct bean type: the single round bean that forms when only one seed develops in a cherry. The full explanation of what causes peaberry and why it matters is in our <a href="/learn/what-is-peaberry-coffee">peaberry coffee guide</a>.</p>
+
+<p class="body">For grade purposes, the key point is that Koa's Peaberry is hand-sorted from the farm's harvest, roasted as a separate product with its own roasting profile suited to the round bean's density and shape, and priced above the Extra Fancy Private Reserve because of its scarcity (5% of harvest) and its award-winning status. It is the crown jewel of the lineup and the appropriate choice for gifting or for tasting Kona at its competitive peak.</p>
+
+<h2 class="section-head">Which Grade Should <em>You Buy?</em></h2>
+
+<p class="body"><strong>First-time Kona buyer:</strong> Koa Estate (No. 1 grade). The most accessible entry point into the lineup. Genuine 100% Kona character at a price that makes sense for trying a new origin.</p>
+
+<p class="body"><strong>Everyday Kona buyer:</strong> Koa Private Reserve (Extra Fancy). The benchmark product, more consistent roasting due to uniform large bean size, the grade Koa built their reputation on.</p>
+
+<p class="body"><strong>Gift buyer:</strong> Koa Peaberry. The most distinctive product in the lineup, the award-winner, the item whose story lands when you explain what it is. Worth the premium for gift-giving.</p>
+
+<p class="body"><strong>Dark-roast preference:</strong> Koa Grande Domaine (Vienna roast, Estate grade beans). The only darker-roasted option in Koa's lineup, for buyers who want bold Kona without the lighter-roast character of the main products.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+  .grade-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.88rem; }
+  .grade-table th { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+  .grade-table td { padding: 0.85rem 1rem; border-bottom: 1px solid rgba(201,168,76,0.06); color: var(--text-body); vertical-align: top; line-height: 1.5; }
+  .grade-table tr:hover td { background: rgba(201,168,76,0.03); }
+  .grade-table td:first-child { color: var(--cream); }
+</style>

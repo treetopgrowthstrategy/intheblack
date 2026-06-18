@@ -1,0 +1,298 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does single origin mean on a coffee bag?",
+    a: "Single origin means the coffee comes from one specific place, as opposed to a blend of coffees from different countries or regions. That place can be as broad as a country (Ethiopia) or as specific as a named farm lot (La Esmeralda, Block 10, Geisha). The narrower the origin, the more specific the flavor story."
+  },
+  {
+    q: "Is single origin coffee better than a blend?",
+    a: "Not universally. Single origin coffees offer terroir transparency and seasonal variation, which is exciting for curious drinkers and pour-over enthusiasts. Blends offer consistency year-round, complexity through combination, and a buffer against any one origin having an off year. The best espresso in the world is often a well-crafted blend. The distinction is about intent, not quality."
+  },
+  {
+    q: "Which single origin coffee is best for beginners?",
+    a: "Colombia is the most beginner-friendly single origin because the cup is clean, balanced, and unlikely to surprise anyone negatively. Washed Colombian coffees cup with mild acidity, caramel sweetness, and stone fruit notes that most people find immediately approachable. Ethiopia is more complex and worth trying once you've started building a frame of reference."
+  },
+  {
+    q: "What is the most popular single origin coffee?",
+    a: "Ethiopian Yirgacheffe is the single most recognized single-origin coffee globally. Its jasmine aromatics, bergamot citrus, and tea-like clarity make it a category benchmark. Colombia is the second most familiar origin, largely due to the national coffee federation's marketing over decades. For specialty drinkers specifically, Ethiopia, Kenya, and Panama Geisha occupy the highest prestige tier."
+  },
+  {
+    q: "How is single origin coffee best brewed?",
+    a: "Pour-over methods (V60, Chemex, Kalita Wave) are the most common choice because they produce clean cups with high aromatic expression, letting the terroir notes come through clearly. Aeropress is also excellent for single origins at a lower volume. Single origins can absolutely be used as espresso, though the bright acidity of Ethiopian or Kenyan lots reads very differently under pressure than in a filter brew."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Origin Guide', title: 'Ethiopian Coffee: The Complete Guide' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+];
+---
+
+<ContentLayout
+  title="Single Origin Coffee Guide: Origins, Terroir, and What to Buy"
+  description="What single origin coffee actually means, how country vs region vs farm vs lot differs, the six major origins with tasting notes, and which roasters to buy from."
+  slug="learn/single-origin-coffee-guide"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Sourcing <em>exceptional single origins?</em>"
+  ctaBody="In The Black Coffee Co. represents specialty roasters who want their coffee in cafes, restaurants, and offices. Commission-only, no upfront cost."
+>
+
+<p class="body">Single origin coffee is a marketing term that the specialty industry made meaningful and commodity coffee made confusing. At its best, it tells you exactly where a coffee came from, who grew it, and why it tastes the way it does. At its worst, it is a label slapped on a bag to imply quality that was never evaluated. This guide is about the former: how provenance creates flavor, how to read an origin's story on the bag, and which origins are worth understanding first.</p>
+
+<p class="body">The short version is this: coffee flavor is a product of three overlapping factors. Genetics (the variety), environment (altitude, soil, climate, shade), and processing (how the fruit is removed after picking). Single origin traceability is what allows you to isolate and appreciate each of those factors. A blend obscures them on purpose. A great single origin makes them legible.</p>
+
+<h2 class="section-head">What Single Origin <em>Actually Means</em></h2>
+
+<p class="body">Single origin is not a regulated term. Any roaster can print it on any bag without certification or verification. What it communicates in the specialty world, though, is a hierarchy of specificity that is worth understanding.</p>
+
+<h3 class="sub-head">Country Level</h3>
+<p class="body">The broadest category. "Ethiopian coffee" or "Colombian coffee" tells you the country of origin but nothing about where in that country, which variety was grown, how it was processed, or who grew it. Country-level labeling is common at the grocery store level and in restaurant house blends. It is meaningful in the sense that Ethiopia and Colombia produce characteristically different coffees, but at this level of specificity the label mostly tells you what it isn't: it is not a blend sourced from multiple countries.</p>
+
+<h3 class="sub-head">Region Level</h3>
+<p class="body">Where the flavor conversation gets interesting. "Ethiopian Yirgacheffe" is a meaningfully different claim than "Ethiopian coffee." Yirgacheffe is a specific zone in the Gedeo Zone of southern Ethiopia, with specific altitude ranges (1,700 to 2,200 MASL), specific microclimates, and a long history of washed processing that produces the jasmine, bergamot, and stone fruit profile the region is famous for. Neighboring Sidama produces a different cup despite being geographically close. Regional labeling is the first level where the tasting notes on the bag start to reliably predict what is in the cup.</p>
+
+<h3 class="sub-head">Farm or Estate Level</h3>
+<p class="body">A step further in traceability. "Finca La Palma, Huila, Colombia" tells you not just the country and region but the specific farm whose practices, varieties, soil conditions, and processing decisions produced this coffee. Farm-level sourcing is where specialty importers and roasters doing true direct trade operate. The relationship with a named farm allows the roaster to tell a real human story behind the bag and to make year-over-year comparisons as farming practices evolve.</p>
+
+<h3 class="sub-head">Lot Level</h3>
+<p class="body">The most specific category. A lot is a defined portion of a farm's production: a single variety, a single harvest date, sometimes a single hillside, processed in a single batch. "Block 7, Geisha, Washed, January 2025 Harvest" is a lot designation. This level of specificity is common in auction-quality coffees, competition lots, and the most transparency-forward specialty roasters. It allows a buyer to know exactly what they are purchasing and commands the highest prices because it is the rarest.</p>
+
+<div class="callout">
+  <p>The difference between a country-label coffee and a lot-label coffee can be the difference between a $12 bag and a $75 bag. That price gap reflects real information, real traceability, and real labor invested in curation. When you understand the hierarchy, the pricing starts to make sense.</p>
+</div>
+
+<h2 class="section-head">How Terroir Creates <em>Flavor</em></h2>
+
+<p class="body">Terroir is a French wine term that coffee borrowed, and it fits better than most borrowed concepts. In wine, terroir describes the combination of soil, climate, and microenvironment that gives a grape variety its distinctive character at a specific site. In coffee, the same forces operate, often more dramatically.</p>
+
+<p class="body">Altitude is the most predictable terroir variable. As elevation increases, temperatures drop, and cooler temperatures slow cherry development. Slower development means more time for the coffee cherry to accumulate complex sugars, aromatic compounds, and acids. The result is a cup with brighter acidity, more floral aromatics, and greater complexity than the same variety grown at lower elevations. Ethiopian Yirgacheffe grown at 2,000 MASL and the same variety grown at 1,000 MASL taste like different coffees.</p>
+
+<p class="body">Soil type is less immediately visible but equally important. Volcanic soils (found in Hawaii, El Salvador, Nicaragua, and parts of Ethiopia) tend to be mineral-rich and well-draining, producing cups with distinctive clarity and complexity. Red clay soils (common in Kenya) contribute to the country's characteristic full body and intense fruit acidity. Shade trees affect not just temperature but the soil itself, as leaf litter decomposes and adds organic matter that the coffee trees absorb.</p>
+
+<p class="body">Rainfall patterns determine when cherries ripen and whether they ripen evenly. Too much rain during harvest can cause premature fermentation on the tree. Too little can produce underdeveloped, grassy cups. The most prized growing regions tend to have defined dry seasons that concentrate sugars in the cherry before and during harvest.</p>
+
+<h2 class="section-head">The Six Origins Worth <em>Knowing First</em></h2>
+
+<h3 class="sub-head">Ethiopia: Where Coffee Began</h3>
+
+<p class="body">Coffea arabica is native to Ethiopia. Wild coffee forests still exist in the Kaffa and Bale regions, and the genetic diversity found in Ethiopian coffee is unmatched anywhere else in the world. This is not a historical footnote: it explains why Ethiopian coffees cup so differently from every other origin. The aromatics, the tea-like body, the floral complexity, these are characteristics of ancestral wild coffee genetics rather than selected cultivated varieties.</p>
+
+<p class="body">The two most important Ethiopian regions for specialty coffee are Yirgacheffe and Sidama. Yirgacheffe washed coffees are the global benchmark for floral and citrus clarity in coffee: jasmine, bergamot, lemon curd, peach, and a tea-like lightness in the body that is unmistakable. Natural-process Yirgacheffe shifts the profile toward blueberry and strawberry jam with more body and less clarity. Sidama coffees are slightly earthier and fuller-bodied, with more stone fruit and less overt floral character. Guji zone has become increasingly prominent for high-altitude naturals with intense tropical fruit and deep sweetness.</p>
+
+<p class="body">Harrar, in eastern Ethiopia, produces traditional natural-process coffees with wine-like, almost fermented fruit character that divides the specialty community. It is polarizing in the best way: either you love the complexity or you find it funky and distracting. For roasters building a menu that invites conversation, Harrar naturals are excellent talking points.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended</div>
+  <div class="buy-card-title">Volcanica Ethiopian Yirgacheffe</div>
+  <p class="buy-card-notes">Washed process. Tasting notes: jasmine, bergamot, stone fruit, tea-like body. SCA specialty grade. One of the most acclaimed Ethiopian lots available online.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica →</a>
+</div>
+
+<h3 class="sub-head">Colombia: The Reliable Benchmark</h3>
+
+<p class="body">Colombia has a structural advantage no other origin shares: two harvest seasons per year, a main harvest (October through February) and a secondary fly crop (April through June). This means fresh Colombian coffee is almost always available somewhere in a specialty roaster's catalog, making it the most practical origin for a house coffee that needs year-round consistency.</p>
+
+<p class="body">The most prized Colombian regions are Huila, Nariño, and Cauca in the southern highlands. Huila coffees are the standard for what specialty people mean when they say "clean and sweet": balanced acidity, caramel, stone fruit, red apple, mild enough that people who think they do not like "acidic" coffee often enjoy it. Nariño sits at some of the highest elevations in Colombia and produces coffees with more brightness, more tropical fruit, and a sparkling acidity that challenges Kenyan lots. Cauca sits between the two in character.</p>
+
+<p class="body">Colombia is the safest first single-origin recommendation for someone transitioning from grocery-store blends. The coffees are approachable, well-documented, and consistently good across a wide range of roasters.</p>
+
+<h3 class="sub-head">Kenya: Intensity and Acidity</h3>
+
+<p class="body">Kenyan coffee has a reputation for being the most intense single-origin experience in the specialty world. This reputation is earned. The SL28 and SL34 varieties, developed by Scott Agricultural Laboratories in the colonial era specifically for Kenyan growing conditions, produce cups with a blackcurrant-like acidity, full body, and a tomato-like savory quality that reads almost like wine at high quality levels. This is not for everyone, but for the people it is for, no other origin compares.</p>
+
+<p class="body">The Kenyan grading system (AA, AB, PB for Peaberry) refers primarily to bean size. AA is the largest screen size (17-18) and commands the highest prices, though the correlation between screen size and cup quality is imperfect. The most important variable in Kenyan quality is the washing station and the producer cooperative behind it.</p>
+
+<p class="body">Kenya works best roasted light to medium, where the blackcurrant and citrus brightness is preserved. Dark-roast Kenyan is technically possible but loses the distinctive character that justifies the price premium. If you are going to spend money on Kenyan, roast it in a range where the investment shows up in the cup.</p>
+
+<h3 class="sub-head">Sumatra: The Full-Body Exception</h3>
+
+<p class="body">Sumatra occupies a category of its own in specialty coffee partly because of its flavor profile and partly because of the processing method almost unique to Indonesia: wet-hulled, or Giling Basah. In standard washed processing, coffee dries in its parchment until it reaches low moisture content before hulling. In wet-hulling, the parchment is removed while the coffee still has relatively high moisture content, and then the naked bean continues to dry without its protective layer.</p>
+
+<p class="body">The result is a visually distinctive bean (irregular, dark blue-green before roasting) and a distinctive cup: earthy, herbal, full-bodied, low-acid, with notes that range from dark chocolate and tobacco to forest floor and cedar. It is one of the few origins that improves as roast level increases toward medium-dark, because the processing has already built in body and earthiness that benefits from the deeper roast development. This makes Sumatran coffee excellent for espresso, milk-based drinks, and customers who find lighter-roasted single origins too delicate or acidic.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended</div>
+  <div class="buy-card-title">Volcanica Sumatra Mandheling</div>
+  <p class="buy-card-notes">Wet-hulled process. Tasting notes: dark chocolate, cedar, earth, full body, low acidity. Classic Sumatran profile. Medium to dark roast recommended.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica →</a>
+</div>
+
+<h3 class="sub-head">Costa Rica: The Honey Pioneer</h3>
+
+<p class="body">Costa Rica's most important contribution to specialty coffee may not be a flavor profile but a processing innovation. Honey processing, which involves removing the cherry skin while leaving varying amounts of the sticky mucilage on the bean during drying, was pioneered and refined by Costa Rican micro-mills in the early 2000s. Carlos Ureña of Hacienda Sonora and other producers in the Central Valley developed the yellow, red, and black honey classifications that are now used globally.</p>
+
+<p class="body">Tarrazu is the most acclaimed Costa Rican region, producing coffees with bright citric acidity, clean stone fruit, and exceptional clarity when washed. The same region's honey-processed lots shift toward peach, apricot, and tropical sweetness with a fuller body and slightly less acidity. For a single-origin buyer who wants to understand what processing method does to a coffee, buying the same Costa Rican origin in washed and honey versions side by side is one of the most educational purchases possible.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended</div>
+  <div class="buy-card-title">Volcanica Costa Rica Tarrazu</div>
+  <p class="buy-card-notes">Washed process. Tasting notes: bright citrus, stone fruit, clean and sweet. From Costa Rica's most celebrated growing region. Light to medium roast recommended.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica →</a>
+</div>
+
+<h3 class="sub-head">Brazil: The World's Baseline</h3>
+
+<p class="body">Brazil produces roughly one-third of the world's coffee supply. This scale means the country's coffees anchor the commodity market but also, increasingly, compete in the specialty tier. Brazil's geography sets it apart from every other major producer: most of the country's coffee-growing regions are at relatively low altitudes (800 to 1,200 MASL) and flat enough for mechanical harvesting. This changes everything about the cup profile.</p>
+
+<p class="body">Low altitude, mechanical harvesting, and the natural and pulped-natural processing methods common in Brazil produce coffees with heavy body, low acidity, and flavors that skew toward dark chocolate, hazelnut, walnut, and mild fruit. These are not the most exciting single-origin cups in the specialty world, but they are often the most approachable and the most practical for espresso. Brazil is the reason so many roasters' signature espresso blends are based on a Brazilian component: the body, sweetness, and muted acidity hold up under high pressure and pair effortlessly with milk.</p>
+
+<p class="body">Sul de Minas, Cerrado Mineiro, and Matas de Minas are the leading specialty regions. The difference between these regions is subtle for most drinkers: Sul de Minas tends slightly fruitier, Cerrado is more consistent and uniform, and Matas de Minas produces some of the most complexity-forward naturals in the country. For the single-origin buyer, Brazil is worth trying as an espresso or a base for a homemade blend, even if it is rarely the most thrilling pour-over in the lineup.</p>
+
+<h2 class="section-head">Single Origin vs Blends: <em>The Honest Comparison</em></h2>
+
+<p class="body">The specialty industry's early years were defined in part by a push toward single origins as the antidote to the dishonest opacity of commodity blends. That context has softened. Experienced roasters now treat single origins and blends as different tools for different purposes rather than competing quality tiers.</p>
+
+<p class="body">Single origins are better at: expressing terroir, communicating a specific farm or producer's work, showcasing seasonal flavors, serving the pour-over customer who wants to taste one clearly defined thing, and giving a roastery's menu a sense of discovery and rotation. They are also more variable. A great Ethiopian washed from last year's harvest may cup differently than this year's harvest from the same farm, and that is not a defect. It is seasonality, which some customers love and others find frustrating.</p>
+
+<p class="body">Blends are better at: consistency across the entire year, building specific flavor targets (a round espresso with reliable crema, a balanced house drip with no surprises), buffering against one origin having a difficult year, and serving a wholesale customer who needs the same cup profile in January and July. A well-built house blend is one of the hardest things a roaster does because it requires balancing multiple variables from multiple origins to land on a repeatable target. When a blend is done well, it is a real creative achievement, not a lesser product.</p>
+
+<p class="body">The practical rule: for filter brewing, start with single origins. For espresso, both are excellent choices, and the best version for you depends on whether you want repeatability (blend) or discovery (single origin). For wholesale accounts serving high-volume drip coffee, blends are usually the right recommendation.</p>
+
+<h2 class="section-head">How to Read <em>a Coffee Bag</em></h2>
+
+<p class="body">A specialty coffee bag communicates a lot of information if you know what to look for. Here is what each label element means in practice.</p>
+
+<p class="body"><strong>Roast Date, Not Best By Date:</strong> The most important date on the bag is the roast date. Coffee is at its best in the two to four weeks after roasting, as CO2 outgassing slows and the aromatics stabilize. "Best by" dates are largely meaningless because coffee does not spoil in the conventional sense, it just becomes stale. Any specialty roaster worth buying from puts the roast date on the bag. If the bag only has a best-by date, the roaster is hiding when it was roasted.</p>
+
+<p class="body"><strong>Processing Method:</strong> Washed, natural, honey, anaerobic, or wet-hulled. This single label is one of the biggest predictors of cup character. Washed coffees cup clean, terroir-forward, and bright. Naturals cup fruity, full-bodied, and sometimes funky. Honeys fall between. Anaerobic processing produces unusual and sometimes polarizing flavors. Understanding processing is what lets you predict a cup's character before you taste it.</p>
+
+<p class="body"><strong>Variety:</strong> Bourbon, Geisha, SL28, Typica, Catuai, and hundreds of others. The variety matters less to most consumers than the origin and process, but for enthusiasts it is meaningful. Geisha is the most famous high-value variety. Bourbon-lineage varieties (Caturra, Catuai, Villa Sarchi, Pacas) are common across Central America. Heirloom Ethiopian varieties are often simply labeled "Ethiopian landrace" because the genetic complexity of wild Ethiopian coffee resists neat categorization.</p>
+
+<p class="body"><strong>Altitude:</strong> Often listed as MASL (meters above sea level). Higher is generally better for arabica because cooler temperatures slow cherry development and produce more complex flavors. Below 1,000 MASL is the threshold for commodity arabica. 1,500 to 2,000 MASL is the sweet spot for most high-quality specialty origins. Above 2,000 MASL is exceptional altitude that commands a premium.</p>
+
+<p class="body"><strong>Certifications:</strong> Fair Trade, Organic, Rainforest Alliance, and Direct Trade are the most common. Fair Trade and Organic are third-party certified and have specific standards. Direct Trade is a voluntary term with no regulatory definition, used by roasters to describe direct purchasing relationships with farms. It often implies a price premium above Fair Trade minimums but varies significantly in practice. The most transparent roasters publish what they paid for each green coffee lot.</p>
+
+<p class="body"><strong>Tasting Notes:</strong> The most misunderstood label element. These are not flavors added to the coffee; they describe the aromatic and flavor compounds that naturally occur in the coffee when properly roasted and brewed. "Jasmine, bergamot, and peach" does not mean the coffee will taste like jasmine tea or bergamot fruit in an obvious way. It means those aromatic families are present when you pay attention. They are more of a scent vocabulary than a literal description, and experienced tasters recognize them fairly quickly with practice.</p>
+
+<h2 class="section-head">Where to Buy <em>Single Origin Coffee Online</em></h2>
+
+<p class="body">The best online sources for single-origin coffee share a few traits: they list roast dates (not best-by dates), they source traceable lots with real farm or region information, and they offer a range of origins rather than defaulting to safe commodity lots dressed in specialty packaging.</p>
+
+<table class="aff-table">
+  <thead>
+    <tr>
+      <th>Roaster</th>
+      <th>Strength</th>
+      <th>Best For</th>
+      <th>Price Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volcanica Coffee</td>
+      <td>Breadth, 150+ origins</td>
+      <td>Exploring many origins</td>
+      <td>$15-25 / 12oz</td>
+    </tr>
+    <tr>
+      <td>Coffee Bros.</td>
+      <td>Process-first curation, 86+ pt</td>
+      <td>Buying by processing method</td>
+      <td>$18-30 / 12oz</td>
+    </tr>
+    <tr>
+      <td>Koa Coffee</td>
+      <td>100% Hawaiian, award-winning</td>
+      <td>Gifting, Kona specifically</td>
+      <td>$42-225 / bag</td>
+    </tr>
+    <tr>
+      <td>Spirit Origin Coffee</td>
+      <td>Honduran specialty focus</td>
+      <td>Central American single origins</td>
+      <td>$26-38 / bag</td>
+    </tr>
+    <tr>
+      <td>Five Star Coffee Roasters</td>
+      <td>Value specialty, $17/bag</td>
+      <td>Daily drinker single origins</td>
+      <td>$17-22 / bag</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended</div>
+  <div class="buy-card-title">Coffee Bros. Single Origins Collection</div>
+  <p class="buy-card-notes">All coffees 86+ SCA points. Organized by origin and processing method. Strong transparency on sourcing and farm information.</p>
+  <a href="https://coffeebros.com/collections/single-origins" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. →</a>
+</div>
+
+</ContentLayout>
+
+<style>
+  .buy-card {
+    border: 1px solid rgba(201,168,76,0.15);
+    border-left: 2px solid var(--gold);
+    background: var(--espresso-mid);
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+  }
+  .buy-card-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .buy-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+  .buy-card-notes {
+    font-size: 0.88rem;
+    color: var(--text-body);
+    margin-bottom: 0.9rem;
+    line-height: 1.65;
+  }
+  .buy-card-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    padding-bottom: 2px;
+  }
+  .buy-card-link:hover { border-color: var(--gold); }
+  .aff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.88rem;
+  }
+  .aff-table th {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+  .aff-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(201,168,76,0.06);
+    color: var(--text-body);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .aff-table tr:hover td { background: rgba(201,168,76,0.03); }
+  .aff-table td:first-child { color: var(--cream); }
+</style>

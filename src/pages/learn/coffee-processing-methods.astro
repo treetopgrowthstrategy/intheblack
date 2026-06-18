@@ -1,0 +1,221 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is the difference between washed and natural coffee?",
+    a: "Washed coffee has the cherry fruit removed before drying, producing a clean cup where the variety and terroir come through clearly. Natural coffee dries with the whole cherry intact, and the fermenting fruit imparts significant flavor: blueberry, strawberry, jam, and a heavier body. Washed coffees taste like the origin; natural coffees taste like the process plus the origin."
+  },
+  {
+    q: "Which coffee processing method is best?",
+    a: "None is universally best. Washed processing produces the most terroir-transparent, consistent cup and works well across all origins. Natural processing creates distinctive fruit complexity but is harder to execute without defects. Honey processing offers a middle ground of fruit sweetness and controlled fermentation. Anaerobic processing produces the most unusual flavors and is best for adventurous drinkers. The best method is whichever produces the cup character you want to drink."
+  },
+  {
+    q: "What does honey process mean in coffee?",
+    a: "Honey process refers to leaving varying amounts of the sticky mucilage layer attached to the coffee bean during drying after the skin has been removed. The mucilage (which is naturally sweet, not added honey) ferments slowly during drying, contributing stone fruit, peach, and apricot sweetness. Yellow honey uses the least mucilage and produces the lightest honey effect; black honey uses the most and approaches natural processing in character."
+  },
+  {
+    q: "What is anaerobic coffee processing?",
+    a: "Anaerobic processing ferments coffee in sealed oxygen-free tanks, creating a distinct fermentation environment from the aerobic fermentation that happens in traditional washed processing. The absence of oxygen encourages different microbial activity, producing unusual flavor compounds: tropical fruit, rum, cinnamon, red wine, and in some cases a distilled-spirit quality. It is the newest mainstream processing method and the most polarizing, producing coffees that range from spectacularly complex to distractingly funky."
+  },
+  {
+    q: "Why does Sumatra coffee taste different from other coffees?",
+    a: "Sumatra's distinctive earthy, herbal, full-bodied character comes largely from the wet-hulling process (called Giling Basah locally) that is almost unique to Indonesian coffees. In wet-hulling, the parchment layer is removed while the bean still has relatively high moisture content, unlike standard processing where the parchment stays on until the bean is nearly dry. The exposed bean absorbs different environmental conditions during final drying, developing the earthy, cedar, and dark chocolate character that defines Sumatran coffees."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/washed-vs-natural-coffee', label: 'Deep Dive', title: 'Washed vs Natural Coffee: The Differences' },
+  { href: '/learn/best-natural-process-coffee', label: 'Buyers Guide', title: 'Best Natural Process Coffee to Buy Online' },
+  { href: '/learn/kona-coffee-guide', label: 'Buyers Guide', title: 'The Kona Coffee Buyers Guide' },
+];
+---
+
+<ContentLayout
+  title="Coffee Processing Methods Explained: Washed, Natural, Honey, and More"
+  description="How washed, natural, honey, anaerobic, and wet-hulled coffee processing work, what each does to flavor, and which roasters offer the best examples of each method."
+  slug="learn/coffee-processing-methods"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Sourcing <em>process-forward coffees?</em>"
+  ctaBody="In The Black Coffee Co. represents specialty roasters who want their coffee in cafes, restaurants, and offices. Commission-only, no upfront cost."
+>
+
+<p class="body">Processing is the step between the coffee farm and the roaster, and it is the most underappreciated variable in coffee flavor. Two coffees from the same farm, grown from the same variety in the same soil, processed differently will taste like different coffees. The cherry fruit that surrounds the coffee bean contains sugars, acids, and microorganisms that interact with the bean during processing, and how long and in what form that interaction continues determines more about the final cup than most buyers realize.</p>
+
+<p class="body">There are five processing methods worth understanding. Three are primary and established: washed, natural, and honey. Two are more recent or regionally specific: anaerobic fermentation and wet-hulled (Giling Basah), the Indonesian method that produces Sumatra's distinctive character. Each method is covered step by step below, with the cup profile it produces and specific coffees to buy to experience it.</p>
+
+<h2 class="section-head">Washed Processing: <em>Terroir in the Cup</em></h2>
+
+<p class="body">Washed processing, also called wet processing or fully washed, is the dominant method in Ethiopia, Kenya, Colombia, Central America, and many other specialty-forward origins. Its defining characteristic is that the fruit is removed before the coffee dries, so the bean dries clean, and whatever flavor comes through is largely a product of the variety, soil, and altitude rather than the fruit itself.</p>
+
+<h3 class="sub-head">The Washed Process, Step by Step</h3>
+<ul class="body-list">
+  <li>Ripe cherries are harvested and sorted, typically by density floatation to remove underripe or defective fruit.</li>
+  <li>The skin and pulp are removed by a pulping machine, usually within 24 to 36 hours of picking to prevent unwanted fermentation on the skin.</li>
+  <li>The depulped coffee still has a sticky mucilage layer clinging to it. This mucilage is removed through controlled fermentation: the coffee sits in fermentation tanks or channels, usually with water, for 12 to 72 hours depending on temperature and altitude.</li>
+  <li>After fermentation, the coffee is thoroughly washed with clean water to remove any remaining mucilage.</li>
+  <li>The clean, parchment-covered coffee is dried on raised beds or patio surfaces, typically for two to four weeks, until it reaches 10 to 12 percent moisture content.</li>
+  <li>The dried parchment is removed (milled), and the green coffee is sorted, graded, and bagged for export.</li>
+</ul>
+
+<p class="body">The cup profile of well-executed washed coffee is characterized by clarity. The dominant flavors come from the coffee's variety and growing environment: the jasmine and bergamot of Ethiopian Yirgacheffe, the blackcurrant of Kenyan SL28, the stone fruit and citrus of Colombian Huila. Acidity is typically bright and clean rather than fruit-driven. Body ranges from light to medium. There is a transparency to washed coffees that lets a taster follow a clear thread from origin to cup.</p>
+
+<p class="body">The risk in washed processing is in the fermentation step. Under-fermentation leaves mucilage residue that can create an unpleasant soapy quality. Over-fermentation produces a harsh, vinegar-like defect. The best washed coffees come from producers with rigorous fermentation control: consistent temperature, monitored pH, and clean water throughout.</p>
+
+<div class="callout">
+  <p>Ethiopian Yirgacheffe washed is the single clearest example of what washed processing achieves at its best. Jasmine, bergamot, stone fruit, tea-like body: a cup that reads like a window into the specific altitude and soil of southern Ethiopia. If you have never experienced a great washed Ethiopian, it is the logical first step in understanding what coffee flavor actually is.</p>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Try Washed Processing</div>
+  <div class="buy-card-title">Coffee Bros. Single Origins</div>
+  <p class="buy-card-notes">All 86+ SCA points. Strong selection of washed African and Central American coffees with full process transparency on each bag.</p>
+  <a href="https://coffeebros.com/collections/single-origins" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. →</a>
+</div>
+
+<h2 class="section-head">Natural Processing: <em>The Fruit Does the Work</em></h2>
+
+<p class="body">Natural processing, also called dry processing, is the oldest method in coffee and the one most likely to produce either the most exciting or the most problematic cup, depending on the quality of execution. In natural processing, the whole coffee cherry is dried intact, fruit and all, and the bean inside absorbs flavor from the fermenting fruit over a period of weeks.</p>
+
+<h3 class="sub-head">The Natural Process, Step by Step</h3>
+<ul class="body-list">
+  <li>Ripe cherries are harvested, often sorted by density floatation to remove anything underdeveloped.</li>
+  <li>The whole cherries, unpulped and unprocessed, are spread on raised drying beds or patios in thin layers.</li>
+  <li>Workers rake or turn the cherries regularly (typically several times per day) to prevent mold and ensure even drying.</li>
+  <li>The cherries dry slowly over three to six weeks in open air, during which the fruit sugars and acids permeate the coffee bean through osmotic and fermentative processes.</li>
+  <li>Once the dried cherries reach roughly 11 to 12 percent moisture, they are hulled (the dried fruit and parchment are removed at once), and the green coffee is sorted and prepared for export.</li>
+</ul>
+
+<p class="body">The cup profile of a well-executed natural is unmistakable: blueberry, strawberry, cherry, dark stone fruit, and a full, almost syrupy body. The fruit flavors are often dramatically more present than in washed coffees from the same origin, because the bean has been soaking in the fermenting cherry for weeks. This effect is so pronounced that inexperienced tasters sometimes suspect the coffee has been flavored artificially. It has not; the fruit compounds are naturally occurring.</p>
+
+<p class="body">The risk in natural processing is significant. If the cherries are not turned regularly, or if the drying environment has too much humidity or inconsistent airflow, uneven fermentation produces defects: sour ferment, vinegar, alcohol, and "barnyard" off-flavors. The difference between a spectacular natural and a defective one is largely about the producer's rigor during the drying period.</p>
+
+<p class="body">Ethiopia produces the world's most celebrated naturals, particularly from Yirgacheffe and Guji zones. Harrar's dry-processed lots have been around for centuries and represent a different, wilder style of natural with wine-like complexity. Brazil also produces naturals extensively, though at generally lower elevation and with less aromatic complexity than Ethiopian examples.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Try Natural Processing</div>
+  <div class="buy-card-title">Coffee Bros. Natural Process Collection</div>
+  <p class="buy-card-notes">Blueberry, dark fruit, full body. Curated naturals from origins where producers have the climate conditions and skill to execute this process cleanly.</p>
+  <a href="https://coffeebros.com/collections/natural-process-coffee" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Natural Process →</a>
+</div>
+
+<h2 class="section-head">Honey Processing: <em>Between Clean and Fruity</em></h2>
+
+<p class="body">Honey processing is a hybrid that occupies the middle ground between washed and natural, and it is one of the most versatile and interesting methods in specialty coffee. Like washed processing, the cherry skin is removed first. Unlike washed, the sticky mucilage layer is not washed away: it is left on the bean during drying, where it ferments slowly and contributes sweetness and fruit complexity to the final cup.</p>
+
+<p class="body">The term honey does not refer to the flavor of honey or any added ingredient. It refers to the sticky, honey-like quality of the mucilage layer itself. Costa Rica is credited with systematizing and naming the honey process categories that are now used industry-wide.</p>
+
+<h3 class="sub-head">Yellow, Red, and Black Honey</h3>
+<p class="body"><strong>Yellow honey</strong> leaves roughly 25 percent of the mucilage on the bean and dries quickly, typically over one to two weeks in good weather. The cup effect is subtle: slightly more body and stone fruit sweetness than a fully washed coffee from the same origin, with less of the fruity intensity of a natural. It is often described as the most approachable honey process because it is closest to what washed drinkers expect.</p>
+
+<p class="body"><strong>Red honey</strong> leaves approximately 50 percent of the mucilage and takes two to three weeks to dry. The additional mucilage requires more careful turning and management to prevent uneven fermentation. The cup shows more pronounced stone fruit, peach, and apricot notes, with medium-full body and sweetness that bridges the gap between washed clarity and natural fruit intensity. This is the most commonly produced honey grade at quality-focused farms.</p>
+
+<p class="body"><strong>Black honey</strong> leaves 100 percent of the mucilage intact and dries for up to six weeks in controlled conditions. This is the most labor-intensive honey variation and the closest to natural processing in final cup character: tropical fruit, deep sweetness, syrupy body, and a complexity that takes longer to dial in on the roaster. Black honey coffees from producers who execute it well are some of the most distinctive and sought-after coffees in the specialty market.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Try Honey Processing</div>
+  <div class="buy-card-title">Coffee Bros. Honey Process Collection</div>
+  <p class="buy-card-notes">Stone fruit, peach, apricot, syrupy sweetness. Carefully selected honey-process coffees where producers have the dry-season conditions to do this method correctly.</p>
+  <a href="https://coffeebros.com/collections/honey-process-coffee" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Honey Process →</a>
+</div>
+
+<h2 class="section-head">Anaerobic Processing: <em>The New Frontier</em></h2>
+
+<p class="body">Anaerobic coffee processing entered the specialty mainstream in the 2010s, driven by competition baristas looking for unusual and memorable cup profiles for world barista championship sets. It has since become a legitimate production method at farms that have invested in the infrastructure to do it consistently.</p>
+
+<p class="body">In anaerobic processing, coffee cherries or depulped coffee are placed in sealed stainless steel tanks with oxygen evacuated and replaced with CO2, or simply sealed to allow natural CO2 buildup from fermentation. The absence of oxygen creates a fundamentally different fermentation environment from the aerobic (oxygen-present) fermentation that happens in traditional washed or natural processing.</p>
+
+<p class="body">The anaerobic environment encourages lactic acid bacteria and specific yeast strains that do not thrive in aerobic conditions. These microorganisms produce unusual flavor compounds: tropical fruit notes like passion fruit, mango, and guava; wine-like qualities; spiced notes of cinnamon, clove, and rum; and in the most extreme examples, a distilled-spirit quality that reads almost more like a cocktail ingredient than a coffee. Temperature control during anaerobic fermentation is critical: higher temperatures accelerate the process but can push the flavors into undesirable territory.</p>
+
+<p class="body">Anaerobic processing is the most divisive in specialty coffee. Enthusiasts love the intensity and novelty of the flavors produced, which are unlike anything from traditional processing methods. Critics argue that the processing overwrites terroir, making a Kenyan anaerobic taste more like "anaerobic character" than like Kenya. Both observations are accurate. Whether you consider that a feature or a bug depends on what you value in coffee.</p>
+
+<p class="body">For buyers exploring new experiences, anaerobic coffees are best approached with expectations calibrated to the unusual: these are not gateway coffees. For the buyer who has tasted washed and natural and honey and wants to push further, an anaerobic from a skilled producer is one of the most memorable things in the specialty world. For the buyer who just wants a good morning cup, it is likely more intensity than they are looking for.</p>
+
+<h2 class="section-head">Wet-Hulled (Giling Basah): <em>The Indonesian Method</em></h2>
+
+<p class="body">Wet-hulling, known locally as Giling Basah in Indonesian, is the processing method almost entirely responsible for the distinctive character of Sumatran coffee and, to a lesser degree, coffees from Sulawesi and Flores. Understanding it explains why Indonesian coffees taste so different from everything else in the specialty world, and why they taste that way consistently across decades of production.</p>
+
+<h3 class="sub-head">The Wet-Hull Process, Step by Step</h3>
+<ul class="body-list">
+  <li>Ripe cherries are picked and pulped to remove the skin, typically within a day.</li>
+  <li>The pulped coffee undergoes a short fermentation period, usually eight to twelve hours, to loosen the remaining mucilage.</li>
+  <li>The coffee is washed and then partially dried on patios or raised beds while still in its parchment layer, until it reaches approximately 30 to 35 percent moisture content. Standard washed coffees dry to below 12 percent before hulling; Giling Basah stops here.</li>
+  <li>The still-moist parchment is removed in a wet-hulling machine. This is the key step: the parchment comes off while the bean inside still has elevated moisture, exposing the green bean to the environment at a vulnerable stage.</li>
+  <li>The exposed, still-moist green coffee is laid out to finish drying without its parchment protection. During this final drying, the bean absorbs flavor from the air and the drying surface, and continues to develop in a different way than a parchment-covered bean would.</li>
+</ul>
+
+<p class="body">The cup result is a distinctively earthy, herbal, full-bodied coffee with low acidity. Dark chocolate, cedar, tobacco, mushroom, and forest floor notes are common. Body is typically heavy. The flavor compounds produced by wet-hulling are so characteristic that experienced tasters can identify Sumatran coffee blind. Defects are also common in wet-hulled coffees because the exposed drying stage creates more opportunities for contamination, but quality-focused producers who control this step carefully produce remarkably consistent, deeply satisfying cups.</p>
+
+<p class="body">Wet-hulled coffees respond unusually well to darker roast levels. Unlike washed Ethiopian or Kenyan coffees, which lose their defining character under dark roasting, Sumatran coffees often reveal more complexity when taken to a true medium-dark. The earthiness and body that characterize the origin suit extended roast development.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Try Wet-Hulled Processing</div>
+  <div class="buy-card-title">Volcanica Sumatra Coffee</div>
+  <p class="buy-card-notes">Earth, dark chocolate, cedar, full body, low acidity. Classic wet-hulled Sumatran profile from Mandheling or Gayo highlands. Medium-dark roast recommended.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica →</a>
+</div>
+
+<h2 class="section-head">Choosing by <em>Processing Method</em></h2>
+
+<p class="body">If you are buying single-origin coffee and trying to match your purchase to what you like, the processing method is often a more useful filter than the origin. Here is a straightforward decision framework.</p>
+
+<p class="body">Buy washed if you want: clean cups, bright acidity, terroir-forward flavor, consistent quality that is less dependent on the producer's drying conditions, and a profile that rewards pour-over brewing and light-to-medium roasting. Washed coffees from Ethiopia, Kenya, and Colombia are the entry points for most serious coffee drinkers.</p>
+
+<p class="body">Buy natural if you want: intense fruit flavor, heavy body, jam-like sweetness, a cup that surprises people who think they know what coffee tastes like. Natural coffees from Ethiopia and Brazil are the most accessible starting points. Be aware that quality execution varies significantly and defective naturals are more common than defective washed coffees.</p>
+
+<p class="body">Buy honey if you want: the middle ground. Stone fruit, peach, apricot, syrupy sweetness with more body than washed but more control than natural. Costa Rican honeys are the benchmark. Red honey is the most balanced entry point.</p>
+
+<p class="body">Buy anaerobic if you want: maximum novelty, tropical fruit complexity, and flavors that do not resemble anything from traditional coffee. Best for experienced specialty drinkers or events where you want to create a memorable impression. Be ready for something that challenges expectations.</p>
+
+<p class="body">Buy wet-hulled (Sumatra) if you want: full body, low acidity, earthy complexity, and a coffee that works well dark-roasted, in milk, or as an espresso base. Sumatran coffees are the best single-origin recommendation for customers who drink espresso with milk.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card {
+    border: 1px solid rgba(201,168,76,0.15);
+    border-left: 2px solid var(--gold);
+    background: var(--espresso-mid);
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+  }
+  .buy-card-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .buy-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+  .buy-card-notes {
+    font-size: 0.88rem;
+    color: var(--text-body);
+    margin-bottom: 0.9rem;
+    line-height: 1.65;
+  }
+  .buy-card-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    padding-bottom: 2px;
+  }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

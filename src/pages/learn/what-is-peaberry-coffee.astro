@@ -1,0 +1,94 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is peaberry coffee?",
+    a: "A peaberry is a naturally occurring genetic mutation where only one seed develops inside the coffee cherry instead of the usual two. The single seed grows into a small, round, dense bean rather than two flat-sided halves. Peaberries form in roughly 3 to 5% of any coffee harvest, are hand-sorted at the farm level, and are roasted and sold as a distinct product because they behave differently in the roaster and cup compared to standard flat beans."
+  },
+  {
+    q: "Does peaberry coffee taste better?",
+    a: "Many specialty roasters and cuppers believe peaberry coffee tastes different: not necessarily better in an absolute sense, but more concentrated and sometimes more clearly expressing the origin's character. The round bean roasts more evenly because heat reaches all surfaces consistently, unlike flat beans where one side faces the drum. Whether this produces a perceptibly better cup depends on the taster and the origin. Koa Coffee's Peaberry Kona has won multiple awards in competitive cupping, which is the most concrete evidence that peaberry can produce outstanding results when the underlying coffee is excellent."
+  },
+  {
+    q: "Is peaberry coffee more expensive?",
+    a: "Yes, peaberries are consistently more expensive than flat-bean grades from the same farm. The reasons are scarcity (only 3 to 5% of any harvest), hand-sorting labor (peaberries must be separated manually or by specialized equipment because their round shape passes through flat-bean sorters), and the roasting attention they require as a distinct product. For premium origins like Kona, the price premium for peaberry is significant: Koa Coffee's Peaberry starts at approximately $60 per bag versus $42 to $46 for their flat-bean grades."
+  },
+  {
+    q: "How do you roast peaberry coffee differently?",
+    a: "Peaberry beans are denser and rounder than flat beans, which means they absorb heat differently in the drum. Many roasters adjust their drum speed and heat application for peaberry lots to account for the round shape's tendency to move freely. Peaberries can also develop slightly faster than flat beans because of their smaller mass relative to surface area. In practice, experienced roasters who work with peaberry regularly treat them as a separate roast profile from the flat-bean lots from the same farm."
+  },
+  {
+    q: "Where does the best peaberry coffee come from?",
+    a: "Tanzania Peaberry is one of the most widely known peaberry designations, with an earthy, wine-fruited character distinctive to the Mount Kilimanjaro region. Kona Peaberry from Hawaii, particularly Koa Coffee's award-winning product, is considered one of the world's best expressions of what peaberry can be at the premium tier. Brazil, Kenya, Colombia, and many other origins also produce peaberry lots, though they are less commonly designated and sold as a distinct product compared to Tanzania and Kona."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/kona-coffee-guide', label: 'Buyers Guide', title: 'The Kona Coffee Buyers Guide' },
+  { href: '/learn/kona-coffee-grades', label: 'Buyers Guide', title: 'Kona Coffee Grades Explained' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+];
+---
+
+<ContentLayout
+  title="What Is Peaberry Coffee? The Round Bean Explained"
+  description="What causes a peaberry, why only 5% of any harvest qualifies, how it roasts differently, and whether the cup quality difference is real. Plus where to buy Kona Peaberry."
+  slug="learn/what-is-peaberry-coffee"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="The <em>world's most awarded</em> Peaberry."
+  ctaBody="Koa Coffee's Peaberry Kona has won the Gevalia Kaffe Prize multiple times and consistently cups as the benchmark for what Kona peaberry can be. Hand-sorted from 5% of the harvest."
+>
+
+<p class="body">Open a bag of standard coffee and the beans are flat on one side: two halves of a cherry seed, each with a flat face where they pressed against each other during development. A peaberry is different. It is a single round bean, the size and shape of a small pea, that formed alone inside the cherry without the usual twin. <a href="https://koacoffee.com/p/pure-kona-coffee/peaberry-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Koa Coffee's Peaberry Kona</a> is the most awarded example of what this bean type can produce when the underlying origin is outstanding.</p>
+
+<p class="body">The peaberry mutation happens in roughly 3 to 5% of coffee cherries across all arabica-growing regions worldwide. Because peaberries look different from flat beans, they can be sorted out at the farm level and sold as a distinct product. Whether that product is worth buying depends on where the peaberry comes from and how it was roasted, which is why understanding the full story matters before paying the premium price.</p>
+
+<h2 class="section-head">What Causes a <em>Peaberry Bean</em></h2>
+
+<p class="body">A coffee cherry is a fruit with two seeds inside. Normally, both seeds develop, pressed flat against each other in the center of the fruit. A peaberry forms when one of the ovules in the cherry fails to fertilize or develop, leaving only one seed to grow. With no competing seed to press against, the single seed takes on a round shape as it expands freely inside the cherry.</p>
+
+<p class="body">The mutation is random and not specific to any variety, origin, farm elevation, or processing method. It happens across all arabica varieties, at all elevations, in all growing countries. The frequency varies slightly by origin and variety, but nowhere does peaberry represent more than a small percentage of total harvest. Because of this rarity and the labor required to hand-sort peaberries from the flat-bean majority, they command a premium at every step of the supply chain.</p>
+
+<h2 class="section-head">The Roasting Argument: <em>Does Round Mean Better?</em></h2>
+
+<p class="body">The case for peaberry quality rests primarily on roasting physics. A flat-sided coffee bean has one face that rests against the drum as the bean tumbles. Heat application is slightly uneven: the flat face and the curved face develop at different rates. A round peaberry has no flat face. As it tumbles in the drum, heat reaches all surfaces continuously and evenly. Proponents of peaberry argue that this more even heat application produces more even development, which produces a cleaner, clearer cup with more uniform extraction.</p>
+
+<p class="body">The counterargument is that experienced roasters compensate for flat-bean geometry with drum speed and heat profile adjustments anyway, and that a skilled roaster can develop flat beans as evenly as peaberries with enough attention. Both positions are defensible. What is not debatable is the empirical evidence from competitive cupping: Koa Coffee's Peaberry Kona has won the Gevalia Kaffe Prize at the Kona Coffee Cultural Festival multiple times, in head-to-head cupping against all other Kona coffees including the farm's own flat-bean grades. That is the most objective evidence available that the peaberry expression from a great origin can produce a genuinely outstanding cup.</p>
+
+<h2 class="section-head">Kona Peaberry: <em>The Benchmark</em></h2>
+
+<p class="body">Not all peaberry coffees are created equally. Tanzania Peaberry is the other well-known designation, with an earthy, wine-fruited, Kilimanjaro character that is quite different from Kona's clean milk-chocolate and hazelnut profile. Both are legitimate and interesting. But for the buyer seeking the best-documented, most-awarded peaberry expression available from a single-origin producer, Koa Coffee's Kona Peaberry is the standard.</p>
+
+<p class="body">A full breakdown of the Koa product lineup, the Hawaii grading system, and the 100% Kona vs blend distinction is in our <a href="/learn/kona-coffee-guide">Kona coffee buyers guide</a>. The relevant point here is that Koa's Peaberry sits at the top of their hierarchy for a reason: it represents both the scarcest grade (5% of harvest) and the one most carefully produced and roasted as a distinct product.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">The World Standard</div>
+  <div class="buy-card-title">Koa Peaberry Kona Medium Roast</div>
+  <p class="buy-card-notes">World-award-winning. Tasting notes: milk chocolate, hazelnut, bright citrus. Hand-sorted from 5% of the Big Island harvest. The benchmark for what peaberry can produce when the origin is great.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/peaberry-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Peaberry →</a>
+</div>
+
+<h2 class="section-head">Is Peaberry Worth <em>the Price Premium?</em></h2>
+
+<p class="body">For Koa's Peaberry Kona at around $60 per bag: yes, for the right buyer. The price reflects real scarcity (5% of harvest), real labor (hand-sorting at the farm), real competitive proof (multiple award wins), and the underlying cost of growing anything on Hawaiian soil. Buyers who want to experience the best possible expression of Kona coffee, or who are buying a gift for someone who takes their coffee seriously, will find the Peaberry worth the premium.</p>
+
+<p class="body">For the everyday coffee buyer who mostly makes drip coffee before work, the difference between a Koa Peaberry and the Koa Estate (No. 1 grade flat bean, roughly half the price) may not be meaningful enough to justify the cost. The Estate is excellent coffee. The Peaberry is the exceptional version of an already excellent coffee. Whether that distinction matters depends on how attentively you brew and how much the origin story adds to your enjoyment of the cup.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

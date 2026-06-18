@@ -1,0 +1,148 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is single origin coffee?",
+    a: "Single origin coffee is coffee sourced from one specific place: a single farm, a single cooperative, a single mill, or a defined geographic region within one country. The label means the coffee's traceability stops at a specific origin rather than being blended across multiple countries or regions. The practical value of single origin designation is flavor specificity: each origin has a distinct taste profile shaped by its elevation, soil, climate, and variety, and single origin coffee lets the taster experience that specificity directly."
+  },
+  {
+    q: "What is the best single origin coffee for beginners?",
+    a: "Colombia or Guatemala are the most approachable single-origin coffees for beginners. Colombian washed coffees typically cup with balanced sweetness, mild red fruit acidity, caramel, and medium body: familiar enough to taste clean and pleasant without requiring calibrated expectations. Ethiopian Yirgacheffe is often cited as the next step: more intensely floral and citrus-forward, distinctive enough to reveal clearly why origin matters in specialty coffee. Both are available from most of the roasters on this list."
+  },
+  {
+    q: "Is single origin coffee better than blended coffee?",
+    a: "Neither is objectively better. They serve different goals. Single origin coffee is better when the goal is tasting where the coffee came from: understanding how Ethiopia tastes different from Colombia, or how a washed process changes a cup compared to natural. Blended coffee is better when the goal is consistency and a designed flavor experience, particularly for espresso, where blends are engineered to balance sweetness, body, and acidity across batches. Most specialty coffee buyers enjoy both, in different contexts."
+  },
+  {
+    q: "What is the difference between single origin and single farm coffee?",
+    a: "Single origin is the broadest designation, indicating the coffee comes from one country or defined region. Single farm (or estate coffee) is more specific: it means the coffee was grown, harvested, and typically processed on one farm or estate. Single farm coffees typically have greater traceability and more distinctive character than single-origin lots aggregated across many small producers in a region. Micro-lot is even more specific: a specific section of a farm, often processed separately to capture a particular flavor expression."
+  },
+  {
+    q: "How should I brew single origin coffee to taste the origin clearly?",
+    a: "Pour-over brewing methods (V60, Chemex, Kalita Wave) are the most transparent for tasting single-origin character because paper filtration removes oils and keeps the cup clean, allowing the origin's natural acidity and aromatics to come through without the muddiness that French press can add. Use water between 195 and 205 degrees Fahrenheit, a medium-fine grind, a 1:15 to 1:16 coffee-to-water ratio, and grind fresh just before brewing. Fresh coffee within 3 to 21 days of roast makes the biggest single difference in cup quality."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'The Single Origin Coffee Guide' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Origin Guide', title: 'Ethiopian Coffee Guide' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Single Origin Coffee to Buy Online 2026",
+  "description": "Top single origin coffees across five origins from specialty roasters",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Volcanica Ethiopian Yirgacheffe", "url": "https://www.volcanicacoffee.com" },
+    { "@type": "ListItem", "position": 2, "name": "Coffee Bros. Single Origin", "url": "https://coffeebros.com" },
+    { "@type": "ListItem", "position": 3, "name": "Spirit Origin Coffee Flagship Single Origin", "url": "https://spiritorigincoffee.com" },
+    { "@type": "ListItem", "position": 4, "name": "Volcanica Colombian Huila", "url": "https://www.volcanicacoffee.com" },
+    { "@type": "ListItem", "position": 5, "name": "Volcanica Costa Rican Single Origin", "url": "https://www.volcanicacoffee.com" }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Single Origin Coffee to Buy Online (2026 Guide)"
+  description="Top single-origin coffees across five key origins, from three specialty roasters. Which coffee to buy based on your taste profile, origin preference, and brewing method."
+  slug="learn/best-single-origin-coffee"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Explore <em>the world's best origins.</em>"
+  ctaBody="Volcanica Coffee carries 150+ single-origin coffees from volcanic soil regions worldwide, including Ethiopia, Colombia, Costa Rica, Sumatra, and more. The widest single-origin catalog online."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">The best single origin coffee to buy depends almost entirely on what you want to taste. Ethiopian Yirgacheffe and Colombian Huila taste nothing alike despite both being high-quality single origins, and a Costa Rican honey-processed lot reads differently still. The choice requires knowing what flavor profile appeals to you, which origins produce it most consistently, and which roasters source and roast those origins with enough attention to let the origin's character come through. <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> has the widest catalog. <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Coffee Bros.</a> roasts the freshest. <a href="https://spiritorigincoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Spirit Origin Coffee</a> sources the most unusual.</p>
+
+<p class="body">Below are the best single-origin picks across five distinct flavor profiles, from three roasters, spanning the full range of what single-origin specialty coffee produces. Our complete <a href="/learn/single-origin-coffee-guide">single origin coffee guide</a> covers the origins and their terroir in full depth if you want the backstory behind each cup.</p>
+
+<h2 class="section-head">Pick 1: Ethiopian Yirgacheffe, <em>Floral and Citrus</em></h2>
+
+<p class="body">Ethiopian Yirgacheffe is the clearest expression of what single-origin specialty coffee can taste like when everything is done right. Grown at 1,700 to 2,200 meters in southern Ethiopia's Gedeo zone, washed Yirgacheffe produces a cup defined by its floral and citrus character: jasmine, bergamot, lemon curd, and stone fruit over a light, tea-like body. It is the origin most likely to convert a skeptical drinker who has never experienced the flavor range of specialty coffee, and the most referenced benchmark in specialty coffee education.</p>
+
+<p class="body">Volcanica's Ethiopian Yirgacheffe is the most accessible route to a high-quality version of this origin. Their catalog covers both washed and natural Yirgacheffe, so a side-by-side comparison between the tea-like washed and the blueberry-heavy natural version is possible from one purchase.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for: Floral and Bright</div>
+  <div class="buy-card-title">Volcanica Ethiopian Yirgacheffe</div>
+  <p class="buy-card-notes">Tasting notes: jasmine, bergamot, lemon, stone fruit. The benchmark washed single-origin. Ideal for pour-over. Compare against their natural version to see exactly what processing does.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Ethiopian →</a>
+</div>
+
+<h2 class="section-head">Pick 2: Colombian Single Origin, <em>Balanced and Accessible</em></h2>
+
+<p class="body">Colombia produces more consistently excellent specialty coffee than any other country in the world by volume, and Colombian single-origin is the most forgiving entry point for buyers new to specialty. The Huila, Nariño, and Antioquia regions at high elevation produce washed coffees with red apple, caramel, brown sugar, and mild acidity. Approachable, clean, and sweet without demanding the calibrated attention that a delicate Ethiopian Yirgacheffe requires.</p>
+
+<p class="body">Coffee Bros.' Colombian single-origin is their most consistent daily-driver offering, with clear sourcing information and a freshness model that ensures the brightness and sweetness that define good Colombian coffee come through without staling. It is the right starting bag for anyone who wants to explore single-origin coffee without committing to the most challenging or polarizing flavor profiles.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for: Balanced, Everyday</div>
+  <div class="buy-card-title">Coffee Bros. Colombian Single Origin</div>
+  <p class="buy-card-notes">Tasting notes: red apple, caramel, mild citrus, clean sweet finish. The most approachable single-origin for everyday brewing. Freshly roasted and shipped for maximum brightness.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Colombian →</a>
+</div>
+
+<h2 class="section-head">Pick 3: Kenyan Single Origin, <em>Bold and Complex</em></h2>
+
+<p class="body">Kenyan coffee from the Central Province (Kirinyaga, Nyeri, Embu) is one of the most intensely complex single-origin experiences in specialty coffee: blackcurrant, grapefruit, tomato acidity, full body, and wine-like depth. It is an acquired taste for buyers accustomed to lighter, sweeter origins, but it is among the most distinctive and celebrated coffees in the world among experienced specialty buyers. Kenyan AA and AB grade lots are the most commonly available designations.</p>
+
+<p class="body">Spirit Origin's rotating catalog has included Kenyan lots when the sourcing relationships allow, and it is worth checking their current offering for any East African single-origins that fit this profile.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for: Bold, Complex</div>
+  <div class="buy-card-title">Spirit Origin East African Single Origin</div>
+  <p class="buy-card-notes">Discovery-first catalog, rotating seasonal lots. Check their current offering for Kenyan and East African single-origins with the bright acidity, dark fruit, and full body that defines this origin tier.</p>
+  <a href="https://spiritorigincoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Spirit Origin →</a>
+</div>
+
+<h2 class="section-head">Pick 4: Colombian Natural Process, <em>Fruit Forward</em></h2>
+
+<p class="body">A Colombian natural-processed coffee is a study in what the same terroir produces when the processing method changes. Where a washed Colombian cups clean, balanced, and mild, a Colombian natural from a similar elevation and farm reads as dark cherry, berry jam, and tropical fruit over the same caramel-and-sweetness base. High-altitude Colombian naturals from Nariño or Huila are some of the best natural-process coffees available outside of Ethiopia.</p>
+
+<p class="body">Coffee Bros. carries Colombian natural-process coffees as part of their processing-focused catalog, clearly labeled and freshly roasted. It is an excellent direct comparison to their washed Colombian if you have already tried that and want to see what the method does.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for: Fruit Forward</div>
+  <div class="buy-card-title">Coffee Bros. Natural Process Colombian</div>
+  <p class="buy-card-notes">Tasting notes: dark cherry, berry, caramel. Natural process from Colombian high-altitude farms. Compare directly against washed Colombian to experience exactly what processing changes in the cup.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Natural →</a>
+</div>
+
+<h2 class="section-head">Pick 5: Costa Rican or Sumatran, <em>Heavy Body and Earthiness</em></h2>
+
+<p class="body">For buyers who want a full-bodied, earthy, or complex cup that reads differently from the bright, fruit-driven profiles of Ethiopia and Colombia, Costa Rica and Sumatra represent opposite ends of a third flavor direction. Costa Rican coffees from the Tarrazu region cup with brown sugar, honey, and clean moderate acidity: sweet and balanced in a way that is distinctly different from Colombian. Sumatran wet-hulled coffees cup with heavy body, cedar, dark earth, and low acidity: the most distinctively regional flavor profile in specialty coffee.</p>
+
+<p class="body">Volcanica's catalog covers both Costa Rican and Sumatran options, making them the most accessible source for buyers who want to explore these contrasting flavor directions within one roaster.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for: Full Body, Earthiness</div>
+  <div class="buy-card-title">Volcanica Costa Rica or Sumatra Single Origin</div>
+  <p class="buy-card-notes">Two different expressions of body and earthiness: Costa Rican Tarrazu (honey, brown sugar, clean finish) or Sumatran Mandheling (cedar, dark earth, heavy body, low acidity). Broad catalog makes both available from one roaster.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Origins →</a>
+</div>
+
+<h2 class="section-head">Which Single Origin to <em>Buy First</em></h2>
+
+<p class="body">Start with Colombian if you want a gentle, approachable introduction. Move to Ethiopian Yirgacheffe when you want to taste single-origin coffee at its most floral and distinctive. Try Colombian or Ethiopian natural when you are ready for fruit-forward intensity. Add Kenyan when you want complexity and bold acidity. Explore Sumatran when heavy body and earth are the goal. The progression maps the full range of what single-origin specialty coffee produces, and each step along it is worth taking.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

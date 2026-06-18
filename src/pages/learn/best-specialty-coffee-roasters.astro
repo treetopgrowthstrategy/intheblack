@@ -1,0 +1,338 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What makes a coffee roaster 'specialty'?",
+    a: "In the strict sense, specialty coffee is green coffee that has scored 80 points or above on the Specialty Coffee Association's 100-point cupping scale. Specialty roasters source coffee that meets this threshold, roast it with attention to origin character, and typically provide traceability back to the farm or cooperative. In practice, the word is sometimes used loosely in marketing. The most reliable indicators of a genuine specialty roaster are: stated sourcing relationships with specific farms or cooperatives, clearly listed origin and processing information on their bags, and demonstrated care in roasting that preserves rather than obscures the coffee's natural character."
+  },
+  {
+    q: "Is freshly roasted coffee really better?",
+    a: "Yes, meaningfully so. Coffee begins off-gassing carbon dioxide immediately after roasting and is at its best flavored peak between 4 and 21 days off-roast, depending on the origin and roast level. Grocery store coffee often has no roast date at all, and many bags at retail are 30 to 90 days past their roast date. Specialty roasters that ship fresh, roast-to-order coffee genuinely taste different and better than stale supermarket alternatives when brewed properly. The difference is most dramatic in light to medium roasts, where the nuanced fruit and floral notes disappear quickly with age."
+  },
+  {
+    q: "How do I choose between single-origin and blended coffee?",
+    a: "Single-origin coffee comes from one farm, cooperative, or defined region and is the better choice when you want to taste what a specific place tastes like. It is ideal for pour-over, aeropress, and other clean-cup brewing methods that let the origin character come through. Blends are intentionally designed for consistency across batches and often for specific brewing contexts like espresso, where a blend of coffees can provide a balance of sweetness, body, and acidity that no single origin delivers as reliably. Choose single-origin when curiosity about origin is the goal; choose a blend when consistency or espresso is the priority."
+  },
+  {
+    q: "Which specialty coffee roaster is best for espresso?",
+    a: "For espresso, Coffee Bros. is the strongest online option among the five roasters reviewed here, with a dedicated espresso blend built to pull well at standard parameters. Five Star Coffee Roasters also blends specifically for espresso and commercial coffee service contexts. Kona and Hawaiian coffees can be beautiful espresso bases but are expensive for daily espresso service. Volcanica's single-origin Ethiopian and Colombian coffees work well as espresso when pulled at 1:2.5 to 1:3 ratios with slightly longer preinfusion."
+  },
+  {
+    q: "Are these affiliate links? Do you earn a commission?",
+    a: "Yes, some links on this page are affiliate links. We earn a small commission from purchases made through them, at no additional cost to you. This does not affect our recommendations. We only include roasters we have evaluated independently. The commissions help us operate this site."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/kona-coffee-guide', label: 'Buyers Guide', title: 'The Kona Coffee Buyers Guide' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Specialty Coffee Roasters in the US 2026",
+  "description": "Ranked reviews of five top specialty coffee roasters available online",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Volcanica Coffee",
+      "url": "https://www.volcanicacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Coffee Bros.",
+      "url": "https://coffeebros.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Koa Coffee",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Spirit Origin Coffee",
+      "url": "https://spiritorigincoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Five Star Coffee Roasters",
+      "url": "https://www.fivestarcoffeeroasters.com"
+    }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Specialty Coffee Roasters in the US (2026 Buyers Guide)"
+  description="In-depth reviews of five top US specialty coffee roasters: sourcing, freshness, catalog depth, and which roaster fits your taste profile and brewing method."
+  slug="learn/best-specialty-coffee-roasters"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Wholesale buyer? <em>We can help.</em>"
+  ctaBody="In The Black Coffee Co. is a commission-only wholesale sales agency for specialty roasters. We help cafes, restaurants, and offices source better coffee at the right price."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">The best specialty coffee roasters share three qualities: they source from farms whose names appear on the bag, they roast to showcase the coffee's origin character rather than obscure it, and they ship fresh. Beyond those fundamentals, each of the five roasters reviewed here has a distinct identity, catalog, and ideal customer. Choosing among them is less about who is "best" overall and more about who is best for you, based on what origins interest you, how you brew, and whether you are buying for home, wholesale, or gift-giving.</p>
+
+<p class="body"><a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> leads on catalog size, with more than 150 origins covering nearly every specialty-growing country in the world. <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Coffee Bros.</a> excels on freshness, processing transparency, and espresso. <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Koa Coffee</a> is the definitive source for 100% Hawaiian Kona. <a href="https://spiritorigincoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Spirit Origin Coffee</a> is the discovery-first roaster, built for the buyer who wants to be surprised. <a href="https://www.fivestarcoffeeroasters.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Five Star Coffee Roasters</a> is the professional-grade source for commercial accounts and volume buyers. Below is the full review of each.</p>
+
+<h2 class="section-head">How to Evaluate <em>a Specialty Roaster</em></h2>
+
+<p class="body">Before the individual reviews, here is the framework used to evaluate each roaster on this list. These are the criteria that separate a genuine specialty operation from a marketing brand that wears the vocabulary.</p>
+
+<p class="body"><strong>Sourcing transparency:</strong> Can you find the farm or cooperative name, the country and region, the processing method, and the harvest season on the bag or product page? The best roasters tell you exactly where the coffee came from. Vague language like "ethically sourced" or "small batch" without specifics is a yellow flag.</p>
+
+<p class="body"><strong>Freshness model:</strong> Does the roaster roast to order or hold pre-roasted inventory? Is there a visible roast date on the bag? Coffee tastes best 4 to 21 days off-roast. Roasters who ship immediately after roasting offer a fundamentally different experience than those holding bags in a warehouse.</p>
+
+<p class="body"><strong>Catalog depth and range:</strong> Does the roaster offer genuine range across origins and processing methods, or are they deep in one niche? Neither is inherently better, but it affects fit. A buyer interested in exploring the full world of single-origin coffee needs breadth. A buyer seeking the best possible Kona needs depth in one place.</p>
+
+<p class="body"><strong>Roast quality and philosophy:</strong> Does the roaster develop coffees to showcase origin character, or does the roast style override everything? This is hardest to evaluate without cupping, but origin variety is a proxy: a roaster who stocks 15 natural-processed Ethiopians clearly knows what they are doing with light and medium roasts.</p>
+
+<p class="body"><strong>Value and subscription options:</strong> Is the per-ounce price justified by what is in the bag? Does a subscription option exist for regular buyers? Does the subscription ship fresh rather than holding a batch?</p>
+
+<h2 class="section-head">Comparison Overview</h2>
+
+<table class="aff-table">
+  <thead>
+    <tr>
+      <th>Roaster</th>
+      <th>Catalog Size</th>
+      <th>Freshness</th>
+      <th>Best For</th>
+      <th>Price Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volcanica Coffee</td>
+      <td>150+ origins</td>
+      <td>Good</td>
+      <td>Origin explorers</td>
+      <td>$$</td>
+    </tr>
+    <tr>
+      <td>Coffee Bros.</td>
+      <td>30+ SKUs</td>
+      <td>Excellent</td>
+      <td>Freshness, espresso</td>
+      <td>$$</td>
+    </tr>
+    <tr>
+      <td>Koa Coffee</td>
+      <td>Hawaiian only</td>
+      <td>Good</td>
+      <td>Kona &amp; Hawaii</td>
+      <td>$$$</td>
+    </tr>
+    <tr>
+      <td>Spirit Origin</td>
+      <td>Curated rotating</td>
+      <td>Good</td>
+      <td>Discovery buyers</td>
+      <td>$$</td>
+    </tr>
+    <tr>
+      <td>Five Star</td>
+      <td>Commercial focus</td>
+      <td>Good</td>
+      <td>Wholesale, volume</td>
+      <td>$–$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="section-head">1. Volcanica Coffee: <em>The Depth of Catalog</em></h2>
+
+<p class="body">Volcanica Coffee was founded in 2004 with a specific thesis: offer the widest possible range of single-origin volcanic-soil coffees from around the world. Volcanic soil regions produce some of the best-known specialty coffees in the world (Ethiopia, Colombia, Costa Rica, Guatemala, Hawaii, Tanzania, and more), and Volcanica has built one of the deepest catalogs around that thesis. Their inventory includes more than 150 coffees at any given time, including estate lots, micro-lots, and decaf options across most of the major growing regions.</p>
+
+<p class="body">The catalog is the primary strength. No other roaster on this list comes close to the range Volcanica offers: Gesha from Panama, Yirgacheffe from Ethiopia, Huila from Colombia, Kona from Hawaii, Peaberry from Tanzania, Blue Mountain from Jamaica, and dozens more. For the buyer who wants to spend a year exploring the world of single-origin coffee systematically, or who wants to build a collection of coffees representing different terroirs, Volcanica is the natural home base. Their <a href="/learn/single-origin-coffee-guide">single-origin coffee guide</a> covers the major origins their catalog addresses in depth.</p>
+
+<p class="body">Volcanica's sourcing transparency is good: most products include farm or cooperative name, region, processing method, and altitude. Their freshness model is adequate: roast dates are provided, and they roast regularly, though their model is closer to inventory-based than strictly roast-to-order. The per-cup price is competitive for the quality tier.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Signature Pick: Volcanica</div>
+  <div class="buy-card-title">Ethiopian Yirgacheffe</div>
+  <p class="buy-card-notes">Tasting notes: jasmine, lemon, bergamot, stone fruit. One of the most celebrated origin expressions in specialty coffee. Medium light roast for maximum floral and citrus clarity.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Yirgacheffe →</a>
+</div>
+
+<p class="body"><strong>Best for:</strong> The origin-curious buyer who wants access to the widest range of single-origin coffees from one place. Ideal for gifting (they have a strong gift set selection) and for buyers who want to rotate through new origins without switching roasters. Not the best choice if freshness above all else is the priority.</p>
+
+<p class="body"><strong>Weakness:</strong> At 150+ SKUs, quality can vary more than a smaller, more curated catalog. Some offerings in the lower price tier are closer to commodity than specialty. Stick to their estate and micro-lot designations for the best quality.</p>
+
+<h2 class="section-head">2. Coffee Bros.: <em>Freshness and Processing Depth</em></h2>
+
+<p class="body">Coffee Bros. launched in 2019 with an explicit freshness-first model and a strong emphasis on processing transparency. Their catalog is smaller than Volcanica's but more curated: typically 20 to 30 SKUs organized by processing method, roast level, and intended brew method. They roast frequently and ship quickly after roasting, making their model one of the closest to genuinely fresh among online specialty retailers accessible to home buyers.</p>
+
+<p class="body">What distinguishes Coffee Bros. beyond freshness is their processing taxonomy. Their product lineup is explicitly organized to help buyers understand and experience the difference between washed, natural, and honey-processed coffees. If you have read our <a href="/learn/coffee-processing-methods">coffee processing methods guide</a> and want to taste the differences side by side, Coffee Bros. is the roaster that makes that exploration easiest. Their natural and honey single-origin offerings are consistently among the most interesting in their catalog.</p>
+
+<p class="body">Coffee Bros. is also the strongest choice for espresso among the five roasters reviewed here. Their espresso blend is purpose-built for pulled shots, delivering the sweetness, body, and crema that espresso drinkers need. Home espresso buyers who want one bag that performs reliably as a daily driver will find Coffee Bros.' espresso blend the most consistent option in this field.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Top Pick: Coffee Bros.</div>
+  <div class="buy-card-title">Coffee Bros. Single Origin Collection</div>
+  <p class="buy-card-notes">Rotating single-origins from Ethiopia, Colombia, and beyond. Freshly roasted, shipped quickly. Processing information clearly stated on every bag: washed, natural, or honey.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. →</a>
+</div>
+
+<p class="body"><strong>Best for:</strong> The home barista who prioritizes freshness; buyers who want to explore processing methods systematically; espresso drinkers who want a reliable blend. Also the best choice for buyers who want a smaller, more curated catalog rather than 150 options to sort through.</p>
+
+<p class="body"><strong>Weakness:</strong> The catalog is smaller than Volcanica's, so buyers seeking a very specific origin or micro-lot may not always find it. Limited wholesale and commercial options compared to Five Star.</p>
+
+<h2 class="section-head">3. Koa Coffee: <em>The Kona Specialist</em></h2>
+
+<p class="body">Koa Coffee is the answer to one very specific question: where do I buy 100% genuine Kona coffee from a verifiable Hawaiian producer? Their entire lineup is built around Hawaii's Big Island farms, with the Kona belt as the primary focus and Ka'u as a secondary offering. They have multiple awards from the Kona Coffee Cultural Festival, including the prestigious Gevalia Kaffe Prize for their Peaberry, and their commitment to 100% authentic Hawaiian coffee is clear throughout their supply chain documentation.</p>
+
+<p class="body">The Kona coffee buying decision is more fraught than buying from any other region because of the endemic mislabeling problem covered in our <a href="/learn/kona-coffee-guide">Kona coffee buyers guide</a>. The 10% Kona blend loophole has created a market full of products that use Hawaii's name and imagery while containing almost none of Hawaii's coffee. Koa resolves this problem cleanly: every product in their lineup is 100% genuine Kona or Hawaiian coffee, with grade designations (Extra Fancy, No. 1, Peaberry) that correspond to real Hawaii state certifications.</p>
+
+<p class="body">Their product lineup maps to the Hawaii grading system in a way that makes buying logical once you understand the grades. The Estate is No. 1 grade and the most accessible starting point. The Private Reserve is Extra Fancy grade and the everyday premium option. The Peaberry is the world-award-winning crown jewel at around $60 and up. The Grande Domaine covers buyers who prefer Vienna roast.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Koa Signature: Peaberry</div>
+  <div class="buy-card-title">Koa Peaberry Kona Coffee</div>
+  <p class="buy-card-notes">World-award-winning. Milk chocolate, hazelnut, citrus brightness. Single round bean, hand-sorted from 5% of the harvest. The best expression of what Kona is at its peak.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/peaberry-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Peaberry →</a>
+</div>
+
+<p class="body"><strong>Best for:</strong> The buyer specifically seeking 100% Kona coffee; gift buyers who want a premium product with a clear story; buyers comparing Hawaiian grades and roast levels. Koa is the right choice if Kona is the destination. It is not the right choice if origin exploration across the world's major coffee regions is the goal.</p>
+
+<p class="body"><strong>Weakness:</strong> The narrow focus on Hawaiian coffee means zero coverage of the world's other major origins. Price per ounce is the highest of the five roasters here because genuine Kona production costs are genuinely high.</p>
+
+<h2 class="section-head">4. Spirit Origin Coffee: <em>The Discovery Roaster</em></h2>
+
+<p class="body">Spirit Origin Coffee (formerly Spirit Animal Coffee) has rebranded and repositioned as a discovery-first specialty roaster: a curated, rotating catalog built to introduce buyers to coffees they would not find at a grocery store or a chain coffee shop. Their sourcing model emphasizes relationship-direct coffees and unusual or limited-run lots that do not appear in mass-market retail channels.</p>
+
+<p class="body">The Spirit Origin buyer is not the one who knows exactly what they want. They are the buyer who wants to be surprised: who wants a bag that shows them what a Kenyan micro-lot or an experimental anaerobic natural from Panama tastes like. Spirit Origin's catalog rotation means that what is available one month may not be there the next, which is either exciting or annoying depending on how you feel about discovery versus consistency.</p>
+
+<p class="body">Their sourcing transparency on direct-relationship lots is strong: farm names, elevation, processing method, and harvest season information. The roasting style leans toward medium-light, showcasing the natural character of the coffees rather than pushing toward a house roast profile. For the buyer who wants to experience what specialty coffee looks like at its most distinct from commodity, Spirit Origin is a good starting point.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Featured: Spirit Origin</div>
+  <div class="buy-card-title">Spirit Origin Flagship Single Origin</div>
+  <p class="buy-card-notes">Rotating seasonal offerings from relationship-direct farms. Medium-light roast, origin-forward flavor. Discovery-focused catalog for buyers who want to explore beyond the standard shelf.</p>
+  <a href="https://spiritorigincoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Spirit Origin →</a>
+</div>
+
+<p class="body"><strong>Best for:</strong> The curious buyer who wants to explore specialty coffee as a world of discovery rather than a consistent house coffee; buyers interested in direct-trade and relationship coffees; buyers who enjoy the rotating-catalog model. Also a good choice for gifting when the recipient already knows specialty coffee basics.</p>
+
+<p class="body"><strong>Weakness:</strong> Rotating catalog means less consistency from purchase to purchase. Not the roaster for a buyer who wants to reorder the same bag reliably for months.</p>
+
+<h2 class="section-head">5. Five Star Coffee Roasters: <em>The Commercial-Grade Option</em></h2>
+
+<p class="body">Five Star Coffee Roasters is built for a different buyer than the other four roasters on this list. Where Volcanica, Coffee Bros., Koa, and Spirit Origin are primarily direct-to-consumer specialty roasters, Five Star is oriented toward commercial accounts, wholesale buyers, and volume purchasers who need consistent quality at a price that makes sense for a business context.</p>
+
+<p class="body">Their house blend and espresso-focused offerings are designed to perform reliably across high-volume brewing contexts: the kind of coffee that works in a hotel lobby, an office kitchen, or a quick-service cafe where a barista is pulling shots back-to-back and needs consistency more than origin discovery. Their pricing model reflects this: competitive per-pound pricing at volume, with packaging options suited to commercial use.</p>
+
+<p class="body">For the specialty coffee buyer shopping for themselves at home, Five Star is probably not the most interesting choice compared to the origin depth of Volcanica, the freshness model of Coffee Bros., or the discovery factor of Spirit Origin. But for a buyer who is sourcing coffee for a business context, for a cafe, or for an office that needs quality coffee without paying the premium prices that some specialty labels command, Five Star is worth evaluating. Their house blend is a reliable, espresso-optimized everyday coffee that performs consistently in commercial environments.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Commercial Ready</div>
+  <div class="buy-card-title">Five Star House Blend</div>
+  <p class="buy-card-notes">Reliable, espresso-optimized blend designed for high-volume commercial contexts. Consistent batch to batch. Competitive per-pound pricing at volume. Good choice for office, hotel, or cafe accounts.</p>
+  <a href="https://www.fivestarcoffeeroasters.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Five Star →</a>
+</div>
+
+<p class="body"><strong>Best for:</strong> Commercial buyers, office managers, cafes sourcing a reliable house blend at competitive volume pricing. Also worth considering for any buyer who wants a consistent espresso-optimized blend rather than single-origin exploration.</p>
+
+<p class="body"><strong>Weakness:</strong> Less interesting for the home specialty coffee buyer who wants to explore origin diversity or experience the most cutting-edge processing methods. The commercial orientation means origin transparency is less detailed than the other roasters here.</p>
+
+<h2 class="section-head">Matching Roaster to <em>Taste Profile</em></h2>
+
+<p class="body">Here is a decision framework based on what you actually want from your coffee purchase.</p>
+
+<p class="body"><strong>You want to taste the widest range of origins from one place:</strong> Volcanica. Nothing else on this list covers 150+ countries and regions. Start with their Ethiopian Yirgacheffe if you want a clean benchmark for light-roast single-origin, or their Colombian if you want something more approachable.</p>
+
+<p class="body"><strong>You want the freshest possible coffee and care about processing transparency:</strong> Coffee Bros. Their freshness model and explicit processing designations make them the right choice if you want to know exactly what you are brewing and want it as fresh as possible.</p>
+
+<p class="body"><strong>You want 100% genuine Kona coffee:</strong> Koa Coffee. No other roaster on this list covers Hawaii's producing regions with the same authenticity and award-winning track record. Start with the Peaberry if budget allows; the Estate is the accessible entry point.</p>
+
+<p class="body"><strong>You want to be surprised by something you have never tried:</strong> Spirit Origin. Their discovery-first model and rotating catalog of relationship-direct coffees is designed for this use case.</p>
+
+<p class="body"><strong>You are sourcing for a business or high-volume context:</strong> Five Star. Their commercial orientation and volume pricing make them the practical choice for cafes, offices, and hospitality buyers.</p>
+
+<p class="body"><strong>You are buying a gift for someone who loves specialty coffee:</strong> Koa for the definitive Hawaiian experience; Volcanica for a sampler set covering multiple origins; Coffee Bros. for the specialty-curious buyer who appreciates freshness and cares about the craft.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card {
+    border: 1px solid rgba(201,168,76,0.15);
+    border-left: 2px solid var(--gold);
+    background: var(--espresso-mid);
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+  }
+  .buy-card-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .buy-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+  .buy-card-notes {
+    font-size: 0.88rem;
+    color: var(--text-body);
+    margin-bottom: 0.9rem;
+    line-height: 1.65;
+  }
+  .buy-card-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    padding-bottom: 2px;
+  }
+  .buy-card-link:hover { border-color: var(--gold); }
+  .aff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.88rem;
+  }
+  .aff-table th {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+  .aff-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(201,168,76,0.06);
+    color: var(--text-body);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .aff-table tr:hover td { background: rgba(201,168,76,0.03); }
+  .aff-table td:first-child { color: var(--cream); }
+</style>

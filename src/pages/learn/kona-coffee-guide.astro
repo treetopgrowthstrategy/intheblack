@@ -1,0 +1,335 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What makes Kona coffee different from other coffees?",
+    a: "Kona coffee is grown in a narrow belt on the slopes of Hualalai and Mauna Loa volcanoes on Hawaii's Big Island, in conditions unlike any other commercial coffee-growing region: sunny mornings that transition to cloudy, rain-producing afternoons, mild temperatures despite relatively low elevation, and mineral-rich volcanic soil. The combination produces a coffee with exceptional sweetness, mild acidity, medium body, and a clean, balanced profile. The labor cost of hand-harvesting on steep terrain in Hawaii also accounts for the premium price."
+  },
+  {
+    q: "Is Kona coffee worth the price?",
+    a: "100% genuine Kona from a reputable producer is worth the price for what it is: one of the world's best-documented micro-region coffees, handpicked on Hawaiian volcanic soil, with a consistent flavor profile that has built a global following for good reason. The milk chocolate, hazelnut, and bright citrus of a well-roasted Kona is genuinely distinctive. What is not worth the price is a 10% Kona blend sold at nearly the same price point as 100% Kona, which is a common deception in the market."
+  },
+  {
+    q: "What is the difference between Kona Extra Fancy and Fancy?",
+    a: "Extra Fancy is the highest Hawaii state grading designation for Kona coffee, defined by the largest bean screen size (19 and above) and the strictest defect tolerance (10 defects per 300 grams). Fancy is one step below, with screen size 18 and above and 15 allowable defects. In practice, both Extra Fancy and Fancy produce excellent cups, and the price difference between them often reflects grade certification costs as much as cup quality differences."
+  },
+  {
+    q: "What is Peaberry Kona and why does it cost more?",
+    a: "A peaberry is a naturally occurring genetic mutation where only one seed develops inside the coffee cherry instead of two. The result is a single round bean rather than two flat-sided halves. Peaberry beans comprise only about 5% of any harvest, are often hand-sorted at the farm, and are believed by many producers (and cuppers) to develop more evenly during roasting because of their round shape and denser structure. Koa Coffee's Peaberry is one of the most awarded coffees in the world and consistently cups with milk chocolate, hazelnut, and citrus brightness."
+  },
+  {
+    q: "What is the difference between Kona and Ka'u coffee?",
+    a: "Kona and Ka'u are two distinct coffee-growing districts on Hawaii's Big Island, separated by roughly 40 miles and the flanks of Mauna Loa. Kona is the older, more famous region on the western slope. Ka'u is a newer specialty region on the southern slope, with different elevation, rainfall patterns, and volcanic soil composition. Ka'u coffees tend to be slightly darker-fruited and earthier, with less of the bright citrus clarity that characterizes north Kona. Ka'u has won the prestigious Gevalia Kaffe Cup of Excellence competition."
+  },
+  {
+    q: "How do I avoid buying fake Kona coffee?",
+    a: "Look for the words '100% Kona Coffee' or '100% Kona.' Hawaii law allows products to be labeled 'Kona Blend' with as little as 10% actual Kona and 90% cheaper coffees from other countries. Avoid anything labeled 'Kona Style,' 'Kona Blend,' or 'Kona Flavored' if you want genuine Kona. Buy directly from Hawaii-based producers or trusted specialty retailers who carry certified 100% Kona. The price should reflect the genuine article: real 100% Kona is expensive because Hawaiian agricultural labor and land costs are high."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/kona-coffee-grades', label: 'Buyers Guide', title: 'Kona Coffee Grades Explained' },
+  { href: '/learn/what-is-peaberry-coffee', label: 'Deep Dive', title: 'What Is Peaberry Coffee?' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Kona Coffee to Buy Online",
+  "description": "Ranked Koa Coffee products by grade, flavor profile, and value",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Koa Peaberry Medium Roast",
+      "url": "https://koacoffee.com/p/pure-kona-coffee/peaberry-medium-roast-whole-bean-kona"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Koa Private Reserve Medium Roast",
+      "url": "https://koacoffee.com/p/pure-kona-coffee/private-reserve-medium-roast-whole-bean"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Koa Estate Medium Roast",
+      "url": "https://koacoffee.com/p/pure-kona-coffee/estate-medium-roast-whole-bean-kona"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Koa Grande Domaine Vienna Roast",
+      "url": "https://koacoffee.com/p/pure-kona-coffee/grande-domaine-vienna-roast-whole-bean-kona"
+    }
+  ]
+};
+---
+
+<ContentLayout
+  title="Kona Coffee Buyers Guide: Grades, Peaberry, and What to Buy"
+  description="The complete guide to Kona coffee: the grading system, what 100% Kona means, how Peaberry differs, Ka'u and Waialua regions, and the best Koa Coffee products by tier."
+  slug="learn/kona-coffee-guide"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Looking for <em>Kona allocation?</em>"
+  ctaBody="Koa Coffee is the leading source for 100% Kona and Hawaiian coffees online. Multiple grades, world-award-winning Peaberry, and full traceability to Big Island farms."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body"><a href="https://koacoffee.com/p/pure-kona-coffee/peaberry-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Koa's Peaberry Kona</a> has won more awards than any other Kona coffee. Milk chocolate, hazelnut, and bright citrus from a single-bean-per-cherry mutation that makes up just 5% of any harvest. That is the top of the Kona tier, and it costs accordingly: $60 and up for a bag from the producer. Understanding why requires understanding what Kona is, what the grading system means, and how to avoid the far more common imitations that share the name but little else.</p>
+
+<p class="body">Kona coffee occupies a category of its own in American specialty coffee. It is the only US-grown coffee with a defined origin designation, a state-regulated grading system, and a heritage of quality production stretching back more than a century. It is also one of the most counterfeited and mislabeled food products in the country, which means buying it well requires a bit of knowledge. This guide covers everything you need.</p>
+
+<h2 class="section-head">What Makes Kona <em>Different</em></h2>
+
+<p class="body">Kona coffee grows in a narrow strip of land on the western slope of Hawaii's Big Island, roughly two miles wide and thirty miles long, from the towns of Kailua-Kona in the north to Honaunau in the south. This strip is defined by the slopes of two volcanoes: Hualalai and Mauna Loa. The elevation ranges from roughly 800 to 2,500 feet above sea level, which is lower than most high-quality arabica-growing regions globally. What compensates for the lower altitude is the microclimate.</p>
+
+<p class="body">The Kona coffee belt experiences a remarkably consistent weather pattern: sunny mornings give way to clouds in the early afternoon, which produce light, regular rainfall and shade the coffee trees during the hottest part of the day. Temperatures stay mild year-round, typically in the 65 to 85 degree Fahrenheit range, with cool nights that slow cherry development and allow sugars to accumulate in the fruit. The volcanic soil, derived from Mauna Loa and Hualalai lava flows, is mineral-rich, porous, and well-draining, with natural acidity that suits coffee chemistry.</p>
+
+<p class="body">The combination of these factors, when paired with 100% hand-picking (the steep terrain makes mechanical harvesting impossible) and the century of growing knowledge embedded in Kona's farm families, produces a coffee with a specific and recognizable profile: medium body, mild and balanced acidity, sweetness that skews toward milk chocolate and hazelnut, and a clean finish that does not linger with the bitterness or dryness common in dark-roasted commodity coffee.</p>
+
+<h2 class="section-head">The Official Kona <em>Grading System</em></h2>
+
+<p class="body">Hawaii state law defines a grading system for Kona coffee based primarily on bean screen size (a measure of bean diameter) and defect count per 300-gram sample. The grades, from highest to lowest, are as follows.</p>
+
+<h3 class="sub-head">Extra Fancy</h3>
+<p class="body">The highest grade available for Kona coffee. Defined by a minimum screen size of 19 (approximately 7.5mm bean diameter) and a maximum of 10 allowable defects per 300-gram sample. Extra Fancy is the largest, most uniform beans the farm produces, and the strictest defect tolerance means only the best-sorted lots qualify. Koa Coffee's Private Reserve is their Extra Fancy designation.</p>
+
+<h3 class="sub-head">Fancy</h3>
+<p class="body">One step below Extra Fancy. Minimum screen size 18, maximum 15 defects per 300 grams. Fancy lots are still excellent coffee with a clearly defined origin character. The difference between Extra Fancy and Fancy is primarily visual uniformity rather than a dramatic cup quality gap, though Extra Fancy's tighter size allows for more even roasting.</p>
+
+<h3 class="sub-head">No. 1</h3>
+<p class="body">Minimum screen size 16, maximum 20 defects. No. 1 represents the broad middle tier of Kona production, where most of a farm's yield lands. Cup quality varies more at this grade level depending on the farm's picking and processing standards. A strong No. 1 lot from a quality-focused farm can cup comparably to a Fancy from a less-rigorous operation.</p>
+
+<h3 class="sub-head">Select</h3>
+<p class="body">Minimum screen size 14, blended sizes acceptable, maximum 25 defects. Select is the grade below No. 1, where bean size is mixed and defect tolerance is higher. Still technically Hawaii-graded Kona, but below the quality tier most specialty buyers seek.</p>
+
+<h3 class="sub-head">Prime</h3>
+<p class="body">The lowest grade of certified Kona. No screen size minimum, maximum 35 defects. Prime coffee is legal Kona but unlikely to satisfy a buyer seeking the origin's best characteristics. More commonly seen in blends or bulk institutional applications.</p>
+
+<h3 class="sub-head">Peaberry</h3>
+<p class="body">Peaberry is classified separately from the screen-size grades because it is a distinct physical type rather than a quality tier. A Peaberry bean forms when only one ovule develops inside the coffee cherry, producing a single round bean rather than two flat-sided halves. Because Peaberry beans are round and tend to be denser, they roast differently and often more evenly than flat beans. They are hand-sorted at the farm and represent only about 5% of any harvest. Koa Coffee's Peaberry is their signature product.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Top Pick: Peaberry</div>
+  <div class="buy-card-title">Koa Peaberry Kona Medium Roast</div>
+  <p class="buy-card-notes">World-award-winning. Tasting notes: milk chocolate, hazelnut, bright citrus. Round single-bean, hand-sorted from 5% of the harvest. $60+ per bag. The benchmark for what Kona can be.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/peaberry-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Peaberry →</a>
+</div>
+
+<h2 class="section-head">100% Kona vs Kona Blends: <em>The Labeling Trap</em></h2>
+
+<p class="body">This is the most important practical section of this guide, because the Kona coffee market has a specific, well-documented consumer deception problem built into its legal framework.</p>
+
+<p class="body">Hawaii law allows a product to be labeled "Kona Blend" if it contains as little as 10% actual Kona coffee. The remaining 90% can be any coffee from anywhere in the world, including commodity robusta or low-grade arabica sourced from countries with far lower production costs than Hawaii. A 10% Kona blend sold at a price point that approaches genuine 100% Kona is charging for an origin story it has barely earned.</p>
+
+<p class="body">The deception is amplified by packaging. Kona blend bags often use Hawaiian imagery, volcano photographs, hula imagery, and marketing language that implies Hawaiian authenticity. The words "Kona blend" may be in small print, while the larger design elements suggest the full Kona experience. Consumer lawsuits against blenders have resulted in settlements and label changes, but the practice continues because the margin incentive is significant.</p>
+
+<p class="body">How to avoid it: Look for "100% Kona Coffee" on the label. Nothing less. "Kona Blend," "Kona Style," "Kona Flavored," and even "Estate Kona" without the 100% qualifier are either blend products or marketing language that does not guarantee what it implies. Buy directly from Hawaii-based farms or trusted specialty retailers with verified supply chains. The price tells you most of what you need to know: real 100% Kona cannot be sold for $12 a bag and still pay the growers fairly. If the price seems too good for Kona, it is not really Kona.</p>
+
+<div class="callout">
+  <p>A legitimate bag of 100% Kona from a quality producer costs between $40 and $120 or more, depending on grade and size. This reflects the actual cost of growing and harvesting by hand in Hawaii, where labor and land costs are among the highest in US agriculture. Any price significantly below this range should prompt the question of what is actually in the bag.</p>
+</div>
+
+<h2 class="section-head">Koa Coffee: The <em>Product Lineup by Grade</em></h2>
+
+<p class="body">Koa Coffee is one of the most recognized and awarded 100% Kona producers selling online. Their full product lineup maps clearly onto the Hawaii grading system.</p>
+
+<h3 class="sub-head">Private Reserve: Extra Fancy Grade</h3>
+<p class="body">Koa's Private Reserve is their Extra Fancy designation: the largest, most uniform beans from the farm, at the strictest defect tolerance. It is their premium everyday Kona, medium-roasted to bring out the origin's characteristic milk chocolate, caramel, and citrus brightness without over-developing the roast. Price: $42 to $155 depending on quantity.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Extra Fancy Grade</div>
+  <div class="buy-card-title">Koa Private Reserve Kona</div>
+  <p class="buy-card-notes">Tasting notes: milk chocolate, caramel, bright citrus. Extra Fancy grade: largest bean screen, strictest defect tolerance. The benchmark 100% Kona for everyday drinking.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/private-reserve-medium-roast-whole-bean" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Private Reserve →</a>
+</div>
+
+<h3 class="sub-head">Estate: No. 1 Grade</h3>
+<p class="body">The Estate is Koa's No. 1 grade designation, representing the broad middle tier of their farm's production. It cups with the same characteristic Kona profile as the Private Reserve but with slightly less uniformity in bean size. It is the accessible entry point into Koa's lineup and an excellent starting place for first-time Kona buyers. Price: $46 to $176 depending on quantity.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">No. 1 Grade</div>
+  <div class="buy-card-title">Koa Estate Kona Medium Roast</div>
+  <p class="buy-card-notes">Tasting notes: milk chocolate, nut, clean sweet finish. No. 1 grade: excellent introduction to 100% Kona character at a slightly more accessible price point than Private Reserve.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/estate-medium-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Estate →</a>
+</div>
+
+<h3 class="sub-head">Grande Domaine: Vienna Roast</h3>
+<p class="body">The Grande Domaine is Koa's darker roast offering, taken to Vienna roast level. This is for the buyer who prefers a bolder, more roast-forward cup from Kona. The origin character of milk chocolate and hazelnut reads differently at this roast level: deeper, more bitter-sweet, with less of the citrus brightness that characterizes Koa's medium roasts. Price: $48 to $179 depending on quantity.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Vienna Roast</div>
+  <div class="buy-card-title">Koa Grande Domaine Vienna Roast</div>
+  <p class="buy-card-notes">Tasting notes: dark chocolate, hazelnut, full body. For the buyer who prefers bold, roast-forward Kona without losing the origin's characteristic sweetness.</p>
+  <a href="https://koacoffee.com/p/pure-kona-coffee/grande-domaine-vienna-roast-whole-bean-kona" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Grande Domaine →</a>
+</div>
+
+<h2 class="section-head">Peaberry: The 5% <em>That Gets the Most Attention</em></h2>
+
+<p class="body">Every variety of coffee, in every country in the world, produces peaberry beans. The mutation that causes a single round seed to develop instead of two flat halves happens in roughly 5% of cherries across most growing regions. What distinguishes Kona Peaberry is not the mutation itself but what Koa Coffee has done with it: isolated it, hand-sorted it at the farm level, and roasted it as a dedicated product that showcases what the round bean does differently.</p>
+
+<p class="body">The roasting argument for Peaberry is density. Two flat-sided halves have an exposed flat face that sits against the drum differently than a round bean. The round bean, moving freely in the drum with no flat surface, theoretically develops more evenly because heat reaches all surfaces consistently. Whether this produces a perceptibly different cup depends on the individual taster, but Koa's Peaberry consistently cups with what most tasters describe as slightly more clarity and brightness than the flat-bean grades from the same farm.</p>
+
+<p class="body">The story argument for Peaberry is scarcity. Five percent of a harvest is genuinely rare in a way that "Extra Fancy" certification is not. A harvest from Koa's farm produces only a limited number of Peaberry bags per season. This scarcity, combined with the hand-sorting labor, justifies the higher price point and makes Peaberry a natural choice for gifting or for the buyer who wants to give the origin its best possible showcase.</p>
+
+<p class="body">Koa's Peaberry has won the prestigious Gevalia Kaffe Prize at the Kona Coffee Cultural Festival multiple times and is consistently rated by specialty coffee buyers as among the best coffees produced in Hawaii. Milk chocolate, hazelnut, bright citrus: a cup that reads clean, sweet, and distinctive from the first sip. At $60 to $225 depending on quantity, it is one of the more expensive single-origin coffees available from US domestic production, and one of the few that earns the price.</p>
+
+<h2 class="section-head">Ka'u and Waialua: <em>Hawaii Beyond Kona</em></h2>
+
+<h3 class="sub-head">Ka'u: The Rising Region</h3>
+<p class="body">Ka'u is a coffee-growing district on the southern tip of Hawaii's Big Island, separated from the Kona belt by Mauna Loa and a significantly different microclimate. Where Kona's western slope gets the morning sun and afternoon cloud pattern that defines its growing conditions, Ka'u's southern exposure produces more consistent cloud cover, heavier rainfall, and slightly different soil conditions derived from older volcanic flows.</p>
+
+<p class="body">Ka'u coffee has built a genuine specialty reputation in the years since farms there began producing at quality levels comparable to Kona. The cup profile differs: Ka'u coffees tend toward darker fruit notes, wine-like complexity, and a slightly earthier quality compared to the clean, sweet clarity of north Kona. Ka'u won the Gevalia Kaffe Cup of Excellence competition, placing it on the international specialty coffee map alongside the world's most acclaimed origins. Buyers who have exhausted their Kona exploration and want to compare Hawaii's two primary regions will find Ka'u an interesting contrast.</p>
+
+<h3 class="sub-head">Waialua: Oahu's Forgotten Coffee</h3>
+<p class="body">Waialua Estate on the North Shore of Oahu is a former sugar plantation converted to coffee, cacao, and other specialty crops in the 1990s after sugar production became economically unviable on the island. Waialua coffee occupies a different climate and soil context than either Kona or Ka'u: it is lower elevation and warmer, growing in former cane-field soil with irrigation support rather than the reliable rainfall of the volcanic slopes.</p>
+
+<p class="body">Waialua coffee is more limited in production and distribution than Kona or Ka'u, and its flavor profile is distinctively different: less citrus brightness, more full body, and a profile that reads closer to a Caribbean coffee than a volcanic Hawaiian one. For collectors of Hawaiian coffees or buyers who want to explore the full range of what the state produces, Waialua is a worthwhile tangent. For the buyer whose primary goal is experiencing the best Hawaiian coffee, Kona and Ka'u are the main events.</p>
+
+<h2 class="section-head">Tasting Notes <em>by Roast Level</em></h2>
+
+<p class="body">Kona coffee's flavor responds to roast level more dramatically than many other origins because the origin character is relatively delicate and clean rather than intensely fruit-forward or earth-driven. Understanding what each roast level does allows you to buy with your preferred cup profile in mind.</p>
+
+<p class="body"><strong>Light roast (City):</strong> The brightest expression of Kona's citrus character: lemon curd, bergamot, stone fruit, and a lighter body that emphasizes acidity. This roast level rewards pour-over brewing and shows the origin's terroir most transparently. Less common from Kona producers, who tend toward medium for the market they serve.</p>
+
+<p class="body"><strong>Medium roast (City+, Full City):</strong> The sweet spot for most Kona buyers. Milk chocolate, hazelnut, caramel, and a balanced brightness that is approachable but not flat. This is the roast level at which most Koa Coffee products are offered, and it represents the majority consensus on what Kona should taste like: sweet, clean, complex enough to reward attention, and easy enough to enjoy without concentration.</p>
+
+<p class="body"><strong>Medium-dark roast (Full City+, Vienna):</strong> Deeper chocolate, more roast character, less citrus brightness. The origin's natural sweetness comes through as a bittersweet dark chocolate quality. Koa's Grande Domaine Vienna Roast is the example at this level. For buyers who enjoy bold coffee or who use milk and want the coffee's character to come through the dairy, this is the practical choice.</p>
+
+<p class="body"><strong>Dark roast (French, Italian):</strong> At very dark roast levels, the unique Kona character is largely replaced by roast-derived flavors: charcoal, bittersweet dark chocolate, minimal acidity. This is not the recommended approach for 100% Kona if the goal is tasting what you paid for. If someone specifically wants dark-roasted coffee, commodity alternatives exist at a fraction of the price.</p>
+
+<h2 class="section-head">Brewing Recommendations <em>for Kona</em></h2>
+
+<p class="body">Kona's clean, balanced profile suits a wide range of brewing methods, but some bring out its character better than others.</p>
+
+<p class="body"><strong>Pour-over (V60, Chemex, Kalita):</strong> The best method for experiencing Kona's full aromatic character. Clean filtration preserves the citrus brightness and allows the subtle milk chocolate notes to come through without muddiness. Use water at 200-205 degrees Fahrenheit (93-96 Celsius), a medium-fine grind, and a standard 1:15 to 1:16 coffee-to-water ratio.</p>
+
+<p class="body"><strong>Drip coffee maker:</strong> Excellent for everyday Kona consumption. A quality drip brewer with a thermal carafe (not a hot plate that bakes the coffee) preserves the origin's sweetness well. Medium roast is most practical for drip.</p>
+
+<p class="body"><strong>French press:</strong> Adds body and allows some oils through the metal filter, which can enhance the chocolate and hazelnut notes. Use a slightly coarser grind than pour-over to prevent over-extraction. The result is richer and heavier than a clean pour-over.</p>
+
+<p class="body"><strong>Espresso:</strong> Kona makes an unusual but genuinely excellent espresso base. The natural sweetness and milk chocolate character work well under pressure, and the citrus brightness reads as a pleasant acidity in the espresso shot. Pull at standard espresso parameters (18-19g in, 36-38g out, 27-32 seconds) and expect a shot with good body and natural sweetness.</p>
+
+<h2 class="section-head">The Buyer's Table: <em>Which Koa Product for You</em></h2>
+
+<table class="aff-table">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Grade</th>
+      <th>Roast</th>
+      <th>Best For</th>
+      <th>Price Start</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peaberry</td>
+      <td>Peaberry (special)</td>
+      <td>Medium</td>
+      <td>Gifts, best-of Kona</td>
+      <td>$60</td>
+    </tr>
+    <tr>
+      <td>Private Reserve</td>
+      <td>Extra Fancy</td>
+      <td>Medium</td>
+      <td>Everyday premium Kona</td>
+      <td>$42</td>
+    </tr>
+    <tr>
+      <td>Estate</td>
+      <td>No. 1</td>
+      <td>Medium</td>
+      <td>First-time Kona buyer</td>
+      <td>$46</td>
+    </tr>
+    <tr>
+      <td>Grande Domaine</td>
+      <td>Estate</td>
+      <td>Vienna</td>
+      <td>Dark-roast preference</td>
+      <td>$48</td>
+    </tr>
+  </tbody>
+</table>
+
+</ContentLayout>
+
+<style>
+  .buy-card {
+    border: 1px solid rgba(201,168,76,0.15);
+    border-left: 2px solid var(--gold);
+    background: var(--espresso-mid);
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+  }
+  .buy-card-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .buy-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+  .buy-card-notes {
+    font-size: 0.88rem;
+    color: var(--text-body);
+    margin-bottom: 0.9rem;
+    line-height: 1.65;
+  }
+  .buy-card-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    padding-bottom: 2px;
+  }
+  .buy-card-link:hover { border-color: var(--gold); }
+  .aff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.88rem;
+  }
+  .aff-table th {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+  .aff-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(201,168,76,0.06);
+    color: var(--text-body);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .aff-table tr:hover td { background: rgba(201,168,76,0.03); }
+  .aff-table td:first-child { color: var(--cream); }
+</style>

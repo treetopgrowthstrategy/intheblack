@@ -1,0 +1,107 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is washed coffee?",
+    a: "Washed coffee (also called wet-processed) is coffee where the fruit and mucilage of the cherry are removed from the seed before drying. The cherries are depulped, fermented in water tanks for 12 to 48 hours to break down the remaining mucilage, then washed with clean water and dried on raised beds or patios. The result is a coffee with a clean, clear cup that emphasizes the bean's intrinsic character and terroir rather than flavors derived from the fruit surrounding it."
+  },
+  {
+    q: "What is natural coffee?",
+    a: "Natural coffee (also called dry-processed) is coffee where the whole cherry is dried with the fruit still intact around the seed. Cherries are spread on raised beds or patios for 2 to 6 weeks, turned regularly to prevent mold, and dried until the fruit desiccates and can be hulled off. The extended contact with the fruit during drying imparts fruit sugars and fermentation flavors into the seed, producing a heavier-bodied, sweeter, more fruit-forward cup compared to washed."
+  },
+  {
+    q: "Which is better: washed or natural coffee?",
+    a: "Neither is objectively better; they are different and suit different taste preferences. Washed coffee is better if you want clarity, brightness, and a clean expression of terroir. Natural coffee is better if you want sweetness, body, and intense fruit or berry notes. For pour-over brewing with high-quality single-origins, washed is the traditional choice. For French press or for buyers who want a more complex, fruit-driven cup, naturals are compelling. Most specialty buyers who take coffee seriously end up enjoying both, in different contexts."
+  },
+  {
+    q: "What is honey process coffee?",
+    a: "Honey process is a middle ground between washed and natural: the outer cherry skin is removed (like washed) but some or all of the mucilage is left on the seed during drying (unlike washed). The amount of mucilage left determines the honey color: yellow honey (less mucilage, closer to washed), red honey (moderate mucilage), and black honey (maximum mucilage, closest to natural in flavor). Honey-processed coffees cup with more body and sweetness than washed but less fruit intensity than natural."
+  },
+  {
+    q: "Does washed or natural coffee have more caffeine?",
+    a: "The processing method does not significantly affect caffeine content. Caffeine is in the seed (the bean), and washing or drying the fruit around it does not add or remove caffeine from the seed. The caffeine difference between a washed and natural coffee from the same farm and variety is negligible. Caffeine content is more influenced by species (arabica vs robusta), variety, and roast level than by processing method."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/best-natural-process-coffee', label: 'Buyers Guide', title: 'Best Natural Process Coffee to Buy Online' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Origin Guide', title: 'Ethiopian Coffee Guide' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+];
+---
+
+<ContentLayout
+  title="Washed vs Natural Coffee: What's the Difference?"
+  description="The two most common coffee processing methods compared: how washed and natural processing work, how they taste different, and which to try first depending on your preferences."
+  slug="learn/washed-vs-natural-coffee"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-18"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Try both <em>side by side.</em>"
+  ctaBody="Coffee Bros. carries both washed and natural single-origin coffees with clear processing information on every bag. The best way to understand the difference is to brew them back to back."
+>
+
+<p class="body">Two bags. Same country. Same altitude. Same variety. Completely different cups. This is what washed and natural processing does to coffee, and tasting both from the same origin is one of the most clarifying experiences available to anyone who wants to understand how coffee flavor is built. <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Coffee Bros.</a> is the roaster that makes this comparison easiest: they carry both washed and natural single-origins with the processing method clearly labeled on every bag.</p>
+
+<p class="body">Processing is what happens to the coffee cherry after it is picked. The choice of method, washed or natural (or honey, which sits between them), is one of the most significant decisions in coffee production. It shapes the flavor of every cup that follows, regardless of how the farmer grew the coffee or how carefully the roaster handles it.</p>
+
+<h2 class="section-head">How Washed Coffee <em>Works</em></h2>
+
+<p class="body">In washed (or wet) processing, the outer fruit skin of the cherry is removed immediately after picking by a mechanical depulper. The seed inside is then fermented in water tanks or on raised beds for 12 to 48 hours. Fermentation breaks down the sticky mucilage layer that clings to the seed after depulping. After fermentation, the seeds are washed with clean water to remove all mucilage residue, then spread on raised drying beds until they reach the target moisture content, typically 10 to 12%.</p>
+
+<p class="body">The critical result: the coffee seed spends almost no time in contact with the fruit. The sugars and organic acids that developed in the cherry skin and mucilage do not transfer into the bean in any meaningful quantity. What remains in the cup is a cleaner expression of the seed itself: its intrinsic acids, sugars, and aromatic compounds as shaped by the terroir (elevation, soil, microclimate) where it grew.</p>
+
+<p class="body">Washed coffees cup clean and bright. The dominant flavor compounds are those the bean developed on the plant: citrus and stone fruit acids, floral aromatics, herbaceous or tea-like quality, and a lighter body than natural-processed equivalents. Ethiopian washed coffees from Yirgacheffe are the archetypal example: jasmine, bergamot, lemon. Colombian washed coffees show red apple, caramel, and clean acidity. The cup is transparent, meaning the terroir and variety character read clearly to the taster without fruit-derived sweetness obscuring them.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Try Washed: Coffee Bros.</div>
+  <div class="buy-card-title">Coffee Bros. Washed Single Origin</div>
+  <p class="buy-card-notes">Clean, bright, terroir-transparent cup. Processing clearly labeled. Freshly roasted and shipped quickly. The right starting point for comparing washed against natural from the same roaster.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Washed →</a>
+</div>
+
+<h2 class="section-head">How Natural Coffee <em>Works</em></h2>
+
+<p class="body">In natural (or dry) processing, the whole coffee cherry is dried with no fruit removal. Freshly picked cherries are spread in thin layers on raised beds or cement patios and left in the sun for two to six weeks, turned regularly to prevent mold and fermentation defects. During this time, the fruit around the seed slowly desiccates. As the cherry dries, the fruit sugars and organic acids migrate into the seed. When the cherry is dry enough to hull, the desiccated fruit is removed and the green coffee underneath carries with it a transformed flavor profile.</p>
+
+<p class="body">The critical result: the coffee seed spent weeks surrounded by fermenting fruit. The sugars and fermentation byproducts have been absorbed into the bean's cellular structure. The cup of natural-processed coffee is heavier, sweeter, and more intensely fruit-forward. The origin's terroir is still present but it shares the cup with the fruit-derived flavors: blueberry, strawberry, dark cherry, wine, tropical fruit, and ferment-forward complexity that washed coffees do not produce.</p>
+
+<p class="body">Natural coffees from Ethiopia, Colombia, and Brazil are the most common examples. An Ethiopian natural from Yirgacheffe or Guji cups with blueberry, strawberry, and wine notes that the same farm's washed coffee does not produce. A Brazilian natural cups with dark chocolate, dried fruit, and full body. The cup is heavier, sweeter, and less transparent to terroir than a washed coffee, because the fruit's contribution is as prominent as the bean's intrinsic character.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Try Natural: Coffee Bros.</div>
+  <div class="buy-card-title">Coffee Bros. Natural Process Single Origin</div>
+  <p class="buy-card-notes">Fruit-forward, full body, fermented sweetness. Pairs washed and natural from similar origins so you can taste the processing difference directly. Freshness-first model, processing clearly labeled.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Natural →</a>
+</div>
+
+<h2 class="section-head">The Cup Comparison: <em>What to Expect from Each</em></h2>
+
+<p class="body"><strong>Washed:</strong> Bright acidity, lighter body, clean and transparent, floral and citrus dominant, terroir-focused. Best for pour-over or drip brewing methods where clean cup clarity is the goal. Preferred by buyers who value precision and subtlety.</p>
+
+<p class="body"><strong>Natural:</strong> Lower acidity, heavier body, sweeter, fruit-dominant, complex and layered. Best for French press, drip, or as an espresso base where sweetness and body are desirable. Preferred by buyers who want intense, fruit-driven cups.</p>
+
+<p class="body"><strong>Honey:</strong> Between washed and natural depending on honey level (yellow, red, black). More body than washed, more clarity than natural. Good for buyers who want sweetness without the full intensity of a natural-processed coffee.</p>
+
+<h2 class="section-head">Which to Try First</h2>
+
+<p class="body">If you have never paid attention to coffee processing before, start with washed. A washed single-origin from Ethiopia or Colombia brewed as pour-over is the clearest possible window into what terroir and origin character mean in specialty coffee. It will likely taste lighter and more delicate than anything you have brewed before from a grocery store bag.</p>
+
+<p class="body">Once you have a washed reference point, try a natural from the same origin or at least the same country. The contrast is startling the first time: the same region, transformed into a cup that tastes like blueberries or dark cherries. That comparison is one of the best education a coffee buyer can give themselves, and our full <a href="/learn/coffee-processing-methods">coffee processing methods guide</a> covers every method in depth if you want to continue from there.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>
