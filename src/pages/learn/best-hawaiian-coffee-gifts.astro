@@ -1,0 +1,239 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is Hawaiian coffee a good gift for non-coffee drinkers?",
+    a: "Yes, for two reasons. The recipient does not need to be a connoisseur to recognize Kona as premium. And Hawaiian coffees skew toward smooth, balanced, low-acid profiles (caramel, milk chocolate, light nuttiness) rather than the bright, polarizing fruit notes you find in Ethiopian or Kenyan beans. A casual coffee drinker is far more likely to enjoy a cup of Kona than a Yirgacheffe."
+  },
+  {
+    q: "How much does real Hawaiian coffee cost as a gift?",
+    a: "Expect $40 to $60 for a quality 7 oz to 8 oz bag of 100% Kona, $60 to $90 for Extra Fancy grade or peaberry, and $90 to $140 for a multi-region Hawaiian sampler. Anything labeled '10% Kona blend' for $20 is not a real Hawaiian gift; 90% of that bag is mainland or South American coffee with a Hawaiian label."
+  },
+  {
+    q: "Will the coffee still be fresh after shipping?",
+    a: "If you order whole bean from a Hawaiian roaster that roasts to order (Koa Coffee does), the bag ships within days of roasting and arrives in 3 to 7 days. That puts it in your recipient's hands well inside the peak 2-to-4-week flavor window. Pre-ground coffee loses freshness faster, so default to whole bean unless you know the recipient does not have a grinder."
+  },
+  {
+    q: "Can I include a card or gift message?",
+    a: "Yes. Most Hawaiian roasters that ship direct (Koa included) offer a gift-message field at checkout and ship in branded packaging suitable for gifting. A short handwritten note explaining that the coffee is 100% Hawaiian (not a blend) adds real value, since most recipients do not know the difference and that context turns a nice bag of coffee into a memorable gift."
+  },
+  {
+    q: "Do I have to buy 100% Kona, or are blends okay?",
+    a: "For gifting, always buy 100% Kona or 100% Hawaiian. The legal minimum for a '10% Kona blend' label is 10% Kona by weight, which means the recipient is getting mostly generic coffee in a Hawaiian-branded bag. The whole point of a Hawaiian coffee gift is the geographic specificity, and a blend dilutes that to near zero."
+  },
+  {
+    q: "How do I know if Hawaiian coffee is fresh?",
+    a: "Look for a roast date printed on the bag (not a 'best by' date, which is meaningless). Coffee is at peak flavor 4 to 21 days after roasting. Reputable Hawaiian roasters print the roast date and ship within a week of roasting. If the bag has no roast date or only a 'best by' stamp 12 months out, it is likely commodity coffee, not a gift-grade single origin."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/kona-coffee-guide', label: 'Kona Coffee Guide', title: 'The complete guide to 100% Kona coffee' },
+  { href: '/learn/best-kona-coffee', label: 'Best Kona Coffee', title: 'Top-rated 100% Kona coffees to buy online' },
+  { href: '/learn/kona-coffee-grades', label: 'Kona Coffee Grades', title: 'Extra Fancy, Fancy, peaberry, and prime explained' },
+  { href: '/learn/what-is-peaberry-coffee', label: 'What Is Peaberry Coffee', title: 'Why peaberry beans are rarer and sweeter' }
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Hawaiian Coffee Gifts",
+  "description": "Six 100% Hawaiian coffee gifts organized by recipient type, from executive gifts to under-$40 stocking stuffers.",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Koa Coffee Private Reserve (for the executive)",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Koa Peaberry Kona Coffee (for the coffee enthusiast)",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Koa Hawaiian Coffee Sampler (for the holiday gift buyer)",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Koa Estate Medium Roast (for parents and grandparents)",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Koa Ka'u Coffee (for the friend who has everything)",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Koa Hawaiian Whole-Bean Sample (under $40 starter gift)",
+      "url": "https://koacoffee.com"
+    }
+  ]
+};
+---
+
+<ContentLayout
+  title="The Best Hawaiian Coffee Gifts in 2026 (Buyer's Guide)"
+  description="The 6 best 100% Hawaiian coffee gifts, organized by recipient type. Executive picks, coffee-enthusiast peaberry, holiday samplers, and under-$40 starter gifts."
+  slug="learn/best-hawaiian-coffee-gifts"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Need a <em>gift that lands?</em>"
+  ctaBody="Koa Coffee ships 100% Hawaiian coffee in gift-ready packaging direct from Hawaii. The single most reliable Hawaiian coffee gift source online."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">Hawaiian coffee is the most giftable coffee on earth. It is geographically specific (the recipient instantly knows where it came from), visually distinctive (rich whole-bean color, traditional Hawaiian artwork on the bag), and luxe at a giftable price point of roughly $40 to $120 per bag. Real 100% Hawaiian coffee occupies a rare category: a premium consumable that almost nobody buys for themselves. That is the textbook definition of a great gift. If you want the safest single recommendation in this entire guide, the <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Koa Coffee Hawaiian Sampler</a> covers three islands of Hawaiian coffee in a single gift-ready box and works for almost any recipient.</p>
+
+<p class="body">Below, six picks organized by who you are buying for, plus the presentation, shipping, and corporate-gifting details that turn a nice bag of coffee into a gift the recipient actually remembers. If you want broader background on the category first, our <a href="/learn/kona-coffee-guide" style="color: var(--gold); text-decoration: none;">Kona coffee guide</a> covers origin, processing, and what 100% Kona really means.</p>
+
+<h2 class="section-head">Why Hawaiian coffee beats <em>most premium coffees</em> as a gift</h2>
+
+<p class="body">Plenty of single origins are objectively excellent. Ethiopian Yirgacheffe, Panama Geisha, Colombian Supremo. None of them give as a gift the way Hawaiian coffee does, for four specific reasons.</p>
+
+<h3 class="sub-head">1. Recipient recognition</h3>
+
+<p class="body">The average gift recipient already knows what Kona is. They may not be able to tell you what altitude it grows at or what 'Extra Fancy' means, but the word 'Kona' reads as premium without explanation. Compare that to handing someone a bag of Sidamo or Huehuetenango: you need a paragraph just to set up why the gift is special. Hawaiian coffee front-loads the prestige.</p>
+
+<h3 class="sub-head">2. Visual gift presentation</h3>
+
+<p class="body">Established Hawaiian roasters package their coffee with authentic visual cues you cannot fake. Volcanic-themed art, traditional Hawaiian motifs, real Hawaii farm photography. When the recipient opens the box, the bag itself signals 'this came from a specific place,' not 'this came from a warehouse.' Generic specialty coffee, no matter how good, looks like generic specialty coffee.</p>
+
+<h3 class="sub-head">3. Inelastic price perception</h3>
+
+<p class="body">People associate Kona with premium prices. That association does the gift-giver a favor: a $60 bag of 100% Kona feels right rather than excessive, because the recipient's mental price anchor for Hawaiian coffee is already high. The same $60 spent on a single-origin Ethiopian would feel like overpaying for coffee. With Kona, $60 reads as 'they got me the real thing.'</p>
+
+<h3 class="sub-head">4. Consumable, not clutter</h3>
+
+<p class="body">Coffee disappears. It does not sit on a shelf reminding the recipient that they have to find space for one more decorative object. For corporate gifting in particular, consumables outperform tchotchkes by a wide margin: the recipient enjoys the gift, finishes it, and remembers it positively, instead of resenting the desk clutter.</p>
+
+<div class="callout">
+  <p>The gifting math: a $60 bag of 100% Kona produces roughly 30 cups of coffee. That is $2 per cup of memorable, premium experience over a few weeks. Almost no other gift in that price range delivers that many positive touchpoints with the recipient.</p>
+</div>
+
+<h2 class="section-head">Six Hawaiian coffee gifts <em>by recipient type</em></h2>
+
+<p class="body">Match the pick to the person, not the price tag. The cheapest gift here is well-presented Hawaiian coffee, which already wins. The most expensive is genuinely flagship coffee, which only matters if the recipient cares.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 1 / For the executive or boss</div>
+  <div class="buy-card-title">Koa Coffee Private Reserve</div>
+  <p class="buy-card-notes">Koa's flagship Extra Fancy 100% Kona, the highest grade in the Kona system. Tasting notes lean classic: brown sugar, milk chocolate, toasted almond, a clean honeyed finish with low acidity. Comes in their signature gift-ready packaging.</p>
+  <p class="buy-card-notes"><strong>Why this pick:</strong> the highest-status SKU in the Hawaiian coffee category. When you give Private Reserve to a boss, client, or executive, the gift signals 'I know what good coffee is, and I picked the top of the line.' Classic Kona profile that almost no one dislikes.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Private Reserve →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 2 / For the coffee enthusiast</div>
+  <div class="buy-card-title">Koa Peaberry Kona Coffee</div>
+  <p class="buy-card-notes">A single, naturally round bean instead of the usual two flat-faced beans inside the cherry. Tasting notes: milk chocolate, hazelnut, candied citrus peel, a soft floral lift on the finish, exceptionally round body.</p>
+  <p class="buy-card-notes"><strong>Why this pick:</strong> peaberry is the rarest single category of Kona coffee (about 5% of any harvest), so the gift signals genuine coffee expertise on your part. The enthusiast recipient will instantly recognize the rarity. See our <a href="/learn/what-is-peaberry-coffee" style="color: var(--gold); text-decoration: none;">peaberry coffee guide</a> for background.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Peaberry →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 3 / For the holiday or gift-occasion buyer</div>
+  <div class="buy-card-title">Koa Hawaiian Coffee Sampler</div>
+  <p class="buy-card-notes">A multi-pack featuring Kona alongside Ka'u (southern Big Island) and other Hawaiian-grown regions. Each bag has a distinct profile: classic milk-chocolate Kona, brighter wine-grape Ka'u, plus rotating Hawaiian regions.</p>
+  <p class="buy-card-notes"><strong>Why this pick:</strong> strongest unboxing experience of any single gift. Multiple bags, multiple regions, multiple cards. Functions as a broad introduction to Hawaiian coffee for someone whose taste you do not know precisely. The default holiday gift.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Hawaiian Sampler →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 4 / For parents and grandparents</div>
+  <div class="buy-card-title">Koa Estate Medium Roast</div>
+  <p class="buy-card-notes">Traditional medium-roast Kona estate coffee. Tasting notes: caramel, milk chocolate, light toasted nut, smooth medium body, low acidity. The cup older relatives expect coffee to taste like, with the Kona quality bump.</p>
+  <p class="buy-card-notes"><strong>Why this pick:</strong> balanced and approachable. Light-roasted single origins with bright fruit notes are polarizing for older drinkers. A classic medium-roast Kona profile lands every time, while still delivering the 100% Hawaiian premium-gift framing.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Estate Medium →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 5 / For the friend who has everything</div>
+  <div class="buy-card-title">Koa Ka'u Coffee</div>
+  <p class="buy-card-notes">Grown in the higher-elevation Ka'u district on the southern slope of Mauna Loa, far less famous than Kona. Tasting notes lean more vibrant: red grape, dark cherry, brown sugar, a wine-like body and longer finish than typical Kona.</p>
+  <p class="buy-card-notes"><strong>Why this pick:</strong> discovery factor. The recipient already has 100% Kona on the shelf. Ka'u is Hawaiian coffee they probably have never tried, from a region they probably did not know existed. Gives you a story to tell with the gift.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Ka'u →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 6 / Under $40 starter gift</div>
+  <div class="buy-card-title">Koa Hawaiian Whole-Bean Sample</div>
+  <p class="buy-card-notes">A smaller-quantity introduction to 100% Hawaiian coffee. Same roast-to-order freshness as the flagship bags, in a stocking-stuffer size. Tasting notes match the Estate profile: milk chocolate, brown sugar, smooth body.</p>
+  <p class="buy-card-notes"><strong>Why this pick:</strong> hits the stocking-stuffer, thank-you-gift, or hostess-gift price point without dropping to fake 'Kona blend' territory. Still 100% Hawaiian, still in the Koa gift presentation, just sized for under-$40 budgets.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop the Koa Sample →</a>
+</div>
+
+<h2 class="section-head">How to <em>present</em> Hawaiian coffee as a gift</h2>
+
+<p class="body">The coffee itself is half the gift. The other half is the presentation. A few details that separate a memorable Hawaiian coffee gift from a generic bag-in-a-box.</p>
+
+<ul class="body-list">
+  <li><strong>Default to whole bean.</strong> Whole bean keeps fresh weeks longer than ground, and most coffee-curious recipients already have a grinder. Only buy pre-ground if you are certain the recipient does not own a grinder; in that case, request the coarsest grind that matches their brew method.</li>
+  <li><strong>Pair with a brew vessel for a complete gift set.</strong> A French press, a Chemex, or a simple pour-over kit turns a single bag into a curated experience. Total package lands around $80 to $130 and feels like a thoughtful, multi-piece gift instead of one item.</li>
+  <li><strong>Include a card.</strong> Write a single sentence noting that the coffee is 100% Hawaiian, not a blend. Most recipients do not know the difference between 100% Kona and '10% Kona blend.' That one sentence transforms the gift from 'nice bag of coffee' into 'this person bought me the real thing.'</li>
+  <li><strong>Match the roast level to the recipient.</strong> Medium roast for casual drinkers, light roast for the enthusiast who appreciates origin character, dark roast only if you know they prefer it. Most Hawaiian coffees are best showcased at medium.</li>
+</ul>
+
+<h2 class="section-head">Corporate gifting <em>at scale</em></h2>
+
+<p class="body">Hawaiian coffee is an exceptional category for corporate gifts to clients, employees, partners, or referral sources. Koa Coffee and most established Hawaiian roasters offer bulk and corporate orders with custom branding options. Two reasons the category outperforms most corporate gift options.</p>
+
+<p class="body">First, coffee has a higher per-unit budget tolerance than almost any other corporate gift category, because nearly every recipient drinks coffee. There is no risk of 'I do not drink wine' or 'I cannot eat that.' Second, the per-unit cost of premium Kona ($40 to $90) sits in the sweet spot for client and top-employee gifting: high enough to feel meaningful, low enough to fit standard gift-budget rules. Reach out to the roaster directly for volume pricing; most Hawaiian roasters scale meaningfully at 50+ units.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">$40-$90</div>
+    <div class="stat-label">Per-unit corporate gift sweet spot</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">~30</div>
+    <div class="stat-label">Cups of coffee per gifted 8 oz bag</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">3-7 days</div>
+    <div class="stat-label">Ship time from Hawaii to mainland</div>
+  </div>
+</div>
+
+<h2 class="section-head">How to ship Hawaiian coffee <em>correctly</em></h2>
+
+<p class="body">A few shipping mechanics matter more for Hawaiian coffee than for mainland-roasted coffee, because the package starts its journey in Hawaii.</p>
+
+<ul class="body-list">
+  <li><strong>Order at least 2 to 3 weeks ahead.</strong> The coffee needs to arrive fresh and ahead of the gift occasion. Holiday shipping windows can stretch transit times; do not cut it close in December.</li>
+  <li><strong>Expect 3 to 7 days of transit to the mainland.</strong> Koa ships from Hawaii by air. Most U.S. addresses see delivery in under a week, but Alaska, Hawaii local, and rural addresses can run longer.</li>
+  <li><strong>Whole bean keeps better in transit.</strong> Ground coffee starts losing aromatic compounds the moment it is ground. Whole-bean Hawaiian coffee can sit sealed in the gift box for 2-3 weeks and still brew beautifully when opened. Pre-ground has a shorter window.</li>
+  <li><strong>Use the gift-message field at checkout.</strong> Most Hawaiian roasters offer a printed card or note option. Even a single line ('100% Kona, the real thing, enjoy') adds value.</li>
+</ul>
+
+<p class="body">For a deeper dive into how to evaluate the coffee itself once it arrives, our <a href="/learn/kona-coffee-grades" style="color: var(--gold); text-decoration: none;">guide to Kona coffee grades</a> covers what Extra Fancy, Fancy, peaberry, and prime actually mean on the bag. And if the recipient becomes a Hawaiian coffee fan and asks you for follow-up picks, the <a href="/learn/best-kona-coffee" style="color: var(--gold); text-decoration: none;">best Kona coffee roundup</a> is the next logical bookmark to send them.</p>
+
+<div class="callout">
+  <p>The single biggest mistake in Hawaiian coffee gifting: buying a $20 'Kona blend' from a grocery store because the bag looks Hawaiian. By federal labeling rules, that bag is allowed to be 10% Kona by weight, which means the recipient is getting 90% generic coffee with a Hawaiian-themed wrapper. Always buy 100% Kona or 100% Hawaiian from a direct-from-Hawaii roaster.</p>
+</div>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

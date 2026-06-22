@@ -1,0 +1,128 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does Sumatra coffee taste like?",
+    a: "Sumatra coffee is full-bodied, low in acidity, and earthy in a way no other origin produces. Common tasting notes include dark chocolate, cedar, tobacco, leather, herbal tea, and sometimes a syrupy earthiness that experienced tasters describe as 'musty' in the best sense. The wet-hull process creates a distinctive character: the bean is exposed to oxygen during drying in a way that produces flavors you won't find in washed or natural coffees. It's the most visually distinctive coffee too: the green beans are often blue-green or dark teal rather than pale yellow-green."
+  },
+  {
+    q: "Why does Sumatra coffee taste so different from other origins?",
+    a: "Two reasons. First, the wet-hull (Giling Basah) processing method, used almost exclusively in Indonesia, removes the parchment layer while the bean is still very moist and then dries the exposed seed in open air. This exposes the bean to oxygen during a critical development phase and produces low acidity, heavy body, and earthy-herbal flavor compounds not found in washed or natural coffees. Second, many Sumatran farms grow heirloom Arabica varieties (sometimes called Timor or Catimor hybrids) that have their own distinctive flavor genetics."
+  },
+  {
+    q: "What is Mandheling coffee?",
+    a: "Mandheling is a trade name for coffee from the Mandailing Batak people of North Sumatra, grown in the Tapanuli region around Padang Sidimpuan. It's one of Sumatra's most established export grades: full body, low acid, earthy chocolate, dark and complex. Mandheling is a place-name and a quality designation that has been used in international coffee trade since the 1700s, well before specialty coffee existed as a category. When you buy 'Sumatra Mandheling,' you're buying from one of the most historically significant coffee-growing regions on earth."
+  },
+  {
+    q: "Is Sumatra coffee good for espresso?",
+    a: "Yes, and it's a classic espresso component for this reason: Sumatran coffee contributes exactly the qualities that make espresso blends interesting. Its full body adds texture and viscosity to the shot; its low acidity prevents the espresso from tasting thin or sharp; its earthy, chocolate notes provide a different bass note than bright washed origins. Most commercial espresso blends that advertise 'full body' and 'dark chocolate' are using Sumatra as a base. As a single-origin espresso, it can be polarizing (the earthiness reads more intensely under pressure) but for the right palate it's extraordinary."
+  },
+  {
+    q: "What roast level is best for Sumatra coffee?",
+    a: "Medium to medium-dark roast is the traditional and most rewarding range for Sumatra. Light roast Sumatra tends to amplify the earthy, fermented-cedar qualities and produce a cup that can taste sour or odd to drinkers not expecting it. Medium roast (City+ to Full City) develops the dark chocolate and herbal notes while preserving the body and distinctive character. Medium-dark adds toasted nut and dark cocoa. Full dark roast (French or Vienna) is common commercially but tends to mask the origin's specific character in favor of a generically smoky-bitter profile."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/coffee-processing-methods', label: 'Processing Guide', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Origin Basics', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+  { href: '/learn/washed-vs-natural-coffee', label: 'Processing', title: 'Washed vs Natural Process Coffee' },
+];
+---
+
+<ContentLayout
+  title="Sumatra Coffee Guide: Flavor, Origins, and What to Buy"
+  description="Why Sumatra coffee tastes unlike anything else: the wet-hull process, Mandheling, Aceh, and Toraja regions explained, plus where to buy the best Indonesian specialty coffee online."
+  slug="learn/sumatra-coffee-guide"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="roaster"
+  ctaHeadline="Building a <em>wholesale coffee program?</em>"
+  ctaBody="In The Black Coffee Co. connects specialty roasters with cafés, restaurants, and offices. Commission-only representation, no fees to buyers."
+>
+
+<p class="body">Sumatra coffee is the outlier origin. Every other region on the specialty coffee map produces cups that vary in acidity, sweetness, and fruit character but share a recognizable brightness and clarity. Sumatra produces none of those things. What it produces instead is the heaviest body, the lowest acidity, and the most distinctive earthy-chocolate-cedar flavor profile in coffee. Experienced tasters recognize it blind. Novices are often startled by how different it tastes from what they expected coffee to be.</p>
+
+<p class="body">The explanation is both geographic and technical. Sumatra's equatorial lowlands produce a different plant character than the high-altitude African and Latin American origins. But the decisive factor is a processing method found almost nowhere else on earth: wet-hull processing, called Giling Basah in Indonesian, which transforms the bean's chemistry in a way that washed and natural processing never does. Understanding that method is the key to understanding Sumatra.</p>
+
+<p class="body"><a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> carries Sumatra Mandheling within their catalog of 150+ single origins, roasted fresh from Atlanta, and represents the most accessible way for specialty buyers to explore this origin. Their Sumatra Mandheling is the reference point for this guide.</p>
+
+<h2 class="section-head">The Wet-Hull Process: <em>Why Sumatra Tastes Different</em></h2>
+
+<p class="body">Coffee processing refers to how the seed is separated from the cherry and dried before export. The three major methods, washed (pulped and dried clean), natural (dried whole cherry), and honey (pulped but with mucilage left during drying), all remove the outer parchment layer before the bean reaches the exporter. Wet-hull does something fundamentally different.</p>
+
+<p class="body">In wet-hull processing, the cherry is pulped and allowed a short fermentation (12-24 hours), then partially dried to around 30-40% moisture content. At that point, the parchment is mechanically removed while the bean is still moist and pliable. The exposed bean then finishes drying in open air at a much higher moisture content than any other processing method would allow.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">35%</div>
+    <div class="stat-label">Moisture at parchment removal</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">11%</div>
+    <div class="stat-label">Typical final moisture at export</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1700s</div>
+    <div class="stat-label">First Dutch coffee cultivation, Java</div>
+  </div>
+</div>
+
+<p class="body">Removing the parchment while the bean is still wet exposes the seed to oxygen during a critical phase of its development. That oxygen exposure, combined with the higher moisture content and the temperature and humidity of Indonesia's equatorial climate, produces a set of flavor compounds that don't develop in any other processing environment: the earthy-herbal-cedar notes that Sumatra's fans prize and its detractors find baffling.</p>
+
+<p class="body">The wet-hull method also produces the distinctive blue-green appearance of Indonesian green coffee, a visual marker experienced buyers recognize immediately. The method is economically motivated: wet-hull speeds up the drying process significantly in a climate where full air-drying takes weeks and creates mold risk. What started as an agricultural practicality became the defining characteristic of an entire coffee tradition.</p>
+
+<h2 class="section-head">The Major Growing Regions: <em>Mandheling, Aceh, and Toraja</em></h2>
+
+<p class="body">Sumatra is a large island with several distinct coffee-growing regions, and the differences between them are real, though less pronounced than the differences between, say, Ethiopian Yirgacheffe and Colombian Huila. All Sumatran coffees share the wet-hull character; what varies is the degree of earthiness, the level of brightness, and the specific herbal and chocolate notes.</p>
+
+<h3 class="sub-head">Mandheling</h3>
+<p class="body">Grown in the Tapanuli region of North Sumatra around the town of Padang Sidimpuan. Mandheling is a trade name honoring the Mandailing Batak people of the region, and it's the most widely exported Sumatran designation. Classic Mandheling is heavy-bodied, almost syrupy, with dark chocolate, cedar, earthy tobacco, and a low acidity that allows the cup to sit on your palate without any brightness cutting through. This is the Sumatra that became a staple in American coffee culture in the 1970s and 1980s through roasters like Peet's, whose legendary Sulawesi Toraja and Sumatra Mandheling defined what "serious coffee" tasted like before third-wave specialty.</p>
+
+<h3 class="sub-head">Aceh (Gayo)</h3>
+<p class="body">From the Aceh province at the northern tip of Sumatra, grown in the Gayo highlands around the city of Takengon at 1,200 to 1,500 meters. Gayo coffees tend to be slightly brighter and cleaner than Mandheling, with more chocolate and fruit in the cup and less of the extreme earthiness. Gayo is also the source of most of Indonesia's certified organic coffee, since the remote highland farming communities have lower access to synthetic inputs. If you want Sumatra character but slightly less earth, Gayo is the variation to look for.</p>
+
+<h3 class="sub-head">Toraja (Sulawesi)</h3>
+<p class="body">Technically from the island of Sulawesi rather than Sumatra, but grouped with Sumatran-style coffees because it uses the same wet-hull processing and shares the earthy, full-body profile. Toraja coffee comes from the Sa'dan highlands and is grown by subsistence farmers in remote mountain communities. The cup is often described as more complex than Mandheling: still earthy and chocolatey, but with more herbal notes and a finish that stays on the palate longer. Toraja became famous through Peet's Coffee in the 1980s; it remains one of the most distinctive coffees in the world.</p>
+
+<h2 class="section-head">Flavor Profile: <em>What to Expect in the Cup</em></h2>
+
+<p class="body">Sumatra at medium roast produces a cup where the predominant character is earthy richness rather than brightness or fruit. Tasting notes across well-sourced Sumatran lots typically include dark chocolate or cacao nibs, cedarwood or tobacco, earthy herbs (sometimes described as dried mushroom or forest floor in the most developed cups), licorice or anise in the finish, and a body that is described as syrupy, thick, or coating. Acidity is very low, sometimes almost imperceptible, which is part of what makes it popular with drinkers who find high-acid coffees uncomfortable.</p>
+
+<div class="callout">
+  <p>Sumatra is the only origin where experienced buyers routinely describe the coffee as "earthy" as a compliment rather than a defect. That earthy character is what wet-hull processing produces when the method is well-executed. When it goes wrong, the earthiness tips into over-fermentation, mustiness, or mold. The line between distinctive and defective is real, and sourcing from a roaster who visits farms and rejects lots matters more here than in almost any other origin.</p>
+</div>
+
+<h2 class="section-head">Sourcing Quality <em>Sumatra: What to Look For</em></h2>
+
+<p class="body">The inconsistency problem in Sumatra is more significant than in most origins. The distributed smallholder farming model (most farms are 1-2 hectares), the multiple hands the coffee passes through before export (farmer, local collector, wet miller, exporter), and the challenges of quality control in a humid equatorial climate mean that Sumatran coffee quality varies widely. Buying from a roaster who has relationships with specific exporters or cooperatives and visits the region is the quality signal to look for.</p>
+
+<p class="body"><a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee's Sumatra Mandheling</a> is sourced and freshly roasted from their Atlanta facility, available in multiple roast levels. Their catalog depth across Indonesian origins (they also carry Sulawesi and Java) makes them the most practical single source for exploring the full range of Indonesian coffee character.</p>
+
+<h2 class="section-head">How to <em>Brew Sumatra</em></h2>
+
+<p class="body">Sumatra's full body and low acidity make it unusually versatile across brewing methods, but a few guidelines apply across all of them.</p>
+
+<p class="body"><strong>French press:</strong> Sumatra is excellent in French press, where the metal filter allows the oils through and adds to the texture that makes the origin distinctive. The body at its heaviest in this method. Use a medium-coarse grind, 195-200°F water, 4-minute steep.</p>
+
+<p class="body"><strong>Drip:</strong> Straightforward and forgiving. Medium grind, standard ratio (1:16 by weight), 200°F. The flat clarity of drip brewing actually showcases Sumatra's herbal notes well, since the filter removes some of the oil that can make the earthiness feel heavy in French press.</p>
+
+<p class="body"><strong>Pour-over:</strong> Works, though the slow-brew clarity can amplify the earthy notes in ways that drinkers not expecting them find jarring. Use a slightly coarser grind than you would for a washed Ethiopian; the lower acidity means you can afford a coarser grind without losing balance.</p>
+
+<p class="body"><strong>Espresso:</strong> A 20-25% Sumatra component in an espresso blend adds body and chocolate that straight washed espresso bases lack. As a single-origin espresso, it requires careful dialing: the earthiness concentrates significantly under pressure, and extraction temperature matters (aim for 90-93°C to avoid the harsh notes that can emerge at higher temperatures).</p>
+
+<p class="body"><strong>Cold brew:</strong> Exceptional. The cold-brew process attenuates acidity (which Sumatra doesn't have much of anyway) and emphasizes body, chocolate, and sweetness. The result is a concentrate that is smooth, thick, and deeply chocolatey without the bitterness of dark-roast cold brew. One of the best cold brew bases available.</p>
+
+<h2 class="section-head">Sumatra vs Other Origins: <em>An Honest Comparison</em></h2>
+
+<p class="body">For buyers who have been drinking Ethiopian or Colombian coffee and want to understand how Sumatra fits: Sumatra is the counter-programming origin. Where Ethiopian washed coffee is bright, floral, and tea-like, Sumatra is heavy, earthy, and bass-note. Where Colombian coffee is balanced, caramel-sweet, and accessible, Sumatra is bold and distinctive in a way that demands engagement. It's not a gateway coffee, it's a destination.</p>
+
+<p class="body">If you want to understand the full range of what specialty coffee can taste like, you need to taste Sumatra alongside Ethiopian washed and a bright Central American coffee. The contrast is more instructive than any description. The <a href="/learn/single-origin-coffee-guide" style="color: var(--gold); text-decoration: none;">single origin guide</a> has a longer look at how all the major origins compare, including what flavor profile to expect from each before you buy.</p>
+
+</ContentLayout>

@@ -1,0 +1,205 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What's the best coffee-to-water ratio for pour-over?",
+    a: "Start at 1:16 by weight, which means 15.6 grams of coffee for every 250 grams of water. Push to 1:17 for very light, high-acid coffees like Kenya AA or Yirgacheffe to let the sweetness develop. Pull back to 1:15 if a coffee tastes thin or sour. Measure both coffee and water on a scale; volume measurements drift by 15 to 20 percent depending on grind and bean density."
+  },
+  {
+    q: "Do I need a gooseneck kettle for pour-over?",
+    a: "Yes if you care about consistency. The narrow spout lets you control flow rate and pour location, which directly controls how evenly water saturates the bed. A regular kettle dumps water, channels the bed, and produces uneven extraction. A basic gooseneck runs about $40. A variable-temperature electric gooseneck runs about $150 and removes guesswork around water temperature, which matters more for light roasts than people expect."
+  },
+  {
+    q: "Can I use dark roast for pour-over?",
+    a: "You can but it fights the method. Pour-over rewards clarity and acidity; dark roasts deliver body and bitterness that get amplified by the paper filter stripping fats. If you brew dark roast as pour-over, drop water temperature to 195°F, grind slightly coarser, and pull the brew shorter at around 2:45 to avoid extracting bitter compounds. You will still get a flatter cup than the same beans on a Moccamaster or French press."
+  },
+  {
+    q: "How fresh do beans need to be for pour-over?",
+    a: "Rest beans 7 to 14 days off roast, then use them within 4 weeks. Pour-over is the most punishing method for stale coffee because it relies on CO2 bloom for even saturation. Beans older than 4 weeks bloom weakly, channel the water, and taste cardboardy. Beans under 7 days off roast bloom so violently they overflow the cone and produce sour, underdeveloped cups. Check the roast date on the bag, not the sell-by date."
+  },
+  {
+    q: "Is filtered water important for pour-over?",
+    a: "Water is 98.5 percent of the cup, so yes. Use water with 75 to 175 ppm total dissolved solids and balanced calcium-to-magnesium ratios. Tap water with chlorine kills aroma; distilled water has nothing for flavor compounds to bind to and produces flat, hollow cups. A basic charcoal filter works for most municipal water. Third Wave Water sachets ($25 for 12) give lab-perfect brewing water if your tap is bad."
+  },
+  {
+    q: "Which grinder should I use for pour-over?",
+    a: "Burr, always. Blade grinders produce uneven particles that extract at different rates and guarantee a muddled cup. Hand grinders like the Timemore C2 ($70) or 1Zpresso JX ($165) beat most $200 electric grinders for filter-coffee grind quality. If you want electric, the Baratza Encore ESP ($199) and Fellow Opus ($195) are the entry points where pour-over actually starts working. Below $150 electric, buy hand."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Single Origin Coffee Guide', title: 'What single origin actually means' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Ethiopian Coffee Guide', title: 'The origin behind the benchmark pour-over' },
+  { href: '/learn/washed-vs-natural-coffee', label: 'Washed vs Natural Coffee', title: 'Why processing changes pour-over results' },
+  { href: '/learn/best-single-origin-coffee', label: 'Best Single Origin Coffee', title: 'Top single-origin picks across origins' }
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Coffee for Pour-Over",
+  "description": "Five top coffees for pour-over brewing, selected for clarity, acidity, and origin character under a paper filter.",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Volcanica Ethiopian Yirgacheffe", "url": "https://www.volcanicacoffee.com" },
+    { "@type": "ListItem", "position": 2, "name": "Coffee Bros. Washed Single Origin", "url": "https://coffeebros.com" },
+    { "@type": "ListItem", "position": 3, "name": "Volcanica Kenya AA", "url": "https://www.volcanicacoffee.com" },
+    { "@type": "ListItem", "position": 4, "name": "Volcanica Costa Rica Tarrazu", "url": "https://www.volcanicacoffee.com" },
+    { "@type": "ListItem", "position": 5, "name": "Spirit Animal Coffee Single Origin", "url": "https://spiritanimalcoffee.com" }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Coffee for Pour-Over: 5 Single Origins That Earn the Method"
+  description="Pour-over rewards washed, high-grown, light to medium single origins. The five coffees below deliver the clarity and acidity that V60, Chemex, and Kalita pull out of the bean."
+  slug="learn/best-coffee-for-pour-over"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-22"
+  faqItems={faqItems}
+  relatedPages={relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Want help choosing <em>pour-over coffee?</em>"
+  ctaBody="Volcanica's catalog of 150+ single origins makes it the deepest pour-over library online. Sort by origin, roast level, and processing to find your match."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">Pour-over rewards a narrow band of coffees and punishes everything outside it. The method works best with light to medium washed single origins from high-altitude farms, where dense beans and clean processing produce the floral, citric, and tea-like cups the paper filter is built to deliver. It punishes heavy dark roasts (bitter, papery), weighty Sumatrans (the body collapses under filtration), and stale supermarket blends (no bloom, no aroma, no point). If you want a single recommendation that defines what pour-over is supposed to taste like, buy <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Ethiopian Yirgacheffe</a> and brew it on a V60 at 1:16. That is the benchmark cup the rest of the guide circles back to.</p>
+
+<p class="body">The five picks below are all real coffees from real specialty roasters, ordered by how reliably they reward the method. After the picks, we cover brew technique, the three major filter formats (V60, Chemex, Kalita), and the mistakes that ruin even great beans. Read the <a href="/learn/single-origin-coffee-guide" style="color: var(--gold); text-decoration: none;">single origin coffee guide</a> first if you want background on why origin character matters before paying $22 a bag for a 250g cup.</p>
+
+<h2 class="section-head">What makes a coffee great <em>for pour-over</em></h2>
+
+<p class="body">Pour-over is a paper-filtered, gravity-fed, slow-saturation method. Every choice the brewer makes (grind, ratio, pour pattern, temperature) is in service of one outcome: clean, even extraction that lets the bean's origin character read through clearly. The paper filter strips lipids and fines that would carry body and silt, so what's left in the cup is acidity, aromatics, and sugar development. That is the lens through which to pick beans.</p>
+
+<h3 class="sub-head">Light to medium roast</h3>
+<p class="body">Light and medium roasts preserve the volatile aromatic compounds (esters, aldehydes, terpenes) that produce jasmine, bergamot, blueberry, and stone fruit notes. Dark roasts burn those compounds off and replace them with Maillard browning, which reads as chocolate, caramel, and at the dark end, char. Dark roast on pour-over tastes thin and ashy because the method strips the body that dark roast usually leans on. Stick to roasts where the bean's natural color is still visible: light brown, no oil sheen.</p>
+
+<h3 class="sub-head">Washed processing</h3>
+<p class="body">Washed coffees go through a depulping and fermentation step that removes all fruit before drying, producing beans with the cleanest possible flavor profile: pure varietal and terroir, no fruit-fermentation overlay. Natural-process coffees ferment in the fruit and pick up berry, wine, and tropical notes that are gorgeous on a French press but muddle under a paper filter. If you're choosing between two bags of the same origin, washed wins for pour-over nine times out of ten. The <a href="/learn/washed-vs-natural-coffee" style="color: var(--gold); text-decoration: none;">washed vs natural processing breakdown</a> covers why this matters at the cellular level.</p>
+
+<h3 class="sub-head">High-grown beans (1,400m and up)</h3>
+<p class="body">Altitude matters because slower cherry maturation produces denser beans with more concentrated sugars. A bean grown at 1,800m has roughly 30 percent more density than one grown at 800m, which translates to sharper acidity, more sugar development under heat, and better mechanical structure in the grinder (denser beans fracture more uniformly). Pour-over rewards that density because slow saturation gives the dense bean time to release sugars in stages.</p>
+
+<h3 class="sub-head">Single-origin so character reads through</h3>
+<p class="body">Blends are designed for body and consistency. A pour-over filter strips body and broadcasts character, so a blend ends up as the average of its parts (flat). Single origins broadcast one place, one farm, one varietal, so the brew reads like that place. Yirgacheffe should taste like Yirgacheffe. Kenya AA should taste like Kenya AA. Pour-over is the method that makes that distinction audible in the cup.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">1,400m+</div>
+    <div class="stat-label">Minimum altitude for pour-over grade single origins</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">86+</div>
+    <div class="stat-label">SCA cupping score threshold for the picks below</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1:16</div>
+    <div class="stat-label">Default coffee-to-water ratio by weight</div>
+  </div>
+</div>
+
+<h2 class="section-head">Top picks: <em>five coffees</em> that earn the pour-over</h2>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 1 / Top Choice</div>
+  <div class="buy-card-title">Volcanica Ethiopian Yirgacheffe</div>
+  <div class="buy-card-notes"><strong>Notes:</strong> jasmine, bergamot, lemon zest, tea-like body, lingering honey finish. <strong>Why:</strong> the benchmark pour-over coffee. Grown at 1,800 to 2,200m in the Gedeo Zone of southern Ethiopia, fully washed, screen-19 plus beans, and roasted light enough to keep every aromatic intact. If you have never tasted what people mean when they say a coffee is "floral" or "tea-like," brew this at 1:16 on a V60 and the answer arrives in the first sip.</div>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Ethiopian Yirgacheffe →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 2 / Roaster Pick</div>
+  <div class="buy-card-title">Coffee Bros. Washed Single Origin</div>
+  <div class="buy-card-notes"><strong>Notes:</strong> varies by lot but consistent clarity (recent lots from Ethiopia Guji ran red apple, milk chocolate, citrus peel; Colombia Huila lots ran caramel, plum, toasted almond). <strong>Why:</strong> every coffee on the site is labeled by origin, farm, process, varietal, altitude, and SCA score (86+ floor). The rotating washed single origins are roasted specifically for filter brewing and the bag tells you exactly what you bought, which is rare in specialty.</div>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Washed Single Origins →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 3 / High Acid</div>
+  <div class="buy-card-title">Volcanica Kenya AA</div>
+  <div class="buy-card-notes"><strong>Notes:</strong> blackcurrant, grapefruit, tomato leaf, wine-like acidity, syrupy body in the finish. <strong>Why:</strong> pour-over showcases Kenya's signature high-acid clarity better than any other method. AA grade means screen-18 plus beans from Nyeri and Kirinyaga farms at 1,700 to 2,000m, double-washed with the Kenyan fermentation protocol that produces the country's distinctive savory-fruit profile. This is the cup you brew when you want to argue that coffee is wine.</div>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Kenya AA →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 4 / Beginner Friendly</div>
+  <div class="buy-card-title">Volcanica Costa Rica Tarrazu</div>
+  <div class="buy-card-notes"><strong>Notes:</strong> honey, red apple, brown sugar, milk chocolate undertone, clean finish without sharp acidity. <strong>Why:</strong> balanced and forgiving for newer pour-over drinkers. Tarrazu's volcanic soil and 1,500 to 1,800m elevation produce a sweet, well-structured cup that survives small technique mistakes. If your bloom is sloppy or your pour rate uneven, this bean still delivers a pleasant cup, where Yirgacheffe or Kenya AA would punish you with sourness.</div>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Costa Rica Tarrazu →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 5 / Discovery</div>
+  <div class="buy-card-title">Spirit Animal Coffee Single Origin (Rotating)</div>
+  <div class="buy-card-notes"><strong>Notes:</strong> depends on the lot; recent rotations have included washed Honduran from Marcala (peach, panela, hibiscus) and washed Colombian from Cauca (orange marmalade, dark chocolate, walnut). <strong>Why:</strong> smaller-batch direct-trade discovery option. Most lots are organic, all are washed by the producer cooperative, and the company publishes the farmgate price paid per pound. Smaller roast batches mean you get coffees within 7 to 10 days of roasting, which matters for pour-over more than most realize.</div>
+  <a href="https://spiritanimalcoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Spirit Animal Coffee →</a>
+</div>
+
+<p class="body">Worth noting: if you fall hard for Yirgacheffe and want to go deeper, the <a href="/learn/ethiopian-coffee-guide" style="color: var(--gold); text-decoration: none;">Ethiopian coffee guide</a> walks through the regional differences between Yirgacheffe, Sidamo, Guji, and Harrar, all of which behave differently under a paper filter.</p>
+
+<h2 class="section-head">How to brew pour-over <em>that actually works</em></h2>
+
+<p class="body">Great beans are necessary but not sufficient. The method below is the standard third-wave specialty protocol, scaled to a 250g brew (one large mug or two small cups). It works on V60, Chemex, and Kalita with minor adjustments noted in the next section.</p>
+
+<h3 class="sub-head">Ratio: 1:16 to 1:17 by weight</h3>
+<p class="body">For 250g of water, use 15.6g of coffee (1:16) for the default. For very light roasts or high-acid coffees like Kenya AA, drop to 14.7g (1:17) to let sweetness build. Always weigh both. Volume measures (tablespoons, scoops) vary by grind size and bean density and will throw your ratio off by 15 percent or more.</p>
+
+<h3 class="sub-head">Water temperature: 200°F (195°F for very light)</h3>
+<p class="body">Water at 200°F extracts the broad band of soluble compounds (acids, sugars, melanoidins) at the rate the method assumes. For very light roasts where the bean is denser and less developed, 195°F gives you a longer extraction window without scorching the surface aromatics. Anything below 190°F under-extracts and produces sour, hollow cups regardless of bean quality.</p>
+
+<h3 class="sub-head">Grind: medium-fine, between table salt and sugar</h3>
+<p class="body">Grind so the particles look like a mix of coarse salt and fine sugar (around 600 to 800 microns on a precision burr). Too coarse and water rushes through, producing a sour, weak, under-extracted cup. Too fine and the bed chokes, brew time stretches past 4 minutes, and the cup goes bitter and astringent. If you're using a stepped burr grinder, start at the middle of the filter range and adjust based on total brew time.</p>
+
+<h3 class="sub-head">Bloom: 30 to 45 seconds with 2x coffee weight</h3>
+<p class="body">For 15.6g of coffee, pour 31g of water in concentric circles over the bed, then wait 30 to 45 seconds. Fresh coffee should puff up and release visible CO2. If it barely moves, your beans are stale (over 4 weeks past roast date is a common cause). The bloom is the most diagnostic phase of the brew, watch it.</p>
+
+<h3 class="sub-head">Main pour and total brew time</h3>
+<p class="body">After bloom, pour in slow concentric circles from center outward, avoiding the filter walls. Pour in 2 or 3 phases for a 250g brew, letting the bed drop slightly between pours. Total brew time from first water to last drip: 3:00 to 3:30. Under 2:45 means coarser grind; over 3:45 means finer or hotter problem.</p>
+
+<div class="callout">
+  <p>The single most reliable predictor of pour-over quality is total brew time. Hit 3:00 to 3:30 with a 1:16 ratio at 200°F and you will get 80 percent of the way to the cup the bean is capable of, every time. Everything else is fine-tuning around that anchor.</p>
+</div>
+
+<h2 class="section-head">V60 vs Chemex <em>vs Kalita</em></h2>
+
+<p class="body">The filter and dripper change the cup more than most people expect. The same beans, ratio, and temperature produce three meaningfully different drinks across the major formats. None is wrong; pick based on the cup you want.</p>
+
+<h3 class="sub-head">Hario V60</h3>
+<p class="body">Cone-shaped, single hole, ridged walls. The V60 is clarity-forward and fast-drawdown, producing the cleanest, most aroma-driven cup of the three. It rewards precise technique and punishes sloppy pours with channeling. Brew time runs 2:45 to 3:15 for 250g. Best for: Yirgacheffe, Kenya AA, light roast clarity hunting. The V60 is what specialty cafes use in competition; it's the format the picks above were calibrated for.</p>
+
+<h3 class="sub-head">Chemex</h3>
+<p class="body">Hourglass-shaped, thick bonded paper filter (20 to 30 percent heavier than V60 paper). The Chemex's thicker filter slows drawdown and strips more body, producing a cleaner but slightly more delicate cup. Brew time runs 4:00 to 5:00 for 500g (Chemex is harder to brew small). Best for: Costa Rica Tarrazu, balanced Colombians, anyone who wants a more silky mouthfeel without sacrificing clarity. The thick filter is unforgiving of stale beans.</p>
+
+<h3 class="sub-head">Kalita Wave</h3>
+<p class="body">Flat-bottomed, three small holes, ridged paper filter that creates an air gap around the bed. The Kalita's flat bottom forces even extraction regardless of pour technique, making it the most beginner-friendly of the three. Brew time runs 3:00 to 3:30 for 250g. Best for: Spirit Animal rotations, Coffee Bros. lots where you're learning the coffee, anyone whose pour is still inconsistent. The Kalita delivers 90 percent of V60 clarity with 50 percent of the skill required.</p>
+
+<h2 class="section-head">Common mistakes that <em>ruin</em> even great coffee</h2>
+
+<p class="body">If your pour-over tastes off and you're brewing one of the picks above, the bean is almost never the problem. The error is usually one of these five.</p>
+
+<ul class="body-list">
+  <li><strong>Stale beans:</strong> over 4 weeks past roast date is the death zone for pour-over. Beans bloom weakly, channel, and taste cardboardy. Check the bag's roast date, not the sell-by.</li>
+  <li><strong>Pre-ground coffee:</strong> ground coffee loses 60 percent of its aromatic compounds in the first 15 minutes after grinding. Pre-ground from the store is dead by the time you open the bag. Buy whole bean or don't bother with pour-over.</li>
+  <li><strong>Wrong grind size:</strong> too coarse produces sour, weak, under-extracted cups (brew time under 2:30). Too fine produces bitter, astringent, choked brews (brew time over 4:00). Time the brew and adjust grind, not pour speed.</li>
+  <li><strong>Water temperature too low:</strong> water below 195°F under-extracts and tastes sour regardless of grind. Use a thermometer or a variable-temp kettle. Off-boil for 30 seconds gets you to roughly 200°F at sea level.</li>
+  <li><strong>Skipping the bloom:</strong> pouring full water volume without the 30 to 45 second bloom traps CO2 in the bed, channels the water around the trapped gas, and produces uneven extraction. The bloom is non-negotiable.</li>
+</ul>
+
+<div class="callout">
+  <p>If you change one thing today, switch from pre-ground to whole-bean and grind immediately before brewing. The difference in the cup is larger than any other single intervention, including upgrading the bean itself.</p>
+</div>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

@@ -1,0 +1,228 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Why is Kona coffee so expensive?",
+    a: "Three reasons stack on top of each other. The Kona growing region is roughly 30 square miles of volcanic slope on a single side of one Hawaiian island, so total supply is microscopic compared to Brazil or Colombia. The terrain is too steep for mechanical harvesting, so every cherry is hand-picked, often selectively over multiple passes. And Hawaii is a U.S. state, which means farmers pay U.S. minimum wage and follow U.S. labor and environmental regulations. A pound of authentic 100% Kona typically runs $40 to $80 because the cost floor of producing it is genuinely that high."
+  },
+  {
+    q: "Is Kona coffee worth the price?",
+    a: "If you compare a real 100% Kona to a generic supermarket blend, the answer is an easy yes. If you compare it to a top-tier Ethiopian Yirgacheffe or a Panama Geisha at the same price, it depends on what you value. Kona's signature is balance: smooth body, mild brightness, milk chocolate and nut notes, very low bitterness, almost no harsh edges. It is the opposite of a wild, fruit-forward coffee. Buyers who want a refined, easy-drinking, never-aggressive cup find it absolutely worth it. Buyers chasing acidity fireworks may prefer East African origins."
+  },
+  {
+    q: "Is peaberry Kona better than Extra Fancy?",
+    a: "Peaberry is a different category, not a higher grade. About 5% of any coffee harvest produces a single round bean inside the cherry instead of the usual two flat-sided beans. Many roasters argue the rounder shape roasts more evenly and concentrates flavor, which is why peaberry tends to taste slightly brighter and more intense than Extra Fancy from the same farm. Extra Fancy is the top grade of normal flat beans. Both are excellent. Peaberry is rarer and usually priced higher."
+  },
+  {
+    q: "What is the difference between Kona and Ka'u coffee?",
+    a: "Both are Hawaiian, both are grown on the Big Island, but they come from opposite sides of the island and taste noticeably different. Kona grows at 800 to 2,500 feet on the western slopes of Mauna Loa and Hualalai and produces the classic smooth, chocolate, nutty profile. Ka'u grows at higher elevation on the southern slopes and produces more acidity, more red apple and stone fruit, and a livelier cup. Ka'u is often called the connoisseur's Hawaiian coffee because it shows more origin character."
+  },
+  {
+    q: "Is Hawaiian coffee always 100% Kona?",
+    a: "No, and this is one of the most misunderstood points in specialty coffee. Hawaii grows coffee in many regions: Kona, Ka'u, Puna, Hamakua, Maui, Molokai, Kauai. A bag labeled 'Hawaiian coffee' might be from any of those origins or a blend. Only beans grown specifically on the Kona coast of the Big Island can be called Kona at all, and only bags labeled '100% Kona' are guaranteed to be all Kona. 'Hawaiian coffee' and 'Kona coffee' are not synonyms."
+  },
+  {
+    q: "How long does Kona coffee stay fresh?",
+    a: "Like all coffee, peak flavor is in the first 2 to 4 weeks after roast date. Whole-bean Kona stored in an airtight container away from light and heat will taste excellent for about 4 weeks and acceptable for 6 to 8. Pre-ground Kona loses aromatics within days, which is a particular shame at this price point. Always buy whole bean and grind right before brewing. Check the roast date on the bag, not a generic 'best by' date."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/kona-coffee-guide', label: 'Kona Coffee Guide', title: 'The Complete Guide to Kona Coffee' },
+  { href: '/learn/kona-coffee-grades', label: 'Kona Coffee Grades', title: 'Understanding Kona Coffee Grades: Peaberry, Extra Fancy, Fancy, and More' },
+  { href: '/learn/what-is-peaberry-coffee', label: 'What Is Peaberry Coffee?', title: 'What Is Peaberry Coffee? The Rare Single-Bean Mutation Explained' },
+  { href: '/learn/best-hawaiian-coffee-gifts', label: 'Best Hawaiian Coffee Gifts', title: 'Best Hawaiian Coffee Gifts' }
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best 100% Kona Coffee: Six Top Picks",
+  "description": "Six ranked picks for authentic 100% Kona coffee, from the rare peaberry harvest to the flagship Private Reserve and a Ka'u alternative for buyers who want more acidity.",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Koa Peaberry Kona Coffee",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Koa Private Reserve Kona Coffee",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Koa Estate Kona Coffee",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Koa Hawaiian Coffee Sampler",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Koa Ka'u Coffee",
+      "url": "https://koacoffee.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Koa Dark Roast Kona Coffee",
+      "url": "https://koacoffee.com"
+    }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Kona Coffee: 6 Authentic 100% Kona Picks (2026 Buyer Guide)"
+  description="Real Kona coffee is the most expensive U.S. specialty origin and one of the most counterfeited. Six verified 100% Kona picks, plus how to spot the 10% blend trap."
+  slug="learn/best-kona-coffee"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Ready to taste <em>real Kona coffee?</em>"
+  ctaBody="Koa Coffee ships 100% Kona, hand-picked and freshly roasted, direct from Hawaii. The single most trusted source for verifiable 100% Kona online."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">Real Kona coffee is the highest-priced specialty coffee origin grown in the United States, and it is also one of the most counterfeited categories in all of coffee retail. Both facts are true, and they explain almost everything about why shopping for Kona is confusing. Authentic 100% Kona from the Big Island of Hawaii routinely sells for $40 to $80 per pound, while bags marketed as "Kona" at airport gift shops, cruise terminals, and grocery store shelves often retail for $15. The cheap bags are not a bargain. They are a different product entirely, legally diluted under a state labeling loophole most consumers have never heard of. If you want to taste the real thing, the safest single source online is <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Koa Peaberry Kona Coffee</a>, the rare 5% of the harvest most Kona experts pick as the single best expression of the origin. This guide ranks six verified 100% Kona picks, explains the 10% blend trap so you never get burned at retail, and walks through how to brew Kona so the price you paid actually shows up in the cup.</p>
+
+<h2 class="section-head">What "real" <em>Kona</em> actually means</h2>
+
+<p class="body">Kona is a geographic indication, not a brand or a style. To be sold as Kona coffee, beans must be grown on the Kona coast of the Big Island of Hawaii, on the western slopes of the Mauna Loa and Hualalai volcanoes, between roughly 800 and 2,500 feet of elevation. The total Kona growing region is about 30 square miles. That is not a typo. The entire global supply of authentic Kona comes from a strip of volcanic hillside smaller than most U.S. cities. Compare that to Brazil, which exports more coffee than the next four origins combined, and you start to understand why real Kona costs what it costs.</p>
+
+<p class="body">The terrain itself prohibits mechanical harvesting. The slopes are too steep, the trees are too irregularly spaced, and the cherries on a single branch ripen at different times. Every Kona cherry is hand-picked, often in multiple selective passes over the harvest season from August through January. Hawaii Department of Agriculture inspectors grade the beans after processing, sorting them into Peaberry, Extra Fancy, Fancy, Number 1, Select, and Prime tiers based on bean size, density, and defect count. That official state grade marking is one of the easiest ways to verify you are looking at the real thing. If you want a deeper breakdown of how the grading actually works, the <a href="/learn/kona-coffee-grades" style="color: var(--gold); text-decoration: none;">Kona coffee grades</a> guide walks through each tier.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">30 sq mi</div>
+    <div class="stat-label">Total Kona growing region</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">800 to 2,500 ft</div>
+    <div class="stat-label">Elevation range</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">Hand-picked, in multiple passes</div>
+  </div>
+</div>
+
+<h2 class="section-head">The 100% Kona vs. <em>Kona-blend trap</em></h2>
+
+<p class="body">This is the single most important consumer-protection fact in Kona coffee, and most buyers have no idea it exists. Hawaii state law allows any bag labeled "Kona blend" to contain as little as 10% actual Kona coffee. The other 90% can be literally anything: low-grade Central American commodity beans, Brazilian Robusta, leftover roaster sweepings. As long as 10% of what is inside the bag came from the Kona coast, the brand can put the word Kona on the front, charge a premium versus a regular blend, and call it legal.</p>
+
+<p class="body">Most of the bags you see at Honolulu airport gift shops, on cruise ship duty-free racks, and in mainland grocery store coffee aisles are 10% blends. They use the Kona name to charge $15 to $25 for what is structurally a generic commercial blend with a small Hawaiian topping. If the label does not say the phrase "100% Kona" in plain English, it is not 100% Kona. Period. There is no other label that means the same thing. "Kona blend," "Kona style," "Kona roast," "Hawaiian Kona blend," and "made with real Kona" all mean somewhere between 10% and 90% of the bag is not Kona at all.</p>
+
+<div class="callout">
+  <p>The rule has exactly one form. If the bag does not say "100% Kona Coffee" on the front, treat it as a blend. Treat the price tag accordingly.</p>
+</div>
+
+<h2 class="section-head">Top picks: <em>six verified 100% Kona</em> bags</h2>
+
+<p class="body">Every pick below is verified 100% Kona (or in the case of pick 5, 100% Ka'u, the connoisseur Hawaiian alternative). All six come from Koa Coffee, which has built its reputation on direct relationships with Kona farms and transparent sourcing. Ranked by intended buyer, not by quality, because all six are excellent at what they are.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 1 · Overall winner</div>
+  <div class="buy-card-title">Koa Peaberry Kona Coffee</div>
+  <p class="buy-card-notes">Tasting notes: milk chocolate, toasted hazelnut, candied citrus peel, light honey finish. Brighter and more concentrated than standard Kona. The rounder peaberry bean roasts more evenly than a flat bean, which delivers a cleaner, more focused cup. About 5% of any harvest, which is why it costs more and sells out faster.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Peaberry →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 2 · Best premium</div>
+  <div class="buy-card-title">Koa Private Reserve Kona Coffee</div>
+  <p class="buy-card-notes">Tasting notes: soft caramel, cocoa nib, mild orange citrus, balanced medium body. This is the classic Kona profile at its peak, built from Extra Fancy grade beans (the top flat-bean grade). If you want to taste exactly what Kona is famous for, this is the bag.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Private Reserve →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 3 · Best value in 100% Kona</div>
+  <div class="buy-card-title">Koa Estate Kona Coffee</div>
+  <p class="buy-card-notes">Tasting notes: brown sugar, milk chocolate, smooth medium body, gentle finish. Traditional medium roast. Same 100% Kona authenticity as Private Reserve, at a more accessible price point. The right entry bag for a first-time Kona buyer who does not want to spend Private Reserve money.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Estate →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 4 · Best gift</div>
+  <div class="buy-card-title">Koa Hawaiian Coffee Sampler</div>
+  <p class="buy-card-notes">A multi-bag variety pack covering 100% Kona, Ka'u, and other Hawaiian origins in side-by-side small bags. The strongest gift SKU in the lineup because the recipient gets to taste the differences across the islands rather than committing to a single bag. Presents well, opens well, tastes well.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Hawaiian Sampler →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 5 · Connoisseur alternative</div>
+  <div class="buy-card-title">Koa Ka'u Coffee</div>
+  <p class="buy-card-notes">Tasting notes: red apple, dried apricot, soft baking spice, more pronounced acidity than classic Kona. Grown at higher elevation on the southern slopes of the Big Island. Ka'u shows more origin character and brightness than Kona and has quietly become the favorite of Hawaiian coffee professionals.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Ka'u →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Pick 6 · Dark-roast preference</div>
+  <div class="buy-card-title">Koa Dark Roast Kona Coffee</div>
+  <p class="buy-card-notes">Tasting notes: bittersweet dark cocoa, toasted almond, light campfire smoke, full body, very low brightness. For buyers who default to dark roasts but want 100% Kona quality rather than commodity dark roast. Holds up well in espresso and French press.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Dark Roast →</a>
+</div>
+
+<h2 class="section-head">How to tell if <em>your Kona is real</em></h2>
+
+<p class="body">Four checks. Run them in this order and you will almost never get fooled.</p>
+
+<ul class="body-list">
+  <li><strong>The label must say "100% Kona Coffee."</strong> Not "Kona blend." Not "Kona-style." Not "Hawaiian Kona blend." The exact phrase "100% Kona" or "100% Kona Coffee" is the only label Hawaii law treats as a guarantee.</li>
+  <li><strong>Look for the Hawaii Department of Agriculture grade marking.</strong> Authentic Kona is officially graded as Peaberry, Extra Fancy, Fancy, Number 1, Select, or Prime. A bag with no grade marking is suspicious.</li>
+  <li><strong>Price floor: anything under $30 per pound is almost certainly fraudulent.</strong> The cost of producing real 100% Kona, even before margin, is higher than that. A $15 "Kona" bag is mathematically impossible to be 100% Kona.</li>
+  <li><strong>Sourcing transparency.</strong> The seller should be willing to name the specific farm, co-op, or estate the beans came from. Real Kona producers are proud of their farms. Counterfeiters are vague.</li>
+</ul>
+
+<p class="body">Apply the same logic to any premium origin claim. If a bag of <a href="/learn/what-is-peaberry-coffee" style="color: var(--gold); text-decoration: none;">peaberry coffee</a> does not name the farm and the harvest year, and the price looks too low to be real, it is probably not what the label says it is.</p>
+
+<h2 class="section-head">How to brew Kona to <em>actually taste it</em></h2>
+
+<p class="body">Spending $50 a pound on Kona and brewing it through a stale paper filter with boiling water out of a kettle is a small tragedy. Three brewing rules will preserve what you paid for.</p>
+
+<h3 class="sub-head">Grind</h3>
+<p class="body">Medium grind for drip coffee makers. Slightly finer for pour-over. Coarser, sea-salt sized, for French press. Always grind right before brewing. Pre-ground Kona loses its aromatic top notes within days, which is exactly the part of the cup the price tag is paying for.</p>
+
+<h3 class="sub-head">Water temperature</h3>
+<p class="body">200 degrees Fahrenheit for medium roast Kona. Boiling water (212 F) scorches the delicate chocolate and citrus notes and brings out bitterness. If you do not have a temperature-controlled kettle, boil water and let it sit off heat for 30 to 45 seconds before pouring.</p>
+
+<h3 class="sub-head">Ratio</h3>
+<p class="body">Standard 1:16 coffee-to-water ratio by weight. Roughly 30 grams of coffee per 480 grams of water. Strong enough to show body, light enough to show the brighter notes. Adjust to taste, but start there.</p>
+
+<h3 class="sub-head">Method recommendation</h3>
+<p class="body">French press is particularly good for Kona Peaberry. The denser, rounder peaberry bean handles longer immersion without over-extracting, and the metal mesh filter preserves the natural oils that carry the milk chocolate and hazelnut notes. Pour-over is the cleanest expression for Private Reserve and Estate, especially V60 with a slow, even pour. Drip is fine if it is your daily method, just use the right water temperature.</p>
+
+<div class="callout">
+  <p>One simple rule for all Kona, regardless of method: never use pre-ground Kona from a bag that has been open more than a week. The flavor difference between freshly ground and stale ground at this price point is enormous, and it is the most common reason buyers conclude Kona is "overrated."</p>
+</div>
+
+<h2 class="section-head">Where Kona fits in the <em>broader Hawaiian coffee picture</em></h2>
+
+<p class="body">Hawaii is the only U.S. state that commercially produces coffee, but Kona is not the only Hawaiian origin worth knowing. Ka'u, on the southern slopes of the Big Island, is the rising star and the connoisseur's pick. Maui produces coffee from the slopes of Haleakala, often with a brighter, more wine-like profile. Molokai, Kauai, and the Hamakua coast of the Big Island all produce smaller quantities. A bag labeled simply "Hawaiian coffee" is not the same thing as a bag labeled "100% Kona," and a sampler is the easiest way to taste the differences without committing to a full pound of each. For the full island-by-island breakdown and how Kona compares to other premium origins, the <a href="/learn/kona-coffee-guide" style="color: var(--gold); text-decoration: none;">Kona coffee guide</a> is the parent reference.</p>
+
+<p class="body">Kona's signature is balance, not intensity. It will not deliver the wild bergamot and jasmine of an Ethiopian washed Yirgacheffe, the syrupy blueberry of an Ethiopian natural, or the funky tropical fruit of a Panama Geisha. What it delivers is a uniquely smooth, low-acid, never-aggressive cup with a soft chocolate and nut backbone, the kind of coffee that wins over people who normally find specialty coffee too harsh. That is the personality you are paying for, and that is why authentic 100% Kona has held its price for decades while other premium origins have come and gone from the spotlight.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

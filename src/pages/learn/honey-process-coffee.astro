@@ -1,0 +1,156 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Does honey-process coffee actually contain honey?",
+    a: "No. Honey-process coffee contains no honey, no bee products, and no added sweetener of any kind. The name comes from the sticky, golden mucilage layer left on the bean during drying. When the cherry is pulped, the fruit underneath looks and feels like honey: tacky, translucent, amber to gold in color. Workers handling the drying beds said the patios looked like they were covered in honey, and the name stuck. The sweetness in the cup is entirely the result of cherry sugars migrating into the bean during slow drying."
+  },
+  {
+    q: "Is honey process the same as semi-washed?",
+    a: "They overlap but are not identical. Semi-washed (also called pulped natural) is a broader category that includes any process where the cherry is pulped but the mucilage is not fully fermented or washed off before drying. Honey process is a more specific, intentional version of pulped natural where producers control exactly how much mucilage stays on the bean (white, yellow, red, or black honey). All honey-process coffee is semi-washed, but not all semi-washed coffee qualifies as honey-process in the modern Central American sense."
+  },
+  {
+    q: "Is honey-process coffee sweeter than natural process?",
+    a: "Honey-process coffee is sweeter than washed coffee but typically less sweet (and less fruit-forward) than full natural process. Natural process keeps the entire cherry on the bean for weeks, which transfers more sugar and more fruit ferment character into the seed. Honey process removes the skin first, so there is less material in contact with the bean and the sweetness profile reads as brown sugar, honeycomb, and stone fruit rather than the blueberry-and-wine intensity of a clean natural. Black honey, the most extreme variant, gets closest to natural in profile."
+  },
+  {
+    q: "Why is honey process more expensive than washed?",
+    a: "Honey process is labor-intensive and risk-heavy. The mucilage-coated beans must be raked and turned multiple times per day across drying patios for two to four weeks to prevent mold and uneven fermentation. Rain or humidity can ruin a lot. Producers charge a premium because more of the harvest can fail, and the successful lots require more daily labor than a washed coffee that finishes drying in a matter of days. The 20 to 40 percent price premium reflects real production cost, not just specialty positioning."
+  },
+  {
+    q: "Is honey-process coffee organic by default?",
+    a: "No. Honey process refers only to the post-harvest method, not to how the coffee was grown. A honey-process coffee can be conventionally farmed, organic, biodynamic, or anything in between. If organic certification matters to you, look for the USDA Organic seal or equivalent on the roaster's product page. Many Costa Rican and Salvadoran honey-process lots happen to come from small farms that use few or no synthetic inputs, but certification is what guarantees it."
+  },
+  {
+    q: "Can I find honey-process coffee from Africa?",
+    a: "It is rare but increasingly possible. Honey process developed in Central America as a water-saving alternative to fully washed coffee, and African producers have historically stuck with washed (Kenya, much of Ethiopia) or natural (parts of Ethiopia, Yemen) methods that suit their infrastructure. A handful of Ethiopian and Rwandan producers have started experimenting with honey-process lots in recent years, and they show up on specialty roaster menus seasonally. They are worth trying when you find them: African terroir plus honey-process sweetness is a distinctive combination."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/washed-vs-natural-coffee', label: 'Processing', title: 'Washed vs Natural Coffee' },
+  { href: '/learn/best-natural-process-coffee', label: 'Buyers Guide', title: 'Best Natural Process Coffee' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Origin Guide', title: 'Single Origin Coffee Guide' },
+];
+---
+
+<ContentLayout
+  title="Honey Process Coffee: What It Is, How It Tastes, Where to Buy"
+  description="Honey process coffee contains no honey. It is named for the sticky golden mucilage left on the bean during drying. Full guide to white, yellow, red, and black honey."
+  slug="learn/honey-process-coffee"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Want to taste <em>honey process for yourself?</em>"
+  ctaBody="Coffee Bros. carries clearly labeled honey-process lots from Costa Rica and beyond. Each bag tells you the processing method, origin, and roast date on the label."
+>
+
+<p class="body">Honey-process coffee is not made with honey. There is no beekeeping involved, no honey added at any stage, and no sweetener of any kind in the bag. The name describes the sticky, golden mucilage layer that coats the bean after the cherry skin is removed: when producers spread the pulped beans on drying patios, the surface looks and feels like it has been smeared with honey. The cup that results tastes like honey too (brown sugar, stone fruit, melon), but every gram of that sweetness comes from the coffee cherry itself, slowly transferring its sugars into the seed during weeks of careful drying.</p>
+
+<p class="body">The method sits between washed and natural process on the spectrum of how much fruit material stays with the bean during drying. Washed coffee scrubs the mucilage off entirely. Natural process leaves the whole cherry intact. Honey process splits the difference: skin off, mucilage on. That single choice produces a category of coffee with its own distinctive flavor signature, and the best examples come from a handful of Central American origins. <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Coffee Bros.</a> carries clearly labeled honey-process Costa Rican lots if you want to start with the textbook example of the method.</p>
+
+<h2 class="section-head">How Honey Process <em>Actually Works</em></h2>
+
+<p class="body">Coffee cherries arrive at the mill with four layers: skin (the outer red or yellow), pulp and mucilage (the sweet, sticky flesh underneath), parchment (a papery hull), and the bean itself. Washed process strips all three outer layers off before drying. Natural process leaves all of them on. Honey process removes only the first one.</p>
+
+<p class="body">The mechanical pulper takes off the skin and most of the pulp but leaves the mucilage clinging to the parchment layer. That mucilage is sticky, sugary, and yellow-gold to amber in color: chemically, it is a thin coating of pectin and fruit sugars, and it behaves exactly like honey on the drying patio. Workers spread the mucilage-covered beans on raised beds or concrete patios and rake them several times per day for two to four weeks. During this slow drying period, the sugars in the mucilage transfer into the bean, taking sweetness and body with them. By the time drying is complete, the dried mucilage forms a brittle shell that gets removed during the final milling step, leaving a green coffee bean that has absorbed flavor from a fruit layer most processing methods strip away.</p>
+
+<p class="body">For a side-by-side comparison of the three main methods and how each one rewrites the same green coffee's flavor profile, the <a href="/learn/washed-vs-natural-coffee" style="color: var(--gold); text-decoration: none;">washed versus natural coffee breakdown</a> covers the extremes; honey process is the deliberate middle.</p>
+
+<h2 class="section-head">The Honey <em>Color Spectrum</em></h2>
+
+<p class="body">Producers in Costa Rica formalized a color-coded grading system for honey process based on how much mucilage stays on the bean and how long it takes to dry. The colors are not added pigments; they describe the actual visible color of the bean during the drying phase, which deepens as more mucilage oxidizes and caramelizes in contact with the sun.</p>
+
+<h3 class="sub-head">White honey</h3>
+<p class="body">Roughly 10 to 15 percent of the mucilage is left on the bean before drying, and the drying phase is fast (often under eight days) using high sun exposure. The light residual mucilage caramelizes quickly and the bean stays pale. White honey is the closest honey-process variant to washed coffee in profile: clean acidity, light body, subtle sweetness, and the smallest deviation from the underlying terroir. It is what most large producers default to when they first add honey-process to their lineup.</p>
+
+<h3 class="sub-head">Yellow honey</h3>
+<p class="body">Roughly 25 to 50 percent of the mucilage is retained, and drying takes about ten to fifteen days. Yellow honey is the most commercially common honey-process style and is what most roasters mean when they label a coffee simply as honey-process without specifying a color. The cup shows balanced sweetness, medium body, and clear stone-fruit and brown-sugar notes without veering into ferment territory. It is the easiest entry point for tasting what the method does.</p>
+
+<h3 class="sub-head">Red honey</h3>
+<p class="body">Roughly 50 to 90 percent of the mucilage stays on, and drying stretches to two or three weeks, often under partial shade to slow the process. Red honey shows deeper sweetness (think dried fig, brown butter, baked stone fruit), heavier body, and a longer finish. The slower fermentation that happens during drying adds a subtle wine note that recalls natural process without going as far. Skilled producers favor red honey because it shows the most flavor differentiation from washed without the defect risk of black.</p>
+
+<h3 class="sub-head">Black honey</h3>
+<p class="body">All of the mucilage (essentially 100 percent) is retained, drying happens in deep shade for up to 30 days, and the lots are turned constantly to prevent mold. Black honey is the riskiest version of the method and the closest to natural process in flavor profile. Expect dense body, jammy fruit, baker's chocolate, and pronounced sweetness. Less than a small fraction of any farm's harvest is processed this way because the failure rate is high and the labor cost is brutal, but a clean black honey lot is one of the most distinctive cups Central America produces.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">10-15%</div>
+    <div class="stat-label">White honey mucilage retained, fastest dry</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">25-50%</div>
+    <div class="stat-label">Yellow honey, most common commercial style</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">50-90%</div>
+    <div class="stat-label">Red honey, deeper sweetness, slower dry</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">~100%</div>
+    <div class="stat-label">Black honey, up to 30 days drying, highest risk</div>
+  </div>
+</div>
+
+<h2 class="section-head">Flavor Profile: What to <em>Expect in the Cup</em></h2>
+
+<p class="body">Honey-process coffee has a recognizable signature once you have tasted a few. The dominant note is sweetness, but it is a specific kind of sweetness: orchard fruit and brown sugar rather than the berry-and-wine of a natural or the bright lemon-and-jasmine of a washed. Expect peach, apricot, nectarine, dried fig, honeycomb, milk chocolate, melon, and brown sugar across the spectrum, with the proportions shifting based on color (white honey leans peach and apricot; red and black lean fig, baked fruit, and chocolate).</p>
+
+<p class="body">Body is medium to full: heavier than washed, lighter than natural, with a syrupy mouthfeel that comes directly from the absorbed mucilage sugars. Acidity is present but rounded, more like ripe nectarine acidity than the citrus brightness of a Kenyan washed. Bitterness sits noticeably lower than washed coffee at the same roast level, which makes honey-process coffees forgiving for drinkers who normally take milk or sweetener and want to try black coffee.</p>
+
+<div class="callout">
+  <p>If a washed coffee tastes like a fresh lemon and a natural tastes like a glass of wine, a honey process tastes like a ripe peach with brown sugar dusted on top. That description is reductive but useful: the sweetness is fruit-derived but cooked rather than fresh, and the texture is unmistakably syrupy.</p>
+</div>
+
+<h2 class="section-head">Best Origins for <em>Honey Process</em></h2>
+
+<p class="body">Costa Rica is the spiritual home of modern honey process. The method was perfected in Tarrazu, the country's premier growing region, during the 1990s and 2000s as a deliberate response to drought years when fully washed processing (which requires huge volumes of fresh water) became unsustainable. Costa Rican micro-mills standardized the white/yellow/red/black color system, and Costa Rican honey lots remain the benchmark for what the method should taste like at every grade.</p>
+
+<p class="body">El Salvador is the second great honey-process origin and increasingly competitive with Costa Rica at the top end. Bourbon and pacamara varieties grown at high altitude in regions like Apaneca-Ilamatepec produce honey-process lots with extraordinary stone-fruit character and a creamy body that rivals anything from Tarrazu. Salvadoran honey-process is often underpriced relative to its quality, which makes it one of the best value picks in specialty.</p>
+
+<p class="body">Honduras and Nicaragua both produce solid honey-process coffee, particularly from cooperatives and small mills that have adopted the Costa Rican color system. These origins tend to land at lower price points than Costa Rica with similar (if slightly less refined) flavor profiles, which makes them excellent for daily drinking rather than special-occasion brewing. Brazil also produces large volumes of pulped natural coffee that qualifies as a form of honey process; Brazilian honey lots lean heavier on chocolate, nut, and brown sugar than the stone-fruit profile of Central America.</p>
+
+<p class="body">If you are building a tasting flight to compare processing methods across the same region, our <a href="/learn/single-origin-coffee-guide" style="color: var(--gold); text-decoration: none;">single origin coffee guide</a> walks through how to read producer labels and lot information, and the <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none;">processing methods overview</a> shows where honey sits among the other six common methods used in specialty coffee today.</p>
+
+<h2 class="section-head">What to <em>Buy</em></h2>
+
+<p class="body">Two roasters consistently carry honey-process Costa Rican coffee with clear labeling and recent roast dates. Both ship promptly and identify the processing method explicitly on the product page rather than burying it in fine print.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Honey Process Starter Pick</div>
+  <div class="buy-card-title">Coffee Bros. Honey Process Costa Rica</div>
+  <p class="buy-card-notes">Costa Rican honey-process lot with clearly labeled processing method, origin region, and roast date. Tasting notes typically include peach, brown sugar, milk chocolate, and honeycomb. Best entry point for buyers who want to taste the textbook expression of the method from the country that perfected it.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Honey Process →</a>
+</div>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Classic Origin: Tarrazu Honey</div>
+  <div class="buy-card-title">Volcanica Costa Rica Tarrazu Honey</div>
+  <p class="buy-card-notes">Single-origin Tarrazu honey-process lot from the region where the method was perfected. Expect apricot, nectarine, dried fig, and a syrupy body. Volcanica's catalog depth makes it easy to order their washed Tarrazu alongside this honey lot for a same-region processing comparison.</p>
+  <a href="https://www.volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Tarrazu Honey →</a>
+</div>
+
+<h2 class="section-head">Roasting and <em>Brewing Recommendations</em></h2>
+
+<p class="body">Honey-process coffee roasts best at City+ to Full City, roughly the same window as a clean natural. That range develops the sugars enough to expose the stone-fruit and brown-sugar character without pushing into the roast-forward territory that buries origin flavor. Avoid French roast or any heavily charred development: the sweetness that defines the method evaporates above Full City, and what remains is just generic dark roast bitterness with none of the payoff.</p>
+
+<p class="body">For brewing, pour-over and drip both perform extremely well. The medium-to-full body of honey process means it does not need the heavier extraction of a French press to feel substantial in the cup. A standard V60 or Kalita Wave pour with a medium grind, water at 200 to 205 degrees Fahrenheit, and a 1:16 ratio will surface the stone fruit cleanly. Drip brewers do almost as well with less attention.</p>
+
+<p class="body">Espresso is where honey-process coffee genuinely excels and is underused. Pulled as a single origin or used as a base in a blend, honey-process beans bring built-in sweetness to the shot that washed coffees simply do not have. A Costa Rican yellow honey pulled as a 1:2 espresso ratio produces a syrupy, peach-and-honeycomb shot that needs no added sugar even for drinkers who normally take it. For milk drinks, honey-process espresso adds caramel depth that pairs beautifully with steamed whole milk.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>
