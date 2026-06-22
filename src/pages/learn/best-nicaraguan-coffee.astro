@@ -1,0 +1,205 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is Nicaraguan coffee good?",
+    a: "Nicaraguan coffee is among the most underrated specialty origins in Central America. The country's highlands (Matagalpa, Jinotega, Nueva Segovia) sit at 1,000 to 1,500 meters on volcanic soil with cool nights and consistent shade cover, conditions that produce balanced, sweet, medium-bodied cups with citrus, milk chocolate, and stone fruit at the entry tier, and tea-like floral complexity at the microlot tier. Nicaragua does not produce the explosive acidity of Kenya or the intense florals of high-grown Ethiopian Yirgacheffe; what it produces is clean, sweet, traceable specialty coffee that scores in the mid-80s and tops out, in rare lots, above 87 SCA points. The best Nicaraguan coffee comes from single-estate microlots with named varieties, not blended country-of-origin bags."
+  },
+  {
+    q: "What is the best Nicaraguan coffee region?",
+    a: "Matagalpa is the historic specialty heartland of Nicaragua. The region produces cool-night highland coffee on volcanic soil with established shade canopies, and the families with multi-generational cultivation experience are concentrated there. Jinotega rivals Matagalpa for total specialty volume, and Nueva Segovia produces some of the country's most acidic, brightest cups. Finca El Quetzal in the Matagalpa highlands is one of the few Nicaraguan estates with a full mill on site (Beneficio San Miguel) and full tree-to-export traceability, which is the structural reason their lots can be sold green to roasters and home roasters directly without importer markups."
+  },
+  {
+    q: "How is El Quetzal Nicaragua Geisha different from Panama Geisha?",
+    a: "Panama Geisha (especially Hacienda La Esmeralda) is grown at 1,500 to 1,800 meters and has set the global benchmark for floral, tea-like Geisha cups at $50 to $100 a pound roasted, with auction lots reaching far higher. El Quetzal Nicaragua Geisha is grown at 1,200+ meters in Matagalpa, below the conventional Geisha altitude threshold, but the micro-climate (cool nights, consistent rainfall, shade-grown under 1960s eucalyptus canopy) compensates. The 2026 harvest cupped at 87 points with jasmine, peach, apple, and a tea-like finish. The practical difference is price and access: Panama Geisha is hard to source at retail and expensive when available; El Quetzal Nicaragua Geisha is available farm-direct and is in its second year of production with the program scaling."
+  },
+  {
+    q: "Where can I buy 100% Nicaraguan single-origin coffee?",
+    a: "The most reliable source for 100% Nicaraguan single-estate coffee is direct from the farm. Finca El Quetzal sells green coffee directly from elquetzal.coffee, with US fulfillment from Dupuy's Houston warehouse. The site offers samples (150 grams), small lots (5, 10, 30 pounds), and 69-kilogram sack forward contracts for buyers committing to a future harvest. Grocery-tier bags labeled simply 'Nicaragua' are usually commodity coffee blended from multiple farms and lots; they bear no resemblance to the single-estate microlots described in this guide."
+  },
+  {
+    q: "Is Laurina really lower-caffeine?",
+    a: "Yes. Laurina (also called Bourbon Pointu) is a naturally low-caffeine mutation of the Bourbon variety. Its caffeine content is roughly 0.5% by weight versus the 1.4% typical of standard arabica. The reduction is genetic, not from chemical decaffeination, so the cup retains the aromatic complexity that solvent or water decaf processes typically strip out. El Quetzal Laurina cups at 85 SCA points with apricot, raspberry, lemon zest, milk chocolate, and a white tea finish. Production in 2025 was under 1,000 pounds total, which is why it sells primarily as samples and small lots."
+  },
+  {
+    q: "What does a 69kg sack of green coffee actually mean?",
+    a: "Sixty-nine kilograms (about 152 pounds) is the standard export sack size for green coffee globally. Buying a full sack is a commercial-volume commitment, typically reserved for roasters, cafes, or serious home roasters operating a green coffee program. For Nicaraguan coffee from a single estate, sack-level buying often happens as a forward contract for the next harvest: the buyer reserves the lot before harvest, the farm prioritizes that lot through the mill, and the coffee ships once it is processed and graded. El Quetzal offers forward contracts on Laurina for the 2027 harvest as one example."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/nicaraguan-coffee-guide', label: 'Origin Guide', title: 'Nicaraguan Coffee: The Complete Origin Guide' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'The Single Origin Coffee Guide' },
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot', title: 'Nicaragua Geisha Green Coffee' },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Nicaraguan Coffee to Buy Online 2026",
+  "description": "Top single-estate Nicaraguan coffees from Finca El Quetzal in the Matagalpa highlands",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "El Quetzal Nicaragua Geisha", "url": "https://elquetzal.coffee/collections/geisha" },
+    { "@type": "ListItem", "position": 2, "name": "El Quetzal Washed Laurina (Bourbon Pointu) Green Coffee", "url": "https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" },
+    { "@type": "ListItem", "position": 3, "name": "El Quetzal Anaerobic Java Green Coffee", "url": "https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" },
+    { "@type": "ListItem", "position": 4, "name": "El Quetzal Washed Java (Javanica)", "url": "https://elquetzal.coffee" },
+    { "@type": "ListItem", "position": 5, "name": "El Quetzal Forward Contract: Laurina 2027 Harvest", "url": "https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" },
+    { "@type": "ListItem", "position": 6, "name": "El Quetzal Sample Set: Matagalpa Microlots", "url": "https://elquetzal.coffee" }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Nicaraguan Coffee to Buy Online (2026 Guide)"
+  description="Best Nicaraguan coffee: six El Quetzal microlots ranked by cupping score, varietal, and processing. Geisha, Laurina, Java, Anaerobic."
+  slug="learn/best-nicaraguan-coffee"
+  section="learn"
+  sectionLabel="Buyers Guide"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Sourcing <em>Nicaraguan microlots farm-direct?</em>"
+  ctaBody="Finca El Quetzal in the Matagalpa highlands sells green coffee directly to roasters and home roasters, with US fulfillment from Houston. Samples start at 150 grams; forward contracts available on the 2027 harvest."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">The best Nicaraguan coffee in 2026 is not on a grocery shelf. It is the single-estate, named-variety, mill-traceable microlot grown in the Matagalpa highlands and sold by the farm itself. What separates the best Nicaraguan coffee from the rest is a stack of four specific things working at once: altitude above 1,000 meters on volcanic soil, a named arabica variety (Geisha, Laurina, Java, Villa Sarchi, not generic Caturra blended across lots), processing executed at a controlled mill rather than on a co-op patio, and a cupping score documented at or above 84 SCA points. <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal's Nicaragua Geisha</a>, cupped at 87 points in the 2026 harvest, is one of the few Nicaraguan lots that clears all four bars.</p>
+
+<p class="body">This guide ranks the six best Nicaraguan coffees to buy online in 2026, all from Finca El Quetzal in the Matagalpa highlands. Every pick is a named-variety microlot from a single estate with its own mill (Beneficio San Miguel) and tree-to-export traceability. There is no commodity bag in this list. If you want the broader origin context (regions, history, varieties, processing methods), the <a href="/learn/nicaraguan-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Nicaraguan coffee origin guide</a> covers it in full.</p>
+
+<h2 class="section-head">How We <em>Ranked These</em></h2>
+
+<p class="body">Six criteria, weighted toward the things that actually predict cup quality and value at the specialty tier.</p>
+
+<ul class="body-list">
+  <li><strong>SCA cupping score.</strong> Documented Specialty Coffee Association points, scored by a trained Q grader. Anything below 80 is commodity. 80 to 84 is entry-tier specialty. 85 to 86 is solid microlot. 87+ is rare. We weighted scoring heavily.</li>
+  <li><strong>Traceability.</strong> Farm-direct with a named estate, named variety, and named mill ranks above co-op blended lots, which rank above country-of-origin grocery bags. El Quetzal sells direct without importer intermediaries.</li>
+  <li><strong>Varietal distinctiveness.</strong> Named heirloom and rare varieties (Geisha, Laurina, Java) ranked above generic Caturra or Catuai, which dominate commodity Nicaragua and rarely produce the aromatic complexity that distinguishes a great cup.</li>
+  <li><strong>Processing care.</strong> Mill-processed coffee with controlled fermentation outperforms patio-processed co-op coffee. Anaerobic and honey processes get extra credit when executed well, less when executed sloppily.</li>
+  <li><strong>Value at price point.</strong> A $75 microlot needs to deliver a cup that justifies the price gap over a $20 bag. We considered the dollar-per-cupping-point ratio and the rarity of the variety.</li>
+  <li><strong>Freshness.</strong> For green coffee, harvest date and arrival date matter more than roast date. Recent-harvest green coffee with controlled warehouse storage cups dramatically better than aged stock.</li>
+</ul>
+
+<div class="callout">
+  <p>The single biggest predictor of a great Nicaraguan cup is not the region or the variety: it is whether the farm processes its own coffee at its own mill. Co-op processing flattens lot-to-lot character. On-farm milling preserves it. Every coffee in this ranking comes from Beneficio San Miguel, El Quetzal's mill on the estate.</p>
+</div>
+
+<h2 class="section-head">The Six <em>Best Nicaraguan Coffees</em></h2>
+
+<h3 class="sub-head">1. Best Overall: El Quetzal Nicaragua Geisha</h3>
+
+<p class="body">The 2026 Geisha harvest from El Quetzal cupped at 87 SCA points. It is the highest-scoring lot the farm has produced and the most aromatically distinctive Nicaraguan coffee available at retail in 2026. Washed processing, screen size 77.9% above #18, 98.6% exportable. The cup leads with jasmine and white peach, develops through apple and a clean lemon-pith acidity, and finishes long with a delicate black tea character that lingers without becoming astringent. This is the floral, transparent end of the Geisha spectrum, closer to a refined Panama washed than to the more tropical naturals produced in Ethiopia.</p>
+
+<p class="body">Brew it on pour-over, a Hario V60 or Kalita Wave with a 1:16 ratio at 200 degrees Fahrenheit and a medium-fine grind. Avoid French press; the immersion will muddy the aromatic top notes that are the whole reason to buy Geisha. This is the second-year harvest of El Quetzal's Geisha program, with the canopy maturing into peak production. Buy it now or wait two years and pay double.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">87pt</div>
+    <div class="stat-label">SCA score, 2026 harvest</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">2nd</div>
+    <div class="stat-label">Year of Geisha at EQ</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1200+</div>
+    <div class="stat-label">MASL, Matagalpa highlands</div>
+  </div>
+</div>
+
+<p class="body">Source: <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Nicaragua Geisha collection</a> (farm-direct green coffee; samples and lots available).</p>
+
+<h3 class="sub-head">2. Best Rare Variety: El Quetzal Washed Laurina</h3>
+
+<p class="body">Laurina, also known as Bourbon Pointu, is a naturally low-caffeine arabica mutation: roughly 0.5% caffeine by weight versus the 1.4% typical of standard arabica. The reduction is genetic, not chemical, so the cup retains the aromatic complexity that solvent decaffeination strips. El Quetzal's 2025 Laurina cupped at 85 SCA points with apricot, raspberry, lemon zest, milk chocolate, and a long white tea finish. The mouthfeel is silkier than Java or Geisha, the acidity is gentle, and the sweetness is more confected (milk chocolate, not the brown sugar of Java).</p>
+
+<p class="body">Total 2025 production was under 1,000 pounds, which is why Laurina sells primarily as 150-gram samples ($8) and small lots (5, 10, 30 pounds). Forward contracts on 69-kilogram sacks are available for the 2027 harvest. This is the right pick for anyone who wants a low-caffeine specialty coffee that does not taste like decaf, or for a roaster building a curated single-origin program with a rare variety on the menu.</p>
+
+<p class="body">Source: <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Washed Laurina green coffee</a>.</p>
+
+<h3 class="sub-head">3. Best Processing Experiment: El Quetzal Anaerobic Java</h3>
+
+<p class="body">El Quetzal has grown Java (Javanica variety) washed for more than 20 years as the cornerstone of the program. In the 2023/24 harvest, the farm ran a small experimental lot through anaerobic fermentation: sealed, oxygen-free fermentation before pulping, which concentrates fruit-forward esters and produces a distinctly different cup from the washed version. The anaerobic Java cupped at 87 points, one point above the washed Java from the same harvest.</p>
+
+<p class="body">The cup is dramatically different from the washed version. Where the washed Java reads as jasmine and clean stone fruit, the anaerobic reads dried-fruit forward: dark cherry, raisin, prune, with chocolate undertones and subtle nuttiness. Mouthfeel is heavier, acidity is rounder, sweetness lingers longer. This is the right pick for buyers who want to taste exactly what controlled fermentation does to a familiar variety, or for roasters experimenting with anaerobic offerings in a curated lineup.</p>
+
+<p class="body">Source: <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Anaerobic Java green coffee</a> (US fulfillment from Dupuy's Houston warehouse).</p>
+
+<h3 class="sub-head">4. Best Classic Cup: El Quetzal Washed Java</h3>
+
+<p class="body">The washed Java is the cornerstone of El Quetzal's program: more than two decades of cultivation, harvest, and milling refinement focused on one variety on one estate. Java (Javanica) is a tall, leggy arabica originally selected for disease resistance in Indonesia and adapted exceptionally well to the Matagalpa highlands. The washed version is the platonic ideal of a clean Central American cup: jasmine on the nose, juicy stone fruit and citrus on the palate, milk chocolate through the finish, and a clean acidity that does not bite.</p>
+
+<p class="body">This is the baseline against which the anaerobic Java and the Geisha should be tasted. Buying a sample of all three and brewing them side by side on a V60 over a single afternoon is the most efficient education in what variety, processing, and farm care actually do to a cup. The washed Java is the everyday workhorse: the lot a Matagalpa farm would be remembered for even without the rare-variety program around it.</p>
+
+<p class="body">Source: <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Coffee</a> (full catalog; the washed Java is listed alongside the anaerobic version).</p>
+
+<h3 class="sub-head">5. Best Forward Contract: Laurina 2027 Harvest</h3>
+
+<p class="body">The 2027 Laurina forward contract is the closest thing to a coffee futures position available to a small roaster. The mechanics: a buyer reserves a 69-kilogram sack (about 152 pounds) of the 2027 harvest before the crop is picked. The farm prioritizes that lot through the mill, scores it, and ships it once it is graded. The buyer locks in price and access to a variety with under 1,000 pounds of total production per year.</p>
+
+<p class="body">For a roaster building a Nicaragua-forward menu or a cafe wanting to feature a rare-variety pour-over rotation, this is how you guarantee inventory of a coffee that will otherwise sell out as samples and small lots within weeks of arrival. For a home roaster with a sack-level habit, it is the cleanest path to a year-plus supply of a coffee that cups in the mid-80s with the aromatic profile of something twice the price.</p>
+
+<p class="body">Source: <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Washed Laurina</a> (forward contract option listed on the product page).</p>
+
+<h3 class="sub-head">6. Best Introduction: El Quetzal Matagalpa Sample Set</h3>
+
+<p class="body">For a buyer new to single-estate Nicaraguan coffee, the most useful first purchase is a stack of 150-gram samples across varieties, not a single 5-pound lot. A sample of the washed Java, the anaerobic Java, the Geisha, and the Laurina ($8 each on the smallest tier) brewed side by side over two afternoons does more to teach the palate what variety and processing actually do than reading a hundred guides. Each variety holds the farm's voice (the Matagalpa terroir, the mill's processing standards, the shade canopy), and the differences between them are pedagogically clean.</p>
+
+<p class="body">This is also the lowest-risk way to evaluate El Quetzal as a sourcing relationship before committing to a small lot or a forward contract. Samples ship from the same Houston warehouse as the full lots, so the freshness, packaging, and arrival quality are representative of what a larger order will look like.</p>
+
+<p class="body">Source: <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Coffee</a> (sample sizes listed on each product page; 150-gram tier across the lineup).</p>
+
+<h2 class="section-head">How to Buy: <em>Green vs Roasted, Samples vs Lots</em></h2>
+
+<h3 class="sub-head">Green vs Roasted</h3>
+
+<p class="body">El Quetzal sells primarily green coffee. Green coffee is unroasted, shelf-stable for 12 to 24 months in proper storage, and ready to be roasted at home or by a contract roaster. Buying green means buying the lot at the lowest point in the supply chain (no roaster markup, no broker markup), which is why a $75 lot of green Geisha would cup with roasted retail equivalents priced at $50 to $75 per 12-ounce bag at the cafe tier.</p>
+
+<p class="body">Green coffee is the right path if you have a home roaster (a Behmor, a Bullet, an Ikawa, or even a popcorn popper at the entry tier), or if you have a relationship with a contract roaster who will roast your green inventory to your specifications. If you are looking for roasted bags ready to brew, the right path is to find a cafe or roaster who has purchased El Quetzal green and offered it as part of their menu.</p>
+
+<h3 class="sub-head">Sample vs Small Lot vs Forward Contract</h3>
+
+<p class="body">Three sourcing tiers, three different use cases.</p>
+
+<ul class="body-list">
+  <li><strong>Samples (150 grams, $8 typical).</strong> The right entry point for tasting evaluation. Enough coffee for 8 to 10 brewed cups, which is enough to calibrate to a variety across two or three brewing methods.</li>
+  <li><strong>Small lots (5, 10, 30 pounds).</strong> The right tier for a serious home roaster, a small cafe testing a new variety, or a roaster running a guest spot lot. Enough coffee to roast multiple batches and refine a roast profile to the lot.</li>
+  <li><strong>Forward contracts (69-kilogram sacks).</strong> The right tier for a cafe or roaster committing to a variety as a menu fixture. A sack will roast into about 130 to 135 pounds of roasted coffee, depending on roast level and shrinkage.</li>
+</ul>
+
+<h2 class="section-head">How to Brew Nicaraguan <em>Single-Estate Coffee</em></h2>
+
+<p class="body">For the El Quetzal lots in this ranking, pour-over is the brewing method that surfaces the most of what the coffee paid to develop. The aromatic top notes (jasmine, peach, apricot, lemon zest) are paper-filter friendly; immersion methods like French press and AeroPress will dampen them under heavier body and oils.</p>
+
+<ul class="body-list">
+  <li><strong>Brewer.</strong> Hario V60, Kalita Wave 185, or Chemex 6-cup. All three work; choose the one you can grind to consistently.</li>
+  <li><strong>Ratio.</strong> 1:16 for the Geisha and Laurina (lighter, more aromatic). 1:15 for the Java lots (more sweetness extraction).</li>
+  <li><strong>Water temperature.</strong> 200 degrees Fahrenheit for the lighter aromatic lots. 202 degrees for the Java lots, which tolerate slightly hotter extraction.</li>
+  <li><strong>Grind.</strong> Medium-fine, calibrated to a 3 to 4 minute total brew time on a V60. Adjust coarser if the cup tastes bitter, finer if it tastes thin and sour.</li>
+  <li><strong>Bloom.</strong> Twice the weight of the coffee in water, 30 to 45 seconds, before continuing the pour.</li>
+</ul>
+
+<h2 class="section-head">What to <em>Skip</em></h2>
+
+<p class="body">The grocery and online specialty markets are full of bags labeled "Nicaragua" that bear no resemblance to the coffees in this ranking. A few patterns to avoid.</p>
+
+<ul class="body-list">
+  <li><strong>Blended-origin bags labeled "Nicaragua."</strong> If the bag says "Nicaragua blend" or lists multiple regions without a single estate name, it is co-op-aggregated commodity coffee. The price will be low and the cup will be flat.</li>
+  <li><strong>Commodity-tier grocery Nicaraguan.</strong> Brands sold in supermarkets at $8 to $12 per 12 ounces with "Nicaragua" on the label are sourced through C-market futures, not specialty channels. Cupping score is unknown and almost always below 80.</li>
+  <li><strong>Anything without a cupping score.</strong> A specialty Nicaraguan lot worth buying will have an SCA score documented somewhere on the listing or on a sample tag. If there is no score, treat it as commodity.</li>
+  <li><strong>Anything more than 4 weeks past roast date (for roasted coffee).</strong> Specialty coffee peaks 5 to 21 days off roast and begins meaningful decline by 4 weeks. Bags on a shelf with no roast date or a date more than 6 weeks back are stale, regardless of how they cupped fresh.</li>
+  <li><strong>"Nicaragua single origin" without a named farm or variety.</strong> Single-origin at country level is the lowest tier of single-origin labeling. The named-farm, named-variety, named-mill tier is where the value is, and that is what El Quetzal sells.</li>
+</ul>
+
+<h2 class="section-head">The Practical <em>Buying Path</em></h2>
+
+<p class="body">Start with a sample set. Brew the washed Java, the anaerobic Java, and the Geisha side by side, V60, 1:16, 200 degrees. Decide which voice on the estate you connect with most. Buy a 5-pound lot of the favorite for a month of regular brewing. If the variety holds your interest, move to a 10 or 30-pound lot at the next harvest, or place a forward contract on a sack of the Laurina if low-caffeine specialty is a fit for your program. The compounding return on this path: a year in, you will have tasted four varieties from one estate across two or three harvest years, and you will have a calibrated read on what a great Matagalpa cup actually delivers.</p>
+
+<p class="body">For more on what Nicaragua's terroir produces and why the Matagalpa highlands cup the way they do, the <a href="/learn/nicaraguan-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Nicaraguan coffee origin guide</a> covers regions, history, and the country's place in the specialty market. To compare Nicaragua against other origins on the global specialty map, the <a href="/learn/best-single-origin-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">best single origin coffee guide</a> ranks Ethiopia, Colombia, Kenya, and other origin tiers. And for the green-coffee specifics on the Geisha lot ranked first here, the <a href="/microlots/nicaragua-geisha-green-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Nicaragua Geisha green coffee microlot page</a> goes deeper on screen size, exportable percentage, and harvest timing.</p>
+
+</ContentLayout>

@@ -1,0 +1,160 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What makes Matagalpa coffee distinctive?",
+    a: "Matagalpa coffee is shaped by three factors that no other Nicaraguan department combines in the same way: volcanic soil left by the Maribios mountain range, micro-climates between 1,100 and 1,600 meters with consistent cool nights in the 50 to 60 degree Fahrenheit range, and a multi-generation farming culture (many families are on their fourth or fifth generation of coffee on the same hillsides). The result is a cup that reads jasmine and stone fruit over milk chocolate, with the tea-like clarity that high-altitude lots produce and a balanced acidity that buyers often describe as elegant rather than aggressive."
+  },
+  {
+    q: "What altitude does Matagalpa coffee grow at?",
+    a: "Matagalpa coffee grows across a wide altitude range, roughly 800 to 1,600 meters above sea level. The specialty grade lots that score 85 points and above on the SCA scale almost always come from farms at 1,200 meters or higher, where cooler nights slow cherry maturation and concentrate sugars in the bean. Finca El Quetzal, for example, sits above 1,200 MASL in the Matagalpa highlands and produced an 87-point Geisha lot on its 2026 harvest. Below 1,000 meters most Matagalpa coffee falls into commercial rather than specialty grade."
+  },
+  {
+    q: "Is Matagalpa coffee better than Jinotega?",
+    a: "Neither is universally better; they are different. Matagalpa and Jinotega are the two largest coffee-producing departments in Nicaragua and they share a similar baseline of volcanic soil and high altitude, but the cup profiles diverge. Matagalpa lots tend to lead with floral and stone fruit notes (jasmine, peach, apricot) over milk chocolate and a clean tea-like finish. Jinotega lots typically read with more chocolate and nuttiness, slightly heavier body, and less of the floral top end. Specialty buyers usually carry both because they pair into different blends and brew differently."
+  },
+  {
+    q: "What is the best Matagalpa coffee to buy?",
+    a: "For green coffee buyers (roasters and importers), Finca El Quetzal in the Matagalpa highlands is one of the most accessible specialty farms with full traceability, samples available in small lots (150 grams and up), and forward contracts on their flagship varieties. Their 2026 Geisha cupped at 87 points, and their Anaerobic Java microlot has scored consistently in the 87 point range. For roasted bag buyers, most US specialty roasters who carry Nicaragua single origins source from Matagalpa or Jinotega; the bag will usually label the farm or co-op of origin."
+  },
+  {
+    q: "How does Matagalpa coffee taste?",
+    a: "Most Matagalpa lots in the specialty grade range cup with a recognizable family of flavors: jasmine or white floral on the nose, stone fruit (peach, apricot, sometimes apple), milk chocolate or cocoa as the cup cools, and a balanced citric acidity that is brighter than Jinotega but softer than Nueva Segovia. The body is typically medium, the finish tea-like and clean, and the sweetness reads as honey or brown sugar rather than caramel. Higher altitude lots from 1,400 MASL and above intensify the floral character; lots from 1,100 to 1,300 MASL tend to lean more toward the chocolate and stone fruit end of the spectrum."
+  },
+  {
+    q: "Are most Matagalpa coffees washed or natural?",
+    a: "Most Matagalpa coffee is washed. The region's wet-mill infrastructure and traditional family farming practices grew up around the washed process, and the climate (cool nights, defined wet and dry seasons) supports it well. In the last decade a small number of forward-leaning Matagalpa farms have started running natural and anaerobic experimental lots alongside their washed production. Finca El Quetzal's Anaerobic Java is one of the better-known examples: same varietal, same farm, processed in sealed tanks to amplify dried fruit and chocolate intensity over the cleaner washed profile."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot', title: 'Nicaragua Geisha Green Coffee' },
+  { href: '/microlots/anaerobic-java-green-coffee', label: 'Microlot', title: 'Anaerobic Java Green Coffee' },
+];
+---
+
+<ContentLayout
+  title="Matagalpa Coffee: A Guide to Nicaragua's Northern Highlands"
+  description="Matagalpa coffee guide: what Nicaragua's northern highlands grow, the soil, the altitude, the families, and which farms produce the best Matagalpa lots."
+  slug="learn/matagalpa-coffee-guide"
+  section="learn"
+  sectionLabel="Origin Guide"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Source <em>farm-direct Matagalpa green coffee.</em>"
+  ctaBody="El Quetzal Coffee Co. sells green coffee direct from Finca El Quetzal in the Matagalpa highlands. Samples start at 150 grams; full lots and forward contracts are available for roasters who want traceable Nicaragua origin."
+>
+
+<p class="body">Matagalpa is the central coffee department of Nicaragua, sitting in the north-central highlands where the Maribios volcanic range gave way over millennia to deep, mineral-rich soils. Specialty buyers who source Nicaraguan coffee at scale know two place names before all others: Matagalpa and Jinotega. Between them they account for the majority of Nicaragua's specialty grade exports, and within Matagalpa specifically, the combination of altitude (1,100 to 1,600 meters above sea level), volcanic soil, family farming culture that often runs four or five generations deep, and a defined wet and dry season produces cups that read jasmine, stone fruit, and milk chocolate with the tea-like clarity high elevation lots are known for.</p>
+
+<p class="body">The textbook example of a Matagalpa specialty farm is <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Coffee Co.</a>, a fourth-generation operation in the Matagalpa highlands continuously producing specialty coffee since 1947. This guide covers what Matagalpa is, why its terroir matters, the varieties that thrive there, the cup profile to expect, and how Matagalpa compares to its neighboring Nicaraguan departments. For buyers comparing origins more broadly, our <a href="/learn/single-origin-coffee-guide">single origin coffee guide</a> sets the wider context.</p>
+
+<h2 class="section-head">Where Matagalpa Sits on <em>Nicaragua's Coffee Map</em></h2>
+
+<p class="body">Nicaragua's coffee belt runs through the north-central highlands of the country, hugging the spine of mountains that crosses from the Honduran border south toward the central plateau. The three departments that produce the bulk of Nicaragua's specialty coffee are Jinotega (north), Matagalpa (central), and Nueva Segovia (far north, against the Honduran border). Each has a distinct character.</p>
+
+<p class="body">Matagalpa is the most diverse of the three in terms of micro-climates. The department spans elevations from below 800 meters in valley floors up to 1,600 meters on the higher ridges, with cloud forest pockets that stay cool and damp year-round. The result is a single department that can produce both commercial coffee at lower altitudes and 87-point single-estate lots at the top of its range, often within a few kilometers of each other. Buyers who want to understand Nicaragua at depth typically start in Matagalpa because of this range.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">1100-1600</div>
+    <div class="stat-label">MASL altitude range</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">87pt</div>
+    <div class="stat-label">EQ Geisha, 2026 harvest</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1947</div>
+    <div class="stat-label">Finca El Quetzal founded</div>
+  </div>
+</div>
+
+<h2 class="section-head">Geography and Climate: <em>Why Matagalpa Works</em></h2>
+
+<p class="body">Three terroir factors define Matagalpa's specialty potential. The first is volcanic soil. The Maribios mountain range is part of the Central American Volcanic Arc, and although most of its active volcanoes sit further west toward the Pacific, the geological legacy stretches inland through Matagalpa. The soils that resulted are deep, porous, and mineral-rich, with the right balance of drainage and water retention that coffee trees need at altitude. Volcanic terroir is one of the most reliable predictors of specialty potential globally; Matagalpa has it in abundance.</p>
+
+<p class="body">The second is altitude. Most of Matagalpa's specialty grade production happens between 1,100 and 1,600 MASL. At these elevations the daily temperature swing is significant: warm days in the 70s Fahrenheit followed by nights that consistently drop into the 50 to 60 degree range. Cool nights slow the maturation of coffee cherries, which gives the bean more time to develop sugars and concentrate complex flavor compounds. The same plant grown at 700 meters versus 1,400 meters produces dramatically different cups; Matagalpa's high end is where the floral and tea-like character emerges.</p>
+
+<p class="body">The third factor is shade. The traditional Matagalpa farming model is shade-grown coffee under a mixed canopy of eucalyptus, banana, guava, and native hardwoods. At Finca El Quetzal the eucalyptus canopy was planted in the 1960s and still shades the lots today. Shade slows ripening further, protects the soil from erosion, and supports a richer ecosystem of birds and pollinators. Sun-grown coffee can yield more per hectare in the short term, but specialty buyers consistently report better cup quality from shade-grown lots, and Matagalpa's culture has remained largely shade-based.</p>
+
+<p class="body">The climate pattern is a defined wet and dry season. Rains run from May through October, with a dry harvest window from November through February that allows for clean drying. This rhythm supports washed processing, which is what most of Matagalpa traditionally produces.</p>
+
+<h2 class="section-head">A Brief History: <em>From Commodity to Specialty</em></h2>
+
+<p class="body">Matagalpa has grown coffee since the late 1800s, when German immigrants and Nicaraguan landowners established the first commercial farms in the region. Through most of the twentieth century, Matagalpa coffee was a commodity export, blended into larger Central American lots and sold by volume rather than by farm name. Family operations like the Bendaña McEwan family at El Quetzal (continuous since 1947) were the exception rather than the norm.</p>
+
+<p class="body">The Nicaraguan civil war and political instability between 1979 and the early 1990s disrupted the entire industry. Farms were abandoned, infrastructure decayed, and export channels collapsed. The recovery took most of the 1990s and arrived in earnest in the 2000s, when specialty coffee as a global category began rewarding traceability, single estate sourcing, and farm-level differentiation.</p>
+
+<p class="body">Matagalpa adapted faster than most Nicaraguan regions to this shift. By the late 2000s a meaningful number of Matagalpa farms had moved away from anonymous commodity export and toward direct relationships with US and European specialty roasters. Cup of Excellence participation followed, and Matagalpa lots have placed in the top tier of Nicaragua's national competition multiple times. The infrastructure that supports specialty (wet mills with cherry sorting, parchment drying, traceable lot accounting) is now broadly available in the department.</p>
+
+<h2 class="section-head">Varieties Grown in <em>the Matagalpa Highlands</em></h2>
+
+<h3 class="sub-head">Caturra and Catuai</h3>
+<p class="body">Caturra and Catuai account for the largest share of acreage in Matagalpa. Both are Bourbon-descended varieties bred for higher yield and shorter stature, which makes them easier to harvest on steep hillsides. Caturra cups with classic balanced sweetness, milk chocolate, and red fruit. Catuai (a Caturra and Mundo Novo cross) is slightly hardier and similar in cup. Together they form the backbone of Matagalpa's washed specialty production.</p>
+
+<h3 class="sub-head">Java (Javanica)</h3>
+<p class="body">Java, sometimes called Javanica, is a specialty variety with Indonesian and Ethiopian heritage that has thrived in the Matagalpa highlands. At Finca El Quetzal the washed Java has been cultivated for more than 20 years and is a cornerstone of the program. Cup profile leans toward chocolate, stone fruit, and a clean sweet finish; the same varietal processed anaerobically (sealed-tank fermentation) intensifies the dried fruit character and adds raisin, dark cherry, and prune notes. Java is one of the most distinctive Matagalpa varieties for buyers looking beyond Caturra.</p>
+
+<h3 class="sub-head">Geisha</h3>
+<p class="body">Geisha is the rarest and highest-priced specialty variety planted in Matagalpa. Traditional Geisha guidance puts its altitude floor around 1,500 MASL, which is at the upper edge of Matagalpa's range. Farms that have planted Geisha successfully (El Quetzal among them) rely on micro-climate compensation: 1,200 MASL on volcanic soil under heavy shade with cool nights can deliver the same cup development as 1,500 MASL on less ideal terroir. El Quetzal's 2026 Geisha harvest cupped at 87 points, washed processing, with jasmine, peach, apple, and a tea-like finish. Geisha programs in Matagalpa are still small (often under a few hundred kilograms per farm per year) and forward contracts move fast.</p>
+
+<h3 class="sub-head">Maracaturra and Pacamara</h3>
+<p class="body">Maracaturra (a Caturra and Maragogipe cross) and Pacamara (a Pacas and Maragogipe cross) are both large-bean specialty varieties that show up on Matagalpa farms experimenting beyond Caturra and Catuai. Both cup with pronounced acidity, tropical fruit, and full body; both are harder to grow and lower yielding. Production volumes are small but the cup ceilings are high.</p>
+
+<h3 class="sub-head">Laurina (Bourbon Pointu)</h3>
+<p class="body">Laurina, also called Bourbon Pointu, is a low-caffeine natural mutation of the Bourbon variety (roughly 0.5 percent caffeine versus 1.4 percent for standard arabica). It is exceptionally rare; total global production is small. El Quetzal grows washed Laurina with under 1,000 pounds of total annual output in 2025 and a cup that reads apricot, raspberry, lemon zest, milk chocolate, and a white tea finish.</p>
+
+<h2 class="section-head">The Cup Profile: <em>What Matagalpa Tastes Like</em></h2>
+
+<p class="body">If you taste a stack of Matagalpa washed lots from different farms at 1,200 MASL and above, a consistent flavor signature emerges. The aroma leans floral, with jasmine and white flower notes as the most common descriptors. The first sip carries stone fruit (peach and apricot are the canonical descriptors, with apple and pear sometimes joining them in higher-altitude lots), followed by milk chocolate or cocoa as the cup cools. The acidity is balanced and citric rather than aggressive, often described as crisp rather than sharp. The body is medium, the finish tea-like and clean, with a brown sugar or honey sweetness that lingers.</p>
+
+<p class="body">Comparison helps. A washed Jinotega lot from the same altitude band typically reads with more chocolate and nuttiness, less floral aromatics, and slightly heavier body. A washed Nueva Segovia lot from the far north tends to be brighter, more citrus-forward (orange, grapefruit), and more aggressively acidic. Matagalpa sits in the middle of the Nicaraguan range: floral and elegant at the top end, balanced and chocolate-driven in the mid range, and useful in single-origin programs precisely because it bridges the floral and the chocolate sides of the country's profile.</p>
+
+<div class="callout">
+  <p>A useful rule of thumb: if a Nicaraguan lot leads with jasmine and stone fruit and finishes tea-like, it is almost certainly Matagalpa. If it leads with chocolate and nuttiness and finishes heavier, it is more likely Jinotega. If it leads with citrus and reads sharper, it is probably Nueva Segovia.</p>
+</div>
+
+<h2 class="section-head">Farms Worth Knowing: <em>The El Quetzal Case Study</em></h2>
+
+<p class="body">Specialty Matagalpa is produced across hundreds of family farms, ranging from small holdings of a few hectares to estates running into the hundreds. Rather than catalog them, this section uses Finca El Quetzal as a representative case study because the farm illustrates how a textbook Matagalpa specialty operation is structured today.</p>
+
+<p class="body">Finca El Quetzal sits above 1,200 MASL in the Matagalpa highlands on volcanic soil under a eucalyptus shade canopy planted in the 1960s. The farm has been continuously producing specialty coffee since 1947 and is currently run by the fourth generation of the Bendaña McEwan family, with deep family roots in Nicaraguan agriculture. The operation includes its own wet mill, Beneficio San Miguel, which means the cherries picked on the farm are processed on the farm without passing through a co-op or intermediate buyer. This is what full tree-to-export traceability means in practice: a roaster ordering a Matagalpa lot from El Quetzal can document every step from the specific block where the cherries were picked through to the export bag.</p>
+
+<p class="body">The variety program at El Quetzal anchors the case study. Java (washed) has been the cornerstone for more than two decades. Geisha (washed) entered production in 2024, with the 2026 harvest cupping at 87 points and 98.6 percent of the lot grading as SCA Specialty Grade with screen size 77.9 percent above #18. Laurina (washed) rounds out the program with an SCA score of 85 in 2025. The farm runs forward contracts on 69 kilogram sacks for the 2027 harvest, with samples available in 150 gram starter packs for roasters who want to evaluate before committing.</p>
+
+<p class="body">Most Matagalpa specialty farms operating at this tier share the same structural pattern: multi-generational family ownership, on-site wet milling, mixed shade canopy, a primary commercial variety (Caturra or Catuai) backed by one or two specialty varieties grown in smaller volumes for premium buyers, and direct relationships with importers or roasters in their target markets. El Quetzal is on the smaller end by volume and on the higher end by quality and traceability, but the structural template is broadly representative.</p>
+
+<h2 class="section-head">Processing in Matagalpa: <em>Washed, with Experimentation</em></h2>
+
+<p class="body">The default Matagalpa process is washed. The region's wet-mill infrastructure, water availability, and climate pattern (defined wet and dry seasons with reliable drying weather November through February) all support washed processing, and the cup profile most associated with Matagalpa (jasmine, stone fruit, clean finish) is best preserved by the washed method. For background on how washed processing works and what it does to the cup, our <a href="/learn/coffee-processing-methods">coffee processing methods guide</a> covers the mechanics in depth, and our <a href="/learn/washed-vs-natural-coffee">washed vs natural coffee guide</a> compares the two side by side.</p>
+
+<p class="body">In the last decade a small but growing number of Matagalpa farms have started running experimental lots: naturals, honey processed, and anaerobic fermentation. These are typically produced as microlots in small volumes alongside the farm's main washed production. Finca El Quetzal's Anaerobic Java is one of the better-documented examples: same Java varietal grown on the same blocks as the washed Java, but the depulped cherries are fermented in sealed (oxygen-deprived) tanks before drying. The result is a cup that reads dramatically heavier on dried fruit (dark cherry, raisin, prune) with chocolate undertones and a subtle nuttiness. The anaerobic version scored one point higher than the washed Java from the same harvest in 2023/24 (87 versus 86).</p>
+
+<p class="body">For buyers who want to taste the same farm and the same variety under two processing protocols, anaerobic versus washed Java from El Quetzal is one of the cleanest A/B comparisons available in Matagalpa today.</p>
+
+<h2 class="section-head">Sample, Lot, and Forward Contract: <em>How to Buy Matagalpa Green</em></h2>
+
+<p class="body">Roasters and green coffee buyers approaching Matagalpa for the first time generally follow a three-step path: sample, lot, forward contract.</p>
+
+<ul class="body-list">
+  <li><strong>Sample.</strong> 150 to 500 gram samples let a roaster evaluate the cup before committing capital. El Quetzal offers 150 gram samples on its Laurina program starting at around $8; similar small samples are available on the Java and Geisha programs.</li>
+  <li><strong>Lot.</strong> Once a sample cups well, the buyer commits to a single lot in the 5, 10, or 30 pound range (or larger for established relationships). This is where the specialty grade signal turns into a real coffee on the roaster's menu.</li>
+  <li><strong>Forward contract.</strong> The deepest commitment is a forward contract: securing 69 kilogram sacks from an upcoming harvest before it is even picked. This locks in price and volume for both sides and is how Matagalpa farms plan their highest-quality programs.</li>
+</ul>
+
+<p class="body">El Quetzal's full catalog of Matagalpa green coffee is available farm-direct at <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee</a>, with US fulfillment shipping from a Houston warehouse. The flagship programs are the <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Nicaragua Geisha collection</a>, the <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Anaerobic Java microlot</a>, and the <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed Laurina program</a>. A sampler trio is a reasonable starting point for buyers who want to taste the range from one farm before going deeper.</p>
+
+<h2 class="section-head">Why Matagalpa Belongs on <em>Your Origin Map</em></h2>
+
+<p class="body">Buyers building out a single-origin program almost always start with Ethiopia, Colombia, and one or two Central American origins. Matagalpa earns its place on that map because it offers a cup profile that bridges floral and chocolate-driven origins, traceability that has caught up to the best Central American operations, and farms that have invested seriously in specialty grade production rather than treating it as a side project. The combination of volcanic soil, 1,200 plus MASL elevation, shade canopy, and multi-generation family stewardship is repeatable across the department, which means a roaster building a long-term Matagalpa program has a real pipeline of farms to work with.</p>
+
+<p class="body">For the broader Nicaraguan context, our Nicaragua origin guide covers the country's three main departments side by side. For varietal depth specifically on the Geisha and Java programs that define El Quetzal's contribution, see the <a href="/microlots/nicaragua-geisha-green-coffee">Nicaragua Geisha microlot page</a> and the <a href="/microlots/anaerobic-java-green-coffee">Anaerobic Java microlot page</a>. For the broader question of what single-origin means at the country, region, and farm level, the <a href="/learn/single-origin-coffee-guide">single origin coffee guide</a> is the recommended next step.</p>
+
+</ContentLayout>

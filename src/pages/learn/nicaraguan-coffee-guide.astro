@@ -1,0 +1,243 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What makes Nicaraguan coffee different?",
+    a: "Nicaraguan specialty coffee comes from cool-night microclimates in the Matagalpa, Jinotega, and Nueva Segovia highlands, where volcanic soil and shade-grown tradition produce cups with milk chocolate body, balanced acidity, and floral or fruited top notes depending on variety and process. The other distinguishing feature is structure: most specialty Nicaragua comes from family farms (often four or five generations on the same hillsides) rather than large estate or commodity blocks, which means real lot-level traceability is the norm, not the exception."
+  },
+  {
+    q: "Which region of Nicaragua produces the best coffee?",
+    a: "All three major regions produce competition-grade coffee, and which is best depends on the cup profile you want. Matagalpa produces the most aromatic and tea-like cups, including the country's emerging Geisha lots. Jinotega is the largest producer by volume and the benchmark for classic Central American profile (caramel, milk chocolate, balanced acidity). Nueva Segovia sits at the highest altitudes and produces the brightest, most acidic, most complex cups, often with citrus and red fruit notes."
+  },
+  {
+    q: "Is Nicaraguan coffee as good as Panama Geisha?",
+    a: "The best Nicaraguan Geisha lots, including the 87-point washed Geisha produced at Finca El Quetzal in Matagalpa, deliver the jasmine, peach, and tea-like clarity that define the Geisha cup. They do not yet command Panama auction prices, which means buyers can access genuine Geisha character at a meaningfully lower price point. That gap reflects market positioning rather than cup quality."
+  },
+  {
+    q: "Where can I buy specialty Nicaraguan coffee?",
+    a: "The most direct way is to buy from a Nicaraguan family farm that exports directly to roasters and consumers. Finca El Quetzal in Matagalpa ships green coffee from Houston (US fulfillment via Dupuy's warehouse) and sells Java, Geisha, and Laurina lots in samples, retail bags, and full sack forward contracts at elquetzal.coffee. For roasted Nicaraguan coffee, look for specialty roasters who name the farm and region on the bag rather than labeling it generically."
+  },
+  {
+    q: "What is the best Nicaraguan coffee variety?",
+    a: "Java (Javanica) is the cornerstone variety of Nicaragua's specialty scene and the variety Finca El Quetzal has grown washed for more than twenty years. It produces a clean, milk-chocolate, tea-like cup that defines the country's classic specialty profile. Geisha is the rarest and most aromatic, Pacamara is the most full-bodied, and Maracaturra produces the largest beans with the most distinctive cup. Caturra and Catuai are the most widely planted and the backbone of everyday Nicaraguan specialty."
+  },
+  {
+    q: "How is Nicaraguan coffee processed?",
+    a: "The traditional method is fully washed (wet-processed), which produces the clean, balanced cup most associated with Central American coffee. Naturals are increasing as global demand for fruited cups grows. Honey processing has been adopted from Costa Rica by a handful of mills. Anaerobic fermentation is the experimental high-end category and is the basis for some of the country's highest-scoring lots, including the 87-point anaerobic Java at El Quetzal."
+  },
+  {
+    q: "Is Nicaraguan coffee single-origin or blended?",
+    a: "Both, depending on the buyer. Commodity Nicaraguan coffee is typically blended into Central American or generic specialty blends with no farm-level traceability. Specialty Nicaraguan coffee is sold as single-origin, often with farm-level or even lot-level traceability when bought from family farms like El Quetzal that mill their own coffee and export directly."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Origin Guide', title: 'Ethiopian Coffee: The Complete Guide' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+  { href: '/microlots/nicaragua-geisha-green-coffee', label: 'Microlot', title: 'Nicaragua Geisha Green Coffee' },
+];
+---
+
+<ContentLayout
+  title="Nicaraguan Coffee: The Complete Guide to Specialty Lots, Regions, and Where to Buy"
+  description="Nicaraguan coffee: Matagalpa, Jinotega, and Nueva Segovia regions, varieties, processing, and El Quetzal direct-from-farm specialty lots."
+  slug="learn/nicaraguan-coffee-guide"
+  section="learn"
+  sectionLabel="Origin Guide"
+  publishDate="2026-06-22"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Want to taste <em>Nicaragua done right?</em>"
+  ctaBody="Finca El Quetzal ships washed Java, Geisha, anaerobic Java, and Laurina green coffee direct from Matagalpa to US buyers through their Houston warehouse. Samples, retail lots, and full-sack forward contracts available."
+>
+
+<p class="body">Nicaragua produces specialty coffee that competes with Panama Geisha lots at a meaningfully lower price point. The 2026 Geisha harvest from <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Finca El Quetzal in Matagalpa</a> cupped at 87 points in its second year of production, with the same jasmine, peach, and tea-like clarity that defines the Geisha category, on volcanic soil at 1,200+ MASL that the wider specialty market still under-appreciates. The country's other competition-grade lots come from family farms in Jinotega and Nueva Segovia that have spent the post-civil-war decades moving from commodity supply into competition-grade specialty. The cup is real. The pricing is still in transition. This guide explains why.</p>
+
+<p class="body">Three things distinguish Nicaraguan specialty from its Central American neighbors: cool-night microclimates that compensate for elevations sometimes below the textbook specialty threshold, generational family ownership that produces real lot-level traceability without large-estate marketing, and a varietal mix that mirrors what is happening in the highest-end Panama and Colombia lots (Geisha, Java, Pacamara, Maracaturra) at price points that have not yet caught up with the cup quality. If you are buying for a roasting program, a serious home setup, or a green coffee inventory, Nicaragua is one of the most undervalued specialty origins in the world right now.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">87pt</div>
+    <div class="stat-label">El Quetzal Geisha 2026 harvest</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1947</div>
+    <div class="stat-label">Year EQ began specialty production</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1200+</div>
+    <div class="stat-label">MASL, Matagalpa highlands</div>
+  </div>
+</div>
+
+<h2 class="section-head">Why Nicaragua <em>Is the Origin to Watch</em></h2>
+
+<p class="body">Nicaragua's specialty coffee scene is, in industry terms, young. The country produced coffee at commercial scale for most of the twentieth century, but the years of civil war, embargo, and political instability in the 1970s, 1980s, and into the 1990s broke the export infrastructure that other Central American producers (Costa Rica, Guatemala, Honduras) used to climb the specialty ladder earlier. When the rebuilding started, Nicaragua had to do it from the ground up: new mills, new export relationships, new cupping discipline, new direct-trade infrastructure. The country effectively re-entered the specialty world starting in the late 1990s and accelerated through the 2000s and 2010s.</p>
+
+<p class="body">What emerged from that rebuilding period is unusual. Most of the specialty production is held by family farms that survived the volatile decades by either continuing to plant through the disruption or returning to abandoned land after the conflicts ended. These are not industrial estates; they are fourth-generation and fifth-generation operations measured in hundreds of hectares rather than thousands, with the kind of internal mill and processing infrastructure that allows real specialty discipline. <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Finca El Quetzal</a>, for example, has been continuously producing specialty coffee on the same Matagalpa hillsides since 1947, four generations of the Bendaña McEwan family running the farm and mill (Beneficio San Miguel) themselves. That structure produces traceability that large-estate producers in other origins often have to manufacture through marketing.</p>
+
+<p class="body">Cooperatives play a parallel role for smaller producers. Several large Nicaraguan cooperatives (Soppexcca in Jinotega, Cecocafen in Matagalpa) aggregate lots from hundreds of smallholders and provide the cupping, sorting, and export logistics that individual smallholders cannot fund themselves. The result is a two-track specialty scene: family-farm direct trade at the top end, and cooperative-driven specialty at the middle of the market. Both are exporting 85+ point lots that would, in a more established origin like Panama, command significantly higher prices.</p>
+
+<p class="body">The cupping evidence is the clearest argument. Cup of Excellence and other competition results from Nicaragua now consistently include lots in the 88 to 91 point range, with the country's emerging Geisha plantings starting to climb into territory that ten years ago would have been Panama-exclusive. The market is closing the gap, but it has not closed yet. That gap is the buyer's opportunity.</p>
+
+<h2 class="section-head">The Three Regions <em>That Matter</em></h2>
+
+<p class="body">Nicaragua's specialty production is concentrated in three north-central and northern departments. Each has a distinct cup profile, altitude band, and producer culture. The differences are real enough that an experienced cupper can usually place a Nicaraguan coffee in its region from the cup alone.</p>
+
+<h3 class="sub-head">Matagalpa: Tea-Like Clarity and Aromatic Complexity</h3>
+
+<p class="body">Matagalpa sits in north-central Nicaragua and is the region most associated with the country's high-end aromatic specialty lots. Altitudes range from roughly 900 to 1,500 MASL, with the specialty-grade producers concentrated at 1,100 MASL and above. The terroir is shaped by a cool-night microclimate, volcanic soil, and a long tradition of shade-grown cultivation under eucalyptus and native shade trees. The result is a cup that punches above its elevation: floral aromatics, milk chocolate body, tea-like clarity in the finish, and bright but balanced acidity.</p>
+
+<p class="body">Matagalpa is also where Nicaragua's Geisha experiment is being most aggressively pursued. The accepted specialty wisdom is that Geisha needs 1,500 MASL or higher to express its full character, but Matagalpa's cool-night microclimate has, in practice, allowed Geisha plantings at 1,200+ MASL to produce competition-grade cups. <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal's washed Geisha</a> is the clearest evidence of this. The 2026 harvest cupped at 87 points, second year of harvest, with jasmine on the aromatics, peach and apple in the cup, and a tea-like finish that mirrors the Panama Geisha benchmark.</p>
+
+<p class="body">The variety that has built Matagalpa's specialty reputation over a longer horizon is Java (Javanica). El Quetzal has grown washed Java for more than twenty years as the cornerstone of their program, and the variety has come to represent what serious Matagalpa specialty tastes like: clean milk chocolate, gentle stone fruit, balanced acidity, the kind of cup that converts skeptics. The farm's <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java</a> took the same variety to 87 points in the 2023/24 harvest, one point above the washed version of the same crop, demonstrating what experimental processing on a well-developed variety can produce.</p>
+
+<h3 class="sub-head">Jinotega: Volume Leader and Classic Profile</h3>
+
+<p class="body">Jinotega is the largest coffee-producing department in Nicaragua by volume and the benchmark for what most buyers will encounter when they buy "Nicaraguan coffee" from a specialty roaster. The region sits at higher elevations on average than Matagalpa (1,200 to 1,700 MASL in the specialty band), with denser plantings, a slightly cooler climate, and a longer history of organized cooperative-based specialty exporting. The cup profile is the classic Central American specialty target: caramel sweetness, milk chocolate body, red apple and stone fruit acidity, balanced and clean.</p>
+
+<p class="body">Jinotega's strength is consistency. The region produces specialty-grade coffee at sufficient volume that roasters can build a year-round Nicaragua offering around Jinotega lots, with seasonal variation rather than year-to-year availability gaps. For wholesale buyers building a stable specialty Central American on the menu, Jinotega is usually the safest single-origin Nicaragua starting point. For roasters who want to differentiate, Jinotega is the baseline against which the more aromatic Matagalpa lots and the brighter Nueva Segovia lots stand out.</p>
+
+<p class="body">Caturra and Catuai dominate the planted area in Jinotega, with Maragogipe and Maracaturra plantings increasing in the higher-altitude micro-lots. Most processing is washed, with naturals and honeys appearing in experimental lots from individual producers. Cup of Excellence results from Jinotega have included multiple lots above 88 points across the last decade, and the region produces several of the country's most-awarded smallholder lots through the major cooperatives.</p>
+
+<h3 class="sub-head">Nueva Segovia: Highest Altitudes, Brightest Cups</h3>
+
+<p class="body">Nueva Segovia is the small northern border department where Nicaragua's highest-altitude coffee is grown. Elevations of 1,300 to 1,800 MASL are common in the specialty band, and the cooler temperatures, higher humidity, and tropical-mountain conditions produce coffees that distinguish themselves from the rest of the country by their acidity and complexity. The cup tends toward bright citrus (lime, grapefruit), red fruit (raspberry, cherry), floral top notes (jasmine, orange blossom), and a finish that is more wine-like and elongated than the Matagalpa or Jinotega benchmarks.</p>
+
+<p class="body">Nueva Segovia is the region most commonly producing Nicaragua's competition-grade brightest lots. Cup of Excellence Nicaragua's highest-scoring entries over the last several cycles have skewed toward Nueva Segovia, with multiple lots in the 89 to 91 point range. The region is also where the most aggressive experimental processing is happening: extended fermentation, anaerobic, lactic, and carbonic maceration lots are increasingly common, and the highest-altitude micro-lots are some of the most expensive Nicaraguan coffees on the market.</p>
+
+<p class="body">For specialty buyers building a top-end Nicaragua offering, Nueva Segovia is where to look. For the buyer who wants to understand what Nicaragua can do at the absolute ceiling of the country's quality range, this region is the answer.</p>
+
+<h2 class="section-head">The Varieties Grown <em>in Nicaragua</em></h2>
+
+<p class="body">Nicaragua's varietal mix mirrors most of Central America with two notable distinctions: a long-running Java program at a handful of family farms, and an emerging Geisha movement that has started to deliver real cup results. Here is what is actually planted, and what each variety produces in the cup.</p>
+
+<h3 class="sub-head">Caturra</h3>
+<p class="body">The most widely planted specialty variety in Nicaragua. A natural mutation of Bourbon discovered in Brazil in the early 20th century, Caturra is compact, productive, and well-adapted to Central American growing conditions. The cup is clean, balanced, with milk chocolate body and mild stone fruit acidity. Caturra is the backbone of Nicaragua's mid-specialty production and the dominant variety in most cooperative lots.</p>
+
+<h3 class="sub-head">Catuai</h3>
+<p class="body">A Caturra and Mundo Novo hybrid developed in Brazil, Catuai is the second-most-planted specialty variety in Nicaragua. It produces a slightly fuller-bodied cup than Caturra, with darker chocolate notes and a longer finish. Both Yellow Catuai and Red Catuai are grown, with the Red Catuai variant being more common in Nicaragua. Catuai is a workhorse variety for both single-origin specialty and as a blend component.</p>
+
+<h3 class="sub-head">Maracaturra</h3>
+<p class="body">A cross between Maragogipe (which produces unusually large beans, sometimes called "elephant beans") and Caturra, Maracaturra produces large beans with a distinctive cup: full body, soft acidity, chocolate and nut notes, with occasional tropical fruit when grown at high altitude. Less productive than Caturra or Catuai, so plantings are smaller, but Maracaturra lots are among the most distinctive Nicaraguan single-origin offerings.</p>
+
+<h3 class="sub-head">Pacamara</h3>
+<p class="body">A cross between Pacas (a Bourbon mutation from El Salvador) and Maragogipe, Pacamara is the variety most associated with high-end Central American specialty. The beans are large, the cup is full-bodied with prominent fruit and floral notes, and the variety is capable of scoring above 90 points when grown well. Pacamara plantings in Nicaragua are concentrated in Nueva Segovia and at the highest-altitude Matagalpa farms.</p>
+
+<h3 class="sub-head">Java (Javanica)</h3>
+<p class="body">The variety that defines El Quetzal's program and one of the more distinctive choices any Nicaraguan farm has made at scale. Java is an Ethiopian-descended landrace selected for cultivation in Indonesia (hence the name), and what makes it interesting in Nicaragua is the cup: cleaner, more aromatic, more tea-like than the Bourbon-lineage varieties that dominate the rest of Central America. Washed Java at El Quetzal produces milk chocolate, gentle stone fruit, and tea-like clarity. The anaerobic version of the same variety shifts to dried fruit (dark cherry, raisin, prune) with chocolate undertones and a longer finish.</p>
+
+<h3 class="sub-head">Geisha</h3>
+<p class="body">The rarest and most aromatic variety in Nicaragua's planted area. Geisha originated in Ethiopia, was selected and cultivated in Panama starting in the early 2000s, and has only recently become a serious presence in Nicaragua. Plantings are concentrated in Matagalpa and Nueva Segovia at the highest available altitudes, with the cool-night microclimate compensating for the slightly-below-textbook elevations. The cup mirrors Panama Geisha at its core (jasmine, bergamot, peach, tea-like finish) but with a Nicaragua-specific milk chocolate body that the lighter Panama lots usually lack.</p>
+
+<h3 class="sub-head">Laurina (Bourbon Pointu)</h3>
+<p class="body">A rare low-caffeine Bourbon mutation, Laurina contains roughly 0.5% caffeine versus 1.4% in standard arabica. Total global production is tiny. El Quetzal's <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed Laurina</a> harvested under 1,000 pounds total in 2025, cupped at 85 points, and produces a cup with apricot, raspberry, lemon zest, milk chocolate, and a white tea finish. Laurina is one of the most distinctive variety plays any Nicaraguan farm has made and one of the rarest single-origin coffees available from any Central American origin.</p>
+
+<h2 class="section-head">Processing Traditions <em>in Nicaragua</em></h2>
+
+<p class="body">Nicaragua's processing landscape reflects both its specialty rebuilding history and the country's openness to importing methods from neighboring origins. Four processing methods now appear regularly across specialty Nicaraguan production, each producing a meaningfully different cup from the same green coffee.</p>
+
+<h3 class="sub-head">Washed (Wet-Processed)</h3>
+<p class="body">The traditional and still dominant method. The cherry skin and most of the mucilage are removed by depulping and fermentation tanks before the coffee is dried in parchment. The cup result is clean, terroir-forward, and bright, with the variety and growing conditions expressed clearly without processing flavors layered on top. Washed Java at El Quetzal, Caturra and Catuai lots from Jinotega cooperatives, and the highest-elevation Nueva Segovia micro-lots are typically washed.</p>
+
+<h3 class="sub-head">Natural (Dry-Processed)</h3>
+<p class="body">The cherry is dried whole on raised beds or patios with the skin and mucilage still intact, then hulled at the end. The cup shifts toward berry fruit (strawberry, blueberry, raspberry), heavier body, and sweeter, more wine-like finishes. Naturals are increasing in Nicaragua as global demand for fruit-forward cups has grown, but the country's daily-rainfall climate during parts of the year makes consistent natural processing more demanding than in drier origins like Brazil or Ethiopia.</p>
+
+<h3 class="sub-head">Honey Process</h3>
+<p class="body">The cherry skin is removed but varying amounts of mucilage are left on the bean during drying. Honey processing was developed and refined in Costa Rica in the early 2000s and has been adopted by a handful of Nicaraguan mills as an intermediate step between fully washed and fully natural. The cup splits the difference: more body and sweetness than washed, more clarity and acidity than natural. Yellow, red, and black honey gradations all appear in the Nicaraguan specialty market. Our full <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">coffee processing methods guide</a> covers what each step does to the cup.</p>
+
+<h3 class="sub-head">Anaerobic Fermentation</h3>
+<p class="body">The high-end experimental category and the basis for several of Nicaragua's highest-scoring lots. The coffee is fermented in sealed, oxygen-free vessels for an extended period before drying, which produces concentrated fermentation byproducts and unusual flavor compounds. The cup shifts toward dried fruit, dark cherry, raisin, prune, with chocolate undertones and a longer finish. <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal's anaerobic Java</a> at 87 points is one of the cleanest examples of what controlled anaerobic processing can do to a well-developed variety, with the fermentation amplifying the natural sweetness of the Java without producing the off-flavors that less-disciplined anaerobic lots sometimes produce.</p>
+
+<div class="callout">
+  <p>The difference between a washed Java and an anaerobic Java from the same Matagalpa farm, in the same harvest year, processed at the same mill, can be the difference between an 86-point cup and an 87-point cup with a completely different flavor vocabulary. Buying both side by side is the cheapest education in what processing does to coffee.</p>
+</div>
+
+<h2 class="section-head">What Makes Specialty Nicaraguan Coffee <em>Different</em></h2>
+
+<p class="body">There are four structural features of Nicaraguan specialty production that, taken together, distinguish the country from its Central American neighbors. Understanding them explains both the cup quality and the pricing.</p>
+
+<h3 class="sub-head">The Cool-Night Microclimate</h3>
+<p class="body">Nicaragua's specialty regions sit at altitudes that, on paper, are sometimes below the conventional thresholds used in other origins. Conventional Geisha wisdom requires 1,500 MASL minimum. Matagalpa's specialty band starts at 1,100 MASL. The reason Matagalpa's lots cup the way they do despite the elevation difference is the cool-night microclimate: temperatures drop sharply at night under the shade canopy, slowing cherry development and allowing the same sugar and acid concentration that higher-altitude origins rely on. The result is competition-grade cup quality at elevations that, in other origins, would not produce it.</p>
+
+<h3 class="sub-head">Volcanic Soil</h3>
+<p class="body">Nicaragua sits on the Central American volcanic chain, and most of the country's specialty growing regions are on mineral-rich, well-draining volcanic soil. The chemistry of volcanic soil tends to produce coffees with distinctive clarity, complexity, and aromatic intensity. The same effect is visible in Ethiopian, Hawaiian, Salvadoran, and parts of Costa Rican specialty, and it is one of the variables that consistently shows up in Nicaraguan cupping notes as "tea-like" or "bright" character.</p>
+
+<h3 class="sub-head">Family-Farm Structure</h3>
+<p class="body">Unlike Brazilian estate-scale production or Vietnamese commodity production, Nicaraguan specialty is dominated by family farms in the hundreds-of-hectares range. Finca El Quetzal at 1,200+ MASL in Matagalpa, fourth generation Bendaña McEwan family, with its own mill (Beneficio San Miguel) and full tree-to-export traceability, is representative of how Nicaraguan specialty actually operates. The structure means real lot-level traceability without large-estate marketing layers between the buyer and the farm. It also means the farms are direct stakeholders in the cup quality across generations, not contract producers selling commodity to an export aggregator.</p>
+
+<h3 class="sub-head">The Panama Geisha Comparison</h3>
+<p class="body">Panama's Hacienda La Esmeralda put Geisha on the global specialty map starting in 2004, and Panama Geisha has subsequently become the highest-priced single-origin category in the specialty world, with auction lots regularly clearing $1,000 to $10,000+ per pound. The cup is exceptional. The pricing reflects market positioning as much as cup quality. Nicaragua's emerging Geisha lots, including El Quetzal's 87-point washed Geisha at 1,200+ MASL in Matagalpa, deliver genuine Geisha character (jasmine, peach, tea-like finish) at non-auction prices. That gap will not stay open forever, but it is open now, and for buyers willing to look outside Panama for Geisha, Nicaragua is the most credible alternative origin.</p>
+
+<h2 class="section-head">The Farms Worth Knowing: <em>The El Quetzal Case Study</em></h2>
+
+<p class="body">Naming every specialty farm in Nicaragua would produce a directory rather than a guide. Instead, here is a single farm that, in its history, scale, varietal program, processing discipline, and cup results, represents what serious Nicaraguan specialty looks like in 2026. The same template (multi-generational family, internal mill, named varieties, full traceability, multiple processing methods) describes most of the country's top specialty producers.</p>
+
+<p class="body"><a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Finca El Quetzal</a> is in the Matagalpa highlands of north-central Nicaragua, at 1,200+ MASL on volcanic soil, under a shade canopy of eucalyptus trees that were planted in the 1960s. The farm has been continuously producing specialty coffee since 1947, four generations of the Bendaña McEwan family running both the farm and the on-site mill, Beneficio San Miguel. That dual ownership of farm and mill is unusual and is what allows the operation to deliver lot-level traceability and processing discipline without importer intermediaries.</p>
+
+<p class="body">The varietal program reflects what serious Nicaraguan specialty has come to look like. Java (Javanica) is the cornerstone, grown washed for more than twenty years at El Quetzal and now the most recognized expression of the variety in Central America. The <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java</a> cupped at 87 points in the 2023/24 harvest, one point above the washed version of the same crop, with dried fruit (dark cherry, raisin, prune), chocolate undertones, and subtle nuttiness in the finish.</p>
+
+<p class="body">The Geisha program is newer. The farm began harvesting Geisha in 2024, and the 2026 second-year harvest cupped at 87 points washed: jasmine on the aromatics, peach and apple in the cup, a tea-like finish. SCA Specialty Grade, 98.6% exportable, 77.9% of the lot above screen size 18. For buyers who want to access Geisha character without paying Panama auction premiums, <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal's Nicaragua Geisha</a> is the most credible alternative origin in the world right now.</p>
+
+<p class="body">The Laurina program is the rarest. <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Washed Laurina</a> at El Quetzal is one of the few commercially available Bourbon Pointu plantings in the Americas, and the 2025 harvest produced under 1,000 pounds total at an SCA score of 85. Samples start at 150g ($8), with retail lots in 5, 10, and 30 pound sizes, and 69kg sack forward contracts available for the 2027 harvest. The cup is apricot, raspberry, lemon zest, milk chocolate, and a white tea finish, at roughly one-third the caffeine of standard arabica.</p>
+
+<p class="body">For US-based buyers, El Quetzal ships green coffee from a Dupuy's warehouse in Houston, which removes the logistics friction that direct-from-origin sourcing usually involves. The same model (named family farm, internal mill, named varieties, multiple processing methods, US warehouse fulfillment) is what serious Nicaraguan specialty looks like at the high end in 2026.</p>
+
+<h2 class="section-head">How to Buy <em>Nicaraguan Coffee</em></h2>
+
+<p class="body">The Nicaraguan specialty market has two purchase paths: green coffee (for roasters, home roasters, and serious green inventory buyers) and roasted coffee (for everyone else). The decision tree is straightforward, but the label literacy is what separates a good purchase from a generic one.</p>
+
+<h3 class="sub-head">Green Coffee, Direct from Farm</h3>
+<p class="body">The most direct path. Several Nicaraguan family farms now sell green coffee directly to US buyers through warehouse fulfillment partners. <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal</a> ships from Houston (Dupuy's warehouse) in sample sizes (150g) through full sack forward contracts (69kg), with the most common purchase sizes being 5, 10, and 30 pound retail lots. For roasters who want to put a Matagalpa Java or a Nicaragua Geisha into a single-origin offering without going through an importer, direct-from-farm is the cheapest and most traceable way to do it.</p>
+
+<h3 class="sub-head">Green Coffee, Through an Importer</h3>
+<p class="body">The traditional path. Specialty importers (Cafe Imports, Royal, InterAmerican, Atlas, Ally) carry Nicaraguan green coffee with the standard markup and the logistics flexibility that importer relationships provide. For roasters who already buy from importers and want to add a Nicaraguan single-origin without setting up a new direct relationship, this is the path of least resistance. The trade-off is markup and a thinner traceability story versus direct purchase.</p>
+
+<h3 class="sub-head">Roasted Coffee, Through Specialty Roasters</h3>
+<p class="body">The default path for consumers. Specialty roasters who source from Nicaragua will name the region (Matagalpa, Jinotega, Nueva Segovia), often the farm (El Quetzal, La Bastilla, Limoncillo, El Recreo), the variety (Caturra, Catuai, Java, Geisha, Pacamara), the processing method, and the altitude. If the label only says "Nicaraguan Coffee" with no further detail, it is probably a commodity lot dressed in specialty packaging.</p>
+
+<h3 class="sub-head">What to Look for on the Label</h3>
+<ul class="body-list">
+  <li>Region named (Matagalpa, Jinotega, Nueva Segovia), not just "Nicaragua."</li>
+  <li>Farm or cooperative named, with at least a hint of who actually grew the coffee.</li>
+  <li>Variety named, not just "arabica" or "Central American blend."</li>
+  <li>Processing method specified (washed, natural, honey, anaerobic).</li>
+  <li>Altitude listed in MASL.</li>
+  <li>Harvest year listed (most recent harvest is best; older than two harvests is suspect for green coffee).</li>
+  <li>Cupping score, if available (85+ is specialty grade; 87+ is competition territory).</li>
+  <li>Roast date on the bag for roasted coffee, not just a best-by date.</li>
+</ul>
+
+<p class="body">For broader context on how to read single-origin labels across any origin, our <a href="/learn/single-origin-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">single origin coffee guide</a> goes into the full hierarchy of country, region, farm, and lot designations.</p>
+
+<h2 class="section-head">Nicaragua vs Its Neighbors: <em>The Honest Comparison</em></h2>
+
+<p class="body">Nicaraguan coffee is most often compared to its three closest Central American neighbors. The differences are real and worth understanding before you buy.</p>
+
+<h3 class="sub-head">Nicaragua vs Costa Rica</h3>
+<p class="body">Costa Rica has the more established specialty reputation, the cleaner export infrastructure, the longer track record at international competitions, and the pioneering work on honey processing. The cup tends to be cleaner, brighter, more acidic, and more consistent at the high end. The trade-off is pricing: Costa Rican specialty commands a premium that Nicaraguan specialty has not yet caught up with, and the family-farm structure that distinguishes Nicaragua is less common in Costa Rica's micro-mill driven specialty scene. For buyers willing to look outside the most established Central American origin, Nicaragua delivers comparable cup quality at lower prices, particularly in the Matagalpa Java and Nueva Segovia bright-cup categories.</p>
+
+<h3 class="sub-head">Nicaragua vs Honduras</h3>
+<p class="body">Honduras is the volume leader in Central American specialty by production, but the country's specialty quality is meaningfully less consistent than Nicaragua's. Honduras has world-class lots (particularly from the Marcala and Copan regions), but the overall specialty grade rate is lower, processing discipline is more variable, and the family-farm traceability is less developed. For buyers prioritizing cup consistency and traceability at the specialty grade, Nicaragua is the better Central American value choice. Honduras is the higher-volume, lower-floor option.</p>
+
+<h3 class="sub-head">Nicaragua vs Guatemala</h3>
+<p class="body">Guatemala has the most distinctive Central American cup profile (more body, more chocolate, more spice and tobacco character, particularly from Antigua, Huehuetenango, and Coban). The cup is meaningfully different from Nicaragua's tea-like clarity. Guatemala also commands a price premium and has a longer specialty track record. For a roastery building a Central American offering, Nicaragua and Guatemala are complements rather than competitors: Nicaragua for clarity, tea-like character, and emerging Geisha, Guatemala for body, chocolate, and traditional specialty profile.</p>
+
+<h2 class="section-head">Where to Start: <em>The El Quetzal Recommendation</em></h2>
+
+<p class="body">For a buyer who wants to taste what Nicaragua actually delivers at the specialty grade without buying a full inventory commitment, the best entry point is a direct-from-farm sampler. <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Finca El Quetzal</a> ships small-size green coffee samples that cover the farm's three main lines (washed Java, washed Geisha, washed Laurina), with the option to add the anaerobic Java for a four-cup comparison.</p>
+
+<p class="body">For most buyers, the most educational starting purchase is the washed Java plus the washed Geisha side by side. The Java is the country's classic specialty profile (milk chocolate, gentle stone fruit, tea-like clarity), and the Geisha is what Nicaragua is becoming (jasmine, peach, tea-like finish, 87-point cup). Cupping both from the same farm, same harvest year, same mill, with only variety changing, is the cleanest possible introduction to what Matagalpa specialty actually produces.</p>
+
+<p class="body">For roasters or buyers who want the full picture, adding the <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java</a> shows what controlled experimental processing does to the same variety, and adding the <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed Laurina</a> introduces the low-caffeine Bourbon Pointu variety into the comparison. Four lots, one farm, one origin, one harvest year, four different cups: that is the closest a buyer can get to a complete Nicaragua specialty education in a single purchase.</p>
+
+<p class="body">For deeper context on how to evaluate the resulting cups, our <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">coffee processing methods guide</a> covers what washed, natural, honey, and anaerobic actually do to the cup, and our <a href="/learn/best-single-origin-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">best single origin coffee guide</a> sets Nicaraguan specialty in the broader global single-origin context.</p>
+
+<p class="body">Nicaragua is in the middle of a specialty story that has not yet fully priced itself into the global market. The cup quality is real. The farms are real. The traceability is real. The pricing has not closed the gap with Panama, Costa Rica, or Guatemala yet, which means right now is one of the best windows to start buying serious Nicaraguan specialty before that gap closes.</p>
+
+</ContentLayout>
