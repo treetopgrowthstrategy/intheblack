@@ -1,0 +1,174 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What is the Java coffee varietal?",
+    a: "Java (Javanica) is an Arabica coffee variety with Ethiopian landrace origins that was cultivated on the Indonesian island of Java, which is where its name comes from. It is a tall, narrow-statured plant with large elongated beans, late-ripening cherries, and lower yields than commercial varieties like Caturra or Catuai. In the cup it produces a clean, tea-like profile with milk chocolate body, gentle jasmine florals, stone fruit, and balanced acidity. Today it is grown successfully in Central America and parts of Africa as well as Indonesia, and Finca El Quetzal in Matagalpa, Nicaragua has run one of the most developed Java programs outside of Indonesia for over twenty years."
+  },
+  {
+    q: "Is Java a good coffee varietal for roasters?",
+    a: "Yes. Java is one of the most roaster-friendly specialty varieties because it holds a wide range of roast development well. The washed version responds best to medium roasts that preserve the jasmine florals and balanced acidity. The anaerobic version rewards a slightly darker development (city+ to medium) that opens the dried cherry and raisin character without burning through the sweetness. The bean is dense due to its size, so extraction tends to be consistent, and the cup profile is approachable enough to work in both single-origin pour-over and as a base in espresso blends."
+  },
+  {
+    q: "What is the difference between Java the island and Java the varietal?",
+    a: "Java is both a geographic origin (the Indonesian island, one of the oldest coffee-producing regions in the world, and the source of 'Java' as a colloquial term for coffee) and a specific Arabica varietal cultivated on that island. When you see 'Java coffee' at a commodity grocery store or a chain coffee shop, it typically means coffee from the island of Java, Indonesia, which can be any variety. When specialty buyers and farms refer to the 'Java varietal' or 'Javanica,' they mean the specific cultivar strain with its tall plant structure, elongated beans, and the distinctive cup profile that makes it sought after. El Quetzal's Java is the varietal grown in Nicaragua, not Indonesian island coffee."
+  },
+  {
+    q: "How does washed Java compare to anaerobic Java?",
+    a: "They are dramatically different cups from the same variety and the same farm. Washed Java at El Quetzal produces milk chocolate, jasmine, gentle stone fruit, and tea-like clarity. The anaerobic version from the same harvest takes the same Javanica cherries, ferments them in sealed oxygen-free tanks, and produces dark cherry, raisin, chocolate undertones, and a heavier body. The anaerobic version scored one point higher (87 versus 86 points) in the 2023/24 harvest, which tells you what controlled anaerobic processing can add. Most roasters who work with El Quetzal Java buy both and offer them as distinct single-origins."
+  },
+  {
+    q: "How should I roast the Java varietal?",
+    a: "Washed Java does best at medium roast (full city). Pushing further than that eliminates the jasmine and stone fruit character that makes Java distinctive. The anaerobic Java can handle a touch more development (city to city+) because the dried fruit character survives into slightly darker ranges, but keep it out of second crack to preserve the raisin and cherry character. Java beans are dense and large, so extend your extraction times slightly versus a lighter Caturra or Geisha lot. A two-to-four week rest period after roasting is especially worth it on the anaerobic Java, which tends to off-gas aggressively in the first week."
+  },
+  {
+    q: "How do I buy El Quetzal Java green coffee?",
+    a: "El Quetzal ships green coffee direct to US buyers from a Dupuy's warehouse in Houston. You can order samples (150g), retail lots (5lb, 10lb, 30lb), or full 69kg sacks with forward contract options. The washed Java and anaerobic Java are both listed directly at elquetzal.coffee. For roasters who want to evaluate before committing, a sample order on both lots is the recommended starting point."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/nicaraguan-coffee-guide', label: 'Origin Guide', title: 'Nicaraguan Coffee: The Complete Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/microlots/washed-java-green-coffee', label: 'Microlot', title: 'Washed Java Green Coffee' },
+  { href: '/microlots/anaerobic-java-green-coffee', label: 'Microlot', title: 'Anaerobic Java Green Coffee' },
+  { href: '/drop-list', label: 'Drop List', title: 'New Coffee Drop List' },
+];
+---
+
+<ContentLayout
+  title="Java Coffee Varietal Guide: Javanica, Cup Profile, and How It Grows at El Quetzal"
+  description="The Java coffee varietal (Javanica): what it is, how it differs from Indonesian Java, the cup profile, and where to source it direct from Nicaragua."
+  slug="learn/java-varietal-coffee-guide"
+  section="learn"
+  sectionLabel="Origin Guide"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Source <em>Java varietal green coffee direct.</em>"
+  ctaBody="Finca El Quetzal ships washed Java and anaerobic Java green coffee from Matagalpa, Nicaragua to US buyers through their Houston warehouse. Samples, retail lots, and full-sack forward contracts available."
+>
+
+<p class="body">The word "Java" does a lot of work in coffee, and most of it creates confusion. Grocery store shelves use it as a synonym for coffee in general. Commodity buyers use it to describe coffee from the Indonesian island of the same name. Specialty buyers and producers use it to describe a specific Arabica varietal, Javanica, with a distinct plant structure, bean morphology, and cup profile that has nothing to do with where a coffee was grown. Before you can evaluate a Java lot, you need to know which Java you are talking about.</p>
+
+<p class="body">This guide covers Java the varietal, not Java the island. Specifically, it covers what the Javanica cultivar produces in the cup, why it thrives at high altitude in Matagalpa Nicaragua, and how the washed and anaerobic versions from <a href="https://elquetzal.coffee/products/eq-washed-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Finca El Quetzal</a> compare to each other and to the other specialty varieties grown on the same farm.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">20+</div>
+    <div class="stat-label">Years Java grown at El Quetzal</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">1200+</div>
+    <div class="stat-label">MASL, Matagalpa highlands</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">4th gen</div>
+    <div class="stat-label">Bendana McEwan family farm</div>
+  </div>
+</div>
+
+<h2 class="section-head">Java the Island vs Java <em>the Varietal</em></h2>
+
+<p class="body">When the Dutch established coffee cultivation on the island of Java (modern-day Indonesia) in the late 1600s, they created the oldest documented commercial coffee origin in the world outside of Arabia and Ethiopia. "Java" became synonymous with coffee for a couple of centuries, which is why we still casually call a cup of coffee a "cup of Java." Indonesian Java coffee from the island typically means Arabica or Robusta beans grown on that island, often using a wet-hulled processing method (Giling Basah) that produces the distinctive earthy, full-bodied, low-acid cup profile that Indonesian coffees are known for.</p>
+
+<p class="body">The Java varietal (also called Javanica or Abyssinia in some literature) is a specific Arabica cultivar that was selected from Ethiopian landraces, brought to Indonesia, and cultivated there before eventually spreading to other origins. What makes it distinct as a variety has nothing to do with where a coffee is grown: it is the plant architecture (tall, narrow growth habit), the bean morphology (large, elongated, late-ripening cherries), the yield characteristics (lower than commercial Bourbon-lineage varieties), and the cup profile (cleaner, more tea-like, more aromatic than Caturra or Catuai) that define it as a variety.</p>
+
+<p class="body">When El Quetzal markets its washed Java or anaerobic Java, they mean the varietal grown in Matagalpa, Nicaragua. These are not Indonesian coffees. They are Central American Arabica lots of the Javanica cultivar, grown at 1,200+ MASL on volcanic soil in a completely different terroir from the Indonesian island that gave the variety its name. Understanding that distinction is the first step in evaluating why this variety produces the cup it does.</p>
+
+<h2 class="section-head">What Is the Java Varietal: <em>Plant Structure and Bean Characteristics</em></h2>
+
+<p class="body">The Javanica cultivar has a set of physical characteristics that distinguish it immediately from the Bourbon-descended commercial varieties that dominate Central American production. Knowing the plant helps explain the cup.</p>
+
+<h3 class="sub-head">Tall, Narrow Growth Habit</h3>
+<p class="body">Java plants grow tall and narrow, with an upright columnar structure rather than the wider, bushier form of Caturra or Catuai. This makes Java more challenging to harvest efficiently on steep hillsides, where the branching structure of smaller-statured Bourbon-lineage varieties is easier to manage. At El Quetzal, the Java blocks are harvested by hand in multiple passes as the cherries ripen, which is standard for specialty-grade production but more labor-intensive than harvesting a tighter-growing Caturra plant of the same height.</p>
+
+<h3 class="sub-head">Large, Elongated Beans</h3>
+<p class="body">Java produces some of the largest beans of any Arabica variety, with an elongated shape that distinguishes it visually from the rounder beans of Caturra, Catuai, or Bourbon. The physical size affects roasting: larger, denser beans take longer to reach the same internal temperature as smaller beans, which means extraction profiles designed for Caturra will usually under-develop Java if applied without adjustment. Specialty roasters working with Java for the first time almost universally note that they need to extend their development times to get the cup the variety is capable of producing.</p>
+
+<h3 class="sub-head">Late-Ripening Cherries</h3>
+<p class="body">Java cherries ripen later than most Bourbon-lineage varieties at the same altitude, which means the harvest window is extended at farms that grow multiple varieties alongside Java. At El Quetzal, the Java harvest typically trails the Geisha and Laurina picks, which actually benefits the overall processing discipline: the mill is not simultaneously overwhelmed by cherry volume from all varieties at once, and the Java cherries get the same careful cherry-to-tank processing that the higher-priced varieties receive.</p>
+
+<h3 class="sub-head">Lower Yields, Consistent Quality</h3>
+<p class="body">Java produces fewer cherries per tree than Caturra or Catuai. This is the main economic trade-off of the variety: what you sacrifice in yield you gain in cup consistency and distinctiveness. The lower density of cherries on the branch also contributes to more even ripening within a harvest pass, which means the lot has fewer under-ripe and over-ripe cherries mixed in with the optimal-ripeness majority. Specialty buyers generally accept the yield penalty because the cup quality justifies the lot price differential.</p>
+
+<h3 class="sub-head">Ethiopian Landrace Heritage</h3>
+<p class="body">The genetic origin of Javanica in Ethiopian landraces is part of why its cup reads more like an African specialty variety than like a conventional Central American profile. The clean, tea-like character, the jasmine florals, and the gentle stone fruit notes on washed Java are more reminiscent of a clean washed Ethiopian Gedeo lot than of a Guatemalan or Honduran Caturra. Planting Java in the Matagalpa terroir layers that Ethiopian genetic character on top of volcanic soil and cool-night microclimate, producing something that is distinctively Nicaraguan but has flavor antecedents that trace back to East African origin.</p>
+
+<h2 class="section-head">Why Java Thrives at <em>El Quetzal in Matagalpa</em></h2>
+
+<p class="body">El Quetzal's Java program is not an experiment or a recent addition to a diverse portfolio. The farm has grown washed Java for over twenty years, making this one of the longest-running Java programs outside of Indonesia in the world. The longevity of the program is itself evidence that the variety thrives in the Matagalpa conditions.</p>
+
+<p class="body">The farm sits at 1,200+ MASL in the north-central Nicaraguan highlands. The soil is volcanic, derived from the Central American volcanic arc that gives most of the country's specialty coffee its distinctive mineral complexity. The shade canopy is a eucalyptus plantation established in the 1960s that stays dense year-round, moderating both temperature and moisture around the trees. Cool nights drop temperatures into the 50 to 60 degree Fahrenheit range, slowing cherry maturation and allowing sugar concentration in the bean.</p>
+
+<p class="body">These conditions suit the Java varietal specifically because of its late-ripening characteristics. A variety that ripens slowly at lower altitudes ripens even more slowly under cool-night highland conditions, which extends the sugar development window further and produces the concentrated sweetness that is one of Java's distinguishing cup features. The large bean size that makes Java slightly harder to roast is a direct result of that extended maturation period on the tree.</p>
+
+<p class="body">The Beneficio San Miguel, El Quetzal's on-farm wet mill, is the second structural advantage. Because the farm mills its own coffee, the Java cherries move from the tree to the fermentation tank within hours of picking rather than sitting in a picking bag or transport vehicle for days. Cherry-to-tank timing is one of the strongest predictors of cup cleanliness in washed processing, and El Quetzal's mill control means that the tea-like clarity that makes washed Java distinctive is not compromised by the sorting and transport delays that affect farms selling cherry to a centralized cooperative mill. For deeper background on why on-farm milling matters to the cup, see our <a href="/microlots/washed-java-green-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed Java microlot page</a>.</p>
+
+<h2 class="section-head">Washed Java Flavor Profile: <em>What to Expect in the Cup</em></h2>
+
+<p class="body">The washed Java from El Quetzal is the textbook expression of what this variety can produce under clean processing conditions. The cup profile is consistent enough across harvests that El Quetzal's longstanding wholesale buyers can describe it before they open a sample bag.</p>
+
+<p class="body">On the aroma: dry fragrance leads with jasmine and bergamot, with a secondary note of milk chocolate that becomes more pronounced as the grounds hydrate. Wet aroma after the pour opens into stone fruit (apricot and peach) with a clean sweetness underneath. These are the same aromatic signals that define the variety's Ethiopian genetic heritage, expressed through the Matagalpa terroir.</p>
+
+<p class="body">In the cup: the first sip reads clean and balanced, with milk chocolate as the dominant body note and jasmine carrying through from the aroma. Acidity is gentle and citric, measured rather than bright or aggressive. Stone fruit (peach, apricot, sometimes a light dried-plum note) fills the middle. The finish is tea-like and clean, with a sweetness that reads as honey or brown sugar rather than caramel. The body is medium, lighter than what you would expect from a natural or anaerobic lot, and precisely clean in the way that distinguishes well-processed washed lots from messier alternatives.</p>
+
+<p class="body">What the washed Java is not: it is not a fruit bomb. It is not a high-acid cup. It is not a complex kaleidoscope of flavors that requires effort to identify. It is the most elegant and approachable cup in El Quetzal's lineup, the one that converts specialty skeptics and works across multiple brew methods without demanding anything unusual from the roaster or the brewer. This is why the farm calls it their flagship.</p>
+
+<div class="callout">
+  <p>Washed Java at El Quetzal cups at 86 points: specialty grade, 98.6% exportable, with 77.9% of the lot above screen size 18. Those numbers represent the physical quality of the lot before you even get to the cup. Clean fermentation, tight sorting, and on-farm mill control produce physical consistency that translates directly into cup consistency.</p>
+</div>
+
+<h2 class="section-head">Anaerobic Java: <em>What Processing Adds to the Varietal</em></h2>
+
+<p class="body">El Quetzal's anaerobic Java program takes the same Javanica variety from the same blocks and puts the depulped cherries into sealed, oxygen-deprived fermentation tanks for an extended period before drying. The oxygen-free environment changes the microbial ecosystem of fermentation: aerobic bacteria and wild yeasts are suppressed, and anaerobic microbial activity produces different metabolic byproducts that layer into the bean's flavor compounds.</p>
+
+<p class="body">The result in the cup: dark cherry, raisin, and chocolate dominate where the washed version leads with jasmine and milk chocolate. The body is heavier. The acidity is softer, less citric, more malic. The finish is longer and sweeter, with a dried-fruit quality that lingers. On the aroma, the jasmine note is mostly gone, replaced by dark cherry and subtle chocolate. The cup profile shifts from "approachable and tea-like" to "complex and fruit-forward" while still reading clean and controlled: this is not a funky or overfermented lot, but a precisely managed anaerobic process that amplifies the natural sweetness of the Java variety rather than replacing it with fermentation artifacts.</p>
+
+<p class="body">The anaerobic Java cupped at 87 points in the 2023/24 harvest, one point above the washed version from the same harvest year. That single point represents a meaningful distinction in the SCA scoring system, but more relevantly, it represents a completely different cup that pairs into different uses: the anaerobic Java works in espresso and milk-based drinks where the intensity survives dilution, while the washed Java shines in pour-over and pour-over adjacent brew methods where the delicate florals can express fully. Buy both and offer them differently, or choose based on your program's primary brew method.</p>
+
+<p class="body">You can buy the <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java directly from El Quetzal</a>. For context on how anaerobic fermentation compares to washed and other processing methods at the mechanics level, our <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">coffee processing methods guide</a> covers the full range.</p>
+
+<h2 class="section-head">How to Roast <em>Java Varietal</em></h2>
+
+<p class="body">The Java variety's large, dense beans require a slightly different roast approach than the smaller Bourbon-lineage varieties that most specialty roasters use as their baseline. The two lots from El Quetzal have different roast targets that reflect their different cup profiles.</p>
+
+<h3 class="sub-head">Washed Java Roast Profile</h3>
+<p class="body">Medium roast (full city, ending around 203-207C / 397-405F) is the target range for the washed Java. Lighter than this and the bean lacks development; the jasmine and stone fruit notes are present but thin, and the chocolate body does not fully emerge. Darker than this and you lose the florals first. The jasmine aromatics are the first casualty of over-development, and they are the characteristic that makes washed Java worth the premium over commodity Caturra. Develop to the point where the milk chocolate and stone fruit are forward, the jasmine is still present, and the acidity reads balanced rather than sharp.</p>
+
+<p class="body">Because the beans are large and dense, you will need to account for longer heat transfer times. A roast profile that works perfectly on a smaller-screen Caturra may under-develop Java if applied directly. Most roasters extending their first crack development time by 10-15 seconds versus their Caturra baseline find the Java responds better.</p>
+
+<h3 class="sub-head">Anaerobic Java Roast Profile</h3>
+<p class="body">The anaerobic Java is more forgiving of roast range because the fruit character that defines it is more heat-stable than the delicate florals in the washed version. City to city+ (ending around 200-205C / 392-401F) is the recommended range. You can push a touch further than the washed version without losing what makes the lot valuable. The dark cherry and raisin notes survive into the medium range, and the chocolate undertones deepen rather than burning off. Rest the anaerobic Java for at least two weeks after roasting: it off-gasses aggressively in the first week and tastes dramatically better at the two-week mark. Four weeks is better still on this lot.</p>
+
+<h3 class="sub-head">Extraction Notes</h3>
+<p class="body">Java's bean density means extraction needs more contact time or finer grind than a smaller, lighter-density bean at the same roast level. For pour-over, start your grind one click finer than your Caturra baseline and adjust from there. For espresso with the anaerobic Java, longer pre-infusion (6-8 seconds) helps even extraction across the large bean surface. The washed Java extracts cleanly and does not require unusual techniques once you have calibrated for the density.</p>
+
+<h2 class="section-head">Java vs Geisha: <em>The Honest Comparison</em></h2>
+
+<p class="body">Both Java and Geisha are grown at El Quetzal. Both are specialty varieties with distinctive cup profiles that stand apart from commodity Caturra. But they are different in nearly every meaningful dimension, and the right choice for any buyer depends on what the program needs.</p>
+
+<h3 class="sub-head">Flavor Profile</h3>
+<p class="body">Washed Java: milk chocolate, jasmine, stone fruit, tea-like balance. Approachable, consistent, works across brew methods. Washed Geisha: jasmine, bergamot, peach, apple, white tea finish, delicate and complex. More aromatic range, more expressive, less forgiving of roast and brew errors.</p>
+
+<h3 class="sub-head">Reliability</h3>
+<p class="body">Java is the farm's flagship for a reason. The variety has been refined over twenty-plus years at El Quetzal, and the consistency between harvests reflects that accumulated knowledge. Geisha programs are newer and, globally, more variable. The gap between the best Geisha lots and the worst is wider than the gap between best and worst Java lots from the same farm.</p>
+
+<h3 class="sub-head">Price and Availability</h3>
+<p class="body">Geisha commands a price premium over Java globally, reflecting market demand for the Geisha cup profile that has been building since Panama Geisha established it as the pinnacle of specialty in the early 2000s. At El Quetzal, both varieties are available at accessible price points versus the Panama auction market, but Geisha lots are smaller in volume and move faster. Java, by contrast, has been available consistently for over two decades. For a roaster building a reliable single-origin program, Java is more dependable. For a roaster who wants the highest-aromatic, most distinctive single lot for a limited-release offering, the <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal Geisha</a> is the appropriate choice. You do not have to pick one: both can coexist in the same sourcing program, serving different menu positions.</p>
+
+<h3 class="sub-head">For Buyers Who Are New to Both</h3>
+<p class="body">The smartest entry into El Quetzal's varietal range is to buy sample quantities of both washed Java and washed Geisha and cup them side by side. Same farm, same mill, same harvest year, same processing method: only the variety changes. The comparison makes the differences concrete in a way that no description fully captures. Then add the anaerobic Java as a third cup to see what processing does on top of the varietal character. Three samples, one farm, one origin, and you have covered the primary axes of specialty variation (varietal and process) in a single flight.</p>
+
+<h2 class="section-head">Where to Source El Quetzal Java: <em>Logistics and Lot Sizes</em></h2>
+
+<p class="body">El Quetzal ships green coffee from Houston (Dupuy's warehouse) to US buyers directly, which removes the importer markup and the traceability gap that comes with buying through an intermediary. The supply chain is farm to on-farm mill (Beneficio San Miguel) to export preparation to Houston warehouse to roaster. No importer between the farm and your receiving dock.</p>
+
+<p class="body">Available formats for the Java program: sample packs (small quantities for evaluation), retail lots at 5, 10, and 30 pound sizes for roasters ready to put the lot on their menu, and full 69 kilogram sacks with forward contract options for buyers who want to secure next-harvest volume. The <a href="https://elquetzal.coffee/products/eq-washed-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed Java</a> and <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java</a> are both listed at elquetzal.coffee. Contact the farm directly for forward contract pricing on upcoming harvests.</p>
+
+<p class="body">For context on how Java fits into the broader El Quetzal lineup (including the Geisha, Laurina, and Nicaragua single-origin options), start with the full <a href="/learn/nicaraguan-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Nicaraguan coffee guide</a>. For buyers who want to understand how the anaerobic processing was developed and what it adds to the lot, the <a href="/microlots/anaerobic-java-green-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java microlot page</a> covers the program history in detail.</p>
+
+</ContentLayout>

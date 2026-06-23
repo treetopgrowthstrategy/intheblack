@@ -1,0 +1,151 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does Kenya AA mean?",
+    a: "Kenya AA is a bean size grade, not a quality grade. AA refers to beans that pass through screen size 18 (approximately 7.2mm diameter) or larger. The grading system was designed for export standardization and sorts by physical bean size only. It tells you nothing about cup quality, origin within Kenya, variety, processing, or freshness. A well-grown AB from Nyeri at 1,900 MASL can outperform a Kenya AA from a lower-altitude region in the cup. The AA label is marketing shorthand for premium, but the actual quality signals are region, washing station, variety (SL-28/SL-34), and roast date."
+  },
+  {
+    q: "Why is Kenyan coffee so bright and acidic?",
+    a: "Three factors stack together to produce Kenyan acidity. First, the SL-28 and SL-34 varieties (Scott Laboratories selections from the 1930s) carry phosphoric acidity as a genetic trait: SL-28 in particular produces a distinctive phosphoric brightness not found in most other coffee varietals. Second, high-altitude growing (1,400-2,100 MASL) slows cherry development and concentrates acids. Third, the washed processing method (especially the double-fermented washed common at top Kenyan cooperatives) removes fruit material cleanly, which allows the bean's inherent acidity to come through without the sweetness buffer of natural or honey processing. The combination of genetics, altitude, and process is why Kenyan acidity tastes different from any other origin's."
+  },
+  {
+    q: "Is Kenyan coffee good for espresso?",
+    a: "Kenyan coffee is challenging for espresso and requires precision to work well. The high phosphoric acidity from SL-28 and SL-34 varietals concentrates under pressure and can taste sharp or sour at standard espresso parameters. Kenyan espresso rewards lower extraction temperature (88-90°C vs. the standard 92-94°C), which tames the acidity while preserving the distinctive blackcurrant and dark fruit character. A skilled barista can pull exceptional Kenyan espresso, but it is not a forgiving choice and is not recommended for home setups still dialing in fundamentals. For most espresso applications, a naturally sweeter, lower-acid origin performs more reliably."
+  },
+  {
+    q: "Why does Kenyan coffee taste like blackcurrant?",
+    a: "The blackcurrant note in Kenyan coffee is primarily a product of SL-28 genetics, which produces a specific flavor compound (methoxypyrazine) associated with blackcurrant and other dark, berry-adjacent flavors. It is not a processing artifact or a terroir metaphor: SL-28 coffee genuinely produces this flavor compound at levels detectable in the cup. High altitude growing and washed processing allow the note to come through clearly because there is no natural-process fruit sweetness masking or modifying it. When tasters describe Kenyan coffee as tasting like blackcurrant or cassis, they are identifying a real chemical compound tied to varietal genetics."
+  },
+  {
+    q: "What is the difference between Nyeri and Kirinyaga Kenyan coffee?",
+    a: "Nyeri is the benchmark: central highlands, 1,700-2,000 MASL, red volcanic soil, the most structured and complex cups in Kenyan specialty. The flavor profile in a great Nyeri coffee is blackcurrant, grapefruit, tomato, and wine-like finish with full body. Kirinyaga is adjacent, on the slopes slightly different from Nyeri's central position, and produces cups that are often described as more delicate and fruit-forward with less of the savory tomato note that some Nyeri coffees carry. Neither is better in an absolute sense; they represent slightly different expressions of the same high-altitude Kenyan terroir. Most serious Kenyan specialty buyers have tried both and have a preference."
+  },
+  {
+    q: "What roast level is best for Kenyan coffee?",
+    a: "Light to medium roast is mandatory for Kenyan coffee. The SL-28 and SL-34 acidity that defines the origin's cup profile is the most heat-sensitive element in the bean: darker roasting flattens the phosphoric brightness into generic bitterness and loses the blackcurrant and grapefruit notes that distinguish Kenyan from every other origin. A medium-dark or dark-roasted Kenyan coffee is a waste of the genetics, the altitude, and the processing care that went into producing it. Any roaster selling dark-roasted Kenyan is either uninformed about the origin or prioritizing shelf-life over quality."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Origin Guide', title: 'Ethiopian Coffee Guide' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+];
+---
+
+<ContentLayout
+  title="Kenyan Coffee Guide: SL-28, Regions, and What AA Actually Means"
+  description="A complete guide to Kenyan coffee: SL-28 and SL-34 varieties, Nyeri and Kirinyaga regions, what AA grading means, and where to buy the real thing."
+  slug="learn/kenyan-coffee-guide"
+  section="learn"
+  sectionLabel="Origin Guide"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Ready to taste <em>Kenyan specialty?</em>"
+  ctaBody="Volcanica Coffee carries fresh-roasted Kenyan AA single-origin, roasted to order from Atlanta. Roast date on every bag."
+>
+
+<p class="body">Kenyan coffee has a flavor profile unlike any other origin. The combination of SL-28 and SL-34 varieties (both developed at Scott Laboratories in the 1930s), high-altitude central highlands growing, fully washed processing through cooperative washing stations, and volcanic soil produces a cup characterized by blackcurrant, grapefruit, tomato, and wine-like acidity: specific, identifiable flavors that experienced tasters recognize immediately and that distinguish Kenyan specialty from every other regional profile. No other origin produces the phosphoric brightness of SL-28 at high altitude. The flavor is not metaphor. It is chemistry.</p>
+
+<p class="body"><a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> carries Kenyan AA fresh-roasted from their Atlanta facility, shipped within days of roasting with the roast date on the bag. For buyers approaching Kenyan coffee for the first time, that is the right starting point: a well-sourced, roast-to-order Kenya AA that delivers the origin's signature character without the guesswork of hunting for it in an unfamiliar catalog.</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; padding: 1.25rem; border: 1px solid rgba(201,168,76,0.15); background: var(--espresso-mid);">
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">1400-2100m</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Growing altitude range</div>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">SL-28/34</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Dominant varieties</div>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">#6</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Global specialty exporter</div>
+  </div>
+</div>
+
+<h2 class="section-head">SL-28 and SL-34: <em>The Varieties That Define the Cup</em></h2>
+
+<p class="body">SL-28 and SL-34 are the most important factor in Kenyan cup quality. Both were developed by Scott Laboratories (hence "SL") in the 1930s during a colonial-era program to identify drought-resistant and high-yielding coffee varieties for Kenyan production. Neither was selected for flavor, but both happened to produce flavor profiles that specialty buyers now prize highly.</p>
+
+<p class="body"><strong>SL-28</strong> is the flagship. Drought-resistant, suited to lower-rainfall areas within Kenya's highlands, and the producer of the blackcurrant and phosphoric acidity that defines the best Kenyan cups. The phosphoric acidity in SL-28 coffee is a specific chemical compound that registers on the palate as bright, juicy, almost effervescent, and tied to flavors of blackcurrant, cassis, and dark berry. It is not the same as the citric acidity in Ethiopian washed or the malic acidity in some Colombian coffees: it is distinctively Kenyan, and distinctively SL-28.</p>
+
+<p class="body"><strong>SL-34</strong> complements SL-28 in the cup by adding body and complexity. Where SL-28 delivers brightness and specific berry character, SL-34 adds weight, depth, and a wine-like finish that makes the best Kenyan coffees feel complete rather than one-dimensional. Washing stations that process SL-28 and SL-34 cherry together produce the full Kenyan profile: brightness and specificity from SL-28, body and length from SL-34.</p>
+
+<p class="body">Together, the two varieties create the Kenyan cup identity more than any other single factor. High altitude and skilled processing allow the genetics to express fully, but the genetics are the foundation. This is why Kenyan coffee planted at similar altitudes in other African countries with different varietals does not taste Kenyan: the flavor is in the genes, not just the place.</p>
+
+<h2 class="section-head">Kenyan Growing Regions: <em>Where the Best Lots Come From</em></h2>
+
+<p class="body"><strong>Nyeri.</strong> The benchmark region for Kenyan specialty. Located in the central highlands at 1,700 to 2,000 MASL on the slopes of Mount Kenya, Nyeri produces the most complex and structured cups in Kenyan coffee. Red volcanic soil, consistent rainfall, and the highest concentration of specialty-focused cooperatives combine to make Nyeri the region most consistently represented at the top of Kenyan auction results. Tasting notes: blackcurrant, grapefruit, tomato, wine-like finish, full body, long aftertaste. If you have never had Kenyan coffee, a well-sourced Nyeri washing station lot is where to start.</p>
+
+<p class="body"><strong>Kirinyaga.</strong> Adjacent to Nyeri on different slopes of Mount Kenya, Kirinyaga produces cups that tasters often describe as more delicate and fruit-forward than the structured intensity of Nyeri. The blackcurrant character is present but less assertive; the red fruit notes (cranberry, red currant) are more prominent. Some buyers prefer Kirinyaga for its approachability; Nyeri devotees find it less complex. Both represent the best of Kenyan specialty and the comparison between them is worth making if you are serious about the origin.</p>
+
+<p class="body"><strong>Murang'a.</strong> On the southern slopes of Mount Kenya, Murang'a produces consistent and balanced Kenyan specialty without the intense structure of Nyeri or the delicate fruit of Kirinyaga. Good Murang'a lots offer the core Kenyan character (blackcurrant, bright acidity, full body) in a more accessible form. For buyers who find Nyeri too intense or acidic, Murang'a is a useful middle ground.</p>
+
+<p class="body"><strong>Embu.</strong> On the eastern slopes of Mount Kenya, Embu produces coffees with more citrus-forward character: lemon, orange zest, and citric acidity rather than the phosphoric blackcurrant of SL-28-dominant lots. Embu coffees tend toward lighter body and brighter fruit. Interesting for buyers who want to explore how the same varieties express differently across slopes of the same mountain.</p>
+
+<p class="body"><strong>Machakos.</strong> Lower altitude than the Mount Kenya regions, Machakos produces more approachable Kenyan coffees with less intense acidity and more chocolate-adjacent notes. Less celebrated in specialty circles than Nyeri or Kirinyaga, but useful for buyers who want Kenyan character without the full intensity of the central highlands.</p>
+
+<h2 class="section-head">Kenya AA and AB Grading: <em>What It Actually Tells You</em></h2>
+
+<p class="body">The Kenya AA grading designation is not a quality indicator. It is a bean size grade. AA designates beans that pass through screen size 18 (approximately 7.2mm in diameter). AB is a combined grade for beans at screen sizes 15 and 16. The grading system was designed for export standardization, not cup quality evaluation.</p>
+
+<p class="body">The practical implication: larger beans (AA) do not inherently produce better coffee. Bean size correlates weakly with altitude (higher-altitude cherries develop more slowly and may produce larger seeds) but does not determine cup quality. A Nyeri AB from a top cooperative processed with care and skill can produce a cup that is more complex, sweeter, and more interesting than a Kenya AA from a lower-altitude region with average processing.</p>
+
+<p class="body">This matters when buying. A bag labeled "Kenya AA" from a generic roaster tells you the bean size grade and nothing else. A bag labeled "Kenya AA - Nyeri County - Gakuyuini Cooperative - Washed - SL-28/SL-34 - Roasted 2026-06-15" tells you something worth knowing. The additional information is what distinguishes specialty sourcing from commodity sourcing using the same "AA" label.</p>
+
+<p class="body">At the retail level, "Kenya AA" functions as a marketing premium more than a quality signal. Do not buy based on the AA designation alone. Buy based on region, washing station or cooperative name, variety, processing method, and roast date.</p>
+
+<h2 class="section-head">Cooperative Structure: <em>How Kenyan Specialty Reaches You</em></h2>
+
+<p class="body">Most Kenyan specialty coffee is not grown on large estates. It is produced by thousands of smallholder farmers, many with less than half a hectare, who bring their harvested cherry to a cooperative washing station for processing. The washing station (called a "factory" in Kenyan coffee terminology, a colonial-era holdover) receives cherry from dozens or hundreds of smallholders, sorts it, processes it through washed fermentation tanks, and dries it on raised beds.</p>
+
+<p class="body">This cooperative structure has significant quality implications. A washing station that sorts carefully, manages fermentation times, and dries on raised beds in clean conditions can elevate the quality of smallholder lots beyond what individual small-farm processing could achieve. The washing station becomes the unit of traceability and quality control. Specialty roasters who travel to source in Kenya build relationships with specific washing stations and cooperatives, and the provenance information on the bag ("Gakuyuini Washing Station, Nyeri County") refers to the cooperative processing unit, not an individual farm.</p>
+
+<p class="body">This is why the washing station name matters on a Kenyan coffee bag. It is the point at which quality was either controlled or not, and the most reliable indicator of what is in the cup beyond the regional designation.</p>
+
+<h2 class="section-head">Processing: <em>Washed, and Why It Matters</em></h2>
+
+<p class="body">Kenyan coffee is processed almost exclusively by the washed method, and this is central to the cup profile. Washed processing removes the fruit material from the coffee seed before drying, which means the flavor in the cup comes entirely from the bean's intrinsic character: the genetics of SL-28 and SL-34, the altitude, the soil. There is no natural-process fruit sweetness buffering or modifying the acidity.</p>
+
+<p class="body">The double-fermented washed process common at top Kenyan cooperatives extends fermentation beyond the standard single-pass: cherry is fermented, the mucilage layer is removed, and the beans ferment again in water before washing and drying. This extended fermentation produces the particularly clean, bright, and complex cups that make high-end Kenyan specialty distinctive from standard washed African coffees.</p>
+
+<p class="body">Natural and honey-processed Kenyan coffees exist in small quantities at experimental farms, but they represent a tiny fraction of Kenyan production and are unusual enough that you should treat them as specialty curiosities rather than typical examples of the origin. For a full breakdown of processing methods, see the <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">coffee processing methods guide</a>.</p>
+
+<h2 class="section-head">Flavor Expectations: <em>What to Taste</em></h2>
+
+<p class="body">A well-sourced and well-roasted Kenyan coffee from Nyeri or Kirinyaga should deliver: blackcurrant (cassis), grapefruit or pomelo, often a savory tomato note that registers as umami, wine-like acidity in the finish, full body relative to other African origins, and a long, dry, tannin-adjacent aftertaste that lingers. These are not metaphors constructed to make the coffee sound interesting. They are specific flavor compounds in the cup.</p>
+
+<p class="body">Light to medium roast is mandatory to taste this. Darker roasting flattens the phosphoric acidity that produces the blackcurrant and grapefruit notes into generic bitterness. A medium-dark roasted Kenyan tastes like a generic dark coffee with some fruit in the background. A light-roasted Kenyan from a top Nyeri washing station, brewed properly, tastes like nothing else in the world of coffee.</p>
+
+<p class="body">Brew parameters: Kenyan washed coffee rewards slightly higher water temperature (93-95°C) in pour-over to ensure full extraction of the complex flavor compounds. A medium-coarse grind on a pour-over like a Hario V60 or Kalita Wave gives the clearest expression of the origin character. French press works but softens the acidity and adds body that can mute the specific fruit notes.</p>
+
+<h2 class="section-head">Where to Buy: <em>Volcanica Kenya</em></h2>
+
+<p class="body"><a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> carries Kenyan AA fresh-roasted from their Atlanta facility with the roast date on every bag. For buyers who want to experience the Kenyan cup profile at its best, buying fresh-roasted from a known roast date and brewing within 7-21 days post-roast is how the origin delivers on its reputation. Older Kenyan coffee loses the brightness and specificity of the SL-28 acidity first, leaving a flatter, more generic cup that does not represent the origin.</p>
+
+<p class="body">For further exploration of single-origin coffee and how Kenya compares to other origins, see the <a href="/learn/best-single-origin-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">best single origin coffee guide</a>.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended: Kenyan Single-Origin</div>
+  <div class="buy-card-title">Volcanica Kenya AA</div>
+  <p class="buy-card-notes">Tasting notes: blackcurrant, grapefruit, tomato, wine-like acidity. Light to medium roast. Roasted to order from Atlanta. Roast date on every bag. The correct starting point for buyers approaching Kenyan specialty for the first time.</p>
+  <a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Kenya →</a>
+</div>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

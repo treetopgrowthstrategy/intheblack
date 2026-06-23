@@ -1,0 +1,184 @@
+---
+import TopRoastersLayout from '../../layouts/TopRoastersLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Which neighborhoods in New York have the best specialty coffee scenes?",
+    a: "Brooklyn, particularly Bushwick and Williamsburg, has the highest concentration of sourcing-focused independent roasters. Manhattan's Upper West Side, Lower East Side, and Midtown corridors support a dense specialty café market driven by office and hospitality demand. For wholesale buyers visiting to evaluate roasters, a Bushwick-to-Manhattan day covers the range from ultra-premium craft roasters like Sey to high-volume hospitality operators like Gregorys."
+  },
+  {
+    q: "Which New York roasters are best suited for hospitality wholesale accounts?",
+    a: "La Colombe, Irving Farm, Birch Coffee, and Toby's Estate have the strongest hospitality track records in the New York market. La Colombe has built deep relationships with hotels and restaurants at scale. Irving Farm focuses on NYC metro restaurant and café accounts. Birch Coffee has strong office and hotel penetration. Gregorys has multi-unit infrastructure suited to large hospitality groups."
+  },
+  {
+    q: "Is Intelligentsia still considered a top roaster even though it originated in Chicago?",
+    a: "Yes. Intelligentsia has had a substantive New York presence since 2009 and their sourcing quality has remained high through ownership changes. Their Direct Trade model, established in the late 1990s, was one of the frameworks that defined what direct trade means in practice. The New York operation functions as a full wholesale hub, not just a retail outpost, and the account support infrastructure reflects that."
+  },
+  {
+    q: "How competitive is the New York specialty wholesale market?",
+    a: "Extremely competitive. New York has more specialty café openings per year than any other US market, and the demand from restaurants and hotels keeps pace. Wholesale buyers have genuine negotiating leverage here because roasters are competing for accounts. The flip side is that the best roasters, Sey, Elm-tier quality operations, can afford to be selective. Volume buyers and premium buyers are essentially two different markets, both active."
+  }
+];
+---
+
+<TopRoastersLayout
+  title="The 7 Best Specialty Coffee Roasters in New York"
+  description="New York's specialty coffee market is the most competitive in the US. A guide to seven roasters with the sourcing depth and wholesale programs buyers need."
+  city="New York"
+  slug="new-york"
+  roasterCount={7}
+  publishDate="2026-06-23"
+  {faqItems}
+>
+
+  <p class="body-text">
+    New York's specialty coffee scene runs on density. No American city has more specialty cafés per square mile, more varied café formats, or more demanding wholesale buyers than Manhattan and Brooklyn. The roasters who have built serious wholesale operations here have earned it against a field that never stops growing, and the infrastructure they've built to compete reflects that pressure.
+  </p>
+  <p class="body-text">
+    This guide is for wholesale buyers and operators evaluating the New York specialty market. For context on how to evaluate roasters across markets, see our <a href="/learn/best-specialty-coffee-roasters">guide to the best specialty coffee roasters in the US</a> and our <a href="/how-to-choose-a-coffee-roaster">guide to choosing a coffee roaster for your business</a>.
+  </p>
+
+  <div class="roaster-card">
+    <span class="roaster-number">01 / 07</span>
+    <h2 class="roaster-name">Intelligentsia Coffee</h2>
+    <div class="roaster-tagline">Chicago-origin, New York presence since 2009</div>
+    <div class="roaster-body">
+      <p>Intelligentsia opened in Chicago in 1995 and arrived in New York in 2009, bringing the Direct Trade sourcing model they helped pioneer into one of the country's most demanding café markets. The New York operation is not a satellite of the Chicago business, it functions as a full wholesale hub with account management, barista training, and sourcing relationships that extend through Ethiopia, Colombia, Guatemala, Kenya, and El Salvador.</p>
+      <p>The Direct Trade model Intelligentsia established in the late 1990s set terms that are now standard practice: above-market pricing, multi-year producer commitments, and sourcing trips that tie cup quality directly to producer relationships. That depth is what wholesale buyers are accessing when they partner with Intelligentsia, not just a supplier relationship, but a sourcing infrastructure built over decades.</p>
+      <p>For cafés, restaurants, and hotels in the New York market, Intelligentsia offers the combination of sourcing quality, brand recognition, and wholesale support that makes a coffee program worth talking about. The barista training program is among the most comprehensive available through a single roaster, which matters for hospitality operators whose staff turnover creates ongoing training needs.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Direct Trade</span>
+      <span class="roaster-tag">Chicago-Origin</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Barista Training</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">02 / 07</span>
+    <h2 class="roaster-name">La Colombe Coffee Roasters</h2>
+    <div class="roaster-tagline">Philadelphia-origin, major New York presence</div>
+    <div class="roaster-body">
+      <p>La Colombe was founded in Philadelphia in 1994 by Todd Carmichael and JP Iberti and expanded into New York as the specialty market grew. The brand is best known nationally for inventing the Draft Latte, a canned nitrogen-infused latte that brought specialty coffee to convenience channels at scale. Behind the consumer product, La Colombe runs a serious wholesale operation that serves cafés, restaurants, and hotels at a scale most craft roasters cannot approach.</p>
+      <p>The hospitality focus is real. La Colombe has built account relationships with major hotel groups and restaurant chains in New York and nationally. The wholesale infrastructure, account management teams, equipment programs, training, and consistent fulfillment at volume, is purpose-built for operators who need a roaster that can grow with them rather than constrain them.</p>
+      <p>Sourcing quality has remained strong despite the scale of the operation. La Colombe's roasting team maintains specialty-grade standards across a product line that is larger and more varied than most craft roasters manage. For wholesale buyers who need both quality and scale, La Colombe is one of the few operations in the country that delivers both without significant compromise on either.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Draft Latte</span>
+      <span class="roaster-tag">Hospitality Scale</span>
+      <span class="roaster-tag">Philadelphia-Origin</span>
+      <span class="roaster-tag">Wholesale</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">03 / 07</span>
+    <h2 class="roaster-name">Irving Farm New York</h2>
+    <div class="roaster-tagline">Manhattan (multiple locations), Hudson Valley roastery · Founded 1996</div>
+    <div class="roaster-body">
+      <p>Irving Farm is a genuinely New York-native roaster, founded in Manhattan in 1996 and roasting in the Hudson Valley since the early 2000s. Multiple café locations across Manhattan, including Upper West Side, Gramercy, and Midtown, give Irving Farm a street-level presence that supports wholesale credibility in a way that out-of-state brands cannot replicate. They are embedded in the New York café landscape in a way that comes through in account relationships.</p>
+      <p>Sourcing relationships in Colombia, Ethiopia, and El Salvador have been built over years of direct engagement with producers. The wholesale program focuses on New York metro accounts, which means the account management team understands the specific pressures, lease costs, staffing challenges, and customer expectations, that New York operators face. That market knowledge is part of what wholesale partners get access to.</p>
+      <p>Irving Farm is a strong fit for independent cafés, restaurant groups, and hotel F&B programs across the New York metro area that want a roaster with a genuine New York story and the sourcing depth to back it up. The training and education programs are active and accessible without requiring the kind of scale commitments that larger roasters sometimes impose.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">NY-Native</span>
+      <span class="roaster-tag">Hudson Valley Roastery</span>
+      <span class="roaster-tag">1996</span>
+      <span class="roaster-tag">Wholesale Metro</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">04 / 07</span>
+    <h2 class="roaster-name">Birch Coffee</h2>
+    <div class="roaster-tagline">New York (multiple Manhattan locations) · Founded 2009</div>
+    <div class="roaster-body">
+      <p>Birch Coffee has operated in New York since 2009 with a model built around accessibility, consistency, and community. Multiple Manhattan locations covering Midtown, Flatiron, Chelsea, and the Upper East Side give Birch a geographic presence that mirrors the distribution patterns of their target wholesale accounts: hotels, office buildings, and restaurant groups spread across the island rather than concentrated in a single neighborhood.</p>
+      <p>The wholesale program has grown alongside the retail footprint. Birch's approach to roasting prioritizes consistency, cups that perform reliably across different brewing equipment, skill levels, and service environments, which is what most hospitality wholesale buyers actually need once the novelty of a new partnership settles. Single-origin offerings are available for menus that need a rotating seasonal anchor.</p>
+      <p>For office coffee programs, hotel accounts, and restaurant groups that want a New York-native roaster with genuine specialty credibility and operational reliability at scale, Birch Coffee has built the infrastructure to deliver. Account management is active, and the team is experienced with the specific logistics of high-volume New York hospitality accounts.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">NYC-Native</span>
+      <span class="roaster-tag">2009</span>
+      <span class="roaster-tag">Hospitality</span>
+      <span class="roaster-tag">Office Accounts</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">05 / 07</span>
+    <h2 class="roaster-name">Sey Coffee</h2>
+    <div class="roaster-tagline">Bushwick, Brooklyn · Founded 2016</div>
+    <div class="roaster-body">
+      <p>Sey Coffee in Bushwick is one of the most sourcing-focused roasters in New York and among the most respected in the country. The name comes from the Old English "to speak," which signals the philosophy: coffee as a direct expression of origin, with nothing added in the roasting or preparation to obscure what the bean is actually saying. Light-roast, origin-forward, and calibrated by Q Graders, Sey's offering sits at the precision end of the specialty spectrum.</p>
+      <p>The wholesale program is selective. Sey evaluates accounts against their quality standards before taking them on, which means their wholesale partners are not just customers, they are endorsements. For accounts that clear the bar, the relationship includes access to sourcing information, producer profiles, and educational support from a team that takes the craft seriously enough to have helped redefine what it looks like in New York.</p>
+      <p>Sey is the right choice for fine dining restaurants, boutique hotels, and independent cafés where the coffee program is a genuine point of differentiation. Volume buyers who need guaranteed large-batch fulfillment on a compressed timeline should look elsewhere. Quality buyers who want the best available sourcing in Brooklyn and are prepared to engage with what that means will find Sey to be exactly what the New York specialty scene has been building toward.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Bushwick</span>
+      <span class="roaster-tag">Light Roast</span>
+      <span class="roaster-tag">Q Grader</span>
+      <span class="roaster-tag">Premium Sourcing</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">06 / 07</span>
+    <h2 class="roaster-name">Toby's Estate Coffee</h2>
+    <div class="roaster-tagline">Australian-origin, strong New York presence</div>
+    <div class="roaster-body">
+      <p>Toby's Estate was founded in Sydney, Australia, and brought the Australian approach to specialty coffee, precision extraction, hospitality-forward service, and an emphasis on milk-based drinks done at a high technical standard, to the New York market. The New York locations function as full café operations with on-site roasting, and the wholesale program built from that base covers cafés, restaurants, and hotels across Manhattan and Brooklyn.</p>
+      <p>The sourcing quality is consistently high. Toby's Estate approaches green selection with the same precision that defines the Australian specialty tradition: cupping-driven, relationship-built, and focused on producing a product that performs well across the full range of brewing formats rather than optimizing for a single application. Wholesale partners get access to that selection depth alongside a roasting team that is genuinely skilled.</p>
+      <p>For wholesale buyers who want Australian-standard precision in their coffee program, Toby's Estate is the New York market's strongest representative of that tradition. Particularly well-suited for restaurants and hotels where milk-based espresso drinks are the primary coffee format and quality consistency across service periods is non-negotiable.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Australian-Origin</span>
+      <span class="roaster-tag">Precise Roasting</span>
+      <span class="roaster-tag">Hospitality</span>
+      <span class="roaster-tag">Wholesale</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">07 / 07</span>
+    <h2 class="roaster-name">Gregorys Coffee</h2>
+    <div class="roaster-tagline">New York (20+ locations) · Founded 2006</div>
+    <div class="roaster-body">
+      <p>Gregorys Coffee was founded in New York in 2006 and has grown to more than 20 locations, making it one of the largest independent specialty coffee chains in the country. That scale is not incidental, it is the model: Gregorys was built from the start with the infrastructure to support multi-unit growth while maintaining specialty-grade sourcing standards. The result is a wholesale partner that can handle volume commitments that smaller roasters cannot.</p>
+      <p>The wholesale program reflects the operational maturity of the retail chain: account onboarding is systematic, fulfillment is reliable, and the support infrastructure, equipment, training, account management, is designed for wholesale partners who need a roaster that will show up consistently rather than sporadically. For large hospitality groups, multi-location restaurant operators, and office programs that need genuine scale, Gregorys provides what most craft roasters cannot.</p>
+      <p>Sourcing quality is maintained at specialty grade across the product line. Gregorys is not competing with Sey on ultra-premium sourcing, and they are not trying to. They are competing on quality-at-scale, the ability to deliver specialty-grade coffee reliably to a large number of accounts across New York and beyond. In that category, they are the strongest option in the market.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">NYC-Native</span>
+      <span class="roaster-tag">2006</span>
+      <span class="roaster-tag">Multi-Unit</span>
+      <span class="roaster-tag">Scale</span>
+    </div>
+  </div>
+
+  <p class="body-text">
+    In the Black represents specialty roasters in wholesale conversations with cafés, restaurants, hotels, and hospitality groups. If you're a roaster on this list or an operator looking for the right sourcing partner in the New York market, reach out at <a href="/contact">/contact</a>.
+  </p>
+
+  <fragment slot="related">
+    <a href="/top-roasters/chicago" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Chicago</div>
+    </a>
+    <a href="/top-roasters/seattle" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Seattle</div>
+    </a>
+    <a href="/top-roasters/los-angeles" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Los Angeles</div>
+    </a>
+    <a href="/top-roasters/austin" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Austin</div>
+    </a>
+  </fragment>
+
+</TopRoastersLayout>

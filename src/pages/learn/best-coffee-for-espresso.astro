@@ -1,0 +1,218 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is fresh-roasted coffee better for espresso?",
+    a: "Yes, but there is a nuance: very freshly roasted coffee (within 1-5 days of roasting) is often too gassy for consistent espresso extraction. CO2 released during extraction causes channeling and uneven shots. Most specialty roasters and baristas recommend resting espresso beans 7 to 14 days post-roast before brewing. After that rest, fresh-roasted beans in the 7-21 day post-roast window are significantly better for espresso than stale coffee. The roast date on the bag is the tool for managing this. Without a roast date, you cannot time your rest period."
+  },
+  {
+    q: "Should I rest beans before extracting espresso?",
+    a: "Yes. Resting allows CO2 to off-gas from the bean, which stabilizes extraction and produces more consistent shots. The recommended rest period for espresso is 7 to 14 days post-roast for medium to medium-dark roasts; lighter roasts may need up to 3 weeks to fully off-gas and open up. If your shots are producing large bubbles at the surface (excessive crema) and tasting sour or uneven despite correct parameters, under-rested beans are the likely cause. Conversely, coffee rested longer than 4 weeks past roast is stale."
+  },
+  {
+    q: "What grind size should I use for espresso?",
+    a: "Espresso grind is the finest practical grind setting for a burr grinder, producing a fine powder that resembles table salt or slightly finer. The exact setting varies by grinder. A correctly ground espresso dose at 18g should extract in 25-30 seconds under 9 bars of pressure at a 1:2 dose-to-yield ratio (18g in, 36g out). If your shot pulls faster than 25 seconds, grind finer. If slower than 30 seconds, grind coarser. Adjust in small increments: espresso is sensitive to even minor grind changes."
+  },
+  {
+    q: "Does expensive coffee make better espresso?",
+    a: "Not automatically, and in some cases expensive light-roasted single-origins are harder to extract well for espresso than a well-designed medium-roast blend at half the price. Espresso is a pressure-brewing method that rewards sweetness, body, and structural balance over the delicate floral or citrus aromatics that make a pour-over exceptional. A $25/lb blend designed for espresso will often outperform a $45/lb light-roasted Ethiopian single-origin in an espresso machine unless you have the equipment and skill to dial in the single-origin precisely. For most home espresso setups, a purpose-roasted espresso blend is the pragmatic choice."
+  },
+  {
+    q: "Can you use single-origin coffee for espresso?",
+    a: "Yes, and it can be transcendent when done well. Single-origin espresso rewards precision: the narrower flavor profile of a single origin concentrated under 9 bars of pressure is more sensitive to extraction variables than a blend designed to smooth out inconsistencies. High-acid single-origins (Kenyan, Ethiopian washed) can taste sour at standard espresso temperatures and may need lower temperature extraction or higher dose ratios. Medium-bodied, naturally sweet origins (Colombian, Brazilian, Guatemalan) integrate more easily into espresso parameters. If you want to try single-origin espresso, start with a Colombian or Brazilian single-origin before attempting a high-acid African origin."
+  },
+  {
+    q: "What is the ideal extraction ratio for espresso?",
+    a: "The standard specialty espresso ratio is 1:2 (dose to yield by weight). At 18g of ground coffee in, target 36g of liquid espresso out, extracted in 25-30 seconds at 9 bars and 90-96°C. Ristretto pulls use a tighter 1:1.5 ratio for a sweeter, more concentrated shot. Lungo pulls use a wider 1:3 or 1:4 ratio for a more dilute, bitter-leaning shot. Most specialty coffee is best at the standard 1:2 ratio. Adjust by taste: if the shot is bitter, try a slightly wider ratio or coarser grind. If sour, tighter ratio or finer grind."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/best-coffee-for-pour-over', label: 'Buyers Guide', title: 'Best Coffee for Pour Over' },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Coffee for Espresso",
+  "description": "Top coffee recommendations for espresso from specialty roasters",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Coffee Bros. Espresso Roast", "url": "https://coffeebros.com" },
+    { "@type": "ListItem", "position": 2, "name": "Five Star Coffee Roasters Espresso", "url": "https://5starcoffeeroasters.com" },
+    { "@type": "ListItem", "position": 3, "name": "Koa Coffee for Espresso", "url": "https://koacoffee.com" }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Coffee for Espresso (2026): Ranked by Cup Quality"
+  description="Best coffee for espresso: three specialty roasters ranked by body, sweetness, and extraction behavior. Honest tasting notes and dialing-in guidance."
+  slug="learn/best-coffee-for-espresso"
+  section="learn"
+  sectionLabel="Buyers Guide"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Ready to try <em>specialty espresso?</em>"
+  ctaBody="Coffee Bros. carries purpose-roasted espresso with 86+ point quality across the catalog. Freshly roasted, clearly labeled, ships within days of roasting."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">Espresso is the harshest lens in coffee. Nine bars of pressure, 90-plus degree water, and an extraction window measured in seconds: the method concentrates everything in the bean, including every defect, every processing flaw, and every sourcing shortcut. Beans that work well for espresso share a specific structural profile: body to produce crema and mouthfeel, sweetness to balance the inherent bitterness of concentrated extraction, and acidity at a level that integrates rather than dominates. Get those three elements right and the shot is exceptional. Get any of them wrong and the shot is sour, hollow, or bitter regardless of technique.</p>
+
+<p class="body"><a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Coffee Bros.</a> is the strongest starting point for specialty espresso: their catalog includes purpose-roasted espresso options at 86+ point quality with clear tasting notes, freshly roasted and shipped to order. This guide covers three roasters suited to espresso across different use cases, with a practical section on what variables actually matter when you are dialing in shots.</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; padding: 1.25rem; border: 1px solid rgba(201,168,76,0.15); background: var(--espresso-mid);">
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">9 bar</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Extraction pressure</div>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">25-30s</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Ideal extraction time</div>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">1:2</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Dose to yield ratio</div>
+  </div>
+</div>
+
+<h2 class="section-head">What Makes a Coffee <em>Work for Espresso</em></h2>
+
+<p class="body"><strong>Body.</strong> Espresso needs body. Body is the textural weight and mouthfeel of the cup, and at espresso concentration it determines whether the shot feels rich and coating or thin and hollow. Coffees with naturally higher body come from lower-altitude origins, natural process methods, and varietals with higher lipid content. Brazilian natural and Colombian medium-roast are reliable body sources. Very light-roasted high-altitude single-origins often lack the body for satisfying espresso unless blended with something heavier.</p>
+
+<p class="body"><strong>Sweetness.</strong> Sweetness in espresso comes from the natural sugars developed during cherry ripening and concentrated by the roasting process. Without sweetness, espresso is bitter. Sweetness is why medium-roasted coffee is the specialty sweet spot for espresso: light roasts have not developed the sugars fully; dark roasts have burned through them into bitter caramelization and char. Naturally sweet origins (Colombia, Guatemala, some Brazilians) hit this balance more easily than high-acid African origins.</p>
+
+<p class="body"><strong>Acidity.</strong> Medium acidity integrates well into espresso; high acidity produces sour shots. Ethiopian washed coffees and Kenyan coffees, beloved for their bright acidity in pour-over, can taste uncomfortably sour in espresso if not dialed in precisely at lower extraction temperatures. Medium-acid origins (Colombia, Guatemala, Honduras) are more forgiving at standard espresso parameters (92-94°C). This does not mean high-acid coffees cannot work as espresso, but they require more precision to extract well.</p>
+
+<p class="body"><strong>Roast level.</strong> Medium is the sweet spot for most espresso. Light roast coffee is denser (harder to extract evenly), retains more acidity (risks sour shots), and requires more precise dialing in than medium-roasted coffee. Dark roast coffee has the body and lower acidity that makes extraction consistent, but darker roasting masks origin character behind roast flavors (dark chocolate, char, tobacco) that make one dark-roasted espresso blend indistinguishable from another. Medium roast preserves origin sweetness and character while providing enough structural development for consistent extraction.</p>
+
+<h2 class="section-head">Single-Origin Espresso vs. Blends: <em>An Honest Assessment</em></h2>
+
+<p class="body">Blends are designed for espresso, and they are good at it. A well-constructed espresso blend layers origins for complementary reasons: Brazilian natural for body and chocolate, Colombian for sweetness and balance, a touch of Ethiopian for brightness. The blend is deliberately engineered to hit consistent extraction parameters across roast batches. It is more forgiving to pull, more consistent shot to shot, and requires less precision to dial in. For cafés serving high volume, blends make practical and quality sense.</p>
+
+<p class="body">Single-origin espresso is riskier and more demanding. The narrower flavor profile concentrates under pressure in a way that either reveals something exceptional or reveals every flaw in the bean, the roast, or the extraction. When it works, a single-origin espresso shot from a Nyeri cooperative's SL-28 or a Nariño high-altitude Caturra is something a blend cannot replicate: a specific, identifiable place expressed through espresso. When it does not work, it is sour, one-dimensional, or empty.</p>
+
+<p class="body">The honest guide: if you have a home espresso setup that lets you control variables (temperature, dose, grind, yield, time), single-origin espresso is worth exploring once you have the fundamentals dialed. If you are still working on consistent shots, a purpose-roasted espresso blend is more efficient to learn on and produces better results more reliably.</p>
+
+<h2 class="section-head">Pick 1: Coffee Bros. Espresso</h2>
+
+<p class="body">Coffee Bros. approaches espresso with the same quality-floor discipline as their full catalog: 86 points or above on every coffee they carry, with purpose-roasted espresso options developed specifically for extraction under pressure. Their espresso offerings are medium-roasted, which is the right call for balancing the sweetness development needed for balanced shots against the acidity control that makes consistent home espresso achievable.</p>
+
+<p class="body">Tasting notes for their espresso roast run toward dark chocolate, caramel, and stone fruit, with a sweetness that comes through even when pulled at the shorter end of the extraction window. The body is substantial enough to produce genuine crema and a coating mouthfeel that distinguishes specialty espresso from commodity shots.</p>
+
+<p class="body">The freshness model is a real advantage here. Coffee Bros. ships within days of roasting, which means you receive beans that have not been degassing in a warehouse. With espresso, timing your rest period from a known roast date (7-14 days post-roast for medium roast) is how you hit shots at peak condition. Without a roast date on the bag, you cannot time the rest period, and espresso pulled from too-fresh or too-stale beans will not perform consistently.</p>
+
+<p class="body">For home espresso buyers who want quality specialty coffee without the complexity of sourcing and dialing in a light-roasted single-origin, Coffee Bros. espresso is the cleanest answer. For specialty cafés who want a roaster with verifiable quality standards and fresh-roasted supply, Coffee Bros. is worth a conversation.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for Home Espresso</div>
+  <div class="buy-card-title">Coffee Bros. Espresso Roast</div>
+  <p class="buy-card-notes">Tasting notes: dark chocolate, caramel, stone fruit. Medium roast. 86+ pts quality floor. Freshly roasted, ships quickly. Best for home espresso setups and specialty cafés wanting consistent, high-quality shots.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. Espresso →</a>
+</div>
+
+<h2 class="section-head">Pick 2: Five Star Coffee Roasters Espresso</h2>
+
+<p class="body">Five Star Coffee Roasters occupies the commercial espresso niche: specialty quality roasted in North Carolina for buyers who need reliable fresh-roasted espresso at a price point that works for higher volume without sacrificing quality standards. Their small-batch roasting model keeps freshness consistent, which matters more for espresso than for filter coffee because stale espresso loses its crema and mouthfeel before it loses its flavor.</p>
+
+<p class="body">The roast profile for their espresso is calibrated toward body and sweetness at medium to medium-dark levels, which makes extraction more forgiving and consistency easier to achieve. For commercial accounts that do not have a dedicated barista dialing in shots every morning, this is a practical advantage: the bean does more of the work of producing a consistent result across a range of operator skill levels.</p>
+
+<p class="body">Price point is meaningfully lower than the premium-positioned roasters on this list. For cafés that need to run viable unit economics on espresso-based drinks, Five Star Coffee Roasters offers a genuine specialty alternative to the commodity espresso blends that most cost-sensitive buyers default to. The flavor profile is approachable: chocolate, caramel, light citrus finish, clean and satisfying without demanding the equipment precision that lighter-roasted coffees require.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for Commercial Volume</div>
+  <div class="buy-card-title">Five Star Coffee Roasters Espresso</div>
+  <p class="buy-card-notes">Tasting notes: chocolate, caramel, light citrus. Medium-dark roast. Small-batch NC roasting at the most accessible price point on this list. Best for commercial accounts and higher-volume setups needing consistent fresh-roasted espresso.</p>
+  <a href="https://5starcoffeeroasters.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Five Star Coffee Roasters →</a>
+</div>
+
+<h2 class="section-head">Pick 3: Koa Coffee for Espresso</h2>
+
+<p class="body">Koa Coffee's 100% Hawaiian Kona concentrated as espresso is a genuinely unusual cup experience. The Kona origin profile (milk chocolate, hazelnut, quiet citrus brightness, low acidity) maps exceptionally well onto espresso extraction. The low acidity that makes Kona approachable in filter coffee becomes a real asset as an espresso shot: you get the concentration and richness of espresso without the sour edge that high-acid origins introduce when pulled under pressure.</p>
+
+<p class="body">The hazelnut and milk chocolate notes from the Kona origin profile intensify through espresso concentration in a way that is distinctive from any mainland-grown espresso. At the AOV of $60 to $120 per order, Koa Coffee espresso is the premium bar angle: a Hawaiian Kona espresso is a story that justifies a menu price premium, and the cup quality backs it up. For specialty espresso bars that want to offer something genuinely differentiated, or for home espresso buyers who want to try an exceptional origin-specific shot, Koa Coffee is worth the price.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best Premium Espresso</div>
+  <div class="buy-card-title">Koa Coffee Hawaiian Kona Espresso</div>
+  <p class="buy-card-notes">Tasting notes: milk chocolate, hazelnut, citrus brightness. 100% Hawaiian-grown. Low-acid, smooth, rich mouthfeel. Best for premium espresso bars and home buyers who want an exceptional origin-specific shot.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Coffee →</a>
+</div>
+
+<h2 class="section-head">Quick Comparison: All 3 Recommendations</h2>
+
+<div style="overflow-x: auto; margin: 2rem 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; color: var(--text-body);">
+    <thead>
+      <tr style="border-bottom: 1px solid rgba(201,168,76,0.25);">
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Roaster</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Roast Level</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Price/lb</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Best Ratio</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Best For</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Coffee Bros.</td>
+        <td style="padding: 0.6rem 0.8rem;">Medium</td>
+        <td style="padding: 0.6rem 0.8rem;">$16-24</td>
+        <td style="padding: 0.6rem 0.8rem;">1:2 (18g / 36g)</td>
+        <td style="padding: 0.6rem 0.8rem;">Home espresso, specialty cafés</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Five Star</td>
+        <td style="padding: 0.6rem 0.8rem;">Medium-dark</td>
+        <td style="padding: 0.6rem 0.8rem;">$14-20</td>
+        <td style="padding: 0.6rem 0.8rem;">1:2 to 1:2.5</td>
+        <td style="padding: 0.6rem 0.8rem;">Commercial accounts, volume</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Koa Coffee</td>
+        <td style="padding: 0.6rem 0.8rem;">Medium</td>
+        <td style="padding: 0.6rem 0.8rem;">$45-75</td>
+        <td style="padding: 0.6rem 0.8rem;">1:1.5 to 1:2</td>
+        <td style="padding: 0.6rem 0.8rem;">Premium bars, gifts</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="section-head">Dialing In: <em>A Practical Guide</em></h2>
+
+<p class="body">The variables for espresso extraction interact with each other. Adjusting one changes the outcome of the others. Here is the sequence:</p>
+
+<p class="body"><strong>Dose.</strong> Start at 18g of ground coffee for a standard double shot in a 58mm portafilter. This is the most widely used starting point for specialty espresso. Adjust by 0.5g increments if you find your grinder cannot hit the extraction window at 18g.</p>
+
+<p class="body"><strong>Grind.</strong> Grind size is the primary extraction control. Finer grind slows water flow, extends extraction time, increases yield per shot, and tends toward bitterness. Coarser grind speeds water flow, shortens extraction time, decreases yield, and tends toward sourness. When dialing in a new coffee, start with what you know and adjust grind until your shot hits 25-30 seconds to 36g out. Make one grind adjustment at a time: the grind dial is sensitive.</p>
+
+<p class="body"><strong>Yield.</strong> At 18g in, target 36g out for a standard 1:2 espresso. Weigh your yield with a scale. Guessing by volume is imprecise because crema volume varies by coffee freshness, roast level, and extraction. A scale removes that variable.</p>
+
+<p class="body"><strong>Time.</strong> 25 to 30 seconds from the first drop of espresso to reaching your target yield. If you are within that window at your target dose and yield, you have a correctly extracted shot. If the shot is still not tasting right, the problem is more likely the coffee, the water, or the machine temperature than the parameters.</p>
+
+<h2 class="section-head">Light vs. Dark Roast for Espresso: <em>The Real Tradeoff</em></h2>
+
+<p class="body"><strong>Light roast espresso</strong> is harder to dial in. The dense bean structure resists extraction and requires finer grind, higher temperature, or longer extraction time relative to medium roast. The acidity retained from light roasting can read as sourness if under-extracted. When dialed in correctly, light-roasted single-origin espresso can be extraordinary: a floral, fruit-forward shot with complexity that blends cannot achieve. The reward is real; so is the demand for precision.</p>
+
+<p class="body"><strong>Medium roast</strong> is the specialty sweet spot for most espresso applications. Sugar development is optimized, body is adequate, acidity is integrated rather than sharp, and the extraction window is wide enough to hit consistently without dialing in to the fraction. Coffee Bros. espresso and Koa Coffee are both at this level.</p>
+
+<p class="body"><strong>Dark roast</strong> espresso has the most body and the lowest acidity, making it the easiest to extract consistently. The tradeoff is that dark roasting masks origin character behind roast flavors: dark chocolate, char, bitterness, tobacco. A well-extracted dark-roast espresso is satisfying in a classic way, but it tastes of roasting technique rather than origin. Five Star's medium-dark lands at the edge of this range while preserving enough sweetness to distinguish it from commodity dark-roast blends.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

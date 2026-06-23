@@ -1,0 +1,184 @@
+---
+import TopRoastersLayout from '../../layouts/TopRoastersLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What makes Seattle's specialty coffee scene different from other US cities?",
+    a: "Seattle's specialty scene emerged as a direct reaction to commodity coffee culture, not as an extension of it. The roasters who built the current market were correcting against a large, established industry, which forced higher sourcing and extraction standards from the beginning. The result is a market where quality floors are high and wholesale buyers have access to genuine depth in terms of origin relationships, barista training infrastructure, and production capacity."
+  },
+  {
+    q: "Which Seattle roasters have the strongest wholesale programs?",
+    a: "Stumptown and Caffe Vita have the most developed wholesale infrastructure in terms of scale and account support. Victrola runs an active wholesale program with strong sourcing depth. For buyers who want a highly selective, quality-forward partner, Elm Coffee Roasters offers access to Q Grader-sourced lots with a more curated partnership model. Broadcast Coffee has a growing wholesale presence in the Pacific Northwest."
+  },
+  {
+    q: "Is Stumptown still considered a specialty roaster after the Peet's acquisition?",
+    a: "Yes. Peet's maintained Stumptown's sourcing independence and direct-trade relationships after the 2015 acquisition. The roasting quality and green sourcing standards have remained consistent. Some in the specialty community debate the cultural positioning, but by any objective measure (sourcing standards, roast quality, barista training), Stumptown remains a legitimate specialty operation and one of the most accessible wholesale partners in the country."
+  },
+  {
+    q: "What neighborhoods are central to Seattle's specialty coffee scene?",
+    a: "Capitol Hill is the densest specialty coffee neighborhood in Seattle, home to Victrola, Elm, and numerous independent cafés. Ballard has a strong presence anchored by Slate Coffee Roasters. Fremont is home to Lighthouse Roasters. The Central District has seen growth with Broadcast Coffee. For wholesale buyers visiting Seattle to evaluate roasters, Capitol Hill and Fremont can be covered in a single afternoon."
+  }
+];
+---
+
+<TopRoastersLayout
+  title="The 7 Best Specialty Coffee Roasters in Seattle"
+  description="Seattle's specialty coffee scene is the most developed in the US. Seven roasters with the sourcing depth and wholesale infrastructure to serve serious buyers."
+  city="Seattle"
+  slug="seattle"
+  roasterCount={7}
+  publishDate="2026-06-23"
+  {faqItems}
+>
+
+  <p class="body-text">
+    Seattle is the most coffee-literate city in the United States by any reasonable measure. The third-wave roasters who built the current scene established some of the highest sourcing and extraction standards in the country, reacting against commodity coffee rather than extending it. The infrastructure that followed, barista training programs, direct-trade sourcing, wholesale account support, is now mature enough that wholesale buyers have genuine depth to choose from, not just a few good options.
+  </p>
+  <p class="body-text">
+    This guide is for wholesale buyers and operators who want to understand the Seattle specialty landscape and find the roaster that fits their program. For broader context on how to evaluate roasters across markets, see our <a href="/learn/best-specialty-coffee-roasters">guide to the best specialty coffee roasters in the US</a> and our <a href="/how-to-choose-a-coffee-roaster">guide to choosing a coffee roaster for your business</a>.
+  </p>
+
+  <div class="roaster-card">
+    <span class="roaster-number">01 / 07</span>
+    <h2 class="roaster-name">Stumptown Coffee Roasters</h2>
+    <div class="roaster-tagline">Portland-origin, major Seattle presence · Founded 1999</div>
+    <div class="roaster-body">
+      <p>Stumptown was founded in Portland in 1999 by Duane Sorenson and built one of the most influential direct-trade sourcing models in the country. The relationships Sorenson established with producers in Ethiopia, Colombia, Rwanda, and Sumatra set a standard for what direct trade actually means in practice: multi-year commitments, above-market pricing, and sourcing trips that prioritize cup quality and farmer economics simultaneously.</p>
+      <p>Peet's acquired Stumptown in 2015, a move that generated significant debate in the specialty community. In practice, the sourcing independence was maintained. The Hair Bender espresso blend and the Hairbender-sourced single-origin program remained consistent through the ownership transition, and the barista training infrastructure Stumptown built, one of the most developed of any roaster in the country, continued to expand.</p>
+      <p>For wholesale buyers, Stumptown offers scale that most craft roasters cannot match: national distribution, established account management teams, and a wholesale program that includes training, equipment consultation, and ongoing barista education. They are particularly well-positioned for hospitality groups and multi-location café operators who need consistent volume and reliable support.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Direct Trade</span>
+      <span class="roaster-tag">Peet's Family</span>
+      <span class="roaster-tag">Wholesale National</span>
+      <span class="roaster-tag">Barista Training</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">02 / 07</span>
+    <h2 class="roaster-name">Victrola Coffee Roasters</h2>
+    <div class="roaster-tagline">Capitol Hill, Seattle · Founded 2000</div>
+    <div class="roaster-body">
+      <p>Victrola opened on Capitol Hill in 2000 and is one of Seattle's founding third-wave roasters. On-site roasting, a focus on seasonal single-origins, and a wholesale program that treats new accounts as long-term relationships rather than transactions have made Victrola a benchmark for what a community-rooted Seattle roaster looks like at its best. Their Blend No. 1 has become a Capitol Hill institution, balanced enough for high-volume espresso service and distinctive enough to be worth talking about.</p>
+      <p>Sourcing focuses on Ethiopia, Colombia, Guatemala, and Kenya, with relationships built over years rather than single-season contracts. The Victrola sourcing team makes origin visits and publishes producer information that wholesale partners can use for menu storytelling, staff training, and customer education. That transparency is built into the wholesale relationship from the start.</p>
+      <p>Their wholesale program is well-developed for Seattle-area accounts and extends regionally. Equipment support, barista training, and account check-ins are standard inclusions. Victrola is a strong fit for cafés, restaurant groups, and hospitality accounts that want a roaster with genuine community credibility in Seattle's most coffee-literate neighborhood.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Capitol Hill Pioneer</span>
+      <span class="roaster-tag">Blend No. 1</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Third-Wave Original</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">03 / 07</span>
+    <h2 class="roaster-name">Caffe Vita</h2>
+    <div class="roaster-tagline">Seattle (multiple locations) · Founded 1995</div>
+    <div class="roaster-body">
+      <p>Caffe Vita has been roasting in Seattle since 1995, which makes them one of the longest-operating specialty roasters in the Pacific Northwest. Multi-location, in-house roasting, and a well-developed wholesale infrastructure position them as the most operationally mature of Seattle's independently owned roasters. Their blend program is comprehensive, covering the full range from light espresso-forward offerings to darker approachable blends that serve high-volume café settings.</p>
+      <p>The single-origin program complements the blend-forward identity with rotating seasonal lots from Ethiopia, Colombia, and East Africa. USDA Organic certified lots are available for wholesale partners whose accounts have an organic preference. Equipment programs are available for qualifying wholesale accounts, reducing the upfront cost of entry for new café operators.</p>
+      <p>Caffe Vita's scale means that wholesale fulfillment is consistent and reliable in a way that smaller-batch roasters cannot always guarantee. For multi-location operators or hospitality groups that need volume consistency alongside genuine specialty quality, Caffe Vita's production capacity and distribution infrastructure make them one of Seattle's most practical wholesale options.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">1995 Institution</span>
+      <span class="roaster-tag">Wholesale</span>
+      <span class="roaster-tag">Organic Options</span>
+      <span class="roaster-tag">Multi-Location</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">04 / 07</span>
+    <h2 class="roaster-name">Lighthouse Roasters</h2>
+    <div class="roaster-tagline">Fremont, Seattle · Founded 1993</div>
+    <div class="roaster-body">
+      <p>Lighthouse Roasters has been operating in Fremont since 1993, making them one of the oldest independent specialty roasters in Seattle. The roastery uses fluid bed roasting, also called air roasting, which is an uncommon approach in the specialty world and produces a distinctly clean, bright cup by suspending beans in a column of hot air rather than roasting them in a drum. The technique highlights acidity and clarity in a way that drum roasters rarely achieve with the same consistency.</p>
+      <p>The air-roasting approach gives Lighthouse a product that stands out in cuppings: clean flavors, well-defined origin character, and a brightness that appeals to palates trained on light-roast specialty coffee. For café and restaurant accounts looking to differentiate their offering on technique as well as sourcing, Lighthouse provides a genuinely distinctive product narrative.</p>
+      <p>Wholesale is focused on café and restaurant accounts in the Seattle area and Pacific Northwest. Production volume is smaller than Caffe Vita or Stumptown, which makes Lighthouse a better fit for independent accounts than for multi-location operators needing guaranteed large-volume fulfillment. The intimacy of the wholesale relationship is part of what Lighthouse partners are choosing.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Air-Roasted</span>
+      <span class="roaster-tag">1993</span>
+      <span class="roaster-tag">Fremont</span>
+      <span class="roaster-tag">Small-Batch</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">05 / 07</span>
+    <h2 class="roaster-name">Elm Coffee Roasters</h2>
+    <div class="roaster-tagline">Capitol Hill, Seattle · Founded 2015</div>
+    <div class="roaster-body">
+      <p>Elm Coffee Roasters opened on Capitol Hill in 2015 and earned a James Beard Award nomination for their café environment. The recognition pointed at something real: Elm is one of the most intentional specialty coffee spaces in the country, and the sourcing quality behind it matches the physical environment. Q Graders are involved in green selection, which means the bar for what makes it into the wholesale program is genuinely high.</p>
+      <p>Wholesale at Elm is selective. They focus on accounts that share their quality standards and are willing to engage with the sourcing story rather than treat coffee as a commodity input. For operators who meet that bar, the relationship includes access to Q Grader-curated lots, transparent producer information, and ongoing barista education from a team that competes at the highest levels of the craft.</p>
+      <p>Elm is not the right fit for high-volume wholesale buyers who need guaranteed large-scale fulfillment on a tight timeline. They are the right fit for fine dining restaurants, boutique hotels, and independent cafés where the coffee program is a genuine point of differentiation and the team is ready to back it up with knowledge and execution.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">James Beard Nominated</span>
+      <span class="roaster-tag">Q Grader Sourcing</span>
+      <span class="roaster-tag">Capitol Hill</span>
+      <span class="roaster-tag">Selective</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">06 / 07</span>
+    <h2 class="roaster-name">Broadcast Coffee</h2>
+    <div class="roaster-tagline">Central District, Seattle · Founded 2012</div>
+    <div class="roaster-body">
+      <p>Broadcast Coffee is a Black-owned roaster that has operated in Seattle's Central District since 2012. Community focus is not a marketing position for Broadcast, it is the operational model: the roastery is rooted in a historically Black neighborhood and its wholesale and catering programs extend from that community outward rather than treating the neighborhood as a backdrop for a brand built elsewhere.</p>
+      <p>The wholesale program covers café accounts, office coffee programs, and event catering across the Pacific Northwest, with a growing presence beyond Seattle. Broadcast's approach to roasting balances accessibility, approachable blends that work across brewing methods and skill levels, with quality sourcing that gives the product genuine specialty credibility.</p>
+      <p>For wholesale buyers whose accounts have a community-orientation or whose guests will respond to a roaster with a genuine neighborhood story, Broadcast Coffee offers something most roasters cannot: an authentic connection to a specific place and community that extends through the wholesale relationship into the customer experience.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Black-Owned</span>
+      <span class="roaster-tag">Community</span>
+      <span class="roaster-tag">Central District</span>
+      <span class="roaster-tag">Wholesale</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">07 / 07</span>
+    <h2 class="roaster-name">Slate Coffee Roasters</h2>
+    <div class="roaster-tagline">Ballard, Seattle · Founded 2012</div>
+    <div class="roaster-body">
+      <p>Slate Coffee Roasters in Ballard is built around a filter-coffee-forward philosophy and pour-over expertise that positions them at the precision end of Seattle's specialty spectrum. The minimalist ethos extends from the café environment to the sourcing approach: a focused selection of origins, primarily Ethiopia and Colombia, sourced for clarity and complexity rather than volume or variety. The cup profile Slate produces is clean, nuanced, and distinctly origin-expressive.</p>
+      <p>The wholesale program is aimed at high-end café and restaurant accounts that share the filter-first philosophy. Espresso offerings are available, but Slate's strength is in filter coffee programs where pour-over or batch brew is the focal point of the café experience. For accounts where the coffee bar is a destination rather than a service station, Slate gives the program something worth building around.</p>
+      <p>Wholesale volume is intentionally limited. Slate does not pursue large-scale fulfillment contracts, which means the relationship with each wholesale partner is more engaged and the sourcing selection is more curated. Premium accounts in Seattle and the broader Pacific Northwest looking for a roaster that will help them build a genuinely distinguished filter coffee program should put Slate near the top of their evaluation list.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Filter-Forward</span>
+      <span class="roaster-tag">Ballard</span>
+      <span class="roaster-tag">Pour-Over</span>
+      <span class="roaster-tag">Premium</span>
+    </div>
+  </div>
+
+  <p class="body-text">
+    In the Black represents specialty roasters in wholesale conversations with cafés, restaurants, hotels, and hospitality groups. If you're a roaster on this list or an operator looking for the right sourcing partner, reach out at <a href="/contact">/contact</a>.
+  </p>
+
+  <fragment slot="related">
+    <a href="/top-roasters/portland" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Portland</div>
+    </a>
+    <a href="/top-roasters/los-angeles" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Los Angeles</div>
+    </a>
+    <a href="/top-roasters/new-york" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in New York</div>
+    </a>
+    <a href="/top-roasters/chicago" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Chicago</div>
+    </a>
+  </fragment>
+
+</TopRoastersLayout>

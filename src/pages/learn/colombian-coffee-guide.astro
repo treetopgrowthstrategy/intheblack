@@ -1,0 +1,155 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is Colombian coffee good?",
+    a: "Colombian coffee is consistently good across a wider range of price points than almost any other origin. The growing conditions (high altitude, two annual harvests, established infrastructure) allow Colombian producers to reliably hit the flavor profile the origin is known for: balanced sweetness, mild to medium acidity, and chocolate or caramel with clean fruit. At the specialty level (single-farm or cooperative lots from Huila, Nariño, or Tolima), Colombian coffee is exceptional. The challenge is distinguishing genuine specialty Colombian from commodity Colombian that shares the origin label without the quality."
+  },
+  {
+    q: "What is the best region for Colombian coffee?",
+    a: "Huila and Nariño produce the most celebrated specialty Colombian. Huila, in the southwestern highlands, is prized for full-bodied cups with dark chocolate, red fruit, and caramel. Nariño, at some of the highest altitudes in Colombian coffee growing (up to 2,200 MASL), produces bright, complex cups with citrus acidity and deep sweetness. Antioquia is the most consistent and benchmark-representative, while Tolima and Sierra Nevada de Santa Marta offer distinctive cups for buyers who want to explore beyond the flagship regions."
+  },
+  {
+    q: "Why does Colombian coffee taste different from roaster to roaster?",
+    a: "Several variables stack on top of origin. Region and specific farm or cooperative matter: Nariño coffee tastes different from Antioquia coffee even though both are labeled Colombian. Processing method matters: a washed Colombian runs bright and clean while a natural or honey-processed Colombian from the same farm tastes fruitier and heavier. Roast level is the most visible variable: a light-roasted Huila will taste completely different from a dark-roasted Colombian blend even if they started from similar beans. Buy from roasters who list region, processing method, and roast date. More information on the label means more transparency about what you are actually getting."
+  },
+  {
+    q: "Is Huila better than Antioquia?",
+    a: "Neither is objectively better, but they serve different preferences. Huila typically produces more complex, full-bodied cups with darker chocolate notes and red-fruit acidity. It is a richer, more structured cup that rewards specialty buyers looking for depth. Antioquia is the benchmark Colombian: reliable, balanced, caramel-forward, accessible. If you are introducing someone to Colombian coffee, Antioquia is more reliably consistent. If you want to drink the most celebrated specialty expressions of the origin, Huila has the best track record at auction and in specialty competition."
+  },
+  {
+    q: "What is the best roast level for Colombian coffee?",
+    a: "Light to medium roast is the answer for specialty Colombian, particularly from Huila or Nariño. Light roasting preserves the origin character: the specific acidity, fruit notes, and sweetness that distinguishes a great Colombian from generic coffee. Darker roasting pushes toward generic roast flavors (dark chocolate, char, bitterness) that mask origin character and make a Nariño indistinguishable from any other dark-roasted coffee. If you are drinking Colombian from a specialty roaster who has paid for quality lots, a light or medium roast is the only reason to pay for them."
+  },
+  {
+    q: "How does Colombian coffee compare to Ethiopian or Kenyan coffee?",
+    a: "Colombian coffee is the most balanced of the three origins. Ethiopian coffee at the top end is more aromatic, complex, and floral, with jasmine and bergamot notes that Colombian does not reach. Kenyan coffee is more intense and vibrant, with blackcurrant, grapefruit, and wine-like acidity that is higher and more structured than Colombian. Colombian is sweeter and more forgiving than both. It is the origin most likely to work for a wide range of people and brewing methods without demanding precision. If you are new to specialty coffee, Colombia is the right starting point. If you are ready for more complexity or intensity, Ethiopia and Kenya are the next destinations."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+  { href: '/learn/ethiopian-coffee-guide', label: 'Origin Guide', title: 'Ethiopian Coffee Guide' },
+];
+---
+
+<ContentLayout
+  title="Colombian Coffee Guide: Regions, Varieties, and What to Buy"
+  description="A complete guide to Colombian coffee: regions, tasting notes by area, varieties, processing, and honest buying recommendations for specialty Colombian."
+  slug="learn/colombian-coffee-guide"
+  section="learn"
+  sectionLabel="Origin Guide"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Ready to try <em>great Colombian coffee?</em>"
+  ctaBody="Volcanica Coffee carries fresh-roasted Colombian coffees by region, including Huila and Nariño single-origins. Roasted to order, shipped with the roast date on the bag."
+>
+
+<p class="body">Colombian coffee is the most accessible specialty origin in the world. Balanced sweetness, mild-to-medium acidity, and a clean profile that is forgiving across brewing methods and equipment: Colombia produces the coffee most likely to work for the widest range of people, which is why it dominates specialty shop menus and online roaster catalogs. It is also one of the most dishonestly labeled origins. "Colombian blend" and "100% Colombian" appear on grocery store shelves with no information about region, farm, processing method, or roast date, and none of it is meaningful without that context.</p>
+
+<p class="body">The honest version of Colombian coffee is worth seeking out. <a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> carries fresh-roasted Colombian single-origins by specific region, including Huila and Nariño, shipped roast-to-order with the roast date on the bag. That is the model to buy from: a roaster who tells you where in Colombia the coffee grew, how it was processed, and when it was roasted.</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; padding: 1.25rem; border: 1px solid rgba(201,168,76,0.15); background: var(--espresso-mid);">
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">#3</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Global Producer</div>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">1400-2200m</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Specialty altitude range</div>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold);">Washed</div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-body);">Dominant processing</div>
+  </div>
+</div>
+
+<h2 class="section-head">Colombian Regions: <em>Tasting Notes by Area</em></h2>
+
+<p class="body">Colombia is a large country with dramatically varied growing conditions. The "Colombian coffee" label covers a range of cup profiles as wide as the difference between a bright Ethiopian washed and a full-bodied Brazilian natural. Region is the first label to read when buying Colombian specialty.</p>
+
+<p class="body"><strong>Huila.</strong> The most prized Colombian specialty region. Located in the southwestern highlands at 1,500 to 2,000 meters, Huila produces full-bodied, structured cups with tasting notes running toward dark chocolate, red fruit (dried cherry, plum), and caramel sweetness. The volcanic soil and pronounced wet-dry season cycle create conditions for intense flavor development. Huila lots regularly appear at the top of the Colombia Cup of Excellence competition, which is the most reliable indicator of quality at the farm level. If you are buying Colombian for the first time and want to taste what the origin can do at its best, start with a Huila single-origin from a specialty roaster.</p>
+
+<p class="body"><strong>Nariño.</strong> Located near the Ecuador border at some of the highest altitudes in Colombian specialty production (up to 2,200 meters). The extreme altitude slows coffee cherry development, which concentrates sugars and acidity. Nariño coffees are notably brighter than Huila: the tasting profile runs toward citrus (lemon zest, mandarin, lime), caramel sweetness, and a complex acidity that is structured but not sharp. The combination of brightness and sweetness is distinctive. For buyers who enjoy high-acid origins like Kenya but want the Colombian sweetness base, Nariño is the right region.</p>
+
+<p class="body"><strong>Antioquia.</strong> The largest Colombian coffee-growing region by production volume. Antioquia is the benchmark Colombian: reliable, balanced, and consistent. The cup profile runs toward caramel, milk chocolate, and gentle fruit acidity without the intensity of Huila or the brightness of Nariño. Most "Colombian coffee" at a mid-tier specialty level is Antioquia or a blend of regions including Antioquia. It is not the most exciting region but it is the most dependably good, and for everyday drinking rather than exploration, a well-sourced Antioquia lot is an excellent coffee.</p>
+
+<p class="body"><strong>Tolima.</strong> Less widely known than Huila or Nariño, Tolima has been producing exceptional small-farm and smallholder cooperative lots that attract attention from specialty buyers. The cup profile tends toward floral and fruited notes (jasmine, stone fruit, hibiscus) with a lighter body than Huila. Access to Tolima lots at retail is less consistent than the flagship regions, but when available they represent some of the most interesting Colombian specialty available. Look for them in rotating catalogs from roasters who travel to source.</p>
+
+<p class="body"><strong>Sierra Nevada de Santa Marta.</strong> Colombia's most distinctive terroir: a coastal mountain range rising from the Caribbean coast. The proximity to the coast and the unique microclimate produce coffees with a lighter body and more pronounced floral character than the inland highland regions. Sierra Nevada lots are less common in specialty catalogs but notable when available for their distinctiveness from the standard Colombian profile.</p>
+
+<h2 class="section-head">Colombian Varieties: <em>What's Growing in the Cup</em></h2>
+
+<p class="body">Variety is the genetic blueprint for how a coffee tree develops flavor. Colombia's major cultivated varieties each have distinct characteristics:</p>
+
+<p class="body"><strong>Caturra.</strong> The specialty benchmark for Colombian coffee. A naturally occurring mutation of Bourbon, Caturra produces smaller trees (easier to pick, more dense planting) and a clean, balanced cup with good acidity and sweetness. Most of the best-tasting Colombian specialty lots come from Caturra or Caturra-dominant farms. At high altitudes with good processing, Caturra produces the textbook Colombian cup: caramel, stone fruit, clean finish.</p>
+
+<p class="body"><strong>Castillo.</strong> Developed by Colombia's National Coffee Research Centre (Cenicafé) for resistance to coffee leaf rust (roya), Castillo is the most widely planted variety in Colombia after the rust epidemics that devastated Caturra and Typica plantings. Castillo is more disease-resistant and more productive than Caturra but has a variable cup quality record: some buyers find it earthier or less vibrant than Caturra; others find the quality difference minimal with excellent processing. The debate continues in specialty circles. In practice, you will encounter Castillo regularly in Colombian specialty without it being labeled because it is so widely planted.</p>
+
+<p class="body"><strong>Colombia variety.</strong> Another Cenicafé development, also rust-resistant. The Colombia variety (named for the country) is productive and disease-resistant, and has performed better in blind tastings than early critics expected. Less discussed than Castillo but similarly widespread.</p>
+
+<p class="body"><strong>Tabi.</strong> A newer Cenicafé release that crosses Timor Hybrid (rust-resistant) with Typica and Bourbon. Tabi produces larger beans, is notably aromatic, and has shown strong cup quality results in specialty evaluations. Still relatively rare but increasingly appearing in specialty Colombian lots as producers experiment with varieties beyond the standard Caturra-Castillo matrix.</p>
+
+<h2 class="section-head">Processing in Colombia: <em>Predominantly Washed</em></h2>
+
+<p class="body">Colombian coffee is predominantly washed processed. The washed method removes the coffee cherry's fruit before drying, which produces a clean, bright, terroir-transparent cup. The fruit character in a washed Colombian (stone fruit, citrus, red fruit) comes from the bean's inherent qualities rather than from extended contact with the fruit during drying.</p>
+
+<p class="body">Naturals and honey-processed coffees are emerging in Colombia, particularly at experimental farms and cooperatives that have noticed the premium prices natural-process Ethiopian and Panamanian coffees command. When you find a Colombian natural or honey-processed coffee from a reputable specialty roaster, it is worth trying: the natural sweetness and fruit-forward character of natural processing layered on a Colombian origin produces a distinctly different cup than the standard washed profile.</p>
+
+<p class="body">For a full explanation of how processing method shapes cup character, see the <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">coffee processing methods guide</a>.</p>
+
+<h2 class="section-head">Reading the Label on a <em>Colombian Coffee Bag</em></h2>
+
+<p class="body">A specialty Colombian coffee bag tells a story in layers. Here is what to look for and why it matters:</p>
+
+<p class="body"><strong>Region.</strong> The most important label element. Huila, Nariño, Antioquia, Tolima, or Sierra Nevada de Santa Marta. "Colombia" with no regional specification is a blend or an unspecified origin, which tells you nothing about flavor profile.</p>
+
+<p class="body"><strong>Farm or cooperative name.</strong> A named farm or cooperative means traceable sourcing. The roaster visited, bought directly, or can verify the lot's origin. Anonymous lots often aggregate from multiple sources without quality control at the lot level.</p>
+
+<p class="body"><strong>Variety.</strong> Caturra is the specialty benchmark. Castillo is widely planted and quality-variable. Tabi is interesting if you find it. Variety matters most at the high end of specialty buying.</p>
+
+<p class="body"><strong>Processing method.</strong> Washed is the standard and your baseline expectation. If the bag says natural or honey, expect a different flavor profile: fruitier, heavier, with more sweetness from the extended fruit contact during drying.</p>
+
+<p class="body"><strong>Altitude.</strong> 1,400 meters and above for specialty; 1,800 and above for the highest-quality lots. Higher altitude means slower cherry development, which concentrates sugars and acidity.</p>
+
+<p class="body"><strong>Roast date.</strong> Not a Colombian-specific label element, but the most important freshness signal. If it is missing, the roaster is not prioritizing freshness transparency.</p>
+
+<h2 class="section-head">Colombia vs. Other Origins</h2>
+
+<p class="body"><strong>Colombia vs. Ethiopia.</strong> Ethiopia is the origin of all Arabica coffee and produces the most aromatic, floral, and complex cups at the top end: jasmine, bergamot, stone fruit, bright lemon, and a complexity that high-grown Ethiopian washed coffees achieve uniquely. Colombian coffee is more balanced and less complex at the same price point. If you want the most interesting cup, Ethiopia wins at the top level. If you want the most consistently good cup across a wider range, Colombia is more reliable.</p>
+
+<p class="body"><strong>Colombia vs. Kenya.</strong> Kenyan coffee is more vibrant and intense than Colombian. SL-28 and SL-34 varieties produce the distinctive blackcurrant, grapefruit, and tomato acidity that defines Kenyan specialty. Colombian acidity is gentler, rounder, and more approachable. Buyers who find Kenyan too sharp or intense often prefer Colombian. Buyers who find Colombian too mild often move toward Kenyan.</p>
+
+<p class="body"><strong>Colombia vs. Brazil.</strong> The contrast is pronounced. Brazil produces primarily natural-process coffee at lower altitude: nutty, low-acid, heavy-bodied, with dark chocolate and dried fruit. It is the most common espresso base origin for this reason. Colombian washed coffee is brighter, cleaner, and more acidic than Brazilian in nearly every comparison. For espresso, Brazilian is more forgiving; for pour-over and filter coffee showcasing origin, Colombian is more interesting.</p>
+
+<p class="body">For a broader comparison across origins, see the <a href="/learn/single-origin-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">single origin coffee guide</a>.</p>
+
+<h2 class="section-head">What to Buy: <em>Recommended Colombian Coffees</em></h2>
+
+<p class="body"><a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> carries multiple Colombian coffees by region, including Huila and Nariño single-origins, all roasted to order from their Atlanta facility. Their Huila delivers on the region's promise: full-bodied, dark chocolate-forward, caramel sweetness with dried red fruit. Their Nariño is brighter and more citrus-forward. Both are honest representations of their regions. Buying both and comparing them is a faster education in what Colombian regionality actually means than reading about it.</p>
+
+<p class="body">Coffee Bros. carries Colombian lots when available and labels them with processing method, which is useful if you want to compare a washed Colombian against a natural or honey-processed lot from the same origin. Their quality floor (86+ pts) ensures the lots they carry are worth the comparison.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Recommended: Colombian Single-Origin</div>
+  <div class="buy-card-title">Volcanica Colombian Coffee (Huila or Nariño)</div>
+  <p class="buy-card-notes">Huila: dark chocolate, dried red fruit, caramel, full body. Nariño: citrus brightness, deep caramel sweetness, complex acidity. Both roasted to order from Atlanta. Roast date on every bag.</p>
+  <a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica Colombian →</a>
+</div>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>

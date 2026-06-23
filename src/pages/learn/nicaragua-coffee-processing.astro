@@ -1,0 +1,141 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is Nicaraguan coffee usually washed or natural?",
+    a: "Historically, Nicaragua has been a washed-coffee country. The infrastructure, climate, and tradition in the major specialty regions (Matagalpa, Jinotega, Nueva Segovia) all developed around wet milling, which produces the clean, balanced cups most associated with Central American specialty. Naturals and anaerobic lots are a recent addition to the Nicaraguan specialty market, driven by global demand for fruit-forward cups rather than by local tradition. The current breakdown is roughly 80-85% washed at the specialty grade, with naturals, honey, and anaerobic lots making up the remainder."
+  },
+  {
+    q: "What is wet-hulled processing, and is it used in Nicaragua?",
+    a: "Wet-hulled processing (Giling Basah) is a method associated almost exclusively with Indonesian Sumatra coffees. The parchment layer is removed from the bean while it still contains significant moisture (unlike in fully washed or natural coffees, where the parchment comes off after the bean is mostly dry). Wet-hulling produces the distinctive earthy, full-bodied, low-acid cup that Sumatran coffees are known for. It is not used in Nicaraguan specialty production. Nicaragua's dominant method is fully washed (wet-processed), where parchment stays on the bean through the entire drying phase and is removed at dry milling before export."
+  },
+  {
+    q: "Does processing or origin matter more for the cup?",
+    a: "Both matter, and they interact. Origin (terroir, altitude, soil, variety) sets the ceiling of what a coffee can express; processing determines how much of that ceiling you actually reach and in what direction. A well-processed coffee from mediocre terroir can cup higher than a poorly processed coffee from exceptional terroir. In practice, the combination is what matters: exceptional origin plus disciplined processing produces the best cups. El Quetzal's anaerobic Java is a good example. The Java varietal grown in Matagalpa at 1,200+ MASL provides excellent terroir. The anaerobic processing in sealed fermentation tanks adds another layer that takes the same origin material to 87 points, one point above the washed version of the same cherry."
+  },
+  {
+    q: "Why does the same variety taste different depending on processing?",
+    a: "Processing changes which flavor compounds reach the final bean. In washed processing, the mucilage (the sugary fruit layer around the bean) is removed quickly, leaving the bean's inherent varietal character to express through fermentation. The cup reads clean and terroir-forward. In anaerobic processing, the cherry or depulped bean ferments in an oxygen-deprived environment for an extended period, producing different microbial metabolic byproducts that deposit different flavor compounds in the bean. A washed Java at El Quetzal reads jasmine, milk chocolate, and tea-like balance. The same Java variety processed anaerobically reads dark cherry, raisin, and chocolate. Same genetics, same farm, different processing: dramatically different cups."
+  },
+  {
+    q: "What does on-farm milling mean for cup quality?",
+    a: "On-farm milling means the farm processes its own cherry rather than selling fresh cherry to a centralized cooperative mill or wet mill. The key quality advantage is timing: cherry-to-tank in hours rather than days. Fresh cherry that sits in a bag or transport vehicle before processing begins to ferment unevenly, introducing off-flavors that no amount of careful downstream processing can remove. When the mill is on the farm, the cherry moves from the tree to the fermentation tank the same day it is picked. El Quetzal's Beneficio San Miguel is an on-farm mill, which is a meaningful quality driver for the lot consistency the farm produces."
+  },
+  {
+    q: "What is anaerobic fermentation and how is it different from standard washed processing?",
+    a: "Standard washed processing ferments the depulped coffee in open tanks or channels where oxygen is present. The aerobic microbial environment breaks down the remaining mucilage and produces the compounds that define the washed cup profile. Anaerobic fermentation seals the coffee in oxygen-deprived tanks, suppressing aerobic bacteria and creating a different microbial ecosystem dominated by anaerobic organisms. This different environment produces different metabolic byproducts (including lactic and acetic acids and various flavor esters) that deposit distinct flavor compounds in the bean, shifting the cup toward dried fruit, deeper chocolate, and sometimes wine-like complexity. The process requires tight control over tank sealing, temperature, and fermentation duration; done poorly, it produces off-flavors; done well, it can add a full cup-score point above the same coffee processed conventionally."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/nicaraguan-coffee-guide', label: 'Origin Guide', title: 'Nicaraguan Coffee: The Complete Guide' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/washed-vs-natural-coffee', label: 'Coffee Guides', title: 'Washed vs Natural Coffee' },
+  { href: '/microlots/anaerobic-java-green-coffee', label: 'Microlot', title: 'Anaerobic Java Green Coffee' },
+  { href: '/microlots/washed-java-green-coffee', label: 'Microlot', title: 'Washed Java Green Coffee' },
+];
+---
+
+<ContentLayout
+  title="Nicaragua Coffee Processing Methods: Washed, Anaerobic, and What the Mill Controls"
+  description="Nicaragua coffee processing: washed tradition, anaerobic fermentation, on-farm milling at El Quetzal's Beneficio San Miguel, and how processing shapes the cup."
+  slug="learn/nicaragua-coffee-processing"
+  section="learn"
+  sectionLabel="Coffee Guides"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Source <em>traceable Nicaragua green coffee direct.</em>"
+  ctaBody="El Quetzal ships washed Java, anaerobic Java, Laurina, and Geisha green coffee direct from their Matagalpa farm and Houston warehouse. Samples, retail lots, and forward contracts available."
+>
+
+<p class="body">Nicaragua's specialty processing story begins at the mill, not the tree. The two farms that produce identical cherry from the same variety at the same altitude can produce dramatically different cups depending on what happens between picking and export. The most important processing variable is not whether a farm chooses washed or natural: it is whether the farm controls its own processing infrastructure or sells cherry to a centralized mill with different incentive structures and timing constraints.</p>
+
+<p class="body">El Quetzal's Beneficio San Miguel is the case study this guide uses throughout. The on-farm wet mill at Finca El Quetzal in Matagalpa processes all of the farm's cherry in-house, from the picking bags through fermentation tanks, washing channels, and raised-bed drying to export preparation. The result is a supply chain where processing discipline is entirely within the farm's control. <a href="https://elquetzal.coffee/products/eq-washed-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">El Quetzal's washed Java</a> and <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java</a> are the direct outputs of that infrastructure. This guide explains what each method does, why it matters, and how to choose between El Quetzal's processing options when sourcing.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">87pt</div>
+    <div class="stat-label">Anaerobic Java, 2023/24 harvest</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">86pt</div>
+    <div class="stat-label">Washed Java, same harvest</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">4th gen</div>
+    <div class="stat-label">Bendana McEwan family, Beneficio San Miguel</div>
+  </div>
+</div>
+
+<h2 class="section-head">Nicaragua's Washed Tradition: <em>Why It Developed Here</em></h2>
+
+<p class="body">The washed (wet-processed) method dominates Nicaraguan specialty coffee for three structural reasons: climate, infrastructure, and the cup profile buyers wanted. The specialty-growing regions of Matagalpa, Jinotega, and Nueva Segovia all share a defined wet season (May through October) and a dry harvest window (November through February). The dry season provides reliable drying weather for parchment coffee, which washed processing requires. This climate compatibility made washed processing the natural choice for Nicaraguan mills as they developed their specialty infrastructure in the post-civil-war decades of the 1990s and 2000s.</p>
+
+<p class="body">The infrastructure built around washed processing. Fermentation tanks, washing channels, and raised drying beds are capital-intensive investments, and the farms and cooperatives that made those investments in the early specialty era built their operations around the washed method. Switching to natural or honey processing does not require dismantling that infrastructure, but it does require the farm to have sufficient drying area and the discipline to manage whole-cherry or mucilage-covered coffee through the slower drying process without spoilage.</p>
+
+<p class="body">The third driver is the cup profile itself. Central American buyers, particularly the US specialty market that was the primary buyer for Nicaraguan specialty in the country's early quality-building era, wanted clean, balanced cups: milk chocolate body, balanced acidity, clear variety expression, minimal processing influence on the flavor. Washed processing is the method most aligned with that preference. It strips back the processing variables to expose the terroir and variety underneath, which is exactly what buyers looking for a credible "Central American specialty" cup were asking for. Nicaragua's washed tradition is a market response as much as a climate one.</p>
+
+<h2 class="section-head">Washed Processing at El Quetzal: <em>From Cherry to Tank in Hours</em></h2>
+
+<p class="body">The textbook washed processing sequence is: cherry picking, cherry sorting, pulping (removing the skin), fermentation (to break down the remaining mucilage), washing (removing fermentation residue), and drying in parchment on raised beds or patios. At El Quetzal, each step happens on the farm, at the Beneficio San Miguel mill, with the same team managing the entire process.</p>
+
+<h3 class="sub-head">Cherry Picking and Sorting</h3>
+<p class="body">El Quetzal harvests by hand in multiple passes, with pickers selecting only ripe red cherries at each pass rather than strip-picking all cherries at once. This selective picking is the first quality gate: green or under-ripe cherries that escape the picker's hand go through a floatation sort at the mill, where density separation removes unripe (which float) from ripe (which sink). The density sort is standard at specialty mills and is one of the more reliable ways to raise the floor on lot cleanliness before any other processing step begins.</p>
+
+<h3 class="sub-head">Pulping and Fermentation</h3>
+<p class="body">Ripe cherry goes through the pulper, which removes the skin and most of the mucilage mechanically, leaving the bean in parchment with a thin layer of mucilage still adhered. The beans then move into fermentation tanks, where naturally occurring yeasts and bacteria break down the remaining mucilage over a defined fermentation window (typically 24-48 hours for standard washed, depending on ambient temperature). The key advantage of Beneficio San Miguel as an on-farm mill is that this step begins the same day the cherry is picked. Cherry that sits overnight before pulping begins to pre-ferment unevenly, which introduces off-flavors that cannot be corrected downstream. Cherry-to-tank within hours is a meaningful quality driver.</p>
+
+<h3 class="sub-head">Washing and Drying</h3>
+<p class="body">After fermentation completes, the beans are washed in channels with clean water to remove fermentation residue. The washing step is what produces the "clean" character most associated with washed processing: mucilage and fermentation byproducts are physically removed, leaving the bean's inherent chemistry to express in the cup. The washed beans then move to raised drying beds, where they dry in parchment over several weeks in the dry-season air. Raised beds allow airflow above and below the coffee, producing more even drying than flat patios and reducing the risk of mold or uneven moisture in the finished lot.</p>
+
+<p class="body">The result is a lot with the physical consistency that high-screen-size stats reflect: 98.6% exportable, 77.9% above screen size 18. These numbers are a direct output of the sorting, fermentation timing, and drying discipline described above. The <a href="https://elquetzal.coffee/products/eq-washed-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed Java</a> cup profile follows directly from that physical foundation: milk chocolate, jasmine, stone fruit, balanced acidity, tea-like finish.</p>
+
+<h2 class="section-head">Natural Processing in Nicaragua: <em>Growing but Not Traditional</em></h2>
+
+<p class="body">Natural processing (dry processing) involves drying the whole coffee cherry with the skin and mucilage intact, then hulling the dried cherry to extract the green bean weeks later. The extended contact between the fermenting fruit and the bean deposits fruit-derived flavor compounds into the bean, shifting the cup toward berry fruit (strawberry, blueberry, raisin), heavier body, wine-like complexity, and softer acidity compared to washed lots from the same farm.</p>
+
+<p class="body">Nicaragua has not historically been a natural-processing country. The wet-season climate in the main growing regions creates real risk of mold and uneven fermentation when whole cherries sit on drying beds for the three to six weeks that natural processing requires. A late-season rain event can devastate a natural lot in ways that would not affect a washed lot at the same fermentation stage. Nicaraguan farms that run natural lots typically do so in smaller volumes and with more weather monitoring than their washed production.</p>
+
+<p class="body">The dry season in Matagalpa (November through February, coinciding with the harvest window) provides enough reliable dry weather to make naturals feasible, but the window is tighter than in drier origins like Brazil or Ethiopia. As global specialty demand for fruit-forward cups has grown over the last decade, more Matagalpa farms have started running experimental natural microlots alongside their core washed production. The volumes are small and the risk is real, but the cups, when the drying goes cleanly, can be distinctive in a way that is hard to achieve through washed processing alone.</p>
+
+<h2 class="section-head">Anaerobic Fermentation at El Quetzal: <em>How the Program Started and What It Produces</em></h2>
+
+<p class="body">El Quetzal's anaerobic Java program is one of the more developed anaerobic programs at a Central American farm. The method emerged from the farm's existing washed infrastructure: the same fermentation tanks used for conventional washed processing were adapted for sealed, oxygen-deprived fermentation runs. The difference is the seal. Standard washed fermentation uses open tanks where the coffee ferments aerobically (in the presence of oxygen). Anaerobic fermentation seals the tank after filling, expelling oxygen and creating an environment where only anaerobic microorganisms thrive.</p>
+
+<p class="body">The anaerobic microbial environment produces different metabolic byproducts than aerobic fermentation. The dominant compounds that emerge from well-controlled anaerobic fermentation include lactic acid, various flavor esters, and organic acids that deposit different flavor compounds in the bean. The cup result shifts predictably: the tea-like clarity and bright jasmine of the washed version give way to dark cherry, raisin, concentrated fruit sweetness, chocolate undertones, and a heavier, longer finish.</p>
+
+<p class="body">The anaerobic Java from El Quetzal cupped at 87 points in the 2023/24 harvest, one point above the washed Java from the same harvest year. That one-point increment reflects what controlled anaerobic fermentation can add to a well-developed variety: the Java's inherent sweetness and fruit character are amplified by the fermentation environment rather than expressed cleanly through it as in the washed version. The <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">anaerobic Java</a> is available in sample, retail lot, and full sack sizes at elquetzal.coffee. For a broader look at how anaerobic processing compares to washed and natural at the chemistry level, see our <a href="/learn/washed-vs-natural-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">washed vs natural coffee guide</a>.</p>
+
+<div class="callout">
+  <p>Buying the washed Java and anaerobic Java from El Quetzal side by side is one of the cleanest process comparisons available in specialty. Same variety. Same farm. Same harvest year. Same mill. Only the fermentation environment changes. The cup difference is dramatic enough to function as a teaching flight for anyone learning to identify processing character in specialty coffee.</p>
+</div>
+
+<h2 class="section-head">Mill Infrastructure: <em>Why On-Farm Processing Changes the Quality Equation</em></h2>
+
+<p class="body">The single most overlooked quality variable in specialty coffee sourcing is who controls the processing step. A farm that sells fresh cherry to a centralized cooperative mill or third-party wet mill has ceded control of everything that happens between the tree and the export warehouse. The timing between picking and processing, the fermentation duration and temperature, the washing thoroughness, and the drying conditions all happen outside the farm's direct control. The resulting lot carries the farm's name on the label but may reflect the mill's priorities rather than the farm's.</p>
+
+<p class="body">Farms that own and operate their own processing infrastructure have a fundamentally different quality relationship with the lot. When the cherry moves from the picking bag to the fermentation tank within hours, not days, the fermentation begins under controlled conditions rather than after the cherry has started to pre-ferment unevenly in transport. When the drying beds are on the farm, the same team that picked the cherry monitors the drying, turns the parchment, and catches problems before they propagate through the lot. When the lot accountability runs from tree to export bag within a single operation, the traceability is real rather than reconstructed.</p>
+
+<p class="body">Beneficio San Miguel at El Quetzal is a complete on-farm wet mill. Cherry sorted on the same day it is picked. Fermentation monitored by the farm's own team. Drying beds managed under the shade canopy of the same eucalyptus trees that shade the growing blocks. The supply chain that connects the growing decision (which variety, which block) to the cup decision (washed or anaerobic, which roast protocol) is unbroken and documented. For roasters who need to tell a sourcing story to their customers, "farm to mill to Houston warehouse to you" is a simpler and more credible story than "farm to cooperative mill to exporter to importer to you."</p>
+
+<h2 class="section-head">Choosing Nicaraguan Lots by Processing: <em>A Sourcing Decision Framework</em></h2>
+
+<p class="body">If you are sourcing Nicaragua green coffee and trying to decide between El Quetzal's processing options, the decision maps cleanly to the cup profile you are building toward and the brew method your customers primarily use.</p>
+
+<h3 class="sub-head">For Clarity and Balance</h3>
+<p class="body">Choose washed. The washed Java is the most accessible and versatile lot in the El Quetzal lineup, with a cup that works across pour-over, batch brew, and lighter espresso blends. Milk chocolate, jasmine, stone fruit, balanced acidity: this is the cup that defines serious Central American specialty and that converts customers who are skeptical of single-origins. If you are adding Nicaragua to your menu for the first time, washed Java is the right first lot.</p>
+
+<h3 class="sub-head">For Fruit Complexity and Espresso Depth</h3>
+<p class="body">Choose anaerobic Java. The dark cherry, raisin, and chocolate profile of the anaerobic version holds up through milk-based drinks in ways that the delicate washed version does not. For a roastery that primarily serves espresso-forward menus and wants a Central American single-origin that works in flat whites and cortados without disappearing into the milk, the anaerobic Java is the more appropriate choice than the washed version.</p>
+
+<h3 class="sub-head">For Rare Varietal Expression</h3>
+<p class="body">Both El Quetzal's Laurina and Geisha are processed washed. The reasoning is deliberate: these are varieties where the aromatic compounds that define the cup (apricot, raspberry, and lemon zest in Laurina; jasmine, bergamot, and peach in Geisha) are best preserved through clean washed processing rather than layered over with fermentation character. The <a href="/microlots/laurina-coffee-green-beans" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Laurina</a> and <a href="/microlots/nicaragua-geisha-green-coffee" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Nicaragua Geisha</a> pages cover each variety's cup profile and lot availability in detail. For a buyer who wants the maximum aromatic expression the variety is capable of, washed is the correct processing choice on both.</p>
+
+<h3 class="sub-head">The Most Useful Starting Comparison</h3>
+<p class="body">Buy sample quantities of the washed Java and the anaerobic Java. Cup them side by side using the same brew method. The difference between the two cups illustrates, more clearly than any description can, what processing does to a coffee: same farm, same variety, same harvest, two completely different cups. That comparison is the foundation of processing literacy for anyone building a specialty sourcing program.</p>
+
+</ContentLayout>

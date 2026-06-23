@@ -1,0 +1,162 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "What does SHG mean on a green coffee bag?",
+    a: "SHG stands for Strictly High Grown, a Central American green coffee grading designation indicating the coffee was grown at or above 1,200 MASL (meters above sea level). Higher altitude slows cherry maturation, concentrating sugars and producing denser beans with higher cup quality potential. SHG is the top altitude grade in Nicaragua and Guatemala's grading systems, and it is the baseline grade you should expect when sourcing specialty Nicaraguan green coffee. El Quetzal's Java, Geisha, Laurina, and anaerobic Java lots are all SHG grade, grown at 1,200+ MASL in the Matagalpa highlands."
+  },
+  {
+    q: "How do I place a wholesale order from El Quetzal?",
+    a: "El Quetzal sells green coffee directly at elquetzal.coffee, with US fulfillment through Dupuy's warehouse in Houston. You can order sample packs, retail lots (5lb, 10lb, 30lb), or contact the farm directly for full 69kg sack pricing and forward contract options on upcoming harvests. The website lists current lot availability, and the farm provides SCA scoring sheets, grade data, and processing notes with each lot. For roasters who want to start before committing to a full lot, 150 gram evaluation samples are available on the Laurina program and similar small quantities are available on the Java program."
+  },
+  {
+    q: "What lot sizes are available for wholesale green coffee from El Quetzal?",
+    a: "El Quetzal ships in several sizes to accommodate roasters at different scales. Sample packs (150 grams) are available for evaluation. Retail lots come in 5lb, 10lb, and 30lb sizes for roasters who want to offer a Nicaragua single-origin without committing full inventory. Full 69 kilogram sacks (the standard jute export bag) are available for roasters ready to build a consistent offering. Forward contracts on specific varieties for upcoming harvests are available by direct inquiry with the farm. The Houston warehouse fulfillment means fast shipping to US buyers without international freight logistics."
+  },
+  {
+    q: "Can I get forward contracts on El Quetzal Nicaragua green coffee?",
+    a: "Yes. El Quetzal offers forward contracts on their flagship variety programs, including the washed Java, anaerobic Java, Geisha, and Laurina lots. Forward contracts let a roaster secure 69kg sacks from an upcoming harvest before it is picked, locking in price and volume for both sides. For high-demand lots like the Geisha (87 points, limited annual production), forward contracts are the most reliable way to ensure supply year over year. Contact El Quetzal directly through elquetzal.coffee to discuss forward contract pricing and availability for the 2027 harvest."
+  },
+  {
+    q: "How is green coffee shipped from El Quetzal to US buyers?",
+    a: "El Quetzal fulfills US green coffee orders through Dupuy's warehouse in Houston, Texas. The coffee travels from the farm in Matagalpa, Nicaragua through export preparation (dry milling, grading, sorting, jute sacking) to the Houston warehouse, where it is held and shipped to US buyers on order. This warehouse model means US roasters receive green coffee quickly without managing international shipping logistics directly. The Houston-based fulfillment also removes the variability of direct-from-origin shipping (customs delays, temperature exposure) that affects some farm-direct sourcing relationships."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/nicaraguan-coffee-guide', label: 'Origin Guide', title: 'Nicaraguan Coffee: The Complete Guide' },
+  { href: '/learn/java-varietal-coffee-guide', label: 'Origin Guide', title: 'Java Coffee Varietal Guide' },
+  { href: '/how-to-source-specialty-coffee-wholesale', label: 'Sourcing Guide', title: 'How to Source Specialty Coffee Wholesale' },
+  { href: '/microlots/washed-java-green-coffee', label: 'Microlot', title: 'Washed Java Green Coffee' },
+  { href: '/drop-list', label: 'Drop List', title: 'New Coffee Drop List' },
+];
+---
+
+<ContentLayout
+  title="Wholesale Nicaraguan Green Coffee: Direct Sourcing from El Quetzal, Matagalpa"
+  description="Wholesale Nicaraguan green coffee: buy direct from a farm-mill operation, what El Quetzal offers, and how to place your first green coffee order."
+  slug="learn/wholesale-nicaraguan-coffee"
+  section="learn"
+  sectionLabel="For Buyers"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Source <em>Nicaraguan green coffee direct.</em>"
+  ctaBody="El Quetzal ships washed Java, anaerobic Java, Laurina, and Geisha green coffee from Houston to US roasters. SHG specialty grade, farm-direct traceability, samples through full-sack forward contracts."
+>
+
+<p class="body">Roasters sourcing Nicaraguan green coffee face a binary choice at the structural level: buy through a specialty importer (Cafe Imports, Royal, InterAmerican, Atlas, Ally) or buy direct from a farm that mills, grades, and exports its own coffee. The economics and the quality story are different in ways that affect every downstream decision, from the price per pound you pay to the traceability narrative you can put on your bag.</p>
+
+<p class="body">The importer route is familiar and lower-friction. The farm-direct route, when it is genuinely available, eliminates the importer margin and produces a traceable supply chain that stops at the farm gate rather than at an export aggregator. <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Finca El Quetzal</a> in Matagalpa is one of a small number of Nicaraguan family farms that has built the infrastructure to sell truly direct to US roasters: their own wet mill (Beneficio San Miguel), their own export preparation, and US warehouse fulfillment through Dupuy's Houston facility. This guide is a practical sourcing document for roasters evaluating that option.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num">98.6%</div>
+    <div class="stat-label">Exportable grade on Java lots</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">77.9%</div>
+    <div class="stat-label">Above screen #18</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">4th gen</div>
+    <div class="stat-label">Bendana McEwan family, 1947</div>
+  </div>
+</div>
+
+<h2 class="section-head">Why Nicaragua for <em>Green Coffee Sourcing</em></h2>
+
+<p class="body">Nicaragua belongs on any serious Central American sourcing map for four reasons: altitude, profile, price point, and traceability access.</p>
+
+<h3 class="sub-head">Altitude and Physical Grade</h3>
+<p class="body">Nicaragua's primary specialty regions (Matagalpa, Jinotega, Nueva Segovia) produce SHG-grade coffee (Strictly High Grown, grown at 1,200+ MASL) across most of their specialty acreage. High altitude produces denser beans with more concentrated flavor compounds, which is why SHG is the grade designation that specialty roasters look for when buying Central American green. At El Quetzal, the farm sits above 1,200 MASL on volcanic soil, and the physical lot data reflects it: 98.6% exportable grade, 77.9% of the lot above screen size 18. These numbers represent physical consistency that translates directly into cup consistency and lower defect risk for the roaster.</p>
+
+<h3 class="sub-head">Cup Profile for Espresso and Single-Origin Programs</h3>
+<p class="body">Nicaragua's washed tradition produces clean, balanced cups with milk chocolate body, balanced acidity, and floral or fruited top notes that work in both espresso blends and single-origin pour-over programs. The classic Matagalpa profile (jasmine, stone fruit, milk chocolate, tea-like finish) is one of the most versatile cup profiles in Central American specialty, approachable enough to anchor a house espresso and distinctive enough to present as a highlighted single-origin. Anaerobic and experimental lots from the same farms produce the intensity that espresso-forward menus need without sacrificing the origin's inherent quality ceiling.</p>
+
+<h3 class="sub-head">Price Point vs Comparable Origins</h3>
+<p class="body">Nicaragua's specialty green coffee is meaningfully priced below Panama Geisha, most Kenya lots, and premium Costa Rica at comparable cup scores. El Quetzal's 87-point Geisha is priced well below Panama auction lots scoring the same. Their 87-point anaerobic Java is priced at the specialty-premium Central American tier, not the Panama-level auction tier. For roasters building competitive single-origin programs on quality rather than origin prestige, Nicaragua offers one of the best cup-score-to-price ratios in the current specialty market.</p>
+
+<h3 class="sub-head">Farm-Direct Traceability</h3>
+<p class="body">The most significant competitive advantage of Nicaraguan specialty over similar-quality origins is the availability of genuine farm-direct traceability through operations like El Quetzal. The supply chain, farm to on-farm mill to Houston warehouse to roaster, has no importer, no cooperative aggregator, and no third-party processor between the growing decision and the cup. For roasters who need to substantiate a sourcing story ("we buy direct from the farm that grows, mills, and exports this coffee"), Nicaragua has more farms at the top end that make this genuinely achievable than most comparable origins.</p>
+
+<h2 class="section-head">El Quetzal Sourcing Case Study: <em>What Direct Actually Means</em></h2>
+
+<p class="body">El Quetzal's supply chain is worth walking through step by step, because "farm-direct" covers a range of actual arrangements in the specialty market, and the details matter.</p>
+
+<p class="body">Finca El Quetzal is a fourth-generation family farm in the Matagalpa highlands, continuously producing specialty coffee since 1947 under the Bendaña McEwan family. The farm grows at 1,200+ MASL on volcanic soil under a shade canopy of eucalyptus trees planted in the 1960s. The farm owns and operates Beneficio San Miguel, an on-farm wet mill that processes the farm's own cherry from picking through fermentation, washing, and raised-bed drying. The farm does not buy cherry from neighboring smallholders or process on behalf of other farms: the mill processes only El Quetzal's own production, which is what makes the lot-level traceability real rather than approximate.</p>
+
+<p class="body">After wet processing and drying, the parchment coffee moves to dry milling for export preparation (hulling, sorting, grading, and jute sacking). The export-ready green coffee then moves to Dupuy's warehouse in Houston, Texas, where it is held for US buyer orders. When a roaster orders from <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee</a>, the order ships from Houston. There is no importer in that chain. The margin that would otherwise go to the importer either stays with the farm (allowing them to invest in varietal programs and processing infrastructure) or is shared with the roaster through a lower delivered price than importer-sourced equivalents.</p>
+
+<p class="body">The traceability documentation available with each lot reflects this structure. SCA scoring sheets, physical grade data (screen size distribution, defect counts, exportable percentage), processing notes (fermentation duration and method, drying conditions), variety documentation, and harvest year are all available because the farm generated them internally and did not lose them through a cooperative or importer handoff.</p>
+
+<h2 class="section-head">What El Quetzal Ships: <em>Current Lot Lineup and Scores</em></h2>
+
+<p class="body">El Quetzal's current green coffee lineup covers four variety-process combinations, all SCA specialty grade, all SHG altitude, all from Matagalpa at 1,200+ MASL.</p>
+
+<h3 class="sub-head">Washed Java (Flagship)</h3>
+<p class="body">The cornerstone of the El Quetzal program and the variety the farm has developed for over twenty years. Washed Java cups with milk chocolate body, jasmine florals, stone fruit (peach, apricot), and a tea-like balanced finish. SCA score: 86 points. Physical grade: 98.6% exportable, 77.9% above screen #18. This is the most versatile lot in the lineup, suitable for single-origin pour-over, as a foundation in espresso blends, or as an introduction to the Java varietal for buyers who have not worked with Javanica before. Available in samples, retail lots (5lb, 10lb, 30lb), and full 69kg sacks. Order at <a href="https://elquetzal.coffee/products/eq-washed-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee/products/eq-washed-java-green-coffee</a>.</p>
+
+<h3 class="sub-head">Anaerobic Java</h3>
+<p class="body">Same Javanica variety, same farm blocks, processed in sealed oxygen-deprived fermentation tanks. Cup profile shifts to dark cherry, raisin, concentrated fruit sweetness, chocolate undertones, heavier body. SCA score: 87 points, one point above the washed version from the same 2023/24 harvest. This is the appropriate choice for roasters building espresso-forward menus where the intensity needs to survive milk dilution, or for specialty programs that want an experimental-process Central American without going to Ethiopia or Colombia. Available in samples, retail lots, and full sacks at <a href="https://elquetzal.coffee/products/eq-anaerobic-java-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee/products/eq-anaerobic-java-green-coffee</a>.</p>
+
+<h3 class="sub-head">Laurina (Washed)</h3>
+<p class="body">A rare low-caffeine Bourbon mutation (Bourbon Pointu) with naturally occurring caffeine at 0.5% versus 1.4% in standard Arabica. Total annual production under 1,000 pounds in 2025. Cup profile: apricot, raspberry, lemon zest, milk chocolate, white tea finish. SCA score: 85 points. This is a specialty program play, not a volume lot: the rarity of the variety, the low caffeine, and the distinctive cup make it a compelling limited-release single-origin for customers who seek out unusual varietals. Samples available at 150g ($8). Retail lots at <a href="https://elquetzal.coffee/products/eq-washed-laurina-green-coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee/products/eq-washed-laurina-green-coffee</a>.</p>
+
+<h3 class="sub-head">Geisha (Washed)</h3>
+<p class="body">El Quetzal's Geisha program entered production in 2024, with the 2026 second-year harvest cupping at 87 points washed. Cup profile: jasmine, bergamot, peach, apple, tea-like finish. Physical grade: 98.6% exportable, 77.9% above screen #18. This is a Geisha lot at specialty grade that is not priced at Panama auction levels, which makes it accessible for roasters who want genuine Geisha character on their menu without dedicating their top-tier price point to a Panama-sourced lot. Production is limited and moves quickly. Forward contracts on 2027 harvest available by inquiry. Browse the current collection at <a href="https://elquetzal.coffee/collections/geisha" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee/collections/geisha</a>.</p>
+
+<h2 class="section-head">Sourcing Formats: <em>From Samples to Forward Contracts</em></h2>
+
+<p class="body">El Quetzal's purchasing path accommodates roasters at every stage of the sourcing relationship, from first evaluation to long-term committed volume.</p>
+
+<h3 class="sub-head">Samples</h3>
+<p class="body">The right starting point for any new sourcing relationship. El Quetzal offers 150g samples on the Laurina program (approximately $8) and comparable small quantities on the Java and Geisha programs. Sample quantities let a roaster evaluate the cup on their own equipment, in their own roasting environment, before committing inventory dollars to a full lot. For specialty roasters who are methodical about adding new single-origins to the menu, sampling two or three El Quetzal lots side by side is a reasonable due-diligence step. The most useful evaluation flight is washed Java plus anaerobic Java: the same variety processed two ways, which shows both the varietal character and what processing adds.</p>
+
+<h3 class="sub-head">Retail Lots</h3>
+<p class="body">Once a sample cups to specification, retail lots (5lb, 10lb, 30lb) let the roaster put the lot on the menu and build customer response before committing to full-sack volume. For smaller roasters or roasters adding a new single-origin in a test position, retail lots are the appropriate first purchase. Most El Quetzal programs are available in these sizes with direct checkout at elquetzal.coffee.</p>
+
+<h3 class="sub-head">Full Sacks and Forward Contracts</h3>
+<p class="body">Full 69kg sacks are the standard wholesale green coffee unit and the appropriate purchase for roasters who have validated the lot and are building a consistent program around it. Forward contracts secure specific variety-harvest combinations before the crop is picked, locking in price and volume for both the farm and the roaster. For high-demand lots like the Geisha, forward contracts are effectively the only reliable way to guarantee supply season over season. Contact El Quetzal directly through the website for forward contract pricing and current 2027 harvest availability.</p>
+
+<h2 class="section-head">Roasting Notes by Lot: <em>A Quick Reference</em></h2>
+
+<p class="body">Each El Quetzal lot has a distinct optimal roast window that reflects its variety and processing method.</p>
+
+<h3 class="sub-head">Washed Java</h3>
+<p class="body">Medium roast (full city). The jasmine and stone fruit character disappears above this range. The milk chocolate body is best expressed at medium development. Java beans are large and dense; extend development time slightly versus a smaller-screen Caturra lot. Target end temperature: 203-207C / 397-405F.</p>
+
+<h3 class="sub-head">Anaerobic Java</h3>
+<p class="body">City to city+ (slightly darker than washed Java is acceptable). The dried cherry and raisin character is more heat-stable than jasmine florals, so you have a wider roast window before the distinctive character burns off. Rest at least two weeks post-roast before brewing or selling. The anaerobic Java off-gasses aggressively in the first week and improves significantly at week two.</p>
+
+<h3 class="sub-head">Laurina</h3>
+<p class="body">City to city+. The stone fruit (apricot, raspberry) and lemon zest character is delicate and benefits from lighter development that preserves the aromatics. Lower caffeine content does not change roasting behavior meaningfully, but the small-bean size (Bourbon Pointu has smaller beans than Java) means faster heat transfer. Check first crack timing carefully on the first roast of a new Laurina lot.</p>
+
+<h3 class="sub-head">Geisha</h3>
+<p class="body">City (light-medium). Geisha's jasmine, bergamot, and peach character is the most volatile of the four lots and the most easily lost to over-development. Roast conservatively. The Geisha cup at 87 points is built on delicate floral aromatics that do not survive into the medium range. Brew as pour-over or Chemex where those aromatics can fully express.</p>
+
+<h2 class="section-head">Nicaragua Green vs Other Central American Origins: <em>The Honest Comparison</em></h2>
+
+<p class="body">Roasters building a Central American portfolio need to allocate sourcing attention across at least four origins. Here is how Nicaragua compares at the specialty grade level.</p>
+
+<h3 class="sub-head">Nicaragua vs Guatemala</h3>
+<p class="body">Guatemala is more widely available at scale and has a longer track record in US specialty. The cup profile is different: Guatemala (particularly Antigua and Huehuetenango) leads with chocolate, spice, and tobacco notes, with a heavier body than most Nicaragua. Nicaragua leads with florals, tea-like clarity, and stone fruit. The two origins are complements rather than substitutes in a well-structured program. Nicaragua also offers better price-to-quality at the specialty-premium tier: comparable cup scores at meaningfully lower price points, particularly when buying direct from farm.</p>
+
+<h3 class="sub-head">Nicaragua vs Costa Rica</h3>
+<p class="body">Costa Rica commands higher prices for comparable cup quality, reflecting its longer specialty track record, the pioneering honey-process work that made it famous in the 2000s, and a stronger marketing position in the US specialty market. Nicaragua's washed lots at 85+ points are priced below comparable Costa Rica lots from the same altitude band. For roasters who want clean, balanced Central American profile at competitive wholesale pricing, Nicaragua is a better value than Costa Rica at equivalent quality grades. Costa Rica still leads in honey and yellow honey processing experimentation, but Nicaragua's anaerobic program is catching up.</p>
+
+<h3 class="sub-head">Nicaragua vs Honduras</h3>
+<p class="body">Honduras produces higher volume than Nicaragua and is the most aggressively priced Central American specialty origin. The trade-off is consistency: Honduras has world-class lots at the top (Marcala, Copan) but a lower average quality floor across the broader specialty supply than Nicaragua. For roasters who prioritize cup consistency and traceability at the specialty grade, Nicaragua is the stronger choice. For roasters who need scale above all else, Honduras has more volume at lower prices, with the accompanying consistency trade-offs.</p>
+
+<h2 class="section-head">How to Start: <em>First Order Recommendation</em></h2>
+
+<p class="body">For a specialty roaster evaluating El Quetzal Nicaragua green coffee for the first time, the recommended entry sequence is: sample evaluation, then a retail lot on whichever sample cups best for your program, then a full sack commitment once the lot is proven in your roasting environment and on your menu.</p>
+
+<p class="body">The most useful first evaluation is the washed Java plus anaerobic Java comparison. Two samples, one variety, two processing methods: the comparison shows the Java varietal character through clean processing and then shows what controlled anaerobic fermentation adds. If your program is primarily single-origin pour-over, the washed Java will likely be the right first full lot. If your program is primarily espresso-forward, the anaerobic Java may be the stronger menu fit.</p>
+
+<p class="body">All El Quetzal lots are available at <a href="https://elquetzal.coffee" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">elquetzal.coffee</a>. For context on how to structure a full green coffee sourcing program beyond a single farm relationship, see our <a href="/how-to-source-specialty-coffee-wholesale" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">how to source specialty coffee wholesale guide</a>. For varietal background on the Java program specifically, the <a href="/learn/java-varietal-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Java varietal guide</a> covers the Javanica cultivar in detail.</p>
+
+</ContentLayout>

@@ -1,0 +1,184 @@
+---
+import TopRoastersLayout from '../../layouts/TopRoastersLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "When did Los Angeles develop a serious specialty coffee scene?",
+    a: "LA's specialty coffee scene accelerated significantly between 2010 and 2018. Intelligentsia's Silver Lake flagship, which opened in 2007, helped establish the market's credibility early. Go Get Em Tiger, Civil Coffee, and Cognoscenti all arrived in the 2010s and collectively built the sourcing standards the market is now known for. The scene matured later than San Francisco or Portland, but it grew faster once it started, and the scale of the LA market means it now supports more specialty volume than most cities."
+  },
+  {
+    q: "Which LA roasters have the strongest wholesale programs?",
+    a: "Intelligentsia and La Mill have the most developed hospitality wholesale programs in LA. Civil Coffee and Dayglow both run active wholesale operations for cafés and creative office accounts. Go Get Em Tiger's wholesale program is selective but worth pursuing for accounts that can meet the quality bar. Tierra Mia has a distinct wholesale presence serving neighborhoods and accounts that the rest of the specialty market largely ignores."
+  },
+  {
+    q: "What is Go Get Em Tiger, and why does it appear under both G&B Coffee and GGET?",
+    a: "Go Get Em Tiger is the retail and wholesale brand. G&B Coffee was the original Larchmont coffee bar opened by Kyle Glanville and Charles Babinski, which later expanded under the GGET brand. They are the same operation. The founders are both former World Barista Champions, which represents the highest level of competitive excellence in the craft. The sourcing and roasting program reflects that competitive precision."
+  },
+  {
+    q: "How does the LA specialty market compare to San Francisco?",
+    a: "San Francisco developed its specialty scene earlier and still has a higher concentration of third-wave institutions per capita. But LA has a larger total specialty market by volume and a faster-growing one. The LA scene is more aesthetically diverse and neighborhood-fragmented than San Francisco, which produces a more varied wholesale landscape. Buyers in LA have access to everything from ultra-premium craft roasters to community-focused neighborhood operations, often within a few miles of each other."
+  }
+];
+---
+
+<TopRoastersLayout
+  title="The 7 Best Specialty Coffee Roasters in Los Angeles"
+  description="LA came to specialty coffee on its own terms. Seven roasters with the sourcing depth and wholesale infrastructure serious buyers in the LA market need to know."
+  city="Los Angeles"
+  slug="los-angeles"
+  roasterCount={7}
+  publishDate="2026-06-23"
+  {faqItems}
+>
+
+  <p class="body-text">
+    Los Angeles came to specialty coffee later than San Francisco or Portland, but the market that emerged is distinctly its own: aesthetics-forward, neighborhood-diverse, and large enough to support a specialty scene that keeps growing. The LA specialty roaster is often also a café operator, a creative agency, and a community center simultaneously. The result is a wholesale landscape that is more varied, and more interesting, than most markets in the country.
+  </p>
+  <p class="body-text">
+    This guide covers the roasters who have built serious sourcing and wholesale programs in Los Angeles. For broader context on evaluating specialty roasters across markets, see our <a href="/learn/best-specialty-coffee-roasters">guide to the best specialty coffee roasters in the US</a> and our <a href="/how-to-choose-a-coffee-roaster">guide to choosing a coffee roaster for your business</a>.
+  </p>
+
+  <div class="roaster-card">
+    <span class="roaster-number">01 / 07</span>
+    <h2 class="roaster-name">Go Get Em Tiger (G&amp;B Coffee)</h2>
+    <div class="roaster-tagline">Silver Lake and Larchmont, Los Angeles</div>
+    <div class="roaster-body">
+      <p>Go Get Em Tiger was founded by Kyle Glanville and Charles Babinski, both former World Barista Champions, which represents the highest competitive distinction in the specialty coffee craft. That background is not incidental to the product: the sourcing and roasting program at GGET reflects the precision and intentionality of founders who have competed at the global level and understand what coffee can actually express when everything is executed correctly.</p>
+      <p>Sourcing is exceptionally precise. Green selection is driven by Q Grader-level evaluation, with a focus on lots that express clear, distinctive origin character. The roasting program is calibrated to highlight that character rather than impose a house style, which produces cups that taste like the specific farm and harvest rather than the roastery's brand. For wholesale buyers evaluating sourcing quality, GGET's offering is a benchmark against which other LA roasters are measured.</p>
+      <p>Wholesale is selective. GGET is not looking for volume accounts, they are looking for partners who share the quality orientation and whose teams are capable of executing the coffee at the level it deserves. For fine dining restaurants, boutique hotels, and high-end independent cafés in Los Angeles, Go Get Em Tiger is the most technically excellent wholesale partner available in the market.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">World Barista Champs</span>
+      <span class="roaster-tag">Silver Lake</span>
+      <span class="roaster-tag">Precise Sourcing</span>
+      <span class="roaster-tag">Selective</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">02 / 07</span>
+    <h2 class="roaster-name">Intelligentsia Coffee</h2>
+    <div class="roaster-tagline">Silver Lake flagship, Los Angeles · Present since 2007</div>
+    <div class="roaster-body">
+      <p>Intelligentsia's Silver Lake location, which opened in 2007, was one of the first serious specialty coffee destinations in Los Angeles and helped establish the market's credibility at a time when the city's specialty scene was still forming. The location became a destination rather than a neighborhood café, drawing baristas, buyers, and coffee professionals who understood what Direct Trade sourcing actually meant in practice and wanted access to it on the West Coast.</p>
+      <p>The Direct Trade model Intelligentsia built in the late 1990s, above-market pricing, multi-year producer commitments, sourcing trips tied directly to cup quality, is the backbone of what wholesale partners access when they work with Intelligentsia. The Los Angeles wholesale operation functions as a full hub rather than a satellite, with account management, barista training, and producer relationships that extend through Ethiopia, Colombia, Guatemala, Kenya, and El Salvador.</p>
+      <p>For wholesale buyers in Los Angeles, Intelligentsia offers the combination of sourcing depth, brand recognition, and wholesale support infrastructure that makes a coffee program credible to guests who know what specialty coffee is supposed to be. The Silver Lake flagship location, now nearly two decades embedded in the LA market, carries weight that a new entrant cannot manufacture.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Direct Trade</span>
+      <span class="roaster-tag">Silver Lake</span>
+      <span class="roaster-tag">Since 2007</span>
+      <span class="roaster-tag">Hospitality</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">03 / 07</span>
+    <h2 class="roaster-name">Civil Coffee</h2>
+    <div class="roaster-tagline">Highland Park, Los Angeles · Founded 2015</div>
+    <div class="roaster-body">
+      <p>Civil Coffee opened in Highland Park in 2015 as a neighborhood-rooted operation committed to a specific part of Los Angeles rather than a brand positioning that could work anywhere. The Highland Park location gave Civil a community base at a time when the neighborhood was still developing its café culture, and the roastery grew with the neighborhood rather than arriving after the fact to capture an already-established market.</p>
+      <p>Sourcing focuses on Colombia, Ethiopia, and El Salvador, with relationships built through direct producer engagement. The roasting approach favors clarity and origin expression over house character, which produces cups that tell a specific story rather than a generic specialty coffee story. For wholesale partners, that sourcing philosophy translates into a product that gives café teams something real to talk about with guests who are paying attention.</p>
+      <p>Wholesale covers the Highland Park area and the broader Los Angeles market. Civil Coffee's community orientation means the wholesale relationship tends to be more engaged than transactional, with account support that reflects an investment in the partnership rather than just the contract. Well-suited for independent cafés and neighborhood restaurant groups that want a roaster whose identity aligns with a community-forward positioning.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Highland Park</span>
+      <span class="roaster-tag">Community</span>
+      <span class="roaster-tag">Colombia Focus</span>
+      <span class="roaster-tag">Wholesale</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">04 / 07</span>
+    <h2 class="roaster-name">La Mill Coffee</h2>
+    <div class="roaster-tagline">Silver Lake, Los Angeles</div>
+    <div class="roaster-body">
+      <p>La Mill Coffee is one of Los Angeles's oldest specialty concepts and has operated in Silver Lake with a focus on coffee education and sourcing transparency that predates the city's specialty maturation by several years. The original La Mill café was one of the first places in LA where guests could understand what specialty coffee sourcing meant in practice, with detailed origin information, multiple brewing formats, and a presentation approach that treated coffee as seriously as a wine program.</p>
+      <p>The hospitality wholesale program reflects that educational orientation. La Mill's account support includes sourcing documentation, staff training, and an ongoing relationship with the sourcing team that gives wholesale partners the information they need to build a credible coffee narrative for their guests. Particularly strong for restaurant and hotel accounts where the coffee program needs to integrate with a broader F&B vision.</p>
+      <p>Wholesale covers cafés, restaurants, and hotel accounts across the Los Angeles market. La Mill's longevity in the Silver Lake specialty scene gives them credibility with accounts that understand the history of LA coffee, and their sourcing transparency gives accounts that are newer to the specialty world a clear pathway to building a program that can speak knowledgeably about what is in the cup.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Silver Lake</span>
+      <span class="roaster-tag">Education-Forward</span>
+      <span class="roaster-tag">Hospitality</span>
+      <span class="roaster-tag">Sourcing Transparency</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">05 / 07</span>
+    <h2 class="roaster-name">Cognoscenti Coffee</h2>
+    <div class="roaster-tagline">Culver City, Los Angeles</div>
+    <div class="roaster-body">
+      <p>Cognoscenti Coffee is operated by Yeekai Lim in Culver City and occupies the precision end of the LA specialty spectrum. Small-batch production, highly focused green selection, and a sourcing approach calibrated for cups that express specific and verifiable origin character have built Cognoscenti a cult following among LA's most knowledgeable coffee professionals. The kind of roaster that other roasters in the city reference when discussing what high-quality sourcing looks like.</p>
+      <p>The wholesale program is selective by design. Cognoscenti is not looking to maximize the number of accounts, they are looking for partners who understand what they are sourcing and whose operations are capable of presenting it properly. For restaurants, boutique hotels, and high-end independent cafés where the sourcing story matters and the team can execute it, Cognoscenti provides access to some of the most carefully selected lots available in the LA market.</p>
+      <p>Production volume is intentionally limited. Wholesale partners who clear the bar get a relationship with a roaster that is deeply invested in their success, not a supplier relationship. For accounts that are serious about coffee as a differentiator and willing to engage with the sourcing depth, Cognoscenti is one of the strongest options in Los Angeles, and one of the most distinctive coffee programs available anywhere in Southern California.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">Culver City</span>
+      <span class="roaster-tag">Cult</span>
+      <span class="roaster-tag">Small-Batch</span>
+      <span class="roaster-tag">Selective</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">06 / 07</span>
+    <h2 class="roaster-name">Dayglow Coffee</h2>
+    <div class="roaster-tagline">West Hollywood area, Los Angeles</div>
+    <div class="roaster-body">
+      <p>Dayglow Coffee operates in the West Hollywood area with a brand identity that is more visually distinctive than most specialty roasters allow themselves to be. Bright colors, a design-forward café environment, and a social media presence that reaches well beyond the coffee world have built Dayglow a following that crosses the specialty/lifestyle boundary in a way that most craft roasters struggle to achieve. The aesthetic is intentional and effective, and it has not come at the expense of the coffee quality.</p>
+      <p>Sourcing is specialty-grade, with a selection focused on approachable, well-executed cups rather than ultra-premium experimental lots. The positioning is deliberate: Dayglow is trying to bring more people into the specialty coffee world through a welcoming aesthetic, not gatekeep the category with maximum technical complexity. For wholesale buyers serving guests who may not identify as specialty coffee enthusiasts but will respond to quality when it is presented accessibly, Dayglow provides a product and a brand identity that makes the entry point easier.</p>
+      <p>Wholesale is available for cafés and creative office spaces in the Los Angeles market. Dayglow is a particularly strong fit for hospitality accounts in creative industries, production companies, design studios, and media organizations, where the brand identity resonates with the professional culture and the coffee quality gives the program genuine substance behind the aesthetic.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">WeHo</span>
+      <span class="roaster-tag">Visual Brand</span>
+      <span class="roaster-tag">Creative Offices</span>
+      <span class="roaster-tag">Growing</span>
+    </div>
+  </div>
+
+  <div class="roaster-card">
+    <span class="roaster-number">07 / 07</span>
+    <h2 class="roaster-name">Tierra Mia Coffee</h2>
+    <div class="roaster-tagline">East LA and South LA, Los Angeles</div>
+    <div class="roaster-body">
+      <p>Tierra Mia Coffee is a Latino-founded roaster with locations in East LA and South LA, serving neighborhoods that the mainstream specialty coffee scene has historically overlooked. The model is community-oriented from the ground up: bilingual staff, menus that include traditional Latin American coffee preparations alongside standard specialty offerings, and a pricing approach that keeps the café accessible to the neighborhoods it serves rather than pricing toward an affluent transplant demographic.</p>
+      <p>The sourcing program emphasizes Latin American origins, with relationships in Colombia, Guatemala, and Mexico. That sourcing focus is both philosophically coherent with the brand's community orientation and strategically sound: the customer base in East and South LA has family connections to coffee-producing regions, and the sourcing story resonates in ways that an Ethiopia-forward program might not. For wholesale partners serving similar communities, Tierra Mia's product and positioning offer a genuinely distinctive alignment.</p>
+      <p>Wholesale covers the LA market broadly, with a particular strength in accounts serving Latino communities across Southern California. For operators in those communities, Tierra Mia is not just a roaster, it is a partner whose brand identity, community relationships, and sourcing story reinforce rather than work against the account's own community positioning. One of the most mission-coherent wholesale options in the LA specialty market.</p>
+    </div>
+    <div class="roaster-tags">
+      <span class="roaster-tag">East LA</span>
+      <span class="roaster-tag">Latino-Founded</span>
+      <span class="roaster-tag">Community</span>
+      <span class="roaster-tag">Bilingual</span>
+    </div>
+  </div>
+
+  <p class="body-text">
+    In the Black represents specialty roasters in wholesale conversations with cafés, restaurants, hotels, and hospitality groups across Los Angeles and nationally. If you're a roaster on this list or an operator looking for the right sourcing partner in the LA market, reach out at <a href="/contact">/contact</a>.
+  </p>
+
+  <fragment slot="related">
+    <a href="/top-roasters/seattle" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Seattle</div>
+    </a>
+    <a href="/top-roasters/new-york" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in New York</div>
+    </a>
+    <a href="/top-roasters/chicago" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Chicago</div>
+    </a>
+    <a href="/top-roasters/austin" class="related-card">
+      <div class="related-card-label">Guide</div>
+      <div class="related-card-title">Top Roasters in Austin</div>
+    </a>
+  </fragment>
+
+</TopRoastersLayout>

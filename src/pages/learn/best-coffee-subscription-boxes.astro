@@ -1,0 +1,267 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export const prerender = true;
+
+const faqItems = [
+  {
+    q: "Is a coffee subscription worth it?",
+    a: "Yes, if you drink specialty coffee regularly. The main benefit is freshness: roasters in subscription programs ship within days of roasting, which means the coffee arrives at peak condition. Buying from a grocery store shelf offers no roast date guarantee and often means coffee that is weeks or months old. If you brew daily and care about quality, a subscription pays for itself in cup quality within the first week."
+  },
+  {
+    q: "How fresh is coffee from a subscription box?",
+    a: "With roast-to-order subscriptions like Volcanica, Coffee Bros., and Five Star Coffee Roasters, your coffee is typically roasted 1-3 days before it ships and arrives within 2-5 days of roasting. This is dramatically fresher than retail coffee, which may have been sitting in a warehouse or on a shelf for weeks. Look for a roast date printed on the bag. If a subscription does not print a roast date, treat that as a red flag."
+  },
+  {
+    q: "Can you pause or cancel a coffee subscription?",
+    a: "The best subscriptions make pausing and canceling straightforward. Volcanica, Coffee Bros., and Koa Coffee all offer flexible management. Before subscribing to any service, check the terms for cancellation: some require email or phone contact rather than a simple account toggle. Avoid subscriptions with mandatory minimum terms or difficult cancellation processes. The ability to pause delivery (for travel, for example) is also worth checking."
+  },
+  {
+    q: "What is the cheapest good coffee subscription?",
+    a: "Five Star Coffee Roasters is the most accessible price point on this list without sacrificing specialty quality. Their small-batch North Carolina roasting delivers genuine specialty coffee at a price point below the Hawaiian and premium-positioned roasters. Coffee Bros. is also competitively priced for the quality level. Koa Coffee occupies the premium end at $60-120 per order because Hawaiian-grown coffee has significantly higher production costs than mainland or imported coffee."
+  },
+  {
+    q: "Which subscription has the best coffee variety?",
+    a: "Volcanica Coffee offers the deepest catalog by a significant margin: 150+ coffees organized by origin country and region. This makes it the best choice for buyers who want to explore different growing regions, compare processing methods across origins, or work through a systematic education in specialty coffee. Coffee Bros. has a smaller catalog but is the best-organized by processing method, which is useful if your exploration is method-focused rather than origin-focused."
+  },
+  {
+    q: "What bag size options do coffee subscriptions offer?",
+    a: "Most specialty subscriptions offer 12oz as the default, with many offering 1lb (16oz) options. Koa Coffee orders often run larger due to premium pricing structures. Volcanica and Coffee Bros. typically offer both 12oz and 1lb bags. For households that drink multiple cups daily, the 1lb option usually reduces per-ounce cost and shipping frequency. Solo drinkers often prefer 12oz to ensure they finish the bag before freshness degrades past the 3-4 week post-roast window."
+  }
+];
+
+const relatedPages = [
+  { href: '/learn/single-origin-coffee-guide', label: 'Coffee Guides', title: 'Single Origin Coffee Guide' },
+  { href: '/learn/best-specialty-coffee-roasters', label: 'Buyers Guide', title: 'Best Specialty Coffee Roasters in the US' },
+  { href: '/learn/coffee-processing-methods', label: 'Coffee Guides', title: 'Coffee Processing Methods Explained' },
+  { href: '/learn/best-single-origin-coffee', label: 'Buyers Guide', title: 'Best Single Origin Coffee to Buy Online' },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Coffee Subscription Boxes",
+  "description": "Top coffee subscription services ranked by freshness, catalog depth, flexibility, and value",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Volcanica Coffee Subscription", "url": "https://volcanicacoffee.com" },
+    { "@type": "ListItem", "position": 2, "name": "Coffee Bros. Subscription", "url": "https://coffeebros.com" },
+    { "@type": "ListItem", "position": 3, "name": "Koa Coffee Subscription", "url": "https://koacoffee.com" },
+    { "@type": "ListItem", "position": 4, "name": "Spirit Animal Coffee Subscription", "url": "https://spiritanimalcoffee.com" },
+    { "@type": "ListItem", "position": 5, "name": "Five Star Coffee Roasters Subscription", "url": "https://5starcoffeeroasters.com" }
+  ]
+};
+---
+
+<ContentLayout
+  title="Best Coffee Subscription Boxes (2026): Ranked by Freshness"
+  description="The best coffee subscriptions ranked by roast-to-order freshness, catalog depth, and flexibility. Five roasters compared with honest tasting notes."
+  slug="learn/best-coffee-subscription-boxes"
+  section="learn"
+  sectionLabel="Buyers Guide"
+  publishDate="2026-06-23"
+  {faqItems}
+  {relatedPages}
+  ctaTarget="buyer"
+  ctaHeadline="Ready to explore <em>fresh-roasted coffee?</em>"
+  ctaBody="Volcanica Coffee ships 150+ single-origin coffees roasted to order. Every bag includes a roast date. The widest catalog in specialty coffee delivered directly to your door."
+>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+<p class="body">The real value of a coffee subscription is not convenience. It is freshness. Roasted coffee has a peak window: roughly 7 to 21 days post-roast for most brewing methods, with some variance by method and roast level. After that window, volatile aromatics dissipate, oils go stale, and the cup becomes progressively flatter. Grocery store coffee is typically packaged weeks or months after roasting. A subscription from a roast-to-order roaster ships within 1 to 3 days of roasting and arrives at your door while the coffee is still at its best.</p>
+
+<p class="body"><a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">Volcanica Coffee</a> is the most catalog-deep roast-to-order option available online: 150+ coffees by origin, all fresh-roasted to order from their Atlanta facility. If origin exploration is your goal, no subscription matches their breadth. This guide covers Volcanica alongside four other roasters across different price points and positioning to help you match a subscription to your actual drinking habits.</p>
+
+<h2 class="section-head">What to Look For in a <em>Coffee Subscription</em></h2>
+
+<p class="body">Not all subscriptions are equal. The differences that matter in practice:</p>
+
+<p class="body"><strong>Roast-to-order vs. warehouse stock.</strong> The most important distinction. Roast-to-order means your coffee is roasted after you place your order or on a scheduled cycle tied to your shipment. Warehouse stock means the roaster pre-roasts in bulk and ships from inventory. Roast-to-order is meaningfully fresher. If the roaster does not print a roast date on the bag, assume warehouse stock.</p>
+
+<p class="body"><strong>Shipping speed.</strong> Even roast-to-order coffee loses value if it sits in a warehouse or takes 10 days to arrive. Look for 2-day or 3-day shipping options, particularly if you live far from the roasting facility. East Coast roasters (Volcanica in Atlanta, Five Star in North Carolina) typically serve the East Coast faster; West Coast roasters may serve Western buyers faster.</p>
+
+<p class="body"><strong>Catalog depth and organization.</strong> A broad catalog lets you explore without switching services. Look for clear labeling of origin, processing method, roast level, and variety. Roasters that provide this information are more trustworthy because they are making specific, verifiable claims about what they are selling.</p>
+
+<p class="body"><strong>Flexibility.</strong> The subscription should work for your life, not the other way around. Look for the ability to pause delivery (for travel or oversupply), skip individual shipments, adjust frequency, change the coffee in your subscription, and cancel online without requiring a phone call.</p>
+
+<p class="body"><strong>Bag size options.</strong> 12oz is the standard default. 1lb (16oz) options reduce per-ounce cost for higher-volume households. If you drink 2+ cups daily, a 1lb subscription at a lower frequency is typically more economical than a 12oz subscription at high frequency.</p>
+
+<h2 class="section-head">Quick Comparison: All 5 Subscriptions</h2>
+
+<div style="overflow-x: auto; margin: 2rem 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; color: var(--text-body);">
+    <thead>
+      <tr style="border-bottom: 1px solid rgba(201,168,76,0.25);">
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Roaster</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Price/lb</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Catalog Depth</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Roast-to-Order</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Best For</th>
+        <th style="text-align: left; padding: 0.6rem 0.8rem; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);">Flexibility</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Volcanica</td>
+        <td style="padding: 0.6rem 0.8rem;">$18-28</td>
+        <td style="padding: 0.6rem 0.8rem;">150+ coffees</td>
+        <td style="padding: 0.6rem 0.8rem;">Yes</td>
+        <td style="padding: 0.6rem 0.8rem;">Origin explorers</td>
+        <td style="padding: 0.6rem 0.8rem;">High</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Coffee Bros.</td>
+        <td style="padding: 0.6rem 0.8rem;">$16-24</td>
+        <td style="padding: 0.6rem 0.8rem;">Curated, 86+ pts</td>
+        <td style="padding: 0.6rem 0.8rem;">Yes</td>
+        <td style="padding: 0.6rem 0.8rem;">Processing-curious</td>
+        <td style="padding: 0.6rem 0.8rem;">High</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Koa Coffee</td>
+        <td style="padding: 0.6rem 0.8rem;">$45-75</td>
+        <td style="padding: 0.6rem 0.8rem;">Hawaiian only</td>
+        <td style="padding: 0.6rem 0.8rem;">Yes</td>
+        <td style="padding: 0.6rem 0.8rem;">Kona devotees, gifts</td>
+        <td style="padding: 0.6rem 0.8rem;">Medium</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Spirit Animal</td>
+        <td style="padding: 0.6rem 0.8rem;">$18-26</td>
+        <td style="padding: 0.6rem 0.8rem;">Organic-focused</td>
+        <td style="padding: 0.6rem 0.8rem;">Yes</td>
+        <td style="padding: 0.6rem 0.8rem;">Organic-first buyers</td>
+        <td style="padding: 0.6rem 0.8rem;">High</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.6rem 0.8rem; color: var(--cream);">Five Star</td>
+        <td style="padding: 0.6rem 0.8rem;">$14-20</td>
+        <td style="padding: 0.6rem 0.8rem;">Small-batch NC</td>
+        <td style="padding: 0.6rem 0.8rem;">Yes</td>
+        <td style="padding: 0.6rem 0.8rem;">Budget specialty</td>
+        <td style="padding: 0.6rem 0.8rem;">High</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="section-head">Volcanica Coffee: <em>Best for Origin Explorers</em></h2>
+
+<p class="body">Volcanica Coffee is the strongest choice if your goal is to systematically explore what the world's coffee-growing regions taste like. Their catalog runs to 150+ coffees organized by origin: Ethiopia, Colombia, Kenya, Guatemala, Jamaica, Hawaii, Yemen, and dozens more. This is not a curated-down subscription where someone else picks your coffee; it is a large, navigable catalog where you choose what you want to try next and it ships fresh-roasted from their Atlanta facility.</p>
+
+<p class="body">The roast-to-order model is consistent: your coffee is roasted for your order, not pulled from inventory. Roast dates are printed on bags. For buyers coming from grocery-store coffee or supermarket subscription services, the freshness difference is noticeable in the first cup: more aroma, more complexity, more clarity in the tasting notes listed on the bag.</p>
+
+<p class="body">Catalog organization is Volcanica's primary advantage. If you want to compare Huila vs. Nariño from Colombia, compare Ethiopian washed vs. natural, or try a Yemeni Mocha alongside a Kenyan AA, you can do all of that within one subscription account. The variety means you never have to leave to find what you want to drink next.</p>
+
+<p class="body">Tasting notes across origins vary widely (the whole point), but their Colombian coffees run toward dark chocolate, caramel, and red fruit; their Ethiopian naturals toward blueberry and wine; their Kenyan coffees toward blackcurrant and grapefruit. The consistent throughline is freshness: because everything is roasted to order, whatever the tasting notes say on the bag, you are getting the best possible version of them.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for Origin Exploration</div>
+  <div class="buy-card-title">Volcanica Coffee Subscription</div>
+  <p class="buy-card-notes">150+ coffees by origin, roasted to order from Atlanta. Best catalog depth of any roaster on this list. Choose your own coffees or let them select based on your preferences. Roast date on every bag.</p>
+  <a href="https://volcanicacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Volcanica →</a>
+</div>
+
+<h2 class="section-head">Coffee Bros.: <em>Best for Processing-Curious Drinkers</em></h2>
+
+<p class="body">Coffee Bros. built their catalog around a specific insight: most specialty coffee buyers understand origin (Ethiopia, Colombia, Kenya) before they understand processing method (washed, natural, honey). Their catalog is explicitly organized by processing method alongside origin, which makes it unusually useful for buyers who know they prefer the clean brightness of washed coffee or the fruit intensity of naturals and want to explore within that preference.</p>
+
+<p class="body">The quality floor is high: Coffee Bros. has built their reputation on carrying only coffees that score 86 points or above. This is not marketing language. It reflects sourcing decisions that filter out mediocre lots. The practical result for subscription buyers is that whatever they receive is likely to be genuinely good coffee, not filler.</p>
+
+<p class="body">Freshness is consistent with their roast-and-ship model. Tasting notes are specific and accurate on their product pages, which matters: a roaster who writes "notes of blueberry and wine" on an Ethiopian natural and then delivers a cup that actually tastes like blueberry and wine has done the sourcing and roasting work correctly. Coffee Bros. does this reliably.</p>
+
+<p class="body">The subscription is easy to manage and easy to adjust. For buyers who know what processing method they prefer but want to explore different origins within that method, Coffee Bros. is the most intelligently organized catalog available. Their washed single-origins run toward citrus, jasmine, and stone fruit; their naturals toward strawberry, dark cherry, and cocoa.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best for Processing-Method Exploration</div>
+  <div class="buy-card-title">Coffee Bros. Subscription</div>
+  <p class="buy-card-notes">Catalog organized explicitly by processing method alongside origin. All coffees score 86+ pts. Best choice for buyers who know whether they prefer washed or natural and want to explore within that preference.</p>
+  <a href="https://coffeebros.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Coffee Bros. →</a>
+</div>
+
+<h2 class="section-head">Koa Coffee: <em>Best for Kona Devotees and Gift Subscriptions</em></h2>
+
+<p class="body">Koa Coffee is the only roaster on this list focused exclusively on Hawaiian-grown coffee. This is a significant positioning choice: Hawaiian coffee, particularly from the Kona district on the Big Island's western slope, is among the most expensive coffee in the world due to high US labor costs, limited acreage, and genuine quality in the cup. A Koa Coffee subscription is not a budget option. Orders typically run $60 to $120. But what you receive is 100% Hawaiian-grown coffee that cannot be sourced from any other region.</p>
+
+<p class="body">Kona coffee has a recognizable cup profile: milk chocolate, hazelnut, and a quiet citrus brightness, with medium body and very low acidity compared to African or Central American origins. It is a smooth, approachable cup that almost universally appeals to people who find high-acidity coffees too sharp. The smoothness and sweetness are intrinsic to the origin and not a product of roasting darker to mask defects.</p>
+
+<p class="body">The gift subscription angle is significant. If you are buying a coffee subscription as a gift, Koa Coffee packaging and the Hawaiian provenance story make it feel genuinely premium in a way that a generic specialty roaster subscription does not. The recipient does not need to be a specialty coffee enthusiast to appreciate the quality and the story.</p>
+
+<p class="body">Koa Coffee's catalog is naturally limited: you are buying Hawaiian coffee in its various forms (Kona, Kau, seasonal lots) rather than a global survey. That limitation is the point. If you want to drink the best of one specific place, this is where to start.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best Premium Subscription</div>
+  <div class="buy-card-title">Koa Coffee Subscription</div>
+  <p class="buy-card-notes">100% Hawaiian-grown coffee from the Kona and Kau districts. Tasting notes: milk chocolate, hazelnut, quiet citrus. AOV $60-120. Best for buyers who want a premium gift subscription or are devoted to Hawaiian coffee specifically.</p>
+  <a href="https://koacoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Koa Coffee →</a>
+</div>
+
+<h2 class="section-head">Spirit Animal Coffee: <em>Best for Organic-First Buyers</em></h2>
+
+<p class="body">Spirit Animal Coffee leads with an organic sourcing commitment that shapes their entire catalog. For buyers who prioritize organic certification alongside specialty quality, this is the strongest subscription choice: up to 27% commission rates on their affiliate program reflect genuine customer loyalty, which typically comes from buyers who care as much about how the coffee is grown as what it tastes like.</p>
+
+<p class="body">The organic positioning is not just a label strategy. It reflects a supply chain choice: sourcing organic-certified coffees limits the available lot pool and typically requires direct or near-direct relationships with farms to verify practices. Spirit Animal's model builds that narrative into every bag, which resonates with a specific buyer type who is not just buying coffee but aligning purchases with values around agriculture and environmental practice.</p>
+
+<p class="body">Subscription flexibility is high, and the catalog spans multiple origins within their organic focus. The tasting profile across their offerings tends toward clean, fruit-forward, and medium-roasted, which is appropriate for the specialty sourcing approach. For the buyer who finds conventional marketing language about "organic" vague or unverifiable, Spirit Animal provides more transparency into sourcing practices than most.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best Organic Subscription</div>
+  <div class="buy-card-title">Spirit Animal Coffee Subscription</div>
+  <p class="buy-card-notes">Organic-focused catalog with strong values transparency. Best choice for buyers who prioritize certified organic sourcing alongside specialty quality. Flexible subscription management.</p>
+  <a href="https://spiritanimalcoffee.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Spirit Animal Coffee →</a>
+</div>
+
+<h2 class="section-head">Five Star Coffee Roasters: <em>Best for Budget-Conscious Specialty Buyers</em></h2>
+
+<p class="body">Five Star Coffee Roasters is the most accessible entry point into genuine specialty coffee subscription buying. Based in North Carolina, they roast in small batches and ship direct, which keeps overhead low and quality high relative to price. For buyers who want fresh-roasted specialty coffee without the premium positioning price of a Hawaiian-focused or high-prestige single-origin roaster, Five Star is the honest answer.</p>
+
+<p class="body">Small-batch roasting is not just marketing language here. The practical effect is that each roast run is sized to order volume, which means beans do not sit in a warehouse between roasts. The quality consistency that comes from small-batch roasting is real: you are not buying last week's surplus roasted larger than necessary to cover demand fluctuations.</p>
+
+<p class="body">The North Carolina location means fast shipping for East Coast buyers and reasonable transit times nationally. Tasting notes across their catalog run toward approachable specialty: caramel, milk chocolate, stone fruit, with medium roast levels that work in a range of brewing methods without demanding precision. This is the right subscription for a household that wants better coffee than grocery-store grocery without complexity or premium pricing.</p>
+
+<div class="buy-card">
+  <div class="buy-card-eyebrow">Best Value Specialty Subscription</div>
+  <div class="buy-card-title">Five Star Coffee Roasters Subscription</div>
+  <p class="buy-card-notes">Small-batch North Carolina roasting at the most accessible price point on this list. Genuine specialty quality without premium positioning markup. Best for budget-conscious buyers who want fresh-roasted coffee delivered consistently.</p>
+  <a href="https://5starcoffeeroasters.com" rel="nofollow noopener noreferrer" target="_blank" class="buy-card-link">Shop Five Star Coffee Roasters →</a>
+</div>
+
+<h2 class="section-head">Matching a Subscription to <em>Your Taste Preferences</em></h2>
+
+<p class="body">The fastest way to the right subscription is to start with what you already know you like:</p>
+
+<p class="body"><strong>You like bright, clean, citrus-forward coffee.</strong> Choose Coffee Bros. for their washed single-origins, or Volcanica to explore washed coffees from Ethiopia, Kenya, or Colombia by region. The clarity you want is a function of washed processing and bright origins; both roasters serve it well. Read more about why processing method shapes cup character in the <a href="/learn/coffee-processing-methods" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">coffee processing methods guide</a>.</p>
+
+<p class="body"><strong>You like fruit-forward, full-bodied coffee with sweetness.</strong> Choose Coffee Bros. for their natural-process catalog or Volcanica for Ethiopian naturals. Natural and honey process coffees concentrate fruit sugars and produce the berry, dark cherry, and wine-like notes you are looking for.</p>
+
+<p class="body"><strong>You want to explore different countries and regions systematically.</strong> Volcanica is the only answer. No other subscription offers the catalog depth for genuine origin exploration.</p>
+
+<p class="body"><strong>You prioritize smooth, low-acid, approachable coffee.</strong> Koa Coffee. Hawaiian Kona is intrinsically lower-acid than African or Central American origins. The cup is milk chocolate, hazelnut, and quiet sweetness with no sharp edges.</p>
+
+<p class="body"><strong>You want organic-certified coffee that aligns with your values.</strong> Spirit Animal Coffee. They build the sourcing story into the product in a way that goes beyond label claims.</p>
+
+<p class="body"><strong>You want fresh specialty coffee at a reasonable price without extensive research.</strong> Five Star Coffee Roasters. The price point is accessible, the quality is genuine, and the subscription is straightforward to manage.</p>
+
+<p class="body">For deeper reading on what makes single-origin coffee worth the premium, see the <a href="/learn/single-origin-coffee-guide" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35);">single origin coffee guide</a>.</p>
+
+<h2 class="section-head">Red Flags to Avoid</h2>
+
+<p class="body"><strong>No roast date on the bag.</strong> If a coffee subscription does not print when the coffee was roasted, they are not prioritizing freshness. The omission is deliberate. Avoid it.</p>
+
+<p class="body"><strong>Difficult cancellation terms.</strong> Any subscription that requires a phone call, email, or extended notice period to cancel is designed to make leaving hard. Good subscriptions cancel in your account dashboard in two clicks.</p>
+
+<p class="body"><strong>Mystery boxes with no origin information.</strong> A subscription that sends you "our roaster's choice" with no origin, variety, or processing method information is not building your knowledge of coffee; it is moving inventory. The best subscriptions give you more information, not less.</p>
+
+<p class="body"><strong>"Fresh roasted" claims with no transparency.</strong> "Fresh roasted" is a marketing phrase with no standardized meaning. The actual signal is a roast date on the bag. If the roast date is missing, "fresh roasted" means nothing. If the roast date is present and recent (within 7 days of when you receive the package), the claim is meaningful.</p>
+
+<p class="body"><strong>No-cancel or minimum-term commitments.</strong> Avoid subscriptions that lock you in for a minimum number of shipments before you can cancel. Specialty coffee subscriptions work on loyalty, not lock-in, because the product is good enough to retain customers without trapping them.</p>
+
+</ContentLayout>
+
+<style>
+  .buy-card { border: 1px solid rgba(201,168,76,0.15); border-left: 2px solid var(--gold); background: var(--espresso-mid); padding: 1.5rem 1.75rem; margin: 2rem 0; }
+  .buy-card-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .buy-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.4rem; }
+  .buy-card-notes { font-size: 0.88rem; color: var(--text-body); margin-bottom: 0.9rem; line-height: 1.65; }
+  .buy-card-link { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; }
+  .buy-card-link:hover { border-color: var(--gold); }
+</style>
